@@ -14,7 +14,7 @@ _I'm going to separate the configuration for readability, the yaml file is in [p
 - type: custom-api
   title: Proxmox-VE Node Graph
   cache: 1m
-  url: https://${PROXMOXVE_URL}/api2/json/cluster/resources
+  url: https://${PROXMOXVE_URL}/api2/json/cluster/resources?type=node
   headers:
     Accept: application/json
     Authorization: PVEAPIToken=${PROXMOXVE_KEY}
@@ -118,6 +118,40 @@ _I'm going to separate the configuration for readability, the yaml file is in [p
     </div>
     {{ end }}
 ```
+
+## Showing Guest Machines
+Removing parameter `?type=node` would retrieve other types.
+
+1. To list VMs and LXCs, replace
+    ```go
+    {{ range .JSON.Array "data" }}
+    {{ if ne (.String "type") "node" }}{{ continue }}{{ end }}
+    ```
+    with
+    ```go
+    {{ $newData := .JSON.Array "data.#(type!=\"storage\")#|#(type!=\"sdn\")#|#(type!=\"node\")#" }}
+    {{ range $newData }}
+    {{ if ne (.Int "template") 0 }}{{ continue }}{{ end }}
+    ```
+
+2. To handle the status style of the icon, replace
+    ```go
+    {{ if eq (.String "status") "online" }}
+    ```
+    with 
+    ```go
+    {{ if eq (.String "status") "running" }}
+    ```
+    
+3. To display if its LXC or Qemu and also display the guest ID, replace
+    ```html
+    <div>({{ .String "status" }})</div>
+    ```
+    with
+    ```html
+    <div>{{ .String "id" }} ({{ .String "node" }})</div>
+    ```
+
 
 ## Environment variables
 
