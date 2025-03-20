@@ -28,25 +28,23 @@
                     </svg>
                     {{ end }}
                     <div class="color-highlight margin-left-auto text-very-compact">
-                      <span class="proxmox-cpu-load">{{ mul (.Float "cpu") 100 | toInt | formatNumber }}</span> <span class="color-base">%</span>
+                      {{ mul (.Float "cpu") 100 | toInt | formatNumber }} <span class="color-base">%</span>
                     </div>
                 </div>
                 <div data-popover-type="html">
                     <div data-popover-html>
-                      <div class="proxmox-cpu-popover">
-                        <div class="flex">
-                          <div class="size-h5">LOAD</div>
-                          <div class="value-separator"></div>
-                          <div class="color-highlight text-very-compact"><span class="proxmox-cpu-load">{{ mul (.Float "cpu") 100 | toInt | formatNumber }}</span> <span class="color-base size-h5">%</span></div>
-                        </div>
-                        <div class="flex margin-top-3">
-                          <div class="size-h5">CORES</div>
-                          <div class="value-separator"></div>
-                          <div class="color-highlight text-very-compact proxmox-max-cpu">{{ .Int "maxcpu" }}</div>
-                        </div>
+                      <div class="flex">
+                        <div class="size-h5">LOAD</div>
+                        <div class="value-separator"></div>
+                        <div class="color-highlight text-very-compact">{{ mul (.Float "cpu") 100 | toInt | formatNumber }} <span class="color-base size-h5">%</span></div>
+                      </div>
+                      <div class="flex margin-top-3">
+                        <div class="size-h5">CORES</div>
+                        <div class="value-separator"></div>
+                        <div class="color-highlight text-very-compact">{{ .Int "maxcpu" }}</div>
                       </div>
                     </div>
-                    <div class="progress-bar progress-bar-combined proxmox-cpu-progress">
+                    <div class="progress-bar progress-bar-combined">
                         <div class="progress-value{{ if ge (mul (.Float "cpu") 100 | toInt) 80 }} progress-value-notice{{ end }}" style="--percent: {{ mul (.Float "cpu") 100 | toInt | formatNumber }}"></div>
                     </div>
                 </div>
@@ -55,22 +53,20 @@
                 <div class="flex justify-between items-end size-h5">
                     <div>RAM</div>
                     <div class="color-highlight text-very-compact">
-                      <span class="proxmox-memory-load">{{ mul (div (.Int "mem" | toFloat) (.Int "maxmem" | toFloat)) 100 | toInt }}</span> <span class="color-base">%</span>
+                      {{ mul (div (.Int "mem" | toFloat) (.Int "maxmem" | toFloat)) 100 | toInt }} <span class="color-base">%</span>
                     </div>
                 </div>
                 <div data-popover-type="html">
                     <div data-popover-html>
-                      <div class="proxmox-memory-popover">
-                        <div class="flex">
-                            <div class="size-h5">RAM</div>
-                            <div class="value-separator"></div>
-                            <div class="color-highlight text-very-compact">
-                              <span class="proxmox-memory-usage">{{ div (.Int "mem" | toFloat) 1073741824 | toInt | formatNumber }}GB</span> <span class="color-base size-h5">/</span> <span class="proxmox-memory-max">{{ div (.Int "maxmem" | toFloat) 1073741824 | toInt | formatNumber }}GB</span>
-                            </div>
-                        </div>
+                      <div class="flex">
+                          <div class="size-h5">RAM</div>
+                          <div class="value-separator"></div>
+                          <div class="color-highlight text-very-compact">
+                            {{ div (.Int "mem" | toFloat) 1073741824 | printf "%.2f" | formatNumber }}GB <span class="color-base size-h5">/</span> {{ div (.Int "maxmem" | toFloat) 1073741824 | printf "%.2f" | formatNumber }}GB
+                          </div>
                       </div>
                     </div>
-                    <div class="progress-bar progress-bar-combined proxmox-memory-progress">
+                    <div class="progress-bar progress-bar-combined">
                       <div class="progress-value{{ if ge (mul (div (.Int "mem" | toFloat) (.Int "maxmem" | toFloat)) 100 | toInt) 80 }} progress-value-notice{{ end }}" style="--percent: {{ mul (div (.Int "mem" | toFloat) (.Int "maxmem" | toFloat)) 100 | toInt }}"></div>
                     </div>
                 </div>
@@ -79,22 +75,20 @@
                 <div class="flex justify-between items-end size-h5">
                     <div>DISK</div>
                     <div class="color-highlight text-very-compact">
-                      <span class="proxmox-disk-load">{{ mul (div (.Int "disk" | toFloat) (.Int "maxdisk" | toFloat)) 100 | toInt }}</span> <span class="color-base">%</span>
+                      {{ mul (div (.Int "disk" | toFloat) (.Int "maxdisk" | toFloat)) 100 | toInt }} <span class="color-base">%</span>
                     </div>
                 </div>
                 <div data-popover-type="html">
                   <div data-popover-html>
-                    <div class="proxmox-disk-popover">
-                      <div class="flex">
-                          <div class="size-h5">DISK</div>
-                          <div class="value-separator"></div>
-                          <div class="color-highlight text-very-compact">
-                              <span class="proxmox-disk-usage">{{ div (.Int "disk" | toFloat) 1073741824 | toInt | formatNumber }}GB</span> <span class="color-base size-h5">/</span> <span class="proxmox-disk-max">{{ div (.Int "maxdisk" | toFloat) 1073741824 | toInt | formatNumber }}GB</span>
-                          </div>
-                      </div>
+                    <div class="flex">
+                        <div class="size-h5">DISK</div>
+                        <div class="value-separator"></div>
+                        <div class="color-highlight text-very-compact">
+                            {{ div (.Int "disk" | toFloat) 1073741824 | printf "%.2f" | formatNumber }}GB <span class="color-base size-h5">/</span> {{ div (.Int "maxdisk" | toFloat) 1073741824 | printf "%.2f" | formatNumber }}GB
+                        </div>
                     </div>
                   </div>
-                  <div class="progress-bar progress-bar-combined proxmox-disk-progress">
+                  <div class="progress-bar progress-bar-combined">
                     <div class="progress-value{{ if ge (mul (div (.Int "disk" | toFloat) (.Int "maxdisk" | toFloat)) 100 | toInt) 80 }} progress-value-notice{{ end }}" style="--percent: {{ mul (div (.Int "disk" | toFloat) (.Int "maxdisk" | toFloat)) 100 | toInt }}"></div>
                   </div>
                 </div>
