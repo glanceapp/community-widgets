@@ -122,7 +122,7 @@ _I'm going to separate the configuration for readability, the yaml file is in [p
 ## Showing Guest Machines
 Removing parameter `?type=node` would retrieve other types.
 
-1. To list VMs and LXCs, replace
+1. To list VM/Qemu and LXCs, replace
     ```go
     {{ range .JSON.Array "data" }}
     {{ if ne (.String "type") "node" }}{{ continue }}{{ end }}
@@ -143,7 +143,7 @@ Removing parameter `?type=node` would retrieve other types.
     {{ if eq (.String "status") "running" }}
     ```
     
-3. To display if its LXC or Qemu and also display the guest ID, replace
+3. To display if its LXC or VM/Qemu and also display the guest ID, replace
     ```html
     <div>({{ .String "status" }})</div>
     ```
@@ -151,6 +151,8 @@ Removing parameter `?type=node` would retrieve other types.
     ```html
     <div>{{ .String "id" }} ({{ .String "node" }})</div>
     ```
+
+> Remove the disk part for VM/Qemu, for some reason they're showing `0`.
 
 
 ## Environment variables
