@@ -12,7 +12,13 @@
 * If you are submitting a pull request that modifies the widget of another author, please mention them in the pull request description and give them adequate time to review it
 * If you no longer wish to be the maintainer of a widget, please submit an issue
 
-## Submitting your widget
+## Submitting your `extension` widget
+
+1. Fork the repository
+2. Add your widget to the list in the `README.md` file in the root of the repository in alphabetical order using the format `* [Widget name](link to your repository) by @your-username - description`
+3. Commit your changes and push them to your fork, then create a pull request
+
+## Submitting your `custom-api` widget
 
 If you have created a custom widget that you would like to share with the community you can do so by following these steps:
 
