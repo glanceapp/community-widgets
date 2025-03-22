@@ -14,6 +14,7 @@ To add your widget to the list, please read the [contribution guidelines](CONTRI
 * [Random fact](widgets/random-fact-by-svilenmarkov/README.md) by @svilenmarkov - show a random fact
 * [Speedtest tracker](widgets/speedtest-tracker-by-notfirst/README.md) by @not-first - show the latest internet speed information from speedtest tracker
 * [Spotify Now Playing](widgets/spotify-now-playing-by-needsadjustment/README.md) by @needsadjustment - show the currently playing Spotify song
+* [Steam Recently Played Games](widgets/steam-recently-played-games-by-lunnosmp4/README.md) by @lunnosmp4 - show a list of recently played games by a Steam user
 * [Steam specials](widgets/steam-specials-by-svilenmarkov/README.md) by @svilenmarkov - show a list of discounted games on Steam
 * [Steam User](widgets/steam-user-by-lunnosmp4/README.md) by @lunnosmp4 - show information about a Steam user
 * [Trending Mastodon Links](widgets/trending-mastodon-links-by-tomcasavant/README.md) by @tomcasavant - shows a list of trending links from a provided Mastodon instance
