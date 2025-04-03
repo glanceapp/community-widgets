@@ -75,6 +75,7 @@
 
 ## Environment variables
 
+- `NUMBER_OF_TASKS` - The total number of tasks to be displayed. If more tasks suffice the filter, only up to this much will be shown.
 - `VIKUNJA_HOST` - The host of the vikunja server, typically when self-hosted, it's at `localhost`
 - `VIKUNJA_PORT` - A custom port, else set this to `3456`
 - `VIKUNJA_GLANCE_API_TOKEN` - The api token which is used to retrieve tasks. You can create one in `Avatar profile > Settings > API Tokens > Create a token (choose the permission for tasks)`
