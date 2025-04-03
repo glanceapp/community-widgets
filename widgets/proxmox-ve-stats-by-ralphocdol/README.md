@@ -75,9 +75,9 @@ You need to generate an API token for it, follow the steps below if you don't ha
     - Role: PVE Auditor
     - Propagate: Checked
 
-Your key should look like `<username>@pam!<tokenID>-api=<secret>`, eg:
+Your key should look like `<username>@pam!<tokenID>=<secret>`, eg:
 ```
-api@pam!shared-api=some-random-secret-value-here
+api@pam!shared=some-random-secret-value-here
 ```
 
 source: [gethomepage's documentation](https://github.com/gethomepage/homepage/blob/main/docs/widgets/services/proxmox.md)
