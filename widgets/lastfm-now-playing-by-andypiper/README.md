@@ -92,4 +92,8 @@
 ## Environment Variables
 
 - `LASTFM_USERNAME` - your Last.FM username, e.g. `andypiper`
-- `LASTFM_API_KEY` - a Last.FM API key, which you can obtain from [here](https://www.last.fm/api/accounts)
+- `LASTFM_API_KEY` - a Last.FM API key, which you can obtain from [here](https://www.last.fm/api/accounts). The API requires (free) registration, [see the documentation](https://www.last.fm/api) for details.
+
+## Additional configuration
+
+The number of recent tracks displayed can be modified in the widget `limit` parameter.
