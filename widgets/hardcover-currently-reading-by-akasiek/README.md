@@ -16,12 +16,11 @@
     query: |
       query MyQuery {
         me {
-          user_books(
-            where: {user_book_reads: {id: {_is_null: false}, finished_at: {_is_null: true}, paused_at: {_is_null: true}, started_at: {_is_null: false}}}
-          ) {
+          user_books(where: {status_id: {_eq: 2}}, order_by: {first_read_date: desc}) {
             id
             user_book_reads(
-              where: {finished_at: {_is_null: true}, paused_at: {_is_null: true}, started_at: {_is_null: false}}
+              limit: 1,
+              order_by: {started_at: desc_nulls_last}
             ) {
               id
               started_at
@@ -30,12 +29,7 @@
                 image {
                   url
                 }
-                contributions(where: {contribution: {_is_null: true}}) {
-                  contribution
-                  author {
-                    name
-                  }
-                }
+                cached_contributors
               }
             }
             book {
@@ -53,10 +47,12 @@
             <img src="{{ .String "user_book_reads.0.edition.image.url" }}" class="card" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
           </div>
           <div class="flex-1">
-            <a class="size-h4 color-highlight block text-truncate" href="https://hardcover.app/books/{{ .String "book.slug" }}">{{ .String "book.title" }}</a>
+            <a class="size-h4 color-highlight" href="https://hardcover.app/books/{{ .String "book.slug" }}">{{ .String "book.title" }}</a>
             <ul class="list-horizontal-text size-h5">
-              {{ range .Array "user_book_reads.0.edition.contributions" }}
-                <li>{{ .String "author.name" }}</li>
+              {{ range .Array "user_book_reads.0.edition.cached_contributors" }}
+                {{ if not (.String "contribution") }}
+                  <li>{{ .String "author.name" }}</li>
+                {{ end }}
               {{ end }}
             </ul>
             <ul class="list-horizontal-text" >
