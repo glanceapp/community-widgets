@@ -13,6 +13,7 @@ Custom API widgets are much easier to setup and usually only require a copy-past
 ## Custom API Widgets
 * [Animals Display](widgets/animals-display-by-panonim/README.md) by @panonim - Display random images of animals such as cats or dogs.
 * [Cats As A Service Photos](widgets/cats-as-a-service-photos-by-gugugiyu/README.md) by @gugugiyu - show a grid of cat photos from the Cat as a Service [API](https://cataas.com/)
+* [Cryptopanic News](widgets/cryptopanic-news/README.md) by @herculosh - A real-time cryptocurrency news widget that displays filtered news from CryptoPanic.com with configurable filters for news type, regions, and currencies.
 * [Formula 1 Widgets](widgets/formula1-widgets-by-abaza738/README.md) by @abaza738 - show different stats from the current Formula 1 season from [F1 API](https://f1api.dev)
 * [Ghostfolio stats](widgets/ghostfolio-stats-by-ziritione85/README.md) by @ziritione85 - show the status of your investments with today's results, YTD and totals
 * [Hardcover Currently Reading](widgets/hardcover-currently-reading-by-akasiek/README.md) by @Akasiek - show the currently reading book from [Hardcover](https://hardcover.app/)
