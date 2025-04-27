@@ -546,6 +546,8 @@ You can modify some variables inside the `template`. They are inside the block `
     activeWithinSeconds: 30
   template: |
     {{/* USER VARIABLES BEGIN */}}
+    {{/* Set local timezone */}}
+    {{ $localTz := duration "+0h"}}
 
     {{/* Set to true if using the widget in a small column */}}
     {{ $isSmallColumn := false }}
@@ -621,7 +623,7 @@ You can modify some variables inside the `template`. They are inside the block `
             {{ $progress := mul 100 ( div $offset $duration ) | toInt }}
             {{ $remainingSeconds := div (sub $duration $offset) 10000000 | toInt }}
             {{ $remainingSecondsString := printf "%ds" $remainingSeconds }}
-            {{ $endTime := offsetNow $remainingSecondsString }}
+            {{ $endTime := (offsetNow $remainingSecondsString).Add $localTz }}
             {{ $endHour := printf "%02d" $endTime.Hour }}
             {{ $endMinute := printf "%02d" $endTime.Minute }}
 
