@@ -49,6 +49,7 @@ Custom API widgets are much easier to setup and usually only require a copy-past
 * [Vikunja Taskboard](widgets/vikunja-taskboard-by-gugugiyu/README.md) by @gugugiyu - Real time taskboard using the Vikunja API
 * [What's Up Docker Monitor](widgets/wud-monitor-by-panonim/README.md) by @panonim - A customizable widget for displaying the wud data about containers. 
 * [YouTube Embedded Player](widgets/youtube-embedded-player-by-ralphocdol/README.md) by @ralphocdol - A grid-card layout of YouTube List with Embed player pulled from either RSS-Bridge or FreshRSS
+* [Homeassitant Sensor Stats](widgets/homeassistant-sensor-stats-by-awildleon/README.md) by @AWildLeon - Display's configured Sensors values from Homeassitant 
 
 ## Extension Widgets
 
