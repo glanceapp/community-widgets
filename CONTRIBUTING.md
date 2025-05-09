@@ -32,8 +32,17 @@ If you have created a custom widget that you would like to share with the commun
 
 ### Guidelines
 
-#### Use descriptive environment variables in place of configurable values
+### Add sufix's to your css styles
+If you want to use custom css styling make sure to add suffix to your classes based on the name of your widget as shown below:
 
+```css
+.{class}-{widget_name} {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+```
+
+#### Use descriptive environment variables in place of configurable values
 Don't submit local domains or IP's:
 
 ```yaml
