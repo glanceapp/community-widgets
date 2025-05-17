@@ -18,6 +18,7 @@ Custom API widgets are much easier to setup and usually only require a copy-past
 * [Frigate stats](widgets/frigate-stats-by-Pimer0/README.md) by @Pimer0 - show alerts and detections from the last 24 hours from your Frigate service [Frigate](https://frigate.video/)
 * [Ghostfolio stats](widgets/ghostfolio-stats-by-ziritione85/README.md) by @ziritione85 - show the status of your investments with today's results, YTD and totals
 * [Gluetun VPN status](widgets/gluetun-vpn-status-by-hyptu/README.md) by @Hyptu - show the public IP, country and city of you [Gluetun VPN client](https://github.com/qdm12/gluetun)
+* [Google Calendar List](widgets/google-calendar-list-by-anant-j/README.md) by @anant-j - List Google Calendar upcoming events
 * [Hardcover Currently Reading](widgets/hardcover-currently-reading-by-akasiek/README.md) by @Akasiek - show the currently reading book from [Hardcover](https://hardcover.app/)
 * [Immich stats](widgets/immich-stats-by-svilenmarkov/README.md) by @svilenmarkov - show the number of photos, videos and usage of your Immich server
 * [Last.FM Recent Tracks](widgets/lastfm-recent-tracks-by-akasiek/README.md) by @Akasiek - show recent tracks scrobbled by a Last.FM user
@@ -56,7 +57,6 @@ Custom API widgets are much easier to setup and usually only require a copy-past
 > [!WARNING]
 >
 > Extension widgets are not actively monitored by the maintainers of Glance, use them at your own risk.
-* [Google Calendar List](https://github.com/anant-j/glance-GoogleCalendar) by @anant-j - List Google Calendar upcoming events
 * [iCal (ICS) Calendar List](https://github.com/AWildLeon/Glance-iCal-Events) by @AWildLeon - List a ICS File's upcoming events (Like [Google Calendar List](https://github.com/anant-j/glance-GoogleCalendar))
 * [linktiles](https://github.com/haondt/linktiles/) by @haondt - display your linkding bookmarks in a configurable mosaic
 * [Restic snapshot](https://github.com/not-first/restic-glance-extension) by @not-first - show the most recent snapshot and storage stats of a restic repo
