@@ -30,6 +30,7 @@ Add the following to your dashboard configuration:
   template: |
     {{ $defaultServerName := "Glance" }}  {{/* Set your default server name here */}}
     {{ $showUpdateKind := true }}  {{/* Toggle this to false to hide the Update Kind row */}}
+    {{ $filterInactiveImages := true }}  {{/* Set to false to stop filtering unused images */}}
 
     <style>
       .vertical-separator-cup {
@@ -112,69 +113,72 @@ Add the following to your dashboard configuration:
         <ul class="list list-gap-10-cup collapsible-container" data-collapse-after="3">
           {{ $hasUpdates := false }}
           {{ range .JSON.Array "images" }}
-            {{ if .Bool "result.has_update" }}
-              {{ $hasUpdates = true }}
-              <li>
-                {{ $registry := .String "parts.registry" }}
-                {{ $repository := .String "parts.repository" }}
-                {{ $url := "#" }}
+            {{ $inUse := .Bool "in_use" }}
+            {{ if or (not $filterInactiveImages) $inUse }}
+              {{ if .Bool "result.has_update" }}
+                {{ $hasUpdates = true }}
+                <li>
+                  {{ $registry := .String "parts.registry" }}
+                  {{ $repository := .String "parts.repository" }}
+                  {{ $url := "#" }}
 
-                {{ if eq $registry "registry-1.docker.io" }}
-                  {{ $url = printf "https://hub.docker.com/r/%s" $repository }}
-                {{ else if eq $registry "ghcr.io" }}
-                  {{ $url = printf "https://github.com/%s" $repository }}
-                {{ else if eq $registry "lscr.io" }}
-                  {{ if .String "url" }}
-                    {{ $url = .String "url" }}
-                  {{ else }}
-                    {{ $url = printf "https://fleet.linuxserver.io/%s" $repository }}
+                  {{ if eq $registry "registry-1.docker.io" }}
+                    {{ $url = printf "https://hub.docker.com/r/%s" $repository }}
+                  {{ else if eq $registry "ghcr.io" }}
+                    {{ $url = printf "https://github.com/%s" $repository }}
+                  {{ else if eq $registry "lscr.io" }}
+                    {{ if .String "url" }}
+                      {{ $url = .String "url" }}
+                    {{ else }}
+                      {{ $url = printf "https://fleet.linuxserver.io/%s" $repository }}
+                    {{ end }}
                   {{ end }}
-                {{ end }}
 
-                <a class="block text-truncate" href="{{ $url }}" target="_blank" rel="noreferrer" style="font-size: 1.47rem;">{{ $repository }}</a>
+                  <a class="block text-truncate" href="{{ $url }}" target="_blank" rel="noreferrer" style="font-size: 1.47rem;">{{ $repository }}</a>
 
-                {{ $currentVersion := .String "result.info.current_version" }}
-                {{ $newVersion := .String "result.info.new_version" }}
-                {{ $localDigests := .Array "result.info.local_digests" }}
-                {{ $remoteDigest := .String "result.info.remote_digest" }}
-                {{ $serverName := .String "server" }}
+                  {{ $currentVersion := .String "result.info.current_version" }}
+                  {{ $newVersion := .String "result.info.new_version" }}
+                  {{ $localDigests := .Array "result.info.local_digests" }}
+                  {{ $remoteDigest := .String "result.info.remote_digest" }}
+                  {{ $serverName := .String "server" }}
 
-                {{ if or (eq $serverName "") (eq $serverName "null") (not $serverName) }}
-                  {{ $serverName = $defaultServerName }}
-                {{ end }}
+                  {{ if or (eq $serverName "") (eq $serverName "null") (not $serverName) }}
+                    {{ $serverName = $defaultServerName }}
+                  {{ end }}
 
-                <div style="margin: 0.5rem 0; font-size: 1.28rem; color: #6c757d;">
-                  Server: {{ $serverName }}
-                </div>
-
-                {{ if and $currentVersion $newVersion }}
-                  <div style="margin: 0.2rem 0;">
-                    <span>{{ $currentVersion }}</span>
-                    <span> → </span>
-                    <span class="size-h4 color-positive">{{ $newVersion }}</span>
+                  <div style="margin: 0.5rem 0; font-size: 1.28rem; color: #6c757d;">
+                    Server: {{ $serverName }}
                   </div>
-                {{ end }}
 
-                {{ if $localDigests }}
-                  {{ $digest := index $localDigests 0 }}
-                  {{ $digestStr := printf "%s" $digest }}
-                  {{ $remoteDigestStr := printf "%s" $remoteDigest }}
+                  {{ if and $currentVersion $newVersion }}
+                    <div style="margin: 0.2rem 0;">
+                      <span>{{ $currentVersion }}</span>
+                      <span> → </span>
+                      <span class="size-h4 color-positive">{{ $newVersion }}</span>
+                    </div>
+                  {{ end }}
 
-                  {{ $shortLocal := slice $digestStr 8 14 }}
-                  {{ $shortRemote := slice $remoteDigestStr 7 13 }}
+                  {{ if $localDigests }}
+                    {{ $digest := index $localDigests 0 }}
+                    {{ $digestStr := printf "%s" $digest }}
+                    {{ $remoteDigestStr := printf "%s" $remoteDigest }}
 
-                  <div class="flex gap-10 justify-center items-center" style="margin-top: 0.5rem;">
-                    <span>Dig: {{ $shortLocal }}</span>
-                    <span>→</span>
-                    <span class="size-h4">Dig: <span class="color-positive">{{ $shortRemote }}</span></span>
-                  </div>
-                {{ end }}
-              </li>
+                    {{ $shortLocal := slice $digestStr 8 14 }}
+                    {{ $shortRemote := slice $remoteDigestStr 7 13 }}
+
+                    <div class="flex gap-10 justify-center items-center" style="margin-top: 0.5rem;">
+                      <span>Dig: {{ $shortLocal }}</span>
+                      <span>→</span>
+                      <span class="size-h4">Dig: <span class="color-positive">{{ $shortRemote }}</span></span>
+                    </div>
+                  {{ end }}
+                </li>
+              {{ end }}
             {{ end }}
           {{ end }}
 
           {{ if not $hasUpdates }}
-            <div class="flex items-center justify-center">
+            <div class="flex items-center justify-center" style="margin-top: 1.5rem;">
               <span class="color-positive size-h4">All images are up to date!</span>
             </div>
           {{ end }}
@@ -195,6 +199,7 @@ You can customize the display behavior and default labels using the following va
 ```go
 {{ $defaultServerName := "Glance" }}  {{/* Set your default server name here */}}
 {{ $showUpdateKind := true }}         {{/* Toggle this to false to hide the Update Kind row */}}
+{{ $filterInactiveImages := true }}  {{/* Set to false to stop filtering unused images */}}
 ```
 
 #### `$defaultServerName`
