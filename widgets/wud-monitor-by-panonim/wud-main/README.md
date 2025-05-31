@@ -255,7 +255,17 @@ In this version I tried to focus on improving visuals of the widget. I also adde
                             <div class="info-column">
                               <div class="info-label">{{ $updateKind }}</div>
                               <div class="info-value">
-                                <span>{{ $tagValue }}</span>
+                                {{ if ge (len $tagValue) 7 }}
+                                  {{ $isSha256 := eq (slice $tagValue 0 7) "sha256:" }}
+                                  {{ if $isSha256 }}
+                                    {{ $shortDigest := slice $tagValue 7 11 }}
+                                    <span>dig: {{ $shortDigest }}</span>
+                                  {{ else }}
+                                    <span>{{ $tagValue }}</span>
+                                  {{ end }}
+                                  {{ else }}
+                                    <span>{{ $tagValue }}</span>
+                                  {{ end }}
                               </div>
                             </div>
                           {{ end }}
