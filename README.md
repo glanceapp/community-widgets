@@ -11,6 +11,7 @@ To add your widget to the list, please read the [contribution guidelines](CONTRI
 Custom API widgets are much easier to setup and usually only require a copy-paste into your config. Extension widgets are a bit more involved and require running a separate server or Docker container.
 
 ## Custom API Widgets
+* [AFL Widgets](widgets/afl-widgets-by-0099FF/README.md) by @0099FF - Statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API.
 * [Animals Display](widgets/animals-display-by-panonim/README.md) by @panonim - Display random images of animals such as cats or dogs.
 * [Arr Releases](widgets/arr-releases-by-erkston/README.md) by @erkston - Show upcoming, recently downloaded, or missing items from Sonarr, Radarr, or Lidarr
 * [Cats As A Service Photos](widgets/cats-as-a-service-photos-by-gugugiyu/README.md) by @gugugiyu - show a grid of cat photos from the Cat as a Service [API](https://cataas.com/)
