@@ -50,6 +50,7 @@ Custom API widgets are much easier to setup and usually only require a copy-past
 * [Tailscale devices](widgets/tailscale-devices-by-not-first/README.md) by @not-first - show all devices inside to a Tailscale tailnet along with their connection status, update availability and IP
 * [Technitium DNS Stats](widgets/technitium-dns-stats-by-eribbey/README.md) by @eribbey - show stats from Technitium DNS Server
 * [Time Bar](widgets/time-bar-by-anant-j/README.md) by @anant-j - show percentage of day/month/year elapsed
+* [Trakt](widgets/trakt-by-rxbrad/README.md) by @RxBrad - shows your last-watched movies & TV shows on Trakt
 * [Trending Mastodon Links](widgets/trending-mastodon-links-by-tomcasavant/README.md) by @tomcasavant - shows a list of trending links from a provided Mastodon instance
 * [Trending Bluesky News](widgets/trending-bluesky-news-by-tomcasavant/README.md) by @tomcasavant - shows a list of trending news links from the [Trending News 2.0 Feed](https://bsky.app/profile/did:plc:kkf4naxqmweop7dv4l2iqqf5/feed/news-2-0) on Bluesky
 * [Uptime Kuma](widgets/uptime-kuma-by-not-first/README.md) by @not-first - show the status of Uptime Kuma services
