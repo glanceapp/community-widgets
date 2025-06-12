@@ -36,7 +36,7 @@
 
             <div>
               <div class="color-highlight size-h3">{{ $jellyfinData.JSON.Int "SeriesCount" | formatNumber }}</div>
-              <div class="size-h5 uppercase">TV Show</div>
+              <div class="size-h5 uppercase">TV Shows</div>
             </div>
 
             <div>
