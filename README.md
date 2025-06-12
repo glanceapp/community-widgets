@@ -53,7 +53,7 @@ Custom API widgets are much easier to setup and usually only require a copy-past
 * [Steam Recently Played Games](widgets/steam-recently-played-games-by-lunnosmp4/README.md) by @lunnosmp4 - show a list of recently played games by a Steam user
 * [Steam specials](widgets/steam-specials-by-svilenmarkov/README.md) by @svilenmarkov - show a list of discounted games on Steam
 * [Steam User](widgets/steam-user-by-lunnosmp4/README.md) by @lunnosmp4 - show information about a Steam user
-* [Syncthing](widgets/syncthing-by-JohnCannon87/README.md by @JohnCannon97 - Show Syncthing folder status)
+* [Syncthing](widgets/syncthing-by-JohnCannon87/README.md) by @JohnCannon97 - Show Syncthing folder status
 * [Tailscale devices](widgets/tailscale-devices-by-not-first/README.md) by @not-first - show all devices inside to a Tailscale tailnet along with their connection status, update availability and IP
 * [Technitium DNS Stats](widgets/technitium-dns-stats-by-eribbey/README.md) by @eribbey - show stats from Technitium DNS Server
 * [Time Bar](widgets/time-bar-by-anant-j/README.md) by @anant-j - show percentage of day/month/year elapsed
