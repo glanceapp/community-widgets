@@ -15,6 +15,7 @@ Custom API widgets are much easier to setup and usually only require a copy-past
 * [Animals Display](widgets/animals-display-by-panonim/README.md) by @panonim - Display random images of animals such as cats or dogs.
 * [Arr Releases](widgets/arr-releases-by-erkston/README.md) by @erkston - Show upcoming, recently downloaded, or missing items from Sonarr, Radarr, or Lidarr
 * [Audiobookshelf stats](widgets/audiobookshelf-by-ferdyverse/README.md) by @ferdyverse - Show the number of books and podcasts in your Audiobookshelf server, along with their total duration.
+* [Calibre-Web Stats](widgets/calibre-web-stats-by-rvelasq/README.md) by @rvelasq - Display a summary of books from your Calibre-Web server.
 * [Cats As A Service Photos](widgets/cats-as-a-service-photos-by-gugugiyu/README.md) by @gugugiyu - show a grid of cat photos from the Cat as a Service [API](https://cataas.com/)
 * [Chess.com Daily Puzzle](widgets/chess-puzzle-by-panonim/README.md) by @panonim - Display daily chess puzzle from chess.com
 * [Cryptopanic News](widgets/cryptopanic-news/README.md) by @herculosh - A real-time cryptocurrency news widget that displays filtered news from CryptoPanic.com with configurable filters for news type, regions, and currencies.
