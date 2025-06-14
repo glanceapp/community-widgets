@@ -16,9 +16,8 @@ Choose from one of the following otpions:
 
 ```yaml
 - type: custom-api
-  hide-header: true
+  title: Spotify
   cache: 1s
-  frameless: true
   template: |
     {{
       $tokenRes := newRequest "https://accounts.spotify.com/api/token"
@@ -51,8 +50,8 @@ Choose from one of the following otpions:
         {{ $artist := $data.String "currently_playing.artists.0.name" }}
 
         {{ if gt (len $artist) 0 }}
-        <div class="size-h1">Spotify Now Playing</div>
-        <div class="widget-content-frame flex flex-row items-center gap-20">
+        <div class="size-h5">NOW PLAYING</div>
+        <div class="widget-content-frame flex flex-row items-center gap-20" style="padding: 4px; margin-top: 4px; margin-bottom: 4px;">
           <div>
             <img src="{{ $data.String "currently_playing.album.images.0.url" }}" style="border-radius: 5px; width: 5rem;" class="card">
           </div>
@@ -81,10 +80,10 @@ Choose from one of the following otpions:
         {{ end }}
 
         {{ if gt (len $queue) 0 }}
-          <div class="size-h1 color-muted font-bold">Upcoming:</div>
+          <div class="size-h5 color-muted font-bold" style="margin-top: 10px;">UPCOMING:</div>
           {{ range $i, $track := $queue }}
             {{ if lt $i 5 }}
-              <div class="widget-content-frame flex flex-row items-center gap-20">
+              <div class="widget-content-frame flex flex-row items-center gap-20" style="padding: 4px; margin-top: 4px; margin-bottom: 4px;">
                 <div>
                   <img src="{{ $track.String "album.images.0.url" }}" style="border-radius: 5px; width: 5rem;" class="card">
                 </div>
