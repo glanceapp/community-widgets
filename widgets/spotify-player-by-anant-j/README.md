@@ -35,6 +35,9 @@ Choose from one of the following otpions:
           | withHeader "Authorization" (print "Bearer " $accessToken)
           | getResponse          
       }}
+      {{ if eq $currentlyPlaying.Response.StatusCode 204 }}
+        <p style="margin-right:10px;">Device is inactive</p>
+      {{ end}}
       {{ $isCurrentlyPlaying := $currentlyPlaying.JSON.Bool "is_playing" }}
       {{ $isDeviceActive := $currentlyPlaying.JSON.Bool "device.is_active" }}
       {{ $isPrivateSession := $currentlyPlaying.JSON.Bool "device.is_private_session" }}
