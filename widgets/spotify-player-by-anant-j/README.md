@@ -86,7 +86,21 @@ Choose from one of the following otpions:
           <div class="size-h5 color-muted font-bold" style="margin-top: 10px;">UPCOMING:</div>
           {{ range $i, $track := $queue }}
             {{ if lt $i 5 }}
-              <div class="widget-content-frame flex flex-row items-center gap-20" style="padding: 4px; margin-top: 4px; margin-bottom: 4px;">
+              <div
+                class="widget-content-frame flex flex-row items-center gap-20"
+                style="padding: 4px; margin-top: 4px; margin-bottom: 4px; cursor: pointer;"
+                onclick="(function(){
+                  for (let j = 0; j < {{ add $i 1}}; j++) {
+                    fetch('https://api.spotify.com/v1/me/player/next', {
+                      method: 'POST',
+                      headers: {
+                        'Authorization': 'Bearer {{ $accessToken }}'
+                      }
+                    });
+                  }
+                  setTimeout(() => location.reload(), 2000);
+                })()"
+              >
                 <div>
                   <img src="{{ $track.String "album.images.0.url" }}" style="border-radius: 5px; width: 5rem;" class="card">
                 </div>
