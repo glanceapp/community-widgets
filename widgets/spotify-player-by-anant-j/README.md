@@ -64,12 +64,12 @@ Choose from one of the following otpions:
           </div>
           {{ if and $isDeviceActive (not $isPrivateSession) }}
             {{ if $isCurrentlyPlaying }}
-              <div style="margin-right:10px;">
+              <div style="margin-right:10px; height: 100%; display: flex; flex-direction: column;">
                 <button style="font-size:25px;" onclick="fetch('https://api.spotify.com/v1/me/player/pause',{method:'PUT',headers:{'Authorization':'Bearer {{$accessToken}}'}}); setTimeout(function(){ location.reload(); }, 2000);">⏸</button>
                 <p>{{ $deviceName }}</p>
               </div>
             {{ else }}
-              <div style="margin-right:10px;">
+              <div style="margin-right:10px; height: 100%; display: flex; flex-direction: column;">
                 <button style="font-size:25px;" onclick="fetch('https://api.spotify.com/v1/me/player/play',{method:'PUT',headers:{'Authorization':'Bearer {{$accessToken}}'}}); setTimeout(function(){ location.reload(); }, 2000);">▶</button>
                 <p>{{ $deviceName }}</p>
               </div>
