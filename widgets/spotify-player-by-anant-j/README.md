@@ -2,15 +2,15 @@
 
 # !!!!!!! IMPORTANT - PLEASE READ
 > [!CAUTION]     
-> Using the play(▶) and pause(⏸) buttons sends a request directly from the browser to Spotify's Play/Pause API's respectively. These PUT requests require the bearer token to be sent in the auth header, which means the $accessToken is exposed to the client-side/browser.  
+> Using the play(▶) and pause(⏸) buttons, or clicking on any song in the queue sends a request directly from the browser to Spotify's Play/Pause API's respectively. These PUT requests require the bearer token to be sent in the auth header, which means the $accessToken is exposed to the client-side/browser.  
 There are many security implications of this. For example, if a malicious actor get's access to this token, they can completely control and view your Spotify playlists/currently playing.  
 Please use this at your own risk. [Spotify Authorization](https://developer.spotify.com/documentation/web-api/tutorials/code-flow)  
 It is highly suggested to use [Glance Auth](https://github.com/glanceapp/glance/releases/tag/v0.8.0#g-rh-7). However, please note using this does not mitigate the above mentioned security risk.
 
 Choose from one of the following otpions:  
-1. Use Play/Pause in current-implementation at your own risk.
-2. Move Play/Pause functionality behind an external service so accessToken is not exposed on client-side.
-3. Remove Play/Pause from config below and the $accessToken will not be revealed on client-side.    
+1. Use Play/Pause, and Play from queue in current-implementation at your own risk.
+2. Move Play/Pause, and Play from queue functionality behind an external service so accessToken is not exposed on client-side.
+3. Remove Play/Pause, and Play from queue from config below and the $accessToken will not be revealed on client-side.    
 
 <hr>
 
