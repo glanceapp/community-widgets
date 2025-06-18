@@ -19,6 +19,23 @@ Choose from one of the following otpions:
   title: Spotify
   cache: 1s
   template: |
+    <style>
+      .offline-indicator {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: var(--color-negative);
+        display: inline-block;
+        margin-left: 4px;
+        vertical-align: middle;
+      }
+
+      .indicators-container {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+    </style>
     {{
       $tokenRes := newRequest "https://accounts.spotify.com/api/token"
         | withHeader "Authorization" "Basic ${SPOTIFY_BTOA}"
@@ -35,8 +52,16 @@ Choose from one of the following otpions:
           | getResponse          
       }}
       {{ if eq $currentlyPlaying.Response.StatusCode 204 }}
-        <p style="margin-right:10px;">Device is inactive</p>
+      <div class="flex items-center">
+        <p style="margin-right:10px;">Offline</p>
+        <div class="indicators-container">
+          <span class="offline-indicator" data-popover-type="text"
+                data-popover-text="No current playback">
+          </span>
+        </div>
+      </div>
       {{ end}}
+
       {{ $isCurrentlyPlaying := $currentlyPlaying.JSON.Bool "is_playing" }}
       {{ $isDeviceActive := $currentlyPlaying.JSON.Bool "device.is_active" }}
       {{ $isPrivateSession := $currentlyPlaying.JSON.Bool "device.is_private_session" }}
