@@ -48,6 +48,7 @@ Custom API widgets are much easier to setup and usually only require a copy-past
 * [Proxmox VE stats](widgets/proxmox-ve-stats-by-ralphocdol/README.md) by @ralphocdol - show the number of nodes, LXCs, VMs and Storage of your Proxmox Virtual Environment server
 * [Random Bible Verse](widgets/random-bible-verse-by-pypp/README.md) by @pypp - show a random bible verse
 * [Random fact](widgets/random-fact-by-svilenmarkov/README.md) by @svilenmarkov - show a random fact
+* [Self-hosted App Links](widgets/self-hosted-links-by-drshajul/README.md) by @drshajul - External and Internal links to your self-hosted apps.
 * [Slack Status](widgets/slack-status-by-cartwatson/README.md) by @cartwatson - show slack status from api
 * [Speedtest tracker](widgets/speedtest-tracker-by-not-first/README.md) by @not-first - show the latest internet speed information from speedtest tracker
 * [Spotify Now Playing](widgets/spotify-now-playing-by-needsadjustment/README.md) by @needsadjustment - show the currently playing Spotify song
