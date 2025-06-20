@@ -1,0 +1,40 @@
+{
+    "links": [
+        {
+            "service": "http://local-ip-address:8090",
+            "external_link": "http://tailscale-ip-address:8090",
+            "hostname": "beszel",
+            "icon": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/beszel.svg"
+        },
+        {
+            "service": "http://local-ip-address:8123",
+            "external_link": "https://homeassistant.example.com",
+            "hostname": "homeassistant",
+            "icon": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/home-assistant.svg"
+        },
+        {
+            "service": "http://local-ip-address:2283",
+            "external_link": "https://photos.example.com",
+            "hostname": "immich photos",
+            "icon": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/immich.svg"
+        },
+        {
+            "service": "https://local-ip-address:443",
+            "external_link": "https://tailscale-ip-address:443",
+            "hostname": "adguard",
+            "icon": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/adguard-home.svg"
+        },
+        {
+            "service": "http://local-ip-address:8384",
+            "external_link": "http://tailscale-ip-address:8384",
+            "hostname": "syncthing",
+            "icon": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/syncthing.svg"
+        },
+        {
+            "service": "https://local-ip-address:51515",
+            "external_link": "https://tailscale-ip-address:51515",
+            "hostname": "kopia backup",
+            "icon": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/kopia.svg"
+        }
+    ]
+}
