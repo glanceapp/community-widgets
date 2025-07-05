@@ -7,7 +7,7 @@
   url: https://api.netbird.io/api/peers
   headers:
     Accept: application/json
-    Authorization: Token ${Netbird_API_KEY}
+    Authorization: Token ${NETBIRD_API_KEY}
   cache: 10m
   template: |
     {{ $enableOnlineIndicator := false }}
