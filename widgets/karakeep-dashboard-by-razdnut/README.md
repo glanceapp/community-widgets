@@ -82,3 +82,5 @@
 | `in-new-tab`    | Open links in a new browser tab                | `true` or `false`  |
 | `collapse-after`| Collapse list after this many items            | Integer (e.g. 5,10)|
 | `cache`         | Cache time                                     | 30m, 60m, 1d       |
+
+REMEMBER TO CHANGE HTTP OR HTTPS ACCORDING TO YOUR NEEDS.
