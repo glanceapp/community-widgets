@@ -15,7 +15,7 @@
   headers:
     Authorization: Bearer ${KARAKEEP_API_KEY}
     Accept: application/json
-  url: https://${KARAKEEP_URL}/api/v1/users/me/stats   # API endpoint for user stats
+  url: http://${KARAKEEP_URL}/api/v1/users/me/stats   # API endpoint for user stats
   template: |
     {{/* Display user stats fetched from the specified URL */}}
     <div class="flex justify-center gap-10 text-center" style="margin-bottom:1rem;">
@@ -35,7 +35,7 @@
     {{ $limit := .Options.IntOr "limit" 10 }}
     {{ $collapseAfter := .Options.IntOr "collapse-after" 6 }}
     {{ $newTab := .Options.BoolOr "in-new-tab" false }}
-    {{ $urlBookmarks := printf "https://%s/api/v1/bookmarks?limit=%d" "${KARAKEEP_URL}" $limit }}
+    {{ $urlBookmarks := printf "http://%s/api/v1/bookmarks?limit=%d" "${KARAKEEP_URL}" $limit }}
 
     {{ $respBookmarks := newRequest $urlBookmarks
       | withHeader "Authorization" (printf "Bearer %s" "${KARAKEEP_API_KEY}")
