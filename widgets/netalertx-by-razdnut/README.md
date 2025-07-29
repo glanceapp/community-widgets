@@ -2,6 +2,10 @@
 
 This is a custom API widget designed to display the status of devices monitored by NetAlertX.
 
+<p align="center">
+  <img src="preview.png" alt="preview" />
+</p>
+
 ## What It Does
 
 - Count the total number of connected devices.
@@ -22,7 +26,7 @@ This is a custom API widget designed to display the status of devices monitored 
 
  **Environment variables**
 
-   Make sure to define the following environment variables in your system or dashboard to allow the widget to access the API securely:
+   Make sure to define the following environment variables in your dashboard to allow the widget to access the API:
 
    - `NETALERTX_URL` — Base URL of your NetAlertX server - Example: 192.168.1.200:20211
    - `NETALERTX_API_TOKEN` — Your NetAlertX API bearer token. You can find it in the settings.
@@ -107,5 +111,7 @@ This is a custom API widget designed to display the status of devices monitored 
 - Log on to NetAlertX and confirm the NetAlertX API endpoint (`/php/server/query_json.php?file=table_devices.json`) is accessible and returns proper JSON. 
 
 - If icons do not show, the widget falls back to a globe emoji 🌐 by default. The problem is caused by the fact that the standard NetAlertX icons use Fontawesome which is not used by Glance.
+
+- If you want **visible icons**, you have to customize them directly from NetAlertX. You can follow the guide given here > https://github.com/jokob-sk/NetAlertX/blob/main/docs/ICONS.md
 
 ---
