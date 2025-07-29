@@ -1,4 +1,4 @@
-# NetAlertX Device Status Widget# NetAlertX Device Status Widget
+# NetAlertX Device Status Widget
 
 This is a custom API widget designed to display the status of devices monitored by NetAlertX.
 
