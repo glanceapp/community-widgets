@@ -1,4 +1,5 @@
 # Tautulli Widgets
+For feature requests or issues, contact @SleebySky on the project's Discord server.
 ## Recently Added
 
 ![](recently_added_small.png)
