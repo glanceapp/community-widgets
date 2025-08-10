@@ -250,138 +250,134 @@ For feature requests or issues, contact @SleebySky on the project's Discord serv
 
 ```yml
 - type: custom-api
-  title: Recently Added
+  title: Recently Watched
   cache: 5m
-  url: http://${TAUTULLI_IP}:${TAUTULLI_PORT}/api/v2?apikey=${TAUTULLI_API_KEY}&cmd=get_recently_added&count=10
-  options:
-    size: "small"
-    collapse: 5
+  url: http://${TAUTULLI_IP}:${TAUTULLI_PORT}/api/v2?apikey=${TAUTULLI_API_KEY}&cmd=get_home_stats&stat_id=last_watched
   template: |
     {{ $isLarge := eq (.Options.StringOr "size" "large") "large" }}
     {{ $serverID := "${SERVER_ID}" }}
-    {{ $uniqueID := "recently_added" }}
+    {{ $uniqueID := "recently_watched" }}
     {{ $collapse := .Options.IntOr "collapse" 5 }}
-    {{ $rows := .JSON.Array "response.data.recently_added" }}
 
     {{ if $isLarge }}
-      <!-- Large View -->
+      {{ $rows := .JSON.Array "response.data.rows" }}
       <div style="display: flex; align-items: center; gap: 0.5rem;">
-        <!-- Left Arrow -->
-        <div id="scrollLeft-{{ $uniqueID }}" onclick='document.getElementById("scrollContainer-{{ $uniqueID }}").scrollBy({ left: -150, behavior: "smooth" })'
+        <!-- Left scroll arrow -->
+        <div id="scrollLeft-{{ $uniqueID }}" title="Scroll left"
+          onclick='document.getElementById("scrollContainer-{{ $uniqueID }}").scrollBy({ left: -150, behavior: "smooth" })'
           style="flex: 0 0 2.5rem; height: 100px; display: flex; align-items: center; justify-content: center; background: var(--color-surface); cursor: pointer;">
           <span class="color-primary" style="font-size: 1.5rem; opacity: 0.7;">◀</span>
         </div>
 
-        <!-- Scroll Content -->
+        <!-- Scrollable content -->
         <div id="scrollContainer-{{ $uniqueID }}"
           style="display: flex; overflow-x: auto; gap: 1rem; padding-block: 0.5rem; scroll-behavior: smooth; scrollbar-width: none; -ms-overflow-style: none;">
           {{ range $i, $v := $rows }}
-            {{ $type := $v.String "media_type" }}
-            {{ $isEpisode := eq $type "episode" }}
-            {{ $isMovie := eq $type "movie" }}
-            {{ $isSeason := eq $type "season" }}
-            {{ $isShow := eq $type "show" }}
+            {{ $mediaType := $v.String "media_type" }}
+            {{ $isEpisode := eq $mediaType "episode" }}
+            {{ $titleHover := "" }}
+              {{ if $isEpisode }}
+                {{ $titleHover = $v.String "grandchild_title" }}
+              {{ else }}
+                {{ $titleHover = $v.String "title" }}
+              {{ end }}
             {{ $ratingKey := $v.String "rating_key" }}
-            {{ $lastWatch := printf "%d" ($v.Int "added_at") }}
+            {{ $thumb := $v.String "thumb" }}
 
-            {{ $img := "" }}
-            {{ $title := "" }}
-            {{ $sub := "" }}
-
-            {{ if $isEpisode }}
-              {{ $img = $v.String "grandparent_thumb" }}
-              {{ $title = $v.String "grandparent_title" }}
-              {{ $sub = printf "S%d · E%d" ($v.Int "parent_media_index") ($v.Int "media_index") }}
-            {{ else if $isMovie }}
-              {{ $img = $v.String "thumb" }}
-              {{ $title = $v.String "title" }}
-              {{ $sub = printf "%d" ($v.Int "year") }}
-            {{ else if $isSeason }}
-              {{ $img = $v.String "parent_thumb" }}
-              {{ $title = $v.String "parent_title" }}
-              {{ $sub = $v.String "title" }}
-            {{ else if $isShow }}
-              {{ $img = $v.String "thumb" }}
-              {{ $title = $v.String "title" }}
-              {{ $sub = printf "%d" ($v.Int "year") }}
-            {{ end }}
-
-            <a href="https://app.plex.tv/desktop/#!/server/{{ $serverID }}/details?key=%2Flibrary%2Fmetadata%2F{{ $ratingKey }}" target="_blank"
+            <a href="https://app.plex.tv/desktop/#!/server/{{ $serverID }}/details?key=%2Flibrary%2Fmetadata%2F{{ $ratingKey }}"
+              target="_blank"
               style="min-width: 160px; text-align: center; text-decoration: none;">
+              
               <div style="max-height: 225px; overflow: hidden; border-radius: 6px;">
-                <img src="http://${TAUTULLI_IP}:${TAUTULLI_PORT}/api/v2?apikey=${TAUTULLI_API_KEY}&cmd=pms_image_proxy&img={{ $img }}"
-                  alt="thumb" title="{{ $title }}"
+                <img src="http://${TAUTULLI_IP}:${TAUTULLI_PORT}/api/v2?apikey=${TAUTULLI_API_KEY}&cmd=pms_image_proxy&img={{ $thumb }}"
+                  alt="thumb"
+                  title="{{ $titleHover }}"
                   style="width: 100%; height: auto; object-fit: cover;" />
               </div>
-              <div class="color-highlight" style="margin-top: 1rem; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;" title="{{ $title }}">
-                {{ $title }}
-              </div>
-              <div class="color-highlight" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
-                {{ $sub }}
-              </div>
+
+              <!-- Media info -->
+              {{ if $isEpisode }}
+                <div class="color-highlight" title="{{ $v.String "grandparent_title" }}"
+                  style="margin-top: 1rem; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+                  {{ $v.String "grandparent_title" }}
+                </div>
+                <div class="color-highlight" title="{{ $titleHover }}"
+                  style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+                  S{{ $v.Int "parent_media_index" }}·E{{ $v.Int "media_index" }}
+                </div>
+              {{ else }}
+                <div class="color-highlight" title="{{ $v.String "title" }}"
+                  style="margin-top: 1rem; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+                  {{ $v.String "title" }}
+                </div>
+                <div class="color-highlight"
+                  style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+                  {{ $v.Int "year" }}
+                </div>
+              {{ end }}
+
               <div class="color-primary" style="font-size: 0.9em;">
-                <span {{ parseRelativeTime "unix" $lastWatch }}></span> ago
+                <span title="{{ $v.String "player" }}">{{ $v.String "friendly_name" }}</span><br>
+                <span {{ parseRelativeTime "unix" ($v.String "last_watch") }}></span> ago
               </div>
             </a>
           {{ end }}
         </div>
 
-        <!-- Right Arrow -->
-        <div id="scrollRight-{{ $uniqueID }}"
+        <!-- Right scroll arrow -->
+        <div id="scrollRight-{{ $uniqueID }}" title="Scroll right"
           onclick='document.getElementById("scrollContainer-{{ $uniqueID }}").scrollBy({ left: 150, behavior: "smooth" })'
           style="flex: 0 0 2.5rem; height: 100px; display: flex; align-items: center; justify-content: center; background: var(--color-surface); cursor: pointer;">
           <span class="color-primary" style="font-size: 1.5rem; opacity: 0.7;">▶</span>
         </div>
       </div>
+
     {{ else }}
-      <!-- Small View -->
+      <!-- Compact list version -->
       <ul class="list collapsible-container" data-collapse-after="{{ $collapse }}">
-        {{ range $i, $v := $rows }}
-          {{ $type := $v.String "media_type" }}
-          {{ $isEpisode := eq $type "episode" }}
-          {{ $isMovie := eq $type "movie" }}
-          {{ $isSeason := eq $type "season" }}
-          {{ $isShow := eq $type "show" }}
+        {{ range $i, $v := .JSON.Array "response.data.rows" }}
+          {{ $mediaType := $v.String "media_type" }}
+          {{ $isEpisode := eq $mediaType "episode" }}
+          {{ $titleHover := "" }}
+            {{ if $isEpisode }}
+              {{ $titleHover = $v.String "grandchild_title" }}
+            {{ else }}
+              {{ $titleHover = $v.String "title" }}
+            {{ end }}
           {{ $ratingKey := $v.String "rating_key" }}
-          {{ $lastWatch := printf "%d" ($v.Int "added_at") }}
-
-          {{ $img := "" }}
-          {{ $title := "" }}
-          {{ $sub := "" }}
-
-          {{ if $isEpisode }}
-            {{ $img = $v.String "grandparent_thumb" }}
-            {{ $title = $v.String "grandparent_title" }}
-            {{ $sub = printf "S%d · E%d" ($v.Int "parent_media_index") ($v.Int "media_index") }}
-          {{ else if $isMovie }}
-            {{ $img = $v.String "thumb" }}
-            {{ $title = $v.String "title" }}
-            {{ $sub = printf "%d" ($v.Int "year") }}
-          {{ else if $isSeason }}
-            {{ $img = $v.String "parent_thumb" }}
-            {{ $title = $v.String "parent_title" }}
-            {{ $sub = $v.String "title" }}
-          {{ else if $isShow }}
-            {{ $img = $v.String "thumb" }}
-            {{ $title = $v.String "title" }}
-            {{ $sub = printf "%d" ($v.Int "year") }}
-          {{ end }}
+          {{ $thumb := $v.String "thumb" }}
 
           <li class="flex items-center gap-2" style="padding: 0.5rem 0; border-bottom: 1px solid var(--color-border);">
-            <img src="http://${TAUTULLI_IP}:${TAUTULLI_PORT}/api/v2?apikey=${TAUTULLI_API_KEY}&cmd=pms_image_proxy&img={{ $img }}" 
-              alt="thumb" style="width: 50px; margin-right: 1.5rem;" class="rounded w-10 h-10 object-cover" />
+            <img src="http://${TAUTULLI_IP}:${TAUTULLI_PORT}/api/v2?apikey=${TAUTULLI_API_KEY}&cmd=pms_image_proxy&img={{ $thumb }}"
+              alt="thumb"
+              class="rounded w-10 h-10 object-cover"
+              style="width: 50px; margin-right: 1.5rem;" />
             <div class="min-width-0 grow">
-              <div class="color-highlight" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;" title="{{ $title }}">
-                {{ $title }}
-              </div>
-              <div class="color-highlight" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
-                {{ $sub }}
-              </div>
+              {{ if $isEpisode }}
+                <div class="color-highlight" title="{{ $v.String "grandparent_title" }}"
+                  style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+                  {{ $v.String "grandparent_title" }}
+                </div>
+                <div class="color-highlight" title="{{ $titleHover }}">
+                  S{{ $v.Int "parent_media_index" }}·E{{ $v.Int "media_index" }}
+                </div>
+              {{ else }}
+                <div class="color-highlight" title="{{ $v.String "title" }}"
+                  style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+                  {{ $v.String "title" }}
+                </div>
+                <div class="color-highlight"
+                  style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+                  {{ $v.Int "year" }}
+                </div>
+              {{ end }}
               <div class="color-primary">
-                <span {{ parseRelativeTime "unix" $lastWatch }}></span> ago
+                <span title="{{ $v.String "player" }}">{{ $v.String "friendly_name" }}</span> • 
+                <span {{ parseRelativeTime "unix" ($v.String "last_watch") }}></span> ago
               </div>
             </div>
-            <a href="https://app.plex.tv/desktop/#!/server/{{ $serverID }}/details?key=%2Flibrary%2Fmetadata%2F{{ $ratingKey }}" target="_blank"
+            <a href="https://app.plex.tv/desktop/#!/server/{{ $serverID }}/details?key=%2Flibrary%2Fmetadata%2F{{ $ratingKey }}"
+              target="_blank"
               class="color-primary">▶</a>
           </li>
         {{ end }}
