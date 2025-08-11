@@ -10,20 +10,26 @@
   template: |
     <ul class="list list-gap-14 collapsible-container" data-collapse-after="6">
     {{ range .JSON.Array "" }}
-      {{ if (.String "subject.url") }}
+      {{ $url := concat (.String "repository.html_url") "/actions" }}
+      {{ if ne (.String "subject.url") "" }}
         {{
           $notification := newRequest (.String "subject.url")
             | withHeader "Authorization" "Bearer ${GITHUB_TOKEN}"
             | getResponse
         }}
+        {{ if eq $notification.Response.StatusCode 200 }}
+          {{ $url = $notification.JSON.String "html_url" }}
+        {{ else }}
+          {{ $url = (.String "subject.url") | replaceMatches "repos\\/" "" | replaceMatches "api\\." "" | replaceAll "pulls" "pull" }}
+        {{ end }}
+      {{ end }}
       <li>
-        <a href="{{ $notification.JSON.String "html_url" }}" class="size-title-dynamic color-primary-if-not-visited" target="_blank" rel="noreferrer">{{ .String "subject.title" }}</a>
+        <a href="{{ $url }}" class="size-title-dynamic color-primary-if-not-visited" target="_blank" rel="noreferrer">{{ .String "subject.title" }}</a>
         <ul class="list-horizontal-text flex-nowrap">
           <li class="min-width-0" {{ .String "updated_at" | parseTime "rfc3339" | toRelativeTime }}></li>
-          <li class="min-width-0"><a target="_blank" href="https://github.com/{{ .String "repository.full_name" }}">{{ .String "repository.full_name" }}</a></li>
+          <li class="min-width-0"><a target="_blank" href="{{ $url }}">{{ .String "repository.full_name" }}</a></li>
         </ul>
       </li>
-      {{ end }}
     {{ end }}
     </ul>
 ```
