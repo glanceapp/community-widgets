@@ -41,6 +41,36 @@ Simple custom-api widget to display various of animals. Duck as an example.
   template: |
   <img src="{{ .JSON.String "image" }}"></img>
 ```
+**Random Rabbits**
+```
+- type: custom-api
+  height: 200px
+  title: Random Rabbit
+  cache: 2m
+  url: https://animals.maxz.dev/api/rabbit/random
+  template: |
+  <img src="{{ .JSON.String "image" }}"></img>
+```
+**Random Capybara's**
+```
+- type: custom-api
+  height: 200px
+  title: Random Capybara
+  cache: 2m
+  url: https://animals.maxz.dev/api/capybara/random
+  template: |
+  <img src="{{ .JSON.String "image" }}"></img>
+```
+**Random Hamsters**
+```
+- type: custom-api
+  height: 200px
+  title: Random Hamster
+  cache: 2m
+  url: https://animals.maxz.dev/api/hamster/random
+  template: |
+  <img src="{{ .JSON.String "image" }}"></img>
+```
 <img src="preview.png">
 <hr>
 Request more animals via discord: @blue.dev

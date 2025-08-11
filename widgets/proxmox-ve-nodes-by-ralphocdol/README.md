@@ -5,7 +5,7 @@
   title: PROXMOX-VE NODES
   title-url: https://${PROXMOXVE_URL}
   cache: 1m
-  url: https://${PROXMOXVE_URL}/api2/json/cluster/resources?type=node
+  url: https://${PROXMOXVE_URL}/api2/json/nodes
   allow-insecure: true
   headers:
     Accept: application/json

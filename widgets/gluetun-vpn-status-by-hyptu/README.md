@@ -96,5 +96,5 @@ Example response:
 {"public_ip":"79.115.174.19","region":"Zurich","country":"Switzerland","city":"Zürich","location":"47.3667,8.5500","organization":"AS209103 Proton AG","postal_code":"8000","timezone":"Europe/Zurich"}
 ```
 ## Environment variables
-- `GLUETUN_URL` - Your Gluetun URL
-- `GLUETUN_API_KEY` - The API key configured in the `config.toml` file in Gluetun. See https://github.com/qdm12/gluetun-wiki/blob/main/setup/advanced/control-server.md#authentication for more details.
+- `GLUETUN_URL` - Your Gluetun Control Server URL (default internal port is `:8000`), see https://github.com/qdm12/gluetun-wiki/blob/main/setup/advanced/control-server.md#setup for details on setting up Gluetun's Control server.
+- `GLUETUN_API_KEY` - The API key configured in the `config.toml` file in Gluetun. See https://github.com/qdm12/gluetun-wiki/blob/main/setup/advanced/control-server.md#authentication for details on setting up Gluetun's Control Server Authentication.
