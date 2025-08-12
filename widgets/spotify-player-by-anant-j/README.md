@@ -100,7 +100,7 @@ Choose from one of the following otpions:
               </div>
             {{ end }}
           {{ else if $isPrivateSession }}
-          <p style="margin-right:10px;">Private session is<br> active on {{ $deviceName }}</p> 
+          <p style="margin-right:10px;">Private session</p> 
           {{ else }}
           <p style="margin-right:10px;">Error</p>
           {{ end }}
