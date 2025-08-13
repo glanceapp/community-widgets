@@ -61,10 +61,10 @@ For feature requests or issues, contact @SleebySky on the project's Discord serv
           <div style="display: flex; align-items: center; gap: 6px;">
             <a href="http://${SCRUTINY_URL}/web/device/{{ $wwn }}" target="_blank"> 
               {{- if eq $status 0.0 }}
-                <span title = "Passed Health Checks" style="color: green; font-size: 18px; cursor: pointer;">●</span>
+                <span title = "Passed Health Checks" style="font-size: 18px; cursor: pointer;" class = "color-positive">●</span>
                 <span style="color: green;"></span>
               {{- else }}
-                <span title = "Failed Health Checks" style="color: red; font-size: 18px; cursor: pointer;">●</span>
+                <span title = "Failed Health Checks" style="font-size: 18px; cursor: pointer;" class="color-negative">●</span>
                 <span style="color: red;"></span>
               {{- end }}
             </a>
