@@ -55,6 +55,7 @@ Custom API widgets are much easier to setup and usually only require a copy-past
 * [Proxmox VE stats](widgets/proxmox-ve-stats-by-ralphocdol/README.md) by @ralphocdol - show the number of nodes, LXCs, VMs and Storage of your Proxmox Virtual Environment server
 * [Random Bible Verse](widgets/random-bible-verse-by-pypp/README.md) by @pypp - show a random bible verse
 * [Random fact](widgets/random-fact-by-svilenmarkov/README.md) by @svilenmarkov - show a random fact
+* [Scrutiny](widgets/scrutiny-by-SkyAllinott/README.md) by @SkyAllinott - Display drive S.M.A.R.T attributes from Scrutiny
 * [Should I Deploy Today](widgets/should-i-deploy-today/README.md) by @hohaithuy - remind to deploy today
 * [RetroAchievement](widgets/retroachievement-of-the-week-by-milktoastrat/README.md) by @milktoastrat - displays the current RetroAchievements.org Achievement of the week
 * [RomM Stats](widgets/romm-stats-by-milktoastrat/README.md) by @milktoastrat - show the stats of your [RomM](https://github.com/rommapp/romm) instance
