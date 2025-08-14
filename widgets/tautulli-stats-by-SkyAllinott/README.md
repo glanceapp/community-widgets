@@ -161,7 +161,7 @@ For feature requests or issues, contact @SleebySky on the project's Discord serv
 
 ```yml
 - type: custom-api
-  title: " "
+  title: Now Playing
   cache: 5m
   url: http://${TAUTULLI_IP}:${TAUTULLI_PORT}/api/v2?apikey=${TAUTULLI_API_KEY}&cmd=get_activity
   template: |
@@ -202,7 +202,7 @@ For feature requests or issues, contact @SleebySky on the project's Discord serv
               <img
                 src="http://${TAUTULLI_IP}:${TAUTULLI_PORT}/api/v2?apikey=${TAUTULLI_API_KEY}&cmd=pms_image_proxy&img={{ $thumb }}"
                 alt="thumb"
-                style="width: 50px; margin-right: 1.5rem;"
+                style="width: 50px; margin-right: 1.5rem; min-width: 50px;"
                 class="rounded object-cover"
               />
             </a>
