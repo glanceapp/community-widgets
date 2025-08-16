@@ -27,7 +27,7 @@ Displays server's custom icon, inferred IP, MOTD message and some statistics. Th
     <!-- USER SETTINGS SECTION -->
 
     <!-- Change true to false if you wish to not display the MOTD -->
-    {{ $displayMOTD := false }}
+    {{ $displayMOTD := true }}
 
     <!-- END OF USER SETTINGS SECTION -->
 
@@ -122,3 +122,4 @@ Displays server's custom icon, inferred IP, MOTD message and some statistics. Th
 ## 🍻 Cheers
 
 * Author of [minecraft-server-by-not-first](https://github.com/MartyX98/community-widgets/blob/main/widgets/minecraft-server-by-not-first/README.md) community widget from which I took a lot of inspiration.
+
