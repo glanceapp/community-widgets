@@ -8,6 +8,7 @@
 
 #### When server is running:
 ![Server running preview](./Preview_online.png)
+
 Displays server's custom icon, inferred IP, MOTD message and some statistics. The display of MOTD can be disabled in the beginning of the template in the user settings section, and the widget will look like this:
 
 ![Server running with disabled MOTD preview](./Preview_online_disabledMOTD.png)
@@ -119,4 +120,5 @@ Displays server's custom icon, inferred IP, MOTD message and some statistics. Th
 - `CRAFTY_API_TOKEN` - Your crafty API token. Requires `TERMINAL`, `CONFIG` and `PLAYERS` permissions.
 
 ## 🍻 Cheers
+
 * Author of [minecraft-server-by-not-first](https://github.com/MartyX98/community-widgets/blob/main/widgets/minecraft-server-by-not-first/README.md) community widget from which I took a lot of inspiration.
