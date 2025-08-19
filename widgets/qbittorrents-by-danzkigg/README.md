@@ -31,17 +31,17 @@ You must define QBITTORRENT_URL in your environment. **Important: Do not include
 
 If you don't want to use environment variables, you can just hard code your ip adress directly in the widget by replacing the ```${QBITTORRENT_URL}``` with your qBittorrent IP.
 
-### Detailed Widget
+### Detailed View
+Use ```type: detailed``` in ```options```to get the detailed view
 
 ![Detailed Widget Closed](./preview1.png) 
 ![Detailed Widget Closed](./preview2.png) 
 ![Detailed Widget no Active Downloads](./preview3.png) 
 
-Use ```type: detailed``` in ```options```to get the detailed view
+### Basic View
+Use ```type: basic``` in ```options```to get the basic view
 
 ![Simple Widget](./preview4.png) 
-
-Use ```type: basic``` in ```options```to get the basic view
 
 Once the prerequisites and setup are complete, copy the code below and add it to your ```glance.yml``` file.
 
