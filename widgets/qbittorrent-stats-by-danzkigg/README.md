@@ -8,7 +8,7 @@ There are 2 options for this widget:
 
 ### Prerequisites (Required)
 
-This widget requires you to bypass authentication for your Glances server within qBittorrent's settings. This allows Glance to securely access the API without needing to handle a complex login process or wrapper.
+This widget requires you to bypass authentication for your Glance dashboard within qBittorrent's settings. This allows Glance to securely access the API without needing to handle a complex login process or wrapper.
 
 1. Open the qBittorrent Web UI.
 
@@ -17,7 +17,7 @@ This widget requires you to bypass authentication for your Glances server within
 3. Under the Authentication section, check the box for "Bypass authentication for clients in whitelisted IP subnets".
 
 4. In the text box, add the IP address or subnet of where **Glance** is running. For example, if your entire local network is 192.168.1.x, you can add 192.168.1.0/24.
-     -  **Note for Docker Users:** If you are running Glances in a Docker container (not using network_mode: host), qBittorrent will see requests coming from Docker's internal IP address. You must whitelist your Docker network's subnet. You can find this by running docker network inspect bridge and looking for the "Subnet" value (e.g., 172.17.0.0/16).
+     -  **Note for Docker Users:** If you are running Glance in a Docker container (not using network_mode: host), qBittorrent will see requests coming from Docker's internal IP address. You must whitelist your Docker network's subnet. You can find this by running ```docker network inspect bridge``` and looking for the "Subnet" value (e.g., 172.17.0.0/16).
 
 5. Click Save.
 
