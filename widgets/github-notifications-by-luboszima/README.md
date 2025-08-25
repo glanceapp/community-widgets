@@ -24,7 +24,7 @@
         {{ end }}
       {{ end }}
       <li>
-        <a href="{{ $url }}" class="size-title-dynamic color-primary-if-not-visited" target="_blank" rel="noreferrer">{{ .String "subject.title" }}</a>
+        <a href="{{ $url }}" class="size-title-dynamic {{ if .Bool "unread" }}color-primary-if-not-visited{{ else }}negative-color{{ end }}" target="_blank" rel="noreferrer">{{ .String "subject.title" }}</a>
         <ul class="list-horizontal-text flex-nowrap">
           <li class="min-width-0" {{ .String "updated_at" | parseTime "rfc3339" | toRelativeTime }}></li>
           <li class="min-width-0"><a target="_blank" href="{{ $url }}">{{ .String "repository.full_name" }}</a></li>
