@@ -36,6 +36,7 @@ Custom API widgets are much easier to setup and usually only require a copy-past
 * [Hardcover Currently Reading](widgets/hardcover-currently-reading-by-akasiek/README.md) by @Akasiek - show the currently reading book from [Hardcover](https://hardcover.app/)
 * [Immich stats](widgets/immich-stats-by-svilenmarkov/README.md) by @svilenmarkov - show the number of photos, videos and usage of your Immich server
 * [Karakeep Dashboard](widgets/karakeep-dashboard-by-razdnut/README.md) by @razdnut - The widget returns statistics on the number of bookmarks and the number of tags and the most recently added bookmarks.
+* [Kavita Latest](widgets/kavita-latest-by-nedra1998/README.md) by @Nedra1998 - Show recently updated series and in progress series from your Kavita server.
 * [Last.FM Recent Tracks](widgets/lastfm-recent-tracks-by-akasiek/README.md) by @Akasiek - show recent tracks scrobbled by a Last.FM user
 * [LeetCode Daily Question](widgets/leetcode-daily-question-by-thuyhh/README.md) by @hohaithuy - show today leetcode questions with hashtag and difficult
 * [Mealie Today's Meal](widgets/mealie-todays-meal-by-wtoa/README.md) by @wtoa - show today's meal based off the meal planner from [Mealie](https://mealie.io/)
