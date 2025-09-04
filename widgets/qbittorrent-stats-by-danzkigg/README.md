@@ -16,8 +16,24 @@ This widget requires you to bypass authentication for your Glance dashboard with
 
 3. Under the Authentication section, check the box for "Bypass authentication for clients in whitelisted IP subnets".
 
-4. In the text box, add the IP address or subnet of where **Glance** is running. For example, if your entire local network is 192.168.1.x, you can add 192.168.1.0/24.
-     -  **Note for Docker Users:** If you are running Glance in a Docker container (not using network_mode: host), qBittorrent will see requests coming from Docker's internal IP address. You must whitelist your Docker network's subnet. You can find this by running ```docker network inspect bridge``` and looking for the "Subnet" value (e.g., 172.17.0.0/16).
+4. In the text box, add the IP address or subnet of where **Glance** is running. For example, if your entire local network is ```192.168.1.x```, you can add ```192.168.1.0/24```.
+     -  **Note for Docker Users:** If you are running Glance in a Docker container (not using ```network_mode: host```), qBittorrent will see requests coming from Docker's internal IP address. You must whitelist your Docker network's subnet. Here’s how to find the right one:
+
+          1. Find your Docker network name.
+          Open a terminal on your Docker host and run ```docker network ls```. This will list all available networks.
+          
+                - If you are using Docker Compose, the network name is often formatted as ```<your_stack_name>_default``` (e.g., ```media-stack_default```).
+          
+               - If you are not using Compose, you are likely on the default ```bridge``` network.
+     
+          2. Inspect the network to find its subnet.
+          Run ```docker network inspect <your_network_name>```, replacing ```<your_network_name>``` with the name you found in the previous step.
+          
+               - For a Compose stack named ```media-stack```: ```docker network inspect media-stack_default```
+               
+               - For the default network: ```docker network inspect bridge```: Look for the "Subnet" value in the output. It will look something like ```172.18.0.0/16```.
+              
+             > **Note:** A special thanks to user **wash** on discord for providing the fix for Docker Compose network setups.
 
 5. Click Save.
 
