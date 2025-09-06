@@ -263,3 +263,6 @@ Once the prerequisites and setup are complete, copy the code below and add it to
       </div>
     {{ end }}
 ```
+
+## Contributions
+[@5at0ri](https://github.com/5at0ri) - Upload stats suggestion and code contribution
