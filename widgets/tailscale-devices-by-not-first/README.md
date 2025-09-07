@@ -284,4 +284,4 @@ options:
 - `TZ`: Container timezone for correct timestamps (optional)
 
 ## Credits
-[5at0ri](https://github.com/5at0ri) - Incorporated oauth into the widget as an optionand made token manager (https://github.com/5at0ri/tailscale-token-manager)
+[5at0ri](https://github.com/5at0ri) - Incorporated oauth into the widget as an option and made the token manager (https://github.com/5at0ri/tailscale-token-manager)
