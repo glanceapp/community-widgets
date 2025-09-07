@@ -282,3 +282,6 @@ options:
 
 - `TAILSCALE_API_KEY`: Your Tailscale API key (required for `auth_mode: "api_key"`)
 - `TZ`: Container timezone for correct timestamps (optional)
+
+## Credits
+[5at0ri](https://github.com/5at0ri) - Incorporated oauth into the widget as an optionand made token manager (https://github.com/5at0ri/tailscale-token-manager)
