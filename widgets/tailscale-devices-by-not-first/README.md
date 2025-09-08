@@ -15,6 +15,7 @@ The standard implementation using Tailscale API keys. Simple to set up but requi
 
 2. **Configure Widget:**
    - Set the `TAILSCALE_API_KEY` environment variable to your generated key
+   - `TZ`: For correct times, the widget uses the container's timezone. If not already supplied, you can use this variable to provide your timezone.
 
 ### Configuration
 
