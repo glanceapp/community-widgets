@@ -4,7 +4,7 @@ A widget for Glance that displays all devices in your Tailscale tailnet, showing
 
 ## Option 1: API Key (Recommended)
 
-The standard implementation using Tailscale API keys. Simple to set up but requires manual key renewal every 90 days maximum.
+The standard implementation using Tailscale API keys. Simple to set up but requires manual api key renewal every 90 days maximum.
 
 ### Setup
 
@@ -15,7 +15,6 @@ The standard implementation using Tailscale API keys. Simple to set up but requi
 
 2. **Configure Widget:**
    - Set the `TAILSCALE_API_KEY` environment variable to your generated key
-   - `TZ`: For correct times, the widget uses the container's timezone. If not already supplied, you can use this variable to provide your timezone.
 
 ### Configuration
 
@@ -281,9 +280,3 @@ An alternative implementation that uses automatically refreshing OAuth tokens, e
       {{ end }}
     </ul>
 ```
-
-## Notes
-
-- **API Key Mode:** Simpler setup, requires manual renewal every 90 days
-- **OAuth Proxy Mode:** Automatic token refresh, requires additional container setup
-- Both implementations provide identical device information and functionality
