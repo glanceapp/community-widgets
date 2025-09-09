@@ -1,3 +1,7 @@
+# Weather Seven Day
+
+A Glance custom‑api widget that pulls daily weather conditions, high temperature, and low temperature for seven days from Open-Meteo. Just supply an Open-Meteo location (e.g. "New York, United States") as environment variable `WEATHER_LOCATION`. The daily high and low temperature is displayed as a range and colored with a customizable four-color gradient. By default, the gradient is colored using predefined Glance CSS colors, but this is customizable in options. For example, see the second preview image below and an example configuration under the Options header below the main yaml chunk.  
+
 ![](preview.png)
 
 ```yaml
@@ -224,11 +228,11 @@
 
 ## Environment variables
 
-- `WEATHER_LOCATION` - An OpenMeteo-recognized location, such as "London, United Kingdom" or "New York, United States", using the same syntax as the Glance hourly weather widget in the main repo.  
+- `WEATHER_LOCATION` - An Open-Meteo-recognized location, such as "London, United Kingdom" or "New York, United States", using the same syntax as the Glance hourly weather widget in the main repo.  
 
 ## Options
 
-- `location` OpenMeteo-recognized location, set by default using the `WEATHER_LOCATION` environment variable.  
+- `location` Open-Meteo-recognized location, set by default using the `WEATHER_LOCATION` environment variable.  
 - `temp_unit` celsius or fahrenheit. default celsius.
 - `weekend_color` background color for square div containing Saturday or Sunday day of the week label. default `var(--color-separator)`.  
 - `overlay_color` color overlay on top of the daily temperature range gradient to soften the colors. default to `var(--color-background)` with 50% opacity.  
