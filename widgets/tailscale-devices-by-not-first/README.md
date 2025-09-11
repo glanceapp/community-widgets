@@ -1,5 +1,7 @@
 # Tailscale Devices Widget
 
+![](preview.png)
+
 A widget for Glance that displays all devices in your Tailscale tailnet, showing their connection status, update availability, and IP addresses.
 
 ## Option 1: API Key (Recommended)
@@ -15,8 +17,6 @@ The standard implementation using Tailscale API keys. Simple to set up but requi
 
 2. **Configure Widget:**
    - Set the `TAILSCALE_API_KEY` environment variable to your generated key
-
-### Configuration
 
 ```yaml
 - type: custom-api
@@ -156,8 +156,6 @@ An alternative implementation that uses automatically refreshing OAuth tokens, e
 2. **Configure Widget:**
    - Point the `url` to your OAuth proxy container endpoint
    - The proxy handles all authentication automatically
-
-### Configuration
 
 ```yaml
 - type: custom-api
