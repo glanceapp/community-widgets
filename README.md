@@ -38,6 +38,7 @@ Custom API widgets are much easier to setup and usually only require a copy-past
 * [Karakeep Dashboard](widgets/karakeep-dashboard-by-razdnut/README.md) by @razdnut - The widget returns statistics on the number of bookmarks and the number of tags and the most recently added bookmarks.
 * [Last.FM Recent Tracks](widgets/lastfm-recent-tracks-by-akasiek/README.md) by @Akasiek - show recent tracks scrobbled by a Last.FM user
 * [LeetCode Daily Question](widgets/leetcode-daily-question-by-thuyhh/README.md) by @hohaithuy - show today leetcode questions with hashtag and difficult
+* [London Tube Status](widgets/london-tube-status-by-tomdaly/README.md) by @tomdaly - show live service status of London tube, overground and Elizabeth lines via the TfL API
 * [Mealie Today's Meal](widgets/mealie-todays-meal-by-wtoa/README.md) by @wtoa - show today's meal based off the meal planner from [Mealie](https://mealie.io/)
 * [Minecraft server](widgets/minecraft-server-by-not-first/README.md) by @not-first - show online status, icon, version and player count of a minecraft server
 * [Mullvad VPN status](widgets/mullvad-vpn-status-by-delmonteaj/README.md) by @DelMonteAJ - show VPN connection status, IP, and location
