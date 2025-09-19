@@ -88,7 +88,7 @@
       {{ if gt (len ($home.Array "records")) 0 }}{{ $homeRec = (index ($home.Array "records") 0).String "summary" }}{{ end }}
       <li style="display:flex;align-items:center;white-space:nowrap;gap:12px;padding:6px 0;border-bottom:1px solid var(--glance-divider);cursor:default" {{ if ne $state "STATUS_SCHEDULED" }}title="{{ $away.String "team.abbreviation" }} Box:{{ range $j,$ls := $away.Array "linescores" }}{{ if eq $j 0 }} Q1: {{ else if eq $j 1 }} Q2: {{ else if eq $j 2 }} Q3: {{ else if eq $j 3 }} Q4: {{ else }} OT: {{ end }}{{ $ls.String "value" }}{{ end }}&#10;{{ $home.String "team.abbreviation" }} Box:{{ range $j,$ls := $home.Array "linescores" }}{{ if eq $j 0 }} Q1: {{ else if eq $j 1 }} Q2: {{ else if eq $j 2 }} Q3: {{ else if eq $j 3 }} Q4: {{ else }} OT: {{ end }}{{ $ls.String "value" }}{{ end }}"{{ end }}>
         <span style="display:flex;align-items:center;width:90px;">
-          <img src="{{ $away.String "team.logo" }}" alt="{{ $away.String "team.abbreviation" }}" style="width:24px;height:24px;margin-right:4px;"/>
+          <img src="{{ if $away.String "team.logo" }}{{ $away.String "team.logo" }}{{ else }}https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png{{ end }}" alt="{{ $away.String "team.abbreviation" }}" style="width:24px;height:24px;margin-right:4px;"/>
           <span style="display:flex;flex-direction:column;margin-right:0;">
             <span style="font-weight:bold;">{{ $away.String "team.abbreviation" }}</span>
             {{ if $awayRec }}<span style="font-size:0.7em;color:var(--glance-muted-text)">({{ $awayRec }})</span>{{ end }}
@@ -112,7 +112,7 @@
           {{ end }}
         </span>
         <span style="display:flex;align-items:center;width:90px;">
-          <img src="{{ $home.String "team.logo" }}" alt="{{ $home.String "team.abbreviation" }}" style="width:24px;height:24px;margin-right:4px;"/>
+          <img src="{{ if $home.String "team.logo" }}{{ $home.String "team.logo" }}{{ else }}https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png{{ end }}" alt="{{ $home.String "team.abbreviation" }}" style="width:24px;height:24px;margin-right:4px;"/>
           <span style="display:flex;flex-direction:column;margin-right:0;">
             <span style="font-weight:bold;">{{ $home.String "team.abbreviation" }}</span>
             {{ if $homeRec }}<span style="font-size:0.7em;color:var(--glance-muted-text)">({{ $homeRec }})</span>{{ end }}
