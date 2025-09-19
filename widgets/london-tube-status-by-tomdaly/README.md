@@ -1,4 +1,8 @@
-<img src="preview.png" height="1000px" />
+# London Tube Status widget
+
+| Dark Theme (Default)                           | Light Theme (Catppuccin Latte)                  |
+|------------------------------------------------|-------------------------------------------------|
+| <img src="preview-dark.png" height="1000px" /> | <img src="preview-light.png" height="1000px" /> |
 
 ```yaml
   - type: custom-api
