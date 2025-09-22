@@ -3,9 +3,10 @@
 ## Required environment variables
 
 `UNIFI_CONSOLE_IP` - IP Address of your Unifi gateway
+
 `UNIFI_API_KEY` - Unifi local API key (Site Settings -> Control Plane -> Integrations)
 
-Alternatively you can hard-code into the url: and X-API-KEY: fields.
+Alternatively you can hard-code into the `url:` and `X-API-KEY:` fields.
 
 ## Small
 
