@@ -53,7 +53,8 @@ Custom API widgets are much easier to setup and usually only require a copy-past
 * [Proxmox VE Nodes](widgets/proxmox-ve-nodes-by-ralphocdol/README.md) by @ralphocdol - show the Node's CPU, RAM and Disk usage of your Proxmox Virtual Environment servers
 * [MLB Scores](widgets/mlb-scores-tracker-by-ShmoobiJones/README.md) by @ShmoobiJones - Lists all MLB scores daily, with baserunner info and inning scores.
 * [PeaNut UPS Stats](widgets/peanut-ups-status-by-razdnut/README.md) by @razdnut - Returns statistics from PeaNut to Monitor UPS
-* [Proxmox VE stats](widgets/proxmox-ve-stats-by-ralphocdol/README.md) by @ralphocdol - show the number of nodes, LXCs, VMs and Storage of your Proxmox Virtual Environment server
+* [Proxmox VE Table Stats](widgets/proxmox-detailed-resources-by-lfvelosoh/README.md) by @lfvelosoh - show a table with CPU, RAM and Disk usage of your Proxmox VE server
+* [Proxmox VE Stats](widgets/proxmox-ve-stats-by-ralphocdol/README.md) by @ralphocdol - show the number of nodes, LXCs, VMs and Storage of your Proxmox Virtual Environment server
 * [Random Bible Verse](widgets/random-bible-verse-by-pypp/README.md) by @pypp - show a random bible verse
 * [Random fact](widgets/random-fact-by-svilenmarkov/README.md) by @svilenmarkov - show a random fact
 * [Should I Deploy Today](widgets/should-i-deploy-today/README.md) by @hohaithuy - remind to deploy today
