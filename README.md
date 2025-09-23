@@ -36,6 +36,7 @@ Custom API widgets are much easier to setup and usually only require a copy-past
 * [Google Calendar List](widgets/google-calendar-list-by-anant-j/README.md) by @anant-j - List Google Calendar upcoming events
 * [Hardcover Currently Reading](widgets/hardcover-currently-reading-by-akasiek/README.md) by @Akasiek - show the currently reading book from [Hardcover](https://hardcover.app/)
 * [Immich stats](widgets/immich-stats-by-svilenmarkov/README.md) by @svilenmarkov - show the number of photos, videos and usage of your Immich server
+* [Jellyfin Latest/Next Up](./widgets/jellyfin-latest-by-nedra1998/README.md) by @Nedra1998 - Display the newest additions to a Jellyfin library, and next up to watch for a given user
 * [Karakeep Dashboard](widgets/karakeep-dashboard-by-razdnut/README.md) by @razdnut - The widget returns statistics on the number of bookmarks and the number of tags and the most recently added bookmarks.
 * [Jellyfin Stats](widgets/jellyfin-emby-stats-by-lfvelosoh/README.md) by @lfvelosoh - show the number of movies, shows, episodes and songs in your Jellyfin or Emby server
 * [Last.FM Recent Tracks](widgets/lastfm-recent-tracks-by-akasiek/README.md) by @Akasiek - show recent tracks scrobbled by a Last.FM user
