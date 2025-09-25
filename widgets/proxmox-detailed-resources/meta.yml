@@ -1,0 +1,3 @@
+title: Proxmox VE Table Stats
+description: show a table with CPU, RAM and Disk usage of your Proxmox VE server
+author: lfvelosoh

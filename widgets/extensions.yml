@@ -1,0 +1,34 @@
+- title: Glance F1
+  url: https://github.com/SkyAllinott/glance-F1
+  description: Adds user customization to widget by @abaza738 like local timezones, a track map, and more.
+  author: SkyAllinott
+
+- title: GitHub Graph
+  url: https://github.com/haondt/glance-github-graph
+  description: Show your GitHub contribution graph.
+  author: haondt
+
+- title: iCal (ICS) Calendar List
+  url: https://github.com/AWildLeon/Glance-iCal-Events
+  description: List a ICS File's upcoming events (Like Google Calendar List).
+  author: AWildLeon
+
+- title: linktiles
+  url: https://github.com/haondt/linktiles/
+  description: Display your linkding bookmarks in a configurable mosaic.
+  author: haondt
+
+- title: qBittorrent Statistic
+  url: https://github.com/Panonim/qbwrapper
+  description: Display file statistics as they are being downloaded.
+  author: panonim
+
+- title: Restic snapshot
+  url: https://github.com/not-first/restic-glance-extension
+  description: Show the most recent snapshot and storage stats of a restic repo.
+  author: not-first
+
+- title: Kubernetes nodes and apps
+  url: https://github.com/lukasdietrich/glance-k8s
+  description: List Kubernetes nodes and applications. Also including helm charts.
+  author: lukasdietrich

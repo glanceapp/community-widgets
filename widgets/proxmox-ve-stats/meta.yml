@@ -1,0 +1,3 @@
+title: Proxmox VE Stats
+description: show the number of nodes, LXCs, VMs and Storage of your Proxmox Virtual Environment server
+author: ralphocdol

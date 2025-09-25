@@ -1,0 +1,49 @@
+name: Update Registry
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'widgets/**'
+      - 'registry/**'
+      - '.github/workflows/update-registry.yml'
+
+concurrency:
+  group: update-registry
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  update-registry:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Set up Go
+      uses: actions/setup-go@v5
+      with:
+        go-version: '1.24'
+        cache-dependency-path: registry/go.sum
+
+    - name: Run registry update
+      run: |
+        cd registry
+        go run .
+
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "GitHub Action"
+        git add README.md registry/widgets.json
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Update registry"
+          git push
+        fi
