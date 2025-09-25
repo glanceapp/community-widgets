@@ -83,7 +83,7 @@ Custom API widgets are much easier to setup and usually only require a copy-past
 * [Steam User](widgets/steam-user-by-lunnosmp4/README.md) by @lunnosmp4 - show information about a Steam user
 * [Syncthing](widgets/syncthing-by-JohnCannon87/README.md) by @JohnCannon97 - Show Syncthing folder status
 * [Tailscale devices](widgets/tailscale-devices-by-not-first/README.md) by @not-first - show all devices inside to a Tailscale tailnet along with their connection status, update availability and IP
-* [Tautulli Stats](widgets/tautulli-stats-by-SkyAllinott/README.md) by @SkyAllinott - Show various home stats from Tautulli such as recently watched, top movies/shows, etc. 
+* [Tautulli Stats](widgets/tautulli-stats-by-SkyAllinott/README.md) by @SkyAllinott - Show various home stats from Tautulli such as recently watched, top movies/shows, etc.
 * [Technitium DNS Stats](widgets/technitium-dns-stats-by-eribbey/README.md) by @eribbey - show stats from Technitium DNS Server
 * [Time Bar](widgets/time-bar-by-anant-j/README.md) by @anant-j - show percentage of day/month/year elapsed
 * [Trakt](widgets/trakt-by-rxbrad/README.md) by @RxBrad - shows your last-watched movies & TV shows on Trakt
@@ -98,6 +98,7 @@ Custom API widgets are much easier to setup and usually only require a copy-past
 * [Weather Seven Day](widgets/weather-seven-day-by-brandonsie/README.md) by @brandonsie - Shows daily weather conditions and high and low temperature from Open-Meteo for a specified location.
 * [What's Up Docker Monitor](widgets/wud-monitor-by-panonim/README.md) by @panonim - A customizable widget for displaying the wud data about containers.
 * [YouTube Embedded Player](widgets/youtube-embedded-player-by-ralphocdol/README.md) by @ralphocdol - A grid-card layout of YouTube List with Embed player pulled from either RSS-Bridge or FreshRSS
+* [qBittorrent Stats](widgets/qbittorrent-stats-by-danzkigg/README.md) by @danzkigg - show qBittorrent downloads
 * [Home Assistant Sensor Stats](widgets/homeassistant-sensor-stats-by-awildleon/README.md) by @AWildLeon - Display's configured Sensors values from Home Assistant
 
 ## Extension Widgets
