@@ -4,836 +4,836 @@
     "description": "Statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API.",
     "author": "0099FF",
     "directory": "afl-widgets",
-    "readme_hash": "5394961aac4d519f046c58d8e5cb2de632eb0915",
-    "time_added": "2025-09-25T04:31:53.884638316Z",
-    "time_updated": "2025-09-25T04:31:53.884638416Z"
+    "readme_hash": "4ba38d710aa44facb845a5aa7a8da5beb4d7d0ba",
+    "time_added": "2025-06-01T22:57:06.8652Z",
+    "time_updated": "2025-09-25T04:49:16.6396587Z"
   },
   {
     "title": "Air Quality",
     "description": "Displays information about air quality using data from the World Air Quality Index (WAQI) API.",
     "author": "painfultruths",
     "directory": "air-quality",
-    "readme_hash": "1c0376cfa8c3d0e4ca5db08bf851c2bf55c0ba01",
-    "time_added": "2025-09-25T04:31:53.88467907Z",
-    "time_updated": "2025-09-25T04:31:53.88467916Z"
+    "readme_hash": "6beb566744e90ce936ff3a3ccbfaf2da6d68f503",
+    "time_added": "2025-06-15T18:14:24.144Z",
+    "time_updated": "2025-09-25T04:49:16.639823Z"
   },
   {
     "title": "Animals Display",
     "description": "Display random images of animals such as cats or dogs.",
     "author": "panonim",
     "directory": "animals-display",
-    "readme_hash": "65e4fb3947d325a1bd11de7ff456b413d48acc1e",
-    "time_added": "2025-09-25T04:31:53.884713002Z",
-    "time_updated": "2025-09-25T04:31:53.884713082Z"
+    "readme_hash": "9ca8582a3e21d5a9428d96f3f5ab7cd29f4c0df7",
+    "time_added": "2025-04-02T20:05:39.1672Z",
+    "time_updated": "2025-09-25T04:49:16.639935Z"
   },
   {
     "title": "Arr Releases",
     "description": "Show upcoming, recently downloaded, or missing items from Sonarr, Radarr, or Lidarr",
     "author": "erkston",
     "directory": "arr-releases",
-    "readme_hash": "4719bbd0470683ff3bfe2b87d53b01b2810da6e7",
-    "time_added": "2025-09-25T04:31:53.884770386Z",
-    "time_updated": "2025-09-25T04:31:53.884770456Z"
+    "readme_hash": "0eae981e282f5c668687490d66d9df7068ca17fd",
+    "time_added": "2025-05-18T17:42:55.8334Z",
+    "time_updated": "2025-09-25T04:49:16.6400734Z"
   },
   {
     "title": "Astronomy Picture of the Day",
     "description": "Shows Astronomy Picture of the Day from NASA.",
     "author": " Saisamarth21",
     "directory": "astronomy-picture-of-the-day",
-    "readme_hash": "5294b074322babad721d308f5a579cf60c1431c2",
-    "time_added": "2025-09-25T04:31:53.884807713Z",
-    "time_updated": "2025-09-25T04:31:53.884807783Z"
+    "readme_hash": "d885be68cd1aaebad0e4a38320733ac8b364f7cc",
+    "time_added": "2025-06-17T20:00:40.7159Z",
+    "time_updated": "2025-09-25T04:49:16.6400734Z"
   },
   {
     "title": "AudioBookshelf Personalized Shelfs",
     "description": "Shows the personalized shelfs from the Audiobookshelf dashboard",
     "author": "Nedra1998",
     "directory": "audiobookshelf-personalized",
-    "readme_hash": "bf334c71bc467686f101d9be5e2dc34eeaff98fb",
-    "time_added": "2025-09-25T04:31:53.884907995Z",
-    "time_updated": "2025-09-25T04:31:53.884908065Z"
+    "readme_hash": "0730f4cd831c269dfd80ff65e3dd0341f95d67d8",
+    "time_added": "2025-09-25T03:33:36.4551Z",
+    "time_updated": "2025-09-25T04:49:16.6405834Z"
   },
   {
     "title": "Audiobookshelf stats",
     "description": "Show the number of books and podcasts in your Audiobookshelf server, along with their total duration.",
     "author": "ferdyverse",
     "directory": "audiobookshelf",
-    "readme_hash": "cd10346273a97c0db23577a68a1f9896e91a7f74",
-    "time_added": "2025-09-25T04:31:53.884862442Z",
-    "time_updated": "2025-09-25T04:31:53.884862502Z"
+    "readme_hash": "50539ffce8ba08e4b94904fbf0d5179cbb20fa55",
+    "time_added": "2025-05-29T21:06:19.841Z",
+    "time_updated": "2025-09-25T04:49:16.6400734Z"
   },
   {
     "title": "AzireVPN Connection Status",
     "description": "Display you'r connection status to AzireVPN.",
     "author": "mattiasghodsian",
     "directory": "azirevpn-connection-status",
-    "readme_hash": "b641c46ad06702d76a78a62018e08c81ee9f1875",
-    "time_added": "2025-09-25T04:31:53.884956242Z",
-    "time_updated": "2025-09-25T04:31:53.884956323Z"
+    "readme_hash": "5fa881ab36d1b60e5fe7e789fbc894e82c351fa9",
+    "time_added": "2025-09-14T12:07:13.9464Z",
+    "time_updated": "2025-09-25T04:49:16.6405834Z"
   },
   {
     "title": "Beszel Metrics",
     "description": "Simple widget to show system metrics from Beszel.",
     "author": "panonim",
     "directory": "beszel-metrics",
-    "readme_hash": "7944c33dca09279bf2be6a68df2d3acefa312486",
-    "time_added": "2025-09-25T04:31:53.88499346Z",
-    "time_updated": "2025-09-25T04:31:53.88499354Z"
+    "readme_hash": "31b23ac38bf7fc6c2a469409135cb65cca3311af",
+    "time_added": "2025-07-10T21:23:17.661Z",
+    "time_updated": "2025-09-25T04:49:16.6405834Z"
   },
   {
     "title": "Calibre-Web Stats",
     "description": "Display a summary of books from your Calibre-Web server.",
     "author": "rvelasq",
     "directory": "calibre-web-stats",
-    "readme_hash": "8b504458b820c2dcea195dacff9b7cc727d19615",
-    "time_added": "2025-09-25T04:31:53.885027011Z",
-    "time_updated": "2025-09-25T04:31:53.885027081Z"
+    "readme_hash": "66f2230a7cb330233cd76fc80e46f4d384b34cc8",
+    "time_added": "2025-06-11T16:58:30.9963Z",
+    "time_updated": "2025-09-25T04:49:16.6410893Z"
   },
   {
     "title": "Cats As A Service Photos",
     "description": "show a grid of cat photos from the Cat as a Service [API](https://cataas.com/)",
     "author": "gugugiyu",
     "directory": "cats-as-a-service-photos",
-    "readme_hash": "ad448382ac9f7abe49351527b1f941612fc3c0c3",
-    "time_added": "2025-09-25T04:31:53.885060862Z",
-    "time_updated": "2025-09-25T04:31:53.885060922Z"
+    "readme_hash": "ec92e55eece6b1d279e35d636d14ce2c3a0d014d",
+    "time_added": "2025-03-10T21:34:15.3683Z",
+    "time_updated": "2025-09-25T04:49:16.6411106Z"
   },
   {
     "title": "Chess.com Daily Puzzle",
     "description": "Display daily chess puzzle from chess.com",
     "author": "panonim",
     "directory": "chess-puzzle",
-    "readme_hash": "7a088f7fe04c5c3abf51b7c7a2f47a14bcb57916",
-    "time_added": "2025-09-25T04:31:53.885096717Z",
-    "time_updated": "2025-09-25T04:31:53.885096777Z"
+    "readme_hash": "cea3a42f43ea371981b6b9e03ececb7eac6e67fa",
+    "time_added": "2025-06-03T20:26:54.1452Z",
+    "time_updated": "2025-09-25T04:49:16.6411106Z"
   },
   {
     "title": "Cloudflare Tunnels",
     "description": "External and Local Cloudflare Tunnels links",
     "author": "drshajul",
     "directory": "cloudflared-tunnels",
-    "readme_hash": "18acdca35966cf7802295a194fd887e13030c392",
-    "time_added": "2025-09-25T04:31:53.885140777Z",
-    "time_updated": "2025-09-25T04:31:53.885140837Z"
+    "readme_hash": "d628bf012a31753f03b01823fcda779b5784de26",
+    "time_added": "2025-06-20T11:51:39.5685Z",
+    "time_updated": "2025-09-25T04:49:16.6411106Z"
   },
   {
     "title": "Crafty Minecraft Server Stats",
     "description": "show the status of Minecraft server managed by Crafty Controller",
     "author": "MartyX98",
     "directory": "crafty-controller-minecraft-server",
-    "readme_hash": "2e3854d9fc413e2845ed474f41185322953cd8ab",
-    "time_added": "2025-09-25T04:31:53.885178645Z",
-    "time_updated": "2025-09-25T04:31:53.885178705Z"
+    "readme_hash": "d8d467e3d1c435c37329774df9d31a2ce3bca264",
+    "time_added": "2025-08-16T18:10:24.2213Z",
+    "time_updated": "2025-09-25T04:49:16.6416392Z"
   },
   {
     "title": "Cryptopanic News",
     "description": "A real-time cryptocurrency news widget that displays filtered news from CryptoPanic.com with configurable filters for news type, regions, and currencies.",
     "author": "herculosh",
     "directory": "cryptopanic-news",
-    "readme_hash": "40e94e0b35676a558449849c6bda0b22d56cd24a",
-    "time_added": "2025-09-25T04:31:53.88521472Z",
-    "time_updated": "2025-09-25T04:31:53.885214781Z"
+    "readme_hash": "5c8a40a96585e118f1bf37c719d1403d451fc52b",
+    "time_added": "2025-04-15T10:30:37.9338Z",
+    "time_updated": "2025-09-25T04:49:16.6416392Z"
   },
   {
     "title": "Cup Updates",
     "description": "Displays information about containers needing an update from Cup.",
     "author": "panonim",
     "directory": "cup-updates",
-    "readme_hash": "be97a506577556088e620c7f2c86981bda9072b8",
-    "time_added": "2025-09-25T04:31:53.885263429Z",
-    "time_updated": "2025-09-25T04:31:53.885263489Z"
+    "readme_hash": "724ee3586448945ff03ac4c3c8ff07b68af27a46",
+    "time_added": "2025-05-02T12:28:49.3537Z",
+    "time_updated": "2025-09-25T04:49:16.6416392Z"
   },
   {
     "title": "Epic Games Free Games",
     "description": "Display currently free games from the Epic Games Store with promotional images and availability periods.",
     "author": "marocainperdu",
     "directory": "epic-free-widget",
-    "readme_hash": "fc22e58fe97f1c112ae50d00d78862f280f5c846",
-    "time_added": "2025-09-25T04:31:53.885301177Z",
-    "time_updated": "2025-09-25T04:31:53.885301237Z"
+    "readme_hash": "43427bcf30ef77d40708ac7d85280cc75fd1e702",
+    "time_added": "2025-07-18T16:28:32.0259Z",
+    "time_updated": "2025-09-25T04:49:16.6421512Z"
   },
   {
     "title": "Football Fixtures",
     "description": "show the last match and the next match of your favourite football team using football-data api",
     "author": "cristiandiiorio",
     "directory": "football-fixtures",
-    "readme_hash": "43e27e946ee494ae54af05668c3f3e7332ad467d",
-    "time_added": "2025-09-25T04:31:53.885390429Z",
-    "time_updated": "2025-09-25T04:31:53.885390509Z"
+    "readme_hash": "c01c1e18ef70f2ed2d238ee63e3fa39f4c46b2a8",
+    "time_added": "2025-04-26T11:55:16.706Z",
+    "time_updated": "2025-09-25T04:49:16.6421512Z"
   },
   {
     "title": "Forgejo repos",
     "description": "show data about latest repos from forgejo instance.",
     "author": "dodecube",
     "directory": "forgejo-repos",
-    "readme_hash": "a3a03bbd036b369011f3183e130f19577a6183e3",
-    "time_added": "2025-09-25T04:31:53.885427316Z",
-    "time_updated": "2025-09-25T04:31:53.885427376Z"
+    "readme_hash": "4b61674ddb5dae0fd306feaed841928ab2513406",
+    "time_added": "2025-07-07T01:00:43.7978Z",
+    "time_updated": "2025-09-25T04:49:16.6421512Z"
   },
   {
     "title": "Formula 1 Widgets",
     "description": "show different stats from the current Formula 1 season from [F1 API](https://f1api.dev)",
     "author": "abaza738",
     "directory": "formula1-widgets",
-    "readme_hash": "24b0e6fc1a405b23d7fd541682a60678794cb78b",
-    "time_added": "2025-09-25T04:31:53.885467729Z",
-    "time_updated": "2025-09-25T04:31:53.885467809Z"
+    "readme_hash": "d284819440ec1f717c5d7e1100815af45805749a",
+    "time_added": "2025-04-02T03:34:04.3331Z",
+    "time_updated": "2025-09-25T04:49:16.6421512Z"
   },
   {
     "title": "Frigate stats",
     "description": "show alerts and detections from the last 24 hours from your Frigate service [Frigate](https://frigate.video/)",
     "author": "Pimer0",
     "directory": "frigate-stats",
-    "readme_hash": "6be54ce61f50d6833d33b52c386203af9f213547",
-    "time_added": "2025-09-25T04:31:53.885505518Z",
-    "time_updated": "2025-09-25T04:31:53.885505598Z"
+    "readme_hash": "1adf569c09b97b3069eb742e15a2c4e04a91e162",
+    "time_added": "2025-04-20T22:17:23.1547Z",
+    "time_updated": "2025-09-25T04:49:16.6426613Z"
   },
   {
     "title": "Ghostfolio stats",
     "description": "show the status of your investments with today's results, YTD and totals",
     "author": "ziritione85",
     "directory": "ghostfolio-stats",
-    "readme_hash": "9cb75e3eb6091ebaad762755924db18ebebc39dc",
-    "time_added": "2025-09-25T04:31:53.885538898Z",
-    "time_updated": "2025-09-25T04:31:53.885538948Z"
+    "readme_hash": "895ca56b8a4f2f639c35a9fdd6370ab001d2b33c",
+    "time_added": "2025-03-26T23:49:56.0347Z",
+    "time_updated": "2025-09-25T04:49:16.6426613Z"
   },
   {
     "title": "GitHub Notifications",
     "description": "show your notifications on GitHub",
     "author": "luboszima",
     "directory": "github-notifications",
-    "readme_hash": "8880c52607dcc3e1781857dd77208955bc75d0d9",
-    "time_added": "2025-09-25T04:31:53.885588628Z",
-    "time_updated": "2025-09-25T04:31:53.885588678Z"
+    "readme_hash": "a0dd7a2691209f8ef5baa3eca26286b77cc5f424",
+    "time_added": "2025-07-14T14:14:40.7113Z",
+    "time_updated": "2025-09-25T04:49:16.6426613Z"
   },
   {
     "title": "GitHub personal repositories",
     "description": "show your own personal respositories on GitHub",
     "author": "menitz",
     "directory": "github-personal-repos",
-    "readme_hash": "c831033a225f500cc3e26afe1aeb50969e153d7b",
-    "time_added": "2025-09-25T04:31:53.885620686Z",
-    "time_updated": "2025-09-25T04:31:53.885620746Z"
+    "readme_hash": "2260e797c4a641fd1ae01a299d7a62ef33f29454",
+    "time_added": "2025-06-08T16:52:02.4001Z",
+    "time_updated": "2025-09-25T04:49:16.6431729Z"
   },
   {
     "title": "Gluetun VPN status",
     "description": "show the public IP, country and city of you [Gluetun VPN client](https://github.com/qdm12/gluetun)",
     "author": "Hyptu",
     "directory": "gluetun-vpn-status",
-    "readme_hash": "7f332470d1c815659fcbc23da81f82a1306c7277",
-    "time_added": "2025-09-25T04:31:53.885655359Z",
-    "time_updated": "2025-09-25T04:31:53.885655419Z"
+    "readme_hash": "4ee820e6f2ea2ad3afc3373c9280e5f87ffe1f97",
+    "time_added": "2025-04-25T22:19:12.0907Z",
+    "time_updated": "2025-09-25T04:49:16.6431729Z"
   },
   {
     "title": "Google Calendar List",
     "description": "List Google Calendar upcoming events",
     "author": "anant-j",
     "directory": "google-calendar-list",
-    "readme_hash": "b97ea5f78f47a2e3aa1433a7c219c08f996590f7",
-    "time_added": "2025-09-25T04:31:53.885704979Z",
-    "time_updated": "2025-09-25T04:31:53.885705049Z"
+    "readme_hash": "2a02774cd4e6d28926122a811fba80e116e35a6a",
+    "time_added": "2025-05-14T20:04:46.7681Z",
+    "time_updated": "2025-09-25T04:49:16.6431729Z"
   },
   {
     "title": "Hardcover Currently Reading",
     "description": "show the currently reading book from [Hardcover](https://hardcover.app/)",
     "author": "Akasiek",
     "directory": "hardcover-currently-reading",
-    "readme_hash": "681892504822519f88e6c947c4bc8a4217ae3d40",
-    "time_added": "2025-09-25T04:31:53.885751263Z",
-    "time_updated": "2025-09-25T04:31:53.885751323Z"
+    "readme_hash": "f1f351621cbf6e4bb5672dd49a85cf9ac301cd8b",
+    "time_added": "2025-04-11T23:06:47.4312Z",
+    "time_updated": "2025-09-25T04:49:16.6436839Z"
   },
   {
     "title": "Home Assistant Sensor Stats",
     "description": "Display's configured Sensors values from Home Assistant",
     "author": "AWildLeon",
     "directory": "homeassistant-sensor-stats",
-    "readme_hash": "3eb5520dbadf0cf32e54a673067f33bcc8fe6fd9",
-    "time_added": "2025-09-25T04:31:53.885783361Z",
-    "time_updated": "2025-09-25T04:31:53.885783421Z"
+    "readme_hash": "dcc57f78914379191cac5ea2b289c298b39cedac",
+    "time_added": "2025-05-08T17:50:40.1551Z",
+    "time_updated": "2025-09-25T04:49:16.6436839Z"
   },
   {
     "title": "Immich stats",
     "description": "show the number of photos, videos and usage of your Immich server",
     "author": "svilenmarkov",
     "directory": "immich-stats",
-    "readme_hash": "838d81a8cb0064a634961378d59bc143d0d88067",
-    "time_added": "2025-09-25T04:31:53.885814317Z",
-    "time_updated": "2025-09-25T04:31:53.885814367Z"
+    "readme_hash": "2d22586908c28344dc79e1087c9f0cb80f2b4990",
+    "time_added": "2025-03-10T00:19:08.8095Z",
+    "time_updated": "2025-09-25T04:49:16.6436839Z"
   },
   {
     "title": "Jellyfin Latest/Next Up",
     "description": "Display the newest additions to a Jellyfin library, and next up to watch for a given user",
     "author": "Nedra1998",
     "directory": "jellyfin-latest",
-    "readme_hash": "846e70af3921beeac8d42d5fffa96ce8feace364",
-    "time_added": "2025-09-25T04:31:53.885898199Z",
-    "time_updated": "2025-09-25T04:31:53.885898249Z"
+    "readme_hash": "f2c799a1ae7db5714efe0f1e902a45b827061007",
+    "time_added": "2025-07-25T12:19:30.0506Z",
+    "time_updated": "2025-09-25T04:49:16.644194Z"
   },
   {
     "title": "Jellyfin Stats",
     "description": "show the number of movies, shows, episodes and songs in your Jellyfin or Emby server",
     "author": "lfvelosoh",
     "directory": "jellyfin-emby-stats",
-    "readme_hash": "2335546183f1e0c15adb544a0ea87ce219032a94",
-    "time_added": "2025-09-25T04:31:53.885848809Z",
-    "time_updated": "2025-09-25T04:31:53.885848869Z"
+    "readme_hash": "658b2546d31bd7207c1b3fe4220ae17d02fe1e3f",
+    "time_added": "2025-06-12T15:48:37.4897Z",
+    "time_updated": "2025-09-25T04:49:16.6436839Z"
   },
   {
     "title": "Karakeep Dashboard",
     "description": "The widget returns statistics on the number of bookmarks and the number of tags and the most recently added bookmarks.",
     "author": "razdnut",
     "directory": "karakeep-dashboard",
-    "readme_hash": "161ab750d650521d2b0fb0fed55ebc2119d9055f",
-    "time_added": "2025-09-25T04:31:53.885933633Z",
-    "time_updated": "2025-09-25T04:31:53.885933693Z"
+    "readme_hash": "078a9e7e737526402cb6818e34344dc34e97c627",
+    "time_added": "2025-07-14T20:25:00.5458Z",
+    "time_updated": "2025-09-25T04:49:16.644194Z"
   },
   {
     "title": "Kavita Latest",
     "description": "Show recently updated series and in progress series from your Kavita server.",
     "author": "Nedra1998",
     "directory": "kavita-latest",
-    "readme_hash": "168afb2f77cb886bc80de3c8fa9b974239d80360",
-    "time_added": "2025-09-25T04:31:53.885987871Z",
-    "time_updated": "2025-09-25T04:31:53.885987952Z"
+    "readme_hash": "01ff5b7b0d4c343ffaafaabcba4ed2522677d96f",
+    "time_added": "2025-09-25T03:31:45.1833Z",
+    "time_updated": "2025-09-25T04:49:16.644194Z"
   },
   {
     "title": "Last.FM Recent Tracks",
     "description": "show recent tracks scrobbled by a Last.FM user",
     "author": "Akasiek",
     "directory": "lastfm-recent-tracks",
-    "readme_hash": "fbc20b5e363cbb92da9a49fdac33aa179dc5ae86",
-    "time_added": "2025-09-25T04:31:53.88602037Z",
-    "time_updated": "2025-09-25T04:31:53.88602043Z"
+    "readme_hash": "1c0568fd615b459fb6a890e1f093114bd922e47a",
+    "time_added": "2025-04-11T18:22:37.6248Z",
+    "time_updated": "2025-09-25T04:49:16.6447529Z"
   },
   {
     "title": "LeetCode Daily Question",
     "description": "show today leetcode questions with hashtag and difficult",
     "author": "hohaithuy",
     "directory": "leetcode-daily-question",
-    "readme_hash": "6101cc1517ebdda21d010ccb0dd8b7b9f8210eaa",
-    "time_added": "2025-09-25T04:31:53.886239657Z",
-    "time_updated": "2025-09-25T04:31:53.886239717Z"
+    "readme_hash": "02881a0e6566c9294ded45cf8180786e37a5e60f",
+    "time_added": "2025-04-26T21:11:19.3256Z",
+    "time_updated": "2025-09-25T04:49:16.6447529Z"
   },
   {
     "title": "Linkwarden Latest Bookmarks",
     "description": "show the latest bookmarks from your Linkwarden instance",
     "author": "josevictorferreira",
     "directory": "linkwarden-latest-bookmarks",
-    "readme_hash": "bea8e4abbc1578d9eb9377c685d25870c7fda03b",
-    "time_added": "2025-09-25T04:31:53.886275282Z",
-    "time_updated": "2025-09-25T04:31:53.886275342Z"
+    "readme_hash": "775745f11ec6942027a39c5fd64b32b6b242fb90",
+    "time_added": "2025-09-13T13:26:08.5846Z",
+    "time_updated": "2025-09-25T04:49:16.6447529Z"
   },
   {
     "title": "London Tube Status",
     "description": "show live service status of London tube, overground and Elizabeth lines via the TfL API",
     "author": "tomdaly",
     "directory": "london-tube-status",
-    "readme_hash": "c1ddc122accad03ea47f03028f2610afc90faf6c",
-    "time_added": "2025-09-25T04:31:53.886309735Z",
-    "time_updated": "2025-09-25T04:31:53.886309784Z"
+    "readme_hash": "c8e89f2e7980de91f9aa27c1ef8b836859e6a9cd",
+    "time_added": "2025-09-19T21:36:35.5516Z",
+    "time_updated": "2025-09-25T04:49:16.6452657Z"
   },
   {
     "title": "MLB Scores",
     "description": "Lists all MLB scores daily, with baserunner info and inning scores.",
     "author": "ShmoobiJones",
     "directory": "mlb-scores-tracker",
-    "readme_hash": "dfbe599ac774cf5f9af508969e974a322ccdd389",
-    "time_added": "2025-09-25T04:31:53.886551542Z",
-    "time_updated": "2025-09-25T04:31:53.886551593Z"
+    "readme_hash": "d8dab170d6845b6ee55e3da46485fcfa3c2e97d7",
+    "time_added": "2025-05-12T19:44:14.8033Z",
+    "time_updated": "2025-09-25T04:49:16.6457722Z"
   },
   {
     "title": "Mealie Today's Meal",
     "description": "show today's meal based off the meal planner from [Mealie](https://mealie.io/)",
     "author": "wtoa",
     "directory": "mealie-todays-meal",
-    "readme_hash": "9f71be20649d50bda874445e3abbd0777e56bcf9",
-    "time_added": "2025-09-25T04:31:53.886374301Z",
-    "time_updated": "2025-09-25T04:31:53.886374372Z"
+    "readme_hash": "0427feba0cc626c983acf81271ae2425b0a33a77",
+    "time_added": "2025-03-27T19:07:53.2963Z",
+    "time_updated": "2025-09-25T04:49:16.6452657Z"
   },
   {
     "title": "Media Server History",
     "description": "collection of widgets to show what had been played on your Media Server like Plex/Jellyfin",
     "author": "titembaataar",
     "directory": "media-server-history",
-    "readme_hash": "4dd7482f7c2f3bdbbd07c5b4ee2c93e46de7286a",
-    "time_added": "2025-09-25T04:31:53.886424923Z",
-    "time_updated": "2025-09-25T04:31:53.886425003Z"
+    "readme_hash": "a5e4dc385b86a9dc1f80c4937cbf37bce97372e6",
+    "time_added": "2025-04-12T02:20:49.4475Z",
+    "time_updated": "2025-09-25T04:49:16.6452657Z"
   },
   {
     "title": "Media Server Playing",
     "description": "collection of widgets to show what's being played on your Media Server like Plex/Jellyfin",
     "author": "titembaataar",
     "directory": "media-server-playing",
-    "readme_hash": "8c1ea3339ea9d8a41448468ed71a6c4091b29376",
-    "time_added": "2025-09-25T04:31:53.886475335Z",
-    "time_updated": "2025-09-25T04:31:53.886475404Z"
+    "readme_hash": "e39aa63a41c2507e0f220ac37a4372e800cc631c",
+    "time_added": "2025-04-12T02:20:05.1668Z",
+    "time_updated": "2025-09-25T04:49:16.6452657Z"
   },
   {
     "title": "Minecraft server",
     "description": "show online status, icon, version and player count of a minecraft server",
     "author": "not-first",
     "directory": "minecraft-server",
-    "readme_hash": "8dd99d762b5b746990fc58b11988323db1fa9d0d",
-    "time_added": "2025-09-25T04:31:53.886511149Z",
-    "time_updated": "2025-09-25T04:31:53.886511209Z"
+    "readme_hash": "6d2ec60c2ff5eadb50b161846b74be991c28f067",
+    "time_added": "2025-03-22T11:49:20.1508Z",
+    "time_updated": "2025-09-25T04:49:16.6457722Z"
   },
   {
     "title": "Mullvad VPN status",
     "description": "show VPN connection status, IP, and location",
     "author": "DelMonteAJ",
     "directory": "mullvad-vpn-status",
-    "readme_hash": "069cdca97cb8fef80d3a400a67d6ce9255787658",
-    "time_added": "2025-09-25T04:31:53.886582058Z",
-    "time_updated": "2025-09-25T04:31:53.886582118Z"
+    "readme_hash": "0f5f35e15ba6f672c6f380645c6b9a1e9c924669",
+    "time_added": "2025-04-06T17:37:46.3602Z",
+    "time_updated": "2025-09-25T04:49:16.6457722Z"
   },
   {
     "title": "NBA Scores Tracker",
     "description": "show the schedule and scores for NBA games today",
     "author": "ShmoobiJones",
     "directory": "nba-scores-tracker",
-    "readme_hash": "b795f74e1bf30c4fe06b2ff4a419a92b32862c7c",
-    "time_added": "2025-09-25T04:31:53.886619606Z",
-    "time_updated": "2025-09-25T04:31:53.886619656Z"
+    "readme_hash": "adfe1189f7c48e9ded1c45b15ccad6ee9a71fc3d",
+    "time_added": "2025-05-09T01:18:50.7946Z",
+    "time_updated": "2025-09-25T04:49:16.6463086Z"
   },
   {
     "title": "NCAA CFB Scoreboard",
     "description": "display live NCAA CFB scoreboard data from ESPN API",
     "author": "maxo99",
     "directory": "ncaa-cfb-scoreboard",
-    "readme_hash": "014f4963a7c6d9156fdb015aea76058a36988a68",
-    "time_added": "2025-09-25T04:31:53.886660811Z",
-    "time_updated": "2025-09-25T04:31:53.886660871Z"
+    "readme_hash": "d47bb66723437b2333a5ebabb771dc12bd83e916",
+    "time_added": "2025-09-20T13:43:57.498Z",
+    "time_updated": "2025-09-25T04:49:16.6463086Z"
   },
   {
     "title": "NFL Scoreboard",
     "description": "display live NFL scoreboard data from ESPN API",
     "author": "maxo99",
     "directory": "nfl-scoreboard",
-    "readme_hash": "cb4d0c38fb6d5820822466255231edb49f799d1f",
-    "time_added": "2025-09-25T04:31:53.886903761Z",
-    "time_updated": "2025-09-25T04:31:53.886903821Z"
+    "readme_hash": "f704d679f0b0f043d4562ac107eaaf7a76a37303",
+    "time_added": "2025-09-19T20:18:30.7184Z",
+    "time_updated": "2025-09-25T04:49:16.6473272Z"
   },
   {
     "title": "NHL Scores",
     "description": "show the schedule, scores, situation for NHL games today",
     "author": "jo-nike",
     "directory": "nhl-scores",
-    "readme_hash": "b34856a2b8905c58146de7df9eed969ae4e581c7",
-    "time_added": "2025-09-25T04:31:53.886942361Z",
-    "time_updated": "2025-09-25T04:31:53.886942421Z"
+    "readme_hash": "8fc33a703a3bde26042f7f262ec903c7cb138427",
+    "time_added": "2025-04-10T13:32:01.6176Z",
+    "time_updated": "2025-09-25T04:49:16.6473272Z"
   },
   {
     "title": "NZBGet Status",
     "description": "show NZBGet downloads",
     "author": "0ui",
     "directory": "nzbget-status",
-    "readme_hash": "f0f6b96ad5c57615999387b9e3825d673e4add9d",
-    "time_added": "2025-09-25T04:31:53.886982914Z",
-    "time_updated": "2025-09-25T04:31:53.886982964Z"
+    "readme_hash": "2bc9e3a614e8d5b3c69ab68a3c4ead1dc420ef75",
+    "time_added": "2025-07-26T16:40:50.2877Z",
+    "time_updated": "2025-09-25T04:49:16.6473272Z"
   },
   {
     "title": "Nearby Aircraft",
     "description": "show nearby aircraft passing over your position using OpenSky network",
     "author": "cristiandiiorio",
     "directory": "nearby-aircraft",
-    "readme_hash": "792a4dabb0e25bdc8fb49ff0398e41cb446eb821",
-    "time_added": "2025-09-25T04:31:53.886698529Z",
-    "time_updated": "2025-09-25T04:31:53.886698579Z"
+    "readme_hash": "7f636e1dbd205b3f7c2dbd383e5c1e6a782566e4",
+    "time_added": "2025-04-23T11:45:55.5506Z",
+    "time_updated": "2025-09-25T04:49:16.6463086Z"
   },
   {
     "title": "NetAlertX Device Status",
     "description": "display the status of connected devices monitored by NetAlertX",
     "author": "razdnut",
     "directory": "netalertx",
-    "readme_hash": "f6e96bdcb26522aa1dd1d6335a50cb4db55a0875",
-    "time_added": "2025-09-25T04:31:53.886745594Z",
-    "time_updated": "2025-09-25T04:31:53.886745644Z"
+    "readme_hash": "20324ece1ce65739d36dfc7c04934a5a2289a559",
+    "time_added": "2025-07-30T00:31:47.4611Z",
+    "time_updated": "2025-09-25T04:49:16.6468195Z"
   },
   {
     "title": "Netbird devices",
     "description": "show all devices inside to a Netbird network along with their connection status, update availability and IP",
     "author": "menitz",
     "directory": "netbird-devices",
-    "readme_hash": "cefa13885332673742a41b6e8bad889b075ddf50",
-    "time_added": "2025-09-25T04:31:53.886783202Z",
-    "time_updated": "2025-09-25T04:31:53.886783252Z"
+    "readme_hash": "6e477cec4f87a602e2f65c92de6f2f7260077698",
+    "time_added": "2025-03-15T14:38:23.0877Z",
+    "time_updated": "2025-09-25T04:49:16.6468195Z"
   },
   {
     "title": "NextDNS Stats",
     "description": "show the basics stats of your nextdns stats. Total queries, total blocked and percentage.",
     "author": "ziritione85",
     "directory": "nextdns-stats",
-    "readme_hash": "6fccbfb6ccf6c11005a056b6c617da2c36bfc089",
-    "time_added": "2025-09-25T04:31:53.886859771Z",
-    "time_updated": "2025-09-25T04:31:53.886859831Z"
+    "readme_hash": "0a82ea0cc9e14d643c48a2627655f648ee144054",
+    "time_added": "2025-03-30T17:00:51.4728Z",
+    "time_updated": "2025-09-25T04:49:16.6468195Z"
   },
   {
     "title": "Nextcloud Deck",
     "description": "show deck board from Nextcloud",
     "author": "drakkein",
     "directory": "nextcloud-deck",
-    "readme_hash": "ce769648afcfc85da82dc9bd1f07ebd8ad240dbc",
-    "time_added": "2025-09-25T04:31:53.88681505Z",
-    "time_updated": "2025-09-25T04:31:53.88681511Z"
+    "readme_hash": "8c0544b721924c8ba1508a7338619bd93311f49d",
+    "time_added": "2025-07-29T19:50:14.765Z",
+    "time_updated": "2025-09-25T04:49:16.6468195Z"
   },
   {
     "title": "Overseerr Trending/Discovery",
     "description": "Shows trending media along with Overseerr recommendations for movies/tv",
     "author": "flamechair",
     "directory": "overseerr-trending-discovery",
-    "readme_hash": "f4748bcb9f3c79e18e3b7a68406e1ec1a67c7cb7",
-    "time_added": "2025-09-25T04:31:53.887022225Z",
-    "time_updated": "2025-09-25T04:31:53.887022275Z"
+    "readme_hash": "3876ce6acfad83306231877c5158e5bfca5ea184",
+    "time_added": "2025-06-04T02:40:43.805Z",
+    "time_updated": "2025-09-25T04:49:16.6478376Z"
   },
   {
     "title": "Paperless NGX Stats",
     "description": "show stats from your Paperless NGX",
     "author": "ralphocdol",
     "directory": "paperlessngx-stats",
-    "readme_hash": "d7e958e6fac4ad6247ae2e726f543cd7a87c6178",
-    "time_added": "2025-09-25T04:31:53.887054704Z",
-    "time_updated": "2025-09-25T04:31:53.887054764Z"
+    "readme_hash": "3caaaa8b6516180257a11f3bffc27eab34dd2862",
+    "time_added": "2025-05-12T20:09:37.5752Z",
+    "time_updated": "2025-09-25T04:49:16.6478376Z"
   },
   {
     "title": "PeaNut UPS Stats",
     "description": "Returns statistics from PeaNut to Monitor UPS",
     "author": "razdnut",
     "directory": "peanut-ups-status",
-    "readme_hash": "39b31a8a3d6ebca3c20ebd2a2ba54569a161df04",
-    "time_added": "2025-09-25T04:31:53.8870912Z",
-    "time_updated": "2025-09-25T04:31:53.88709126Z"
+    "readme_hash": "97ccaa6f1570ff5fc3ec5261b5a8f725ae50bb49",
+    "time_added": "2025-07-18T19:01:29.2261Z",
+    "time_updated": "2025-09-25T04:49:16.6478376Z"
   },
   {
     "title": "Prowlarr Indexers",
     "description": "show list of indexers from prowlarr.",
     "author": "mattiasghodsian",
     "directory": "prowlarr-indexers",
-    "readme_hash": "0d647b2bd202ed0ee23a564549584accf3084970",
-    "time_added": "2025-09-25T04:31:53.887139788Z",
-    "time_updated": "2025-09-25T04:31:53.887139848Z"
+    "readme_hash": "1991653e4558bd8a68061893452960a666bad6fd",
+    "time_added": "2025-08-01T16:14:37.4533Z",
+    "time_updated": "2025-09-25T04:49:16.6483455Z"
   },
   {
     "title": "Proxmox VE Nodes",
     "description": "show the Node's CPU, RAM and Disk usage of your Proxmox Virtual Environment servers",
     "author": "ralphocdol",
     "directory": "proxmox-ve-nodes",
-    "readme_hash": "2c942db97488da4c32af0b4a0879b1c84cf3c0b7",
-    "time_added": "2025-09-25T04:31:53.887222568Z",
-    "time_updated": "2025-09-25T04:31:53.887222628Z"
+    "readme_hash": "01636d5acf1ba3ecb0408cdcc88e1e48e5cff710",
+    "time_added": "2025-05-24T15:31:20.3868Z",
+    "time_updated": "2025-09-25T04:49:16.6483455Z"
   },
   {
     "title": "Proxmox VE Stats",
     "description": "show the number of nodes, LXCs, VMs and Storage of your Proxmox Virtual Environment server",
     "author": "ralphocdol",
     "directory": "proxmox-ve-stats",
-    "readme_hash": "08b698a41b323a0f7c628d04ff3000cbaa49449c",
-    "time_added": "2025-09-25T04:31:53.887261319Z",
-    "time_updated": "2025-09-25T04:31:53.887261379Z"
+    "readme_hash": "dfcdbdd12ef1a0b1c6679b881c9a663e281d0755",
+    "time_added": "2025-03-20T12:53:00.7866Z",
+    "time_updated": "2025-09-25T04:49:16.6488555Z"
   },
   {
     "title": "Proxmox VE Table Stats",
     "description": "show a table with CPU, RAM and Disk usage of your Proxmox VE server",
     "author": "lfvelosoh",
     "directory": "proxmox-detailed-resources",
-    "readme_hash": "927b2b60c1fdd995e67997874c372d2cc4b75b09",
-    "time_added": "2025-09-25T04:31:53.887182215Z",
-    "time_updated": "2025-09-25T04:31:53.887182265Z"
+    "readme_hash": "d38900f39a9a92223e2ed68460b8fc2d676d82a9",
+    "time_added": "2025-06-13T12:41:45.1472Z",
+    "time_updated": "2025-09-25T04:49:16.6483455Z"
   },
   {
     "title": "Raindrop Bookmarks",
     "description": "Show your latest bookmarks from Raindrop.io",
     "author": "herculosh",
     "directory": "raindrop-latest-links",
-    "readme_hash": "12d7afb55df5ccf9197ce3bfbe48d586ae3ab470",
-    "time_added": "2025-09-25T04:31:53.887360158Z",
-    "time_updated": "2025-09-25T04:31:53.887360207Z"
+    "readme_hash": "105756e91d7b7bba8a56814f37e35823be52d350",
+    "time_added": "2025-04-15T18:01:30.1284Z",
+    "time_updated": "2025-09-25T04:49:16.6488555Z"
   },
   {
     "title": "Random Bible Verse",
     "description": "show a random bible verse",
     "author": "pypp",
     "directory": "random-bible-verse",
-    "readme_hash": "24fc0bc39175912afac45ae2643a1d611d42b35b",
-    "time_added": "2025-09-25T04:31:53.887390573Z",
-    "time_updated": "2025-09-25T04:31:53.887390633Z"
+    "readme_hash": "544b96d7d33910a76176c6227df5b1ebc2f94bc6",
+    "time_added": "2025-03-28T10:56:28.06Z",
+    "time_updated": "2025-09-25T04:49:16.6493677Z"
   },
   {
     "title": "Random fact",
     "description": "show a random fact",
     "author": "svilenmarkov",
     "directory": "random-fact",
-    "readme_hash": "5fe5124bcb416b89e958248c3aad6334a28d9969",
-    "time_added": "2025-09-25T04:31:53.887420697Z",
-    "time_updated": "2025-09-25T04:31:53.887420757Z"
+    "readme_hash": "c251544f8368d1c71f0e6a18472b5746032bafc9",
+    "time_added": "2025-03-10T00:19:08.7652Z",
+    "time_updated": "2025-09-25T04:49:16.6493677Z"
   },
   {
     "title": "RetroAchievement",
     "description": "displays the current RetroAchievements.org Achievement of the week",
     "author": "milktoastrat",
     "directory": "retroachievement-of-the-week",
-    "readme_hash": "accb69bf9c66f69fd12f53d77d337882d388eb72",
-    "time_added": "2025-09-25T04:31:53.887453066Z",
-    "time_updated": "2025-09-25T04:31:53.887453126Z"
+    "readme_hash": "5b91f4b23ac562a79b50b06a8a9d55b135ae144e",
+    "time_added": "2025-07-07T21:33:09.4015Z",
+    "time_updated": "2025-09-25T04:49:16.6493677Z"
   },
   {
     "title": "RomM Stats",
     "description": "show the stats of your [RomM](https://github.com/rommapp/romm) instance",
     "author": "milktoastrat",
     "directory": "romm-stats",
-    "readme_hash": "cd94ee6943d3f7e455b594590c43ba9907314f0f",
-    "time_added": "2025-09-25T04:31:53.887490984Z",
-    "time_updated": "2025-09-25T04:31:53.887491035Z"
+    "readme_hash": "d36035d1af88bfcf82a236966360c4d1e00b313d",
+    "time_added": "2025-07-07T01:14:59.0413Z",
+    "time_updated": "2025-09-25T04:49:16.6493677Z"
   },
   {
     "title": "SABnzbd Status",
     "description": "show SABnzbd status",
     "author": "Neo11Neo",
     "directory": "sabnzbd-stats",
-    "readme_hash": "b007ae8fbe22233554a1295d4bac42df92898d5a",
-    "time_added": "2025-09-25T04:31:53.887521229Z",
-    "time_updated": "2025-09-25T04:31:53.887521289Z"
+    "readme_hash": "7e8f5ea32b469bc455b70daf900ba167758f864a",
+    "time_added": "2025-03-27T11:09:13.1585Z",
+    "time_updated": "2025-09-25T04:49:16.6498782Z"
   },
   {
     "title": "Scrutiny",
     "description": "Display drive S.M.A.R.T attributes from Scrutiny",
     "author": "SkyAllinott",
     "directory": "scrutiny",
-    "readme_hash": "f6ec8f06c726fba630eb2932a06eac991d20bdfe",
-    "time_added": "2025-09-25T04:31:53.887553437Z",
-    "time_updated": "2025-09-25T04:31:53.887553498Z"
+    "readme_hash": "88836bba56aabe791040904d4c4d8d4092bce062",
+    "time_added": "2025-08-12T20:18:28.8143Z",
+    "time_updated": "2025-09-25T04:49:16.6498782Z"
   },
   {
     "title": "Should I Deploy Today",
     "description": "remind to deploy today",
     "author": "hohaithuy",
     "directory": "should-i-deploy-today",
-    "readme_hash": "9805e3c54e752be50a258d2793054a71acdc7d20",
-    "time_added": "2025-09-25T04:31:53.887585305Z",
-    "time_updated": "2025-09-25T04:31:53.887585366Z"
+    "readme_hash": "8127ed1b43c5a85ba338c0e2f5f8e9d38faa4988",
+    "time_added": "2025-06-20T15:42:34.5179Z",
+    "time_updated": "2025-09-25T04:49:16.6498782Z"
   },
   {
     "title": "Slack Status",
     "description": "show slack status from api",
     "author": "cartwatson",
     "directory": "slack-status",
-    "readme_hash": "6c8a4726a0dca1375e4b3ebde33da6159f0afae6",
-    "time_added": "2025-09-25T04:31:53.887617694Z",
-    "time_updated": "2025-09-25T04:31:53.887617744Z"
+    "readme_hash": "b6b6a06f4896145ecf08a1a80deff5dd8b6e0afa",
+    "time_added": "2025-06-03T09:59:51.337Z",
+    "time_updated": "2025-09-25T04:49:16.6503863Z"
   },
   {
     "title": "Speedtest tracker",
     "description": "show the latest internet speed information from speedtest tracker",
     "author": "not-first",
     "directory": "speedtest-tracker",
-    "readme_hash": "4c8f55aea8d217de708f992c85a5dfe68cfd0ba4",
-    "time_added": "2025-09-25T04:31:53.887654471Z",
-    "time_updated": "2025-09-25T04:31:53.887654521Z"
+    "readme_hash": "c0d2eea2521e830f031b6f6d51f3ffd780d99912",
+    "time_added": "2025-03-21T08:54:30.1428Z",
+    "time_updated": "2025-09-25T04:49:16.6503863Z"
   },
   {
     "title": "Spotify Now Playing",
     "description": "show the currently playing Spotify song",
     "author": "needsadjustment",
     "directory": "spotify-now-playing",
-    "readme_hash": "0b43095a0a9b9708c3324a4cf5829711674fda73",
-    "time_added": "2025-09-25T04:31:53.887686729Z",
-    "time_updated": "2025-09-25T04:31:53.887686789Z"
+    "readme_hash": "e68b77e48771c7355b0dabfca853048360a46674",
+    "time_added": "2025-03-19T11:58:20.6003Z",
+    "time_updated": "2025-09-25T04:49:16.6503863Z"
   },
   {
     "title": "Spotify Player",
     "description": "Show currently playing Spotify song along with the queue and ability to play/pause.",
     "author": "anant-j",
     "directory": "spotify-player",
-    "readme_hash": "fbaa0c3f3a0039bf98d08698d50f8bdea291f627",
-    "time_added": "2025-09-25T04:31:53.887726842Z",
-    "time_updated": "2025-09-25T04:31:53.887726902Z"
+    "readme_hash": "88dc39aed0266327282ea4bea348bc30e566365c",
+    "time_added": "2025-03-19T11:58:20.7105Z",
+    "time_updated": "2025-09-25T04:49:16.650895Z"
   },
   {
     "title": "St. Louis Fed US Mortgage Rates",
     "description": "Show mortgage rates from the St. Louis Federal Reserve's FRED API",
     "author": "ehaughee",
     "directory": "st-louis-fed-us-mortgage-rates",
-    "readme_hash": "f0d3fece01ff3dd18d9a288eb33c7921f6c91944",
-    "time_added": "2025-09-25T04:31:53.887760873Z",
-    "time_updated": "2025-09-25T04:31:53.887760924Z"
+    "readme_hash": "f0c473e125ee705b686b12c7a94da5dab26cdf66",
+    "time_added": "2025-03-27T17:57:16.3852Z",
+    "time_updated": "2025-09-25T04:49:16.650895Z"
   },
   {
     "title": "Steam Recently Played Games",
     "description": "show a list of recently played games by a Steam user",
     "author": "lunnosmp4",
     "directory": "steam-recently-played-games",
-    "readme_hash": "b2e3994a24f6b1cb36869005ae872e6424e533c6",
-    "time_added": "2025-09-25T04:31:53.887792951Z",
-    "time_updated": "2025-09-25T04:31:53.887793002Z"
+    "readme_hash": "9fbbbd051c8b343ad5a11611c2e25ba632b86b4a",
+    "time_added": "2025-03-22T15:44:26.0934Z",
+    "time_updated": "2025-09-25T04:49:16.650895Z"
   },
   {
     "title": "Steam User",
     "description": "show information about a Steam user",
     "author": "lunnosmp4",
     "directory": "steam-user",
-    "readme_hash": "05e7f32c4700ff46053e351e4b50de6cbd118926",
-    "time_added": "2025-09-25T04:31:53.887855956Z",
-    "time_updated": "2025-09-25T04:31:53.887856016Z"
+    "readme_hash": "85f539096513ce5bf10570aeeb99a89f60708779",
+    "time_added": "2025-03-18T23:12:39.266Z",
+    "time_updated": "2025-09-25T04:49:16.6514038Z"
   },
   {
     "title": "Steam specials",
     "description": "show a list of discounted games on Steam",
     "author": "svilenmarkov",
     "directory": "steam-specials",
-    "readme_hash": "1b8919fc4ed71895828ec78b5a13edc63cc010ad",
-    "time_added": "2025-09-25T04:31:53.887824368Z",
-    "time_updated": "2025-09-25T04:31:53.887824428Z"
+    "readme_hash": "4d39077813cdfda21f6d7be738f57fc53065df03",
+    "time_added": "2025-03-10T00:19:08.4331Z",
+    "time_updated": "2025-09-25T04:49:16.650895Z"
   },
   {
     "title": "Syncthing",
     "description": "Show Syncthing folder status",
     "author": "JohnCannon97",
     "directory": "syncthing",
-    "readme_hash": "1476ff83d1df7336a843001a51710600f46d5056",
-    "time_added": "2025-09-25T04:31:53.887888334Z",
-    "time_updated": "2025-09-25T04:31:53.887888394Z"
+    "readme_hash": "8156a9eaff6022e574aa1e81e5973a462b683da8",
+    "time_added": "2025-05-22T10:02:20.1198Z",
+    "time_updated": "2025-09-25T04:49:16.6514038Z"
   },
   {
     "title": "Tailscale devices",
     "description": "show all devices inside to a Tailscale tailnet along with their connection status, update availability and IP",
     "author": "not-first",
     "directory": "tailscale-devices",
-    "readme_hash": "7251a3c9234d332bdd059f8c66f936d06c7f8531",
-    "time_added": "2025-09-25T04:31:53.887927425Z",
-    "time_updated": "2025-09-25T04:31:53.887927485Z"
+    "readme_hash": "5cd4db67b73cc2d2d5352e6d4a87e141195c2a18",
+    "time_added": "2025-03-15T14:38:23.8165Z",
+    "time_updated": "2025-09-25T04:49:16.6514038Z"
   },
   {
     "title": "Tautulli Stats",
     "description": "Show various home stats from Tautulli such as recently watched, top movies/shows, etc.",
     "author": "SkyAllinott",
     "directory": "tautulli-stats",
-    "readme_hash": "6cc14d2f81ee0d261feb1fb5abd8662c93edd3e0",
-    "time_added": "2025-09-25T04:31:53.888015946Z",
-    "time_updated": "2025-09-25T04:31:53.888016006Z"
+    "readme_hash": "f32fc45df1d8bf3008480e3baed2c346bd4ea482",
+    "time_added": "2025-08-06T21:15:27.7395Z",
+    "time_updated": "2025-09-25T04:49:16.6519132Z"
   },
   {
     "title": "Technitium DNS Stats",
     "description": "show stats from Technitium DNS Server",
     "author": "eribbey",
     "directory": "technitium-dns-stats",
-    "readme_hash": "1d688baab246821463cf3414541b9cbc73a900fd",
-    "time_added": "2025-09-25T04:31:53.888055617Z",
-    "time_updated": "2025-09-25T04:31:53.888055667Z"
+    "readme_hash": "be0181de6fc338a10f752f103f8a96b026e71834",
+    "time_added": "2025-03-27T01:33:16.0986Z",
+    "time_updated": "2025-09-25T04:49:16.6519132Z"
   },
   {
     "title": "Time Bar",
     "description": "show percentage of day/month/year elapsed",
     "author": "anant-j",
     "directory": "time-bar",
-    "readme_hash": "f16beb4b4e89e6b5cecc7b65699692529271e553",
-    "time_added": "2025-09-25T04:31:53.888103694Z",
-    "time_updated": "2025-09-25T04:31:53.888103754Z"
+    "readme_hash": "9d95cbdc0431911d40eb7485b493f58d83d524f6",
+    "time_added": "2025-05-06T23:18:40.7457Z",
+    "time_updated": "2025-09-25T04:49:16.6519132Z"
   },
   {
     "title": "Trakt",
     "description": "shows your last-watched movies \u0026 TV shows on Trakt",
     "author": "RxBrad",
     "directory": "trakt",
-    "readme_hash": "6a4be8195c0bdef9185ad26400b94057b9ac495e",
-    "time_added": "2025-09-25T04:31:53.888139339Z",
-    "time_updated": "2025-09-25T04:31:53.888139399Z"
+    "readme_hash": "7eb9795a11110fc8d947372fb82939a5451c24ba",
+    "time_added": "2025-05-23T09:39:47.45Z",
+    "time_updated": "2025-09-25T04:49:16.6524216Z"
   },
   {
     "title": "Trending Bluesky News",
     "description": "shows a list of trending news links from the [Trending News 2.0 Feed](https://bsky.app/profile/did:plc:kkf4naxqmweop7dv4l2iqqf5/feed/news-2-0) on Bluesky",
     "author": "tomcasavant",
     "directory": "trending-bluesky-news",
-    "readme_hash": "b413ed3b33ca05dfe3e1992754a9216dd002e6ee",
-    "time_added": "2025-09-25T04:31:53.88817281Z",
-    "time_updated": "2025-09-25T04:31:53.88817287Z"
+    "readme_hash": "706a5c633ec7c3d9f0e970c1647aee77775aa069",
+    "time_added": "2025-03-18T16:30:16.135Z",
+    "time_updated": "2025-09-25T04:49:16.6524216Z"
   },
   {
     "title": "Trending GitHub Repositories",
     "description": "Daily trending GitHub repositories.",
     "author": "jelkuweiss",
     "directory": "trending-github-repositories",
-    "readme_hash": "996983353ef95547a455b09291b94f538d283bde",
-    "time_added": "2025-09-25T04:31:53.888207252Z",
-    "time_updated": "2025-09-25T04:31:53.888207302Z"
+    "readme_hash": "28a1bc5f6e9724d4021571ec73f7fe09d745b6ef",
+    "time_added": "2025-07-22T13:46:25.0467Z",
+    "time_updated": "2025-09-25T04:49:16.6524216Z"
   },
   {
     "title": "Trending Mastodon Links",
     "description": "shows a list of trending links from a provided Mastodon instance",
     "author": "tomcasavant",
     "directory": "trending-mastodon-links",
-    "readme_hash": "36d1a378e918283fca6776d45e8d94da2d4ec888",
-    "time_added": "2025-09-25T04:31:53.888239831Z",
-    "time_updated": "2025-09-25T04:31:53.888239891Z"
+    "readme_hash": "f51ec84d991b514db69622e8e1bd4739585c08a2",
+    "time_added": "2025-03-18T16:15:35.7271Z",
+    "time_updated": "2025-09-25T04:49:16.6529303Z"
   },
   {
     "title": "TrueNAS Scale Pools",
     "description": "shows datasets with usage and health status",
     "author": "drakkein",
     "directory": "truenas-scale-pools",
-    "readme_hash": "e39e754f2967ab5cdde9b8b1ceaf44daa61abece",
-    "time_added": "2025-09-25T04:31:53.88827211Z",
-    "time_updated": "2025-09-25T04:31:53.88827216Z"
+    "readme_hash": "d7a5caa78953717c2e13d658f0ef7fea022600d4",
+    "time_added": "2025-07-29T18:01:08.3546Z",
+    "time_updated": "2025-09-25T04:49:16.6529303Z"
   },
   {
     "title": "Unifi",
     "description": "Unifi controller information",
     "author": "prozn",
     "directory": "unifi",
-    "readme_hash": "fdd5f5bbda761daa02261e2fcfe7ec3fa78b59c6",
-    "time_added": "2025-09-25T04:31:53.888335124Z",
-    "time_updated": "2025-09-25T04:31:53.888335184Z"
+    "readme_hash": "6e47e8bf0f34cc8af37b3dd841639b42abf09693",
+    "time_added": "2025-09-22T07:57:23.1297Z",
+    "time_updated": "2025-09-25T04:49:16.6529303Z"
   },
   {
     "title": "Uptime Kuma",
     "description": "show the status of Uptime Kuma services",
     "author": "not-first",
     "directory": "uptime-kuma",
-    "readme_hash": "3086eb033c0f2bc202d127c27b1deab1de6e4cc0",
-    "time_added": "2025-09-25T04:31:53.88837153Z",
-    "time_updated": "2025-09-25T04:31:53.88837159Z"
+    "readme_hash": "7285f163036fa1f61a3d65db29fc3f068919beb7",
+    "time_added": "2025-03-28T21:05:37.6918Z",
+    "time_updated": "2025-09-25T04:49:16.6534398Z"
   },
   {
     "title": "Vikunja Taskboard",
     "description": "Real time taskboard using the Vikunja API",
     "author": "gugugiyu",
     "directory": "vikunja-taskboard",
-    "readme_hash": "b1d7892f374a60a64e4fe3c2d5dff0386c7d3041",
-    "time_added": "2025-09-25T04:31:53.888406794Z",
-    "time_updated": "2025-09-25T04:31:53.888406854Z"
+    "readme_hash": "6cb169720fedf31a815fd5d17cf510f7d0eca304",
+    "time_added": "2025-03-27T12:41:13.3742Z",
+    "time_updated": "2025-09-25T04:49:16.6534398Z"
   },
   {
     "title": "Weather Seven Day",
     "description": "Shows daily weather conditions and high and low temperature from Open-Meteo for a specified location.",
     "author": "brandonsie",
     "directory": "weather-seven-day",
-    "readme_hash": "6b3d1a1b66c0e41b574a606a38db4e0b54ad1a0f",
-    "time_added": "2025-09-25T04:31:53.888456624Z",
-    "time_updated": "2025-09-25T04:31:53.888456684Z"
+    "readme_hash": "494d2f7b0121cedc7aa8fbc337b27a3211826c76",
+    "time_added": "2025-09-09T14:04:40.0338Z",
+    "time_updated": "2025-09-25T04:49:16.6534398Z"
   },
   {
     "title": "What's Up Docker Monitor",
     "description": "A customizable widget for displaying the wud data about containers.",
     "author": "panonim",
     "directory": "wud-monitor",
-    "readme_hash": "fa6e3c1ccf9996f288ff6b8546871fde95dc367e",
-    "time_added": "2025-09-25T04:31:53.888490265Z",
-    "time_updated": "2025-09-25T04:31:53.888490315Z"
+    "readme_hash": "9e94987a3cf35474678194f8a57e657ff4c5ccce",
+    "time_added": "2025-03-25T21:55:57.7136Z",
+    "time_updated": "2025-09-25T04:49:16.6534398Z"
   },
   {
     "title": "YouTube Embedded Player",
     "description": "A grid-card layout of YouTube List with Embed player pulled from either RSS-Bridge or FreshRSS",
     "author": "ralphocdol",
     "directory": "youtube-embedded-player",
-    "readme_hash": "77a292afa759cebfc0b56c8799f49c9373259853",
-    "time_added": "2025-09-25T04:31:53.888540546Z",
-    "time_updated": "2025-09-25T04:31:53.888540606Z"
+    "readme_hash": "71579dfc9f969b9a58c68e9ae1c835867ac9a649",
+    "time_added": "2025-03-30T19:37:59.416Z",
+    "time_updated": "2025-09-25T04:49:16.6539519Z"
   },
   {
     "title": "qBittorrent Stats",
     "description": "show qBittorrent downloads",
     "author": "danzkigg",
     "directory": "qbittorrent-stats",
-    "readme_hash": "4357fc874d2c974a8b5252608d300fc666515bb0",
-    "time_added": "2025-09-25T04:31:53.887303124Z",
-    "time_updated": "2025-09-25T04:31:53.887303184Z"
+    "readme_hash": "31402246e83e60fc17c2ef25bd804a21f17c92b8",
+    "time_added": "2025-08-19T20:06:23.4484Z",
+    "time_updated": "2025-09-25T04:49:16.6488555Z"
   }
 ]
