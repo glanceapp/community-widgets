@@ -70,6 +70,8 @@ Custom API widgets are much easier to setup and usually only require a copy-past
 * [Spotify Now Playing](widgets/spotify-now-playing-by-needsadjustment/README.md) by @needsadjustment - show the currently playing Spotify song
 * [Spotify Player](widgets/spotify-player-by-anant-j/README.md) by @anant-j - Show currently playing Spotify song along with the queue and ability to play/pause.
 * [St. Louis Fed US Mortgage Rates](widgets/st-louis-fed-us-mortgage-rates-by-ehaughee/README.md) by @ehaughee - Show mortgage rates from the St. Louis Federal Reserve's FRED API
+* [Raindrop Bookmarks](widgets/raindrop-latest-links/README.md) by @herculosh - Show your latest bookmarks from Raindrop.io
+* [Paperless NGX Stats](widgets/paperlessngx-stats-by-ralphocdol/README.md) by @ralphocdol - show stats from your Paperless NGX
 * [Steam Recently Played Games](widgets/steam-recently-played-games-by-lunnosmp4/README.md) by @lunnosmp4 - show a list of recently played games by a Steam user
 * [Steam specials](widgets/steam-specials-by-svilenmarkov/README.md) by @svilenmarkov - show a list of discounted games on Steam
 * [Steam User](widgets/steam-user-by-lunnosmp4/README.md) by @lunnosmp4 - show information about a Steam user
