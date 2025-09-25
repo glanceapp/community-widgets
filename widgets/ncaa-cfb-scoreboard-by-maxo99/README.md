@@ -4,7 +4,7 @@
 - type: custom-api
   title: NCAA CFB Scoreboard
   url: "https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard"
-  cache: 1h
+  cache: 1m
   template: |
     {{/* NCAA CFB Scoreboard */}}
     {{ $events := .JSON.Array "events" }}
