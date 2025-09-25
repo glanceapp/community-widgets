@@ -18,9 +18,21 @@
           <ul class="list list-gap-10 collapsible-container" data-collapse-after="5">
             {{ range $games }}
               <li style="display: flex; align-items: center;">
-                <img src="http://media.steampowered.com/steamcommunity/public/images/apps/{{ .Int "appid" }}/{{ .String "img_icon_url" }}.jpg" alt="{{ .String "name" }}" style="width: 32px; border-radius: var(--border-radius); margin-right: 10px;">
+                <a href="https://store.steampowered.com/app/{{ .Int "appid" }}" target="_blank">
+                  <img
+                    src="http://media.steampowered.com/steamcommunity/public/images/apps/{{ .Int "appid" }}/{{ .String "img_icon_url" }}.jpg"
+                    alt="{{ .String "name" }}"
+                    style="width: 32px; border-radius: var(--border-radius); margin-right: 10px;">
+                </a>
                 <div>
-                  <span class="size-base color-primary">{{ .String "name" }}</span><br>
+                  <a
+                    href="https://store.steampowered.com/app/{{ .Int "appid" }}"
+                    class="size-base color-primary"
+                    target="_blank"
+                  >
+                    {{ .String "name" }}
+                  </a>
+                  <br>
                   <span class="size-h5 color-subdue">
                     Last 2 weeks: 
                     {{ if gt (toFloat (.Int "playtime_2weeks")) 60.0 }}

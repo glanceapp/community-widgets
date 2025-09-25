@@ -13,12 +13,11 @@
   options:
     uptime-mode: duration  # relative | duration
     collapse-after: 5
-  template: |
+  template: | #html
     {{ $uptimeMode := .Options.StringOr "uptime-mode" "relative" }}
     {{ $collapseAfter := .Options.IntOr "collapseAfter" 3 }}
     <ul class="list list-gap-14 collapsible-container" data-collapse-after="{{ $collapseAfter }}">
       {{ range .JSON.Array "data" }}
-      {{ if ne (.String "type") "node" }} {{ continue }} {{ end }}
       <li>
         <div class="server" proxmox-node="{{ .String "node" }}">
           <div class="server-info">
