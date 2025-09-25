@@ -13,11 +13,11 @@ Custom API widgets are much easier to setup and usually only require a copy-past
 ## Custom API Widgets
 
 ### Newly added
-* [YouTube Embedded Player](widgets/youtube-embedded-player/README.md) - a grid-card layout of YouTube List with Embed player pulled from either RSS-Bridge or FreshRSS (by @ralphocdol)
-* [What's Up Docker Monitor](widgets/wud-monitor/README.md) - a customizable widget for displaying the wud data about containers (by @panonim)
-* [Weather Seven Day](widgets/weather-seven-day/README.md) - shows daily weather conditions and high and low temperature from Open-Meteo for a specified location (by @brandonsie)
-* [Vikunja Taskboard](widgets/vikunja-taskboard/README.md) - real time taskboard using the Vikunja API (by @gugugiyu)
-* [Uptime Kuma](widgets/uptime-kuma/README.md) - show the status of Uptime Kuma services (by @not-first)
+* [AudioBookshelf Personalized Shelfs](widgets/audiobookshelf-personalized/README.md) - shows the personalized shelfs from the Audiobookshelf dashboard (by @Nedra1998)
+* [Kavita Latest](widgets/kavita-latest/README.md) - show recently updated series and in progress series from your Kavita server (by @Nedra1998)
+* [Unifi](widgets/unifi/README.md) - unifi controller information (by @prozn)
+* [NCAA CFB Scoreboard](widgets/ncaa-cfb-scoreboard/README.md) - display live NCAA CFB scoreboard data from ESPN API (by @maxo99)
+* [London Tube Status](widgets/london-tube-status/README.md) - show live service status of London tube, overground and Elizabeth lines via the TfL API (by @tomdaly)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
