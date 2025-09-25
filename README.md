@@ -12,6 +12,8 @@ Custom API widgets are much easier to setup and usually only require a copy-past
 
 ## Custom API Widgets
 
+A gallery with screenshots of all widgets can be found [here](GALLERY.md).
+
 ### Newly added
 * [Latest Community Widgets](widgets/latest-community-widgets/README.md) - show a list of the most recently added community widgets (by @svilenmarkov)
 * [AudioBookshelf Personalized Shelfs](widgets/audiobookshelf-personalized/README.md) - shows the personalized shelfs from the Audiobookshelf dashboard (by @Nedra1998)
@@ -24,7 +26,7 @@ Custom API widgets are much easier to setup and usually only require a copy-past
 * [Air Quality](widgets/air-quality/README.md) - displays information about air quality using data from the World Air Quality Index (WAQI) API (by @painfultruths)
 * [Animals Display](widgets/animals-display/README.md) - display random images of animals such as cats or dogs (by @panonim)
 * [Arr Releases](widgets/arr-releases/README.md) - show upcoming, recently downloaded, or missing items from Sonarr, Radarr, or Lidarr (by @erkston)
-* [Astronomy Picture of the Day](widgets/astronomy-picture-of-the-day/README.md) - shows Astronomy Picture of the Day from NASA (by @ Saisamarth21)
+* [Astronomy Picture of the Day](widgets/astronomy-picture-of-the-day/README.md) - shows Astronomy Picture of the Day from NASA (by @Saisamarth21)
 * [AudioBookshelf Personalized Shelfs](widgets/audiobookshelf-personalized/README.md) - shows the personalized shelfs from the Audiobookshelf dashboard (by @Nedra1998)
 * [Audiobookshelf stats](widgets/audiobookshelf/README.md) - show the number of books and podcasts in your Audiobookshelf server, along with their total duration (by @ferdyverse)
 * [AzireVPN Connection Status](widgets/azirevpn-connection-status/README.md) - display you'r connection status to AzireVPN (by @mattiasghodsian)
