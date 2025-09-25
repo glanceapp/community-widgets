@@ -80,6 +80,7 @@ Custom API widgets are much easier to setup and usually only require a copy-past
 * [Steam User](widgets/steam-user-by-lunnosmp4/README.md) by @lunnosmp4 - show information about a Steam user
 * [Syncthing](widgets/syncthing-by-JohnCannon87/README.md) by @JohnCannon97 - Show Syncthing folder status
 * [Tailscale devices](widgets/tailscale-devices-by-not-first/README.md) by @not-first - show all devices inside to a Tailscale tailnet along with their connection status, update availability and IP
+* [Tautulli Stats](widgets/tautulli-stats-by-SkyAllinott/README.md) by @SkyAllinott - Show various home stats from Tautulli such as recently watched, top movies/shows, etc. 
 * [Technitium DNS Stats](widgets/technitium-dns-stats-by-eribbey/README.md) by @eribbey - show stats from Technitium DNS Server
 * [Time Bar](widgets/time-bar-by-anant-j/README.md) by @anant-j - show percentage of day/month/year elapsed
 * [Trakt](widgets/trakt-by-rxbrad/README.md) by @RxBrad - shows your last-watched movies & TV shows on Trakt
