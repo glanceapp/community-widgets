@@ -4,7 +4,7 @@
 - type: custom-api
   title: NFL Scoreboard
   url: "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard"
-  cache: 15s
+  cache: 1h
   template: |
     {{ $events := .JSON.Array "events" }}
       {{ if eq (len $events) 0 }}

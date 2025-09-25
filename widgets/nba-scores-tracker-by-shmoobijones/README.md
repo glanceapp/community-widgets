@@ -10,7 +10,7 @@
 - type: custom-api
   title: NBA Today
   url: "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard"
-  cache: 15s
+  cache: 1h
   template: |
     {{ $events := .JSON.Array "events" }}
     {{ if eq (len $events) 0 }}
@@ -21,21 +21,21 @@
         <input type="checkbox" id="{{ $wid }}-cb" style="display:none"/>
         <ul class="visible" style="list-style:none;padding:0;margin:0;">
           {{ $count := 0 }}
-        
+
           {{ range $i, $g := $events }}
             {{ if and (lt $count 6) (eq ($g.String "competitions.0.status.type.name") "STATUS_IN_PROGRESS") }}
               {{ template "nba-game" $g }}
               {{ $count = add $count 1 }}
             {{ end }}
           {{ end }}
-        
+
           {{ range $i, $g := $events }}
             {{ if and (lt $count 6) (eq ($g.String "competitions.0.status.type.name") "STATUS_SCHEDULED") }}
               {{ template "nba-game" $g }}
               {{ $count = add $count 1 }}
             {{ end }}
           {{ end }}
-        
+
           {{ range $i, $g := $events }}
             {{ if and (lt $count 6) (not (or (eq ($g.String "competitions.0.status.type.name") "STATUS_IN_PROGRESS") (eq ($g.String "competitions.0.status.type.name") "STATUS_SCHEDULED"))) }}
               {{ template "nba-game" $g }}
@@ -43,27 +43,27 @@
             {{ end }}
           {{ end }}
         </ul>
-      
+
         <ul class="all" style="list-style:none;padding:0;margin:0;display:none">
           {{ range $i, $g := $events }}
             {{ if eq ($g.String "competitions.0.status.type.name") "STATUS_IN_PROGRESS" }}
               {{ template "nba-game" $g }}
             {{ end }}
           {{ end }}
-        
+
           {{ range $i, $g := $events }}
             {{ if eq ($g.String "competitions.0.status.type.name") "STATUS_SCHEDULED" }}
               {{ template "nba-game" $g }}
             {{ end }}
           {{ end }}
-        
+
           {{ range $i, $g := $events }}
             {{ if not (or (eq ($g.String "competitions.0.status.type.name") "STATUS_IN_PROGRESS") (eq ($g.String "competitions.0.status.type.name") "STATUS_SCHEDULED")) }}
               {{ template "nba-game" $g }}
             {{ end }}
           {{ end }}
         </ul>
-      
+
         {{ if gt (len $events) 6 }}
           <label for="{{ $wid }}-cb" style="position:absolute;bottom:0px;right:0;cursor:pointer;color:var(--glance-accent-color);font-size:16px;padding:5px;">
             <span style="display:inline-block;transition:transform .2s">▼</span>
@@ -77,7 +77,7 @@
         </style>
       </div>
     {{ end }}
-  
+
     {{ define "nba-game" }}
       {{ $state := .String "competitions.0.status.type.name" }}
       {{ $away := index (.Array "competitions.0.competitors") 0 }}
