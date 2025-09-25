@@ -1,6 +1,13 @@
-{{- define "entry" }}{{ if .Title }}<div><p align="center">[{{ .Title }}](widgets/{{ .Directory }}/README.md)<br>by [@{{ .Author }}](https://github.com/{{ .Author }})<p><p align="center">[![](widgets/{{ .Directory }}/{{ .Preview }})](/widgets/{{ .Directory }}/README.md)</p></div>{{ end }}{{- end }}
-| | | |
-| - | - | - |
+{{- define "entry" }}{{ if .Title }}
+    <p align="center"><a href="widgets/{{ .Directory }}/README.md">{{ .Title }}</a><br>by <a href="https://github.com/{{ .Author }}">@{{ .Author }}</a><p>
+    <p align="center"><a href="widgets/{{ .Directory }}/README.md"><img src="widgets/{{ .Directory }}/{{ .Preview }}"></a></p>
+{{ end }}{{- end }}
+<table>
 {{- range .WidgetsGroupedSortedByTitle }}
-| {{ template "entry" (index . 0) }} | {{ template "entry" (index . 1) }} | {{ template "entry" (index . 2) }} |
+  <tr>
+    <td valign="top">{{ template "entry" (index . 0) }}</td>
+    <td valign="top">{{ template "entry" (index . 1) }}</td>
+    <td valign="top">{{ template "entry" (index . 2) }}</td>
+  </tr>
 {{- end }}
+</table>
