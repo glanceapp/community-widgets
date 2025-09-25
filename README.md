@@ -35,6 +35,7 @@ Custom API widgets are much easier to setup and usually only require a copy-past
 * [GitHub personal repositories](widgets/github-personal-repos-by-menitz/README.md) by @menitz - show your own personal respositories on GitHub
 * [GitHub Notifications](widgets/github-notifications-by-luboszima/README.md) by @luboszima - show your notifications on GitHub
 * [Gluetun VPN status](widgets/gluetun-vpn-status-by-hyptu/README.md) by @Hyptu - show the public IP, country and city of you [Gluetun VPN client](https://github.com/qdm12/gluetun)
+* [Linkwarden Latest Bookmarks](widgets/linkwarden-latest-bookmarks/README.md) - show the latest bookmarks from your Linkwarden instance
 * [Google Calendar List](widgets/google-calendar-list-by-anant-j/README.md) by @anant-j - List Google Calendar upcoming events
 * [Hardcover Currently Reading](widgets/hardcover-currently-reading-by-akasiek/README.md) by @Akasiek - show the currently reading book from [Hardcover](https://hardcover.app/)
 * [Immich stats](widgets/immich-stats-by-svilenmarkov/README.md) by @svilenmarkov - show the number of photos, videos and usage of your Immich server
