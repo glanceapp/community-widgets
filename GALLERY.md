@@ -1,35 +1,445 @@
 
-| | | |
-| - | - | - |
-| <div><p align="center">[AFL Widgets](widgets/afl-widgets/README.md)<br>by [@0099FF](https://github.com/0099FF)<p><p align="center">[![](widgets/afl-widgets/fixture.png)](/widgets/afl-widgets/README.md)</p></div> | <div><p align="center">[Air Quality](widgets/air-quality/README.md)<br>by [@painfultruths](https://github.com/painfultruths)<p><p align="center">[![](widgets/air-quality/preview.png)](/widgets/air-quality/README.md)</p></div> | <div><p align="center">[Animals Display](widgets/animals-display/README.md)<br>by [@panonim](https://github.com/panonim)<p><p align="center">[![](widgets/animals-display/preview.png)](/widgets/animals-display/README.md)</p></div> |
-| <div><p align="center">[Arr Releases](widgets/arr-releases/README.md)<br>by [@erkston](https://github.com/erkston)<p><p align="center">[![](widgets/arr-releases/lidarrupcoming.png)](/widgets/arr-releases/README.md)</p></div> | <div><p align="center">[Astronomy Picture of the Day](widgets/astronomy-picture-of-the-day/README.md)<br>by [@Saisamarth21](https://github.com/Saisamarth21)<p><p align="center">[![](widgets/astronomy-picture-of-the-day/preview1.png)](/widgets/astronomy-picture-of-the-day/README.md)</p></div> | <div><p align="center">[AudioBookshelf Personalized Shelfs](widgets/audiobookshelf-personalized/README.md)<br>by [@Nedra1998](https://github.com/Nedra1998)<p><p align="center">[![](widgets/audiobookshelf-personalized/audiobook-continue-listening.png)](/widgets/audiobookshelf-personalized/README.md)</p></div> |
-| <div><p align="center">[Audiobookshelf stats](widgets/audiobookshelf/README.md)<br>by [@ferdyverse](https://github.com/ferdyverse)<p><p align="center">[![](widgets/audiobookshelf/preview.png)](/widgets/audiobookshelf/README.md)</p></div> | <div><p align="center">[AzireVPN Connection Status](widgets/azirevpn-connection-status/README.md)<br>by [@mattiasghodsian](https://github.com/mattiasghodsian)<p><p align="center">[![](widgets/azirevpn-connection-status/preview.png)](/widgets/azirevpn-connection-status/README.md)</p></div> | <div><p align="center">[Beszel Metrics](widgets/beszel-metrics/README.md)<br>by [@panonim](https://github.com/panonim)<p><p align="center">[![](widgets/beszel-metrics/preview_1.png)](/widgets/beszel-metrics/README.md)</p></div> |
-| <div><p align="center">[Calibre-Web Stats](widgets/calibre-web-stats/README.md)<br>by [@rvelasq](https://github.com/rvelasq)<p><p align="center">[![](widgets/calibre-web-stats/preview.png)](/widgets/calibre-web-stats/README.md)</p></div> | <div><p align="center">[Cats As A Service Photos](widgets/cats-as-a-service-photos/README.md)<br>by [@gugugiyu](https://github.com/gugugiyu)<p><p align="center">[![](widgets/cats-as-a-service-photos/preview.png)](/widgets/cats-as-a-service-photos/README.md)</p></div> | <div><p align="center">[Chess.com Daily Puzzle](widgets/chess-puzzle/README.md)<br>by [@panonim](https://github.com/panonim)<p><p align="center">[![](widgets/chess-puzzle/preview.png)](/widgets/chess-puzzle/README.md)</p></div> |
-| <div><p align="center">[Cloudflare Tunnels](widgets/cloudflared-tunnels/README.md)<br>by [@drshajul](https://github.com/drshajul)<p><p align="center">[![](widgets/cloudflared-tunnels/preview.png)](/widgets/cloudflared-tunnels/README.md)</p></div> | <div><p align="center">[Crafty Minecraft Server Stats](widgets/crafty-controller-minecraft-server/README.md)<br>by [@MartyX98](https://github.com/MartyX98)<p><p align="center">[![](widgets/crafty-controller-minecraft-server/Preview_offline.png)](/widgets/crafty-controller-minecraft-server/README.md)</p></div> | <div><p align="center">[Cryptopanic News](widgets/cryptopanic-news/README.md)<br>by [@herculosh](https://github.com/herculosh)<p><p align="center">[![](widgets/cryptopanic-news/preview.png)](/widgets/cryptopanic-news/README.md)</p></div> |
-| <div><p align="center">[Cup Updates](widgets/cup-updates/README.md)<br>by [@panonim](https://github.com/panonim)<p><p align="center">[![](widgets/cup-updates/preview.jpeg)](/widgets/cup-updates/README.md)</p></div> | <div><p align="center">[Epic Games Free Games](widgets/epic-free-widget/README.md)<br>by [@marocainperdu](https://github.com/marocainperdu)<p><p align="center">[![](widgets/epic-free-widget/preview.png)](/widgets/epic-free-widget/README.md)</p></div> | <div><p align="center">[Football Fixtures](widgets/football-fixtures/README.md)<br>by [@cristiandiiorio](https://github.com/cristiandiiorio)<p><p align="center">[![](widgets/football-fixtures/preview.png)](/widgets/football-fixtures/README.md)</p></div> |
-| <div><p align="center">[Forgejo repos](widgets/forgejo-repos/README.md)<br>by [@dodecube](https://github.com/dodecube)<p><p align="center">[![](widgets/forgejo-repos/preview.png)](/widgets/forgejo-repos/README.md)</p></div> | <div><p align="center">[Formula 1 Widgets](widgets/formula1-widgets/README.md)<br>by [@abaza738](https://github.com/abaza738)<p><p align="center">[![](widgets/formula1-widgets/preview1.png)](/widgets/formula1-widgets/README.md)</p></div> | <div><p align="center">[Frigate stats](widgets/frigate-stats/README.md)<br>by [@Pimer0](https://github.com/Pimer0)<p><p align="center">[![](widgets/frigate-stats/preview.png)](/widgets/frigate-stats/README.md)</p></div> |
-| <div><p align="center">[Ghostfolio stats](widgets/ghostfolio-stats/README.md)<br>by [@ziritione85](https://github.com/ziritione85)<p><p align="center">[![](widgets/ghostfolio-stats/preview.png)](/widgets/ghostfolio-stats/README.md)</p></div> | <div><p align="center">[GitHub Notifications](widgets/github-notifications/README.md)<br>by [@luboszima](https://github.com/luboszima)<p><p align="center">[![](widgets/github-notifications/preview.png)](/widgets/github-notifications/README.md)</p></div> | <div><p align="center">[GitHub personal repositories](widgets/github-personal-repos/README.md)<br>by [@menitz](https://github.com/menitz)<p><p align="center">[![](widgets/github-personal-repos/preview.png)](/widgets/github-personal-repos/README.md)</p></div> |
-| <div><p align="center">[Gluetun VPN status](widgets/gluetun-vpn-status/README.md)<br>by [@Hyptu](https://github.com/Hyptu)<p><p align="center">[![](widgets/gluetun-vpn-status/preview.png)](/widgets/gluetun-vpn-status/README.md)</p></div> | <div><p align="center">[Google Calendar List](widgets/google-calendar-list/README.md)<br>by [@anant-j](https://github.com/anant-j)<p><p align="center">[![](widgets/google-calendar-list/preview.png)](/widgets/google-calendar-list/README.md)</p></div> | <div><p align="center">[Hardcover Currently Reading](widgets/hardcover-currently-reading/README.md)<br>by [@Akasiek](https://github.com/Akasiek)<p><p align="center">[![](widgets/hardcover-currently-reading/preview.png)](/widgets/hardcover-currently-reading/README.md)</p></div> |
-| <div><p align="center">[Home Assistant Sensor Stats](widgets/homeassistant-sensor-stats/README.md)<br>by [@AWildLeon](https://github.com/AWildLeon)<p><p align="center">[![](widgets/homeassistant-sensor-stats/preview.png)](/widgets/homeassistant-sensor-stats/README.md)</p></div> | <div><p align="center">[Immich stats](widgets/immich-stats/README.md)<br>by [@svilenmarkov](https://github.com/svilenmarkov)<p><p align="center">[![](widgets/immich-stats/preview.png)](/widgets/immich-stats/README.md)</p></div> | <div><p align="center">[Jellyfin Latest/Next Up](widgets/jellyfin-latest/README.md)<br>by [@Nedra1998](https://github.com/Nedra1998)<p><p align="center">[![](widgets/jellyfin-latest/preview.png)](/widgets/jellyfin-latest/README.md)</p></div> |
-| <div><p align="center">[Jellyfin Stats](widgets/jellyfin-emby-stats/README.md)<br>by [@lfvelosoh](https://github.com/lfvelosoh)<p><p align="center">[![](widgets/jellyfin-emby-stats/preview.png)](/widgets/jellyfin-emby-stats/README.md)</p></div> | <div><p align="center">[Karakeep Dashboard](widgets/karakeep-dashboard/README.md)<br>by [@razdnut](https://github.com/razdnut)<p><p align="center">[![](widgets/karakeep-dashboard/preview.png)](/widgets/karakeep-dashboard/README.md)</p></div> | <div><p align="center">[Kavita Latest](widgets/kavita-latest/README.md)<br>by [@Nedra1998](https://github.com/Nedra1998)<p><p align="center">[![](widgets/kavita-latest/on-deck-preview.png)](/widgets/kavita-latest/README.md)</p></div> |
-| <div><p align="center">[Last.FM Recent Tracks](widgets/lastfm-recent-tracks/README.md)<br>by [@Akasiek](https://github.com/Akasiek)<p><p align="center">[![](widgets/lastfm-recent-tracks/preview.png)](/widgets/lastfm-recent-tracks/README.md)</p></div> | <div><p align="center">[Latest Community Widgets](widgets/latest-community-widgets/README.md)<br>by [@svilenmarkov](https://github.com/svilenmarkov)<p><p align="center">[![](widgets/latest-community-widgets/preview.png)](/widgets/latest-community-widgets/README.md)</p></div> | <div><p align="center">[LeetCode Daily Question](widgets/leetcode-daily-question/README.md)<br>by [@hohaithuy](https://github.com/hohaithuy)<p><p align="center">[![](widgets/leetcode-daily-question/preview.png)](/widgets/leetcode-daily-question/README.md)</p></div> |
-| <div><p align="center">[Linkwarden Latest Bookmarks](widgets/linkwarden-latest-bookmarks/README.md)<br>by [@josevictorferreira](https://github.com/josevictorferreira)<p><p align="center">[![](widgets/linkwarden-latest-bookmarks/preview.png)](/widgets/linkwarden-latest-bookmarks/README.md)</p></div> | <div><p align="center">[London Tube Status](widgets/london-tube-status/README.md)<br>by [@tomdaly](https://github.com/tomdaly)<p><p align="center">[![](widgets/london-tube-status/preview-dark.png)](/widgets/london-tube-status/README.md)</p></div> | <div><p align="center">[MLB Scores](widgets/mlb-scores-tracker/README.md)<br>by [@ShmoobiJones](https://github.com/ShmoobiJones)<p><p align="center">[![](widgets/mlb-scores-tracker/preview.png)](/widgets/mlb-scores-tracker/README.md)</p></div> |
-| <div><p align="center">[Mealie Today's Meal](widgets/mealie-todays-meal/README.md)<br>by [@wtoa](https://github.com/wtoa)<p><p align="center">[![](widgets/mealie-todays-meal/preview.png)](/widgets/mealie-todays-meal/README.md)</p></div> | <div><p align="center">[Media Server History](widgets/media-server-history/README.md)<br>by [@titembaataar](https://github.com/titembaataar)<p><p align="center">[![](widgets/media-server-history/preview.png)](/widgets/media-server-history/README.md)</p></div> | <div><p align="center">[Media Server Playing](widgets/media-server-playing/README.md)<br>by [@titembaataar](https://github.com/titembaataar)<p><p align="center">[![](widgets/media-server-playing/preview.png)](/widgets/media-server-playing/README.md)</p></div> |
-| <div><p align="center">[Minecraft server](widgets/minecraft-server/README.md)<br>by [@not-first](https://github.com/not-first)<p><p align="center">[![](widgets/minecraft-server/preview.png)](/widgets/minecraft-server/README.md)</p></div> | <div><p align="center">[Mullvad VPN status](widgets/mullvad-vpn-status/README.md)<br>by [@DelMonteAJ](https://github.com/DelMonteAJ)<p><p align="center">[![](widgets/mullvad-vpn-status/preview.png)](/widgets/mullvad-vpn-status/README.md)</p></div> | <div><p align="center">[NBA Scores Tracker](widgets/nba-scores-tracker/README.md)<br>by [@ShmoobiJones](https://github.com/ShmoobiJones)<p><p align="center">[![](widgets/nba-scores-tracker/preview.png)](/widgets/nba-scores-tracker/README.md)</p></div> |
-| <div><p align="center">[NCAA CFB Scoreboard](widgets/ncaa-cfb-scoreboard/README.md)<br>by [@maxo99](https://github.com/maxo99)<p><p align="center">[![](widgets/ncaa-cfb-scoreboard/preview.png)](/widgets/ncaa-cfb-scoreboard/README.md)</p></div> | <div><p align="center">[NFL Scoreboard](widgets/nfl-scoreboard/README.md)<br>by [@maxo99](https://github.com/maxo99)<p><p align="center">[![](widgets/nfl-scoreboard/preview.png)](/widgets/nfl-scoreboard/README.md)</p></div> | <div><p align="center">[NHL Scores](widgets/nhl-scores/README.md)<br>by [@jo-nike](https://github.com/jo-nike)<p><p align="center">[![](widgets/nhl-scores/preview.png)](/widgets/nhl-scores/README.md)</p></div> |
-| <div><p align="center">[NZBGet Status](widgets/nzbget-status/README.md)<br>by [@0ui](https://github.com/0ui)<p><p align="center">[![](widgets/nzbget-status/preview.png)](/widgets/nzbget-status/README.md)</p></div> | <div><p align="center">[Nearby Aircraft](widgets/nearby-aircraft/README.md)<br>by [@cristiandiiorio](https://github.com/cristiandiiorio)<p><p align="center">[![](widgets/nearby-aircraft/preview.png)](/widgets/nearby-aircraft/README.md)</p></div> | <div><p align="center">[NetAlertX Device Status](widgets/netalertx/README.md)<br>by [@razdnut](https://github.com/razdnut)<p><p align="center">[![](widgets/netalertx/preview.png)](/widgets/netalertx/README.md)</p></div> |
-| <div><p align="center">[Netbird devices](widgets/netbird-devices/README.md)<br>by [@menitz](https://github.com/menitz)<p><p align="center">[![](widgets/netbird-devices/preview.png)](/widgets/netbird-devices/README.md)</p></div> | <div><p align="center">[NextDNS Stats](widgets/nextdns-stats/README.md)<br>by [@ziritione85](https://github.com/ziritione85)<p><p align="center">[![](widgets/nextdns-stats/preview.png)](/widgets/nextdns-stats/README.md)</p></div> | <div><p align="center">[Nextcloud Deck](widgets/nextcloud-deck/README.md)<br>by [@drakkein](https://github.com/drakkein)<p><p align="center">[![](widgets/nextcloud-deck/preview.png)](/widgets/nextcloud-deck/README.md)</p></div> |
-| <div><p align="center">[Overseerr Trending/Discovery](widgets/overseerr-trending-discovery/README.md)<br>by [@flamechair](https://github.com/flamechair)<p><p align="center">[![](widgets/overseerr-trending-discovery/preview.png)](/widgets/overseerr-trending-discovery/README.md)</p></div> | <div><p align="center">[Paperless NGX Stats](widgets/paperlessngx-stats/README.md)<br>by [@ralphocdol](https://github.com/ralphocdol)<p><p align="center">[![](widgets/paperlessngx-stats/preview.png)](/widgets/paperlessngx-stats/README.md)</p></div> | <div><p align="center">[PeaNut UPS Stats](widgets/peanut-ups-status/README.md)<br>by [@razdnut](https://github.com/razdnut)<p><p align="center">[![](widgets/peanut-ups-status/preview.png)](/widgets/peanut-ups-status/README.md)</p></div> |
-| <div><p align="center">[Prowlarr Indexers](widgets/prowlarr-indexers/README.md)<br>by [@mattiasghodsian](https://github.com/mattiasghodsian)<p><p align="center">[![](widgets/prowlarr-indexers/preview.png)](/widgets/prowlarr-indexers/README.md)</p></div> | <div><p align="center">[Proxmox VE Nodes](widgets/proxmox-ve-nodes/README.md)<br>by [@ralphocdol](https://github.com/ralphocdol)<p><p align="center">[![](widgets/proxmox-ve-nodes/preview.png)](/widgets/proxmox-ve-nodes/README.md)</p></div> | <div><p align="center">[Proxmox VE Stats](widgets/proxmox-ve-stats/README.md)<br>by [@ralphocdol](https://github.com/ralphocdol)<p><p align="center">[![](widgets/proxmox-ve-stats/preview.png)](/widgets/proxmox-ve-stats/README.md)</p></div> |
-| <div><p align="center">[Proxmox VE Table Stats](widgets/proxmox-detailed-resources/README.md)<br>by [@lfvelosoh](https://github.com/lfvelosoh)<p><p align="center">[![](widgets/proxmox-detailed-resources/preview.png)](/widgets/proxmox-detailed-resources/README.md)</p></div> | <div><p align="center">[Raindrop Bookmarks](widgets/raindrop-latest-links/README.md)<br>by [@herculosh](https://github.com/herculosh)<p><p align="center">[![](widgets/raindrop-latest-links/preview.png)](/widgets/raindrop-latest-links/README.md)</p></div> | <div><p align="center">[Random Bible Verse](widgets/random-bible-verse/README.md)<br>by [@pypp](https://github.com/pypp)<p><p align="center">[![](widgets/random-bible-verse/preview.png)](/widgets/random-bible-verse/README.md)</p></div> |
-| <div><p align="center">[Random fact](widgets/random-fact/README.md)<br>by [@svilenmarkov](https://github.com/svilenmarkov)<p><p align="center">[![](widgets/random-fact/preview.png)](/widgets/random-fact/README.md)</p></div> | <div><p align="center">[RetroAchievement](widgets/retroachievement-of-the-week/README.md)<br>by [@milktoastrat](https://github.com/milktoastrat)<p><p align="center">[![](widgets/retroachievement-of-the-week/retroachievement-of-the-week-example.png)](/widgets/retroachievement-of-the-week/README.md)</p></div> | <div><p align="center">[RomM Stats](widgets/romm-stats/README.md)<br>by [@milktoastrat](https://github.com/milktoastrat)<p><p align="center">[![](widgets/romm-stats/romm-stats-example.png)](/widgets/romm-stats/README.md)</p></div> |
-| <div><p align="center">[SABnzbd Status](widgets/sabnzbd-stats/README.md)<br>by [@Neo11Neo](https://github.com/Neo11Neo)<p><p align="center">[![](widgets/sabnzbd-stats/preview.png)](/widgets/sabnzbd-stats/README.md)</p></div> | <div><p align="center">[Scrutiny](widgets/scrutiny/README.md)<br>by [@SkyAllinott](https://github.com/SkyAllinott)<p><p align="center">[![](widgets/scrutiny/drive_health.png)](/widgets/scrutiny/README.md)</p></div> | <div><p align="center">[Should I Deploy Today](widgets/should-i-deploy-today/README.md)<br>by [@hohaithuy](https://github.com/hohaithuy)<p><p align="center">[![](widgets/should-i-deploy-today/preview.png)](/widgets/should-i-deploy-today/README.md)</p></div> |
-| <div><p align="center">[Slack Status](widgets/slack-status/README.md)<br>by [@cartwatson](https://github.com/cartwatson)<p><p align="center">[![](widgets/slack-status/slack-clear.png)](/widgets/slack-status/README.md)</p></div> | <div><p align="center">[Speedtest tracker](widgets/speedtest-tracker/README.md)<br>by [@not-first](https://github.com/not-first)<p><p align="center">[![](widgets/speedtest-tracker/preview.png)](/widgets/speedtest-tracker/README.md)</p></div> | <div><p align="center">[Spotify Now Playing](widgets/spotify-now-playing/README.md)<br>by [@needsadjustment](https://github.com/needsadjustment)<p><p align="center">[![](widgets/spotify-now-playing/preview.png)](/widgets/spotify-now-playing/README.md)</p></div> |
-| <div><p align="center">[Spotify Player](widgets/spotify-player/README.md)<br>by [@anant-j](https://github.com/anant-j)<p><p align="center">[![](widgets/spotify-player/preview.png)](/widgets/spotify-player/README.md)</p></div> | <div><p align="center">[St. Louis Fed US Mortgage Rates](widgets/st-louis-fed-us-mortgage-rates/README.md)<br>by [@ehaughee](https://github.com/ehaughee)<p><p align="center">[![](widgets/st-louis-fed-us-mortgage-rates/preview.png)](/widgets/st-louis-fed-us-mortgage-rates/README.md)</p></div> | <div><p align="center">[Steam Recently Played Games](widgets/steam-recently-played-games/README.md)<br>by [@lunnosmp4](https://github.com/lunnosmp4)<p><p align="center">[![](widgets/steam-recently-played-games/preview.png)](/widgets/steam-recently-played-games/README.md)</p></div> |
-| <div><p align="center">[Steam User](widgets/steam-user/README.md)<br>by [@lunnosmp4](https://github.com/lunnosmp4)<p><p align="center">[![](widgets/steam-user/preview.png)](/widgets/steam-user/README.md)</p></div> | <div><p align="center">[Steam specials](widgets/steam-specials/README.md)<br>by [@svilenmarkov](https://github.com/svilenmarkov)<p><p align="center">[![](widgets/steam-specials/preview.png)](/widgets/steam-specials/README.md)</p></div> | <div><p align="center">[Syncthing](widgets/syncthing/README.md)<br>by [@JohnCannon97](https://github.com/JohnCannon97)<p><p align="center">[![](widgets/syncthing/preview.png)](/widgets/syncthing/README.md)</p></div> |
-| <div><p align="center">[Tailscale devices](widgets/tailscale-devices/README.md)<br>by [@not-first](https://github.com/not-first)<p><p align="center">[![](widgets/tailscale-devices/preview.png)](/widgets/tailscale-devices/README.md)</p></div> | <div><p align="center">[Tautulli Stats](widgets/tautulli-stats/README.md)<br>by [@SkyAllinott](https://github.com/SkyAllinott)<p><p align="center">[![](widgets/tautulli-stats/now_playing.png)](/widgets/tautulli-stats/README.md)</p></div> | <div><p align="center">[Technitium DNS Stats](widgets/technitium-dns-stats/README.md)<br>by [@eribbey](https://github.com/eribbey)<p><p align="center">[![](widgets/technitium-dns-stats/preview.png)](/widgets/technitium-dns-stats/README.md)</p></div> |
-| <div><p align="center">[Time Bar](widgets/time-bar/README.md)<br>by [@anant-j](https://github.com/anant-j)<p><p align="center">[![](widgets/time-bar/preview.png)](/widgets/time-bar/README.md)</p></div> | <div><p align="center">[Trakt](widgets/trakt/README.md)<br>by [@RxBrad](https://github.com/RxBrad)<p><p align="center">[![](widgets/trakt/preview.png)](/widgets/trakt/README.md)</p></div> | <div><p align="center">[Trending Bluesky News](widgets/trending-bluesky-news/README.md)<br>by [@tomcasavant](https://github.com/tomcasavant)<p><p align="center">[![](widgets/trending-bluesky-news/preview.png)](/widgets/trending-bluesky-news/README.md)</p></div> |
-| <div><p align="center">[Trending GitHub Repositories](widgets/trending-github-repositories/README.md)<br>by [@jelkuweiss](https://github.com/jelkuweiss)<p><p align="center">[![](widgets/trending-github-repositories/preview.png)](/widgets/trending-github-repositories/README.md)</p></div> | <div><p align="center">[Trending Mastodon Links](widgets/trending-mastodon-links/README.md)<br>by [@tomcasavant](https://github.com/tomcasavant)<p><p align="center">[![](widgets/trending-mastodon-links/preview.png)](/widgets/trending-mastodon-links/README.md)</p></div> | <div><p align="center">[TrueNAS Scale Pools](widgets/truenas-scale-pools/README.md)<br>by [@drakkein](https://github.com/drakkein)<p><p align="center">[![](widgets/truenas-scale-pools/preview.png)](/widgets/truenas-scale-pools/README.md)</p></div> |
-| <div><p align="center">[Unifi](widgets/unifi/README.md)<br>by [@prozn](https://github.com/prozn)<p><p align="center">[![](widgets/unifi/details-preview.png)](/widgets/unifi/README.md)</p></div> | <div><p align="center">[Uptime Kuma](widgets/uptime-kuma/README.md)<br>by [@not-first](https://github.com/not-first)<p><p align="center">[![](widgets/uptime-kuma/preview.png)](/widgets/uptime-kuma/README.md)</p></div> | <div><p align="center">[Vikunja Taskboard](widgets/vikunja-taskboard/README.md)<br>by [@gugugiyu](https://github.com/gugugiyu)<p><p align="center">[![](widgets/vikunja-taskboard/preview.png)](/widgets/vikunja-taskboard/README.md)</p></div> |
-| <div><p align="center">[Weather Seven Day](widgets/weather-seven-day/README.md)<br>by [@brandonsie](https://github.com/brandonsie)<p><p align="center">[![](widgets/weather-seven-day/preview.png)](/widgets/weather-seven-day/README.md)</p></div> | <div><p align="center">[What's Up Docker Monitor](widgets/wud-monitor/README.md)<br>by [@panonim](https://github.com/panonim)<p><p align="center">[![](widgets/wud-monitor/wud-main/wud_main_preview.png)](/widgets/wud-monitor/README.md)</p></div> | <div><p align="center">[YouTube Embedded Player](widgets/youtube-embedded-player/README.md)<br>by [@ralphocdol](https://github.com/ralphocdol)<p><p align="center">[![](widgets/youtube-embedded-player/preview.png)](/widgets/youtube-embedded-player/README.md)</p></div> |
-| <div><p align="center">[qBittorrent Stats](widgets/qbittorrent-stats/README.md)<br>by [@danzkigg](https://github.com/danzkigg)<p><p align="center">[![](widgets/qbittorrent-stats/preview1.png)](/widgets/qbittorrent-stats/README.md)</p></div> |  |  |
+<table>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/afl-widgets/README.md">AFL Widgets</a><br>by <a href="https://github.com/0099FF">@0099FF</a><p>
+    <p align="center"><a href="widgets/afl-widgets/README.md"><img src="widgets/afl-widgets/fixture.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/air-quality/README.md">Air Quality</a><br>by <a href="https://github.com/painfultruths">@painfultruths</a><p>
+    <p align="center"><a href="widgets/air-quality/README.md"><img src="widgets/air-quality/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/animals-display/README.md">Animals Display</a><br>by <a href="https://github.com/panonim">@panonim</a><p>
+    <p align="center"><a href="widgets/animals-display/README.md"><img src="widgets/animals-display/preview.png"></a></p>
+</td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/arr-releases/README.md">Arr Releases</a><br>by <a href="https://github.com/erkston">@erkston</a><p>
+    <p align="center"><a href="widgets/arr-releases/README.md"><img src="widgets/arr-releases/lidarrupcoming.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/astronomy-picture-of-the-day/README.md">Astronomy Picture of the Day</a><br>by <a href="https://github.com/Saisamarth21">@Saisamarth21</a><p>
+    <p align="center"><a href="widgets/astronomy-picture-of-the-day/README.md"><img src="widgets/astronomy-picture-of-the-day/preview1.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/audiobookshelf-personalized/README.md">AudioBookshelf Personalized Shelfs</a><br>by <a href="https://github.com/Nedra1998">@Nedra1998</a><p>
+    <p align="center"><a href="widgets/audiobookshelf-personalized/README.md"><img src="widgets/audiobookshelf-personalized/audiobook-continue-listening.png"></a></p>
+</td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/audiobookshelf/README.md">Audiobookshelf stats</a><br>by <a href="https://github.com/ferdyverse">@ferdyverse</a><p>
+    <p align="center"><a href="widgets/audiobookshelf/README.md"><img src="widgets/audiobookshelf/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/azirevpn-connection-status/README.md">AzireVPN Connection Status</a><br>by <a href="https://github.com/mattiasghodsian">@mattiasghodsian</a><p>
+    <p align="center"><a href="widgets/azirevpn-connection-status/README.md"><img src="widgets/azirevpn-connection-status/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/beszel-metrics/README.md">Beszel Metrics</a><br>by <a href="https://github.com/panonim">@panonim</a><p>
+    <p align="center"><a href="widgets/beszel-metrics/README.md"><img src="widgets/beszel-metrics/preview_1.png"></a></p>
+</td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/calibre-web-stats/README.md">Calibre-Web Stats</a><br>by <a href="https://github.com/rvelasq">@rvelasq</a><p>
+    <p align="center"><a href="widgets/calibre-web-stats/README.md"><img src="widgets/calibre-web-stats/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/cats-as-a-service-photos/README.md">Cats As A Service Photos</a><br>by <a href="https://github.com/gugugiyu">@gugugiyu</a><p>
+    <p align="center"><a href="widgets/cats-as-a-service-photos/README.md"><img src="widgets/cats-as-a-service-photos/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/chess-puzzle/README.md">Chess.com Daily Puzzle</a><br>by <a href="https://github.com/panonim">@panonim</a><p>
+    <p align="center"><a href="widgets/chess-puzzle/README.md"><img src="widgets/chess-puzzle/preview.png"></a></p>
+</td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/cloudflared-tunnels/README.md">Cloudflare Tunnels</a><br>by <a href="https://github.com/drshajul">@drshajul</a><p>
+    <p align="center"><a href="widgets/cloudflared-tunnels/README.md"><img src="widgets/cloudflared-tunnels/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/crafty-controller-minecraft-server/README.md">Crafty Minecraft Server Stats</a><br>by <a href="https://github.com/MartyX98">@MartyX98</a><p>
+    <p align="center"><a href="widgets/crafty-controller-minecraft-server/README.md"><img src="widgets/crafty-controller-minecraft-server/Preview_offline.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/cryptopanic-news/README.md">Cryptopanic News</a><br>by <a href="https://github.com/herculosh">@herculosh</a><p>
+    <p align="center"><a href="widgets/cryptopanic-news/README.md"><img src="widgets/cryptopanic-news/preview.png"></a></p>
+</td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/cup-updates/README.md">Cup Updates</a><br>by <a href="https://github.com/panonim">@panonim</a><p>
+    <p align="center"><a href="widgets/cup-updates/README.md"><img src="widgets/cup-updates/preview.jpeg"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/epic-free-widget/README.md">Epic Games Free Games</a><br>by <a href="https://github.com/marocainperdu">@marocainperdu</a><p>
+    <p align="center"><a href="widgets/epic-free-widget/README.md"><img src="widgets/epic-free-widget/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/football-fixtures/README.md">Football Fixtures</a><br>by <a href="https://github.com/cristiandiiorio">@cristiandiiorio</a><p>
+    <p align="center"><a href="widgets/football-fixtures/README.md"><img src="widgets/football-fixtures/preview.png"></a></p>
+</td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/forgejo-repos/README.md">Forgejo repos</a><br>by <a href="https://github.com/dodecube">@dodecube</a><p>
+    <p align="center"><a href="widgets/forgejo-repos/README.md"><img src="widgets/forgejo-repos/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/formula1-widgets/README.md">Formula 1 Widgets</a><br>by <a href="https://github.com/abaza738">@abaza738</a><p>
+    <p align="center"><a href="widgets/formula1-widgets/README.md"><img src="widgets/formula1-widgets/preview1.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/frigate-stats/README.md">Frigate stats</a><br>by <a href="https://github.com/Pimer0">@Pimer0</a><p>
+    <p align="center"><a href="widgets/frigate-stats/README.md"><img src="widgets/frigate-stats/preview.png"></a></p>
+</td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/ghostfolio-stats/README.md">Ghostfolio stats</a><br>by <a href="https://github.com/ziritione85">@ziritione85</a><p>
+    <p align="center"><a href="widgets/ghostfolio-stats/README.md"><img src="widgets/ghostfolio-stats/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/github-notifications/README.md">GitHub Notifications</a><br>by <a href="https://github.com/luboszima">@luboszima</a><p>
+    <p align="center"><a href="widgets/github-notifications/README.md"><img src="widgets/github-notifications/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/github-personal-repos/README.md">GitHub personal repositories</a><br>by <a href="https://github.com/menitz">@menitz</a><p>
+    <p align="center"><a href="widgets/github-personal-repos/README.md"><img src="widgets/github-personal-repos/preview.png"></a></p>
+</td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/gluetun-vpn-status/README.md">Gluetun VPN status</a><br>by <a href="https://github.com/Hyptu">@Hyptu</a><p>
+    <p align="center"><a href="widgets/gluetun-vpn-status/README.md"><img src="widgets/gluetun-vpn-status/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/google-calendar-list/README.md">Google Calendar List</a><br>by <a href="https://github.com/anant-j">@anant-j</a><p>
+    <p align="center"><a href="widgets/google-calendar-list/README.md"><img src="widgets/google-calendar-list/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/hardcover-currently-reading/README.md">Hardcover Currently Reading</a><br>by <a href="https://github.com/Akasiek">@Akasiek</a><p>
+    <p align="center"><a href="widgets/hardcover-currently-reading/README.md"><img src="widgets/hardcover-currently-reading/preview.png"></a></p>
+</td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/homeassistant-sensor-stats/README.md">Home Assistant Sensor Stats</a><br>by <a href="https://github.com/AWildLeon">@AWildLeon</a><p>
+    <p align="center"><a href="widgets/homeassistant-sensor-stats/README.md"><img src="widgets/homeassistant-sensor-stats/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/immich-stats/README.md">Immich stats</a><br>by <a href="https://github.com/svilenmarkov">@svilenmarkov</a><p>
+    <p align="center"><a href="widgets/immich-stats/README.md"><img src="widgets/immich-stats/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/jellyfin-latest/README.md">Jellyfin Latest/Next Up</a><br>by <a href="https://github.com/Nedra1998">@Nedra1998</a><p>
+    <p align="center"><a href="widgets/jellyfin-latest/README.md"><img src="widgets/jellyfin-latest/preview.png"></a></p>
+</td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/jellyfin-emby-stats/README.md">Jellyfin Stats</a><br>by <a href="https://github.com/lfvelosoh">@lfvelosoh</a><p>
+    <p align="center"><a href="widgets/jellyfin-emby-stats/README.md"><img src="widgets/jellyfin-emby-stats/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/karakeep-dashboard/README.md">Karakeep Dashboard</a><br>by <a href="https://github.com/razdnut">@razdnut</a><p>
+    <p align="center"><a href="widgets/karakeep-dashboard/README.md"><img src="widgets/karakeep-dashboard/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/kavita-latest/README.md">Kavita Latest</a><br>by <a href="https://github.com/Nedra1998">@Nedra1998</a><p>
+    <p align="center"><a href="widgets/kavita-latest/README.md"><img src="widgets/kavita-latest/on-deck-preview.png"></a></p>
+</td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/lastfm-recent-tracks/README.md">Last.FM Recent Tracks</a><br>by <a href="https://github.com/Akasiek">@Akasiek</a><p>
+    <p align="center"><a href="widgets/lastfm-recent-tracks/README.md"><img src="widgets/lastfm-recent-tracks/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/latest-community-widgets/README.md">Latest Community Widgets</a><br>by <a href="https://github.com/svilenmarkov">@svilenmarkov</a><p>
+    <p align="center"><a href="widgets/latest-community-widgets/README.md"><img src="widgets/latest-community-widgets/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/leetcode-daily-question/README.md">LeetCode Daily Question</a><br>by <a href="https://github.com/hohaithuy">@hohaithuy</a><p>
+    <p align="center"><a href="widgets/leetcode-daily-question/README.md"><img src="widgets/leetcode-daily-question/preview.png"></a></p>
+</td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/linkwarden-latest-bookmarks/README.md">Linkwarden Latest Bookmarks</a><br>by <a href="https://github.com/josevictorferreira">@josevictorferreira</a><p>
+    <p align="center"><a href="widgets/linkwarden-latest-bookmarks/README.md"><img src="widgets/linkwarden-latest-bookmarks/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/london-tube-status/README.md">London Tube Status</a><br>by <a href="https://github.com/tomdaly">@tomdaly</a><p>
+    <p align="center"><a href="widgets/london-tube-status/README.md"><img src="widgets/london-tube-status/preview-dark.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/mlb-scores-tracker/README.md">MLB Scores</a><br>by <a href="https://github.com/ShmoobiJones">@ShmoobiJones</a><p>
+    <p align="center"><a href="widgets/mlb-scores-tracker/README.md"><img src="widgets/mlb-scores-tracker/preview.png"></a></p>
+</td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/mealie-todays-meal/README.md">Mealie Today's Meal</a><br>by <a href="https://github.com/wtoa">@wtoa</a><p>
+    <p align="center"><a href="widgets/mealie-todays-meal/README.md"><img src="widgets/mealie-todays-meal/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/media-server-history/README.md">Media Server History</a><br>by <a href="https://github.com/titembaataar">@titembaataar</a><p>
+    <p align="center"><a href="widgets/media-server-history/README.md"><img src="widgets/media-server-history/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/media-server-playing/README.md">Media Server Playing</a><br>by <a href="https://github.com/titembaataar">@titembaataar</a><p>
+    <p align="center"><a href="widgets/media-server-playing/README.md"><img src="widgets/media-server-playing/preview.png"></a></p>
+</td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/minecraft-server/README.md">Minecraft server</a><br>by <a href="https://github.com/not-first">@not-first</a><p>
+    <p align="center"><a href="widgets/minecraft-server/README.md"><img src="widgets/minecraft-server/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/mullvad-vpn-status/README.md">Mullvad VPN status</a><br>by <a href="https://github.com/DelMonteAJ">@DelMonteAJ</a><p>
+    <p align="center"><a href="widgets/mullvad-vpn-status/README.md"><img src="widgets/mullvad-vpn-status/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/nba-scores-tracker/README.md">NBA Scores Tracker</a><br>by <a href="https://github.com/ShmoobiJones">@ShmoobiJones</a><p>
+    <p align="center"><a href="widgets/nba-scores-tracker/README.md"><img src="widgets/nba-scores-tracker/preview.png"></a></p>
+</td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/ncaa-cfb-scoreboard/README.md">NCAA CFB Scoreboard</a><br>by <a href="https://github.com/maxo99">@maxo99</a><p>
+    <p align="center"><a href="widgets/ncaa-cfb-scoreboard/README.md"><img src="widgets/ncaa-cfb-scoreboard/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/nfl-scoreboard/README.md">NFL Scoreboard</a><br>by <a href="https://github.com/maxo99">@maxo99</a><p>
+    <p align="center"><a href="widgets/nfl-scoreboard/README.md"><img src="widgets/nfl-scoreboard/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/nhl-scores/README.md">NHL Scores</a><br>by <a href="https://github.com/jo-nike">@jo-nike</a><p>
+    <p align="center"><a href="widgets/nhl-scores/README.md"><img src="widgets/nhl-scores/preview.png"></a></p>
+</td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/nzbget-status/README.md">NZBGet Status</a><br>by <a href="https://github.com/0ui">@0ui</a><p>
+    <p align="center"><a href="widgets/nzbget-status/README.md"><img src="widgets/nzbget-status/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/nearby-aircraft/README.md">Nearby Aircraft</a><br>by <a href="https://github.com/cristiandiiorio">@cristiandiiorio</a><p>
+    <p align="center"><a href="widgets/nearby-aircraft/README.md"><img src="widgets/nearby-aircraft/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/netalertx/README.md">NetAlertX Device Status</a><br>by <a href="https://github.com/razdnut">@razdnut</a><p>
+    <p align="center"><a href="widgets/netalertx/README.md"><img src="widgets/netalertx/preview.png"></a></p>
+</td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/netbird-devices/README.md">Netbird devices</a><br>by <a href="https://github.com/menitz">@menitz</a><p>
+    <p align="center"><a href="widgets/netbird-devices/README.md"><img src="widgets/netbird-devices/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/nextdns-stats/README.md">NextDNS Stats</a><br>by <a href="https://github.com/ziritione85">@ziritione85</a><p>
+    <p align="center"><a href="widgets/nextdns-stats/README.md"><img src="widgets/nextdns-stats/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/nextcloud-deck/README.md">Nextcloud Deck</a><br>by <a href="https://github.com/drakkein">@drakkein</a><p>
+    <p align="center"><a href="widgets/nextcloud-deck/README.md"><img src="widgets/nextcloud-deck/preview.png"></a></p>
+</td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/overseerr-trending-discovery/README.md">Overseerr Trending/Discovery</a><br>by <a href="https://github.com/flamechair">@flamechair</a><p>
+    <p align="center"><a href="widgets/overseerr-trending-discovery/README.md"><img src="widgets/overseerr-trending-discovery/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/paperlessngx-stats/README.md">Paperless NGX Stats</a><br>by <a href="https://github.com/ralphocdol">@ralphocdol</a><p>
+    <p align="center"><a href="widgets/paperlessngx-stats/README.md"><img src="widgets/paperlessngx-stats/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/peanut-ups-status/README.md">PeaNut UPS Stats</a><br>by <a href="https://github.com/razdnut">@razdnut</a><p>
+    <p align="center"><a href="widgets/peanut-ups-status/README.md"><img src="widgets/peanut-ups-status/preview.png"></a></p>
+</td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/prowlarr-indexers/README.md">Prowlarr Indexers</a><br>by <a href="https://github.com/mattiasghodsian">@mattiasghodsian</a><p>
+    <p align="center"><a href="widgets/prowlarr-indexers/README.md"><img src="widgets/prowlarr-indexers/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/proxmox-ve-nodes/README.md">Proxmox VE Nodes</a><br>by <a href="https://github.com/ralphocdol">@ralphocdol</a><p>
+    <p align="center"><a href="widgets/proxmox-ve-nodes/README.md"><img src="widgets/proxmox-ve-nodes/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/proxmox-ve-stats/README.md">Proxmox VE Stats</a><br>by <a href="https://github.com/ralphocdol">@ralphocdol</a><p>
+    <p align="center"><a href="widgets/proxmox-ve-stats/README.md"><img src="widgets/proxmox-ve-stats/preview.png"></a></p>
+</td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/proxmox-detailed-resources/README.md">Proxmox VE Table Stats</a><br>by <a href="https://github.com/lfvelosoh">@lfvelosoh</a><p>
+    <p align="center"><a href="widgets/proxmox-detailed-resources/README.md"><img src="widgets/proxmox-detailed-resources/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/raindrop-latest-links/README.md">Raindrop Bookmarks</a><br>by <a href="https://github.com/herculosh">@herculosh</a><p>
+    <p align="center"><a href="widgets/raindrop-latest-links/README.md"><img src="widgets/raindrop-latest-links/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/random-bible-verse/README.md">Random Bible Verse</a><br>by <a href="https://github.com/pypp">@pypp</a><p>
+    <p align="center"><a href="widgets/random-bible-verse/README.md"><img src="widgets/random-bible-verse/preview.png"></a></p>
+</td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/random-fact/README.md">Random fact</a><br>by <a href="https://github.com/svilenmarkov">@svilenmarkov</a><p>
+    <p align="center"><a href="widgets/random-fact/README.md"><img src="widgets/random-fact/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/retroachievement-of-the-week/README.md">RetroAchievement</a><br>by <a href="https://github.com/milktoastrat">@milktoastrat</a><p>
+    <p align="center"><a href="widgets/retroachievement-of-the-week/README.md"><img src="widgets/retroachievement-of-the-week/retroachievement-of-the-week-example.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/romm-stats/README.md">RomM Stats</a><br>by <a href="https://github.com/milktoastrat">@milktoastrat</a><p>
+    <p align="center"><a href="widgets/romm-stats/README.md"><img src="widgets/romm-stats/romm-stats-example.png"></a></p>
+</td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/sabnzbd-stats/README.md">SABnzbd Status</a><br>by <a href="https://github.com/Neo11Neo">@Neo11Neo</a><p>
+    <p align="center"><a href="widgets/sabnzbd-stats/README.md"><img src="widgets/sabnzbd-stats/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/scrutiny/README.md">Scrutiny</a><br>by <a href="https://github.com/SkyAllinott">@SkyAllinott</a><p>
+    <p align="center"><a href="widgets/scrutiny/README.md"><img src="widgets/scrutiny/drive_health.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/should-i-deploy-today/README.md">Should I Deploy Today</a><br>by <a href="https://github.com/hohaithuy">@hohaithuy</a><p>
+    <p align="center"><a href="widgets/should-i-deploy-today/README.md"><img src="widgets/should-i-deploy-today/preview.png"></a></p>
+</td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/slack-status/README.md">Slack Status</a><br>by <a href="https://github.com/cartwatson">@cartwatson</a><p>
+    <p align="center"><a href="widgets/slack-status/README.md"><img src="widgets/slack-status/slack-clear.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/speedtest-tracker/README.md">Speedtest tracker</a><br>by <a href="https://github.com/not-first">@not-first</a><p>
+    <p align="center"><a href="widgets/speedtest-tracker/README.md"><img src="widgets/speedtest-tracker/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/spotify-now-playing/README.md">Spotify Now Playing</a><br>by <a href="https://github.com/needsadjustment">@needsadjustment</a><p>
+    <p align="center"><a href="widgets/spotify-now-playing/README.md"><img src="widgets/spotify-now-playing/preview.png"></a></p>
+</td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/spotify-player/README.md">Spotify Player</a><br>by <a href="https://github.com/anant-j">@anant-j</a><p>
+    <p align="center"><a href="widgets/spotify-player/README.md"><img src="widgets/spotify-player/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/st-louis-fed-us-mortgage-rates/README.md">St. Louis Fed US Mortgage Rates</a><br>by <a href="https://github.com/ehaughee">@ehaughee</a><p>
+    <p align="center"><a href="widgets/st-louis-fed-us-mortgage-rates/README.md"><img src="widgets/st-louis-fed-us-mortgage-rates/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/steam-recently-played-games/README.md">Steam Recently Played Games</a><br>by <a href="https://github.com/lunnosmp4">@lunnosmp4</a><p>
+    <p align="center"><a href="widgets/steam-recently-played-games/README.md"><img src="widgets/steam-recently-played-games/preview.png"></a></p>
+</td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/steam-user/README.md">Steam User</a><br>by <a href="https://github.com/lunnosmp4">@lunnosmp4</a><p>
+    <p align="center"><a href="widgets/steam-user/README.md"><img src="widgets/steam-user/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/steam-specials/README.md">Steam specials</a><br>by <a href="https://github.com/svilenmarkov">@svilenmarkov</a><p>
+    <p align="center"><a href="widgets/steam-specials/README.md"><img src="widgets/steam-specials/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/syncthing/README.md">Syncthing</a><br>by <a href="https://github.com/JohnCannon97">@JohnCannon97</a><p>
+    <p align="center"><a href="widgets/syncthing/README.md"><img src="widgets/syncthing/preview.png"></a></p>
+</td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/tailscale-devices/README.md">Tailscale devices</a><br>by <a href="https://github.com/not-first">@not-first</a><p>
+    <p align="center"><a href="widgets/tailscale-devices/README.md"><img src="widgets/tailscale-devices/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/tautulli-stats/README.md">Tautulli Stats</a><br>by <a href="https://github.com/SkyAllinott">@SkyAllinott</a><p>
+    <p align="center"><a href="widgets/tautulli-stats/README.md"><img src="widgets/tautulli-stats/now_playing.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/technitium-dns-stats/README.md">Technitium DNS Stats</a><br>by <a href="https://github.com/eribbey">@eribbey</a><p>
+    <p align="center"><a href="widgets/technitium-dns-stats/README.md"><img src="widgets/technitium-dns-stats/preview.png"></a></p>
+</td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/time-bar/README.md">Time Bar</a><br>by <a href="https://github.com/anant-j">@anant-j</a><p>
+    <p align="center"><a href="widgets/time-bar/README.md"><img src="widgets/time-bar/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/trakt/README.md">Trakt</a><br>by <a href="https://github.com/RxBrad">@RxBrad</a><p>
+    <p align="center"><a href="widgets/trakt/README.md"><img src="widgets/trakt/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/trending-bluesky-news/README.md">Trending Bluesky News</a><br>by <a href="https://github.com/tomcasavant">@tomcasavant</a><p>
+    <p align="center"><a href="widgets/trending-bluesky-news/README.md"><img src="widgets/trending-bluesky-news/preview.png"></a></p>
+</td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/trending-github-repositories/README.md">Trending GitHub Repositories</a><br>by <a href="https://github.com/jelkuweiss">@jelkuweiss</a><p>
+    <p align="center"><a href="widgets/trending-github-repositories/README.md"><img src="widgets/trending-github-repositories/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/trending-mastodon-links/README.md">Trending Mastodon Links</a><br>by <a href="https://github.com/tomcasavant">@tomcasavant</a><p>
+    <p align="center"><a href="widgets/trending-mastodon-links/README.md"><img src="widgets/trending-mastodon-links/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/truenas-scale-pools/README.md">TrueNAS Scale Pools</a><br>by <a href="https://github.com/drakkein">@drakkein</a><p>
+    <p align="center"><a href="widgets/truenas-scale-pools/README.md"><img src="widgets/truenas-scale-pools/preview.png"></a></p>
+</td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/unifi/README.md">Unifi</a><br>by <a href="https://github.com/prozn">@prozn</a><p>
+    <p align="center"><a href="widgets/unifi/README.md"><img src="widgets/unifi/details-preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/uptime-kuma/README.md">Uptime Kuma</a><br>by <a href="https://github.com/not-first">@not-first</a><p>
+    <p align="center"><a href="widgets/uptime-kuma/README.md"><img src="widgets/uptime-kuma/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/vikunja-taskboard/README.md">Vikunja Taskboard</a><br>by <a href="https://github.com/gugugiyu">@gugugiyu</a><p>
+    <p align="center"><a href="widgets/vikunja-taskboard/README.md"><img src="widgets/vikunja-taskboard/preview.png"></a></p>
+</td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/weather-seven-day/README.md">Weather Seven Day</a><br>by <a href="https://github.com/brandonsie">@brandonsie</a><p>
+    <p align="center"><a href="widgets/weather-seven-day/README.md"><img src="widgets/weather-seven-day/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/wud-monitor/README.md">What's Up Docker Monitor</a><br>by <a href="https://github.com/panonim">@panonim</a><p>
+    <p align="center"><a href="widgets/wud-monitor/README.md"><img src="widgets/wud-monitor/wud-main/wud_main_preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/youtube-embedded-player/README.md">YouTube Embedded Player</a><br>by <a href="https://github.com/ralphocdol">@ralphocdol</a><p>
+    <p align="center"><a href="widgets/youtube-embedded-player/README.md"><img src="widgets/youtube-embedded-player/preview.png"></a></p>
+</td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/qbittorrent-stats/README.md">qBittorrent Stats</a><br>by <a href="https://github.com/danzkigg">@danzkigg</a><p>
+    <p align="center"><a href="widgets/qbittorrent-stats/README.md"><img src="widgets/qbittorrent-stats/preview1.png"></a></p>
+</td>
+    <td valign="top"></td>
+    <td valign="top"></td>
+  </tr>
+</table>
