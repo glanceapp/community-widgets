@@ -12,6 +12,8 @@ Custom API widgets are much easier to setup and usually only require a copy-past
 
 ## Custom API Widgets
 
+A gallery with screenshots of all widgets can be found [here](GALLERY.md).
+
 {{- define "widget-list-item" }}
 * [{{ .Title }}](widgets/{{ .Directory }}/README.md) - {{ .Description | toLowerFirst | trimSuffix "." }}{{ if .Author }} (by @{{ .Author }}){{ end }}
 {{- end }}

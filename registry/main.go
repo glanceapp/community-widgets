@@ -22,6 +22,7 @@ type widget struct {
 	Title       string    `json:"title" yaml:"title"`
 	Description string    `json:"description" yaml:"description"`
 	Author      string    `json:"author" yaml:"author"`
+	Preview     string    `json:"-" yaml:"preview"`
 	Directory   string    `json:"directory" yaml:"-"`
 	ReadmeHash  string    `json:"readme_hash" yaml:"-"`
 	TimeAdded   time.Time `json:"time_added" yaml:"-"`
@@ -101,23 +102,43 @@ func main() {
 		return strings.Compare(a.Title, b.Title)
 	})
 
+	// Group widgets sorted by title into rows of 3 for gallery display
+	groupedSortedByTitle := make([][3]*widget, 0)
+	for chunk := range slices.Chunk(sortedByTitle, 3) {
+		for len(chunk) < 3 {
+			chunk = append(chunk, widget{})
+		}
+
+		groupedSortedByTitle = append(groupedSortedByTitle, [3]*widget{&chunk[0], &chunk[1], &chunk[2]})
+	}
+
 	// Generate README.md
 	readmeTemplate := parseTemplate("../README_template.md")
 
-	readmeTemplateData := struct {
-		WidgetsSortedByTimeAdded []widget
-		WidgetsSortedByTitle     []widget
-		ExtensionsSortedByTitle  []extension
+	templateData := struct {
+		WidgetsSortedByTimeAdded    []widget
+		WidgetsSortedByTitle        []widget
+		ExtensionsSortedByTitle     []extension
+		WidgetsGroupedSortedByTitle [][3]*widget
 	}{
-		WidgetsSortedByTimeAdded: sortedByTimeAdded,
-		WidgetsSortedByTitle:     sortedByTitle,
-		ExtensionsSortedByTitle:  extensions,
+		WidgetsSortedByTimeAdded:    sortedByTimeAdded,
+		WidgetsSortedByTitle:        sortedByTitle,
+		ExtensionsSortedByTitle:     extensions,
+		WidgetsGroupedSortedByTitle: groupedSortedByTitle,
 	}
 
-	readmeContents := readmeTemplate(readmeTemplateData)
+	readmeContents := readmeTemplate(templateData)
 	err = os.WriteFile("../README.md", readmeContents, 0644)
 	if err != nil {
 		log.Fatalf("Failed to write README.md: %v", err)
+	}
+
+	// Generate GALLERY.md
+	galleryTemplate := parseTemplate("../GALLERY_template.md")
+	galleryContents := galleryTemplate(templateData)
+	err = os.WriteFile("../GALLERY.md", galleryContents, 0644)
+	if err != nil {
+		log.Fatalf("Failed to write GALLERY.md: %v", err)
 	}
 }
 
@@ -187,6 +208,31 @@ func loadMetaFileForWidget(widgetDir string) {
 			w.TimeUpdated = time.Now().UTC()
 		}
 	}
+
+	preview := meta.Preview
+	if preview == "" {
+		preview = "preview.png"
+	}
+
+	_, err = os.Stat(widgetPath(widgetDir, preview))
+	if os.IsNotExist(err) {
+		files, err := os.ReadDir(widgetPath(widgetDir, ""))
+		if err != nil {
+			log.Fatalf("Failed to read widget directory %s: %v", widgetDir, err)
+		}
+
+		for _, file := range files {
+			name := strings.ToLower(file.Name())
+			if strings.HasSuffix(name, ".png") || strings.HasSuffix(name, ".jpg") || strings.HasSuffix(name, ".jpeg") {
+				preview = file.Name()
+				break
+			}
+		}
+	} else if err != nil {
+		log.Fatalf("Failed to check preview file for widget %s: %v", widgetDir, err)
+	}
+
+	registeredWidgets[widgetDir].Preview = preview
 }
 
 func widgetPath(widgetDir, file string) string {
