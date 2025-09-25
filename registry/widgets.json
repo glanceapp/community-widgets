@@ -306,6 +306,15 @@
     "time_updated": "2025-09-25T04:55:13.927027822Z"
   },
   {
+    "title": "Latest Community Widgets",
+    "description": "show a list of the most recently added community widgets",
+    "author": "svilenmarkov",
+    "directory": "latest-community-widgets",
+    "readme_hash": "36e8c1142d11ec49229799d64943a362da1f8057",
+    "time_added": "2025-09-25T05:06:25.238363736Z",
+    "time_updated": "2025-09-25T05:06:25.238363866Z"
+  },
+  {
     "title": "LeetCode Daily Question",
     "description": "show today leetcode questions with hashtag and difficult",
     "author": "hohaithuy",
