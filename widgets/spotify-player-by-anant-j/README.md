@@ -2,24 +2,40 @@
 
 # !!!!!!! IMPORTANT - PLEASE READ
 > [!CAUTION]     
-> Using the play(▶) and pause(⏸) buttons sends a request directly from the browser to Spotify's Play/Pause API's respectively. These PUT requests require the bearer token to be sent in the auth header, which means the $accessToken is exposed to the client-side/browser.  
+> Using the play(▶) and pause(⏸) buttons, or clicking on any song in the queue sends a request directly from the browser to Spotify's Play/Pause API's respectively. These PUT requests require the bearer token to be sent in the auth header, which means the $accessToken is exposed to the client-side/browser.  
 There are many security implications of this. For example, if a malicious actor get's access to this token, they can completely control and view your Spotify playlists/currently playing.  
 Please use this at your own risk. [Spotify Authorization](https://developer.spotify.com/documentation/web-api/tutorials/code-flow)  
 It is highly suggested to use [Glance Auth](https://github.com/glanceapp/glance/releases/tag/v0.8.0#g-rh-7). However, please note using this does not mitigate the above mentioned security risk.
 
 Choose from one of the following otpions:  
-1. Use Play/Pause in current-implementation at your own risk.
-2. Move Play/Pause functionality behind an external service so accessToken is not exposed on client-side.
-3. Remove Play/Pause from config below and the $accessToken will not be revealed on client-side.    
+1. Use Play/Pause, and Play from queue in current-implementation at your own risk.
+2. Move Play/Pause, and Play from queue functionality behind an external service so accessToken is not exposed on client-side.
+3. Remove Play/Pause, and Play from queue from config below and the $accessToken will not be revealed on client-side.    
 
 <hr>
 
 ```yaml
 - type: custom-api
-  hide-header: true
+  title: Spotify
   cache: 1s
-  frameless: true
   template: |
+    <style>
+      .offline-indicator {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: var(--color-negative);
+        display: inline-block;
+        margin-left: 4px;
+        vertical-align: middle;
+      }
+
+      .indicators-container {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+    </style>
     {{
       $tokenRes := newRequest "https://accounts.spotify.com/api/token"
         | withHeader "Authorization" "Basic ${SPOTIFY_BTOA}"
@@ -35,6 +51,17 @@ Choose from one of the following otpions:
           | withHeader "Authorization" (print "Bearer " $accessToken)
           | getResponse          
       }}
+      {{ if eq $currentlyPlaying.Response.StatusCode 204 }}
+      <div class="flex items-center">
+        <p style="margin-right:10px;">Offline</p>
+        <div class="indicators-container">
+          <span class="offline-indicator" data-popover-type="text"
+                data-popover-text="No current playback">
+          </span>
+        </div>
+      </div>
+      {{ end}}
+
       {{ $isCurrentlyPlaying := $currentlyPlaying.JSON.Bool "is_playing" }}
       {{ $isDeviceActive := $currentlyPlaying.JSON.Bool "device.is_active" }}
       {{ $isPrivateSession := $currentlyPlaying.JSON.Bool "device.is_private_session" }}
@@ -51,8 +78,8 @@ Choose from one of the following otpions:
         {{ $artist := $data.String "currently_playing.artists.0.name" }}
 
         {{ if gt (len $artist) 0 }}
-        <div class="size-h1">Spotify Now Playing</div>
-        <div class="widget-content-frame flex flex-row items-center gap-20">
+        <div class="size-h5">NOW PLAYING</div>
+        <div class="widget-content-frame flex flex-row items-center gap-20" style="padding: 4px; margin-top: 4px; margin-bottom: 4px;">
           <div>
             <img src="{{ $data.String "currently_playing.album.images.0.url" }}" style="border-radius: 5px; width: 5rem;" class="card">
           </div>
@@ -62,29 +89,43 @@ Choose from one of the following otpions:
           </div>
           {{ if and $isDeviceActive (not $isPrivateSession) }}
             {{ if $isCurrentlyPlaying }}
-              <div style="margin-right:10px;">
+              <div style="margin-right:10px; height: 100%; display: flex; flex-direction: column;">
                 <button style="font-size:25px;" onclick="fetch('https://api.spotify.com/v1/me/player/pause',{method:'PUT',headers:{'Authorization':'Bearer {{$accessToken}}'}}); setTimeout(function(){ location.reload(); }, 2000);">⏸</button>
                 <p>{{ $deviceName }}</p>
               </div>
             {{ else }}
-              <div style="margin-right:10px;">
+              <div style="margin-right:10px; height: 100%; display: flex; flex-direction: column;">
                 <button style="font-size:25px;" onclick="fetch('https://api.spotify.com/v1/me/player/play',{method:'PUT',headers:{'Authorization':'Bearer {{$accessToken}}'}}); setTimeout(function(){ location.reload(); }, 2000);">▶</button>
                 <p>{{ $deviceName }}</p>
               </div>
             {{ end }}
           {{ else if $isPrivateSession }}
-          <p style="margin-right:10px;">Private session is<br> active on {{ $deviceName }}</p> 
+          <p style="margin-right:10px;">Private session</p> 
           {{ else }}
-          <p style="margin-right:10px;">Device is inactive</p>
+          <p style="margin-right:10px;">Error</p>
           {{ end }}
         </div>
         {{ end }}
 
         {{ if gt (len $queue) 0 }}
-          <div class="size-h1 color-muted font-bold">Upcoming:</div>
+          <div class="size-h5 color-muted font-bold" style="margin-top: 10px;">UPCOMING:</div>
           {{ range $i, $track := $queue }}
             {{ if lt $i 5 }}
-              <div class="widget-content-frame flex flex-row items-center gap-20">
+              <div
+                class="widget-content-frame flex flex-row items-center gap-20"
+                style="padding: 4px; margin-top: 4px; margin-bottom: 4px; cursor: pointer;"
+                onclick="(function(){
+                  for (let j = 0; j < {{ add $i 1}}; j++) {
+                    fetch('https://api.spotify.com/v1/me/player/next', {
+                      method: 'POST',
+                      headers: {
+                        'Authorization': 'Bearer {{ $accessToken }}'
+                      }
+                    });
+                  }
+                  setTimeout(() => location.reload(), 2000);
+                })()"
+              >
                 <div>
                   <img src="{{ $track.String "album.images.0.url" }}" style="border-radius: 5px; width: 5rem;" class="card">
                 </div>

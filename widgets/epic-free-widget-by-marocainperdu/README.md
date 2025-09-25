@@ -35,7 +35,11 @@ Add the following to your dashboard configuration:
             {{ $price := .String "price.totalPrice.discountPrice" }}
             {{ $hasPromo := gt (len (.Array "promotions.promotionalOffers")) 0 }}
             {{ if and $hasPromo (eq $price "0") }}
-              <a href="https://store.epicgames.com/en-US/p/{{ .String "productSlug" }}" target="_blank" class="card">
+              {{ $gamePage := .String "productSlug" }}
+              {{ if gt (len (.Array "offerMappings")) 0 }}
+                {{ $gamePage = .String "offerMappings.0.pageSlug" }}
+              {{end }}
+              <a href="https://store.epicgames.com/en-US/p/{{ $gamePage }}" target="_blank" class="card">
                 {{ $title := .String "title" }}
                 {{ range .Array "keyImages" }}
                   {{ if eq (.String "type") "OfferImageWide" }}
