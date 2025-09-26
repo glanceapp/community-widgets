@@ -189,6 +189,15 @@
     "time_updated": "2025-09-25T04:55:13.926538939Z"
   },
   {
+    "title": "Gatus",
+    "description": "show uptime statistics and monitoring data from your Gatus instance",
+    "author": "Jack-Overflow",
+    "directory": "gatus",
+    "readme_hash": "594e32360168704ccbce622ed9ffdef3cd23019c",
+    "time_added": "2025-09-26T15:42:31.816784093Z",
+    "time_updated": "2025-09-26T15:42:31.816784223Z"
+  },
+  {
     "title": "Ghostfolio stats",
     "description": "show the status of your investments with today's results, YTD and totals",
     "author": "ziritione85",

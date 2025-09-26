@@ -20,7 +20,6 @@ A gallery with screenshots of all widgets can be found [here](GALLERY.md).
 * [AudioBookshelf Personalized Shelfs](widgets/audiobookshelf-personalized/README.md) - shows the personalized shelfs from the Audiobookshelf dashboard (by @Nedra1998)
 * [Kavita Latest](widgets/kavita-latest/README.md) - show recently updated series and in progress series from your Kavita server (by @Nedra1998)
 * [Unifi](widgets/unifi/README.md) - unifi controller information (by @prozn)
-* [NCAA CFB Scoreboard](widgets/ncaa-cfb-scoreboard/README.md) - display live NCAA CFB scoreboard data from ESPN API (by @maxo99)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
