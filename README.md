@@ -15,6 +15,7 @@ Custom API widgets are much easier to setup and usually only require a copy-past
 A gallery with screenshots of all widgets can be found [here](GALLERY.md).
 
 ### Newly added
+* [Gatus](widgets/gatus/README.md) - show uptime statistics and monitoring data from your Gatus instance (by @Jack-Overflow)
 * [Latest Community Widgets](widgets/latest-community-widgets/README.md) - show a list of the most recently added community widgets (by @svilenmarkov)
 * [AudioBookshelf Personalized Shelfs](widgets/audiobookshelf-personalized/README.md) - shows the personalized shelfs from the Audiobookshelf dashboard (by @Nedra1998)
 * [Kavita Latest](widgets/kavita-latest/README.md) - show recently updated series and in progress series from your Kavita server (by @Nedra1998)
@@ -43,6 +44,7 @@ A gallery with screenshots of all widgets can be found [here](GALLERY.md).
 * [Forgejo repos](widgets/forgejo-repos/README.md) - show data about latest repos from forgejo instance (by @dodecube)
 * [Formula 1 Widgets](widgets/formula1-widgets/README.md) - show different stats from the current Formula 1 season from [F1 API](https://f1api.dev) (by @abaza738)
 * [Frigate stats](widgets/frigate-stats/README.md) - show alerts and detections from the last 24 hours from your Frigate service [Frigate](https://frigate.video/) (by @Pimer0)
+* [Gatus](widgets/gatus/README.md) - show uptime statistics and monitoring data from your Gatus instance (by @Jack-Overflow)
 * [Ghostfolio stats](widgets/ghostfolio-stats/README.md) - show the status of your investments with today's results, YTD and totals (by @ziritione85)
 * [GitHub Notifications](widgets/github-notifications/README.md) - show your notifications on GitHub (by @luboszima)
 * [GitHub personal repositories](widgets/github-personal-repos/README.md) - show your own personal respositories on GitHub (by @menitz)
