@@ -1,4 +1,4 @@
-# Backrest Glance Widget
+# Backrest Widget
 
 Backrest is a web-accessible backup solution built on top of restic. Backrest provides a WebUI which wraps the restic CLI and makes it easy to create repos, browse snapshots, and restore files. 
 
