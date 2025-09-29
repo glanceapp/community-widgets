@@ -12,6 +12,8 @@ This widget queries its API and shows:
 > [!NOTE]  
 >  To use this widget Backrest authentication must be disabled
 
+![](output.png) ![](error_tooltip.png)
+
 ---
 
 ## Environment Variables
