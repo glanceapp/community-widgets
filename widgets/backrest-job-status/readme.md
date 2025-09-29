@@ -1,6 +1,55 @@
+# Backrest Glance Widget
 
+Backrest is a web-accessible backup solution built on top of restic. Backrest provides a WebUI which wraps the restic CLI and makes it easy to create repos, browse snapshots, and restore files. 
 
-```- type: custom-api
+This widget queries its API and shows:
+- Date of the backup  
+- Snapshot ID  
+- Size processed  
+- Status (✅ success / ❌ error)  
+- Error details (via tooltip)  
+
+> [!NOTE]  
+>  To use this widget Backrest authentication must be disabled
+
+---
+
+## Environment Variables
+
+| Variable | Description |
+|----------|-------------|
+| `BACKREST_URL` | Base URL of your Backrest server (e.g. `http://backrest.local:9898`). Authentication must be disabled for the API to be accessible. |
+| `BACKREST_PLAN_LOCAL` | The plan ID for the backup plan you want to display. This comes from Backrest’s configured snapshot plans. Use a different plan ID if you want to create another widget for remote/cloud backups. |
+
+---
+
+## Options
+
+| Option | Default | Description |
+|--------|---------|-------------|
+| `LIMIT` | `5` | Maximum number of snapshot operations to show. |
+| `PRECISION` | `1` | Decimal precision for backup size (in GB). |
+| `UNIT` | `GB` | Unit to display for size (e.g. `GB`, `MB`, `TB`). |
+| `BACKREST_PLAN_TITLE` | `Backups` | Title displayed above the snapshot list (e.g. `Local USB`, `Amazon S3`). |
+
+---
+
+## Behaviour
+
+- **Success rows** show snapshot date, short snapshot ID, size, and a ✅ success icon.  
+  Tooltip: “Completed successfully”.  
+- **Error rows** show snapshot date, ID (if any), and a ❌ error icon.  
+  Tooltip: “Error message” + the raw Backrest error message (`displayMessage`).  
+- Only true backup operations are included (ignores hooks).  
+- Snapshots with `STATUS_SUCCESS` and `>0 bytes` are treated as valid backups.  
+- Snapshots with `STATUS_ERROR` and type `operationBackup` (not `operationRunHook`) are treated as failed backups.  
+
+---
+
+## Code
+
+```yaml
+- type: custom-api
   title: Config Backups
   cache: 1m
   subrequests:
@@ -84,6 +133,5 @@
             {{ $count = add $count 1 }}
           {{ end }}
         {{ end }}
-```
       {{ end }}
     </ul>
