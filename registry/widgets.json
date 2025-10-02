@@ -81,6 +81,15 @@
     "time_updated": "2025-09-25T04:55:13.925888103Z"
   },
   {
+    "title": "Beszel Server Stats",
+    "description": "Server Stats widget matching the builtin widget but using data from Beszel.",
+    "author": "Nedra1998",
+    "directory": "beszel-server-stats",
+    "readme_hash": "7298c0ed456526587ac8b98b35f748df2ad73531",
+    "time_added": "2025-10-02T20:57:52.804627383Z",
+    "time_updated": "2025-10-02T20:57:52.804627514Z"
+  },
+  {
     "title": "Calibre-Web Stats",
     "description": "Display a summary of books from your Calibre-Web server.",
     "author": "rvelasq",

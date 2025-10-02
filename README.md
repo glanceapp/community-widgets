@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Beszel Server Stats](widgets/beszel-server-stats/README.md) - server Stats widget matching the builtin widget but using data from Beszel (by @Nedra1998)
 * [Gatus](widgets/gatus/README.md) - show uptime statistics and monitoring data from your Gatus instance (by @Jack-Overflow)
 * [Latest Community Widgets](widgets/latest-community-widgets/README.md) - show a list of the most recently added community widgets (by @svilenmarkov)
 * [AudioBookshelf Personalized Shelfs](widgets/audiobookshelf-personalized/README.md) - shows the personalized shelfs from the Audiobookshelf dashboard (by @Nedra1998)
 * [Kavita Latest](widgets/kavita-latest/README.md) - show recently updated series and in progress series from your Kavita server (by @Nedra1998)
-* [Unifi](widgets/unifi/README.md) - unifi controller information (by @prozn)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -33,6 +33,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Audiobookshelf stats](widgets/audiobookshelf/README.md) - show the number of books and podcasts in your Audiobookshelf server, along with their total duration (by @ferdyverse)
 * [AzireVPN Connection Status](widgets/azirevpn-connection-status/README.md) - display you'r connection status to AzireVPN (by @mattiasghodsian)
 * [Beszel Metrics](widgets/beszel-metrics/README.md) - simple widget to show system metrics from Beszel (by @panonim)
+* [Beszel Server Stats](widgets/beszel-server-stats/README.md) - server Stats widget matching the builtin widget but using data from Beszel (by @Nedra1998)
 * [Calibre-Web Stats](widgets/calibre-web-stats/README.md) - display a summary of books from your Calibre-Web server (by @rvelasq)
 * [Cats As A Service Photos](widgets/cats-as-a-service-photos/README.md) - show a grid of cat photos from the Cat as a Service [API](https://cataas.com/) (by @gugugiyu)
 * [Chess.com Daily Puzzle](widgets/chess-puzzle/README.md) - display daily chess puzzle from chess.com (by @panonim)
