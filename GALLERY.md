@@ -374,8 +374,8 @@
     <p align="center"><a href="widgets/syncthing/README.md"><img src="widgets/syncthing/preview.png"></a></p>
 </td>
     <td valign="top">
-    <p align="center"><a href="widgets/Synology Disk Station/README.md">Synology Disk Station</a><br>by <a href="https://github.com/Chachigo">@Chachigo</a><p>
-    <p align="center"><a href="widgets/Synology Disk Station/README.md"><img src="widgets/Synology Disk Station/preview.png"></a></p>
+    <p align="center"><a href="widgets/synology-disk-station/README.md">Synology Disk Station</a><br>by <a href="https://github.com/Chachigo">@Chachigo</a><p>
+    <p align="center"><a href="widgets/synology-disk-station/README.md"><img src="widgets/synology-disk-station/preview.png"></a></p>
 </td>
   </tr>
   <tr>

@@ -723,10 +723,10 @@
     "title": "Synology Disk Station",
     "description": "Displays RAM and CPU usage and used storage of your Synology NAS",
     "author": "Chachigo",
-    "directory": "Synology Disk Station",
+    "directory": "synology-disk-station",
     "readme_hash": "e9489f197636692d2c6c4fba55c5dd0c971d80e1",
-    "time_added": "2025-10-03T08:10:41.898129195Z",
-    "time_updated": "2025-10-03T08:10:41.898129295Z"
+    "time_added": "2025-10-03T08:12:31.464315317Z",
+    "time_updated": "2025-10-03T08:12:31.464315427Z"
   },
   {
     "title": "Tailscale devices",
