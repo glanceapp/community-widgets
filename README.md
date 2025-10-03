@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Synology Disk Station](widgets/Synology Disk Station/README.md) - displays RAM and CPU usage and used storage of your Synology NAS (by @Chachigo)
 * [Beszel Server Stats](widgets/beszel-server-stats/README.md) - server Stats widget matching the builtin widget but using data from Beszel (by @Nedra1998)
 * [Gatus](widgets/gatus/README.md) - show uptime statistics and monitoring data from your Gatus instance (by @Jack-Overflow)
 * [Latest Community Widgets](widgets/latest-community-widgets/README.md) - show a list of the most recently added community widgets (by @svilenmarkov)
 * [AudioBookshelf Personalized Shelfs](widgets/audiobookshelf-personalized/README.md) - shows the personalized shelfs from the Audiobookshelf dashboard (by @Nedra1998)
-* [Kavita Latest](widgets/kavita-latest/README.md) - show recently updated series and in progress series from your Kavita server (by @Nedra1998)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -104,6 +104,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Steam User](widgets/steam-user/README.md) - show information about a Steam user (by @lunnosmp4)
 * [Steam specials](widgets/steam-specials/README.md) - show a list of discounted games on Steam (by @svilenmarkov)
 * [Syncthing](widgets/syncthing/README.md) - show Syncthing folder status (by @JohnCannon97)
+* [Synology Disk Station](widgets/Synology Disk Station/README.md) - displays RAM and CPU usage and used storage of your Synology NAS (by @Chachigo)
 * [Tailscale devices](widgets/tailscale-devices/README.md) - show all devices inside to a Tailscale tailnet along with their connection status, update availability and IP (by @not-first)
 * [Tautulli Stats](widgets/tautulli-stats/README.md) - show various home stats from Tautulli such as recently watched, top movies/shows, etc (by @SkyAllinott)
 * [Technitium DNS Stats](widgets/technitium-dns-stats/README.md) - show stats from Technitium DNS Server (by @eribbey)

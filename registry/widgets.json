@@ -720,6 +720,15 @@
     "time_updated": "2025-09-25T04:55:13.928736776Z"
   },
   {
+    "title": "Synology Disk Station",
+    "description": "Displays RAM and CPU usage and used storage of your Synology NAS",
+    "author": "Chachigo",
+    "directory": "Synology Disk Station",
+    "readme_hash": "e9489f197636692d2c6c4fba55c5dd0c971d80e1",
+    "time_added": "2025-10-03T08:10:41.898129195Z",
+    "time_updated": "2025-10-03T08:10:41.898129295Z"
+  },
+  {
     "title": "Tailscale devices",
     "description": "show all devices inside to a Tailscale tailnet along with their connection status, update availability and IP",
     "author": "not-first",
