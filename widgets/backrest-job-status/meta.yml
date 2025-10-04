@@ -1,0 +1,3 @@
+title: Backrest Job Status
+description: Show status of Backrest jobs including of the  Date, Snapshot ID, Size processed, Status, Error details (via tooltip)
+author: stonkage
