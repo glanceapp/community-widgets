@@ -184,6 +184,14 @@ There are three environment variables that need to be set (or replaced in the YA
 - `KOMODO_URL` - The URL for your Komodo Core deployment, including port but without trailing slash, e.g.: 'https://192.168.1.2:9120', or 'https://my-komodo.example.com'
 - `KOMODO_API_KEY` - API Key generated from inside your Komodo Core dashboard, begins with 'K-...'. See instructions at bottom.
 - `KOMODO_API_SECRET` - API Secret generated from inside your Komodo Core dashboard, begins with 'S-...'. See instructions at bottom.
+- Remember that if you're just starting with Komodo, it does not auto-inject environment variables, so if you use the .env file, you also need to manually add the vars to your service in the compose. Komodo's Environment label isn't the clearest about this. 
+e.g.:
+```
+   environment:
+     - KOMODO_URL=${KOMODO_URL}
+     - KOMODO_API_KEY=${KOMODO_API_KEY}
+     - KOMODO_API_SECRET=${KOMODO_API_SECRET}
+```
 
 > [!NOTE]  
 >  - The Options fields will be auto-set through the environment variables, so you don't need to set anything there.
