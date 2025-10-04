@@ -72,6 +72,15 @@
     "time_updated": "2025-09-25T04:55:13.925834623Z"
   },
   {
+    "title": "Backrest Job Status",
+    "description": "Show status of Backrest jobs including of the  Date, Snapshot ID, Size processed, Status, Error details (via tooltip)",
+    "author": "stonkage",
+    "directory": "backrest-job-status",
+    "readme_hash": "487c5378c42b6ef95e65945276bf9f416df0a622",
+    "time_added": "2025-10-04T14:46:17.188404904Z",
+    "time_updated": "2025-10-04T14:46:17.188405034Z"
+  },
+  {
     "title": "Beszel Metrics",
     "description": "Simple widget to show system metrics from Beszel.",
     "author": "panonim",
@@ -205,6 +214,15 @@
     "readme_hash": "67067e9ca1f975cf21bec897030212a27830fb33",
     "time_added": "2025-09-26T15:42:31.816784093Z",
     "time_updated": "2025-10-04T14:42:18.150976169Z"
+  },
+  {
+    "title": "Gatus Monitor",
+    "description": "Site monitor widget using Gatus for backend data",
+    "author": "Nedra1998",
+    "directory": "gatus-monitor",
+    "readme_hash": "a20c5c78656b11cc646e460763c5b69d679e8ad0",
+    "time_added": "2025-10-04T14:46:17.189185051Z",
+    "time_updated": "2025-10-04T14:46:17.189185161Z"
   },
   {
     "title": "Ghostfolio stats",
