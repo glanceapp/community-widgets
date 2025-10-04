@@ -200,7 +200,7 @@ Monitor the status and resource usage of your Komodo stacks and services.
 > This is a relatively heavy widget that makes `1 + ( 2 x N )` API calls on every non-cached load/refresh, where `N = the total number of stacks managed by Komodo`.
 > In testing, this occasionally caused load times in excess of four minutes. Cache time has been set to 30 minutes to balance freshness vs. load time. You can set it lower, 
 > but anything below 5m is unlikely to matter.
-> Hopefully this can be improved and optimized, but Komodo's API is currently very recursion-heavy, so until that changes it's inlikely to get much faster. 
+> Hopefully this can be improved and optimized, but Komodo's API is currently very recursion-heavy, so until that changes it's unlikely to get much faster. 
 
 #### Preview ( Collapsed )
 <img width="1248" height="357" alt="image" src="preview-stacks-collapsed.png" />
@@ -575,13 +575,22 @@ There are three environment variables that need to be set (or replaced in the YA
 - `KOMODO_URL` - The URL for your Komodo Core deployment, including port but without trailing slash, e.g.: 'https://192.168.1.2:9120', or 'https://my-komodo.example.com'
 - `KOMODO_API_KEY` - API Key generated from inside your Komodo Core dashboard, begins with 'K-...'. See instructions at bottom.
 - `KOMODO_API_SECRET` - API Secret generated from inside your Komodo Core dashboard, begins with 'S-...'. See instructions at bottom.
+- Remember that if you're just starting with Komodo, it does not auto-inject environment variables, so if you use the .env file, you also need to manually add the vars to your service in the compose. Komodo's Environment label isn't the clearest about this. 
+e.g.:
+```
+   environment:
+     - KOMODO_URL=${KOMODO_URL}
+     - KOMODO_API_KEY=${KOMODO_API_KEY}
+     - KOMODO_API_SECRET=${KOMODO_API_SECRET}
+```
 
 ### Icon Instructions
 All stacks load with a default old-timey computer icon. If you want to change it to represent the stack or servicebeing monitored:
+
 1. Navigate to the correct stack in your Komodo dashboard
 2. Make sure you're in the `Config` tab and scroll down (or use the side menu) to the `Environment` section.
 3. In Komodo's `Environment` text editor, add `ICON_LINK=https://some.link.to/your-icon-image.svg` (or png, or webp, or jpg, or bmp, I guess)
-e.g.: ICON_LINK=https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/glance.svg
+e.g.: `ICON_LINK=https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/glance.svg`
 4. You can find most common self-hosted app icons at: https://dashboardicons.com/. They're great. Give them a star when you get a second.
 
 > [!NOTE]  
