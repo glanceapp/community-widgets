@@ -1,5 +1,4 @@
 ## Komodo Container Manager - Server Monitor
-
 Monitor the status and resource use of your Komodo servers
 
 ![](komodo-server-preview.png)
@@ -191,7 +190,6 @@ There are three environment variables that need to be set (or replaced in the YA
 
 
 ## Komodo Container Manager - Stack Monitor
-
 Monitor the status and resource usage of your Komodo stacks and services.
 
 #### **WARNING:** 
