@@ -40,7 +40,7 @@ Monitor the status and resource use of your Komodo servers
         margin-right: 1em;
       }
     </style>
-    
+
     {{ $servers := .JSON.Array "" }}
     {{ $total := len $servers }}
     {{ $Ok := 0 }}
@@ -102,7 +102,7 @@ Monitor the status and resource use of your Komodo servers
         {{ $theID := .String "id" }}
         <li style="display:flex; align-items:center; gap:12px; margin-top: .5rem;">
           <div style="flex-grow:1; min-width:0;">
-            <a class="size-h4 block text-truncate color-primary" href={{ concat $urlBase "servers/" ( .String "id" ) }} target="_blank">
+            <a class="size-h4 block text-truncate color-primary flex inline-block items-center" href={{ concat $urlBase "servers/" ( .String "id" ) }} target="_blank">
               {{
                 $systemStats := newRequest (concat $urlBase "/read")
                   | withHeader "Content-Type" "application/json"
@@ -127,11 +127,15 @@ Monitor the status and resource use of your Komodo servers
                     {{ else }} var(--color-negative); 
                     {{ end }} 
                   display: inline-block; 
-                  vertical-align: middle;"
+                  vertical-align: middle;
+                  margin-right: 1rem;"
                 data-popover-type="text"
                 data-popover-text="Server Status: {{ $state }}"
               ></span>
               {{ .String "name"}}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" style="height:1.25rem;vertical-align:middle;margin-left:0.5rem;stroke: var(--color-primary);fill:var(--color-primary);">
+                <path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z" />
+              </svg>
             </a>
             <span class="size-h6 color-subdue">{{ .String "info.address" }}</span>
             {{ if and $systemStats.Response (ge $systemStats.Response.StatusCode 200) (lt $systemStats.Response.StatusCode 300) }}
@@ -171,6 +175,7 @@ Monitor the status and resource use of your Komodo servers
         </li>
       {{ end }}
     </ul>
+
 ```
 </details>
 
@@ -523,6 +528,9 @@ Monitor the status and resource usage of your Komodo stacks and services.
                       </svg>
                     {{ end }}
                     {{ .String "name"}}
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" style="height:1.5rem;vertical-align:middle;margin-left:0.5rem;stroke: var(--color-primary);fill:var(--color-primary);">
+                        <path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z" />
+                      </svg>
                     <span class="
                       {{ if (or ( eq $state "deploying") ( eq $state "running") ( eq $state "created") ) }}
                         status-badge-positive-komodo-stacks
@@ -536,7 +544,15 @@ Monitor the status and resource usage of your Komodo stacks and services.
                     </span>
                   </a>
                   <div>
-                    <a class="size-h5 color-subdue" href={{ concat $urlBase "servers/" ( $serverID ) }} target="_blank">Server: <span class="color-base">{{ $serverName }}</span></a>
+                    <a class="size-h5 color-subdue inline-block flex" href={{ concat $urlBase "servers/" ( $serverID ) }} target="_blank">
+                    Server:
+                      <span class="color-base inline-block items-center">
+                        {{ $serverName }}
+                      </span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" style="height:1.1rem;margin-left:0.25rem;stroke: var(--color-primary);fill:var(--color-primary);">
+                        <path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z" />
+                      </svg>
+                    </a>
                   </div>
                   <div class="flex margin-top-5 size-h6">
                     <div>Last Update: </div>
@@ -550,6 +566,7 @@ Monitor the status and resource usage of your Komodo stacks and services.
         {{ end }}
       </ul>
     </div>
+
 ```
 </details>
 
@@ -558,6 +575,14 @@ There are three environment variables that need to be set (or replaced in the YA
 - `KOMODO_URL` - The URL for your Komodo Core deployment, including port but without trailing slash, e.g.: 'https://192.168.1.2:9120', or 'https://my-komodo.example.com'
 - `KOMODO_API_KEY` - API Key generated from inside your Komodo Core dashboard, begins with 'K-...'. See instructions at bottom.
 - `KOMODO_API_SECRET` - API Secret generated from inside your Komodo Core dashboard, begins with 'S-...'. See instructions at bottom.
+
+### Icon Instructions
+All stacks load with a default old-timey computer icon. If you want to change it to represent the stack or servicebeing monitored:
+1. Navigate to the correct stack in your Komodo dashboard
+2. Make sure you're in the `Config` tab and scroll down (or use the side menu) to the `Environment` section.
+3. In Komodo's `Environment` text editor, add `ICON_LINK=https://some.link.to/your-icon-image.svg` (or png, or webp, or jpg, or bmp, I guess)
+e.g.: ICON_LINK=https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/glance.svg
+4. You can find most common self-hosted app icons at: https://dashboardicons.com/. They're great. Give them a star when you get a second.
 
 > [!NOTE]  
 >  - The Options fields will be auto-set through the environment variables, so you don't need to set anything there.
@@ -570,3 +595,8 @@ There are three environment variables that need to be set (or replaced in the YA
 2. #### Click 'New API Key ⊕'<img width="1646" height="817" alt="image" src="https://github.com/user-attachments/assets/79559aee-388f-4af2-b9d6-3fc4f5d24c79" />
 3. #### Enter a descriptive, memorable name for your API key, set expiry to 'never', and click 'Submit ✓'<img width="1637" height="819" alt="image" src="https://github.com/user-attachments/assets/e5b92473-588b-461a-98c1-b729e682e569" />
 4. #### Copy the API key and secret provided by Komodo<img width="1537" height="823" alt="image" src="https://github.com/user-attachments/assets/4eb8af0d-5f62-43d9-8cb9-2f56c9902b1a" />
+
+#### Acknowledgements / Thanks
+  - Big thanks to the Glance team for putting together an awesome dashboard project
+  - Thanks to everyone working on Komodo for saving me hundreds of hours of building a worse version of what they already built
+  - And thanks to [@prozn](https://github.com/prozn), who's [Unifi widget](https://github.com/glanceapp/community-widgets/blob/main/widgets/unifi/README.md) was a huge help in both getting the hang of Glance's Custom API Widgets format and is very useful to boot.
