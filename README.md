@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Komodo Container Manager Monitor](widgets/komodo-container-manager-stunt-and-gimmicks-alex/README.md) - at-a-glance view of stacks and servers managed by Komodo (by @stunt-and-gimmicks-alex)
 * [Synology Disk Station](widgets/synology-disk-station/README.md) - displays RAM and CPU usage and used storage of your Synology NAS (by @Chachigo)
 * [Beszel Server Stats](widgets/beszel-server-stats/README.md) - server Stats widget matching the builtin widget but using data from Beszel (by @Nedra1998)
 * [Gatus](widgets/gatus/README.md) - show uptime statistics and monitoring data from your Gatus instance (by @Jack-Overflow)
 * [Latest Community Widgets](widgets/latest-community-widgets/README.md) - show a list of the most recently added community widgets (by @svilenmarkov)
-* [AudioBookshelf Personalized Shelfs](widgets/audiobookshelf-personalized/README.md) - shows the personalized shelfs from the Audiobookshelf dashboard (by @Nedra1998)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -59,6 +59,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Jellyfin Stats](widgets/jellyfin-emby-stats/README.md) - show the number of movies, shows, episodes and songs in your Jellyfin or Emby server (by @lfvelosoh)
 * [Karakeep Dashboard](widgets/karakeep-dashboard/README.md) - the widget returns statistics on the number of bookmarks and the number of tags and the most recently added bookmarks (by @razdnut)
 * [Kavita Latest](widgets/kavita-latest/README.md) - show recently updated series and in progress series from your Kavita server (by @Nedra1998)
+* [Komodo Container Manager Monitor](widgets/komodo-container-manager-stunt-and-gimmicks-alex/README.md) - at-a-glance view of stacks and servers managed by Komodo (by @stunt-and-gimmicks-alex)
 * [Last.FM Recent Tracks](widgets/lastfm-recent-tracks/README.md) - show recent tracks scrobbled by a Last.FM user (by @Akasiek)
 * [Latest Community Widgets](widgets/latest-community-widgets/README.md) - show a list of the most recently added community widgets (by @svilenmarkov)
 * [LeetCode Daily Question](widgets/leetcode-daily-question/README.md) - show today leetcode questions with hashtag and difficult (by @hohaithuy)

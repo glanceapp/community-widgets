@@ -315,6 +315,15 @@
     "time_updated": "2025-09-25T04:55:13.926995713Z"
   },
   {
+    "title": "Komodo Container Manager Monitor",
+    "description": "At-a-glance view of stacks and servers managed by Komodo",
+    "author": "stunt-and-gimmicks-alex",
+    "directory": "komodo-container-manager-stunt-and-gimmicks-alex",
+    "readme_hash": "25e7c0e3ab2ae838af7fcc2b969adb84cfaa0057",
+    "time_added": "2025-10-04T14:34:10.698531949Z",
+    "time_updated": "2025-10-04T14:34:10.698532079Z"
+  },
+  {
     "title": "Last.FM Recent Tracks",
     "description": "show recent tracks scrobbled by a Last.FM user",
     "author": "Akasiek",
