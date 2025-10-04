@@ -1,6 +1,8 @@
 ## Komodo Container Manager - Server Monitor
 Monitor the status and resource use of your Komodo servers
+
 <img width="315" height="726" alt="komodo-servers-preview" src="https://github.com/user-attachments/assets/5566c276-4133-4f03-88ff-2041e3e2e728" />
+
 ### Widget Yaml
 
 <details>
@@ -189,16 +191,18 @@ There are three environment variables that need to be set (or replaced in the YA
 
 ## Komodo Container Manager - Stack Monitor
 Monitor the status and resource usage of your Komodo stacks and services.
-#### **WARNING:** 
-*This is a relatively heavy widget that makes `1 + ( 2 x N )` API calls on every non-cached load/refresh, where `N = the total number of stacks managed by Komodo`. 
-In testing, this occasionally caused load times in excess of four minutes. Cache time has been set to 30 minutes to balance freshness vs. load time. You can set it lower, 
-but anything below 5m is unlikely to matter. Hopefully this can be improved and optimized, but Komodo's API is currently very recursion-heavy, so until that changes it's inlikely 
-to get much faster. 
+> [!WARNING]
+> *This is a relatively heavy widget that makes `1 + ( 2 x N )` API calls on every non-cached load/refresh, where `N = the total number of stacks managed by Komodo`. 
+> In testing, this occasionally caused load times in excess of four minutes. Cache time has been set to 30 minutes to balance freshness vs. load time. You can set it lower, 
+> but anything below 5m is unlikely to matter. Hopefully this can be improved and optimized, but Komodo's API is currently very recursion-heavy, so until that changes it's inlikely 
+> to get much faster. 
 
 #### Preview ( Collapsed )
 <img width="1248" height="357" alt="image" src="https://github.com/user-attachments/assets/97829606-fe69-4e28-9fe9-5c23383a64be" />
+
 #### Preview ( Expanded )
 <img width="1251" height="997" alt="image" src="https://github.com/user-attachments/assets/43fc1ae2-ad88-4b20-8bca-cfe6f83d4c59" />
+
 #### Preview ( Expanded w/ service details in popover )
 <img width="1251" height="1000" alt="image" src="https://github.com/user-attachments/assets/b1f9aea9-e20d-466c-87b4-00bbabfb2c6b" />
 ### Widget Yaml
