@@ -1,7 +1,7 @@
 ## Komodo Container Manager - Server Monitor
 Monitor the status and resource use of your Komodo servers
 
-<img width="315" height="726" alt="komodo-servers-preview" src="https://github.com/user-attachments/assets/5566c276-4133-4f03-88ff-2041e3e2e728" />
+<img width="315" height="726" alt="komodo-servers-preview" src="preview.png" />
 
 ### Widget Yaml
 
@@ -203,13 +203,13 @@ Monitor the status and resource usage of your Komodo stacks and services.
 > Hopefully this can be improved and optimized, but Komodo's API is currently very recursion-heavy, so until that changes it's inlikely to get much faster. 
 
 #### Preview ( Collapsed )
-<img width="1248" height="357" alt="image" src="https://github.com/user-attachments/assets/97829606-fe69-4e28-9fe9-5c23383a64be" />
+<img width="1248" height="357" alt="image" src="preview-stacks-collapsed.png" />
 
 #### Preview ( Expanded )
-<img width="1251" height="997" alt="image" src="https://github.com/user-attachments/assets/43fc1ae2-ad88-4b20-8bca-cfe6f83d4c59" />
+<img width="1251" height="997" alt="image" src="preview-stacks-expanded.png" />
 
 #### Preview ( Expanded w/ service details in popover )
-<img width="1251" height="1000" alt="image" src="https://github.com/user-attachments/assets/b1f9aea9-e20d-466c-87b4-00bbabfb2c6b" />
+<img width="1251" height="1000" alt="image" src="preview-stacks-expanded-w-popover.png" />
 
 ### Widget Yaml
 
@@ -591,10 +591,10 @@ e.g.: ICON_LINK=https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/glan
 >  - This widget has only been tested with Glance v0.8.4. I can't promise it will work with earlier versions.
 
 ### Komodo API Key/Secret Instructions
-1. #### Click 'Settings' in your Komodo dashboard.<img width="1646" height="817" alt="image" src="https://github.com/user-attachments/assets/6b0022de-d3e9-40e5-8dd7-e55633e5845c" />
-2. #### Click 'New API Key ⊕'<img width="1646" height="817" alt="image" src="https://github.com/user-attachments/assets/79559aee-388f-4af2-b9d6-3fc4f5d24c79" />
-3. #### Enter a descriptive, memorable name for your API key, set expiry to 'never', and click 'Submit ✓'<img width="1637" height="819" alt="image" src="https://github.com/user-attachments/assets/e5b92473-588b-461a-98c1-b729e682e569" />
-4. #### Copy the API key and secret provided by Komodo<img width="1537" height="823" alt="image" src="https://github.com/user-attachments/assets/4eb8af0d-5f62-43d9-8cb9-2f56c9902b1a" />
+1. #### Click 'Settings' in your Komodo dashboard.<img width="1646" height="817" alt="image" src="komodo-api-key-step-1.png" />
+2. #### Click 'New API Key ⊕'<img width="1646" height="817" alt="image" src="komodo-api-key-step-2.png" />
+3. #### Enter a descriptive, memorable name for your API key, set expiry to 'never', and click 'Submit ✓'<img width="1637" height="819" alt="image" src="komodo-api-key-step-3.png" />
+4. #### Copy the API key and secret provided by Komodo<img width="1537" height="823" alt="image" src="komodo-api-key-step-4.png" />
 
 #### Acknowledgements / Thanks
   - Big thanks to the Glance team for putting together an awesome dashboard project
