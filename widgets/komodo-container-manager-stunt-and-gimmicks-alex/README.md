@@ -566,11 +566,7 @@ There are three environment variables that need to be set (or replaced in the YA
 >  - This widget has only been tested with Glance v0.8.4. I can't promise it will work with earlier versions.
 
 ### Komodo API Key/Secret Instructions
-1. #### Click 'Settings' in your Komodo dashboard.
-<img width="1646" height="817" alt="image" src="https://github.com/user-attachments/assets/6b0022de-d3e9-40e5-8dd7-e55633e5845c" />
-2. #### Click 'New API Key ⊕'
-<img width="1646" height="817" alt="image" src="https://github.com/user-attachments/assets/79559aee-388f-4af2-b9d6-3fc4f5d24c79" />
-3. ### Enter a descriptive, memorable name for your API key, set expiry to 'never', and click 'Submit ✓'
-<img width="1637" height="819" alt="image" src="https://github.com/user-attachments/assets/e5b92473-588b-461a-98c1-b729e682e569" />
-4. #### Copy the API key and secret provided by Komodo
-<img width="1537" height="823" alt="image" src="https://github.com/user-attachments/assets/4eb8af0d-5f62-43d9-8cb9-2f56c9902b1a" />
+1. #### Click 'Settings' in your Komodo dashboard.<img width="1646" height="817" alt="image" src="https://github.com/user-attachments/assets/6b0022de-d3e9-40e5-8dd7-e55633e5845c" />
+2. #### Click 'New API Key ⊕'<img width="1646" height="817" alt="image" src="https://github.com/user-attachments/assets/79559aee-388f-4af2-b9d6-3fc4f5d24c79" />
+3. #### Enter a descriptive, memorable name for your API key, set expiry to 'never', and click 'Submit ✓'<img width="1637" height="819" alt="image" src="https://github.com/user-attachments/assets/e5b92473-588b-461a-98c1-b729e682e569" />
+4. #### Copy the API key and secret provided by Komodo<img width="1537" height="823" alt="image" src="https://github.com/user-attachments/assets/4eb8af0d-5f62-43d9-8cb9-2f56c9902b1a" />
