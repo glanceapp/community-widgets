@@ -214,6 +214,8 @@ options:
 
 #### Environment Variables
 
-`NGINX_PROXY_URL` : Nginx Proxy Url of the hosted intance either the IP or domain name like https://proxy.example.com
-`NGINX_EMAIL_ID` : Nginx Console login email id  
-`NGINX_PASSWORD` : Nginx Console password
+- `NGINX_PROXY_URL` : Nginx Proxy Url of the hosted intance either the IP or domain name like https://proxy.example.com
+
+- `NGINX_EMAIL_ID` : Nginx Console login email id
+
+- `NGINX_PASSWORD` : Nginx Console password
