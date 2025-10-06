@@ -52,7 +52,7 @@ A Widget to show current Nginx Proxy Configration, click the subdomain name or t
       } 
     </style>
 
-    {{ $defaultIconUrl := "https://raw.githubusercontent.com/NginxProxyManager/nginx-proxy-manager/refs/heads/develop/docs/src/public/logo.svg" }}
+    {{ $defaultIconUrl := "https://cdn.jsdelivr.net/gh/selfhst/icons/svg/nginx-proxy-manager.svg" }}
        
     {{ if eq .Response.StatusCode 200 }}
       {{ $accessToken := .JSON.String "token" }}
