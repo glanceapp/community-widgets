@@ -32,3 +32,8 @@
   url: https://github.com/lukasdietrich/glance-k8s
   description: List Kubernetes nodes and applications. Also including helm charts.
   author: lukasdietrich
+
+- title: Navidrome (Subsonic) Server Stats
+  url: https://github.com/SomeCodecat/subsonic-proxy
+  description: Display statistics from your Navidrome (or Subsonic) instance and interact with them.
+  author: SomeCodecat
