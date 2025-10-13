@@ -391,9 +391,9 @@
     "description": "Lists all MLB scores daily, with baserunner info and inning scores.",
     "author": "ShmoobiJones",
     "directory": "mlb-scores-tracker",
-    "readme_hash": "dfbe599ac774cf5f9af508969e974a322ccdd389",
+    "readme_hash": "d3be8af0a9b72b2deeae6642ee4176e2edfcad4a",
     "time_added": "2025-05-12T19:44:14.8033Z",
-    "time_updated": "2025-09-25T04:55:13.927380151Z"
+    "time_updated": "2025-10-13T23:38:06.284535452Z"
   },
   {
     "title": "Mealie Today's Meal",
