@@ -231,7 +231,7 @@
 </td>
     <td valign="top">
     <p align="center"><a href="widgets/nba-scores-tracker/README.md">NBA Scores Tracker</a><br>by <a href="https://github.com/ShmoobiJones">@ShmoobiJones</a><p>
-    <p align="center"><a href="widgets/nba-scores-tracker/README.md"><img src="widgets/nba-scores-tracker/preview1.png"></a></p>
+    <p align="center"><a href="widgets/nba-scores-tracker/README.md"><img src="widgets/nba-scores-tracker/preview.png"></a></p>
 </td>
     <td valign="top">
     <p align="center"><a href="widgets/ncaa-cfb-scoreboard/README.md">NCAA CFB Scoreboard</a><br>by <a href="https://github.com/maxo99">@maxo99</a><p>
