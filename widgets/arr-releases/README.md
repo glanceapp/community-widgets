@@ -484,7 +484,6 @@ A widget for Sonarr, Radarr, or Lidarr that shows upcoming releases, recent down
 | size              | Thumbnail size: small, medium, large, or huge         |
 | collapse-after    | Collapse after this many items                        |
 | show-grabbed      | Show a clickable button displaying grabbed status     |
-| timezone          | Timezone offset from UTC. Must have quotes.           |
 | interval          | (optional, in days) only show items within this time  |
 | sort-time         | (optional) controls the sorting direction             |
 | cover-proxy       | (optional) Avoids exposing the API key                |
@@ -503,8 +502,6 @@ A widget for Sonarr, Radarr, or Lidarr that shows upcoming releases, recent down
 
 - `show-grabbed` - will show the grab status and removes the overview/description. Still available upon hovering the thumbnail.
 
-- `timezone` - change `"-04"` to your timezone, eg: +9 will be `"+09"`. Must have quotes.
-
 - `interval` - If set will only show items for the given interval in days. For "upcoming" it's days to look ahead, otherwise it's within past X days.
 
 - `sort-time` - If set to `asc` (ascending time) will invert the default sort direction `desc` (descending time).
@@ -516,18 +513,29 @@ A widget for Sonarr, Radarr, or Lidarr that shows upcoming releases, recent down
         proxy_pass $forward_scheme://$server:$port;
     }
     ```
-    then set your coverProxy:
+    then set your cover-proxy:
     ```yaml
     cover-proxy: "https://proxy.example.com/radarrcover"
     ```
 > [!TIP]  
 > If using a cover-proxy for Lidarr, you must replace `v3` in the proxy rewrite url with `v1`.
 
+## Common Issues
+### Incorrect timezone
+The widget uses the local time provided by the host system. If using glance in docker you need to mount /etc/localtime to the glance container. See [docker-compose.yml example.](https://github.com/glanceapp/docker-compose-template/blob/main/root/docker-compose.yml)
+
+### Media cover art not displaying correctly
+If accessing glance through an https reverse proxy many browsers will refuse to load images with http (non-s) urls. You must set up a cover proxy and set the corresponding `cover-proxy` option to allow them to load over https.
+
 ## Widget reuse for multiple services/types
 
 With v0.8.0 of Glance it's now possible to reuse a single widget template and declare multiple copies with different options. 
 
 See [v0.8.0 Release Notes](https://github.com/glanceapp/glance/releases/tag/v0.8.0#g-rh-15) (expand the part about the `options`)
+
+## Support
+
+Tag @erkston either in this repos' Issues or in #help in the Glance [Discord](https://discord.com/invite/7KQ7Xa9kJd)
 
 ## Credits
 [iwa](https://github.com/iwa) - [*arr Glance extension](https://github.com/glanceapp/glance/pull/112)
