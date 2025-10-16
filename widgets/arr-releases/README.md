@@ -23,7 +23,6 @@ A widget for Sonarr, Radarr, or Lidarr that shows upcoming releases, recent down
     size: medium             # small, medium, large, or huge
     collapse-after: 3
     show-grabbed: false
-    timezone: "-04"          # must have quotes
     interval: 20             # optional, days
     #sort-time: asc          # optional, asc or desc (default)
     #cover-proxy: "https://proxy.example.com/radarrcover" # optional
@@ -33,9 +32,6 @@ A widget for Sonarr, Radarr, or Lidarr that shows upcoming releases, recent down
   template: |
     {{ $collapseAfter := .Options.IntOr "collapse-after" 5 }}
     {{ $showGrabbed := .Options.BoolOr "show-grabbed" false }}
-    {{ $tzOffset := .Options.StringOr "timezone" "+00" }} 
-    {{ $tzTime := (printf "2006-01-02T15:04:05%s:00" $tzOffset) | parseTime "rfc3339" }}
-    {{ $timezone := $tzTime.Location }}
     {{ $sortTime := .Options.StringOr "sort-time" "desc" }}
     {{ $coverProxy := .Options.StringOr "cover-proxy" "" }}
     {{ $size := .Options.StringOr "size" "medium" }}
@@ -43,10 +39,9 @@ A widget for Sonarr, Radarr, or Lidarr that shows upcoming releases, recent down
     {{ $type := .Options.StringOr "type" "" }}
     {{ $intervalH := .Options.IntOr "interval" 0 | mul 24 }}
 
-    {{ $nowUTC := offsetNow "0h" }}
-    {{ $now := ($nowUTC.In $timezone) | formatTime "rfc3339" }}
-    {{ $posInterval := ((offsetNow (printf "+%dh" $intervalH)).In $timezone) | formatTime "rfc3339" }}
-    {{ $negInterval := ((offsetNow (printf "-%dh" $intervalH)).In $timezone) | formatTime "rfc3339" }}
+    {{ $now := now | formatTime "2006-01-02T15:04:05" }}
+    {{ $posInterval := (offsetNow (printf "+%dh" $intervalH)) | formatTime "2006-01-02T15:04:05" }}
+    {{ $negInterval := (offsetNow (printf "-%dh" $intervalH)) | formatTime "2006-01-02T15:04:05" }}
 
     {{ $apiBaseUrl := .Options.StringOr "api-base-url" "" }}
     {{ $key := .Options.StringOr "key" "" }}
@@ -133,7 +128,8 @@ A widget for Sonarr, Radarr, or Lidarr that shows upcoming releases, recent down
         {{ range $data.JSON.Array $array | sortByTime $sortByField "rfc3339" $sortTime }}
            
           {{ if eq $service "sonarr" }}
-            {{ $itemDate = .String "airDateUtc" }}
+            {{ $itemDate = .String "airDateUtc" | parseTime "RFC3339" }}
+            {{ $itemDate = $itemDate.In now.Location | formatTime "2006-01-02T15:04:05" }}
             {{ $isAvailable = true }}
           {{ else if eq $service "radarr"}}
             {{ $isAvailable = .Bool "isAvailable" }}
@@ -180,7 +176,8 @@ A widget for Sonarr, Radarr, or Lidarr that shows upcoming releases, recent down
               {{ $genres = $series.Get "genres" }}
              
               {{ if eq $type "recent" }}
-                {{ $date = (.String "date" | parseTime "rfc3339") }}
+                {{ $date = .String "date" | parseLocalTime "RFC3339" }}
+                {{ $date = $date.In now.Location }}
                 {{ $subtitle = .String "episode.title" }}
                 {{ $summary = .String "episode.overview" }}
                 {{ $seString = printf "S%02dE%02d" (.Int "episode.seasonNumber") (.Int "episode.episodeNumber") }}
@@ -199,7 +196,8 @@ A widget for Sonarr, Radarr, or Lidarr that shows upcoming releases, recent down
                 {{ end }}
     
               {{ else if eq $type "missing" }}
-                {{ $date = (.String "airDateUtc" | parseTime "rfc3339") }}
+                {{ $date = .String "airDateUtc" | parseLocalTime "RFC3339" }}
+                {{ $date = $date.In now.Location }}
                 {{ $subtitle = .String "title" }}
                 {{ $summary = .String "overview" }}
                 {{ $seString = printf "S%02dE%02d" (.Int "seasonNumber") (.Int "episodeNumber") }}
@@ -216,7 +214,8 @@ A widget for Sonarr, Radarr, or Lidarr that shows upcoming releases, recent down
                   {{ $popoverSummary = .String "series.overview" }}
                 {{ end }}
               {{ else if eq $type "upcoming" }}
-                {{ $date = (.String "airDateUtc" | parseTime "rfc3339") }}
+                {{ $date = .String "airDateUtc" | parseLocalTime "RFC3339" }}
+                {{ $date = $date.In now.Location }}
                 {{ $subtitle = .String "title" }}
                 {{ $summary = .String "overview" }}
                 {{ $seString = printf "S%02dE%02d" (.Int "seasonNumber") (.Int "episodeNumber") }}
@@ -245,17 +244,17 @@ A widget for Sonarr, Radarr, or Lidarr that shows upcoming releases, recent down
               {{ end }}
               {{ if eq $status "announced"}}
                 {{ if ne (.String "inCinemas") "" }}
-                  {{ $date = (.String "inCinemas" | parseTime "rfc3339") }}
+                  {{ $date = (.String "inCinemas" | parseTime "RFC3339") }}
                   {{ $datetype = "In Cinemas" }}
                 {{ else }}
-                  {{ $date = (.String "releaseDate" | parseTime "rfc3339") }}
+                  {{ $date = (.String "releaseDate" | parseTime "RFC3339") }}
                   {{ $datetype = "Releases" }}
                 {{ end }}
               {{ else if eq $status "inCinemas"}}
-                {{ $date = (.String "releaseDate" | parseTime "rfc3339") }}
+                {{ $date = (.String "releaseDate" | parseTime "RFC3339") }}
                 {{ $datetype = "Releases" }}
               {{ else if eq $status "released"}}
-                {{ $date = (.String "releaseDate" | parseTime "rfc3339") }}
+                {{ $date = (.String "releaseDate" | parseTime "RFC3339") }}
                 {{ $datetype = "Released" }}
               {{ end }}
    
@@ -266,12 +265,12 @@ A widget for Sonarr, Radarr, or Lidarr that shows upcoming releases, recent down
                   {{ $coverUrl = printf "%s/%s/poster-500.jpg" $coverBase (.String "movie.id") }}
                 {{ end }}
                 {{ $datetype = "Downloaded" }}
-                {{ $date = (.String "date" | parseTime "rfc3339") }}
+                {{ $date = (.String "date" | parseTime "RFC3339") }}
                 {{ $title = .String "movie.title" }}
                 {{ $subtitle = "" }}
                 {{ $summary = .String "movie.overview" }}
                 {{ $popoverTitle = .String "movie.title" }}
-                {{ $popoverSubtitle = printf "%s %s" $datetype (($date.In $timezone) | formatTime "1/2/2006") }}
+                {{ $popoverSubtitle = printf "%s %s" $datetype ($date | formatTime "1/2/2006") }}
                 {{ $popoverSummary = .String "movie.overview" }}
                 {{ $link = printf "%s/movie/%s#" $url (.String "movie.titleSlug") }}
                 {{ $movie = .Get "movie" }}
@@ -290,7 +289,7 @@ A widget for Sonarr, Radarr, or Lidarr that shows upcoming releases, recent down
                 {{ $summary = .String "overview" }}
                 {{ $link = printf "%s/movie/%s#" $url (.String "titleSlug") }}
                 {{ $popoverTitle = .String "title" }}
-                {{ $popoverSubtitle = printf "%s %s" $datetype (($date.In $timezone) | formatTime "1/2/2006") }}
+                {{ $popoverSubtitle = printf "%s %s" $datetype ($date | formatTime "1/2/2006") }}
                 {{ $popoverSummary = .String "overview" }}
                 {{ $genres = .Get "genres" }}
                 {{ if eq $type "missing" }}
@@ -325,14 +324,14 @@ A widget for Sonarr, Radarr, or Lidarr that shows upcoming releases, recent down
                 {{ end }}
                 {{ $grabbed = true }}
                 {{ $title = $album.String "title" }}
-                {{ $date = (.String "date" | parseTime "rfc3339") }}
+                {{ $date = (.String "date" | parseTime "RFC3339") }}
                 {{ $datetype = "Downloaded" }}
                 {{ $subtitle = $artist.String "artistName" }}
                 {{ $genres = $artist.Get "genres" }}
                 {{ $link = printf "%s/artist/%s#" $url ($artist.String "foreignArtistId") }}
                 {{ $summary = $album.String "overview" }}
                 {{ $popoverTitle = $album.String "title" }}
-                {{ $popoverSubtitle = printf "%s %s" $datetype (($date.In $timezone) | formatTime "1/2/2006") }}
+                {{ $popoverSubtitle = printf "%s %s" $datetype ($date | formatTime "1/2/2006") }}
                 {{ $popoverSummary = $artist.String "overview" }}
   
               {{ else }}
@@ -352,14 +351,14 @@ A widget for Sonarr, Radarr, or Lidarr that shows upcoming releases, recent down
                 {{ else }}
                   {{ $coverUrl = printf "%s/album/%s/cover-500.jpg" $coverBase $albumId }}
                 {{ end }}
-                {{ $date = (.String "releaseDate" | parseTime "rfc3339") }}
+                {{ $date = (.String "releaseDate" | parseTime "RFC3339") }}
                 {{ $title = .String "title" }}
                 {{ $subtitle = $artist.String "artistName" }}
                 {{ $summary = $album.String "overview" }}
                 {{ $genres = $artist.Get "genres" }}
                 {{ $link = printf "%s/artist/%s#" $url ($artist.String "foreignArtistId") }}
                 {{ $popoverTitle = .String "title" }}
-                {{ $popoverSubtitle = printf "%s %s" $datetype (($date.In $timezone) | formatTime "1/2/2006") }}
+                {{ $popoverSubtitle = printf "%s %s" $datetype ($date | formatTime "1/2/2006") }}
                 {{ $popoverSummary = .String "artist.overview" }}
               {{ end }}
             {{ end }}
@@ -427,9 +426,9 @@ A widget for Sonarr, Radarr, or Lidarr that shows upcoming releases, recent down
                   <div class="text-truncate text-very-compact" title="{{ $subtitle }}">{{ $subtitle }}</div>
                   <div class="text-very-compact text-truncate">
                     {{ if eq $service "sonarr" }}
-                      <div>{{ $seString }} - {{ $datetype }} {{ ($date.In $timezone).Format "1/2 03:04PM" }}</div>
+                      <div>{{ $seString }} - {{ $datetype }} {{ $date.Format "1/2 03:04PM" }}</div>
                     {{ else }}
-                      <span>{{ $datetype }} {{ ($date.In $timezone).Format "1/2" }}</span>
+                      <span>{{ $datetype }} {{ $date.Format "1/2" }}</span>
                     {{ end }}
                   </div>
     
