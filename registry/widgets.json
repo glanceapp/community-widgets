@@ -643,9 +643,9 @@
     "description": "show SABnzbd status",
     "author": "Neo11Neo",
     "directory": "sabnzbd-stats",
-    "readme_hash": "b007ae8fbe22233554a1295d4bac42df92898d5a",
+    "readme_hash": "e019c64c34874ec17757027eba33164c854d0131",
     "time_added": "2025-03-27T11:09:13.1585Z",
-    "time_updated": "2025-09-25T04:55:13.928341658Z"
+    "time_updated": "2025-10-16T15:00:48.419767477Z"
   },
   {
     "title": "Scrutiny",
