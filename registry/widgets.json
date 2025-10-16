@@ -540,6 +540,15 @@
     "time_updated": "2025-09-25T04:55:13.927841814Z"
   },
   {
+    "title": "PagerDuty Incidents",
+    "description": "Shows the latest incidents from PagerDuty",
+    "author": "koalalorenzo",
+    "directory": "pagerduty-incidents",
+    "readme_hash": "ffa2ac3cf3fa2ee9528ea77938271280d3a7f147",
+    "time_added": "2025-10-16T15:27:55.739801576Z",
+    "time_updated": "2025-10-16T15:27:55.739801706Z"
+  },
+  {
     "title": "Paperless NGX Stats",
     "description": "show stats from your Paperless NGX",
     "author": "ralphocdol",

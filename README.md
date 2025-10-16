@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [PagerDuty Incidents](widgets/pagerduty-incidents/README.md) - shows the latest incidents from PagerDuty (by @koalalorenzo)
 * [Gatus Monitor](widgets/gatus-monitor/README.md) - site monitor widget using Gatus for backend data (by @Nedra1998)
 * [Backrest Job Status](widgets/backrest-job-status/README.md) - show status of Backrest jobs including of the  Date, Snapshot ID, Size processed, Status, Error details (via tooltip) (by @stonkage)
 * [Komodo Container Manager Monitor](widgets/komodo-container-manager-stunt-and-gimmicks-alex/README.md) - at-a-glance view of stacks and servers managed by Komodo (by @stunt-and-gimmicks-alex)
 * [Synology Disk Station](widgets/synology-disk-station/README.md) - displays RAM and CPU usage and used storage of your Synology NAS (by @Chachigo)
-* [Beszel Server Stats](widgets/beszel-server-stats/README.md) - server Stats widget matching the builtin widget but using data from Beszel (by @Nedra1998)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -84,6 +84,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [NextDNS Stats](widgets/nextdns-stats/README.md) - show the basics stats of your nextdns stats. Total queries, total blocked and percentage (by @ziritione85)
 * [Nextcloud Deck](widgets/nextcloud-deck/README.md) - show deck board from Nextcloud (by @drakkein)
 * [Overseerr Trending/Discovery](widgets/overseerr-trending-discovery/README.md) - shows trending media along with Overseerr recommendations for movies/tv (by @flamechair)
+* [PagerDuty Incidents](widgets/pagerduty-incidents/README.md) - shows the latest incidents from PagerDuty (by @koalalorenzo)
 * [Paperless NGX Stats](widgets/paperlessngx-stats/README.md) - show stats from your Paperless NGX (by @ralphocdol)
 * [PeaNut UPS Stats](widgets/peanut-ups-status/README.md) - returns statistics from PeaNut to Monitor UPS (by @razdnut)
 * [Prowlarr Indexers](widgets/prowlarr-indexers/README.md) - show list of indexers from prowlarr (by @mattiasghodsian)
