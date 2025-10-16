@@ -5,7 +5,7 @@
 - type: custom-api
   title: SABnzbd Status
   cache: 30s
-  url: http://YOUR_SERVER:PORT/api?output=json&apikey=${SABNZBD_API_KEY}&mode=queue
+  url: ${SABNZBD_URL}/api?output=json&apikey=${SABNZBD_API_KEY}&mode=queue
   headers:
     Accept: application/json
   template: |
@@ -35,3 +35,4 @@
 ## Environment variables
 
 - `SABNZBD_API_KEY` - the API key of SABnzbd can be found under `Settings -> General`
+- `SABNZBD_URL` - The URL for your sabnzbd deployment, including port but without trailing slash, e.g.: 'http://192.168.1.2:8080', or 'https://sabnzbd.example.com'
