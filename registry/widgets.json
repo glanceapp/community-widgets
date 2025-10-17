@@ -31,9 +31,9 @@
     "description": "Show upcoming, recently downloaded, or missing items from Sonarr, Radarr, or Lidarr",
     "author": "erkston",
     "directory": "arr-releases",
-    "readme_hash": "4719bbd0470683ff3bfe2b87d53b01b2810da6e7",
+    "readme_hash": "563f8ded5d23b834cb2656390698b66a5bbe22bf",
     "time_added": "2025-05-18T17:42:55.8334Z",
-    "time_updated": "2025-09-25T04:55:13.925653665Z"
+    "time_updated": "2025-10-17T15:22:33.566996216Z"
   },
   {
     "title": "Astronomy Picture of the Day",
