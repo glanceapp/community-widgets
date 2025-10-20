@@ -1,6 +1,6 @@
 # Lemmy
 
-This widget displays the latest posts from any [Lemmy](https://join-lemmy.org/) community inside.  It uses the public Lemmy API to fetch posts from a given community and shows the post title, score, comment count, and time since publication — output is formatted in a collapsible list.
+This widget displays the latest posts from any [Lemmy](https://join-lemmy.org/) community inside.  It uses the public Lemmy API to fetch posts from a given community and shows the post title, score, comment count, and time since publication — output is formatted in a collapsible list.  It has the same look and feel as glances reddit widget.
 
 ---
 
@@ -66,7 +66,7 @@ The followinfg environment variables are required in your `.env` file:
   Change the `url` base to any Lemmy instance (e.g., `https://lemmy.ml`, `https://aussie.zone`).
 
 > [!NOTE]
-> The url base was hardcoded to the lemmy.world instance to give people flexiability if they wanted to reuse the code for other communities.
+> The url base was hardcoded to the lemmy.world instance to give people flexibility if they wanted to reuse the multiple communities.
 
 - **Example:**  
   To show top posts from the `australia` community on `lemmy.world`:
