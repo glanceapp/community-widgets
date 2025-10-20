@@ -270,6 +270,15 @@
     "time_updated": "2025-09-25T04:55:13.926714858Z"
   },
   {
+    "title": "Grafana",
+    "description": "Useful information and metrics from a Grafana data source (like prometheus, mimir, loki)",
+    "author": "koalalorenzo",
+    "directory": "grafana",
+    "readme_hash": "9f43d31c18b20e9c0044f4f01ada5016ddce1f03",
+    "time_added": "2025-10-20T17:05:55.578826114Z",
+    "time_updated": "2025-10-20T17:05:55.578826244Z"
+  },
+  {
     "title": "Hardcover Currently Reading",
     "description": "show the currently reading book from [Hardcover](https://hardcover.app/)",
     "author": "Akasiek",

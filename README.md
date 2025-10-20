@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Grafana](widgets/grafana/README.md) - useful information and metrics from a Grafana data source (like prometheus, mimir, loki) (by @koalalorenzo)
 * [Lemmy](widgets/lemmy/README.md) - displays the latest posts from any Lemmy community inside Glance.  It uses the public Lemmy API to fetch posts from a given community and shows the post title, score, comment count, and time since publication (by @stonkage)
 * [PagerDuty Incidents](widgets/pagerduty-incidents/README.md) - shows the latest incidents from PagerDuty (by @koalalorenzo)
 * [Gatus Monitor](widgets/gatus-monitor/README.md) - site monitor widget using Gatus for backend data (by @Nedra1998)
 * [Backrest Job Status](widgets/backrest-job-status/README.md) - show status of Backrest jobs including of the  Date, Snapshot ID, Size processed, Status, Error details (via tooltip) (by @stonkage)
-* [Komodo Container Manager Monitor](widgets/komodo-container-manager-stunt-and-gimmicks-alex/README.md) - at-a-glance view of stacks and servers managed by Komodo (by @stunt-and-gimmicks-alex)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -54,6 +54,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [GitHub personal repositories](widgets/github-personal-repos/README.md) - show your own personal respositories on GitHub (by @menitz)
 * [Gluetun VPN status](widgets/gluetun-vpn-status/README.md) - show the public IP, country and city of you [Gluetun VPN client](https://github.com/qdm12/gluetun) (by @Hyptu)
 * [Google Calendar List](widgets/google-calendar-list/README.md) - list Google Calendar upcoming events (by @anant-j)
+* [Grafana](widgets/grafana/README.md) - useful information and metrics from a Grafana data source (like prometheus, mimir, loki) (by @koalalorenzo)
 * [Hardcover Currently Reading](widgets/hardcover-currently-reading/README.md) - show the currently reading book from [Hardcover](https://hardcover.app/) (by @Akasiek)
 * [Home Assistant Sensor Stats](widgets/homeassistant-sensor-stats/README.md) - display's configured Sensors values from Home Assistant (by @AWildLeon)
 * [Immich stats](widgets/immich-stats/README.md) - show the number of photos, videos and usage of your Immich server (by @svilenmarkov)
