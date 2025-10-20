@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Lemmy](widgets/lemmy/README.md) - displays the latest posts from any Lemmy community inside Glance.  It uses the public Lemmy API to fetch posts from a given community and shows the post title, score, comment count, and time since publication (by @stonkage)
 * [PagerDuty Incidents](widgets/pagerduty-incidents/README.md) - shows the latest incidents from PagerDuty (by @koalalorenzo)
 * [Gatus Monitor](widgets/gatus-monitor/README.md) - site monitor widget using Gatus for backend data (by @Nedra1998)
 * [Backrest Job Status](widgets/backrest-job-status/README.md) - show status of Backrest jobs including of the  Date, Snapshot ID, Size processed, Status, Error details (via tooltip) (by @stonkage)
 * [Komodo Container Manager Monitor](widgets/komodo-container-manager-stunt-and-gimmicks-alex/README.md) - at-a-glance view of stacks and servers managed by Komodo (by @stunt-and-gimmicks-alex)
-* [Synology Disk Station](widgets/synology-disk-station/README.md) - displays RAM and CPU usage and used storage of your Synology NAS (by @Chachigo)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -65,6 +65,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Last.FM Recent Tracks](widgets/lastfm-recent-tracks/README.md) - show recent tracks scrobbled by a Last.FM user (by @Akasiek)
 * [Latest Community Widgets](widgets/latest-community-widgets/README.md) - show a list of the most recently added community widgets (by @svilenmarkov)
 * [LeetCode Daily Question](widgets/leetcode-daily-question/README.md) - show today leetcode questions with hashtag and difficult (by @hohaithuy)
+* [Lemmy](widgets/lemmy/README.md) - displays the latest posts from any Lemmy community inside Glance.  It uses the public Lemmy API to fetch posts from a given community and shows the post title, score, comment count, and time since publication (by @stonkage)
 * [Linkwarden Latest Bookmarks](widgets/linkwarden-latest-bookmarks/README.md) - show the latest bookmarks from your Linkwarden instance (by @josevictorferreira)
 * [London Tube Status](widgets/london-tube-status/README.md) - show live service status of London tube, overground and Elizabeth lines via the TfL API (by @tomdaly)
 * [MLB Scores](widgets/mlb-scores-tracker/README.md) - lists all MLB scores daily, with baserunner info and inning scores (by @ShmoobiJones)

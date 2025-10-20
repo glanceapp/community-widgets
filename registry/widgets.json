@@ -369,6 +369,15 @@
     "time_updated": "2025-09-25T04:55:13.927062177Z"
   },
   {
+    "title": "Lemmy",
+    "description": "Displays the latest posts from any Lemmy community inside Glance.  It uses the public Lemmy API to fetch posts from a given community and shows the post title, score, comment count, and time since publication",
+    "author": "stonkage",
+    "directory": "lemmy",
+    "readme_hash": "a86e83b15526b00448e92297b3db06db3e2163e8",
+    "time_added": "2025-10-20T17:04:50.057283702Z",
+    "time_updated": "2025-10-20T17:04:50.057283833Z"
+  },
+  {
     "title": "Linkwarden Latest Bookmarks",
     "description": "show the latest bookmarks from your Linkwarden instance",
     "author": "josevictorferreira",
