@@ -1,6 +1,6 @@
 # Lemmy
 
-This widget displays the latest posts from any [Lemmy](https://join-lemmy.org/) community inside.  It uses the public Lemmy API to fetch posts from a given community and shows the post title, score, comment count, and time since publication — outpit is formatted in a collapsible list.
+This widget displays the latest posts from any [Lemmy](https://join-lemmy.org/) community inside.  It uses the public Lemmy API to fetch posts from a given community and shows the post title, score, comment count, and time since publication — output is formatted in a collapsible list.
 
 ---
 
