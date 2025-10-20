@@ -1,0 +1,3 @@
+title: Lemmy
+description: Displays the latest posts from any Lemmy community inside Glance.  It uses the public Lemmy API to fetch posts from a given community and shows the post title, score, comment count, and time since publication
+author: stonkage
