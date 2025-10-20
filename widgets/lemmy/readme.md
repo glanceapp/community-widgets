@@ -5,6 +5,7 @@ This widget displays the latest posts from any [Lemmy](https://join-lemmy.org/) 
 ---
 
 ## Preview
+![](preview.png)
 
 ## Widget
 
