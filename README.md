@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Nginx Proxy Manager](widgets/nginx-proxy-manager/README.md) - shows a summary of Nginx Proxy Configration and host links (by @saif191020)
 * [Proxmox Backup Server Stats](widgets/proxmox-backup-server-stats/README.md) - shows Ressources, Datastore Usage and Last 3 Backup Jobs per VM (by @danielweeber)
 * [Grafana](widgets/grafana/README.md) - useful information and metrics from a Grafana data source (like prometheus, mimir, loki) (by @koalalorenzo)
 * [Lemmy](widgets/lemmy/README.md) - displays the latest posts from any Lemmy community inside Glance.  It uses the public Lemmy API to fetch posts from a given community and shows the post title, score, comment count, and time since publication (by @stonkage)
 * [PagerDuty Incidents](widgets/pagerduty-incidents/README.md) - shows the latest incidents from PagerDuty (by @koalalorenzo)
-* [Gatus Monitor](widgets/gatus-monitor/README.md) - site monitor widget using Gatus for backend data (by @Nedra1998)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -85,6 +85,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Netbird devices](widgets/netbird-devices/README.md) - show all devices inside to a Netbird network along with their connection status, update availability and IP (by @menitz)
 * [NextDNS Stats](widgets/nextdns-stats/README.md) - show the basics stats of your nextdns stats. Total queries, total blocked and percentage (by @ziritione85)
 * [Nextcloud Deck](widgets/nextcloud-deck/README.md) - show deck board from Nextcloud (by @drakkein)
+* [Nginx Proxy Manager](widgets/nginx-proxy-manager/README.md) - shows a summary of Nginx Proxy Configration and host links (by @saif191020)
 * [Overseerr Trending/Discovery](widgets/overseerr-trending-discovery/README.md) - shows trending media along with Overseerr recommendations for movies/tv (by @flamechair)
 * [PagerDuty Incidents](widgets/pagerduty-incidents/README.md) - shows the latest incidents from PagerDuty (by @koalalorenzo)
 * [Paperless NGX Stats](widgets/paperlessngx-stats/README.md) - show stats from your Paperless NGX (by @ralphocdol)

@@ -549,6 +549,15 @@
     "time_updated": "2025-09-25T04:55:13.92764731Z"
   },
   {
+    "title": "Nginx Proxy Manager",
+    "description": "Shows a summary of Nginx Proxy Configration and host links",
+    "author": "saif191020",
+    "directory": "nginx-proxy-manager",
+    "readme_hash": "b97828b2feaba5688f483fb2e7f8e425773437d6",
+    "time_added": "2025-10-26T14:32:21.693745723Z",
+    "time_updated": "2025-10-26T14:32:21.693745816Z"
+  },
+  {
     "title": "Overseerr Trending/Discovery",
     "description": "Shows trending media along with Overseerr recommendations for movies/tv",
     "author": "flamechair",
