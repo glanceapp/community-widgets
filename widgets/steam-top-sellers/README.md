@@ -12,11 +12,11 @@
         {{ range .JSON.Array "top_sellers.items" }}
         {{ if ne (.String "name") "Steam Deck" }}
         <li style="display: flex; align-items: center; gap: 1rem;">
-            <img src="{{ .String " small_capsule_image" }}" alt="{{ .String " name" }}"
+            <img src="{{ .String "small_capsule_image" }}" alt="{{ .String "name" }}"
                 style="width: 120px; height: auto; border-radius: 4px; flex-shrink: 0;">
             <div style="min-width: 0;">
                 <a class="size-h4 color-highlight text-truncate" style="display: block;"
-                    href="https://store.steampowered.com/app/{{ .Int " id" }}/">
+                    href="https://store.steampowered.com/app/{{ .Int "id" }}/">
                     {{ .String "name" }}
                 </a>
                 <ul class="list-horizontal-text">
