@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Proxmox Backup Server Stats](widgets/proxmox-backup-server-stats/README.md) - shows Ressources, Datastore Usage and Last 3 Backup Jobs per VM (by @danielweeber)
 * [Grafana](widgets/grafana/README.md) - useful information and metrics from a Grafana data source (like prometheus, mimir, loki) (by @koalalorenzo)
 * [Lemmy](widgets/lemmy/README.md) - displays the latest posts from any Lemmy community inside Glance.  It uses the public Lemmy API to fetch posts from a given community and shows the post title, score, comment count, and time since publication (by @stonkage)
 * [PagerDuty Incidents](widgets/pagerduty-incidents/README.md) - shows the latest incidents from PagerDuty (by @koalalorenzo)
 * [Gatus Monitor](widgets/gatus-monitor/README.md) - site monitor widget using Gatus for backend data (by @Nedra1998)
-* [Backrest Job Status](widgets/backrest-job-status/README.md) - show status of Backrest jobs including of the  Date, Snapshot ID, Size processed, Status, Error details (via tooltip) (by @stonkage)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -90,6 +90,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Paperless NGX Stats](widgets/paperlessngx-stats/README.md) - show stats from your Paperless NGX (by @ralphocdol)
 * [PeaNut UPS Stats](widgets/peanut-ups-status/README.md) - returns statistics from PeaNut to Monitor UPS (by @razdnut)
 * [Prowlarr Indexers](widgets/prowlarr-indexers/README.md) - show list of indexers from prowlarr (by @mattiasghodsian)
+* [Proxmox Backup Server Stats](widgets/proxmox-backup-server-stats/README.md) - shows Ressources, Datastore Usage and Last 3 Backup Jobs per VM (by @danielweeber)
 * [Proxmox VE Nodes](widgets/proxmox-ve-nodes/README.md) - show the Node's CPU, RAM and Disk usage of your Proxmox Virtual Environment servers (by @ralphocdol)
 * [Proxmox VE Stats](widgets/proxmox-ve-stats/README.md) - show the number of nodes, LXCs, VMs and Storage of your Proxmox Virtual Environment server (by @ralphocdol)
 * [Proxmox VE Table Stats](widgets/proxmox-detailed-resources/README.md) - show a table with CPU, RAM and Disk usage of your Proxmox VE server (by @lfvelosoh)

@@ -594,6 +594,15 @@
     "time_updated": "2025-09-25T04:55:13.927965615Z"
   },
   {
+    "title": "Proxmox Backup Server Stats",
+    "description": "Shows Ressources, Datastore Usage and Last 3 Backup Jobs per VM",
+    "author": "danielweeber",
+    "directory": "proxmox-backup-server-stats",
+    "readme_hash": "7d721b82be11547d1996e058f6290c712f0e11a6",
+    "time_added": "2025-10-26T14:30:10.086423476Z",
+    "time_updated": "2025-10-26T14:30:10.086423606Z"
+  },
+  {
     "title": "Proxmox VE Nodes",
     "description": "show the Node's CPU, RAM and Disk usage of your Proxmox Virtual Environment servers",
     "author": "ralphocdol",
