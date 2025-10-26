@@ -409,9 +409,9 @@
     "description": "Lists all MLB scores daily, with baserunner info and inning scores.",
     "author": "ShmoobiJones",
     "directory": "mlb-scores-tracker",
-    "readme_hash": "dfbe599ac774cf5f9af508969e974a322ccdd389",
+    "readme_hash": "d3be8af0a9b72b2deeae6642ee4176e2edfcad4a",
     "time_added": "2025-05-12T19:44:14.8033Z",
-    "time_updated": "2025-09-25T04:55:13.927380151Z"
+    "time_updated": "2025-10-13T23:38:06.284535452Z"
   },
   {
     "title": "Mealie Today's Meal",
@@ -463,9 +463,9 @@
     "description": "show the schedule and scores for NBA games today",
     "author": "ShmoobiJones",
     "directory": "nba-scores-tracker",
-    "readme_hash": "b795f74e1bf30c4fe06b2ff4a419a92b32862c7c",
+    "readme_hash": "36bedead51d9342959400ebfd06c7fafbcab4e92",
     "time_added": "2025-05-09T01:18:50.7946Z",
-    "time_updated": "2025-09-25T04:55:13.927449691Z"
+    "time_updated": "2025-10-13T23:30:32.881212301Z"
   },
   {
     "title": "NCAA CFB Scoreboard",
