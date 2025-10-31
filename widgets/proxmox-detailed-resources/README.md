@@ -118,3 +118,12 @@
       <p>Failed: {{ .Response.Status }}</p>
     {{ end }}
 ```
+## Environment variables
+
+- `PROXMOX_URL` - The URL for your proxmox host, including port but without trailing slash, e.g.: 'https://192.168.1.2:8006', or 'https://proxmox.example.com'
+- `PROXMOX_TOKEN` - read only token in format `PVEAPIToken=<username>@pam!<tokenID>=<secret>`. (instructions to set it up can be found in [gethomepage's documentation](https://github.com/gethomepage/homepage/blob/main/docs/widgets/services/proxmox.md)
+
+    token example:
+    ```
+    PVEAPIToken=api@pam!shared=some-random-secret-value-here
+    ```
