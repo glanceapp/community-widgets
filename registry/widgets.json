@@ -585,6 +585,15 @@
     "time_updated": "2025-09-25T04:55:13.927884413Z"
   },
   {
+    "title": "Papra Stats",
+    "description": "Shows stats from your Papra application.",
+    "author": "Saisamarth21",
+    "directory": "papra-stats",
+    "readme_hash": "0910416455a5f761eb6f3abeeaaf6e4fdbcd956f",
+    "time_added": "2025-10-30T06:40:44.872560575Z",
+    "time_updated": "2025-10-30T06:40:44.872560705Z"
+  },
+  {
     "title": "PeaNut UPS Stats",
     "description": "Returns statistics from PeaNut to Monitor UPS",
     "author": "razdnut",
