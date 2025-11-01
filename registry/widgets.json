@@ -634,9 +634,9 @@
     "description": "show a table with CPU, RAM and Disk usage of your Proxmox VE server",
     "author": "lfvelosoh",
     "directory": "proxmox-detailed-resources",
-    "readme_hash": "927b2b60c1fdd995e67997874c372d2cc4b75b09",
+    "readme_hash": "3dbaf7fb752968cb6dafaa6759dd3b7b2eb2030e",
     "time_added": "2025-06-13T12:41:45.1472Z",
-    "time_updated": "2025-09-25T04:55:13.928003025Z"
+    "time_updated": "2025-11-01T20:20:59.907944977Z"
   },
   {
     "title": "Raindrop Bookmarks",
