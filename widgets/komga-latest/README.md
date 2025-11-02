@@ -11,7 +11,7 @@ The widget requires modifications made to the configuration file in order to wor
 - (required) `base-url` requires URL pointing to your Komga, be sure to include "http://" or "https://"
 - (required) `api-key` requires Komga API key that can be retrieved in Komga under "My Account -> API Keys -> +"
 - (required) `library-id` requires ID of you Komga library that can be retrieved from library URL: ${KOMGA_URL}/libraries/${LIBRARY_ID}/series
-- (optional) `items` requires integer number that will determined maximun amount of cards to be shown. Defaults to 10
+- (optional) `items` requires integer number that will determine maximum amount of cards to be shown. Defaults to 10
 - (optional) `mode` determines whether the cards shown according to recently newly added series or recent updates to series. Requires "new" or "updated". Default to "new"
 
 ## Widget Configuration YAML
@@ -21,7 +21,7 @@ The widget requires modifications made to the configuration file in order to wor
   frameless: true
   cache: 15m
   options:                                                   
-    base-url: ${KOMGA_URL}                                   # URL pointing to your 
+    base-url: ${KOMGA_URL}                                   # URL pointing to your Komga
     api-key: ${KOMGA_API_KEY}                                # retrieve from Komga in: My Account -> API Keys -> +
     library-id: ${LIBRARY_ID}                                # id of a Komga library (can be spotted in the url of that library)
     items: 10                                                # max number of cards to show in the widgets
