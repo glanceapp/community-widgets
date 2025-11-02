@@ -1,18 +1,18 @@
 ## Description
 
-This widgets displays covers of recently added/updated series to a Komga library as horizontally scrolling items (cards):
+This widgets displays covers of recently added/updated series of a Komga library as horizontally scrolling items (cards):
 
 ![Preview of the widget](preview.png)
 
-The widget requires modifications made to the configuration file in order to work. Under the `options` field in the yaml configurations file, one needs to supply Komga URL, API key and a library ID of a relevant library. You can either supply them directly or as environment variables. 
+The widget requires modifications to the configuration file in order to work. Under the `options` field in the yaml configurations file, one needs to supply Komga URL, API key and a library ID of a relevant library. You can either supply them directly or as environment variables. 
 
 ## List of Options
 
 - (required) `base-url` requires URL pointing to your Komga, be sure to include "http://" or "https://"
 - (required) `api-key` requires Komga API key that can be retrieved in Komga under "My Account -> API Keys -> +"
 - (required) `library-id` requires ID of you Komga library that can be retrieved from library URL: ${KOMGA_URL}/libraries/${LIBRARY_ID}/series
-- (optional) `items` requires integer number that will determine maximum amount of cards to be shown. Defaults to 10
-- (optional) `mode` determines whether the cards shown according to recently newly added series or recent updates to series. Requires "new" or "updated". Default to "new"
+- (optional) `items` requires integer number that will determine maximum amount of cards. The default value is 10
+- (optional) `mode` determines whether the widget show recently added series or the series that recently had changes. Requires "new" or "updated". The default value is "new"
 
 ## Widget Configuration YAML
 ```yaml
@@ -23,9 +23,9 @@ The widget requires modifications made to the configuration file in order to wor
   options:                                                   
     base-url: ${KOMGA_URL}                                   # URL pointing to your Komga
     api-key: ${KOMGA_API_KEY}                                # retrieve from Komga in: My Account -> API Keys -> +
-    library-id: ${LIBRARY_ID}                                # id of a Komga library (can be spotted in the url of that library)
+    library-id: ${LIBRARY_ID}                                # id of the Komga library (can be spotted in the url of that library)
     items: 10                                                # max number of cards to show in the widgets
-    mode: new                                                # allows for "new" or "updated"
+    mode: new                                                # only "new" or "updated" are allowed
   template: |
     {{ $baseURL := .Options.StringOr "base-url" "" }}
     {{ $apiKey := .Options.StringOr "api-key" "" }}
