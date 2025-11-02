@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Steam Top Sellers](widgets/steam-top-sellers/README.md) - show steam global top seller (by @GuiguiBlitz)
+* [ListenBrainz Listen](widgets/listenbrainz-latest/README.md) - show the latest listen for a ListenBrainz user (by @zliebersbach)
+* [Komga Recently Added Series](widgets/komga-latest/README.md) - displays recently added comic/manga series to a defined Komga library (by @VictorMitr)
+* [Docker Swarm](widgets/docker-swarm/README.md) - a widget to monitor Docker Swarm services and nodes based on the built-in docker-containers widget (by @tonineri)
 * [Papra Stats](widgets/papra-stats/README.md) - shows stats from your Papra application (by @Saisamarth21)
-* [Nginx Proxy Manager](widgets/nginx-proxy-manager/README.md) - shows a summary of Nginx Proxy Configration and host links (by @saif191020)
-* [Proxmox Backup Server Stats](widgets/proxmox-backup-server-stats/README.md) - shows Ressources, Datastore Usage and Last 3 Backup Jobs per VM (by @danielweeber)
-* [Grafana](widgets/grafana/README.md) - useful information and metrics from a Grafana data source (like prometheus, mimir, loki) (by @koalalorenzo)
-* [Lemmy](widgets/lemmy/README.md) - displays the latest posts from any Lemmy community inside Glance.  It uses the public Lemmy API to fetch posts from a given community and shows the post title, score, comment count, and time since publication (by @stonkage)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -42,6 +42,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Crafty Minecraft Server Stats](widgets/crafty-controller-minecraft-server/README.md) - show the status of Minecraft server managed by Crafty Controller (by @MartyX98)
 * [Cryptopanic News](widgets/cryptopanic-news/README.md) - a real-time cryptocurrency news widget that displays filtered news from CryptoPanic.com with configurable filters for news type, regions, and currencies (by @herculosh)
 * [Cup Updates](widgets/cup-updates/README.md) - displays information about containers needing an update from Cup (by @panonim)
+* [Docker Swarm](widgets/docker-swarm/README.md) - a widget to monitor Docker Swarm services and nodes based on the built-in docker-containers widget (by @tonineri)
 * [Epic Games Free Games](widgets/epic-free-widget/README.md) - display currently free games from the Epic Games Store with promotional images and availability periods (by @marocainperdu)
 * [Football Fixtures](widgets/football-fixtures/README.md) - show the last match and the next match of your favourite football team using football-data api (by @cristiandiiorio)
 * [Forgejo repos](widgets/forgejo-repos/README.md) - show data about latest repos from forgejo instance (by @dodecube)
@@ -62,12 +63,14 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Jellyfin Stats](widgets/jellyfin-emby-stats/README.md) - show the number of movies, shows, episodes and songs in your Jellyfin or Emby server (by @lfvelosoh)
 * [Karakeep Dashboard](widgets/karakeep-dashboard/README.md) - the widget returns statistics on the number of bookmarks and the number of tags and the most recently added bookmarks (by @razdnut)
 * [Kavita Latest](widgets/kavita-latest/README.md) - show recently updated series and in progress series from your Kavita server (by @Nedra1998)
+* [Komga Recently Added Series](widgets/komga-latest/README.md) - displays recently added comic/manga series to a defined Komga library (by @VictorMitr)
 * [Komodo Container Manager Monitor](widgets/komodo-container-manager-stunt-and-gimmicks-alex/README.md) - at-a-glance view of stacks and servers managed by Komodo (by @stunt-and-gimmicks-alex)
 * [Last.FM Recent Tracks](widgets/lastfm-recent-tracks/README.md) - show recent tracks scrobbled by a Last.FM user (by @Akasiek)
 * [Latest Community Widgets](widgets/latest-community-widgets/README.md) - show a list of the most recently added community widgets (by @svilenmarkov)
 * [LeetCode Daily Question](widgets/leetcode-daily-question/README.md) - show today leetcode questions with hashtag and difficult (by @hohaithuy)
 * [Lemmy](widgets/lemmy/README.md) - displays the latest posts from any Lemmy community inside Glance.  It uses the public Lemmy API to fetch posts from a given community and shows the post title, score, comment count, and time since publication (by @stonkage)
 * [Linkwarden Latest Bookmarks](widgets/linkwarden-latest-bookmarks/README.md) - show the latest bookmarks from your Linkwarden instance (by @josevictorferreira)
+* [ListenBrainz Listen](widgets/listenbrainz-latest/README.md) - show the latest listen for a ListenBrainz user (by @zliebersbach)
 * [London Tube Status](widgets/london-tube-status/README.md) - show live service status of London tube, overground and Elizabeth lines via the TfL API (by @tomdaly)
 * [MLB Scores](widgets/mlb-scores-tracker/README.md) - lists all MLB scores daily, with baserunner info and inning scores (by @ShmoobiJones)
 * [Mealie Today's Meal](widgets/mealie-todays-meal/README.md) - show today's meal based off the meal planner from [Mealie](https://mealie.io/) (by @wtoa)
@@ -110,6 +113,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Spotify Player](widgets/spotify-player/README.md) - show currently playing Spotify song along with the queue and ability to play/pause (by @anant-j)
 * [St. Louis Fed US Mortgage Rates](widgets/st-louis-fed-us-mortgage-rates/README.md) - show mortgage rates from the St. Louis Federal Reserve's FRED API (by @ehaughee)
 * [Steam Recently Played Games](widgets/steam-recently-played-games/README.md) - show a list of recently played games by a Steam user (by @lunnosmp4)
+* [Steam Top Sellers](widgets/steam-top-sellers/README.md) - show steam global top seller (by @GuiguiBlitz)
 * [Steam User](widgets/steam-user/README.md) - show information about a Steam user (by @lunnosmp4)
 * [Steam specials](widgets/steam-specials/README.md) - show a list of discounted games on Steam (by @svilenmarkov)
 * [Syncthing](widgets/syncthing/README.md) - show Syncthing folder status (by @JohnCannon97)

@@ -86,6 +86,10 @@
   </tr>
   <tr>
     <td valign="top">
+    <p align="center"><a href="widgets/docker-swarm/README.md">Docker Swarm</a><br>by <a href="https://github.com/tonineri">@tonineri</a><p>
+    <p align="center"><a href="widgets/docker-swarm/README.md"><img src="widgets/docker-swarm/screenshot.png"></a></p>
+</td>
+    <td valign="top">
     <p align="center"><a href="widgets/epic-free-widget/README.md">Epic Games Free Games</a><br>by <a href="https://github.com/marocainperdu">@marocainperdu</a><p>
     <p align="center"><a href="widgets/epic-free-widget/README.md"><img src="widgets/epic-free-widget/preview.png"></a></p>
 </td>
@@ -93,12 +97,12 @@
     <p align="center"><a href="widgets/football-fixtures/README.md">Football Fixtures</a><br>by <a href="https://github.com/cristiandiiorio">@cristiandiiorio</a><p>
     <p align="center"><a href="widgets/football-fixtures/README.md"><img src="widgets/football-fixtures/preview.png"></a></p>
 </td>
+  </tr>
+  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/forgejo-repos/README.md">Forgejo repos</a><br>by <a href="https://github.com/dodecube">@dodecube</a><p>
     <p align="center"><a href="widgets/forgejo-repos/README.md"><img src="widgets/forgejo-repos/preview.png"></a></p>
 </td>
-  </tr>
-  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/formula1-widgets/README.md">Formula 1 Widgets</a><br>by <a href="https://github.com/abaza738">@abaza738</a><p>
     <p align="center"><a href="widgets/formula1-widgets/README.md"><img src="widgets/formula1-widgets/preview1.png"></a></p>
@@ -107,12 +111,12 @@
     <p align="center"><a href="widgets/frigate-stats/README.md">Frigate stats</a><br>by <a href="https://github.com/Pimer0">@Pimer0</a><p>
     <p align="center"><a href="widgets/frigate-stats/README.md"><img src="widgets/frigate-stats/preview.png"></a></p>
 </td>
+  </tr>
+  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/gatus/README.md">Gatus</a><br>by <a href="https://github.com/Jack-Overflow">@Jack-Overflow</a><p>
     <p align="center"><a href="widgets/gatus/README.md"><img src="widgets/gatus/preview.png"></a></p>
 </td>
-  </tr>
-  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/gatus-monitor/README.md">Gatus Monitor</a><br>by <a href="https://github.com/Nedra1998">@Nedra1998</a><p>
     <p align="center"><a href="widgets/gatus-monitor/README.md"><img src="widgets/gatus-monitor/preview.png"></a></p>
@@ -121,12 +125,12 @@
     <p align="center"><a href="widgets/ghostfolio-stats/README.md">Ghostfolio stats</a><br>by <a href="https://github.com/ziritione85">@ziritione85</a><p>
     <p align="center"><a href="widgets/ghostfolio-stats/README.md"><img src="widgets/ghostfolio-stats/preview.png"></a></p>
 </td>
+  </tr>
+  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/github-notifications/README.md">GitHub Notifications</a><br>by <a href="https://github.com/luboszima">@luboszima</a><p>
     <p align="center"><a href="widgets/github-notifications/README.md"><img src="widgets/github-notifications/preview.png"></a></p>
 </td>
-  </tr>
-  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/github-personal-repos/README.md">GitHub personal repositories</a><br>by <a href="https://github.com/menitz">@menitz</a><p>
     <p align="center"><a href="widgets/github-personal-repos/README.md"><img src="widgets/github-personal-repos/preview.png"></a></p>
@@ -135,12 +139,12 @@
     <p align="center"><a href="widgets/gluetun-vpn-status/README.md">Gluetun VPN status</a><br>by <a href="https://github.com/Hyptu">@Hyptu</a><p>
     <p align="center"><a href="widgets/gluetun-vpn-status/README.md"><img src="widgets/gluetun-vpn-status/preview.png"></a></p>
 </td>
+  </tr>
+  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/google-calendar-list/README.md">Google Calendar List</a><br>by <a href="https://github.com/anant-j">@anant-j</a><p>
     <p align="center"><a href="widgets/google-calendar-list/README.md"><img src="widgets/google-calendar-list/preview.png"></a></p>
 </td>
-  </tr>
-  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/grafana/README.md">Grafana</a><br>by <a href="https://github.com/koalalorenzo">@koalalorenzo</a><p>
     <p align="center"><a href="widgets/grafana/README.md"><img src="widgets/grafana/preview.webp"></a></p>
@@ -149,12 +153,12 @@
     <p align="center"><a href="widgets/hardcover-currently-reading/README.md">Hardcover Currently Reading</a><br>by <a href="https://github.com/Akasiek">@Akasiek</a><p>
     <p align="center"><a href="widgets/hardcover-currently-reading/README.md"><img src="widgets/hardcover-currently-reading/preview.png"></a></p>
 </td>
+  </tr>
+  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/homeassistant-sensor-stats/README.md">Home Assistant Sensor Stats</a><br>by <a href="https://github.com/AWildLeon">@AWildLeon</a><p>
     <p align="center"><a href="widgets/homeassistant-sensor-stats/README.md"><img src="widgets/homeassistant-sensor-stats/preview.png"></a></p>
 </td>
-  </tr>
-  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/immich-stats/README.md">Immich stats</a><br>by <a href="https://github.com/svilenmarkov">@svilenmarkov</a><p>
     <p align="center"><a href="widgets/immich-stats/README.md"><img src="widgets/immich-stats/preview.png"></a></p>
@@ -163,12 +167,12 @@
     <p align="center"><a href="widgets/jellyfin-latest/README.md">Jellyfin Latest/Next Up</a><br>by <a href="https://github.com/Nedra1998">@Nedra1998</a><p>
     <p align="center"><a href="widgets/jellyfin-latest/README.md"><img src="widgets/jellyfin-latest/preview.png"></a></p>
 </td>
+  </tr>
+  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/jellyfin-emby-stats/README.md">Jellyfin Stats</a><br>by <a href="https://github.com/lfvelosoh">@lfvelosoh</a><p>
     <p align="center"><a href="widgets/jellyfin-emby-stats/README.md"><img src="widgets/jellyfin-emby-stats/preview.png"></a></p>
 </td>
-  </tr>
-  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/karakeep-dashboard/README.md">Karakeep Dashboard</a><br>by <a href="https://github.com/razdnut">@razdnut</a><p>
     <p align="center"><a href="widgets/karakeep-dashboard/README.md"><img src="widgets/karakeep-dashboard/preview.png"></a></p>
@@ -177,16 +181,22 @@
     <p align="center"><a href="widgets/kavita-latest/README.md">Kavita Latest</a><br>by <a href="https://github.com/Nedra1998">@Nedra1998</a><p>
     <p align="center"><a href="widgets/kavita-latest/README.md"><img src="widgets/kavita-latest/on-deck-preview.png"></a></p>
 </td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/komga-latest/README.md">Komga Recently Added Series</a><br>by <a href="https://github.com/VictorMitr">@VictorMitr</a><p>
+    <p align="center"><a href="widgets/komga-latest/README.md"><img src="widgets/komga-latest/preview.png"></a></p>
+</td>
     <td valign="top">
     <p align="center"><a href="widgets/komodo-container-manager-stunt-and-gimmicks-alex/README.md">Komodo Container Manager Monitor</a><br>by <a href="https://github.com/stunt-and-gimmicks-alex">@stunt-and-gimmicks-alex</a><p>
     <p align="center"><a href="widgets/komodo-container-manager-stunt-and-gimmicks-alex/README.md"><img src="widgets/komodo-container-manager-stunt-and-gimmicks-alex/preview.png"></a></p>
 </td>
-  </tr>
-  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/lastfm-recent-tracks/README.md">Last.FM Recent Tracks</a><br>by <a href="https://github.com/Akasiek">@Akasiek</a><p>
     <p align="center"><a href="widgets/lastfm-recent-tracks/README.md"><img src="widgets/lastfm-recent-tracks/preview.png"></a></p>
 </td>
+  </tr>
+  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/latest-community-widgets/README.md">Latest Community Widgets</a><br>by <a href="https://github.com/svilenmarkov">@svilenmarkov</a><p>
     <p align="center"><a href="widgets/latest-community-widgets/README.md"><img src="widgets/latest-community-widgets/preview.png"></a></p>
@@ -195,15 +205,19 @@
     <p align="center"><a href="widgets/leetcode-daily-question/README.md">LeetCode Daily Question</a><br>by <a href="https://github.com/hohaithuy">@hohaithuy</a><p>
     <p align="center"><a href="widgets/leetcode-daily-question/README.md"><img src="widgets/leetcode-daily-question/preview.png"></a></p>
 </td>
-  </tr>
-  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/lemmy/README.md">Lemmy</a><br>by <a href="https://github.com/stonkage">@stonkage</a><p>
     <p align="center"><a href="widgets/lemmy/README.md"><img src="widgets/lemmy/preview.png"></a></p>
 </td>
+  </tr>
+  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/linkwarden-latest-bookmarks/README.md">Linkwarden Latest Bookmarks</a><br>by <a href="https://github.com/josevictorferreira">@josevictorferreira</a><p>
     <p align="center"><a href="widgets/linkwarden-latest-bookmarks/README.md"><img src="widgets/linkwarden-latest-bookmarks/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/listenbrainz-latest/README.md">ListenBrainz Listen</a><br>by <a href="https://github.com/zliebersbach">@zliebersbach</a><p>
+    <p align="center"><a href="widgets/listenbrainz-latest/README.md"><img src="widgets/listenbrainz-latest/preview.png"></a></p>
 </td>
     <td valign="top">
     <p align="center"><a href="widgets/london-tube-status/README.md">London Tube Status</a><br>by <a href="https://github.com/tomdaly">@tomdaly</a><p>
@@ -402,11 +416,15 @@
     <p align="center"><a href="widgets/steam-recently-played-games/README.md"><img src="widgets/steam-recently-played-games/preview.png"></a></p>
 </td>
     <td valign="top">
-    <p align="center"><a href="widgets/steam-user/README.md">Steam User</a><br>by <a href="https://github.com/lunnosmp4">@lunnosmp4</a><p>
-    <p align="center"><a href="widgets/steam-user/README.md"><img src="widgets/steam-user/preview.png"></a></p>
+    <p align="center"><a href="widgets/steam-top-sellers/README.md">Steam Top Sellers</a><br>by <a href="https://github.com/GuiguiBlitz">@GuiguiBlitz</a><p>
+    <p align="center"><a href="widgets/steam-top-sellers/README.md"><img src="widgets/steam-top-sellers/preview.png"></a></p>
 </td>
   </tr>
   <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/steam-user/README.md">Steam User</a><br>by <a href="https://github.com/lunnosmp4">@lunnosmp4</a><p>
+    <p align="center"><a href="widgets/steam-user/README.md"><img src="widgets/steam-user/preview.png"></a></p>
+</td>
     <td valign="top">
     <p align="center"><a href="widgets/steam-specials/README.md">Steam specials</a><br>by <a href="https://github.com/svilenmarkov">@svilenmarkov</a><p>
     <p align="center"><a href="widgets/steam-specials/README.md"><img src="widgets/steam-specials/preview.png"></a></p>
@@ -415,12 +433,12 @@
     <p align="center"><a href="widgets/syncthing/README.md">Syncthing</a><br>by <a href="https://github.com/JohnCannon97">@JohnCannon97</a><p>
     <p align="center"><a href="widgets/syncthing/README.md"><img src="widgets/syncthing/preview.png"></a></p>
 </td>
+  </tr>
+  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/synology-disk-station/README.md">Synology Disk Station</a><br>by <a href="https://github.com/Chachigo">@Chachigo</a><p>
     <p align="center"><a href="widgets/synology-disk-station/README.md"><img src="widgets/synology-disk-station/preview.png"></a></p>
 </td>
-  </tr>
-  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/tailscale-devices/README.md">Tailscale devices</a><br>by <a href="https://github.com/not-first">@not-first</a><p>
     <p align="center"><a href="widgets/tailscale-devices/README.md"><img src="widgets/tailscale-devices/preview.png"></a></p>
@@ -429,12 +447,12 @@
     <p align="center"><a href="widgets/tautulli-stats/README.md">Tautulli Stats</a><br>by <a href="https://github.com/SkyAllinott">@SkyAllinott</a><p>
     <p align="center"><a href="widgets/tautulli-stats/README.md"><img src="widgets/tautulli-stats/now_playing.png"></a></p>
 </td>
+  </tr>
+  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/technitium-dns-stats/README.md">Technitium DNS Stats</a><br>by <a href="https://github.com/eribbey">@eribbey</a><p>
     <p align="center"><a href="widgets/technitium-dns-stats/README.md"><img src="widgets/technitium-dns-stats/preview.png"></a></p>
 </td>
-  </tr>
-  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/time-bar/README.md">Time Bar</a><br>by <a href="https://github.com/anant-j">@anant-j</a><p>
     <p align="center"><a href="widgets/time-bar/README.md"><img src="widgets/time-bar/preview.png"></a></p>
@@ -443,12 +461,12 @@
     <p align="center"><a href="widgets/trakt/README.md">Trakt</a><br>by <a href="https://github.com/RxBrad">@RxBrad</a><p>
     <p align="center"><a href="widgets/trakt/README.md"><img src="widgets/trakt/preview.png"></a></p>
 </td>
+  </tr>
+  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/trending-bluesky-news/README.md">Trending Bluesky News</a><br>by <a href="https://github.com/tomcasavant">@tomcasavant</a><p>
     <p align="center"><a href="widgets/trending-bluesky-news/README.md"><img src="widgets/trending-bluesky-news/preview.png"></a></p>
 </td>
-  </tr>
-  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/trending-github-repositories/README.md">Trending GitHub Repositories</a><br>by <a href="https://github.com/jelkuweiss">@jelkuweiss</a><p>
     <p align="center"><a href="widgets/trending-github-repositories/README.md"><img src="widgets/trending-github-repositories/preview.png"></a></p>
@@ -457,12 +475,12 @@
     <p align="center"><a href="widgets/trending-mastodon-links/README.md">Trending Mastodon Links</a><br>by <a href="https://github.com/tomcasavant">@tomcasavant</a><p>
     <p align="center"><a href="widgets/trending-mastodon-links/README.md"><img src="widgets/trending-mastodon-links/preview.png"></a></p>
 </td>
+  </tr>
+  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/truenas-scale-pools/README.md">TrueNAS Scale Pools</a><br>by <a href="https://github.com/drakkein">@drakkein</a><p>
     <p align="center"><a href="widgets/truenas-scale-pools/README.md"><img src="widgets/truenas-scale-pools/preview.png"></a></p>
 </td>
-  </tr>
-  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/unifi/README.md">Unifi</a><br>by <a href="https://github.com/prozn">@prozn</a><p>
     <p align="center"><a href="widgets/unifi/README.md"><img src="widgets/unifi/details-preview.png"></a></p>
@@ -471,12 +489,12 @@
     <p align="center"><a href="widgets/uptime-kuma/README.md">Uptime Kuma</a><br>by <a href="https://github.com/not-first">@not-first</a><p>
     <p align="center"><a href="widgets/uptime-kuma/README.md"><img src="widgets/uptime-kuma/preview.png"></a></p>
 </td>
+  </tr>
+  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/vikunja-taskboard/README.md">Vikunja Taskboard</a><br>by <a href="https://github.com/gugugiyu">@gugugiyu</a><p>
     <p align="center"><a href="widgets/vikunja-taskboard/README.md"><img src="widgets/vikunja-taskboard/preview.png"></a></p>
 </td>
-  </tr>
-  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/weather-seven-day/README.md">Weather Seven Day</a><br>by <a href="https://github.com/brandonsie">@brandonsie</a><p>
     <p align="center"><a href="widgets/weather-seven-day/README.md"><img src="widgets/weather-seven-day/preview.png"></a></p>
@@ -485,17 +503,16 @@
     <p align="center"><a href="widgets/wud-monitor/README.md">What's Up Docker Monitor</a><br>by <a href="https://github.com/panonim">@panonim</a><p>
     <p align="center"><a href="widgets/wud-monitor/README.md"><img src="widgets/wud-monitor/wud-main/wud_main_preview.png"></a></p>
 </td>
+  </tr>
+  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/youtube-embedded-player/README.md">YouTube Embedded Player</a><br>by <a href="https://github.com/ralphocdol">@ralphocdol</a><p>
     <p align="center"><a href="widgets/youtube-embedded-player/README.md"><img src="widgets/youtube-embedded-player/preview.png"></a></p>
 </td>
-  </tr>
-  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/qbittorrent-stats/README.md">qBittorrent Stats</a><br>by <a href="https://github.com/danzkigg">@danzkigg</a><p>
     <p align="center"><a href="widgets/qbittorrent-stats/README.md"><img src="widgets/qbittorrent-stats/preview1.png"></a></p>
 </td>
-    <td valign="top"></td>
     <td valign="top"></td>
   </tr>
 </table>
