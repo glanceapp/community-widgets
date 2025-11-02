@@ -351,6 +351,15 @@
     "time_updated": "2025-09-25T04:55:13.926995713Z"
   },
   {
+    "title": "Komga Recently Added Series",
+    "description": "displays recently added comic/manga series to a defined Komga library",
+    "author": "VictorMitr",
+    "directory": "komga-latest",
+    "readme_hash": "50616631c3246d0c6b726e6950441e65a2c27954",
+    "time_added": "2025-11-02T18:08:42.452042133Z",
+    "time_updated": "2025-11-02T18:08:42.452042234Z"
+  },
+  {
     "title": "Komodo Container Manager Monitor",
     "description": "At-a-glance view of stacks and servers managed by Komodo",
     "author": "stunt-and-gimmicks-alex",
