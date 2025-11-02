@@ -3,12 +3,19 @@
 This widget fetches upcoming movies, TV shows or video games from an instance of [MediaTracker](https://github.com/bonukai/MediaTracker) and shows them as cards in horizontal carousel. Each card contains a poster, an episode number (for a TV show), an episode name (for a TV show), a name (of a TV show, movie or a video game) and its release date.
 
 TV Shows:
+
 ![Preview of the widget (TV Shows)](preview_tv.png)
+
 Movies:
+
 ![Preview of the widget (Movies)](preview_movies.png)
+
 Video Games:
+
 ![Preview of the widget (Video Games)](preview_video-games.png)
+
 No upcoming media:
+
 ![Preview of the widget (Nothing fetched)](preview_nocards.png)
 
 
