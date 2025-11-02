@@ -162,6 +162,15 @@
     "time_updated": "2025-09-25T04:55:13.926307988Z"
   },
   {
+    "title": "Docker Swarm",
+    "description": "A widget to monitor Docker Swarm services and nodes based on the built-in docker-containers widget.",
+    "author": "tonineri",
+    "directory": "docker-swarm",
+    "readme_hash": "762494230e3a10596271cdb4b4d347b51aa4c5c5",
+    "time_added": "2025-11-02T18:02:34.89233233Z",
+    "time_updated": "2025-11-02T18:02:34.89233242Z"
+  },
+  {
     "title": "Epic Games Free Games",
     "description": "Display currently free games from the Epic Games Store with promotional images and availability periods.",
     "author": "marocainperdu",

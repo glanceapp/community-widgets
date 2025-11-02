@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Docker Swarm](widgets/docker-swarm/README.md) - a widget to monitor Docker Swarm services and nodes based on the built-in docker-containers widget (by @tonineri)
 * [Papra Stats](widgets/papra-stats/README.md) - shows stats from your Papra application (by @Saisamarth21)
 * [Nginx Proxy Manager](widgets/nginx-proxy-manager/README.md) - shows a summary of Nginx Proxy Configration and host links (by @saif191020)
 * [Proxmox Backup Server Stats](widgets/proxmox-backup-server-stats/README.md) - shows Ressources, Datastore Usage and Last 3 Backup Jobs per VM (by @danielweeber)
 * [Grafana](widgets/grafana/README.md) - useful information and metrics from a Grafana data source (like prometheus, mimir, loki) (by @koalalorenzo)
-* [Lemmy](widgets/lemmy/README.md) - displays the latest posts from any Lemmy community inside Glance.  It uses the public Lemmy API to fetch posts from a given community and shows the post title, score, comment count, and time since publication (by @stonkage)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -42,6 +42,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Crafty Minecraft Server Stats](widgets/crafty-controller-minecraft-server/README.md) - show the status of Minecraft server managed by Crafty Controller (by @MartyX98)
 * [Cryptopanic News](widgets/cryptopanic-news/README.md) - a real-time cryptocurrency news widget that displays filtered news from CryptoPanic.com with configurable filters for news type, regions, and currencies (by @herculosh)
 * [Cup Updates](widgets/cup-updates/README.md) - displays information about containers needing an update from Cup (by @panonim)
+* [Docker Swarm](widgets/docker-swarm/README.md) - a widget to monitor Docker Swarm services and nodes based on the built-in docker-containers widget (by @tonineri)
 * [Epic Games Free Games](widgets/epic-free-widget/README.md) - display currently free games from the Epic Games Store with promotional images and availability periods (by @marocainperdu)
 * [Football Fixtures](widgets/football-fixtures/README.md) - show the last match and the next match of your favourite football team using football-data api (by @cristiandiiorio)
 * [Forgejo repos](widgets/forgejo-repos/README.md) - show data about latest repos from forgejo instance (by @dodecube)
