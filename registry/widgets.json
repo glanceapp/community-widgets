@@ -162,6 +162,15 @@
     "time_updated": "2025-09-25T04:55:13.926307988Z"
   },
   {
+    "title": "Docker Swarm",
+    "description": "A widget to monitor Docker Swarm services and nodes based on the built-in docker-containers widget.",
+    "author": "tonineri",
+    "directory": "docker-swarm",
+    "readme_hash": "762494230e3a10596271cdb4b4d347b51aa4c5c5",
+    "time_added": "2025-11-02T18:02:34.89233233Z",
+    "time_updated": "2025-11-02T18:02:34.89233242Z"
+  },
+  {
     "title": "Epic Games Free Games",
     "description": "Display currently free games from the Epic Games Store with promotional images and availability periods.",
     "author": "marocainperdu",
@@ -342,6 +351,15 @@
     "time_updated": "2025-09-25T04:55:13.926995713Z"
   },
   {
+    "title": "Komga Recently Added Series",
+    "description": "displays recently added comic/manga series to a defined Komga library",
+    "author": "VictorMitr",
+    "directory": "komga-latest",
+    "readme_hash": "50616631c3246d0c6b726e6950441e65a2c27954",
+    "time_added": "2025-11-02T18:08:42.452042133Z",
+    "time_updated": "2025-11-02T18:08:42.452042234Z"
+  },
+  {
     "title": "Komodo Container Manager Monitor",
     "description": "At-a-glance view of stacks and servers managed by Komodo",
     "author": "stunt-and-gimmicks-alex",
@@ -394,6 +412,15 @@
     "readme_hash": "bea8e4abbc1578d9eb9377c685d25870c7fda03b",
     "time_added": "2025-09-13T13:26:08.5846Z",
     "time_updated": "2025-09-25T04:55:13.927094678Z"
+  },
+  {
+    "title": "ListenBrainz Listen",
+    "description": "show the latest listen for a ListenBrainz user",
+    "author": "zliebersbach",
+    "directory": "listenbrainz-latest",
+    "readme_hash": "babda5de1592ccf70c7fc1e048799a5e1fff0ba8",
+    "time_added": "2025-11-02T18:09:22.423244558Z",
+    "time_updated": "2025-11-02T18:09:22.423244688Z"
   },
   {
     "title": "London Tube Status",
@@ -772,6 +799,15 @@
     "readme_hash": "b2e3994a24f6b1cb36869005ae872e6424e533c6",
     "time_added": "2025-03-22T15:44:26.0934Z",
     "time_updated": "2025-09-25T04:55:13.928640967Z"
+  },
+  {
+    "title": "Steam Top Sellers",
+    "description": "Show steam global top seller",
+    "author": "GuiguiBlitz",
+    "directory": "steam-top-sellers",
+    "readme_hash": "cdf045f48f41788475509f5b5fc46d89bf635ced",
+    "time_added": "2025-11-02T18:10:09.604703492Z",
+    "time_updated": "2025-11-02T18:11:15.98707669Z"
   },
   {
     "title": "Steam User",

@@ -52,7 +52,11 @@ The widget requires modifications to the configuration file in order to work. Un
     {{ $videoGameReleaseDate := "TBA" }}
     
     {{ if or (eq $baseURL "") (eq $apiKey "") }}
-        <p class="color-negative">MediaTracker base-url or API token not set.</p>
+        <div class="widget-content-frame" style="flex=0 0 25vh; display:flex">
+            <div class="grow padding-inline-widget margin-top-10 margin-bottom-10 color-negative">
+                MediaTracker base-url or API token not set.
+            </div>
+        </div>
     {{ else }}
       {{ if eq $mediaType "tv" }}
         {{ $orderBy = "nextAiring" }}
@@ -108,16 +112,16 @@ The widget requires modifications to the configuration file in order to work. Un
                           <ul class="flex flex-column justify-evenly margin-bottom-3" style="height:100%; gap: 4px;">
                             {{ if eq $mediaType "tv" }}
                                 <ul class="list-horizontal-text flex-nowrap" style="padding:0; margin:0;">
-                                <li class="color-primary shrink-0"> S{{ printf "%02d" (.Int "upcomingEpisode.seasonNumber") }}E{{ printf "%02d" (.Int "upcomingEpisode.episodeNumber") }}</li>
-                                <li class="text-truncate">{{ .String "upcomingEpisode.title" }}</li>
+                                <li class="color-primary shrink-0"> S{{ printf "%02d" ($el.Int "upcomingEpisode.seasonNumber") }}E{{ printf "%02d" ($el.Int "upcomingEpisode.episodeNumber") }}</li>
+                                <li class="text-truncate">{{ $el.String "upcomingEpisode.title" }}</li>
                                 </ul>
                             {{ end }}
-                            <li class="text-truncate color-primary" style="overflow:hidden; text-overflow:ellipsis; white-space:nowrap;" title="{{ .String "title" }}">
-                              {{ .String "title" }}
+                            <li class="text-truncate color-primary" style="overflow:hidden; text-overflow:ellipsis; white-space:nowrap;" title="{{ $el.String "title" }}">
+                              {{ $el.String "title" }}
                             </li>
                             {{ if eq $mediaType "video_game" }}
                                 <li style="font-size:0.85em; opacity:0.7; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">                                    
-                                    {{ $videoGameReleaseDate = .String "releaseDate" | parseTime "RFC3339" }}
+                                    {{ $videoGameReleaseDate = $el.String "releaseDate" | parseTime "RFC3339" }}
                                     {{ if eq ($videoGameReleaseDate | formatTime "02-01") "31-12" }}
                                         {{ $videoGameReleaseDate | formatTime "2006" }}
                                     {{ else }}
@@ -126,7 +130,7 @@ The widget requires modifications to the configuration file in order to work. Un
                                 </li>
                             {{ else}}
                                 <li style="font-size:0.85em; opacity:0.7; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">
-                                    {{ .String "nextAiring" | parseTime "2006-01-02" | formatTime "Jan 02, 2006" }}
+                                    {{ $el.String "nextAiring" | parseTime "2006-01-02" | formatTime "Jan 02, 2006" }}
                                 </li>
                             {{ end }}
                           </ul>
