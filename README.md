@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [ListenBrainz Listen](widgets/listenbrainz-latest/README.md) - show the latest listen for a ListenBrainz user (by @zliebersbach)
 * [Komga Recently Added Series](widgets/komga-latest/README.md) - displays recently added comic/manga series to a defined Komga library (by @VictorMitr)
 * [Docker Swarm](widgets/docker-swarm/README.md) - a widget to monitor Docker Swarm services and nodes based on the built-in docker-containers widget (by @tonineri)
 * [Papra Stats](widgets/papra-stats/README.md) - shows stats from your Papra application (by @Saisamarth21)
 * [Nginx Proxy Manager](widgets/nginx-proxy-manager/README.md) - shows a summary of Nginx Proxy Configration and host links (by @saif191020)
-* [Proxmox Backup Server Stats](widgets/proxmox-backup-server-stats/README.md) - shows Ressources, Datastore Usage and Last 3 Backup Jobs per VM (by @danielweeber)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -70,6 +70,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [LeetCode Daily Question](widgets/leetcode-daily-question/README.md) - show today leetcode questions with hashtag and difficult (by @hohaithuy)
 * [Lemmy](widgets/lemmy/README.md) - displays the latest posts from any Lemmy community inside Glance.  It uses the public Lemmy API to fetch posts from a given community and shows the post title, score, comment count, and time since publication (by @stonkage)
 * [Linkwarden Latest Bookmarks](widgets/linkwarden-latest-bookmarks/README.md) - show the latest bookmarks from your Linkwarden instance (by @josevictorferreira)
+* [ListenBrainz Listen](widgets/listenbrainz-latest/README.md) - show the latest listen for a ListenBrainz user (by @zliebersbach)
 * [London Tube Status](widgets/london-tube-status/README.md) - show live service status of London tube, overground and Elizabeth lines via the TfL API (by @tomdaly)
 * [MLB Scores](widgets/mlb-scores-tracker/README.md) - lists all MLB scores daily, with baserunner info and inning scores (by @ShmoobiJones)
 * [Mealie Today's Meal](widgets/mealie-todays-meal/README.md) - show today's meal based off the meal planner from [Mealie](https://mealie.io/) (by @wtoa)

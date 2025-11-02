@@ -414,6 +414,15 @@
     "time_updated": "2025-09-25T04:55:13.927094678Z"
   },
   {
+    "title": "ListenBrainz Listen",
+    "description": "show the latest listen for a ListenBrainz user",
+    "author": "zliebersbach",
+    "directory": "listenbrainz-latest",
+    "readme_hash": "babda5de1592ccf70c7fc1e048799a5e1fff0ba8",
+    "time_added": "2025-11-02T18:09:22.423244558Z",
+    "time_updated": "2025-11-02T18:09:22.423244688Z"
+  },
+  {
     "title": "London Tube Status",
     "description": "show live service status of London tube, overground and Elizabeth lines via the TfL API",
     "author": "tomdaly",
