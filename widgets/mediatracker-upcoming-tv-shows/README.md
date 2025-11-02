@@ -16,7 +16,7 @@ Video Games:
 
 No upcoming media:
 
-![Preview of the widget (Nothing fetched)](preview_nocards.png)
+![Preview of the widget (Nothing fetched)](preview_no-cards.png)
 
 
 The widget requires modifications to the configuration file in order to work. Under the `options` field in the yaml configuration file, one needs to supply MediaTracker URL, API key and some other options. One can either supply them directly or as environment variables. 
