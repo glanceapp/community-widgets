@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Steam Top Sellers](widgets/steam-top-sellers/README.md) - show steam global top seller (by @GuiguiBlitz)
 * [ListenBrainz Listen](widgets/listenbrainz-latest/README.md) - show the latest listen for a ListenBrainz user (by @zliebersbach)
 * [Komga Recently Added Series](widgets/komga-latest/README.md) - displays recently added comic/manga series to a defined Komga library (by @VictorMitr)
 * [Docker Swarm](widgets/docker-swarm/README.md) - a widget to monitor Docker Swarm services and nodes based on the built-in docker-containers widget (by @tonineri)
 * [Papra Stats](widgets/papra-stats/README.md) - shows stats from your Papra application (by @Saisamarth21)
-* [Nginx Proxy Manager](widgets/nginx-proxy-manager/README.md) - shows a summary of Nginx Proxy Configration and host links (by @saif191020)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -113,6 +113,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Spotify Player](widgets/spotify-player/README.md) - show currently playing Spotify song along with the queue and ability to play/pause (by @anant-j)
 * [St. Louis Fed US Mortgage Rates](widgets/st-louis-fed-us-mortgage-rates/README.md) - show mortgage rates from the St. Louis Federal Reserve's FRED API (by @ehaughee)
 * [Steam Recently Played Games](widgets/steam-recently-played-games/README.md) - show a list of recently played games by a Steam user (by @lunnosmp4)
+* [Steam Top Sellers](widgets/steam-top-sellers/README.md) - show steam global top seller (by @GuiguiBlitz)
 * [Steam User](widgets/steam-user/README.md) - show information about a Steam user (by @lunnosmp4)
 * [Steam specials](widgets/steam-specials/README.md) - show a list of discounted games on Steam (by @svilenmarkov)
 * [Syncthing](widgets/syncthing/README.md) - show Syncthing folder status (by @JohnCannon97)

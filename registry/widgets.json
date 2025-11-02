@@ -801,6 +801,15 @@
     "time_updated": "2025-09-25T04:55:13.928640967Z"
   },
   {
+    "title": "Steam Top Sellers",
+    "description": "Show steam global top seller",
+    "author": "GuiguiBlitz",
+    "directory": "steam-top-sellers",
+    "readme_hash": "77df2abf7e8e73b078805d0e6dd50d2c9b1e6815",
+    "time_added": "2025-11-02T18:10:09.604703492Z",
+    "time_updated": "2025-11-02T18:10:09.604703622Z"
+  },
+  {
     "title": "Steam User",
     "description": "show information about a Steam user",
     "author": "lunnosmp4",
