@@ -6,7 +6,7 @@
 - type: custom-api
   title: Steam Top Sellers
   cache: 12h
-  url: https://store.steampowered.com/api/featuredcategorcc=us
+  url: https://store.steampowered.com/api/featuredcategories?cc=us
   template: |
     <ul class="list list-gap-10 collapsible-contain" data-collapse-after="15">
         {{ range .JSON.Array "top_sellers.items" }}
