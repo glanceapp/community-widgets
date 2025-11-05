@@ -141,4 +141,4 @@
 - Episode count shows "Airing" for currently airing anime without final episode count
 
 ## Credits
-These widgets use the [Jikan Api](https://jikan.moe/), an unofficial MyAnimelst API
+These widgets use the [Jikan Api](https://jikan.moe/), an unofficial MyAnimelist API
