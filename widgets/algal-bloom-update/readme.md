@@ -1,10 +1,14 @@
 # Algal Bloom Update Widget
+South Australia is experiencing a toxic algal bloom caused by Karenia species. While some blooms are harmless, this one can affect fish and other marine life.
 
-This Glance `custom-api` widget displays the latest algal bloom information for a selected beach using data from [Beachsafe](https://beachsafe.org.au). It provides a quick overview of water quality, including beach cleaning status, abnormal foam, and abnormal water colour. The widget also shows the last updated timestamp in relative time.
+The bloom has been driven by a mix of factors, including river floodwaters adding nutrients, summer upwellings bringing nutrients to the surface, and warmer-than-normal ocean temperatures. Climate change has likely made these conditions more favourable.
+
+Algal blooms are complex and evolve over time. Scientists are studying this bloom to improve early detection and monitoring.
+
+This Glance` widget displays the latest algal bloom information for a selected beach using data from [Beachsafe](https://beachsafe.org.au).
 
 ## Features
 
-- Displays the beach name prominently.
 - Shows whether the beach has been cleaned.
 - Indicates the presence of abnormal foam.
 - Indicates abnormal water colour in the water.
@@ -13,16 +17,10 @@ This Glance `custom-api` widget displays the latest algal bloom information for 
   - **Positive (green)**: Good conditions
   - **Negative (red)**: Potential issues
 
-## How It Works
 
-This widget fetches JSON data from the Beachsafe API and parses the `algal_bloom` object. The relevant fields are:
+## API URL for beach
 
-- `beach.algal_bloom.clean_rating` – Whether the beach has been cleaned (true/false)
-- `beach.algal_bloom.beach_foam` – Whether abnormal foam is present (true/false)
-- `beach.algal_bloom.water_discolour` – Whether abnormal water colour is present (true/false)
-- `beach.algal_bloom.updated_at` – Timestamp of the last update (RFC3339)
-
-The template uses Go-style conditional rendering to display each field with the appropriate colour.
+Use the developer tools inside your browser of choice to get the api endpoint for your beach.
 
 ## Widget YAML
 
