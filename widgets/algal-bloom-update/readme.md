@@ -17,10 +17,11 @@ This Glance` widget displays the latest algal bloom information for a selected b
   - **Positive (green)**: Good conditions
   - **Negative (red)**: Potential issues
 
+> [!NOTE]
+> Use the developer tools inside your browser of choice to get the api endpoint for your beach.
 
-## API URL for beach
+## Preview
 
-Use the developer tools inside your browser of choice to get the api endpoint for your beach.
 
 ## Widget YAML
 
