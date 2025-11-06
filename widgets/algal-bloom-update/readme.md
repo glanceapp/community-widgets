@@ -21,7 +21,7 @@ This Glance` widget displays the latest algal bloom information for a selected b
 > Use the developer tools inside your browser of choice to get the api endpoint for your beach.
 
 ## Preview
-
+![](preview.png)
 
 ## Widget YAML
 
