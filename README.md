@@ -108,7 +108,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Scrutiny](widgets/scrutiny/README.md) - display drive S.M.A.R.T attributes from Scrutiny (by @SkyAllinott)
 * [Should I Deploy Today](widgets/should-i-deploy-today/README.md) - remind to deploy today (by @hohaithuy)
 * [Slack Status](widgets/slack-status/README.md) - show slack status from api (by @cartwatson)
-* [Speedtest tracker](widgets/speedtest-tracker/README.md) - show the latest internet speed information from speedtest tracker (by @not-first)
+* [Speedtest Tracker](widgets/speedtest-tracker/README.md) - show the latest internet speed information from Speedtest Tracker (by @not-first)
 * [Spotify Now Playing](widgets/spotify-now-playing/README.md) - show the currently playing Spotify song (by @needsadjustment)
 * [Spotify Player](widgets/spotify-player/README.md) - show currently playing Spotify song along with the queue and ability to play/pause (by @anant-j)
 * [St. Louis Fed US Mortgage Rates](widgets/st-louis-fed-us-mortgage-rates/README.md) - show mortgage rates from the St. Louis Federal Reserve's FRED API (by @ehaughee)
