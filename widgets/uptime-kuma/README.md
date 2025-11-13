@@ -27,7 +27,7 @@
         <a class="size-title-dynamic color-highlight text-truncate block grow" href="${UPTIME_KUMA_URL}/dashboard/{{ $id }}"
           target="_blank" rel="noreferrer">
           {{ .String "name" }} </a>
-    
+
         {{ if gt (len $hbArray) 0 }}
           {{ $latest := index $hbArray (sub (len $hbArray) 1) }}
           {{ if eq ($latest.Int "status") 1 }}
@@ -68,5 +68,5 @@
 
 ## Environment variables
 
-- `UPTIME_KUMA_URL`: The url of your uptime kuma instace (no slash on the end). For example, `http://my.uptime-kuma.instance`
-- `UPTIME_KUMA_STATUS_SLUG`: The slug of your uptime kuma status page. For example, if your status page url was `http://my.uptime-kuma.instance/status/example` this variable would be set to `example`.
+- `UPTIME_KUMA_URL`: The url of your Uptime Kuma instace (no slash on the end). For example, `http://my.uptime-kuma.instance`
+- `UPTIME_KUMA_STATUS_SLUG`: The slug of your uptime kuma status page. For example, if your status page url is `http://my.uptime-kuma.instance/status/example` this variable would be set to `example`.
