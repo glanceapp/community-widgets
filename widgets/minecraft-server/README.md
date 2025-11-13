@@ -72,4 +72,4 @@
 
 ## Environment variables
 
-- `MC_SERVER_URL` - the URL/IP of the minecraft server (what you would enter in the game to join). Must be publicly accessible IP.
+- `MC_SERVER_URL` - the URL/IP of the minecraft server. Must be a publicly accessible IP.
