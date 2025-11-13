@@ -32,7 +32,7 @@ An alternative implementation that uses automatically refreshing OAuth tokens, e
    - Remove the `headers:` section entirely
    - Change `cache:` to `10s` for more frequent updates
 
-## Configuration
+## Template
 
 ```yaml
 - type: custom-api
@@ -43,11 +43,11 @@ An alternative implementation that uses automatically refreshing OAuth tokens, e
     Authorization: Bearer ${TAILSCALE_API_KEY}
   cache: 10m
   options:
-    collapseAfter: 4
+    collapseAfter: 3
     # disableOfflineIndicator: true
     # disableUpdateIndicator: true
     # prioritiseTags: true
-  template: | #html
+  template: |
     <style>
       .device-info-container-tailscale {
         position: relative;
@@ -158,31 +158,9 @@ An alternative implementation that uses automatically refreshing OAuth tokens, e
 
 ## Available Options
 
-| Option                    | Type    | Default | Description                                                                                                |
-| ------------------------- | ------- | ------- | ---------------------------------------------------------------------------------------------------------- |
-| `collapseAfter`           | integer | `3`     | Number of devices to show before collapsing the list. Set to `4` or higher to show more devices initially. |
-| `disableOfflineIndicator` | boolean | `false` | When set to `true`, hides the red dot indicator for offline devices.                                       |
-| `disableUpdateIndicator`  | boolean | `false` | When set to `true`, hides the blue dot indicator when updates are available.                               |
-| `prioritiseTags`          | boolean | `false` | When set to `true`, displays the device's primary tag instead of the user name (if a tag exists).          |
-
-### Example Configurations
-
-**Show 10 devices initially without offline indicators:**
-```yaml
-options:
-  collapseAfter: 10
-  disableOfflineIndicator: true
-```
-
-**Show tags instead of users, hide update indicators:**
-```yaml
-options:
-  prioritiseTags: true
-  disableUpdateIndicator: true
-```
-
-**Minimal configuration (all defaults):**
-```yaml
-options:
-  collapseAfter: 3
-```
+| Option                    | Type    | Default | Description                                                                                  |
+| ------------------------- | ------- | ------- | -------------------------------------------------------------------------------------------- |
+| `collapseAfter`           | integer | `3`     | Number of devices to show before collapsing the list.                                        |
+| `disableOfflineIndicator` | boolean | `false` | When set to `true`, hides the red dot indicator for offline devices.                         |
+| `disableUpdateIndicator`  | boolean | `false` | When set to `true`, hides the blue dot indicator when updates are available.                 |
+| `prioritiseTags`          | boolean | `false` | When set to `true`, displays the device's primary tag instead of the user (if a tag exists). |
