@@ -37,3 +37,8 @@
   url: https://github.com/SomeCodecat/subsonic-proxy
   description: Display statistics from your Navidrome (or Subsonic) instance and interact with them.
   author: SomeCodecat
+
+- title: Glance Transmission
+  url: https://github.com/Xtrems876/glance-transmission
+  description: Show Transmission downloads
+  author: Xtrems876
