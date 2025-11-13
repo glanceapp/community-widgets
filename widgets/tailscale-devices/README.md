@@ -43,7 +43,7 @@ An alternative implementation that uses automatically refreshing OAuth tokens, e
     Authorization: Bearer ${TAILSCALE_API_KEY}
   cache: 10m
   options:
-    collapseAfter: 3
+    # collapseAfter: 4
     # disableOfflineIndicator: true
     # disableUpdateIndicator: true
     # prioritiseTags: true
@@ -157,6 +157,7 @@ An alternative implementation that uses automatically refreshing OAuth tokens, e
 ```
 
 ## Available Options
+*All options have default values and are not required for the widget to function.*
 
 | Option                    | Type    | Default | Description                                                                                  |
 | ------------------------- | ------- | ------- | -------------------------------------------------------------------------------------------- |
