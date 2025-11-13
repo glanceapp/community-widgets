@@ -4,11 +4,11 @@
 
 A widget for Glance that displays all devices in your Tailscale tailnet, showing their connection status, update availability, and IP addresses.
 
-## Option 1: API Key (Recommended)
+## Setup
 
-The standard implementation using Tailscale API keys. Simple to set up but requires manual api key renewal every 90 days maximum.
+### Option 1: API Key (Recommended)
 
-### Setup
+The standard implementation using Tailscale API keys. Simple to set up but requires manual API key renewal every 90 days maximum.
 
 1. **Generate API Key:**
    - Go to [Tailscale admin console](https://login.tailscale.com/admin/settings/keys)
@@ -18,6 +18,22 @@ The standard implementation using Tailscale API keys. Simple to set up but requi
 2. **Configure Widget:**
    - Set the `TAILSCALE_API_KEY` environment variable to your generated key
 
+### Option 2: OAuth Proxy (Alternative)
+
+An alternative implementation that uses automatically refreshing OAuth tokens, eliminating the need for manual key renewal. Created by @5at0ri, requires [5at0ri's OAuth Proxy](https://github.com/5at0ri/tailscale-token-manager).
+
+1. **Deploy OAuth Proxy:**
+   - Set up OAuth client credentials in your [Tailscale admin console](https://login.tailscale.com/admin/settings/oauth)
+   - Deploy the [OAuth Proxy container](https://github.com/5at0ri/tailscale-token-manager)
+   - Configure it with your OAuth Client ID and Client Secret
+
+2. **Configure Widget:**
+   - Replace the `url` line with: `url: http://tailscale-token-manager:1180/devices`
+   - Remove the `headers:` section entirely
+   - Change `cache:` to `10s` for more frequent updates
+
+## Configuration
+
 ```yaml
 - type: custom-api
   title: Tailscale Devices
@@ -26,24 +42,25 @@ The standard implementation using Tailscale API keys. Simple to set up but requi
   headers:
     Authorization: Bearer ${TAILSCALE_API_KEY}
   cache: 10m
-  template: |
-    {{/* User Variables */}}
-    {{/* Set to true if you'd like an indicator for online devices */}}
-    {{ $enableOnlineIndicator := false }}
-
+  options:
+    collapseAfter: 4
+    # disableOfflineIndicator: true
+    # disableUpdateIndicator: true
+    # prioritiseTags: true
+  template: | #html
     <style>
-      .device-info-container {
+      .device-info-container-tailscale {
         position: relative;
         overflow: hidden;
         height: 1.5em;
       }
 
-      .device-info {
+      .device-info-tailscale {
         display: flex;
         transition: transform 0.2s ease, opacity 0.2s ease;
       }
 
-      .device-ip {
+      .device-ip-tailscale {
         position: absolute;
         top: 0;
         left: 0;
@@ -52,17 +69,17 @@ The standard implementation using Tailscale API keys. Simple to set up but requi
         transition: transform 0.2s ease, opacity 0.2s ease;
       }
 
-      .device-info-container:hover .device-info {
+      .device-info-container-tailscale:hover .device-info-tailscale {
         transform: translateY(100%);
         opacity: 0;
       }
 
-      .device-info-container:hover .device-ip {
+      .device-info-container-tailscale:hover .device-ip-tailscale {
         transform: translateY(0);
         opacity: 1;
       }
 
-      .update-indicator {
+      .update-indicator-tailscale {
         width: 8px;
         height: 8px;
         border-radius: 50%;
@@ -72,7 +89,7 @@ The standard implementation using Tailscale API keys. Simple to set up but requi
         vertical-align: middle;
       }
 
-      .offline-indicator {
+      .offline-indicator-tailscale {
         width: 8px;
         height: 8px;
         border-radius: 50%;
@@ -82,58 +99,55 @@ The standard implementation using Tailscale API keys. Simple to set up but requi
         vertical-align: middle;
       }
 
-      .online-indicator {
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background-color: var(--color-positive);
-        display: inline-block;
-        margin-left: 4px;
-        vertical-align: middle;
-      }
-
-      .device-name-container {
+      .device-name-container-tailscale {
         display: flex;
         align-items: center;
         gap: 8px;
       }
 
-      .indicators-container {
+      .indicators-container-tailscale {
         display: flex;
         align-items: center;
         gap: 4px;
       }
     </style>
-    <ul class="list list-gap-10 collapsible-container" data-collapse-after="4">
+    <ul class="list list-gap-10 collapsible-container" data-collapse-after="{{ .Options.IntOr "collapseAfter" 3 }}">
       {{ range .JSON.Array "devices" }}
       <li>
         <div class="flex items-center gap-10">
-          <div class="device-name-container grow">
+          <div class="device-name-container-tailscale grow">
             <span class="size-h4 block text-truncate color-primary">
               {{ findMatch "^([^.]+)" (.String "name") }}
             </span>
-            <div class="indicators-container">
-              {{ if (.Bool "updateAvailable") }}
-              <span class="update-indicator" data-popover-type="text" data-popover-text="Update Available"></span>
+            <div class="indicators-container-tailscale">
+              {{ if and (not ($.Options.BoolOr "disableUpdateIndicator" false)) (.Bool "updateAvailable") }}
+              <span class="update-indicator-tailscale" data-popover-type="text" data-popover-text="Update Available"></span>
               {{ end }}
 
+              {{ if not ($.Options.BoolOr "disableOfflineIndicator" false) }}
               {{ $lastSeen := .String "lastSeen" | parseTime "rfc3339" }}
               {{ if not ($lastSeen.After (offsetNow "-10s")) }}
               {{ $lastSeenTimezoned := $lastSeen.In now.Location }}
-              <span class="offline-indicator" data-popover-type="text"
+              <span class="offline-indicator-tailscale" data-popover-type="text"
                 data-popover-text="Offline - Last seen {{ $lastSeenTimezoned.Format " Jan 2 3:04pm" }}"></span>
-              {{ else if $enableOnlineIndicator }}
-                <span class="online-indicator" data-popover-type="text" data-popover-text="Online"></span>
               {{ end }}
+              {{ end }}
+
             </div>
           </div>
         </div>
-        <div class="device-info-container">
-          <ul class="list-horizontal-text device-info">
+        <div class="device-info-container-tailscale">
+          <ul class="list-horizontal-text device-info-tailscale">
             <li>{{ .String "os" }}</li>
-            <li>{{ .String "user" }}</li>
+            <li>
+              {{ if and ($.Options.BoolOr "prioritiseTags" false) (.Exists "tags.0") }}
+                {{ trimPrefix "tag:" (.String "tags.0") }}
+              {{ else }}
+                {{ .String "user" }}
+              {{ end }}
+            </li>
           </ul>
-          <div class="device-ip">
+          <div class="device-ip-tailscale">
             {{ .String "addresses.0"}}
           </div>
         </div>
@@ -142,139 +156,33 @@ The standard implementation using Tailscale API keys. Simple to set up but requi
     </ul>
 ```
 
-## Option 2: OAuth Proxy (Alternative)
+## Available Options
 
-An alternative implementation that uses automatically refreshing OAuth tokens, eliminating the need for manual key renewal. Created by @5at0ri, requires [5at0ri's OAuth Proxy](https://github.com/5at0ri/tailscale-token-manager).
+| Option                    | Type    | Default | Description                                                                                                |
+| ------------------------- | ------- | ------- | ---------------------------------------------------------------------------------------------------------- |
+| `collapseAfter`           | integer | `3`     | Number of devices to show before collapsing the list. Set to `4` or higher to show more devices initially. |
+| `disableOfflineIndicator` | boolean | `false` | When set to `true`, hides the red dot indicator for offline devices.                                       |
+| `disableUpdateIndicator`  | boolean | `false` | When set to `true`, hides the blue dot indicator when updates are available.                               |
+| `prioritiseTags`          | boolean | `false` | When set to `true`, displays the device's primary tag instead of the user name (if a tag exists).          |
 
-### Setup
+### Example Configurations
 
-1. **Deploy OAuth Proxy:**
-   - Set up OAuth client credentials in your [Tailscale admin console](https://login.tailscale.com/admin/settings/oauth)
-   - Deploy the [OAuth Proxy container](https://github.com/5at0ri/tailscale-token-manager)
-   - Configure it with your OAuth Client ID and Client Secret
-
-2. **Configure Widget:**
-   - Point the `url` to your OAuth proxy container endpoint
-   - The proxy handles all authentication automatically
-
+**Show 10 devices initially without offline indicators:**
 ```yaml
-- type: custom-api
-  title: Tailscale Devices
-  title-url: https://login.tailscale.com/admin/machines
-  url: http://tailscale-token-manager:1180/devices  # URL to your OAuth proxy container
-  cache: 10s
-  template: |
-    {{/* User Variables */}}
-    {{/* Set to true if you'd like an indicator for online devices */}}
-    {{ $enableOnlineIndicator := false }}
+options:
+  collapseAfter: 10
+  disableOfflineIndicator: true
+```
 
-    <style>
-      .device-info-container {
-        position: relative;
-        overflow: hidden;
-        height: 1.5em;
-      }
+**Show tags instead of users, hide update indicators:**
+```yaml
+options:
+  prioritiseTags: true
+  disableUpdateIndicator: true
+```
 
-      .device-info {
-        display: flex;
-        transition: transform 0.2s ease, opacity 0.2s ease;
-      }
-
-      .device-ip {
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translateY(-100%);
-        opacity: 0;
-        transition: transform 0.2s ease, opacity 0.2s ease;
-      }
-
-      .device-info-container:hover .device-info {
-        transform: translateY(100%);
-        opacity: 0;
-      }
-
-      .device-info-container:hover .device-ip {
-        transform: translateY(0);
-        opacity: 1;
-      }
-
-      .update-indicator {
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background-color: var(--color-primary);
-        display: inline-block;
-        margin-left: 4px;
-        vertical-align: middle;
-      }
-
-      .offline-indicator {
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background-color: var(--color-negative);
-        display: inline-block;
-        margin-left: 4px;
-        vertical-align: middle;
-      }
-
-      .online-indicator {
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background-color: var(--color-positive);
-        display: inline-block;
-        margin-left: 4px;
-        vertical-align: middle;
-      }
-
-      .device-name-container {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-      }
-
-      .indicators-container {
-        display: flex;
-        align-items: center;
-        gap: 4px;
-      }
-    </style>
-    <ul class="list list-gap-10 collapsible-container" data-collapse-after="4">
-      {{ range .JSON.Array "devices" }}
-      <li>
-        <div class="flex items-center gap-10">
-          <div class="device-name-container grow">
-            <span class="size-h4 block text-truncate color-primary">
-              {{ findMatch "^([^.]+)" (.String "name") }}
-            </span>
-            <div class="indicators-container">
-              {{ if (.Bool "updateAvailable") }}
-              <span class="update-indicator" data-popover-type="text" data-popover-text="Update Available"></span>
-              {{ end }}
-
-              {{ $lastSeen := .String "lastSeen" | parseTime "rfc3339" }}
-              {{ if not ($lastSeen.After (offsetNow "-10s")) }}
-              {{ $lastSeenTimezoned := $lastSeen.In now.Location }}
-              <span class="offline-indicator" data-popover-type="text"
-                data-popover-text="Offline - Last seen {{ $lastSeenTimezoned.Format " Jan 2 3:04pm" }}"></span>
-              {{ else if $enableOnlineIndicator }}
-                <span class="online-indicator" data-popover-type="text" data-popover-text="Online"></span>
-              {{ end }}
-            </div>
-          </div>
-        </div>
-        <div class="device-info-container">
-          <ul class="list-horizontal-text device-info">
-            <li>{{ .String "os" }}</li>
-            <li>{{ .String "user" }}</li>
-          </ul>
-          <div class="device-ip">
-            {{ .String "addresses.0"}}
-          </div>
-        </div>
-      </li>
-      {{ end }}
-    </ul>
+**Minimal configuration (all defaults):**
+```yaml
+options:
+  collapseAfter: 3
 ```
