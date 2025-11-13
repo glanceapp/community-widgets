@@ -128,7 +128,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Trending Mastodon Links](widgets/trending-mastodon-links/README.md) - shows a list of trending links from a provided Mastodon instance (by @tomcasavant)
 * [TrueNAS Scale Pools](widgets/truenas-scale-pools/README.md) - shows datasets with usage and health status (by @drakkein)
 * [Unifi](widgets/unifi/README.md) - unifi controller information (by @prozn)
-* [Uptime Kuma](widgets/uptime-kuma/README.md) - show the status of Uptime Kuma services (by @not-first)
+* [Uptime Kuma](widgets/uptime-kuma/README.md) - show the status of Uptime Kuma monitors from a status page (by @not-first)
 * [Vikunja Taskboard](widgets/vikunja-taskboard/README.md) - real time taskboard using the Vikunja API (by @gugugiyu)
 * [Weather Seven Day](widgets/weather-seven-day/README.md) - shows daily weather conditions and high and low temperature from Open-Meteo for a specified location (by @brandonsie)
 * [What's Up Docker Monitor](widgets/wud-monitor/README.md) - a customizable widget for displaying the wud data about containers (by @panonim)
