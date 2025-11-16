@@ -36,7 +36,7 @@
           <li>
             <a class="size-h4 color-highlight block text-truncate" href="{{ $urlPrefix }}{{ $v.Int "id" }}/">{{ $v.String "name" }}</a>
             <ul class="list-horizontal-text">
-              <li>{{ $v.Int "final_price" | toFloat | mul 0.01 | printf "€%.2f" }}</li>
+              <li>{{ $v.Int "final_price" | toFloat | mul 0.01 | printf "$%.2f" }}</li>
               {{ $discount := $v.Int "discount_percent" }}
               <li{{ if ge $discount 40 }} class="color-positive"{{ end }}>{{ $discount }}% off</li>
             </ul>
