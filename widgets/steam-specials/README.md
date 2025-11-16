@@ -50,3 +50,16 @@
 ## Changing currency
 
 You can change the currency by changing the `cc` parameter in the URL to your country's [2 character code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). For example, to get the prices in euros, you can change the URL to `https://store.steampowered.com/api/featuredcategories?cc=eu` and then change the `$` symbol to `€` in the template.
+
+## Options
+
+When using the Steam specials widget, you can control its behavior via the `options` section in the YAML:
+
+- `show-thumbnails` (boolean)
+    - When `true`, each entry includes a thumbnail image next to the game title.
+    - When `false`, only text (title and pricing info) is shown.
+    - If omitted, it defaults to no thumbnails.
+
+- `limit` (integer)
+    - Maximum number of items to render from the specials list.
+    - `0` (or omitting the option) means “no limit” — all available items are shown.
