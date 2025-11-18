@@ -9,42 +9,49 @@
 #### When server is running:
 ![Server running preview](./Preview_online.png)
 
-Displays server's custom icon, inferred IP, MOTD message and some statistics. The display of MOTD can be disabled in the beginning of the template in the user settings section, and the widget will look like this:
+Displays server's custom icon, inferred IP, MOTD message and some statistics. The display of MOTD can be disabled in the options section of the template, and the widget will look like this:
 
 ![Server running with disabled MOTD preview](./Preview_online_disabledMOTD.png)
 
 ## Yaml
 ```yaml
 - type: custom-api
-  title: Crafty Controller — Minecraft Server
+  title: Crafty Controller - Minecraft Server
   cache: 5s
+  options:
+    base-url: ${CRAFTY_URL}
+    api-key: ${CRAFTY_API_TOKEN}
+    server-id: ${CRAFTY_SERVER_ID}
+    display-MOTD: true
   allow-insecure: true
-  url: ${CRAFTY_URL}/api/v2/servers/${CRAFTY_SERVER_ID}/stats
-  headers:
-    Authorization: Bearer ${CRAFTY_API_TOKEN}
-    Accept: application/json
   template: |
-    <!-- USER SETTINGS SECTION -->
+    {{/* Required config options */}}
+    {{ $baseURL := .Options.StringOr "base-url" "" }}
+    {{ $apiKey := .Options.StringOr "api-key" "" }}
+    {{ $serverID := .Options.StringOr "server-id" "" }}
 
-    <!-- Change true to false if you wish to not display the MOTD -->
-    {{ $displayMOTD := true }}
+    {{/* Optional config options */}}
+    {{ $displayMOTD := .Options.BoolOr "display-MOTD" true }}
 
-    <!-- END OF USER SETTINGS SECTION -->
+    {{ $serverStats := newRequest (print $baseURL "/api/v2/servers/" $serverID "/stats")
+        | withHeader "Authorization" (print "Bearer " $apiKey)
+        | withHeader "Accept" "application/json"
+        | getResponse }}
 
-    {{ $is_running := .JSON.Bool "data.running" }}
-    {{ $online_players := .JSON.Int "data.online" | formatNumber }}
-    {{ $max_players := .JSON.Int "data.max" | formatNumber }}
-    {{ $name := .JSON.String "data.world_name" }}
-    {{ $size := .JSON.String "data.world_size" }}
-    {{ $version := .JSON.String "data.version" }}
-    {{ $icon := .JSON.String "data.icon" }}
-    {{ $server_ip := .JSON.String "data.server_id.server_ip" }}
-    {{ $server_port := .JSON.String "data.server_id.server_port" }}
-    {{ $motd := .JSON.String "data.desc" }}
+    {{ $is_running :=  $serverStats.JSON.Bool "data.running" }}
+    {{ $online_players :=  $serverStats.JSON.Int "data.online" | formatNumber }}
+    {{ $max_players :=  $serverStats.JSON.Int "data.max" | formatNumber }}
+    {{ $name :=  $serverStats.JSON.String "data.world_name" }}
+    {{ $size :=  $serverStats.JSON.String "data.world_size" }}
+    {{ $version :=  $serverStats.JSON.String "data.version" }}
+    {{ $icon :=  $serverStats.JSON.String "data.icon" }}
+    {{ $server_ip :=  $serverStats.JSON.String "data.server_id.server_ip" }}
+    {{ $server_port :=  $serverStats.JSON.String "data.server_id.server_port" }}
+    {{ $motd :=  $serverStats.JSON.String "data.desc" }}
 
     {{ $server_addr := "" }}
     {{ if and ($is_running) (eq $server_ip "127.0.0.1") }}
-      {{ $server_addr = printf "%s:%s" (replaceMatches "https?://" "" "${CRAFTY_URL}") $server_port }}
+      {{ $server_addr = printf "%s:%s" (replaceMatches "https?://" "" $baseURL) $server_port }}
     {{ else if $is_running }}
       {{ $server_addr = printf "%s:%s" $server_ip $server_port }}
     {{ end }}
@@ -55,9 +62,9 @@ Displays server's custom icon, inferred IP, MOTD message and some statistics. Th
     {{ end }}
 
     <!-- I couldn't find documentation describing the "waiting_start" state or the other booleans below. Implementation might not be correct. -->
-    {{ $updating := .JSON.Bool "data.updating" }}
-    {{ $importing := .JSON.Bool "data.importing" }}
-    {{ $crashed := .JSON.Bool "data.crashed" }}
+    {{ $updating :=  $serverStats.JSON.Bool "data.updating" }}
+    {{ $importing :=  $serverStats.JSON.Bool "data.importing" }}
+    {{ $crashed :=  $serverStats.JSON.Bool "data.crashed" }}
 
     <div style="display:flex; align-items:center; gap:12px;">
       <!-- Server Icon -->
@@ -80,7 +87,7 @@ Displays server's custom icon, inferred IP, MOTD message and some statistics. Th
           {{ if and ($is_running) (not $starting) (not (eq $server_addr "")) }}
           <div style="font-size:0.9em; color:var(--color-secondary);">
             <span class="size-h6 color-secondary">
-              {{ $server_addr }}
+      	- {{ $server_addr }}
             </span>
           </div>
           {{ end }}
@@ -90,7 +97,7 @@ Displays server's custom icon, inferred IP, MOTD message and some statistics. Th
         {{ if and ($is_running) (not $starting) }}
           {{ if and (not (eq $motd "")) ($displayMOTD) }}
             <div style="font-size:0.9em; color:var(--color-secondary);">
-              {{ replaceMatches "§." "" $motd }}
+      	{{ replaceMatches "§." "" $motd }}
             </div>
           {{ end }}
 
@@ -117,8 +124,8 @@ Displays server's custom icon, inferred IP, MOTD message and some statistics. Th
 ## Environment variables
 - `CRAFTY_URL` - the URL or [IP]:[Port] to your Crafty Controller instance.
 - `CRAFTY_SERVER_ID` - ID of the minecraft server you want to display info about. You can find it in the URL of the server details in Crafty Controller's dashboard. (Ex.; `https://[CRAFTY_URL]/panel/server_detail?id=[CRAFTY_SERVER_ID]`)
-- `CRAFTY_API_TOKEN` - Your crafty API token. Requires `TERMINAL`, `CONFIG` and `PLAYERS` permissions.
+- `CRAFTY_API_TOKEN` - Your crafty API token. Requires `Full Access` permission.
 
 ## 🍻 Cheers
 
-* Author of [minecraft-server//github.com/MartyX98/community-widgets/blob/main/widgets/minecraft-server/README.md) community widget from which I took a lot of inspiration.
+* @not-first as the author of [minecraft-server](/widgets/minecraft-server/README.md) community widget from which I took a lot of inspiration.
