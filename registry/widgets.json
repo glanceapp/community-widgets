@@ -189,6 +189,15 @@
     "time_updated": "2025-09-25T04:55:13.926418023Z"
   },
   {
+    "title": "Football League Table",
+    "description": "Shows the current standings of the selected league using football-data api",
+    "author": "nicl-dev",
+    "directory": "football-league-table",
+    "readme_hash": "b3f7eb4d5279d2fab572a8a699c64420f6b9a5b1",
+    "time_added": "2025-11-18T03:57:58.747648105Z",
+    "time_updated": "2025-11-18T03:57:58.747648215Z"
+  },
+  {
     "title": "Forgejo repos",
     "description": "show data about latest repos from forgejo instance.",
     "author": "dodecube",
