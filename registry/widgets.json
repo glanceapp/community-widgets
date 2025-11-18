@@ -171,6 +171,15 @@
     "time_updated": "2025-11-02T18:02:34.89233242Z"
   },
   {
+    "title": "Duolingo Stats",
+    "description": "Show your Duolingo stats in glance.",
+    "author": "RealTong",
+    "directory": "duolingo-stats",
+    "readme_hash": "c537ee6e19fa80ed6757a2db0bbe8a061dbf0734",
+    "time_added": "2025-11-18T04:02:36.948642562Z",
+    "time_updated": "2025-11-18T04:02:36.948642662Z"
+  },
+  {
     "title": "Epic Games Free Games",
     "description": "Display currently free games from the Epic Games Store with promotional images and availability periods.",
     "author": "marocainperdu",

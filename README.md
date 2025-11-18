@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Duolingo Stats](widgets/duolingo-stats/README.md) - show your Duolingo stats in glance (by @RealTong)
 * [Football League Table](widgets/football-league-table/README.md) - shows the current standings of the selected league using football-data api (by @nicl-dev)
 * [Steam Top Sellers](widgets/steam-top-sellers/README.md) - show steam global top seller (by @GuiguiBlitz)
 * [ListenBrainz Listen](widgets/listenbrainz-latest/README.md) - show the latest listen for a ListenBrainz user (by @zliebersbach)
 * [Komga Recently Added Series](widgets/komga-latest/README.md) - displays recently added comic/manga series to a defined Komga library (by @VictorMitr)
-* [Docker Swarm](widgets/docker-swarm/README.md) - a widget to monitor Docker Swarm services and nodes based on the built-in docker-containers widget (by @tonineri)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -43,6 +43,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Cryptopanic News](widgets/cryptopanic-news/README.md) - a real-time cryptocurrency news widget that displays filtered news from CryptoPanic.com with configurable filters for news type, regions, and currencies (by @herculosh)
 * [Cup Updates](widgets/cup-updates/README.md) - displays information about containers needing an update from Cup (by @panonim)
 * [Docker Swarm](widgets/docker-swarm/README.md) - a widget to monitor Docker Swarm services and nodes based on the built-in docker-containers widget (by @tonineri)
+* [Duolingo Stats](widgets/duolingo-stats/README.md) - show your Duolingo stats in glance (by @RealTong)
 * [Epic Games Free Games](widgets/epic-free-widget/README.md) - display currently free games from the Epic Games Store with promotional images and availability periods (by @marocainperdu)
 * [Football Fixtures](widgets/football-fixtures/README.md) - show the last match and the next match of your favourite football team using football-data api (by @cristiandiiorio)
 * [Football League Table](widgets/football-league-table/README.md) - shows the current standings of the selected league using football-data api (by @nicl-dev)
