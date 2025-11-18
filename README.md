@@ -144,6 +144,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 > Extension widgets are not actively monitored by the maintainers of Glance, use them at your own risk.
 * [GitHub Graph](https://github.com/haondt/glance-github-graph) - show your GitHub contribution graph (by @haondt)
 * [Glance F1](https://github.com/SkyAllinott/glance-F1) - adds user customization to widget by @abaza738 like local timezones, a track map, and more (by @SkyAllinott)
+* [Glance Transmission](https://github.com/Xtrems876/glance-transmission) - show Transmission downloads (by @Xtrems876)
 * [Kubernetes nodes and apps](https://github.com/lukasdietrich/glance-k8s) - list Kubernetes nodes and applications. Also including helm charts (by @lukasdietrich)
 * [Navidrome (Subsonic) Server Stats](https://github.com/SomeCodecat/subsonic-proxy) - display statistics from your Navidrome (or Subsonic) instance and interact with them (by @SomeCodecat)
 * [Restic snapshot](https://github.com/not-first/restic-glance-extension) - show the most recent snapshot and storage stats of a restic repo (by @not-first)
