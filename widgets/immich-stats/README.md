@@ -4,7 +4,7 @@
 - type: custom-api
   title: Immich stats
   cache: 1d
-  url: https://${IMMICH_URL}/api/server/statistics
+  url: ${IMMICH_URL}/api/server/statistics
   headers:
     x-api-key: ${IMMICH_API_KEY}
     Accept: application/json
@@ -27,5 +27,5 @@
 
 ## Environment variables
 
-- `IMMICH_URL` - the URL of the Immich server
-- `IMMICH_API_KEY` - the API key of the server which can be found in `Account settings -> API keys`
+- `IMMICH_URL` - The URL for your immich server, including port but without trailing slash, e.g.: 'http://192.168.1.2:2283', or 'https://immich.example.com'
+- `IMMICH_API_KEY` - the API key of the server which can be found in `Account settings -> API keys`.  Permissions required: `server.statistics`
