@@ -972,6 +972,15 @@
     "time_updated": "2025-09-25T04:55:13.92922609Z"
   },
   {
+    "title": "WG-Easy Enabled Clients",
+    "description": "Shows enabled and disabled clients from WG-Easy Web Interface",
+    "author": "lmriccardo",
+    "directory": "wg-easy-clients",
+    "readme_hash": "15ea759212bb3af341fd6c08ab0b8160c191047d",
+    "time_added": "2025-11-18T04:03:16.893923179Z",
+    "time_updated": "2025-11-18T04:03:16.893923289Z"
+  },
+  {
     "title": "Weather Seven Day",
     "description": "Shows daily weather conditions and high and low temperature from Open-Meteo for a specified location.",
     "author": "brandonsie",

@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [WG-Easy Enabled Clients](widgets/wg-easy-clients/README.md) - shows enabled and disabled clients from WG-Easy Web Interface (by @lmriccardo)
 * [Duolingo Stats](widgets/duolingo-stats/README.md) - show your Duolingo stats in glance (by @RealTong)
 * [Football League Table](widgets/football-league-table/README.md) - shows the current standings of the selected league using football-data api (by @nicl-dev)
 * [Steam Top Sellers](widgets/steam-top-sellers/README.md) - show steam global top seller (by @GuiguiBlitz)
 * [ListenBrainz Listen](widgets/listenbrainz-latest/README.md) - show the latest listen for a ListenBrainz user (by @zliebersbach)
-* [Komga Recently Added Series](widgets/komga-latest/README.md) - displays recently added comic/manga series to a defined Komga library (by @VictorMitr)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -132,6 +132,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Unifi](widgets/unifi/README.md) - unifi controller information (by @prozn)
 * [Uptime Kuma](widgets/uptime-kuma/README.md) - show the status of Uptime Kuma services (by @not-first)
 * [Vikunja Taskboard](widgets/vikunja-taskboard/README.md) - real time taskboard using the Vikunja API (by @gugugiyu)
+* [WG-Easy Enabled Clients](widgets/wg-easy-clients/README.md) - shows enabled and disabled clients from WG-Easy Web Interface (by @lmriccardo)
 * [Weather Seven Day](widgets/weather-seven-day/README.md) - shows daily weather conditions and high and low temperature from Open-Meteo for a specified location (by @brandonsie)
 * [What's Up Docker Monitor](widgets/wud-monitor/README.md) - a customizable widget for displaying the wud data about containers (by @panonim)
 * [YouTube Embedded Player](widgets/youtube-embedded-player/README.md) - a grid-card layout of YouTube List with Embed player pulled from either RSS-Bridge or FreshRSS (by @ralphocdol)

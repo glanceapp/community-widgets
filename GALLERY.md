@@ -506,6 +506,10 @@
   </tr>
   <tr>
     <td valign="top">
+    <p align="center"><a href="widgets/wg-easy-clients/README.md">WG-Easy Enabled Clients</a><br>by <a href="https://github.com/lmriccardo">@lmriccardo</a><p>
+    <p align="center"><a href="widgets/wg-easy-clients/README.md"><img src="widgets/wg-easy-clients/preview.png"></a></p>
+</td>
+    <td valign="top">
     <p align="center"><a href="widgets/weather-seven-day/README.md">Weather Seven Day</a><br>by <a href="https://github.com/brandonsie">@brandonsie</a><p>
     <p align="center"><a href="widgets/weather-seven-day/README.md"><img src="widgets/weather-seven-day/preview.png"></a></p>
 </td>
@@ -513,17 +517,16 @@
     <p align="center"><a href="widgets/wud-monitor/README.md">What's Up Docker Monitor</a><br>by <a href="https://github.com/panonim">@panonim</a><p>
     <p align="center"><a href="widgets/wud-monitor/README.md"><img src="widgets/wud-monitor/wud-main/wud_main_preview.png"></a></p>
 </td>
+  </tr>
+  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/youtube-embedded-player/README.md">YouTube Embedded Player</a><br>by <a href="https://github.com/ralphocdol">@ralphocdol</a><p>
     <p align="center"><a href="widgets/youtube-embedded-player/README.md"><img src="widgets/youtube-embedded-player/preview.png"></a></p>
 </td>
-  </tr>
-  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/qbittorrent-stats/README.md">qBittorrent Stats</a><br>by <a href="https://github.com/danzkigg">@danzkigg</a><p>
     <p align="center"><a href="widgets/qbittorrent-stats/README.md"><img src="widgets/qbittorrent-stats/preview1.png"></a></p>
 </td>
-    <td valign="top"></td>
     <td valign="top"></td>
   </tr>
 </table>
