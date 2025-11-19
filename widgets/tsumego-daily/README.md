@@ -22,10 +22,10 @@ Simple widget for displaying daily tsumego (go problem) from goproblems.com webs
                   {{ $difficulty := printf "%d %s" $diffVal $diffUnit }}
 
                   <div style="text-align: center;">
-                    <h3 style="font-size: 1.4rem; margin: 0 0 4px 0;">
+                    <h3 style="font-size: 1.4rem; margin: 0 0 4px 0">
                       Medium Problem of the Day
                     </h3>
-                    <div style="margin-bottom: 6px; font-size: 0.85rem; color: #888;">
+                    <div style="margin-bottom: 6px; font-size: 0.85rem">
                       {{ $difficulty }}    {{ $genre }}
                     </div>
                     <a href="{{ $problemUrl }}" target="_blank">
@@ -37,3 +37,8 @@ Simple widget for displaying daily tsumego (go problem) from goproblems.com webs
                 {{ end }}
               {{ end }}
 ```
+
+## Configuration
+
+- `cache: 6h` – reasonable since the problem updates daily.
+- Change `{{ $targetCategory := "medium" }}` to `begubber`, `easy` or `hard`, to select a different difficulty.
