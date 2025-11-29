@@ -15,9 +15,7 @@ Customisation can be applied using the `options:` field. See [Options](#options)
 
 ![Preview](preview.png)
 
-
 ![cpu-preview](cpu-stats.png)
-
 
 ![memory-preview](memory-stats.png)
 
@@ -53,6 +51,7 @@ Since `v0.8.0`, you can use the `options:` field to customise the widget.
 See [v0.8.0 Release Notes](https://github.com/glanceapp/glance/releases/tag/v0.8.0#g-rh-15) for more information.
 
 Default options are:
+
 ```yaml
 options:
   # Required options
@@ -73,7 +72,7 @@ options:
     {{/* Required config options */}}
     {{ $baseURL := .Options.StringOr "base-url" "" }}
     {{ $apiKey := .Options.StringOr "api-key" "" }}
-
+  
     {{/* Error message template */}}
     {{ define "errorMsg" }}
       <div class="widget-error-header">
@@ -84,7 +83,7 @@ options:
       </div>
       <p class="break-all">{{ . }}</p>
     {{ end }}
-
+  
     {{ define "formatGigabytes" }}
       {{ $value := . }}
       {{ $label := "GB" }}
@@ -98,23 +97,23 @@ options:
       {{ end }}
       {{ printf "%.1f" $value }} <span class="color-base size-h5">{{ $label }}</span>
     {{ end }}
-
+  
     {{/* Check required fields */}}
     {{ if or (eq $baseURL "") (eq $apiKey "") }}
       {{ template "errorMsg" "Some required options are not set." }}
     {{ else }}
-
+  
       {{ $token := concat "Bearer " $apiKey }}
-
+  
       {{ $systemsResponse := newRequest (print $baseURL "/api/collections/systems/records")
           | withHeader "Authorization" $token
           | getResponse }}
       {{ $systems := $systemsResponse.JSON.Array "items" }}
-
-
+  
+  
       {{ range $n, $system := $systems }}
         {{ $status := $system.String "status" }}
-
+  
         {{ $systemStatsRequest := newRequest (print $baseURL "/api/collections/system_stats/records")
             | withHeader "Authorization" $token
             | withParameter "sort" "-created"
@@ -122,29 +121,48 @@ options:
             | withParameter "perPage" "1"
             | withParameter "filter" (print "type='1m'&&system='" ($system.String "id") "'")
             | getResponse }}
-        {{ $systemStats := index ($systemStatsRequest.JSON.Array "items") 0 }}
-
+  
+        {{ $systemStatItems := $systemStatsRequest.JSON.Array "items" }}
+  
         {{ $hostname := $system.String "name" }}
         {{ $uptimeSec := $system.Float "info.u" }}
-
+  
         {{ $systemTemp := $system.Float "info.dt"}}
-
+  
         {{ $cpuLoad := $system.Float "info.cpu" }}
         {{ $cpuLoad1m := $system.Float "info.l1" }}
         {{ $cpuLoad15m := $system.Float "info.l15" }}
-
+  
         {{ $memoryUsedPercent := $system.Float "info.mp" }}
-        {{ $memoryTotalGb := $systemStats.Float "stats.m" }}
-        {{ $memoryUsedGb := $systemStats.Float "stats.mu" }}
-
-        {{ $swapTotalGb := $systemStats.Float "stats.s" }}
-        {{ $swapUsedGb := $systemStats.Float "stats.su" }}
-        {{ $swapUsedPercent := mul (div $swapUsedGb $swapTotalGb) 100.0 }}
-
+  
         {{ $rootUsedPercent := $system.Float "info.dp" }}
-        {{ $rootTotalGb := $systemStats.Float "stats.d" }}
-        {{ $rootUsedGb := $systemStats.Float "stats.du" }}
-
+  
+        {{ $hasStats := false }}
+        {{ $systemStats := "" }}
+  
+        {{ $memoryTotalGb := 0.0 }}
+        {{ $memoryUsedGb := 0.0 }}
+        {{ $swapTotalGb := 0.0 }} 
+        {{ $swapUsedGb := 0.0 }}
+        {{ $swapUsedPercent := 0.0 }}
+        {{ $rootTotalGb := 0.0 }}
+        {{ $rootUsedGb := 0.0 }}
+  
+        {{ if gt (len $systemStatItems) 0 }}
+          {{ $hasStats = true }}
+          {{ $systemStats = index $systemStatItems 0 }}
+  
+          {{ $memoryTotalGb = $systemStats.Float "stats.m" }}
+          {{ $memoryUsedGb = $systemStats.Float "stats.mu" }}
+  
+          {{ $swapTotalGb = $systemStats.Float "stats.s" }}
+          {{ $swapUsedGb = $systemStats.Float "stats.su" }}
+          {{ $swapUsedPercent = mul (div $swapUsedGb $swapTotalGb) 100.0 }}
+  
+          {{ $rootTotalGb = $systemStats.Float "stats.d" }}
+          {{ $rootUsedGb = $systemStats.Float "stats.du" }}
+        {{ end }}
+  
         <div class="server">
           <div class="server-info">
             <div class="server-details">
@@ -177,7 +195,7 @@ options:
               </svg>
             </div>
           </div>
-
+  
           <div class="server-stats">
             <div class="flex-1">
               <div class="flex items-end size-h5">
@@ -207,20 +225,21 @@ options:
                     <div class="color-highlight text-very-compact">{{ printf "%.1f" $systemTemp }} <span class="color-base size-h5">°</span></div>
                   </div>
                 </div>
-
+  
                 <div class="progress-bar progress-bar-combined">
                   <div class="progress-value{{ if ge $cpuLoad1m 85.0 }} progress-value-notice{{ end }}" style="--percent: {{ $cpuLoad1m }}"></div>
                   <div class="progress-value{{ if ge $cpuLoad15m 85.0 }} progress-value-notice{{ end }}" style="--percent: {{ $cpuLoad15m }}"></div>
                 </div>
               </div>
             </div>
-
+  
             <div class="flex-1">
               <div class="flex justify-between items-end size-h5">
                 <div>RAM</div>
                 <div class="color-highlight text-very-compact">{{ $memoryUsedPercent }} <span class="color-base">%</span></div>
               </div>
               <div data-popover-type="html">
+                {{- if $hasStats }}
                 <div data-popover-html>
                   <div class="flex">
                     <div class="size-h5">RAM</div>
@@ -239,6 +258,7 @@ options:
                   </div>
                   {{- end }}
                 </div>
+                {{- end }}
                 <div class="progress-bar progress-bar-combined">
                   <div class="progress-value{{ if ge $memoryUsedPercent 85.0 }} progress-value-notice{{ end }}" style="--percent: {{ $memoryUsedPercent }}"></div>
                   {{- if gt $swapTotalGb 0.0 }}
@@ -247,13 +267,14 @@ options:
                 </div>
               </div>
             </div>
-
+  
             <div class="flex-1">
               <div class="flex justify-between items-end size-h5">
                 <div>DISK</div>
                 <div class="color-highlight text-very-compact">{{ $rootUsedPercent }} <span class="color-base">%</span></div>
               </div>
               <div data-popover-type="html">
+                {{- if $hasStats }}
                 <div data-popover-html>
                   <ul class="list list-gap-2">
                     <li class="flex">
@@ -263,29 +284,28 @@ options:
                         {{ template "formatGigabytes" $rootUsedGb }} <span class="color-base size-h5">/</span> {{ template "formatGigabytes" $rootTotalGb }}
                       </div>
                     </li>
-                    {{ range $key, $efs := ($systemStats.Get "stats.efs").Map }}
-                      <li class="flex">
-                        <div class="size-h5">{{ $key }}</div>
-                        <div class="value-separator"></div>
-                        <div class="color-highlight text-very-compact">
-                          {{ template "formatGigabytes" (($efs.Get "du").Float) }} <span class="color-base size-h5">/</span> {{ template "formatGigabytes" (($efs.Get "d").Float) }}
-                        </div>
-                      </li>
-                    {{ end }}
+                      {{ range $key, $efs := ($systemStats.Get "stats.efs").Map }}
+                        <li class="flex">
+                          <div class="size-h5">{{ $key }}</div>
+                          <div class="value-separator"></div>
+                          <div class="color-highlight text-very-compact">
+                            {{ template "formatGigabytes" (($efs.Get "du").Float) }} <span class="color-base size-h5">/</span> {{ template "formatGigabytes" (($efs.Get "d").Float) }}
+                          </div>
+                        </li>
+                      {{ end }}
                   </ul>
                 </div>
+                {{- end }}
                 <div class="progress-bar progress-bar-combined">
                   <div class="progress-value{{ if ge $rootUsedPercent 85.0 }} progress-value-notice{{ end }}" style="--percent: {{ $rootUsedPercent }}"></div>
-                  {{ range $key, $efs := ($systemStats.Get "stats.efs").Map }}
-                    {{ $efsTotalGb := (($efs.Get "d").Float) }}
-                    {{ $efsUsedGb := (($efs.Get "du").Float) }}
-                    {{ $efsPercent := mul (div $efsUsedGb $efsTotalGb) 100 }}
-                    <div class="progress-value{{ if ge $efsPercent 85.0 }} progress-value-notice{{ end }}" style="--percent: {{ $efsPercent }}"></div>
+                  {{ range $key, $efs := ($system.Get "info.efs").Map }}
+                    {{ $percent := $efs.Float }}
+                    <div class="progress-value{{ if ge $percent 85.0 }} progress-value-notice{{ end }}" style="--percent: {{ $percent }}"></div>
                   {{ end }}
                 </div>
               </div>
             </div>
-
+  
           </div>
         </div>
       {{ end }}
