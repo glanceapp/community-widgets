@@ -94,9 +94,9 @@
     "description": "Server Stats widget matching the builtin widget but using data from Beszel.",
     "author": "Nedra1998",
     "directory": "beszel-server-stats",
-    "readme_hash": "7298c0ed456526587ac8b98b35f748df2ad73531",
+    "readme_hash": "b2c7226dd354fa2b8b28086905b554f4f3015122",
     "time_added": "2025-10-02T20:57:52.804627383Z",
-    "time_updated": "2025-10-02T20:57:52.804627514Z"
+    "time_updated": "2025-11-29T19:04:49.314743585Z"
   },
   {
     "title": "Calibre-Web Stats",
