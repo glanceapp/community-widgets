@@ -901,12 +901,12 @@
   },
   {
     "title": "Tailscale devices",
-    "description": "show all devices inside to a Tailscale tailnet along with their connection status, update availability and IP",
+    "description": "show all devices inside a Tailscale tailnet along with their connection status, owner, update availability and IP",
     "author": "not-first",
     "directory": "tailscale-devices",
-    "readme_hash": "7251a3c9234d332bdd059f8c66f936d06c7f8531",
+    "readme_hash": "67e9c76a9926c44b0100ccb909aed076d6f7485a",
     "time_added": "2025-03-15T14:38:23.8165Z",
-    "time_updated": "2025-09-25T04:55:13.928776661Z"
+    "time_updated": "2025-12-05T12:42:55.259179823Z"
   },
   {
     "title": "Tautulli Stats",
