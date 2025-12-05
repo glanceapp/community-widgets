@@ -666,6 +666,15 @@
     "time_updated": "2025-09-25T04:55:13.92792041Z"
   },
   {
+    "title": "Portainer Dashboard",
+    "description": "show docker containers from portainer.",
+    "author": "RealTong",
+    "directory": "portainer-dashboard",
+    "readme_hash": "414bcc13133f642196c4844a5d0538293fe92cf2",
+    "time_added": "2025-12-05T12:36:52.867581625Z",
+    "time_updated": "2025-12-05T12:36:52.867581742Z"
+  },
+  {
     "title": "Prowlarr Indexers",
     "description": "show list of indexers from prowlarr.",
     "author": "mattiasghodsian",

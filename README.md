@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Portainer Dashboard](widgets/portainer-dashboard/README.md) - show docker containers from portainer (by @RealTong)
 * [Tsumego Daily](widgets/tsumego-daily/README.md) - shows daily Go Problems (Tsumego) from goproblems.com (by @ccarpo)
 * [Steam User List](widgets/steam-user-list/README.md) - display some information about steam users/friends (by @maplefluff)
 * [Overseerr Requests Stats](widgets/overseerr-requests-stats/README.md) - shows the requests count grouped by media types and status (by @GiamBoscaro)
 * [ESPN Live Football Scores Widget](widgets/football-livescore/README.md) - a custom widget that displays live, upcoming, and finished football (soccer) scores using the **ESPN Scoreboard API** (by @Beyeshooter)
-* [xkcd Widget](widgets/xkcd-widget/README.md) - a custom simple widget that displays current xkcd comic (by @AllanAAbraham)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -98,6 +98,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Paperless NGX Stats](widgets/paperlessngx-stats/README.md) - show stats from your Paperless NGX (by @ralphocdol)
 * [Papra Stats](widgets/papra-stats/README.md) - shows stats from your Papra application (by @Saisamarth21)
 * [PeaNut UPS Stats](widgets/peanut-ups-status/README.md) - returns statistics from PeaNut to Monitor UPS (by @razdnut)
+* [Portainer Dashboard](widgets/portainer-dashboard/README.md) - show docker containers from portainer (by @RealTong)
 * [Prowlarr Indexers](widgets/prowlarr-indexers/README.md) - show list of indexers from prowlarr (by @mattiasghodsian)
 * [Proxmox Backup Server Stats](widgets/proxmox-backup-server-stats/README.md) - shows Ressources, Datastore Usage and Last 3 Backup Jobs per VM (by @danielweeber)
 * [Proxmox VE Nodes](widgets/proxmox-ve-nodes/README.md) - show the Node's CPU, RAM and Disk usage of your Proxmox Virtual Environment servers (by @ralphocdol)
