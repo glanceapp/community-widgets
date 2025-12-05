@@ -972,6 +972,15 @@
     "time_updated": "2025-09-25T04:55:13.929100526Z"
   },
   {
+    "title": "Tsumego Daily",
+    "description": "Shows daily Go Problems (Tsumego) from goproblems.com",
+    "author": "ccarpo",
+    "directory": "tsumego-daily",
+    "readme_hash": "a14b9f54d0518cc62ce5e0b453cfb1545dc49dc0",
+    "time_added": "2025-12-05T12:33:47.836005011Z",
+    "time_updated": "2025-12-05T12:33:47.836005151Z"
+  },
+  {
     "title": "Unifi",
     "description": "Unifi controller information",
     "author": "prozn",

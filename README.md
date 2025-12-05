@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Tsumego Daily](widgets/tsumego-daily/README.md) - shows daily Go Problems (Tsumego) from goproblems.com (by @ccarpo)
 * [Steam User List](widgets/steam-user-list/README.md) - display some information about steam users/friends (by @maplefluff)
 * [Overseerr Requests Stats](widgets/overseerr-requests-stats/README.md) - shows the requests count grouped by media types and status (by @GiamBoscaro)
 * [ESPN Live Football Scores Widget](widgets/football-livescore/README.md) - a custom widget that displays live, upcoming, and finished football (soccer) scores using the **ESPN Scoreboard API** (by @Beyeshooter)
 * [xkcd Widget](widgets/xkcd-widget/README.md) - a custom simple widget that displays current xkcd comic (by @AllanAAbraham)
-* [WG-Easy Enabled Clients](widgets/wg-easy-clients/README.md) - shows enabled and disabled clients from WG-Easy Web Interface (by @lmriccardo)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -132,6 +132,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Trending GitHub Repositories](widgets/trending-github-repositories/README.md) - daily trending GitHub repositories (by @jelkuweiss)
 * [Trending Mastodon Links](widgets/trending-mastodon-links/README.md) - shows a list of trending links from a provided Mastodon instance (by @tomcasavant)
 * [TrueNAS Scale Pools](widgets/truenas-scale-pools/README.md) - shows datasets with usage and health status (by @drakkein)
+* [Tsumego Daily](widgets/tsumego-daily/README.md) - shows daily Go Problems (Tsumego) from goproblems.com (by @ccarpo)
 * [Unifi](widgets/unifi/README.md) - unifi controller information (by @prozn)
 * [Uptime Kuma](widgets/uptime-kuma/README.md) - show the status of Uptime Kuma services (by @not-first)
 * [Vikunja Taskboard](widgets/vikunja-taskboard/README.md) - real time taskboard using the Vikunja API (by @gugugiyu)
