@@ -391,9 +391,9 @@
     "description": "displays recently added comic/manga series to a defined Komga library",
     "author": "VictorMitr",
     "directory": "komga-latest",
-    "readme_hash": "50616631c3246d0c6b726e6950441e65a2c27954",
+    "readme_hash": "32307e4181628d3d4e7f71b288e2864e621c969c",
     "time_added": "2025-11-02T18:08:42.452042133Z",
-    "time_updated": "2025-11-02T18:08:42.452042234Z"
+    "time_updated": "2025-12-05T12:59:46.062350028Z"
   },
   {
     "title": "Komodo Container Manager Monitor",
@@ -502,6 +502,15 @@
     "readme_hash": "8c1ea3339ea9d8a41448468ed71a6c4091b29376",
     "time_added": "2025-04-12T02:20:05.1668Z",
     "time_updated": "2025-09-25T04:55:13.927276106Z"
+  },
+  {
+    "title": "MediaTracker Upcoming Media",
+    "description": "displays upcoming TV shows, movies or video games monitored by MediaTracker",
+    "author": "VictorMitr",
+    "directory": "mediatracker-upcoming-tv-shows",
+    "readme_hash": "3a02de13f15790582eb2bdab45c35a4d42adce64",
+    "time_added": "2025-12-05T12:59:46.062993668Z",
+    "time_updated": "2025-12-05T12:59:46.062993778Z"
   },
   {
     "title": "Minecraft server",

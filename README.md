@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [MediaTracker Upcoming Media](widgets/mediatracker-upcoming-tv-shows/README.md) - displays upcoming TV shows, movies or video games monitored by MediaTracker (by @VictorMitr)
 * [MyanimeList Widgets](widgets/myanimelist-widgets/README.md) - show seasonal anime (more Widgets coming soon) (by @Zephyr73)
 * [Algal Bloom Update](widgets/algal-bloom-update/README.md) - displays the South Australian beach conditions based on api from Beachsafe (by @stonkage)
 * [Portainer Dashboard](widgets/portainer-dashboard/README.md) - show docker containers from portainer (by @RealTong)
 * [Tsumego Daily](widgets/tsumego-daily/README.md) - shows daily Go Problems (Tsumego) from goproblems.com (by @ccarpo)
-* [Steam User List](widgets/steam-user-list/README.md) - display some information about steam users/friends (by @maplefluff)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -80,6 +80,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Mealie Today's Meal](widgets/mealie-todays-meal/README.md) - show today's meal based off the meal planner from [Mealie](https://mealie.io/) (by @wtoa)
 * [Media Server History](widgets/media-server-history/README.md) - collection of widgets to show what had been played on your Media Server like Plex/Jellyfin (by @titembaataar)
 * [Media Server Playing](widgets/media-server-playing/README.md) - collection of widgets to show what's being played on your Media Server like Plex/Jellyfin (by @titembaataar)
+* [MediaTracker Upcoming Media](widgets/mediatracker-upcoming-tv-shows/README.md) - displays upcoming TV shows, movies or video games monitored by MediaTracker (by @VictorMitr)
 * [Minecraft server](widgets/minecraft-server/README.md) - show the online status, icon, version and player count of a Minecraft server (by @not-first)
 * [Mullvad VPN status](widgets/mullvad-vpn-status/README.md) - show VPN connection status, IP, and location (by @DelMonteAJ)
 * [MyanimeList Widgets](widgets/myanimelist-widgets/README.md) - show seasonal anime (more Widgets coming soon) (by @Zephyr73)
