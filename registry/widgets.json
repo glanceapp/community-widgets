@@ -1015,5 +1015,14 @@
     "readme_hash": "4357fc874d2c974a8b5252608d300fc666515bb0",
     "time_added": "2025-08-19T20:06:23.4484Z",
     "time_updated": "2025-09-25T04:55:13.928119062Z"
+  },
+  {
+    "title": "xkcd Widget",
+    "description": "A custom simple widget that displays current xkcd comic",
+    "author": "AllanAAbraham",
+    "directory": "xkcd-widget",
+    "readme_hash": "22ed3048f8a5c67762d2f01333b29c84fd0c172e",
+    "time_added": "2025-12-05T12:27:28.678735802Z",
+    "time_updated": "2025-12-05T12:27:28.678735932Z"
   }
 ]
