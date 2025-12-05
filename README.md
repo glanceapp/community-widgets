@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Steam User List](widgets/steam-user-list/README.md) - display some information about steam users/friends (by @maplefluff)
+* [Overseerr Requests Stats](widgets/overseerr-requests-stats/README.md) - shows the requests count grouped by media types and status (by @GiamBoscaro)
+* [ESPN Live Football Scores Widget](widgets/football-livescore/README.md) - a custom widget that displays live, upcoming, and finished football (soccer) scores using the **ESPN Scoreboard API** (by @Beyeshooter)
 * [xkcd Widget](widgets/xkcd-widget/README.md) - a custom simple widget that displays current xkcd comic (by @AllanAAbraham)
 * [WG-Easy Enabled Clients](widgets/wg-easy-clients/README.md) - shows enabled and disabled clients from WG-Easy Web Interface (by @lmriccardo)
-* [Duolingo Stats](widgets/duolingo-stats/README.md) - show your Duolingo stats in glance (by @RealTong)
-* [Football League Table](widgets/football-league-table/README.md) - shows the current standings of the selected league using football-data api (by @nicl-dev)
-* [Steam Top Sellers](widgets/steam-top-sellers/README.md) - show steam global top seller (by @GuiguiBlitz)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -44,6 +44,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Cup Updates](widgets/cup-updates/README.md) - displays information about containers needing an update from Cup (by @panonim)
 * [Docker Swarm](widgets/docker-swarm/README.md) - a widget to monitor Docker Swarm services and nodes based on the built-in docker-containers widget (by @tonineri)
 * [Duolingo Stats](widgets/duolingo-stats/README.md) - show your Duolingo stats in glance (by @RealTong)
+* [ESPN Live Football Scores Widget](widgets/football-livescore/README.md) - a custom widget that displays live, upcoming, and finished football (soccer) scores using the **ESPN Scoreboard API** (by @Beyeshooter)
 * [Epic Games Free Games](widgets/epic-free-widget/README.md) - display currently free games from the Epic Games Store with promotional images and availability periods (by @marocainperdu)
 * [Football Fixtures](widgets/football-fixtures/README.md) - show the last match and the next match of your favourite football team using football-data api (by @cristiandiiorio)
 * [Football League Table](widgets/football-league-table/README.md) - shows the current standings of the selected league using football-data api (by @nicl-dev)
@@ -91,6 +92,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [NextDNS Stats](widgets/nextdns-stats/README.md) - show the basics stats of your nextdns stats. Total queries, total blocked and percentage (by @ziritione85)
 * [Nextcloud Deck](widgets/nextcloud-deck/README.md) - show deck board from Nextcloud (by @drakkein)
 * [Nginx Proxy Manager](widgets/nginx-proxy-manager/README.md) - shows a summary of Nginx Proxy Configration and host links (by @saif191020)
+* [Overseerr Requests Stats](widgets/overseerr-requests-stats/README.md) - shows the requests count grouped by media types and status (by @GiamBoscaro)
 * [Overseerr Trending/Discovery](widgets/overseerr-trending-discovery/README.md) - shows trending media along with Overseerr recommendations for movies/tv (by @flamechair)
 * [PagerDuty Incidents](widgets/pagerduty-incidents/README.md) - shows the latest incidents from PagerDuty (by @koalalorenzo)
 * [Paperless NGX Stats](widgets/paperlessngx-stats/README.md) - show stats from your Paperless NGX (by @ralphocdol)
@@ -117,6 +119,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Steam Recently Played Games](widgets/steam-recently-played-games/README.md) - show a list of recently played games by a Steam user (by @lunnosmp4)
 * [Steam Top Sellers](widgets/steam-top-sellers/README.md) - show steam global top seller (by @GuiguiBlitz)
 * [Steam User](widgets/steam-user/README.md) - show information about a Steam user (by @lunnosmp4)
+* [Steam User List](widgets/steam-user-list/README.md) - display some information about steam users/friends (by @maplefluff)
 * [Steam specials](widgets/steam-specials/README.md) - show a list of discounted games on Steam (by @svilenmarkov)
 * [Syncthing](widgets/syncthing/README.md) - show Syncthing folder status (by @JohnCannon97)
 * [Synology Disk Station](widgets/synology-disk-station/README.md) - displays RAM and CPU usage and used storage of your Synology NAS (by @Chachigo)

@@ -180,6 +180,15 @@
     "time_updated": "2025-11-18T04:02:36.948642662Z"
   },
   {
+    "title": "ESPN Live Football Scores Widget",
+    "description": "A custom widget that displays live, upcoming, and finished football (soccer) scores using the **ESPN Scoreboard API**.",
+    "author": "Beyeshooter",
+    "directory": "football-livescore",
+    "readme_hash": "9134c541c9dd3cff337c9b5ce0fc6496f9309d59",
+    "time_added": "2025-12-05T12:33:13.818404418Z",
+    "time_updated": "2025-12-05T12:33:13.818404518Z"
+  },
+  {
     "title": "Epic Games Free Games",
     "description": "Display currently free games from the Epic Games Store with promotional images and availability periods.",
     "author": "marocainperdu",
@@ -603,6 +612,15 @@
     "time_updated": "2025-10-26T14:32:21.693745816Z"
   },
   {
+    "title": "Overseerr Requests Stats",
+    "description": "Shows the requests count grouped by media types and status",
+    "author": "GiamBoscaro",
+    "directory": "overseerr-requests-stats",
+    "readme_hash": "bebe5b3231d32c61c54e0e553a3180e5bd7cccba",
+    "time_added": "2025-12-05T12:33:13.82060035Z",
+    "time_updated": "2025-12-05T12:33:13.82060045Z"
+  },
+  {
     "title": "Overseerr Trending/Discovery",
     "description": "Shows trending media along with Overseerr recommendations for movies/tv",
     "author": "flamechair",
@@ -835,6 +853,15 @@
     "readme_hash": "05e7f32c4700ff46053e351e4b50de6cbd118926",
     "time_added": "2025-03-18T23:12:39.266Z",
     "time_updated": "2025-09-25T04:55:13.928703814Z"
+  },
+  {
+    "title": "Steam User List",
+    "description": "Display some information about steam users/friends",
+    "author": "maplefluff",
+    "directory": "steam-user-list",
+    "readme_hash": "c5052a66c5ab0a757b1325825530a7301d86da14",
+    "time_added": "2025-12-05T12:33:13.821811151Z",
+    "time_updated": "2025-12-05T12:33:13.821811241Z"
   },
   {
     "title": "Steam specials",
