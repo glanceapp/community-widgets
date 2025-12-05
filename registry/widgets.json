@@ -801,8 +801,8 @@
     "time_updated": "2025-09-25T04:55:13.928443879Z"
   },
   {
-    "title": "Speedtest tracker",
-    "description": "show the latest internet speed information from speedtest tracker",
+    "title": "Speedtest Tracker",
+    "description": "show the latest internet speed information from Speedtest Tracker",
     "author": "not-first",
     "directory": "speedtest-tracker",
     "readme_hash": "4c8f55aea8d217de708f992c85a5dfe68cfd0ba4",

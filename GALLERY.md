@@ -416,7 +416,7 @@
     <p align="center"><a href="widgets/slack-status/README.md"><img src="widgets/slack-status/slack-clear.png"></a></p>
 </td>
     <td valign="top">
-    <p align="center"><a href="widgets/speedtest-tracker/README.md">Speedtest tracker</a><br>by <a href="https://github.com/not-first">@not-first</a><p>
+    <p align="center"><a href="widgets/speedtest-tracker/README.md">Speedtest Tracker</a><br>by <a href="https://github.com/not-first">@not-first</a><p>
     <p align="center"><a href="widgets/speedtest-tracker/README.md"><img src="widgets/speedtest-tracker/preview.png"></a></p>
 </td>
   </tr>
