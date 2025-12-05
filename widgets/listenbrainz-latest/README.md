@@ -18,7 +18,7 @@
         </div>
       {{ end }}
 
-      <div style="padding: var(--widget-content-padding)">
+      <div class="track-details-lb">
         <p class="color-highlight">{{ $listen.String "track_metadata.track_name" }}</p>
         <p>{{ $listen.String "track_metadata.artist_name" }}</p>
       </div>
@@ -41,6 +41,15 @@
          left: 0;
          width: 100%;
          height: 100%;
+      }
+      .track-details-lb {
+         padding: var(--widget-content-padding);
+         overflow: hidden;
+      }
+      .track-details-lb > p {
+         overflow: hidden;
+         text-overflow: ellipsis;
+         white-space: nowrap;
       }
     </style>
 ```
