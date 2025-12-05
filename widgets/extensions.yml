@@ -25,7 +25,7 @@
 
 - title: Restic snapshot
   url: https://github.com/not-first/restic-glance-extension
-  description: Show the most recent snapshot and storage stats of a restic repo.
+  description: Show the most recent snapshot(s) and storage stats of a Restic repository.
   author: not-first
 
 - title: Kubernetes nodes and apps
