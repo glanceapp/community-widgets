@@ -135,7 +135,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [TrueNAS Scale Pools](widgets/truenas-scale-pools/README.md) - shows datasets with usage and health status (by @drakkein)
 * [Tsumego Daily](widgets/tsumego-daily/README.md) - shows daily Go Problems (Tsumego) from goproblems.com (by @ccarpo)
 * [Unifi](widgets/unifi/README.md) - unifi controller information (by @prozn)
-* [Uptime Kuma](widgets/uptime-kuma/README.md) - show the status of Uptime Kuma services (by @not-first)
+* [Uptime Kuma](widgets/uptime-kuma/README.md) - show the status of Uptime Kuma monitors from a status page (by @not-first)
 * [Vikunja Taskboard](widgets/vikunja-taskboard/README.md) - real time taskboard using the Vikunja API (by @gugugiyu)
 * [WG-Easy Enabled Clients](widgets/wg-easy-clients/README.md) - shows enabled and disabled clients from WG-Easy Web Interface (by @lmriccardo)
 * [Weather Seven Day](widgets/weather-seven-day/README.md) - shows daily weather conditions and high and low temperature from Open-Meteo for a specified location (by @brandonsie)
