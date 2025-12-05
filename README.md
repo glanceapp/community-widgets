@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [MyanimeList Widgets](widgets/myanimelist-widgets/README.md) - show seasonal anime (more Widgets coming soon) (by @Zephyr73)
 * [Algal Bloom Update](widgets/algal-bloom-update/README.md) - displays the South Australian beach conditions based on api from Beachsafe (by @stonkage)
 * [Portainer Dashboard](widgets/portainer-dashboard/README.md) - show docker containers from portainer (by @RealTong)
 * [Tsumego Daily](widgets/tsumego-daily/README.md) - shows daily Go Problems (Tsumego) from goproblems.com (by @ccarpo)
 * [Steam User List](widgets/steam-user-list/README.md) - display some information about steam users/friends (by @maplefluff)
-* [Overseerr Requests Stats](widgets/overseerr-requests-stats/README.md) - shows the requests count grouped by media types and status (by @GiamBoscaro)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -82,6 +82,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Media Server Playing](widgets/media-server-playing/README.md) - collection of widgets to show what's being played on your Media Server like Plex/Jellyfin (by @titembaataar)
 * [Minecraft server](widgets/minecraft-server/README.md) - show the online status, icon, version and player count of a Minecraft server (by @not-first)
 * [Mullvad VPN status](widgets/mullvad-vpn-status/README.md) - show VPN connection status, IP, and location (by @DelMonteAJ)
+* [MyanimeList Widgets](widgets/myanimelist-widgets/README.md) - show seasonal anime (more Widgets coming soon) (by @Zephyr73)
 * [NBA Scores Tracker](widgets/nba-scores-tracker/README.md) - show the schedule and scores for NBA games today (by @ShmoobiJones)
 * [NCAA CFB Scoreboard](widgets/ncaa-cfb-scoreboard/README.md) - display live NCAA CFB scoreboard data from ESPN API (by @maxo99)
 * [NFL Scoreboard](widgets/nfl-scoreboard/README.md) - display live NFL scoreboard data from ESPN API (by @maxo99)

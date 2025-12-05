@@ -522,6 +522,15 @@
     "time_updated": "2025-09-25T04:55:13.927411479Z"
   },
   {
+    "title": "MyanimeList Widgets",
+    "description": "Show seasonal anime (more Widgets coming soon)",
+    "author": "Zephyr73",
+    "directory": "myanimelist-widgets",
+    "readme_hash": "01c586094513e5d6d287077048cbb4c5148c2309",
+    "time_added": "2025-12-05T12:57:34.011268649Z",
+    "time_updated": "2025-12-05T12:57:34.011268759Z"
+  },
+  {
     "title": "NBA Scores Tracker",
     "description": "show the schedule and scores for NBA games today",
     "author": "ShmoobiJones",
