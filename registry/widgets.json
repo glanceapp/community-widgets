@@ -18,6 +18,15 @@
     "time_updated": "2025-09-25T04:55:13.925560491Z"
   },
   {
+    "title": "Algal Bloom Update",
+    "description": "Displays the South Australian beach conditions based on api from Beachsafe",
+    "author": "stonkage",
+    "directory": "algal-bloom-update",
+    "readme_hash": "e1c8b48e033454f2e2e0af94e3745677595144ee",
+    "time_added": "2025-12-05T12:48:59.960599067Z",
+    "time_updated": "2025-12-05T12:48:59.960599167Z"
+  },
+  {
     "title": "Animals Display",
     "description": "Display random images of animals such as cats or dogs.",
     "author": "panonim",

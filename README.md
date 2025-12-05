@@ -17,15 +17,16 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Algal Bloom Update](widgets/algal-bloom-update/README.md) - displays the South Australian beach conditions based on api from Beachsafe (by @stonkage)
 * [Portainer Dashboard](widgets/portainer-dashboard/README.md) - show docker containers from portainer (by @RealTong)
 * [Tsumego Daily](widgets/tsumego-daily/README.md) - shows daily Go Problems (Tsumego) from goproblems.com (by @ccarpo)
 * [Steam User List](widgets/steam-user-list/README.md) - display some information about steam users/friends (by @maplefluff)
 * [Overseerr Requests Stats](widgets/overseerr-requests-stats/README.md) - shows the requests count grouped by media types and status (by @GiamBoscaro)
-* [ESPN Live Football Scores Widget](widgets/football-livescore/README.md) - a custom widget that displays live, upcoming, and finished football (soccer) scores using the **ESPN Scoreboard API** (by @Beyeshooter)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
 * [Air Quality](widgets/air-quality/README.md) - displays information about air quality using data from the World Air Quality Index (WAQI) API (by @painfultruths)
+* [Algal Bloom Update](widgets/algal-bloom-update/README.md) - displays the South Australian beach conditions based on api from Beachsafe (by @stonkage)
 * [Animals Display](widgets/animals-display/README.md) - display random images of animals such as cats or dogs (by @panonim)
 * [Arr Releases](widgets/arr-releases/README.md) - show upcoming, recently downloaded, or missing items from Sonarr, Radarr, or Lidarr (by @erkston)
 * [Astronomy Picture of the Day](widgets/astronomy-picture-of-the-day/README.md) - shows Astronomy Picture of the Day from NASA (by @Saisamarth21)
