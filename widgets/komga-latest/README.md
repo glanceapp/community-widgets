@@ -1,10 +1,10 @@
 ## Description
 
-This widgets displays covers of recently added/updated series of a Komga library as horizontally scrolling items (cards):
+This widget displays recently added/updated series of a Komga library as cards in horizontal carousel:
 
 ![Preview of the widget](preview.png)
 
-The widget requires modifications to the configuration file in order to work. Under the `options` field in the yaml configurations file, one needs to supply Komga URL, API key and a library ID of a relevant library. You can either supply them directly or as environment variables. 
+The widget requires modifications to the configuration file in order to work. Under the `options` field in the yaml configuration file, one needs to supply Komga URL, API key and a library ID of a relevant library. One can either supply them directly or as environment variables. 
 
 ## List of Options
 
@@ -31,7 +31,7 @@ The widget requires modifications to the configuration file in order to work. Un
     {{ $apiKey := .Options.StringOr "api-key" "" }}
     {{ $libraryId := .Options.StringOr "library-id" "" }}
     {{ $numberOfItems := .Options.IntOr "items" 10 }}
-    {{ $mode := .Options.mode "library-id" "new" }}
+    {{ $mode := .Options.StringOr "mode" "new" }}
 
     {{
       $auth := newRequest (concat $baseURL "/api/v1/login")
@@ -48,44 +48,55 @@ The widget requires modifications to the configuration file in order to work. Un
     {{ $session := $auth.Response.Header.Get "Set-Cookie" }}
     
     {{ if or (eq $baseURL "") (eq $apiKey "") }}
-        <p class="color-negative">Komga base-url or/and api-key is/are not set.</p>
-    {{ else }}
-        <div class="cards-horizontal carousel-items-container">
-          {{ $arr := $content.JSON.Array "content" }}
-          {{ $len := len $arr }}
-          {{ $shown := 0 }}
-          
-          {{ range $i, $_ := $arr }}
-            {{ if lt $shown $numberOfItems }}
-              {{ $el := index $arr $i }}
-              
-              <a class="card widget-content-frame"
-                 href="{{ $baseURL }}/series/{{ $el.String "id" }}"
-                 style="flex:0 0 25vh;min-width:170px; min-height: 150px; display:flex;flex-direction:column;box-sizing:border-box;text-decoration:none;color:inherit;">
-                <div style="position: relative;">
-                    <img src="{{ $baseURL }}/api/v1/series/{{ $el.String "id" }}/thumbnail"
-                         alt="{{ $el.String "metadata.title" }}"
-                         loading="lazy"
-                         class="media-server-thumbnail shrink-0 loaded finished-transition"
-                         style="width:100%; height: 37vh; min-height: 250px; display:block;border-radius:var(--border-radius) var(--border-radius) 0 0;object-fit:cover;" 
-                    />
-                </div>
-                <div class="grow padding-inline-widget margin-top-10 margin-bottom-10">
-                  <ul class="flex flex-column justify-evenly margin-bottom-3" style="height:100%; gap:4px;">
-                    <li class="text-truncate color-primary" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="{{ $el.String "title" }}">
-                      {{ $el.String "metadata.title" }} <!-- ({{ $el.String "metadata.releaseDate" | parseTime "2006-01-02" | formatTime "2006" }}) -->
-                    </li>
-                    <li style="font-size:0.85em;opacity:0.7;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
-                      Added: {{ $el.String "created" | parseTime "RFC3339" | formatTime "Jan 2, 2006" }}
-                    </li>
-                  </ul>
-                </div>
-              </a>
-            
-              {{ $shown = add $shown 1 }}
-            {{ end }}
-          {{ end }}
+        <div class="widget-content-frame" style="flex=0 0 25vh; display:flex">
+            <div class="grow padding-inline-widget margin-top-10 margin-bottom-10 color-negative">
+                Komga base-url or API token not set.
+            </div>
         </div>
+    {{ else }}
+        {{ if eq $content.Response.StatusCode 200 }}
+          <div class="cards-horizontal carousel-items-container">
+              {{ $arr := $content.JSON.Array "content" }}
+              {{ $len := len $arr }}
+              {{ $shown := 0 }}
+              
+              {{ range $i, $_ := $arr }}
+                {{ if lt $shown $numberOfItems }}
+                  {{ $el := index $arr $i }}
+                  
+                  <a class="card widget-content-frame"
+                     href="{{ $baseURL }}/series/{{ $el.String "id" }}"
+                     style="flex:0 0 25vh;min-width:170px; min-height: 150px; display:flex;flex-direction:column;box-sizing:border-box;text-decoration:none;color:inherit;">
+                    <div style="position: relative;">
+                        <img src="{{ $baseURL }}/api/v1/series/{{ $el.String "id" }}/thumbnail"
+                             alt="{{ $el.String "metadata.title" }}"
+                             loading="lazy"
+                             class="media-server-thumbnail shrink-0 loaded finished-transition"
+                             style="width:100%; height: 37vh; min-height: 250px; display:block;border-radius:var(--border-radius) var(--border-radius) 0 0;object-fit:cover;" 
+                        />
+                    </div>
+                    <div class="grow padding-inline-widget margin-top-10 margin-bottom-10">
+                      <ul class="flex flex-column justify-evenly margin-bottom-3" style="height:100%; gap:4px;">
+                        <li class="text-truncate color-primary" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="{{ $el.String "title" }}">
+                          {{ $el.String "metadata.title" }} <!-- ({{ $el.String "metadata.releaseDate" | parseTime "2006-01-02" | formatTime "2006" }}) -->
+                        </li>
+                        <li style="font-size:0.85em;opacity:0.7;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+                          Added: {{ $el.String "created" | parseTime "RFC3339" | formatTime "Jan 2, 2006" }}
+                        </li>
+                      </ul>
+                    </div>
+                  </a>
+                {{ $shown = add $shown 1 }}
+                {{ end }}
+              {{ end }}
+           </div>
+          {{ else }}
+            <div class="widget-content-frame" style="flex=0 0 25vh; display:flex">
+                <div class="grow padding-inline-widget margin-top-10 margin-bottom-10">
+                    Failed to fetch items (status {{ $content.Response.StatusCode }})
+                </div>
+            </div>
+          {{ end }}
     {{ end }}
 ```
 
