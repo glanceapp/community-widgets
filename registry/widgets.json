@@ -337,9 +337,9 @@
     "description": "show the number of photos, videos and usage of your Immich server",
     "author": "svilenmarkov",
     "directory": "immich-stats",
-    "readme_hash": "838d81a8cb0064a634961378d59bc143d0d88067",
+    "readme_hash": "9aa97490166ef8fc198d0ae633fe12c3861b9270",
     "time_added": "2025-03-10T00:19:08.8095Z",
-    "time_updated": "2025-09-25T04:55:13.9268283Z"
+    "time_updated": "2025-12-05T12:44:15.122496391Z"
   },
   {
     "title": "Jellyfin Latest/Next Up",
