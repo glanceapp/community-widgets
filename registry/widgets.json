@@ -454,9 +454,9 @@
     "description": "show the latest listen for a ListenBrainz user",
     "author": "zliebersbach",
     "directory": "listenbrainz-latest",
-    "readme_hash": "babda5de1592ccf70c7fc1e048799a5e1fff0ba8",
+    "readme_hash": "ea10218cac1a274da15b5246e9559e3e634ddfaa",
     "time_added": "2025-11-02T18:09:22.423244558Z",
-    "time_updated": "2025-11-02T18:09:22.423244688Z"
+    "time_updated": "2025-12-05T12:49:36.851359732Z"
   },
   {
     "title": "London Tube Status",
