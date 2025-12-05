@@ -124,7 +124,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Steam specials](widgets/steam-specials/README.md) - show a list of discounted games on Steam (by @svilenmarkov)
 * [Syncthing](widgets/syncthing/README.md) - show Syncthing folder status (by @JohnCannon97)
 * [Synology Disk Station](widgets/synology-disk-station/README.md) - displays RAM and CPU usage and used storage of your Synology NAS (by @Chachigo)
-* [Tailscale devices](widgets/tailscale-devices/README.md) - show all devices inside to a Tailscale tailnet along with their connection status, update availability and IP (by @not-first)
+* [Tailscale devices](widgets/tailscale-devices/README.md) - show all devices inside a Tailscale tailnet along with their connection status, owner, update availability and IP (by @not-first)
 * [Tautulli Stats](widgets/tautulli-stats/README.md) - show various home stats from Tautulli such as recently watched, top movies/shows, etc (by @SkyAllinott)
 * [Technitium DNS Stats](widgets/technitium-dns-stats/README.md) - show stats from Technitium DNS Server (by @eribbey)
 * [Time Bar](widgets/time-bar/README.md) - show percentage of day/month/year elapsed (by @anant-j)
