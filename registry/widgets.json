@@ -496,12 +496,12 @@
   },
   {
     "title": "Minecraft server",
-    "description": "show online status, icon, version and player count of a minecraft server",
+    "description": "show the online status, icon, version and player count of a Minecraft server",
     "author": "not-first",
     "directory": "minecraft-server",
-    "readme_hash": "8dd99d762b5b746990fc58b11988323db1fa9d0d",
+    "readme_hash": "ee8e29939588c4f4ef6efa68a40dff733a5e44ff",
     "time_added": "2025-03-22T11:49:20.1508Z",
-    "time_updated": "2025-09-25T04:55:13.927312274Z"
+    "time_updated": "2025-12-05T12:42:34.63815625Z"
   },
   {
     "title": "Mullvad VPN status",
@@ -1000,12 +1000,12 @@
   },
   {
     "title": "Uptime Kuma",
-    "description": "show the status of Uptime Kuma services",
+    "description": "show the status of Uptime Kuma monitors from a status page",
     "author": "not-first",
     "directory": "uptime-kuma",
-    "readme_hash": "3086eb033c0f2bc202d127c27b1deab1de6e4cc0",
+    "readme_hash": "3b8fba6bbf42d014687cc177e24e2f05bd0188a8",
     "time_added": "2025-03-28T21:05:37.6918Z",
-    "time_updated": "2025-09-25T04:55:13.929185264Z"
+    "time_updated": "2025-12-05T12:42:34.640695673Z"
   },
   {
     "title": "Vikunja Taskboard",

@@ -79,7 +79,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Mealie Today's Meal](widgets/mealie-todays-meal/README.md) - show today's meal based off the meal planner from [Mealie](https://mealie.io/) (by @wtoa)
 * [Media Server History](widgets/media-server-history/README.md) - collection of widgets to show what had been played on your Media Server like Plex/Jellyfin (by @titembaataar)
 * [Media Server Playing](widgets/media-server-playing/README.md) - collection of widgets to show what's being played on your Media Server like Plex/Jellyfin (by @titembaataar)
-* [Minecraft server](widgets/minecraft-server/README.md) - show online status, icon, version and player count of a minecraft server (by @not-first)
+* [Minecraft server](widgets/minecraft-server/README.md) - show the online status, icon, version and player count of a Minecraft server (by @not-first)
 * [Mullvad VPN status](widgets/mullvad-vpn-status/README.md) - show VPN connection status, IP, and location (by @DelMonteAJ)
 * [NBA Scores Tracker](widgets/nba-scores-tracker/README.md) - show the schedule and scores for NBA games today (by @ShmoobiJones)
 * [NCAA CFB Scoreboard](widgets/ncaa-cfb-scoreboard/README.md) - display live NCAA CFB scoreboard data from ESPN API (by @maxo99)
