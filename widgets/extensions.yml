@@ -28,7 +28,7 @@
   description: Show the most recent snapshot and storage stats of a restic repo.
   author: not-first
 
-- title: Kubernetes nodes and apps
+- title: Swedish Hockey API
   url: https://github.com/GSHimself/hockey-api
   description: Shows results and next games from Swedish HockeyAllsvenskan
   author: gshimself
