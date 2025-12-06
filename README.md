@@ -159,6 +159,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Kubernetes nodes and apps](https://github.com/lukasdietrich/glance-k8s) - list Kubernetes nodes and applications. Also including helm charts (by @lukasdietrich)
 * [Navidrome (Subsonic) Server Stats](https://github.com/SomeCodecat/subsonic-proxy) - display statistics from your Navidrome (or Subsonic) instance and interact with them (by @SomeCodecat)
 * [Restic snapshot](https://github.com/not-first/restic-glance-extension) - show the most recent snapshot(s) and storage stats of a Restic repository (by @not-first)
+* [Swedish Hockey API](https://github.com/GSHimself/hockey-api) - shows results and next games from Swedish HockeyAllsvenskan (by @gshimself)
 * [iCal (ICS) Calendar List](https://github.com/AWildLeon/Glance-iCal-Events) - list a ICS File's upcoming events (Like Google Calendar List) (by @AWildLeon)
 * [linktiles](https://github.com/haondt/linktiles/) - display your linkding bookmarks in a configurable mosaic (by @haondt)
 * [qBittorrent Statistic](https://github.com/Panonim/qbwrapper) - display file statistics as they are being downloaded (by @panonim)
