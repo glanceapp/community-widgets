@@ -29,6 +29,11 @@
   author: not-first
 
 - title: Kubernetes nodes and apps
+  url: https://github.com/GSHimself/hockey-api
+  description: Shows results and next games from Swedish HockeyAllsvenskan
+  author: gshimself
+
+- title: Kubernetes nodes and apps
   url: https://github.com/lukasdietrich/glance-k8s
   description: List Kubernetes nodes and applications. Also including helm charts.
   author: lukasdietrich
