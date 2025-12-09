@@ -22,6 +22,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Algal Bloom Update](widgets/algal-bloom-update/README.md) - displays the South Australian beach conditions based on api from Beachsafe (by @stonkage)
 * [Portainer Dashboard](widgets/portainer-dashboard/README.md) - show docker containers from portainer (by @RealTong)
 * [Tsumego Daily](widgets/tsumego-daily/README.md) - shows daily Go Problems (Tsumego) from goproblems.com (by @ccarpo)
+* [Todoist Tasks](widgets/todoist-tasks/README.md) - Display and complete today's tasks from Todoist with priority levels and project names (by @xd1i0)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -131,6 +132,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Tautulli Stats](widgets/tautulli-stats/README.md) - show various home stats from Tautulli such as recently watched, top movies/shows, etc (by @SkyAllinott)
 * [Technitium DNS Stats](widgets/technitium-dns-stats/README.md) - show stats from Technitium DNS Server (by @eribbey)
 * [Time Bar](widgets/time-bar/README.md) - show percentage of day/month/year elapsed (by @anant-j)
+* [Todoist Tasks](widgets/todoist-tasks/README.md) - Display and complete today's tasks from Todoist with priority levels and project names (by @xd1i0)
 * [Trakt](widgets/trakt/README.md) - shows your last-watched movies & TV shows on Trakt (by @RxBrad)
 * [Trending Bluesky News](widgets/trending-bluesky-news/README.md) - shows a list of trending news links from the [Trending News 2.0 Feed](https://bsky.app/profile/did:plc:kkf4naxqmweop7dv4l2iqqf5/feed/news-2-0) on Bluesky (by @tomcasavant)
 * [Trending GitHub Repositories](widgets/trending-github-repositories/README.md) - daily trending GitHub repositories (by @jelkuweiss)
