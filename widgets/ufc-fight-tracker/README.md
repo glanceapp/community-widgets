@@ -1,6 +1,10 @@
 # Preview
 ![UFC Fight Tracker Widget Preview](preview.png)
 
+# Notes
+- In the preview this widget was used in a column between two small side columns. All other configurations have not been tested.
+- No additional configuration is necessary for this widget.
+
 # YAML
 ```yaml
 - type: custom-api
