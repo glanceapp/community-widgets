@@ -5,6 +5,9 @@
 - In the preview this widget was used in a column between two small side columns. All other configurations have not been tested.
 - No additional configuration is necessary for this widget.
 
+# Update Frequency
+Every 10 minutes by default (can be changed).
+
 # YAML
 ```yaml
 - type: custom-api
