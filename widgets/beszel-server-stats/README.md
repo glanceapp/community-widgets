@@ -4,7 +4,7 @@ This widget mimics the style of the builtin
 [Server Stats](https://github.com/glanceapp/glance/blob/main/docs/configuration.md#server-stats)
 widget, but it pulls the data from a [Beszel](https://github.com/henrygd/beszel)
 instance instead. The collected data is about the same, but it means needing to
-run one less container if you already have beszel running to monitor your
+run one less container if you already have Beszel running to monitor your
 servers.
 
 If you encounter any issues, please open an issue, tag me, and I’ll investigate further.
@@ -27,17 +27,21 @@ Customisation can be applied using the `options:` field. See [Options](#options)
 >
 > For URLs, you **MUST** include `http://` or `https://`.
 > Do **NOT** include a trailing `/` at the end of URLs.
+>
+> For authentication use either your API token or your e-mail and password.
 
 * `BESZEL_URL` - The URL to your Beszel Hub instance, e.g., `http://<ip_address>:<port>` or `https://<domain>`
-* `BESZEL_TOKEN` - Your personal Beszel API Token.
+* `BESZEL_TOKEN` - Your Beszel API token.
+* `BESZEL_EMAIL` - Your Beszel e-mail.
+* `BESZEL_PASSWORD` - Your Beszel password.
 
-To setup Beszel API grabbing your token is required, to get it use a command
-below. Remember to replace `USERNAME`, `PASSWORD` and `IP:PORT`.
+To grab your Beszel API token, to use the command
+below. Remember to replace `<URL>`, `<EMAIL>` and `<PASSWORD>`.
 
 ```sh
-curl -X POST "http://IP:PORT/api/collections/users/auth-with-password" \
+curl -X POST "<URL>/api/collections/users/auth-with-password?fields=token" \
   -H "Content-Type: application/json" \
-  -d '{"identity":"USERNAME","password":"PASSWORD"}'
+  -d '{"identity":"<EMAIL>","password":"PASSWORD"}'
 ```
 
 ## Secrets
@@ -55,8 +59,14 @@ Default options are:
 ```yaml
 options:
   # Required options
-  base-url: ${BESZEL_URL}  # Your environment-variables for the URL
-  api-key: ${BESZEL_TOKEN} # Your environment-variables for the API token. Can be a secret as well `${secret:beszel-token}`
+  base-url: ${BESZEL_URL}      # Your environment variable for the URL.
+
+  # Required options for API token authentication
+  api-key: ${BESZEL_TOKEN}     # Your environment variable for the API token. Can be a secret as well `${secret:beszel-token}`
+
+  # Required options for email + password authentication
+  email: ${BESZEL_EMAIL}       # Your environment variable for the e-mail. Can be a secret as well `${secret:beszel-email}`
+  password: ${BESZEL_PASSWORD} # Your environment variable for the password. Can be a secret as well `${secret:beszel-password}`
 ```
 
 ## Widget YAML
@@ -67,12 +77,22 @@ options:
   cache: 5m
   options:
     base-url: ${BESZEL_URL}
+    # required for API token authentication
     api-key: ${BESZEL_TOKEN}
+    # required for e-mail + password authentication
+    # email: ${BESZEL_EMAIL}
+    # password: ${BESZEL_PASSWORD}
   template: |
     {{/* Required config options */}}
     {{ $baseURL := .Options.StringOr "base-url" "" }}
+
+    {{/* Required config options for API token authentication */}}
     {{ $apiKey := .Options.StringOr "api-key" "" }}
-  
+
+    {{/* Required config options for email + password authentication */}}
+    {{ $email := .Options.StringOr "email" "" }}
+    {{ $password := .Options.StringOr "password" "" }}
+
     {{/* Error message template */}}
     {{ define "errorMsg" }}
       <div class="widget-error-header">
@@ -83,7 +103,7 @@ options:
       </div>
       <p class="break-all">{{ . }}</p>
     {{ end }}
-  
+
     {{ define "formatGigabytes" }}
       {{ $value := . }}
       {{ $label := "GB" }}
@@ -97,23 +117,34 @@ options:
       {{ end }}
       {{ printf "%.1f" $value }} <span class="color-base size-h5">{{ $label }}</span>
     {{ end }}
-  
+
     {{/* Check required fields */}}
-    {{ if or (eq $baseURL "") (eq $apiKey "") }}
+    {{ if or (eq $baseURL "") (and (eq $apiKey "") (or (eq $email "") (eq $password ""))) }}
       {{ template "errorMsg" "Some required options are not set." }}
     {{ else }}
-  
-      {{ $token := concat "Bearer " $apiKey }}
-  
+
+      {{ $token := .}}
+      {{ if not (eq $apiKey "") }}
+        {{ $token = concat "Bearer " $apiKey }}
+      {{ else }}
+        {{ $authResponse := newRequest (print $baseURL "/api/collections/users/auth-with-password")
+            | withParameter "fields" "token"
+            | withHeader "Content-Type" "application/json"
+            | withStringBody (printf `{"identity": "%s", "password": "%s"}` $email $password)
+            | getResponse }}
+        {{ $jwtToken := $authResponse.JSON.String "token" }}
+        {{ $token = concat "Bearer " $jwtToken }}
+      {{ end }}
+
       {{ $systemsResponse := newRequest (print $baseURL "/api/collections/systems/records")
           | withHeader "Authorization" $token
           | getResponse }}
       {{ $systems := $systemsResponse.JSON.Array "items" }}
-  
-  
+
+
       {{ range $n, $system := $systems }}
         {{ $status := $system.String "status" }}
-  
+
         {{ $systemStatsRequest := newRequest (print $baseURL "/api/collections/system_stats/records")
             | withHeader "Authorization" $token
             | withParameter "sort" "-created"
@@ -121,48 +152,48 @@ options:
             | withParameter "perPage" "1"
             | withParameter "filter" (print "type='1m'&&system='" ($system.String "id") "'")
             | getResponse }}
-  
+
         {{ $systemStatItems := $systemStatsRequest.JSON.Array "items" }}
-  
+
         {{ $hostname := $system.String "name" }}
         {{ $uptimeSec := $system.Float "info.u" }}
-  
+
         {{ $systemTemp := $system.Float "info.dt"}}
-  
+
         {{ $cpuLoad := $system.Float "info.cpu" }}
         {{ $cpuLoad1m := $system.Float "info.l1" }}
         {{ $cpuLoad15m := $system.Float "info.l15" }}
-  
+
         {{ $memoryUsedPercent := $system.Float "info.mp" }}
-  
+
         {{ $rootUsedPercent := $system.Float "info.dp" }}
-  
+
         {{ $hasStats := false }}
         {{ $systemStats := "" }}
-  
+
         {{ $memoryTotalGb := 0.0 }}
         {{ $memoryUsedGb := 0.0 }}
-        {{ $swapTotalGb := 0.0 }} 
+        {{ $swapTotalGb := 0.0 }}
         {{ $swapUsedGb := 0.0 }}
         {{ $swapUsedPercent := 0.0 }}
         {{ $rootTotalGb := 0.0 }}
         {{ $rootUsedGb := 0.0 }}
-  
+
         {{ if gt (len $systemStatItems) 0 }}
           {{ $hasStats = true }}
           {{ $systemStats = index $systemStatItems 0 }}
-  
+
           {{ $memoryTotalGb = $systemStats.Float "stats.m" }}
           {{ $memoryUsedGb = $systemStats.Float "stats.mu" }}
-  
+
           {{ $swapTotalGb = $systemStats.Float "stats.s" }}
           {{ $swapUsedGb = $systemStats.Float "stats.su" }}
           {{ $swapUsedPercent = mul (div $swapUsedGb $swapTotalGb) 100.0 }}
-  
+
           {{ $rootTotalGb = $systemStats.Float "stats.d" }}
           {{ $rootUsedGb = $systemStats.Float "stats.du" }}
         {{ end }}
-  
+
         <div class="server">
           <div class="server-info">
             <div class="server-details">
@@ -195,7 +226,7 @@ options:
               </svg>
             </div>
           </div>
-  
+
           <div class="server-stats">
             <div class="flex-1">
               <div class="flex items-end size-h5">
@@ -225,14 +256,14 @@ options:
                     <div class="color-highlight text-very-compact">{{ printf "%.1f" $systemTemp }} <span class="color-base size-h5">°</span></div>
                   </div>
                 </div>
-  
+
                 <div class="progress-bar progress-bar-combined">
                   <div class="progress-value{{ if ge $cpuLoad1m 85.0 }} progress-value-notice{{ end }}" style="--percent: {{ $cpuLoad1m }}"></div>
                   <div class="progress-value{{ if ge $cpuLoad15m 85.0 }} progress-value-notice{{ end }}" style="--percent: {{ $cpuLoad15m }}"></div>
                 </div>
               </div>
             </div>
-  
+
             <div class="flex-1">
               <div class="flex justify-between items-end size-h5">
                 <div>RAM</div>
@@ -247,7 +278,7 @@ options:
                     <div class="color-highlight text-very-compact">
                       {{ template "formatGigabytes" $memoryUsedGb }} <span class="color-base size-h5">/</span> {{ template "formatGigabytes" $memoryTotalGb }}
                     </div>
-                  </div> 
+                  </div>
                   {{- if gt $swapTotalGb 0.0 }}
                   <div class="flex margin-top-3">
                     <div class="size-h5">SWAP</div>
@@ -267,7 +298,7 @@ options:
                 </div>
               </div>
             </div>
-  
+
             <div class="flex-1">
               <div class="flex justify-between items-end size-h5">
                 <div>DISK</div>
@@ -305,7 +336,7 @@ options:
                 </div>
               </div>
             </div>
-  
+
           </div>
         </div>
       {{ end }}
