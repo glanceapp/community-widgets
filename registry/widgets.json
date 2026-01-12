@@ -342,6 +342,15 @@
     "time_updated": "2025-09-25T04:55:13.926791401Z"
   },
   {
+    "title": "Immich Styled Stats",
+    "description": "Immich styled statistics taken straight out of the app. Beautiful, simple and useful.",
+    "author": "panonim",
+    "directory": "immich-styled",
+    "readme_hash": "136d64343460239446b2053704dc2f5b0961c684",
+    "time_added": "2026-01-12T19:29:53.346589505Z",
+    "time_updated": "2026-01-12T19:29:53.346589635Z"
+  },
+  {
     "title": "Immich stats",
     "description": "show the number of photos, videos and usage of your Immich server",
     "author": "svilenmarkov",
