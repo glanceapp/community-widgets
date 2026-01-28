@@ -47,3 +47,8 @@
   url: https://github.com/Xtrems876/glance-transmission
   description: Show Transmission downloads
   author: Xtrems876
+
+- title: Lichess Daily Puzzle
+  url: https://github.com/brtmax/lichess-glance
+  description: Daily Lichess Puzzle
+  author: brtmax
