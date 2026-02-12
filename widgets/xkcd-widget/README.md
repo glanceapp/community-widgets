@@ -15,6 +15,6 @@ Simple custom-api widget to display current xkcd comic
     >
       {{ .JSON.String "title" }}
     </a>
-    <img src="{{ .JSON.String "img" }}"></img>
+    <img src="{{ .JSON.String "img" }}" title="{{ .JSON.String "alt" }}"></img>
 ```
 <img src="preview.png">
