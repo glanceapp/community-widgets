@@ -5,4 +5,4 @@ Lists all servers in your Discopanel host. At current the functionality of this 
 `DISCOPANEL_HOST` = URL/IP of Discopanel host. Requires http/https prefix. 
 
 # Preview
-<img width="926" height="677" alt="Preview Image" src="https://github.com/user-attachments/assets/9d48a913-7324-4409-888d-551f2d54a603"/>
+<img width="926" height="677" alt="Preview Image" src="preview.png"/>
