@@ -1,5 +1,5 @@
 # Discopanel Widget
-Lists all servers in your Discopanel host. At current the functionality of this widget does not require authentication even when auth on the host is enabled. When Discopanel 2.0.0 releases this may change. Server icon functionality requires using a url for the picture. These can be obtained from the curseforge or modrinth page directly. I imagine that using direct file paths would also work, you just might have to adjust how the picture file path is read in glance.
+Lists all servers in your Discopanel host. Server icon functionality requires using a url for the picture. These can be obtained from the curseforge or modrinth page directly. I imagine that using direct file paths would also work, you just might have to adjust how the picture file path is read in glance.
 
 # Environment Variables
 `DISCOPANEL_HOST` = URL/IP of Discopanel host. Requires http/https prefix. 
@@ -12,7 +12,7 @@ Lists all servers in your Discopanel host. At current the functionality of this 
 - type: custom-api
   title: Discopanel
   cache: 30s
-  url: ${DISCOPANEL_HOST}/discopanel.v1.ServerService/ListServers
+  url: ${DISCOPANEL_HOST}/discopanel.v1.AuthService/Login
   headers:
     Connect-Protocol-Version: 1
     Connect-Timeout-Ms: 2000
@@ -20,13 +20,28 @@ Lists all servers in your Discopanel host. At current the functionality of this 
   method: POST
   body-type: json
   body:
-    fullStats: true
+    username: $(DISCOPANEL_USERNAME)
+    password: $(DISCOPANEL_PASS)
   skip-json-validation: true
   template: |
-    {{ range .JSON.Array "servers" }}
-      {{ $mem_usage := .Float "memoryUsage" }}
+    {{ $token := .JSON.String "0.token" }}
+    <p>{{ $token }}</p>
+
+    {{ $serverList := newRequest "${DISCOPANEL_HOST}/discopanel.v1.ServerService/ListServers"
+        | withHeader "Connect-Protocol-Version" "1"
+        | withHeader "Connect-Timeout-Ms" "2000"
+        | withHeader "Content-Type" "application/json"
+        | withHeader "Authorization" (printf `{"Bearer %s"}` $token)
+        | withStringBody (printf `{"fullStats": true}`)
+        | getResponse
+    }}
+
+    {{ range $serverList.JSON.Array "servers" }}
+      {{ $mem_usage := .Int "memoryUsage" }}
+      {{ $mem_total := .Int "memory" }}
       {{ $cpu := .Float "cpuPercent" }}
       {{ $players := .Int "playersOnline" }}
+      {{ $max_players := .Int "maxPlayers" }}
       {{ $tps := .Float "tps" }}
       {{ $id := .String "id" }}
       {{ $status := .String "status" }}
@@ -35,6 +50,7 @@ Lists all servers in your Discopanel host. At current the functionality of this 
         | withHeader "Connect-Protocol-Version" "1"
         | withHeader "Connect-Timeout-Ms" "2000"
         | withHeader "Content-Type" "application/json"
+        | withHeader "Authorization" (printf `{"Bearer %s"}` $token)
         | withStringBody (printf `{"serverId": %q}` $id)
         | getResponse
       }}
@@ -54,9 +70,9 @@ Lists all servers in your Discopanel host. At current the functionality of this 
             {{ end }}
             <p class="size-h5">{{ .String "description" }}</p>
             <div class="size-h6">
-              <span>Memory: {{ formatNumber $mem_usage }}MB</span>
+              <span>Memory: {{ formatNumber $mem_usage }}/{{ formatNumber $mem_total }} MB</span>
               <span>CPU: {{ printf "%.2f" $cpu }}%</span>
-              <span>Players: {{ $players }}</span>
+              <span>Players: {{ $players }}/{{ $max_players }}</span>
               <span>TPS: {{ $tps }}/20</span>
             </div>
           </div>
