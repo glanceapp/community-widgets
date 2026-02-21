@@ -18,6 +18,15 @@
     "time_updated": "2025-09-25T04:55:13.925560491Z"
   },
   {
+    "title": "Algal Bloom Update",
+    "description": "Displays the South Australian beach conditions based on api from Beachsafe",
+    "author": "stonkage",
+    "directory": "algal-bloom-update",
+    "readme_hash": "e1c8b48e033454f2e2e0af94e3745677595144ee",
+    "time_added": "2025-12-05T12:48:59.960599067Z",
+    "time_updated": "2025-12-05T12:48:59.960599167Z"
+  },
+  {
     "title": "Animals Display",
     "description": "Display random images of animals such as cats or dogs.",
     "author": "panonim",
@@ -31,9 +40,9 @@
     "description": "Show upcoming, recently downloaded, or missing items from Sonarr, Radarr, or Lidarr",
     "author": "erkston",
     "directory": "arr-releases",
-    "readme_hash": "4719bbd0470683ff3bfe2b87d53b01b2810da6e7",
+    "readme_hash": "563f8ded5d23b834cb2656390698b66a5bbe22bf",
     "time_added": "2025-05-18T17:42:55.8334Z",
-    "time_updated": "2025-09-25T04:55:13.925653665Z"
+    "time_updated": "2025-10-17T15:22:33.566996216Z"
   },
   {
     "title": "Astronomy Picture of the Day",
@@ -94,9 +103,9 @@
     "description": "Server Stats widget matching the builtin widget but using data from Beszel.",
     "author": "Nedra1998",
     "directory": "beszel-server-stats",
-    "readme_hash": "7298c0ed456526587ac8b98b35f748df2ad73531",
+    "readme_hash": "b2c7226dd354fa2b8b28086905b554f4f3015122",
     "time_added": "2025-10-02T20:57:52.804627383Z",
-    "time_updated": "2025-10-02T20:57:52.804627514Z"
+    "time_updated": "2025-11-29T19:04:49.314743585Z"
   },
   {
     "title": "Calibre-Web Stats",
@@ -139,9 +148,9 @@
     "description": "show the status of Minecraft server managed by Crafty Controller",
     "author": "MartyX98",
     "directory": "crafty-controller-minecraft-server",
-    "readme_hash": "2e3854d9fc413e2845ed474f41185322953cd8ab",
+    "readme_hash": "60a54ba1497f60f0031c84313e5cdc178bb1042d",
     "time_added": "2025-08-16T18:10:24.2213Z",
-    "time_updated": "2025-09-25T04:55:13.926064823Z"
+    "time_updated": "2025-11-04T21:32:36.750473688Z"
   },
   {
     "title": "Cryptopanic News",
@@ -162,6 +171,33 @@
     "time_updated": "2025-09-25T04:55:13.926307988Z"
   },
   {
+    "title": "Docker Swarm",
+    "description": "A widget to monitor Docker Swarm services and nodes based on the built-in docker-containers widget.",
+    "author": "tonineri",
+    "directory": "docker-swarm",
+    "readme_hash": "762494230e3a10596271cdb4b4d347b51aa4c5c5",
+    "time_added": "2025-11-02T18:02:34.89233233Z",
+    "time_updated": "2025-11-02T18:02:34.89233242Z"
+  },
+  {
+    "title": "Duolingo Stats",
+    "description": "Show your Duolingo stats in glance.",
+    "author": "RealTong",
+    "directory": "duolingo-stats",
+    "readme_hash": "c537ee6e19fa80ed6757a2db0bbe8a061dbf0734",
+    "time_added": "2025-11-18T04:02:36.948642562Z",
+    "time_updated": "2025-11-18T04:02:36.948642662Z"
+  },
+  {
+    "title": "ESPN Live Football Scores Widget",
+    "description": "A custom widget that displays live, upcoming, and finished football (soccer) scores using the **ESPN Scoreboard API**.",
+    "author": "Beyeshooter",
+    "directory": "football-livescore",
+    "readme_hash": "9134c541c9dd3cff337c9b5ce0fc6496f9309d59",
+    "time_added": "2025-12-05T12:33:13.818404418Z",
+    "time_updated": "2025-12-05T12:33:13.818404518Z"
+  },
+  {
     "title": "Epic Games Free Games",
     "description": "Display currently free games from the Epic Games Store with promotional images and availability periods.",
     "author": "marocainperdu",
@@ -175,9 +211,18 @@
     "description": "show the last match and the next match of your favourite football team using football-data api",
     "author": "cristiandiiorio",
     "directory": "football-fixtures",
-    "readme_hash": "43e27e946ee494ae54af05668c3f3e7332ad467d",
+    "readme_hash": "0e183fbab4a315a3f3149b75daab7bcce99e7054",
     "time_added": "2025-04-26T11:55:16.706Z",
-    "time_updated": "2025-09-25T04:55:13.926418023Z"
+    "time_updated": "2025-12-05T12:24:39.637706671Z"
+  },
+  {
+    "title": "Football League Table",
+    "description": "Shows the current standings of the selected league using football-data api",
+    "author": "nicl-dev",
+    "directory": "football-league-table",
+    "readme_hash": "b3f7eb4d5279d2fab572a8a699c64420f6b9a5b1",
+    "time_added": "2025-11-18T03:57:58.747648105Z",
+    "time_updated": "2025-11-18T03:57:58.747648215Z"
   },
   {
     "title": "Forgejo repos",
@@ -270,6 +315,15 @@
     "time_updated": "2025-09-25T04:55:13.926714858Z"
   },
   {
+    "title": "Grafana",
+    "description": "Useful information and metrics from a Grafana data source (like prometheus, mimir, loki)",
+    "author": "koalalorenzo",
+    "directory": "grafana",
+    "readme_hash": "9f43d31c18b20e9c0044f4f01ada5016ddce1f03",
+    "time_added": "2025-10-20T17:05:55.578826114Z",
+    "time_updated": "2025-10-20T17:05:55.578826244Z"
+  },
+  {
     "title": "Hardcover Currently Reading",
     "description": "show the currently reading book from [Hardcover](https://hardcover.app/)",
     "author": "Akasiek",
@@ -292,9 +346,9 @@
     "description": "show the number of photos, videos and usage of your Immich server",
     "author": "svilenmarkov",
     "directory": "immich-stats",
-    "readme_hash": "838d81a8cb0064a634961378d59bc143d0d88067",
+    "readme_hash": "9aa97490166ef8fc198d0ae633fe12c3861b9270",
     "time_added": "2025-03-10T00:19:08.8095Z",
-    "time_updated": "2025-09-25T04:55:13.9268283Z"
+    "time_updated": "2025-12-05T12:44:15.122496391Z"
   },
   {
     "title": "Jellyfin Latest/Next Up",
@@ -333,6 +387,15 @@
     "time_updated": "2025-09-25T04:55:13.926995713Z"
   },
   {
+    "title": "Komga Recently Added Series",
+    "description": "displays recently added comic/manga series to a defined Komga library",
+    "author": "VictorMitr",
+    "directory": "komga-latest",
+    "readme_hash": "32307e4181628d3d4e7f71b288e2864e621c969c",
+    "time_added": "2025-11-02T18:08:42.452042133Z",
+    "time_updated": "2025-12-05T12:59:46.062350028Z"
+  },
+  {
     "title": "Komodo Container Manager Monitor",
     "description": "At-a-glance view of stacks and servers managed by Komodo",
     "author": "stunt-and-gimmicks-alex",
@@ -369,6 +432,15 @@
     "time_updated": "2025-09-25T04:55:13.927062177Z"
   },
   {
+    "title": "Lemmy",
+    "description": "Displays the latest posts from any Lemmy community inside Glance.  It uses the public Lemmy API to fetch posts from a given community and shows the post title, score, comment count, and time since publication",
+    "author": "stonkage",
+    "directory": "lemmy",
+    "readme_hash": "a86e83b15526b00448e92297b3db06db3e2163e8",
+    "time_added": "2025-10-20T17:04:50.057283702Z",
+    "time_updated": "2025-10-20T17:04:50.057283833Z"
+  },
+  {
     "title": "Linkwarden Latest Bookmarks",
     "description": "show the latest bookmarks from your Linkwarden instance",
     "author": "josevictorferreira",
@@ -376,6 +448,15 @@
     "readme_hash": "bea8e4abbc1578d9eb9377c685d25870c7fda03b",
     "time_added": "2025-09-13T13:26:08.5846Z",
     "time_updated": "2025-09-25T04:55:13.927094678Z"
+  },
+  {
+    "title": "ListenBrainz Listen",
+    "description": "show the latest listen for a ListenBrainz user",
+    "author": "zliebersbach",
+    "directory": "listenbrainz-latest",
+    "readme_hash": "ea10218cac1a274da15b5246e9559e3e634ddfaa",
+    "time_added": "2025-11-02T18:09:22.423244558Z",
+    "time_updated": "2025-12-05T12:49:36.851359732Z"
   },
   {
     "title": "London Tube Status",
@@ -423,13 +504,22 @@
     "time_updated": "2025-09-25T04:55:13.927276106Z"
   },
   {
+    "title": "MediaTracker Upcoming Media",
+    "description": "displays upcoming TV shows, movies or video games monitored by MediaTracker",
+    "author": "VictorMitr",
+    "directory": "mediatracker-upcoming-tv-shows",
+    "readme_hash": "3a02de13f15790582eb2bdab45c35a4d42adce64",
+    "time_added": "2025-12-05T12:59:46.062993668Z",
+    "time_updated": "2025-12-05T12:59:46.062993778Z"
+  },
+  {
     "title": "Minecraft server",
-    "description": "show online status, icon, version and player count of a minecraft server",
+    "description": "show the online status, icon, version and player count of a Minecraft server",
     "author": "not-first",
     "directory": "minecraft-server",
-    "readme_hash": "8dd99d762b5b746990fc58b11988323db1fa9d0d",
+    "readme_hash": "ee8e29939588c4f4ef6efa68a40dff733a5e44ff",
     "time_added": "2025-03-22T11:49:20.1508Z",
-    "time_updated": "2025-09-25T04:55:13.927312274Z"
+    "time_updated": "2025-12-05T12:42:34.63815625Z"
   },
   {
     "title": "Mullvad VPN status",
@@ -439,6 +529,15 @@
     "readme_hash": "069cdca97cb8fef80d3a400a67d6ce9255787658",
     "time_added": "2025-04-06T17:37:46.3602Z",
     "time_updated": "2025-09-25T04:55:13.927411479Z"
+  },
+  {
+    "title": "MyanimeList Widgets",
+    "description": "Show seasonal anime (more Widgets coming soon)",
+    "author": "Zephyr73",
+    "directory": "myanimelist-widgets",
+    "readme_hash": "01c586094513e5d6d287077048cbb4c5148c2309",
+    "time_added": "2025-12-05T12:57:34.011268649Z",
+    "time_updated": "2025-12-05T12:57:34.011268759Z"
   },
   {
     "title": "NBA Scores Tracker",
@@ -531,6 +630,24 @@
     "time_updated": "2025-09-25T04:55:13.92764731Z"
   },
   {
+    "title": "Nginx Proxy Manager",
+    "description": "Shows a summary of Nginx Proxy Configration and host links",
+    "author": "saif191020",
+    "directory": "nginx-proxy-manager",
+    "readme_hash": "b97828b2feaba5688f483fb2e7f8e425773437d6",
+    "time_added": "2025-10-26T14:32:21.693745723Z",
+    "time_updated": "2025-10-26T14:32:21.693745816Z"
+  },
+  {
+    "title": "Overseerr Requests Stats",
+    "description": "Shows the requests count grouped by media types and status",
+    "author": "GiamBoscaro",
+    "directory": "overseerr-requests-stats",
+    "readme_hash": "bebe5b3231d32c61c54e0e553a3180e5bd7cccba",
+    "time_added": "2025-12-05T12:33:13.82060035Z",
+    "time_updated": "2025-12-05T12:33:13.82060045Z"
+  },
+  {
     "title": "Overseerr Trending/Discovery",
     "description": "Shows trending media along with Overseerr recommendations for movies/tv",
     "author": "flamechair",
@@ -538,6 +655,15 @@
     "readme_hash": "f4748bcb9f3c79e18e3b7a68406e1ec1a67c7cb7",
     "time_added": "2025-06-04T02:40:43.805Z",
     "time_updated": "2025-09-25T04:55:13.927841814Z"
+  },
+  {
+    "title": "PagerDuty Incidents",
+    "description": "Shows the latest incidents from PagerDuty",
+    "author": "koalalorenzo",
+    "directory": "pagerduty-incidents",
+    "readme_hash": "ffa2ac3cf3fa2ee9528ea77938271280d3a7f147",
+    "time_added": "2025-10-16T15:27:55.739801576Z",
+    "time_updated": "2025-10-16T15:27:55.739801706Z"
   },
   {
     "title": "Paperless NGX Stats",
@@ -549,6 +675,15 @@
     "time_updated": "2025-09-25T04:55:13.927884413Z"
   },
   {
+    "title": "Papra Stats",
+    "description": "Shows stats from your Papra application.",
+    "author": "Saisamarth21",
+    "directory": "papra-stats",
+    "readme_hash": "0910416455a5f761eb6f3abeeaaf6e4fdbcd956f",
+    "time_added": "2025-10-30T06:40:44.872560575Z",
+    "time_updated": "2025-10-30T06:40:44.872560705Z"
+  },
+  {
     "title": "PeaNut UPS Stats",
     "description": "Returns statistics from PeaNut to Monitor UPS",
     "author": "razdnut",
@@ -558,6 +693,15 @@
     "time_updated": "2025-09-25T04:55:13.92792041Z"
   },
   {
+    "title": "Portainer Dashboard",
+    "description": "show docker containers from portainer.",
+    "author": "RealTong",
+    "directory": "portainer-dashboard",
+    "readme_hash": "414bcc13133f642196c4844a5d0538293fe92cf2",
+    "time_added": "2025-12-05T12:36:52.867581625Z",
+    "time_updated": "2025-12-05T12:36:52.867581742Z"
+  },
+  {
     "title": "Prowlarr Indexers",
     "description": "show list of indexers from prowlarr.",
     "author": "mattiasghodsian",
@@ -565,6 +709,15 @@
     "readme_hash": "0d647b2bd202ed0ee23a564549584accf3084970",
     "time_added": "2025-08-01T16:14:37.4533Z",
     "time_updated": "2025-09-25T04:55:13.927965615Z"
+  },
+  {
+    "title": "Proxmox Backup Server Stats",
+    "description": "Shows Ressources, Datastore Usage and Last 3 Backup Jobs per VM",
+    "author": "danielweeber",
+    "directory": "proxmox-backup-server-stats",
+    "readme_hash": "7d721b82be11547d1996e058f6290c712f0e11a6",
+    "time_added": "2025-10-26T14:30:10.086423476Z",
+    "time_updated": "2025-10-26T14:30:10.086423606Z"
   },
   {
     "title": "Proxmox VE Nodes",
@@ -589,9 +742,9 @@
     "description": "show a table with CPU, RAM and Disk usage of your Proxmox VE server",
     "author": "lfvelosoh",
     "directory": "proxmox-detailed-resources",
-    "readme_hash": "927b2b60c1fdd995e67997874c372d2cc4b75b09",
+    "readme_hash": "3dbaf7fb752968cb6dafaa6759dd3b7b2eb2030e",
     "time_added": "2025-06-13T12:41:45.1472Z",
-    "time_updated": "2025-09-25T04:55:13.928003025Z"
+    "time_updated": "2025-11-01T20:20:59.907944977Z"
   },
   {
     "title": "Raindrop Bookmarks",
@@ -643,9 +796,9 @@
     "description": "show SABnzbd status",
     "author": "Neo11Neo",
     "directory": "sabnzbd-stats",
-    "readme_hash": "b007ae8fbe22233554a1295d4bac42df92898d5a",
+    "readme_hash": "e019c64c34874ec17757027eba33164c854d0131",
     "time_added": "2025-03-27T11:09:13.1585Z",
-    "time_updated": "2025-09-25T04:55:13.928341658Z"
+    "time_updated": "2025-10-16T15:00:48.419767477Z"
   },
   {
     "title": "Scrutiny",
@@ -675,8 +828,8 @@
     "time_updated": "2025-09-25T04:55:13.928443879Z"
   },
   {
-    "title": "Speedtest tracker",
-    "description": "show the latest internet speed information from speedtest tracker",
+    "title": "Speedtest Tracker",
+    "description": "show the latest internet speed information from Speedtest Tracker",
     "author": "not-first",
     "directory": "speedtest-tracker",
     "readme_hash": "4c8f55aea8d217de708f992c85a5dfe68cfd0ba4",
@@ -720,6 +873,15 @@
     "time_updated": "2025-09-25T04:55:13.928640967Z"
   },
   {
+    "title": "Steam Top Sellers",
+    "description": "Show steam global top seller",
+    "author": "GuiguiBlitz",
+    "directory": "steam-top-sellers",
+    "readme_hash": "cdf045f48f41788475509f5b5fc46d89bf635ced",
+    "time_added": "2025-11-02T18:10:09.604703492Z",
+    "time_updated": "2025-11-02T18:11:15.98707669Z"
+  },
+  {
     "title": "Steam User",
     "description": "show information about a Steam user",
     "author": "lunnosmp4",
@@ -727,6 +889,15 @@
     "readme_hash": "05e7f32c4700ff46053e351e4b50de6cbd118926",
     "time_added": "2025-03-18T23:12:39.266Z",
     "time_updated": "2025-09-25T04:55:13.928703814Z"
+  },
+  {
+    "title": "Steam User List",
+    "description": "Display some information about steam users/friends",
+    "author": "maplefluff",
+    "directory": "steam-user-list",
+    "readme_hash": "c5052a66c5ab0a757b1325825530a7301d86da14",
+    "time_added": "2025-12-05T12:33:13.821811151Z",
+    "time_updated": "2025-12-05T12:33:13.821811241Z"
   },
   {
     "title": "Steam specials",
@@ -757,12 +928,12 @@
   },
   {
     "title": "Tailscale devices",
-    "description": "show all devices inside to a Tailscale tailnet along with their connection status, update availability and IP",
+    "description": "show all devices inside a Tailscale tailnet along with their connection status, owner, update availability and IP",
     "author": "not-first",
     "directory": "tailscale-devices",
-    "readme_hash": "7251a3c9234d332bdd059f8c66f936d06c7f8531",
+    "readme_hash": "67e9c76a9926c44b0100ccb909aed076d6f7485a",
     "time_added": "2025-03-15T14:38:23.8165Z",
-    "time_updated": "2025-09-25T04:55:13.928776661Z"
+    "time_updated": "2025-12-05T12:42:55.259179823Z"
   },
   {
     "title": "Tautulli Stats",
@@ -837,6 +1008,15 @@
     "time_updated": "2025-09-25T04:55:13.929100526Z"
   },
   {
+    "title": "Tsumego Daily",
+    "description": "Shows daily Go Problems (Tsumego) from goproblems.com",
+    "author": "ccarpo",
+    "directory": "tsumego-daily",
+    "readme_hash": "a14b9f54d0518cc62ce5e0b453cfb1545dc49dc0",
+    "time_added": "2025-12-05T12:33:47.836005011Z",
+    "time_updated": "2025-12-05T12:33:47.836005151Z"
+  },
+  {
     "title": "Unifi",
     "description": "Unifi controller information",
     "author": "prozn",
@@ -847,12 +1027,12 @@
   },
   {
     "title": "Uptime Kuma",
-    "description": "show the status of Uptime Kuma services",
+    "description": "show the status of Uptime Kuma monitors from a status page",
     "author": "not-first",
     "directory": "uptime-kuma",
-    "readme_hash": "3086eb033c0f2bc202d127c27b1deab1de6e4cc0",
+    "readme_hash": "3b8fba6bbf42d014687cc177e24e2f05bd0188a8",
     "time_added": "2025-03-28T21:05:37.6918Z",
-    "time_updated": "2025-09-25T04:55:13.929185264Z"
+    "time_updated": "2025-12-05T12:42:34.640695673Z"
   },
   {
     "title": "Vikunja Taskboard",
@@ -862,6 +1042,15 @@
     "readme_hash": "b1d7892f374a60a64e4fe3c2d5dff0386c7d3041",
     "time_added": "2025-03-27T12:41:13.3742Z",
     "time_updated": "2025-09-25T04:55:13.92922609Z"
+  },
+  {
+    "title": "WG-Easy Enabled Clients",
+    "description": "Shows enabled and disabled clients from WG-Easy Web Interface",
+    "author": "lmriccardo",
+    "directory": "wg-easy-clients",
+    "readme_hash": "15ea759212bb3af341fd6c08ab0b8160c191047d",
+    "time_added": "2025-11-18T04:03:16.893923179Z",
+    "time_updated": "2025-11-18T04:03:16.893923289Z"
   },
   {
     "title": "Weather Seven Day",
@@ -898,5 +1087,14 @@
     "readme_hash": "4357fc874d2c974a8b5252608d300fc666515bb0",
     "time_added": "2025-08-19T20:06:23.4484Z",
     "time_updated": "2025-09-25T04:55:13.928119062Z"
+  },
+  {
+    "title": "xkcd Widget",
+    "description": "A custom simple widget that displays current xkcd comic",
+    "author": "AllanAAbraham",
+    "directory": "xkcd-widget",
+    "readme_hash": "22ed3048f8a5c67762d2f01333b29c84fd0c172e",
+    "time_added": "2025-12-05T12:27:28.678735802Z",
+    "time_updated": "2025-12-05T12:27:28.678735932Z"
   }
 ]

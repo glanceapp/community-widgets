@@ -221,11 +221,14 @@ func loadMetaFileForWidget(widgetDir string) {
 			log.Fatalf("Failed to read widget directory %s: %v", widgetDir, err)
 		}
 
+	fileLoop:
 		for _, file := range files {
 			name := strings.ToLower(file.Name())
-			if strings.HasSuffix(name, ".png") || strings.HasSuffix(name, ".jpg") || strings.HasSuffix(name, ".jpeg") {
-				preview = file.Name()
-				break
+			for _, ext := range []string{".png", ".jpg", ".jpeg", ".gif", ".webp"} {
+				if strings.HasSuffix(name, ext) {
+					preview = file.Name()
+					break fileLoop
+				}
 			}
 		}
 	} else if err != nil {

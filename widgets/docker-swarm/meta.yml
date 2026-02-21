@@ -1,0 +1,3 @@
+title: Docker Swarm
+description: A widget to monitor Docker Swarm services and nodes based on the built-in docker-containers widget.
+author: tonineri
