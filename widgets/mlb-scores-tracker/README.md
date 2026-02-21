@@ -99,7 +99,8 @@
       {{ $seriesLabel     := .String "description" }}
       {{ $seriesGame      := .Int    "seriesGameNumber" }}
       {{ $isRegularSeries := or (eq $seriesDesc "Regular Season") (eq $seriesDesc "Regular Season 1") (eq $seriesDesc "Regular Season 2") (eq $seriesDesc "Regular Season 3") (eq $seriesDesc "Regular Season 4") }}
-      {{ $isPlayoffSeries := and (ne $seriesDesc "") (not $isRegularSeries) }}
+      {{ $isSpringTraining := eq $seriesDesc "Spring Training" }}
+      {{ $isPlayoffSeries := and (ne $seriesDesc "") (not $isRegularSeries) (not $isSpringTraining) }}
       {{/* offense & base occupancy */}}
       {{ $r1        := .Exists "linescore.offense.first" }}
       {{ $r2        := .Exists "linescore.offense.second" }}
@@ -136,7 +137,7 @@
               </svg>
             {{ end }}
           </span>
-        <span style="text-align:center;width:90px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;font-size:0.9em;white-space:nowrap;">
+        <span style="text-align:center;width:{{ if $isSpringTraining }}105px{{ else }}90px{{ end }};display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;font-size:0.9em;white-space:nowrap;">
           {{ if eq $abs "Preview" }}
             {{ $gameTime := (.String "gameDate" | parseTime "2006-01-02T15:04:05Z").In now.Location }}
             <span style="color:var(--glance-muted-text)">{{ printf "%02d:%02d" $gameTime.Hour $gameTime.Minute }}</span>
@@ -148,7 +149,7 @@
             <span>{{ $detailed }}</span>
           {{ end }}
           {{ if $isPlayoffSeries }}
-            <span style="font-size:0.9em;color:var(--glance-accent-color);margin-top:0;">
+            <span style="font-size:0.9em;color:var(--glance-accent-color);margin-top:0;white-space:nowrap;">
               {{ if $seriesLabel }}
                 {{ $seriesLabel }}
               {{ else if gt $seriesGame 0 }}
@@ -157,6 +158,9 @@
                 {{ $seriesDesc }}
               {{ end }}
             </span>
+          {{ end }}
+          {{ if $isSpringTraining }}
+            <span style="font-size:0.72em;color:var(--glance-muted-text);margin-top:1px;letter-spacing:0.03em;">Spring Training</span>
           {{ end }}
         </span>
           <span style="display:flex;align-items:center;width:80px;justify-content:flex-end;white-space:nowrap;">
