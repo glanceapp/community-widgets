@@ -279,6 +279,15 @@
     "time_updated": "2025-09-25T04:55:13.926573624Z"
   },
   {
+    "title": "GitHub Actions Status",
+    "description": "Displays the status of GitHub Actions workflows for a repository",
+    "author": "unickq",
+    "directory": "github-actions-status",
+    "readme_hash": "af24309f1d641f57938a422e1b2c365866619d89",
+    "time_added": "2026-02-25T19:05:45.045910562Z",
+    "time_updated": "2026-02-25T19:05:45.045910692Z"
+  },
+  {
     "title": "GitHub Notifications",
     "description": "show your notifications on GitHub",
     "author": "luboszima",

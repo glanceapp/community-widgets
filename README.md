@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [GitHub Actions Status](widgets/github-actions-status/README.md) - displays the status of GitHub Actions workflows for a repository (by @unickq)
 * [Overseerr Users Requests](widgets/overseerr-users-requests/README.md) - shows the list of users and their number of request made in Overseerr (by @GiamBoscaro)
 * [ufc-fight-tracker](widgets/ufc-fight-tracker/README.md) - shows a preview of upcoming events in the UFC using the ESPN API (by @xZinio)
 * [MediaTracker Upcoming Media](widgets/mediatracker-upcoming-tv-shows/README.md) - displays upcoming TV shows, movies or video games monitored by MediaTracker (by @VictorMitr)
 * [MyanimeList Widgets](widgets/myanimelist-widgets/README.md) - show seasonal anime (more Widgets coming soon) (by @Zephyr73)
-* [Algal Bloom Update](widgets/algal-bloom-update/README.md) - displays the South Australian beach conditions based on api from Beachsafe (by @stonkage)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -55,6 +55,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Gatus](widgets/gatus/README.md) - show uptime statistics and monitoring data from your Gatus instance (by @Jack-Overflow)
 * [Gatus Monitor](widgets/gatus-monitor/README.md) - site monitor widget using Gatus for backend data (by @Nedra1998)
 * [Ghostfolio stats](widgets/ghostfolio-stats/README.md) - show the status of your investments with today's results, YTD and totals (by @ziritione85)
+* [GitHub Actions Status](widgets/github-actions-status/README.md) - displays the status of GitHub Actions workflows for a repository (by @unickq)
 * [GitHub Notifications](widgets/github-notifications/README.md) - show your notifications on GitHub (by @luboszima)
 * [GitHub personal repositories](widgets/github-personal-repos/README.md) - show your own personal respositories on GitHub (by @menitz)
 * [Gluetun VPN status](widgets/gluetun-vpn-status/README.md) - show the public IP, country and city of you [Gluetun VPN client](https://github.com/qdm12/gluetun) (by @Hyptu)
