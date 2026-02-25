@@ -1089,6 +1089,15 @@
     "time_updated": "2025-09-25T04:55:13.928119062Z"
   },
   {
+    "title": "ufc-fight-tracker",
+    "description": "Shows a preview of upcoming events in the UFC using the ESPN API.",
+    "author": "xZinio",
+    "directory": "ufc-fight-tracker",
+    "readme_hash": "975f3efa99a2bbde03945c6e77b9252f03c8a35f",
+    "time_added": "2026-02-25T18:53:50.624465852Z",
+    "time_updated": "2026-02-25T18:53:50.624465982Z"
+  },
+  {
     "title": "xkcd Widget",
     "description": "A custom simple widget that displays current xkcd comic",
     "author": "AllanAAbraham",
