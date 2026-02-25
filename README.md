@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
-* [Immich Styled Stats](widgets/immich-styled/README.md) - immich styled statistics taken straight out of the app. Beautiful, simple and useful (by @panonim)
 * [MediaTracker Upcoming Media](widgets/mediatracker-upcoming-tv-shows/README.md) - displays upcoming TV shows, movies or video games monitored by MediaTracker (by @VictorMitr)
 * [MyanimeList Widgets](widgets/myanimelist-widgets/README.md) - show seasonal anime (more Widgets coming soon) (by @Zephyr73)
 * [Algal Bloom Update](widgets/algal-bloom-update/README.md) - displays the South Australian beach conditions based on api from Beachsafe (by @stonkage)
 * [Portainer Dashboard](widgets/portainer-dashboard/README.md) - show docker containers from portainer (by @RealTong)
+* [Tsumego Daily](widgets/tsumego-daily/README.md) - shows daily Go Problems (Tsumego) from goproblems.com (by @ccarpo)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -62,7 +62,6 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Grafana](widgets/grafana/README.md) - useful information and metrics from a Grafana data source (like prometheus, mimir, loki) (by @koalalorenzo)
 * [Hardcover Currently Reading](widgets/hardcover-currently-reading/README.md) - show the currently reading book from [Hardcover](https://hardcover.app/) (by @Akasiek)
 * [Home Assistant Sensor Stats](widgets/homeassistant-sensor-stats/README.md) - display's configured Sensors values from Home Assistant (by @AWildLeon)
-* [Immich Styled Stats](widgets/immich-styled/README.md) - immich styled statistics taken straight out of the app. Beautiful, simple and useful (by @panonim)
 * [Immich stats](widgets/immich-stats/README.md) - show the number of photos, videos and usage of your Immich server (by @svilenmarkov)
 * [Jellyfin Latest/Next Up](widgets/jellyfin-latest/README.md) - display the newest additions to a Jellyfin library, and next up to watch for a given user (by @Nedra1998)
 * [Jellyfin Stats](widgets/jellyfin-emby-stats/README.md) - show the number of movies, shows, episodes and songs in your Jellyfin or Emby server (by @lfvelosoh)
