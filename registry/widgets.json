@@ -657,6 +657,15 @@
     "time_updated": "2025-09-25T04:55:13.927841814Z"
   },
   {
+    "title": "Overseerr Users Requests",
+    "description": "Shows the list of users and their number of request made in Overseerr",
+    "author": "GiamBoscaro",
+    "directory": "overseerr-users-requests",
+    "readme_hash": "9ef753c1a13cdae2fb70c48e11b7709fa42a2bba",
+    "time_added": "2026-02-25T19:04:13.345204276Z",
+    "time_updated": "2026-02-25T19:04:13.345204396Z"
+  },
+  {
     "title": "PagerDuty Incidents",
     "description": "Shows the latest incidents from PagerDuty",
     "author": "koalalorenzo",
