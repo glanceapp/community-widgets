@@ -859,9 +859,9 @@
     "description": "show the latest internet speed information from Speedtest Tracker",
     "author": "not-first",
     "directory": "speedtest-tracker",
-    "readme_hash": "4c8f55aea8d217de708f992c85a5dfe68cfd0ba4",
+    "readme_hash": "f98d535e6e45879bccb8aa1fff7eee1dc7e3d506",
     "time_added": "2025-03-21T08:54:30.1428Z",
-    "time_updated": "2025-09-25T04:55:13.928480648Z"
+    "time_updated": "2026-02-25T19:26:02.10175844Z"
   },
   {
     "title": "Spotify Now Playing",
