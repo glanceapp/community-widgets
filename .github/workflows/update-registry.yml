@@ -19,6 +19,7 @@ permissions:
 
 jobs:
   update-registry:
+    if: github.repository == 'glanceapp/community-widgets'
     runs-on: ubuntu-latest
 
     steps:
