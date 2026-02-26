@@ -167,6 +167,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [iCal (ICS) Calendar List](https://github.com/AWildLeon/Glance-iCal-Events) - list a ICS File's upcoming events (Like Google Calendar List) (by @AWildLeon)
 * [linktiles](https://github.com/haondt/linktiles/) - display your linkding bookmarks in a configurable mosaic (by @haondt)
 * [qBittorrent Statistic](https://github.com/Panonim/qbwrapper) - display file statistics as they are being downloaded (by @panonim)
+* [glance-bilibili](https://github.com/Cynosure159/glance-bilibili) - Display Bilibili videos like Videos widget. (by @Cynosure159)
 
 <br>
 
