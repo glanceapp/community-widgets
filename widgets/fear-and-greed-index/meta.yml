@@ -1,0 +1,67 @@
+- type: custom-api
+  title: Crypto Fear & Greed Index
+  cache: 1h
+  url: https://api.alternative.me/fng/?limit=2
+  template: |
+    {{ $value := .JSON.Int "data.0.value" }}
+    {{ $prev  := .JSON.Int "data.1.value" }}
+    {{ $label := .JSON.String "data.0.value_classification" }}
+
+    {{ $color := "#e74c3c" }}
+    {{ if ge $value 26 }}{{ $color = "#e67e22" }}{{ end }}
+    {{ if ge $value 46 }}{{ $color = "#f1c40f" }}{{ end }}
+    {{ if ge $value 55 }}{{ $color = "#2ecc71" }}{{ end }}
+    {{ if ge $value 76 }}{{ $color = "#27ae60" }}{{ end }}
+
+    {{ $emoji := "😱" }}
+    {{ if ge $value 26 }}{{ $emoji = "😨" }}{{ end }}
+    {{ if ge $value 46 }}{{ $emoji = "😏" }}{{ end }}
+    {{ if ge $value 76 }}{{ $emoji = "🤑" }}{{ end }}
+
+    {{ $arrow := "→" }}
+    {{ if gt $value $prev }}{{ $arrow = "▲" }}{{ end }}
+    {{ if lt $value $prev }}{{ $arrow = "▼" }}{{ end }}
+
+    <div style="display: flex; flex-direction: column; gap: 0.75em;">
+
+      <div style="display: flex; align-items: center; gap: 0.5em;">
+        <span style="font-size: 3em; font-weight: bold; color: {{ $color }}; line-height: 1;">
+          {{ $value }}
+        </span>
+        <div style="display: flex; flex-direction: column;">
+          <span style="font-size: 1.1em; font-weight: bold; color: {{ $color }};">
+            {{ $emoji }} {{ $label }}
+          </span>
+          <span style="font-size: 0.78em; color: var(--color-subdue);">
+            Yesterday: {{ $prev }} {{ $arrow }}
+          </span>
+        </div>
+      </div>
+
+      <div style="position: relative; height: 10px; border-radius: 5px;
+                  background: linear-gradient(to right, #e74c3c 0%, #e67e22 25%, #f1c40f 45%, #2ecc71 75%, #27ae60 100%);">
+        <div style="
+          position: absolute;
+          left: calc({{ $value }}% - 6px);
+          top: 50%;
+          transform: translateY(-50%);
+          width: 13px; height: 13px;
+          background: white;
+          border-radius: 50%;
+          border: 2px solid {{ $color }};
+          box-shadow: 0 0 4px rgba(0,0,0,0.5);
+        "></div>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; font-size: 0.68em; color: var(--color-subdue);">
+        <span>😱 Extreme Fear</span>
+        <span>Fear</span>
+        <span>Greed</span>
+        <span>🤑 Extreme Greed</span>
+      </div>
+
+      <div style="font-size: 0.8em; color: var(--color-subdue); border-top: 1px solid var(--color-border); padding-top: 0.4em;">
+        Source: alternative.me · Updates daily
+      </div>
+
+    </div>
