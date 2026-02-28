@@ -1,6 +1,6 @@
 - type: custom-api
   title: Crypto Fear & Greed Index
-  cache: 1h
+  cache: 12h
   url: https://api.alternative.me/fng/?limit=2
   template: |
     {{ $value := .JSON.Int "data.0.value" }}
