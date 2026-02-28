@@ -1,3 +1,8 @@
+- title: Fear & Greed Index
+  url: https://github.com/yroulin/fear-and-greed-index
+  description: A visually dynamic Glance widget that tracks real-time cryptocurrency market sentiment using the Crypto Fear & Greed Index API.
+  author: yroulin
+
 - title: Glance F1
   url: https://github.com/SkyAllinott/glance-F1
   description: Adds user customization to widget by @abaza738 like local timezones, a track map, and more.
