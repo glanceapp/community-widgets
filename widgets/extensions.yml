@@ -47,3 +47,8 @@
   url: https://github.com/Xtrems876/glance-transmission
   description: Show Transmission downloads
   author: Xtrems876
+
+- title: VMware ESXi Stats
+  url: https://github.com/lumitesi/glance-esxi-stats
+  description: Display server, VM, and datastore statistics for VMware ESXi.
+  author: lumitesi
