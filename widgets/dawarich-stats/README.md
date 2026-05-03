@@ -8,6 +8,9 @@ Displays total lifetime distance, tracked points, cities, and countries from you
 
 You will need to copy your API key from your Dawarich account settings and provide your server URL.
 
+* `DAWARICH_URL` - The URL to your Dawarich instance, e.g., `http://<ip_address>:<port>` or `https://<domain>`
+* `DAWARICH_API_KEY` - Your personal Dawarich API Token. Click profile photo in top right then Account.
+
 ```yaml
 - type: custom-api
   title: "Dawarich Stats"
