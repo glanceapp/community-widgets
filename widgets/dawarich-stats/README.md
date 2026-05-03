@@ -14,7 +14,7 @@ You will need to copy your API key from your Dawarich account settings and provi
   cache: 1h # Adjust based on how often your data syncs
   base-url: ${DAWARICH_URL}
   options:
-    url: ${DAWARICH_URL} # e.g., [https://dawarich.yourdomain.com](https://dawarich.yourdomain.com)
+    url: ${DAWARICH_URL}
     key: ${DAWARICH_API_KEY}
   template: |
     {{ $url := .Options.StringOr "url" "" }}
