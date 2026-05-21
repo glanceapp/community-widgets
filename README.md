@@ -159,6 +159,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 > Extension widgets are not actively monitored by the maintainers of Glance, use them at your own risk.
 * [GitHub Graph](https://github.com/haondt/glance-github-graph) - show your GitHub contribution graph (by @haondt)
 * [Glance F1](https://github.com/SkyAllinott/glance-F1) - adds user customization to widget by @abaza738 like local timezones, a track map, and more (by @SkyAllinott)
+* [Glance League of Comicbook Geeks](https://github.com/DroidPort/glance-league-of-comic-geeks) - add widgets for League of Comicbook Geeks, such as User Pull lists, Weekly Picks, and new releases (by @DroidPort)
 * [Glance Transmission](https://github.com/Xtrems876/glance-transmission) - show Transmission downloads (by @Xtrems876)
 * [Kubernetes nodes and apps](https://github.com/lukasdietrich/glance-k8s) - list Kubernetes nodes and applications. Also including helm charts (by @lukasdietrich)
 * [Navidrome (Subsonic) Server Stats](https://github.com/SomeCodecat/subsonic-proxy) - display statistics from your Navidrome (or Subsonic) instance and interact with them (by @SomeCodecat)
