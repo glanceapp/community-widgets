@@ -61,7 +61,7 @@ Optionally, you can controls the date range in which the API filters world cup m
           class="items-center justify-between gap-10 {{ if or (eq (.String "status") "IN_PLAY") (eq (.String "status") "PAUSED") }}color-primary{{ else if eq (.String "status") "TIMED" }}color-highlight{{ end }}"
         >
           {{ if $showDateTime }}
-            <p class="color-base size-h6">{{ .String "utcDate" | parseLocalTime "rfc3339" | formatTime "Jan 02 - 15:04" }}</p>
+            <p class="color-base size-h6">{{ (.String "utcDate" | parseLocalTime "rfc3339").In now.Location | formatTime "Jan 02 - 15:04" }}</p>
           {{ end }}
 
           <p style="text-wrap: nowrap;" class="flex items-center gap-12">
