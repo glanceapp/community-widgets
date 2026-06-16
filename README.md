@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [World Cup Matches](widgets/world-cup-matches/README.md) - list of most recent and upcoming World Cup matches from [`football-data`](https://www.football-data.org/) (by @abaza738)
 * [Immich Styled Stats](widgets/immich-styled/README.md) - immich styled statistics taken straight out of the app. Beautiful, simple and useful (by @panonim)
 * [GitHub Actions Status](widgets/github-actions-status/README.md) - displays the status of GitHub Actions workflows for a repository (by @unickq)
 * [Overseerr Users Requests](widgets/overseerr-users-requests/README.md) - shows the list of users and their number of request made in Overseerr (by @GiamBoscaro)
 * [ufc-fight-tracker](widgets/ufc-fight-tracker/README.md) - shows a preview of upcoming events in the UFC using the ESPN API (by @xZinio)
-* [MediaTracker Upcoming Media](widgets/mediatracker-upcoming-tv-shows/README.md) - displays upcoming TV shows, movies or video games monitored by MediaTracker (by @VictorMitr)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -146,6 +146,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [WG-Easy Enabled Clients](widgets/wg-easy-clients/README.md) - shows enabled and disabled clients from WG-Easy Web Interface (by @lmriccardo)
 * [Weather Seven Day](widgets/weather-seven-day/README.md) - shows daily weather conditions and high and low temperature from Open-Meteo for a specified location (by @brandonsie)
 * [What's Up Docker Monitor](widgets/wud-monitor/README.md) - a customizable widget for displaying the wud data about containers (by @panonim)
+* [World Cup Matches](widgets/world-cup-matches/README.md) - list of most recent and upcoming World Cup matches from [`football-data`](https://www.football-data.org/) (by @abaza738)
 * [YouTube Embedded Player](widgets/youtube-embedded-player/README.md) - a grid-card layout of YouTube List with Embed player pulled from either RSS-Bridge or FreshRSS (by @ralphocdol)
 * [qBittorrent Stats](widgets/qbittorrent-stats/README.md) - show qBittorrent downloads (by @danzkigg)
 * [ufc-fight-tracker](widgets/ufc-fight-tracker/README.md) - shows a preview of upcoming events in the UFC using the ESPN API (by @xZinio)

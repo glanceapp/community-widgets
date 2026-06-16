@@ -570,11 +570,15 @@
     <p align="center"><a href="widgets/wud-monitor/README.md"><img src="widgets/wud-monitor/wud-main/wud_main_preview.png"></a></p>
 </td>
     <td valign="top">
-    <p align="center"><a href="widgets/youtube-embedded-player/README.md">YouTube Embedded Player</a><br>by <a href="https://github.com/ralphocdol">@ralphocdol</a><p>
-    <p align="center"><a href="widgets/youtube-embedded-player/README.md"><img src="widgets/youtube-embedded-player/preview.png"></a></p>
+    <p align="center"><a href="widgets/world-cup-matches/README.md">World Cup Matches</a><br>by <a href="https://github.com/abaza738">@abaza738</a><p>
+    <p align="center"><a href="widgets/world-cup-matches/README.md"><img src="widgets/world-cup-matches/preview.png"></a></p>
 </td>
   </tr>
   <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/youtube-embedded-player/README.md">YouTube Embedded Player</a><br>by <a href="https://github.com/ralphocdol">@ralphocdol</a><p>
+    <p align="center"><a href="widgets/youtube-embedded-player/README.md"><img src="widgets/youtube-embedded-player/preview.png"></a></p>
+</td>
     <td valign="top">
     <p align="center"><a href="widgets/qbittorrent-stats/README.md">qBittorrent Stats</a><br>by <a href="https://github.com/danzkigg">@danzkigg</a><p>
     <p align="center"><a href="widgets/qbittorrent-stats/README.md"><img src="widgets/qbittorrent-stats/preview1.png"></a></p>
@@ -583,9 +587,13 @@
     <p align="center"><a href="widgets/ufc-fight-tracker/README.md">ufc-fight-tracker</a><br>by <a href="https://github.com/xZinio">@xZinio</a><p>
     <p align="center"><a href="widgets/ufc-fight-tracker/README.md"><img src="widgets/ufc-fight-tracker/preview.png"></a></p>
 </td>
+  </tr>
+  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/xkcd-widget/README.md">xkcd Widget</a><br>by <a href="https://github.com/AllanAAbraham">@AllanAAbraham</a><p>
     <p align="center"><a href="widgets/xkcd-widget/README.md"><img src="widgets/xkcd-widget/preview.png"></a></p>
 </td>
+    <td valign="top"></td>
+    <td valign="top"></td>
   </tr>
 </table>
