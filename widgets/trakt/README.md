@@ -1,10 +1,12 @@
 ## Preview
 ![image](preview.png)
 
-This widget uses the Trakt & TMDB APIs. No paid subscriptions are required.
+This widget uses the Trakt & TMDB APIs. ~~No paid subscriptions are required.~~ `NOTE! As of August 2026, Trakt requires users to have a VIP subscription in order to gain access to API app keys.`
 
 > [!NOTE]
 >
+> As of August 2026, Trakt requires users to have a VIP subscription in order to gain access to API app keys.
+> 
 > This widget uses synchronous API calls introduced in `Glance v0.8.0`.
 > Ensure you update to at least this version.
 >
