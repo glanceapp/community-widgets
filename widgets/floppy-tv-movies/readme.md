@@ -17,16 +17,16 @@ This widget uses the [Floppy](https://github.com/dannyvfilms/Floppy) & TMDB APIs
 ## Options
 These entries can be configured near the beginning of the `template` section of the Widget YAML:
 
-| Setting | Description | Default | Type |
+| Setting | Description | Default | Type / Choices |
 |:-------:|:----:|:--------:|:------------:|
-| collapseAfter | Number of items to show before SHOW MORE appears | 3 | integer |
-| itemsExtracted | Maximum number of items to show after you click SHOW MORE | 10 | integer |
-| showEpisodeNumber | Visibility for S##E## description on TV Shows | true | boolean |
-| showMovieYear | Show year next to movie title | false | boolean |
-| showTVYear | Show starting year next to TV Show title | false | boolean |
-| artTypeTV | Art type to show for TV episodes | show | `show`, `season`, `still` |
-| mediaTypeFilter | Which type(s) of media to show in list | movies,tv | `tv`, `movies`, `movies,tv` | 
-| useFloppyLinks | Set to `true` to link to Floppy, `false` to link to TMDB | false | boolean |
+| collapseAfter | Number of items to show before SHOW MORE appears | `3` | integer |
+| itemsExtracted | Maximum number of items to show after you click SHOW MORE | `10` | integer |
+| showEpisodeNumber | Visibility for S##E## description on TV Shows | `true` | boolean |
+| showMovieYear | Show year next to movie title | `true` | boolean |
+| showTVYear | Show starting year next to TV Show title | `false` | boolean |
+| artTypeTV | Art type to show for TV episodes | `show` | `show`, `season`, `still` |
+| mediaTypeFilter | Which type(s) of media to show in list | `movies,tv` | `tv`, `movies`, `movies,tv` | 
+| useFloppyLinks | Set to `true` to link to Floppy, `false` to link to TMDB | `false` | boolean |
 
 ## Changelog
 - v1.0 - August 3, 2026
