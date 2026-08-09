@@ -4,11 +4,6 @@
 
 This widget uses the [Floppy](https://github.com/dannyvfilms/Floppy) & TMDB APIs. No paid subscriptions are required.
 
-> [!NOTE]
->
-> By default, this widget pulls ten DAYS of data (via the `url: ${FLOPPY_URL}/api/v1/history/?limit=10` line). If there are days where only non-TV & non-movie entries are logged in Floppy, it can reduce the number of possible entries that can be displayed.
-
-
 ## Environment variables
 - `FLOPPY_API_KEY` - Your Floppy API Key.  It is listed under Settings --> Integrations --> API Token.
 - `FLOPPY_URL` - The base URL for your Floppy server, e.g. `https://floppy.example.com` or `http://192.168.1.123:8000` 
@@ -25,19 +20,26 @@ These entries can be configured near the beginning of the `template` section of 
 | showMovieYear | Show year next to movie title | `true` | boolean |
 | showTVYear | Show starting year next to TV Show title | `false` | boolean |
 | artTypeTV | Art type to show for TV episodes | `show` | `show`, `season`, `still` |
-| mediaTypeFilter | Which type(s) of media to show in list | `movies,tv` | `tv`, `movies`, `movies,tv` | 
 | useFloppyLinks | Set to `true` to link to Floppy, `false` to link to TMDB | `false` | boolean |
 
+> [!NOTE]
+>
+> There are additional options that can be configured by editing the `url: ${FLOPPY_URL}/api/v1/history/?limit=10&types=movies,episodes` line near the top of the widget:
+> - `limit=10` means that ten DAYS of data are being pulled. If you want to increase your `itemsExtracted` value, you may want to increase this number.
+> - `types=movies,episodes` means that the widget shows movies and TV shows. If you only want to show movies, change this to just `types=movies`. If you only want to show TV shows, change it to `types=episodes`.
+
 ## Changelog
+- v1.1 - August 8, 2026
+  - Moved media-type filtering to the actual API call
 - v1.0 - August 3, 2026
   - Initial release
 
 ## Widget YAML
 ```
 - type: custom-api
-  title: Watching Now
+  title: Floppy - TV & Movies
   cache: 30m
-  url: ${FLOPPY_URL}/api/v1/history/?limit=10
+  url: ${FLOPPY_URL}/api/v1/history/?limit=10&types=movies,episodes
   headers:
 	X-API-Key: ${FLOPPY_API_KEY}
 	Accept: application/json
@@ -49,34 +51,15 @@ These entries can be configured near the beginning of the `template` section of 
 		{{ $showEpisodeNumber := true }}
 		{{ $showMovieYear := true }}
 		{{ $showTVYear := false }}
-		{{ $artTypeTV := "show" }} {{/* OPTIONS: show | season | still */}}
-		{{ $mediaTypeFilter := "movies,tv" }} {{/* OPTIONS: movies | tv | movies,tv */}}
-		{{ $useFloppyLinks := false }}
+		{{ $artTypeTV := "show" }} {{/* Options: "show", "season", or "still" */}}
+		{{ $useFloppyLinks := true }}
 	{{/* USER VARIABLES END */}}
-	{{ $allowMovies := false }}
-	{{ $allowTV := false }}
-	{{ if eq $mediaTypeFilter "movies" }}
-		{{ $allowMovies = true }}
-	{{ else if eq $mediaTypeFilter "tv" }}
-		{{ $allowTV = true }}
-	{{ else if or (eq $mediaTypeFilter "movies,tv") (eq $mediaTypeFilter "tv,movies") }}
-		{{ $allowMovies = true }}
-		{{ $allowTV = true }}
-	{{ else }}
-		{{ $allowMovies = true }}
-		{{ $allowTV = true }}
-	{{ end }}
 	{{ $count := 0 }}
 	<ul class="list list-gap-10 collapsible-container" data-collapse-after="{{ $collapseAfter }}">
 	{{ range .JSON.Array "results" }}{{ range .Array "entries" }}
+	{{ $status := .String "status" }}
+	{{ if and (ne $status "") (ne $status "Completed") }}{{ continue }}{{ end }}
 	{{ $mediaType := .String "media_type" }}
-	{{ if eq $mediaType "movie" }}
-		{{ if not $allowMovies }}{{ continue }}{{ end }}
-	{{ else if eq $mediaType "episode" }}
-		{{ if not $allowTV }}{{ continue }}{{ end }}
-	{{ else }}
-		{{ continue }}
-	{{ end }}
 	{{ if ge $count $itemsExtracted }}{{ continue }}{{ end }}
 	{{ $count = add $count 1 }}
 	{{ $tmdbID := .String "item.media_id" }}
@@ -130,7 +113,7 @@ These entries can be configured near the beginning of the `template` section of 
 	{{ if ne $posterPath "" }}{{ $posterUrl = printf "https://image.tmdb.org/t/p/w185%s" $posterPath }}{{ end }}
 	{{ $finalUrl := "" }}
 	{{ if $useFloppyLinks }}{{ $finalUrl = $floppyPageUrl }}{{ else }}{{ $finalUrl = $tmdbPageUrl }}{{ end }}
-	<li class="flex items-center gap-10"><a href={{ $finalUrl }} target="_blank"><img src='{{ $posterUrl }}' alt="" style="border-radius: 5px; min-width: 5rem; max-width: 5rem;" class="card"></a><div class="flex-1"><a href={{ $finalUrl }} target="_blank"><p class="color-positive size-h5">{{ $showTitle }}{{ if eq $mediaType "movie" }}{{ if $showMovieYear }}{{ if ne $year "" }} ({{ $year }}) {{ end }}{{ end }}{{ else }}{{ if $showTVYear }}{{ if ne $year "" }} ({{ $year }}) {{ end }}{{ end }}{{ end }}</p></a><a href={{ $finalUrl }} target="_blank">{{ if eq $mediaType "episode" }}<p class="size-h5">{{ if $showEpisodeNumber }}(S{{ .String "item.season_number" }}E{{ .String "item.episode_number" }}){{ end }} {{ $episodeTitle }}</p>{{ end }}</a><p class="size-h6"><span class="color-subdue" {{ .String "played_at_local" | parseRelativeTime "2006-01-02T15:04:05-07:00" }}></span></p></div></li>
+	<li class="flex items-center gap-10"><a href={{ $finalUrl }} target="_blank"><img src='{{ $posterUrl }}' alt="" style="border-radius: 5px; min-width: 5rem; max-width: 5rem;" class="card"></a><div class="flex-1"><a href={{ $finalUrl }} target="_blank"><p class="color-positive size-h5">{{ $showTitle }}{{ if eq $mediaType "movie" }} {{ if $showMovieYear }}{{ if ne $year "" }} ({{ $year }}) {{ end }}{{ end }}{{ else }}{{ if $showTVYear }}{{ if ne $year "" }} ({{ $year }}) {{ end }}{{ end }}{{ end }}</p></a><a href={{ $finalUrl }} target="_blank">{{ if eq $mediaType "episode" }}<p class="size-h5">{{ if $showEpisodeNumber }}(S{{ .String "item.season_number" }}E{{ .String "item.episode_number" }}){{ end }} {{ $episodeTitle }}</p>{{ end }}</a><p class="size-h6"><span class="color-subdue" {{ .String "played_at_local" | parseRelativeTime "2006-01-02T15:04:05-07:00" }}></span></p></div></li>
 	{{ end }}{{ end }}
 	</ul>
 ```
