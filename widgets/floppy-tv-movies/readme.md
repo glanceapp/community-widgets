@@ -52,7 +52,7 @@ These entries can be configured near the beginning of the `template` section of 
 		{{ $showMovieYear := true }}
 		{{ $showTVYear := false }}
 		{{ $artTypeTV := "show" }} {{/* Options: "show", "season", or "still" */}}
-		{{ $useFloppyLinks := true }}
+		{{ $useFloppyLinks := false }}
 	{{/* USER VARIABLES END */}}
 	{{ $count := 0 }}
 	<ul class="list list-gap-10 collapsible-container" data-collapse-after="{{ $collapseAfter }}">
