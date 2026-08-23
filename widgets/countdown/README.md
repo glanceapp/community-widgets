@@ -92,7 +92,7 @@ Copy this into a file of your choice, I named it "countdowns.yml" or you can put
 
 ## 🛠️ Required Environment Variables
 
-To render the vacation and family birthday tracking fields properly, ensure the variables are using this standard **`YYYY-MM-DD`** layout. Anything else will result in dates being wrong on the countdown.
+To render any of the fields properly, ensure the variables are using this standard **`YYYY-MM-DD`** layout. Anything else will result in dates being wrong on the countdown.
 
 
 ### Standard Environment File (`.env`)
