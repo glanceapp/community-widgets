@@ -1,0 +1,37 @@
+# Termix Recent Activity Widget for Glance
+# https://github.com/Termix-SSH/Termix
+#
+# Shows the most recent connections and activity logged by Termix.
+#
+# Required environment variables:
+#   TERMIX_URL      – base URL of your Termix instance (e.g. http://192.168.1.100:8080)
+#   TERMIX_API_KEY  – API key created in Termix (Admin → Settings → API Keys), starts with tmx_
+
+- type: custom-api
+  title: Termix Activity
+  title-url: ${TERMIX_URL}
+  cache: 5m
+  url: ${TERMIX_URL}/activity/recent
+  parameters:
+    limit: "10"
+  headers:
+    Authorization: Bearer ${TERMIX_API_KEY}
+  # allow-insecure: true  # uncomment if using a self-signed TLS certificate
+  template: |
+    <ul class="list collapsible-container" data-collapse-after="5">
+    {{ range .JSON.Array "" }}
+    <li class="flex items-center gap-10">
+      <span class="color-highlight grow min-width-0 truncate">{{ or (.String "hostName") "—" }}</span>
+      <span class="color-subdue shrink-0" style="min-width:5rem;text-align:right">
+        {{ if eq (.String "type") "terminal"     }}Terminal
+        {{ else if eq (.String "type") "file_manager" }}File Manager
+        {{ else if eq (.String "type") "docker"       }}Docker
+        {{ else if eq (.String "type") "server_stats" }}Stats
+        {{ else if eq (.String "type") "tunnel"       }}Tunnel
+        {{ else }}{{ .String "type" }}
+        {{ end }}
+      </span>
+      <span class="color-subdue shrink-0" {{ .String "timestamp" | parseTime "DateTime" | toRelativeTime }}></span>
+    </li>
+    {{ end }}
+    </ul>
