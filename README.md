@@ -167,6 +167,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Glance F1](https://github.com/SkyAllinott/glance-F1) - adds user customization to widget by @abaza738 like local timezones, a track map, and more (by @SkyAllinott)
 * [Glance Transmission](https://github.com/Xtrems876/glance-transmission) - show Transmission downloads (by @Xtrems876)
 * [Kubernetes nodes and apps](https://github.com/lukasdietrich/glance-k8s) - list Kubernetes nodes and applications. Also including helm charts (by @lukasdietrich)
+* [Lichess Daily Puzzle](https://github.com/brtmax/lichess-glance) - daily Lichess Puzzle (by @brtmax)
 * [Navidrome (Subsonic) Server Stats](https://github.com/SomeCodecat/subsonic-proxy) - display statistics from your Navidrome (or Subsonic) instance and interact with them (by @SomeCodecat)
 * [Restic snapshot](https://github.com/not-first/restic-glance-extension) - show the most recent snapshot(s) and storage stats of a Restic repository (by @not-first)
 * [Swedish Hockey API](https://github.com/GSHimself/hockey-api) - shows results and next games from Swedish HockeyAllsvenskan (by @gshimself)
