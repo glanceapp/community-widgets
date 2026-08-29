@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Wikipedia On This Day](widgets/wikipedia-on-this-day/README.md) - show notable events, births, and deaths from Wikipedia that happened on today's date in history (by @mike-rambil)
 * [Discopanel](widgets/discopanel/README.md) - a widget to view all of your minecraft servers from Discopanel (by @PapaZ810)
 * [Crypto Fear & Greed Index](widgets/fear-and-greed-index/README.md) - displays the current Crypto Fear & Greed Index with a color-coded gradient bar, sentiment label and trend arrow (by @yroulin)
 * [Nebula Latest Videos](widgets/nebula-videos/README.md) - a widget that displays the latest videos from selected [Nebula](https://nebula.tv/) channels (by @darius-it)
 * [Glances Server stats](widgets/glances-stats/README.md) - show the Glances statistics (by @andersonviudes)
-* [MyanimeList Profile](widgets/myanimelist-profile/README.md) - show your profile (by @WaYy)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -153,6 +153,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [WG-Easy Enabled Clients](widgets/wg-easy-clients/README.md) - shows enabled and disabled clients from WG-Easy Web Interface (by @lmriccardo)
 * [Weather Seven Day](widgets/weather-seven-day/README.md) - shows daily weather conditions and high and low temperature from Open-Meteo for a specified location (by @brandonsie)
 * [What's Up Docker Monitor](widgets/wud-monitor/README.md) - a customizable widget for displaying the wud data about containers (by @panonim)
+* [Wikipedia On This Day](widgets/wikipedia-on-this-day/README.md) - show notable events, births, and deaths from Wikipedia that happened on today's date in history (by @mike-rambil)
 * [YouTube Embedded Player](widgets/youtube-embedded-player/README.md) - a grid-card layout of YouTube List with Embed player pulled from either RSS-Bridge or FreshRSS (by @ralphocdol)
 * [qBittorrent Stats](widgets/qbittorrent-stats/README.md) - show qBittorrent downloads (by @danzkigg)
 * [ufc-fight-tracker](widgets/ufc-fight-tracker/README.md) - shows a preview of upcoming events in the UFC using the ESPN API (by @xZinio)

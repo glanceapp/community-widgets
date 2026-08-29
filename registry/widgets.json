@@ -1161,6 +1161,15 @@
     "time_updated": "2025-09-25T04:55:13.929331928Z"
   },
   {
+    "title": "Wikipedia On This Day",
+    "description": "Show notable events, births, and deaths from Wikipedia that happened on today's date in history.",
+    "author": "mike-rambil",
+    "directory": "wikipedia-on-this-day",
+    "readme_hash": "bcb9414d2ed92dd5ae3ca76e27b3e6da1b55a2da",
+    "time_added": "2026-08-29T15:18:21.6979138Z",
+    "time_updated": "2026-08-29T15:18:21.69791388Z"
+  },
+  {
     "title": "YouTube Embedded Player",
     "description": "A grid-card layout of YouTube List with Embed player pulled from either RSS-Bridge or FreshRSS",
     "author": "ralphocdol",
