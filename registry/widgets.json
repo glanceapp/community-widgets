@@ -180,6 +180,15 @@
     "time_updated": "2025-09-25T04:55:13.926307988Z"
   },
   {
+    "title": "Discopanel",
+    "description": "A widget to view all of your minecraft servers from Discopanel",
+    "author": "PapaZ810",
+    "directory": "discopanel",
+    "readme_hash": "9745f83e68dc606f58a2065b714f068fe01ec08b",
+    "time_added": "2026-08-29T15:10:05.476461467Z",
+    "time_updated": "2026-08-29T15:10:05.476461567Z"
+  },
+  {
     "title": "Docker Swarm",
     "description": "A widget to monitor Docker Swarm services and nodes based on the built-in docker-containers widget.",
     "author": "tonineri",

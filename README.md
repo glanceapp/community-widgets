@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Discopanel](widgets/discopanel/README.md) - a widget to view all of your minecraft servers from Discopanel (by @PapaZ810)
 * [Crypto Fear & Greed Index](widgets/fear-and-greed-index/README.md) - displays the current Crypto Fear & Greed Index with a color-coded gradient bar, sentiment label and trend arrow (by @yroulin)
 * [Nebula Latest Videos](widgets/nebula-videos/README.md) - a widget that displays the latest videos from selected [Nebula](https://nebula.tv/) channels (by @darius-it)
 * [Glances Server stats](widgets/glances-stats/README.md) - show the Glances statistics (by @andersonviudes)
 * [MyanimeList Profile](widgets/myanimelist-profile/README.md) - show your profile (by @WaYy)
-* [GitHub Status](widgets/github-status/README.md) - display the current operational status of GitHub services (by @m1xzg)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -44,6 +44,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Crypto Fear & Greed Index](widgets/fear-and-greed-index/README.md) - displays the current Crypto Fear & Greed Index with a color-coded gradient bar, sentiment label and trend arrow (by @yroulin)
 * [Cryptopanic News](widgets/cryptopanic-news/README.md) - a real-time cryptocurrency news widget that displays filtered news from CryptoPanic.com with configurable filters for news type, regions, and currencies (by @herculosh)
 * [Cup Updates](widgets/cup-updates/README.md) - displays information about containers needing an update from Cup (by @panonim)
+* [Discopanel](widgets/discopanel/README.md) - a widget to view all of your minecraft servers from Discopanel (by @PapaZ810)
 * [Docker Swarm](widgets/docker-swarm/README.md) - a widget to monitor Docker Swarm services and nodes based on the built-in docker-containers widget (by @tonineri)
 * [Duolingo Stats](widgets/duolingo-stats/README.md) - show your Duolingo stats in glance (by @RealTong)
 * [ESPN Live Football Scores Widget](widgets/football-livescore/README.md) - a custom widget that displays live, upcoming, and finished football (soccer) scores using the **ESPN Scoreboard API** (by @Beyeshooter)
