@@ -990,6 +990,15 @@
     "time_updated": "2025-09-25T04:55:13.928925499Z"
   },
   {
+    "title": "Todoist Tasks",
+    "description": "Display and complete today's tasks from Todoist with priority levels and project names",
+    "author": "xd1i0",
+    "directory": "todoist-tasks",
+    "readme_hash": "6e48399eb965dda18b270d84924fa9cecd93f131",
+    "time_added": "2026-08-29T13:10:31.269907773Z",
+    "time_updated": "2026-08-29T13:10:31.269907893Z"
+  },
+  {
     "title": "Trakt",
     "description": "shows your last-watched movies \u0026 TV shows on Trakt",
     "author": "RxBrad",

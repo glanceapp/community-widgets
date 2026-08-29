@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Todoist Tasks](widgets/todoist-tasks/README.md) - display and complete today's tasks from Todoist with priority levels and project names (by @xd1i0)
 * [Immich Styled Stats](widgets/immich-styled/README.md) - immich styled statistics taken straight out of the app. Beautiful, simple and useful (by @panonim)
 * [GitHub Actions Status](widgets/github-actions-status/README.md) - displays the status of GitHub Actions workflows for a repository (by @unickq)
 * [Overseerr Users Requests](widgets/overseerr-users-requests/README.md) - shows the list of users and their number of request made in Overseerr (by @GiamBoscaro)
 * [ufc-fight-tracker](widgets/ufc-fight-tracker/README.md) - shows a preview of upcoming events in the UFC using the ESPN API (by @xZinio)
-* [MediaTracker Upcoming Media](widgets/mediatracker-upcoming-tv-shows/README.md) - displays upcoming TV shows, movies or video games monitored by MediaTracker (by @VictorMitr)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -134,7 +134,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Tautulli Stats](widgets/tautulli-stats/README.md) - show various home stats from Tautulli such as recently watched, top movies/shows, etc (by @SkyAllinott)
 * [Technitium DNS Stats](widgets/technitium-dns-stats/README.md) - show stats from Technitium DNS Server (by @eribbey)
 * [Time Bar](widgets/time-bar/README.md) - show percentage of day/month/year elapsed (by @anant-j)
-* [Todoist Tasks](widgets/todoist-tasks/README.md) - Display and complete today's tasks from Todoist with priority levels and project names (by @xd1i0)
+* [Todoist Tasks](widgets/todoist-tasks/README.md) - display and complete today's tasks from Todoist with priority levels and project names (by @xd1i0)
 * [Trakt](widgets/trakt/README.md) - shows your last-watched movies & TV shows on Trakt (by @RxBrad)
 * [Trending Bluesky News](widgets/trending-bluesky-news/README.md) - shows a list of trending news links from the [Trending News 2.0 Feed](https://bsky.app/profile/did:plc:kkf4naxqmweop7dv4l2iqqf5/feed/news-2-0) on Bluesky (by @tomcasavant)
 * [Trending GitHub Repositories](widgets/trending-github-repositories/README.md) - daily trending GitHub repositories (by @jelkuweiss)
