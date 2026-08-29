@@ -639,6 +639,15 @@
     "time_updated": "2025-09-25T04:55:13.927530622Z"
   },
   {
+    "title": "Nebula Latest Videos",
+    "description": "A widget that displays the latest videos from selected [Nebula](https://nebula.tv/) channels.",
+    "author": "darius-it",
+    "directory": "nebula-videos",
+    "readme_hash": "4ccfd182891edd9359a3d5af45dac82c2b0b2491",
+    "time_added": "2026-08-29T13:44:45.143429571Z",
+    "time_updated": "2026-08-29T13:44:45.143429702Z"
+  },
+  {
     "title": "NetAlertX Device Status",
     "description": "display the status of connected devices monitored by NetAlertX",
     "author": "razdnut",

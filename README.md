@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Nebula Latest Videos](widgets/nebula-videos/README.md) - a widget that displays the latest videos from selected [Nebula](https://nebula.tv/) channels (by @darius-it)
 * [Glances Server stats](widgets/glances-stats/README.md) - show the Glances statistics (by @andersonviudes)
 * [MyanimeList Profile](widgets/myanimelist-profile/README.md) - show your profile (by @WaYy)
 * [GitHub Status](widgets/github-status/README.md) - display the current operational status of GitHub services (by @m1xzg)
 * [Todoist Tasks](widgets/todoist-tasks/README.md) - display and complete today's tasks from Todoist with priority levels and project names (by @xd1i0)
-* [Immich Styled Stats](widgets/immich-styled/README.md) - immich styled statistics taken straight out of the app. Beautiful, simple and useful (by @panonim)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -95,6 +95,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [NHL Scores](widgets/nhl-scores/README.md) - show the schedule, scores, situation for NHL games today (by @jo-nike)
 * [NZBGet Status](widgets/nzbget-status/README.md) - show NZBGet downloads (by @0ui)
 * [Nearby Aircraft](widgets/nearby-aircraft/README.md) - show nearby aircraft passing over your position using OpenSky network (by @cristiandiiorio)
+* [Nebula Latest Videos](widgets/nebula-videos/README.md) - a widget that displays the latest videos from selected [Nebula](https://nebula.tv/) channels (by @darius-it)
 * [NetAlertX Device Status](widgets/netalertx/README.md) - display the status of connected devices monitored by NetAlertX (by @razdnut)
 * [Netbird devices](widgets/netbird-devices/README.md) - show all devices inside to a Netbird network along with their connection status, update availability and IP (by @menitz)
 * [NextDNS Stats](widgets/nextdns-stats/README.md) - show the basics stats of your nextdns stats. Total queries, total blocked and percentage (by @ziritione85)
