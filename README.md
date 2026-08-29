@@ -17,12 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Immich Styled Stats](widgets/immich-styled/README.md) - immich styled statistics taken straight out of the app. Beautiful, simple and useful (by @panonim)
+* [GitHub Actions Status](widgets/github-actions-status/README.md) - displays the status of GitHub Actions workflows for a repository (by @unickq)
+* [Overseerr Users Requests](widgets/overseerr-users-requests/README.md) - shows the list of users and their number of request made in Overseerr (by @GiamBoscaro)
+* [ufc-fight-tracker](widgets/ufc-fight-tracker/README.md) - shows a preview of upcoming events in the UFC using the ESPN API (by @xZinio)
 * [MediaTracker Upcoming Media](widgets/mediatracker-upcoming-tv-shows/README.md) - displays upcoming TV shows, movies or video games monitored by MediaTracker (by @VictorMitr)
-* [MyanimeList Widgets](widgets/myanimelist-widgets/README.md) - show seasonal anime (more Widgets coming soon) (by @Zephyr73)
-* [Algal Bloom Update](widgets/algal-bloom-update/README.md) - displays the South Australian beach conditions based on api from Beachsafe (by @stonkage)
-* [Portainer Dashboard](widgets/portainer-dashboard/README.md) - show docker containers from portainer (by @RealTong)
-* [Tsumego Daily](widgets/tsumego-daily/README.md) - shows daily Go Problems (Tsumego) from goproblems.com (by @ccarpo)
-* [Todoist Tasks](widgets/todoist-tasks/README.md) - Display and complete today's tasks from Todoist with priority levels and project names (by @xd1i0)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -56,6 +55,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Gatus](widgets/gatus/README.md) - show uptime statistics and monitoring data from your Gatus instance (by @Jack-Overflow)
 * [Gatus Monitor](widgets/gatus-monitor/README.md) - site monitor widget using Gatus for backend data (by @Nedra1998)
 * [Ghostfolio stats](widgets/ghostfolio-stats/README.md) - show the status of your investments with today's results, YTD and totals (by @ziritione85)
+* [GitHub Actions Status](widgets/github-actions-status/README.md) - displays the status of GitHub Actions workflows for a repository (by @unickq)
 * [GitHub Notifications](widgets/github-notifications/README.md) - show your notifications on GitHub (by @luboszima)
 * [GitHub personal repositories](widgets/github-personal-repos/README.md) - show your own personal respositories on GitHub (by @menitz)
 * [Gluetun VPN status](widgets/gluetun-vpn-status/README.md) - show the public IP, country and city of you [Gluetun VPN client](https://github.com/qdm12/gluetun) (by @Hyptu)
@@ -63,6 +63,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Grafana](widgets/grafana/README.md) - useful information and metrics from a Grafana data source (like prometheus, mimir, loki) (by @koalalorenzo)
 * [Hardcover Currently Reading](widgets/hardcover-currently-reading/README.md) - show the currently reading book from [Hardcover](https://hardcover.app/) (by @Akasiek)
 * [Home Assistant Sensor Stats](widgets/homeassistant-sensor-stats/README.md) - display's configured Sensors values from Home Assistant (by @AWildLeon)
+* [Immich Styled Stats](widgets/immich-styled/README.md) - immich styled statistics taken straight out of the app. Beautiful, simple and useful (by @panonim)
 * [Immich stats](widgets/immich-stats/README.md) - show the number of photos, videos and usage of your Immich server (by @svilenmarkov)
 * [Jellyfin Latest/Next Up](widgets/jellyfin-latest/README.md) - display the newest additions to a Jellyfin library, and next up to watch for a given user (by @Nedra1998)
 * [Jellyfin Stats](widgets/jellyfin-emby-stats/README.md) - show the number of movies, shows, episodes and songs in your Jellyfin or Emby server (by @lfvelosoh)
@@ -98,6 +99,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Nginx Proxy Manager](widgets/nginx-proxy-manager/README.md) - shows a summary of Nginx Proxy Configration and host links (by @saif191020)
 * [Overseerr Requests Stats](widgets/overseerr-requests-stats/README.md) - shows the requests count grouped by media types and status (by @GiamBoscaro)
 * [Overseerr Trending/Discovery](widgets/overseerr-trending-discovery/README.md) - shows trending media along with Overseerr recommendations for movies/tv (by @flamechair)
+* [Overseerr Users Requests](widgets/overseerr-users-requests/README.md) - shows the list of users and their number of request made in Overseerr (by @GiamBoscaro)
 * [PagerDuty Incidents](widgets/pagerduty-incidents/README.md) - shows the latest incidents from PagerDuty (by @koalalorenzo)
 * [Paperless NGX Stats](widgets/paperlessngx-stats/README.md) - show stats from your Paperless NGX (by @ralphocdol)
 * [Papra Stats](widgets/papra-stats/README.md) - shows stats from your Papra application (by @Saisamarth21)
@@ -147,6 +149,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [What's Up Docker Monitor](widgets/wud-monitor/README.md) - a customizable widget for displaying the wud data about containers (by @panonim)
 * [YouTube Embedded Player](widgets/youtube-embedded-player/README.md) - a grid-card layout of YouTube List with Embed player pulled from either RSS-Bridge or FreshRSS (by @ralphocdol)
 * [qBittorrent Stats](widgets/qbittorrent-stats/README.md) - show qBittorrent downloads (by @danzkigg)
+* [ufc-fight-tracker](widgets/ufc-fight-tracker/README.md) - shows a preview of upcoming events in the UFC using the ESPN API (by @xZinio)
 * [xkcd Widget](widgets/xkcd-widget/README.md) - a custom simple widget that displays current xkcd comic (by @AllanAAbraham)
 
 <br>
