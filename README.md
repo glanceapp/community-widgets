@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Glances Server stats](widgets/glances-stats/README.md) - show the Glances statistics (by @andersonviudes)
 * [MyanimeList Profile](widgets/myanimelist-profile/README.md) - show your profile (by @WaYy)
 * [GitHub Status](widgets/github-status/README.md) - display the current operational status of GitHub services (by @m1xzg)
 * [Todoist Tasks](widgets/todoist-tasks/README.md) - display and complete today's tasks from Todoist with priority levels and project names (by @xd1i0)
 * [Immich Styled Stats](widgets/immich-styled/README.md) - immich styled statistics taken straight out of the app. Beautiful, simple and useful (by @panonim)
-* [GitHub Actions Status](widgets/github-actions-status/README.md) - displays the status of GitHub Actions workflows for a repository (by @unickq)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -59,6 +59,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [GitHub Notifications](widgets/github-notifications/README.md) - show your notifications on GitHub (by @luboszima)
 * [GitHub Status](widgets/github-status/README.md) - display the current operational status of GitHub services (by @m1xzg)
 * [GitHub personal repositories](widgets/github-personal-repos/README.md) - show your own personal respositories on GitHub (by @menitz)
+* [Glances Server stats](widgets/glances-stats/README.md) - show the Glances statistics (by @andersonviudes)
 * [Gluetun VPN status](widgets/gluetun-vpn-status/README.md) - show the public IP, country and city of you [Gluetun VPN client](https://github.com/qdm12/gluetun) (by @Hyptu)
 * [Google Calendar List](widgets/google-calendar-list/README.md) - list Google Calendar upcoming events (by @anant-j)
 * [Grafana](widgets/grafana/README.md) - useful information and metrics from a Grafana data source (like prometheus, mimir, loki) (by @koalalorenzo)
