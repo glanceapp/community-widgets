@@ -23,7 +23,7 @@
     {{ $stats := .Subrequest "stats" }}
     <div class="flex justify-between text-center margin-block-3">
     <div>
-        {{ $downloadChange := percentChange ($stats.JSON.Float "data.download.avg_bits") (.JSON.Float "data.download_bits")
+        {{ $downloadChange := percentChange (.JSON.Float "data.download_bits") ($stats.JSON.Float "data.download.avg_bits")
         }}
         {{ if $showPercentage }}
         <div
@@ -51,7 +51,7 @@
         <div class="size-h6">DOWNLOAD</div>
     </div>
     <div>
-        {{ $uploadChange := percentChange ($stats.JSON.Float "data.upload.avg_bits") (.JSON.Float "data.upload_bits") }}
+        {{ $uploadChange := percentChange (.JSON.Float "data.upload_bits") ($stats.JSON.Float "data.upload.avg_bits") }}
         {{ if $showPercentage }}
         <div
         class="size-small {{ if gt $uploadChange 0.0 }}color-positive{{ else if lt $uploadChange 0.0 }}color-negative{{ else }}color-primary{{ end }}"
@@ -78,7 +78,7 @@
         <div class="size-h6">UPLOAD</div>
     </div>
     <div>
-        {{ $pingChange := percentChange ($stats.JSON.Float "data.ping.avg") (.JSON.Float "data.ping") }}
+        {{ $pingChange := percentChange (.JSON.Float "data.ping") ($stats.JSON.Float "data.ping.avg") }}
         {{ if $showPercentage }}
         <div
         class="size-small {{ if gt $pingChange 0.0 }}color-negative{{ else if lt $pingChange 0.0 }}color-positive{{ else }}color-primary{{ end }}"
