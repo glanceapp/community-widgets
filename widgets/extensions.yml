@@ -48,6 +48,11 @@
   description: Show Transmission downloads
   author: Xtrems876
 
+- title: Lichess Daily Puzzle
+  url: https://github.com/brtmax/lichess-glance
+  description: Daily Lichess Puzzle
+  author: brtmax
+  
 - title: glance-bilibili
   url: https://github.com/Cynosure159/glance-bilibili
   description: Display Bilibili videos like Videos widget.
