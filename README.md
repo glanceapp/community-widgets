@@ -171,10 +171,10 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Restic snapshot](https://github.com/not-first/restic-glance-extension) - show the most recent snapshot(s) and storage stats of a Restic repository (by @not-first)
 * [Swedish Hockey API](https://github.com/GSHimself/hockey-api) - shows results and next games from Swedish HockeyAllsvenskan (by @gshimself)
 * [VMware ESXi Stats](https://github.com/lumitesi/glance-esxi-stats) - display server, VM, and datastore statistics for VMware ESXi (by @lumitesi)
+* [glance-bilibili](https://github.com/Cynosure159/glance-bilibili) - display Bilibili videos like Videos widget (by @Cynosure159)
 * [iCal (ICS) Calendar List](https://github.com/AWildLeon/Glance-iCal-Events) - list a ICS File's upcoming events (Like Google Calendar List) (by @AWildLeon)
 * [linktiles](https://github.com/haondt/linktiles/) - display your linkding bookmarks in a configurable mosaic (by @haondt)
 * [qBittorrent Statistic](https://github.com/Panonim/qbwrapper) - display file statistics as they are being downloaded (by @panonim)
-* [glance-bilibili](https://github.com/Cynosure159/glance-bilibili) - Display Bilibili videos like Videos widget. (by @Cynosure159)
 
 <br>
 
