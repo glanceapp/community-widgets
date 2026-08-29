@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [GitHub Status](widgets/github-status/README.md) - display the current operational status of GitHub services (by @m1xzg)
 * [Todoist Tasks](widgets/todoist-tasks/README.md) - display and complete today's tasks from Todoist with priority levels and project names (by @xd1i0)
 * [Immich Styled Stats](widgets/immich-styled/README.md) - immich styled statistics taken straight out of the app. Beautiful, simple and useful (by @panonim)
 * [GitHub Actions Status](widgets/github-actions-status/README.md) - displays the status of GitHub Actions workflows for a repository (by @unickq)
 * [Overseerr Users Requests](widgets/overseerr-users-requests/README.md) - shows the list of users and their number of request made in Overseerr (by @GiamBoscaro)
-* [ufc-fight-tracker](widgets/ufc-fight-tracker/README.md) - shows a preview of upcoming events in the UFC using the ESPN API (by @xZinio)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -57,6 +57,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Ghostfolio stats](widgets/ghostfolio-stats/README.md) - show the status of your investments with today's results, YTD and totals (by @ziritione85)
 * [GitHub Actions Status](widgets/github-actions-status/README.md) - displays the status of GitHub Actions workflows for a repository (by @unickq)
 * [GitHub Notifications](widgets/github-notifications/README.md) - show your notifications on GitHub (by @luboszima)
+* [GitHub Status](widgets/github-status/README.md) - display the current operational status of GitHub services (by @m1xzg)
 * [GitHub personal repositories](widgets/github-personal-repos/README.md) - show your own personal respositories on GitHub (by @menitz)
 * [Gluetun VPN status](widgets/gluetun-vpn-status/README.md) - show the public IP, country and city of you [Gluetun VPN client](https://github.com/qdm12/gluetun) (by @Hyptu)
 * [Google Calendar List](widgets/google-calendar-list/README.md) - list Google Calendar upcoming events (by @anant-j)

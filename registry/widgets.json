@@ -238,9 +238,9 @@
     "description": "show different stats from the current Formula 1 season from [F1 API](https://f1api.dev)",
     "author": "abaza738",
     "directory": "formula1-widgets",
-    "readme_hash": "24b0e6fc1a405b23d7fd541682a60678794cb78b",
+    "readme_hash": "2f21f7a782dc198b9f682683431d4612ce230d6a",
     "time_added": "2025-04-02T03:34:04.3331Z",
-    "time_updated": "2025-09-25T04:55:13.926493114Z"
+    "time_updated": "2026-08-29T13:20:06.824255152Z"
   },
   {
     "title": "Frigate stats",
@@ -295,6 +295,15 @@
     "readme_hash": "8880c52607dcc3e1781857dd77208955bc75d0d9",
     "time_added": "2025-07-14T14:14:40.7113Z",
     "time_updated": "2025-09-25T04:55:13.926610903Z"
+  },
+  {
+    "title": "GitHub Status",
+    "description": "Display the current operational status of GitHub services",
+    "author": "m1xzg",
+    "directory": "github-status",
+    "readme_hash": "ea9b25a92d537def8546eba6933ad733bc238365",
+    "time_added": "2026-08-29T13:20:06.824745308Z",
+    "time_updated": "2026-08-29T13:20:06.824745428Z"
   },
   {
     "title": "GitHub personal repositories",
