@@ -558,6 +558,15 @@
     "time_updated": "2025-09-25T04:55:13.927411479Z"
   },
   {
+    "title": "MyanimeList Profile",
+    "description": "Show your profile",
+    "author": "WaYy",
+    "directory": "myanimelist-profile",
+    "readme_hash": "dd0d788405daa31f27d89ec973c46ebe4d9d22a5",
+    "time_added": "2026-08-29T13:21:43.580221957Z",
+    "time_updated": "2026-08-29T13:21:43.580222042Z"
+  },
+  {
     "title": "MyanimeList Widgets",
     "description": "Show seasonal anime (more Widgets coming soon)",
     "author": "Zephyr73",

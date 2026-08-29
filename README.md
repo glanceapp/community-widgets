@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [MyanimeList Profile](widgets/myanimelist-profile/README.md) - show your profile (by @WaYy)
 * [GitHub Status](widgets/github-status/README.md) - display the current operational status of GitHub services (by @m1xzg)
 * [Todoist Tasks](widgets/todoist-tasks/README.md) - display and complete today's tasks from Todoist with priority levels and project names (by @xd1i0)
 * [Immich Styled Stats](widgets/immich-styled/README.md) - immich styled statistics taken straight out of the app. Beautiful, simple and useful (by @panonim)
 * [GitHub Actions Status](widgets/github-actions-status/README.md) - displays the status of GitHub Actions workflows for a repository (by @unickq)
-* [Overseerr Users Requests](widgets/overseerr-users-requests/README.md) - shows the list of users and their number of request made in Overseerr (by @GiamBoscaro)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -86,6 +86,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [MediaTracker Upcoming Media](widgets/mediatracker-upcoming-tv-shows/README.md) - displays upcoming TV shows, movies or video games monitored by MediaTracker (by @VictorMitr)
 * [Minecraft server](widgets/minecraft-server/README.md) - show the online status, icon, version and player count of a Minecraft server (by @not-first)
 * [Mullvad VPN status](widgets/mullvad-vpn-status/README.md) - show VPN connection status, IP, and location (by @DelMonteAJ)
+* [MyanimeList Profile](widgets/myanimelist-profile/README.md) - show your profile (by @WaYy)
 * [MyanimeList Widgets](widgets/myanimelist-widgets/README.md) - show seasonal anime (more Widgets coming soon) (by @Zephyr73)
 * [NBA Scores Tracker](widgets/nba-scores-tracker/README.md) - show the schedule and scores for NBA games today (by @ShmoobiJones)
 * [NCAA CFB Scoreboard](widgets/ncaa-cfb-scoreboard/README.md) - display live NCAA CFB scoreboard data from ESPN API (by @maxo99)
