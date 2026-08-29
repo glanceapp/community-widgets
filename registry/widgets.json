@@ -1107,6 +1107,15 @@
     "time_updated": "2025-12-05T12:33:47.836005151Z"
   },
   {
+    "title": "UK Bin Collection Data",
+    "description": "UK Bin Collection Widget to show upcoming bin collections - Credit to Robert Bradley for the original project",
+    "author": "kl421",
+    "directory": "UKBinCollection",
+    "readme_hash": "992591583df4a7e8323d1dd4f8f389b7dc00b786",
+    "time_added": "2026-08-29T15:21:08.838717826Z",
+    "time_updated": "2026-08-29T15:21:08.838717936Z"
+  },
+  {
     "title": "Unifi",
     "description": "Unifi controller information",
     "author": "prozn",

@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [UK Bin Collection Data](widgets/UKBinCollection/README.md) - uK Bin Collection Widget to show upcoming bin collections - Credit to Robert Bradley for the original project (by @kl421)
 * [Wikipedia On This Day](widgets/wikipedia-on-this-day/README.md) - show notable events, births, and deaths from Wikipedia that happened on today's date in history (by @mike-rambil)
 * [Discopanel](widgets/discopanel/README.md) - a widget to view all of your minecraft servers from Discopanel (by @PapaZ810)
 * [Crypto Fear & Greed Index](widgets/fear-and-greed-index/README.md) - displays the current Crypto Fear & Greed Index with a color-coded gradient bar, sentiment label and trend arrow (by @yroulin)
 * [Nebula Latest Videos](widgets/nebula-videos/README.md) - a widget that displays the latest videos from selected [Nebula](https://nebula.tv/) channels (by @darius-it)
-* [Glances Server stats](widgets/glances-stats/README.md) - show the Glances statistics (by @andersonviudes)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -147,6 +147,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Trending Mastodon Links](widgets/trending-mastodon-links/README.md) - shows a list of trending links from a provided Mastodon instance (by @tomcasavant)
 * [TrueNAS Scale Pools](widgets/truenas-scale-pools/README.md) - shows datasets with usage and health status (by @drakkein)
 * [Tsumego Daily](widgets/tsumego-daily/README.md) - shows daily Go Problems (Tsumego) from goproblems.com (by @ccarpo)
+* [UK Bin Collection Data](widgets/UKBinCollection/README.md) - uK Bin Collection Widget to show upcoming bin collections - Credit to Robert Bradley for the original project (by @kl421)
 * [Unifi](widgets/unifi/README.md) - unifi controller information (by @prozn)
 * [Uptime Kuma](widgets/uptime-kuma/README.md) - show the status of Uptime Kuma monitors from a status page (by @not-first)
 * [Vikunja Taskboard](widgets/vikunja-taskboard/README.md) - real time taskboard using the Vikunja API (by @gugugiyu)
