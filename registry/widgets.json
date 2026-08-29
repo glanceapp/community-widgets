@@ -310,9 +310,9 @@
     "description": "show the public IP, country and city of you [Gluetun VPN client](https://github.com/qdm12/gluetun)",
     "author": "Hyptu",
     "directory": "gluetun-vpn-status",
-    "readme_hash": "7f332470d1c815659fcbc23da81f82a1306c7277",
+    "readme_hash": "e67221b271e3fff2756312b8341242148b4361fa",
     "time_added": "2025-04-25T22:19:12.0907Z",
-    "time_updated": "2025-09-25T04:55:13.926679161Z"
+    "time_updated": "2026-08-29T13:18:45.307719912Z"
   },
   {
     "title": "Google Calendar List",
