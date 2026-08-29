@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Crypto Fear & Greed Index](widgets/fear-and-greed-index/README.md) - displays the current Crypto Fear & Greed Index with a color-coded gradient bar, sentiment label and trend arrow (by @yroulin)
 * [Nebula Latest Videos](widgets/nebula-videos/README.md) - a widget that displays the latest videos from selected [Nebula](https://nebula.tv/) channels (by @darius-it)
 * [Glances Server stats](widgets/glances-stats/README.md) - show the Glances statistics (by @andersonviudes)
 * [MyanimeList Profile](widgets/myanimelist-profile/README.md) - show your profile (by @WaYy)
 * [GitHub Status](widgets/github-status/README.md) - display the current operational status of GitHub services (by @m1xzg)
-* [Todoist Tasks](widgets/todoist-tasks/README.md) - display and complete today's tasks from Todoist with priority levels and project names (by @xd1i0)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -41,6 +41,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Chess.com Daily Puzzle](widgets/chess-puzzle/README.md) - display daily chess puzzle from chess.com (by @panonim)
 * [Cloudflare Tunnels](widgets/cloudflared-tunnels/README.md) - external and Local Cloudflare Tunnels links (by @drshajul)
 * [Crafty Minecraft Server Stats](widgets/crafty-controller-minecraft-server/README.md) - show the status of Minecraft server managed by Crafty Controller (by @MartyX98)
+* [Crypto Fear & Greed Index](widgets/fear-and-greed-index/README.md) - displays the current Crypto Fear & Greed Index with a color-coded gradient bar, sentiment label and trend arrow (by @yroulin)
 * [Cryptopanic News](widgets/cryptopanic-news/README.md) - a real-time cryptocurrency news widget that displays filtered news from CryptoPanic.com with configurable filters for news type, regions, and currencies (by @herculosh)
 * [Cup Updates](widgets/cup-updates/README.md) - displays information about containers needing an update from Cup (by @panonim)
 * [Docker Swarm](widgets/docker-swarm/README.md) - a widget to monitor Docker Swarm services and nodes based on the built-in docker-containers widget (by @tonineri)

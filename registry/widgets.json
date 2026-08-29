@@ -153,6 +153,15 @@
     "time_updated": "2025-11-04T21:32:36.750473688Z"
   },
   {
+    "title": "Crypto Fear \u0026 Greed Index",
+    "description": "Displays the current Crypto Fear \u0026 Greed Index with a color-coded gradient bar, sentiment label and trend arrow.",
+    "author": "yroulin",
+    "directory": "fear-and-greed-index",
+    "readme_hash": "d2ca043fca5f6c58ec3a127682e4aa7bff46a2bd",
+    "time_added": "2026-08-29T14:21:46.906436196Z",
+    "time_updated": "2026-08-29T14:21:46.906436316Z"
+  },
+  {
     "title": "Cryptopanic News",
     "description": "A real-time cryptocurrency news widget that displays filtered news from CryptoPanic.com with configurable filters for news type, regions, and currencies.",
     "author": "herculosh",
