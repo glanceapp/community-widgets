@@ -103,9 +103,9 @@
     "description": "Server Stats widget matching the builtin widget but using data from Beszel.",
     "author": "Nedra1998",
     "directory": "beszel-server-stats",
-    "readme_hash": "b2c7226dd354fa2b8b28086905b554f4f3015122",
+    "readme_hash": "58a05909a705b91cb71c387a5c8313134ed52b8e",
     "time_added": "2025-10-02T20:57:52.804627383Z",
-    "time_updated": "2025-11-29T19:04:49.314743585Z"
+    "time_updated": "2026-08-29T13:17:19.871415911Z"
   },
   {
     "title": "Calibre-Web Stats",
@@ -151,6 +151,15 @@
     "readme_hash": "60a54ba1497f60f0031c84313e5cdc178bb1042d",
     "time_added": "2025-08-16T18:10:24.2213Z",
     "time_updated": "2025-11-04T21:32:36.750473688Z"
+  },
+  {
+    "title": "Crypto Fear \u0026 Greed Index",
+    "description": "Displays the current Crypto Fear \u0026 Greed Index with a color-coded gradient bar, sentiment label and trend arrow.",
+    "author": "yroulin",
+    "directory": "fear-and-greed-index",
+    "readme_hash": "d2ca043fca5f6c58ec3a127682e4aa7bff46a2bd",
+    "time_added": "2026-08-29T14:21:46.906436196Z",
+    "time_updated": "2026-08-29T14:21:46.906436316Z"
   },
   {
     "title": "Cryptopanic News",
@@ -238,9 +247,9 @@
     "description": "show different stats from the current Formula 1 season from [F1 API](https://f1api.dev)",
     "author": "abaza738",
     "directory": "formula1-widgets",
-    "readme_hash": "24b0e6fc1a405b23d7fd541682a60678794cb78b",
+    "readme_hash": "2f21f7a782dc198b9f682683431d4612ce230d6a",
     "time_added": "2025-04-02T03:34:04.3331Z",
-    "time_updated": "2025-09-25T04:55:13.926493114Z"
+    "time_updated": "2026-08-29T13:20:06.824255152Z"
   },
   {
     "title": "Frigate stats",
@@ -279,6 +288,15 @@
     "time_updated": "2025-09-25T04:55:13.926573624Z"
   },
   {
+    "title": "GitHub Actions Status",
+    "description": "Displays the status of GitHub Actions workflows for a repository",
+    "author": "unickq",
+    "directory": "github-actions-status",
+    "readme_hash": "af24309f1d641f57938a422e1b2c365866619d89",
+    "time_added": "2026-02-25T19:05:45.045910562Z",
+    "time_updated": "2026-02-25T19:05:45.045910692Z"
+  },
+  {
     "title": "GitHub Notifications",
     "description": "show your notifications on GitHub",
     "author": "luboszima",
@@ -286,6 +304,15 @@
     "readme_hash": "8880c52607dcc3e1781857dd77208955bc75d0d9",
     "time_added": "2025-07-14T14:14:40.7113Z",
     "time_updated": "2025-09-25T04:55:13.926610903Z"
+  },
+  {
+    "title": "GitHub Status",
+    "description": "Display the current operational status of GitHub services",
+    "author": "m1xzg",
+    "directory": "github-status",
+    "readme_hash": "ea9b25a92d537def8546eba6933ad733bc238365",
+    "time_added": "2026-08-29T13:20:06.824745308Z",
+    "time_updated": "2026-08-29T13:20:06.824745428Z"
   },
   {
     "title": "GitHub personal repositories",
@@ -297,13 +324,22 @@
     "time_updated": "2025-09-25T04:55:13.926643635Z"
   },
   {
+    "title": "Glances Server stats",
+    "description": "show the Glances statistics",
+    "author": "andersonviudes",
+    "directory": "glances-stats",
+    "readme_hash": "afbc42042f05a615c114cbc3b45e78903114cf30",
+    "time_added": "2026-08-29T13:29:41.948653326Z",
+    "time_updated": "2026-08-29T13:29:41.948653446Z"
+  },
+  {
     "title": "Gluetun VPN status",
     "description": "show the public IP, country and city of you [Gluetun VPN client](https://github.com/qdm12/gluetun)",
     "author": "Hyptu",
     "directory": "gluetun-vpn-status",
-    "readme_hash": "7f332470d1c815659fcbc23da81f82a1306c7277",
+    "readme_hash": "e67221b271e3fff2756312b8341242148b4361fa",
     "time_added": "2025-04-25T22:19:12.0907Z",
-    "time_updated": "2025-09-25T04:55:13.926679161Z"
+    "time_updated": "2026-08-29T13:18:45.307719912Z"
   },
   {
     "title": "Google Calendar List",
@@ -340,6 +376,15 @@
     "readme_hash": "3eb5520dbadf0cf32e54a673067f33bcc8fe6fd9",
     "time_added": "2025-05-08T17:50:40.1551Z",
     "time_updated": "2025-09-25T04:55:13.926791401Z"
+  },
+  {
+    "title": "Immich Styled Stats",
+    "description": "Immich styled statistics taken straight out of the app. Beautiful, simple and useful.",
+    "author": "panonim",
+    "directory": "immich-styled",
+    "readme_hash": "136d64343460239446b2053704dc2f5b0961c684",
+    "time_added": "2026-02-25T19:22:48.402344139Z",
+    "time_updated": "2026-02-25T19:22:48.402344259Z"
   },
   {
     "title": "Immich stats",
@@ -531,6 +576,15 @@
     "time_updated": "2025-09-25T04:55:13.927411479Z"
   },
   {
+    "title": "MyanimeList Profile",
+    "description": "Show your profile",
+    "author": "WaYy",
+    "directory": "myanimelist-profile",
+    "readme_hash": "dd0d788405daa31f27d89ec973c46ebe4d9d22a5",
+    "time_added": "2026-08-29T13:21:43.580221957Z",
+    "time_updated": "2026-08-29T13:21:43.580222042Z"
+  },
+  {
     "title": "MyanimeList Widgets",
     "description": "Show seasonal anime (more Widgets coming soon)",
     "author": "Zephyr73",
@@ -594,6 +648,15 @@
     "time_updated": "2025-09-25T04:55:13.927530622Z"
   },
   {
+    "title": "Nebula Latest Videos",
+    "description": "A widget that displays the latest videos from selected [Nebula](https://nebula.tv/) channels.",
+    "author": "darius-it",
+    "directory": "nebula-videos",
+    "readme_hash": "4ccfd182891edd9359a3d5af45dac82c2b0b2491",
+    "time_added": "2026-08-29T13:44:45.143429571Z",
+    "time_updated": "2026-08-29T13:44:45.143429702Z"
+  },
+  {
     "title": "NetAlertX Device Status",
     "description": "display the status of connected devices monitored by NetAlertX",
     "author": "razdnut",
@@ -655,6 +718,15 @@
     "readme_hash": "f4748bcb9f3c79e18e3b7a68406e1ec1a67c7cb7",
     "time_added": "2025-06-04T02:40:43.805Z",
     "time_updated": "2025-09-25T04:55:13.927841814Z"
+  },
+  {
+    "title": "Overseerr Users Requests",
+    "description": "Shows the list of users and their number of request made in Overseerr",
+    "author": "GiamBoscaro",
+    "directory": "overseerr-users-requests",
+    "readme_hash": "9ef753c1a13cdae2fb70c48e11b7709fa42a2bba",
+    "time_added": "2026-02-25T19:04:13.345204276Z",
+    "time_updated": "2026-02-25T19:04:13.345204396Z"
   },
   {
     "title": "PagerDuty Incidents",
@@ -832,9 +904,9 @@
     "description": "show the latest internet speed information from Speedtest Tracker",
     "author": "not-first",
     "directory": "speedtest-tracker",
-    "readme_hash": "4c8f55aea8d217de708f992c85a5dfe68cfd0ba4",
+    "readme_hash": "f98d535e6e45879bccb8aa1fff7eee1dc7e3d506",
     "time_added": "2025-03-21T08:54:30.1428Z",
-    "time_updated": "2025-09-25T04:55:13.928480648Z"
+    "time_updated": "2026-02-25T19:26:02.10175844Z"
   },
   {
     "title": "Spotify Now Playing",
@@ -963,6 +1035,15 @@
     "time_updated": "2025-09-25T04:55:13.928925499Z"
   },
   {
+    "title": "Todoist Tasks",
+    "description": "Display and complete today's tasks from Todoist with priority levels and project names",
+    "author": "xd1i0",
+    "directory": "todoist-tasks",
+    "readme_hash": "6e48399eb965dda18b270d84924fa9cecd93f131",
+    "time_added": "2026-08-29T13:10:31.269907773Z",
+    "time_updated": "2026-08-29T13:10:31.269907893Z"
+  },
+  {
     "title": "Trakt",
     "description": "shows your last-watched movies \u0026 TV shows on Trakt",
     "author": "RxBrad",
@@ -1087,6 +1168,15 @@
     "readme_hash": "4357fc874d2c974a8b5252608d300fc666515bb0",
     "time_added": "2025-08-19T20:06:23.4484Z",
     "time_updated": "2025-09-25T04:55:13.928119062Z"
+  },
+  {
+    "title": "ufc-fight-tracker",
+    "description": "Shows a preview of upcoming events in the UFC using the ESPN API.",
+    "author": "xZinio",
+    "directory": "ufc-fight-tracker",
+    "readme_hash": "975f3efa99a2bbde03945c6e77b9252f03c8a35f",
+    "time_added": "2026-02-25T18:53:50.624465852Z",
+    "time_updated": "2026-02-25T18:53:50.624465982Z"
   },
   {
     "title": "xkcd Widget",
