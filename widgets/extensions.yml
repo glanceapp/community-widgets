@@ -62,3 +62,8 @@
   url: https://github.com/lumitesi/glance-esxi-stats
   description: Display server, VM, and datastore statistics for VMware ESXi.
   author: lumitesi
+
+- title: Proxmox VE Metrics
+  url: https://github.com/drumandbytes/pve-metrics-exporter
+  description: Prometheus + Glance JSON API exporter for Proxmox VE - node/VM/LXC resource usage and hardware sensor temperatures (most exporters skip temperatures entirely).
+  author: drumandbytes
