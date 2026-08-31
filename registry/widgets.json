@@ -135,6 +135,15 @@
     "time_updated": "2025-09-25T04:55:13.925995484Z"
   },
   {
+    "title": "Cloudflare Tunnel Status",
+    "description": "Cloudflare connector tunnel live health status and origin IP",
+    "author": "kirolos-esmat",
+    "directory": "cloudflare-tunnel-status",
+    "readme_hash": "bfdc1b21f53a2816109e2812c8ac7cc96ef8e973",
+    "time_added": "2026-08-31T20:57:33.725978905Z",
+    "time_updated": "2026-08-31T20:57:33.725979116Z"
+  },
+  {
     "title": "Cloudflare Tunnels",
     "description": "External and Local Cloudflare Tunnels links",
     "author": "drshajul",
@@ -432,6 +441,15 @@
     "time_updated": "2025-09-25T04:55:13.926861351Z"
   },
   {
+    "title": "Jellyfin Stats",
+    "description": "Live active playback streams (dynamic highlight), total movies \u0026 series count",
+    "author": "kirolos-esmat",
+    "directory": "jellyfin-stats",
+    "readme_hash": "99c7033f3c5499c285e80cda4c8c65cff5dae4a4",
+    "time_added": "2026-08-31T20:57:33.727912826Z",
+    "time_updated": "2026-08-31T20:57:33.727912896Z"
+  },
+  {
     "title": "Karakeep Dashboard",
     "description": "The widget returns statistics on the number of bookmarks and the number of tags and the most recently added bookmarks.",
     "author": "razdnut",
@@ -684,6 +702,15 @@
     "time_updated": "2025-09-25T04:55:13.927577369Z"
   },
   {
+    "title": "Netbird Peers Count",
+    "description": "Real-time total connected network peer count",
+    "author": "kirolos-esmat",
+    "directory": "netbird-peers-count",
+    "readme_hash": "337ebda3e465ce113f7e5a06cdd8931f9170e8d0",
+    "time_added": "2026-08-31T20:57:33.729342087Z",
+    "time_updated": "2026-08-31T20:57:33.729342158Z"
+  },
+  {
     "title": "Netbird devices",
     "description": "show all devices inside to a Netbird network along with their connection status, update availability and IP",
     "author": "menitz",
@@ -783,6 +810,15 @@
     "time_updated": "2025-09-25T04:55:13.92792041Z"
   },
   {
+    "title": "Plex Stats",
+    "description": "Native Plex API sessions, active streams list, and library counts",
+    "author": "kirolos-esmat",
+    "directory": "plex-stats",
+    "readme_hash": "1c47df6593ee8e0f8206b95582b6a621b0d7d2fd",
+    "time_added": "2026-08-31T20:57:33.729971642Z",
+    "time_updated": "2026-08-31T20:57:33.729971712Z"
+  },
+  {
     "title": "Portainer Dashboard",
     "description": "show docker containers from portainer.",
     "author": "RealTong",
@@ -835,6 +871,15 @@
     "readme_hash": "3dbaf7fb752968cb6dafaa6759dd3b7b2eb2030e",
     "time_added": "2025-06-13T12:41:45.1472Z",
     "time_updated": "2025-11-01T20:20:59.907944977Z"
+  },
+  {
+    "title": "Radarr Stats",
+    "description": "Total movie library count, missing movies, and active download queue",
+    "author": "kirolos-esmat",
+    "directory": "radarr-stats",
+    "readme_hash": "907d3a3970e9bd6c38dfd87e85ba3ec676c70ee1",
+    "time_added": "2026-08-31T20:57:33.730433057Z",
+    "time_updated": "2026-08-31T20:57:33.730433137Z"
   },
   {
     "title": "Raindrop Bookmarks",
@@ -916,6 +961,15 @@
     "readme_hash": "6c8a4726a0dca1375e4b3ebde33da6159f0afae6",
     "time_added": "2025-06-03T09:59:51.337Z",
     "time_updated": "2025-09-25T04:55:13.928443879Z"
+  },
+  {
+    "title": "Sonarr Stats",
+    "description": "Total series library count, missing episodes, and active download queue",
+    "author": "kirolos-esmat",
+    "directory": "sonarr-stats",
+    "readme_hash": "6a77ea8ff3edcdb2c38bd65b81beca2744b7783d",
+    "time_added": "2026-08-31T20:57:33.731009553Z",
+    "time_updated": "2026-08-31T20:57:33.731009613Z"
   },
   {
     "title": "Speedtest Tracker",
@@ -1017,6 +1071,15 @@
     "time_updated": "2025-10-03T08:12:31.464315427Z"
   },
   {
+    "title": "Tailscale Device Status",
+    "description": "Live IP address, relative last seen timestamp, and key expiry for a specific Tailscale device",
+    "author": "kirolos-esmat",
+    "directory": "tailscale-device-status",
+    "readme_hash": "7c20ebe1f82974931141dd930270ece2eb007bac",
+    "time_added": "2026-08-31T20:57:33.731578497Z",
+    "time_updated": "2026-08-31T20:57:33.731578567Z"
+  },
+  {
     "title": "Tailscale devices",
     "description": "show all devices inside a Tailscale tailnet along with their connection status, owner, update availability and IP",
     "author": "not-first",
@@ -1096,6 +1159,15 @@
     "readme_hash": "36d1a378e918283fca6776d45e8d94da2d4ec888",
     "time_added": "2025-03-18T16:15:35.7271Z",
     "time_updated": "2025-09-25T04:55:13.929069027Z"
+  },
+  {
+    "title": "TrueNAS Metrics",
+    "description": "System load average, live uptime, active TrueNAS alerts counter, CPU model",
+    "author": "kirolos-esmat",
+    "directory": "truenas-metrics",
+    "readme_hash": "9e683100a437e814f217110716f4e03f7b525fa1",
+    "time_added": "2026-08-31T20:57:33.732097557Z",
+    "time_updated": "2026-08-31T20:57:33.732097618Z"
   },
   {
     "title": "TrueNAS Scale Pools",
