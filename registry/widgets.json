@@ -180,6 +180,15 @@
     "time_updated": "2025-09-25T04:55:13.926307988Z"
   },
   {
+    "title": "DHL Tracking",
+    "description": "A Glance widget for displaying the tracking status of DHL parcels.",
+    "author": "cpt-metal",
+    "directory": "dhl-tracking",
+    "readme_hash": "3d67bedec8037f2d145a7fb7c1030e1a8f251645",
+    "time_added": "2026-08-31T18:53:24.362051821Z",
+    "time_updated": "2026-08-31T18:53:24.362052012Z"
+  },
+  {
     "title": "Discopanel",
     "description": "A widget to view all of your minecraft servers from Discopanel",
     "author": "PapaZ810",
