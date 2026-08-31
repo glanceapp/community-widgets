@@ -1,0 +1,95 @@
+## MyAnimeList Statistics
+
+A widget to display your MyAnimeList statistics.
+
+<img src=preview.png width="300">
+
+### Widget yaml
+
+<details>
+
+<summary>Click</summary>
+
+```yaml
+- type: custom-api
+  title: MAL Profile
+  title-url: https://myanimelist.net/profile/${MAL_USER}
+  url: https://api.jikan.moe/v4/users/${MAL_USER}/full
+  cache: 15m
+  template: |
+    {{ if not (.JSON.Exists "data") }}
+    <p class="color-negative">Error reading response</p>
+    {{ else }}
+
+    <div class="flex items-center gap-12" style="margin-bottom: 1rem;">
+      <a class="size-title-dynamic color-highlight text-truncate block grow" href="https://myanimelist.net/profile/{{ .JSON.String "data.username" }}" target="_blank" rel="noreferrer">
+        {{ .JSON.String "data.username" }}
+      </a>
+      <div>
+        <img src="{{ .JSON.String "data.images.jpg.image_url" }}" alt="Avatar" style="width: 32px; height: 32px; border-radius: 50%;" />
+      </div>
+    </div>
+
+    <ul class="dynamic-columns list-gap-8">
+      <div class="flex items-center gap-12">
+        <div class="color-highlight block grow">Anime Days</div>
+        <div>{{ .JSON.Float "data.statistics.anime.days_watched" }}</div>
+      </div>
+      <div class="flex items-center gap-12">
+        <div class="color-highlight block grow">Anime Score</div>
+        <div>{{ .JSON.Float "data.statistics.anime.mean_score" }}/10</div>
+      </div>
+      <div class="flex items-center gap-12">
+        <div class="color-highlight block grow">Episodes</div>
+        <div>{{ .JSON.Int "data.statistics.anime.episodes_watched" }}</div>
+      </div>
+      <div class="flex items-center gap-12">
+        <div class="color-highlight block grow">Completed</div>
+        <div>{{ .JSON.Int "data.statistics.anime.completed" }}</div>
+      </div>
+      <div class="flex items-center gap-12">
+        <div class="color-highlight block grow">Manga Days</div>
+        <div>{{ .JSON.Float "data.statistics.manga.days_read" }}</div>
+      </div>
+      <div class="flex items-center gap-12">
+        <div class="color-highlight block grow">Manga Score</div>
+        <div>{{ .JSON.Float "data.statistics.manga.mean_score" }}/10</div>
+      </div>
+      <div class="flex items-center gap-12">
+        <div class="color-highlight block grow">Chapters</div>
+        <div>{{ .JSON.Int "data.statistics.manga.chapters_read" }}</div>
+      </div>
+      <div class="flex items-center gap-12">
+        <div class="color-highlight block grow">Completed</div>
+        <div>{{ .JSON.Int "data.statistics.manga.completed" }}</div>
+      </div>
+
+      {{ if .JSON.Exists "data.statistics.anime.watching" }}
+      <div class="flex items-center gap-12">
+        <div class="color-highlight block grow">Currently Watching</div>
+        <div>{{ .JSON.Int "data.statistics.anime.watching" }}</div>
+      </div>
+      {{ end }}
+      {{ if .JSON.Exists "data.statistics.manga.reading" }}
+      <div class="flex items-center gap-12">
+        <div class="color-highlight block grow">Currently Reading</div>
+        <div>{{ .JSON.Int "data.statistics.manga.reading" }}</div>
+      </div>
+      {{ end }}
+    </ul>
+
+    {{ end }}
+
+```
+
+</details>
+
+### Environment variable
+
+- `MAL_USER` - your MyAnimeList username.
+
+## Credits
+
+[WaYy](https://github.com/WaYyTempest) - Widget creator
+
+[Jikan](https://github.com/jikan-me) - Creator of api jikan

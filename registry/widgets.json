@@ -103,9 +103,9 @@
     "description": "Server Stats widget matching the builtin widget but using data from Beszel.",
     "author": "Nedra1998",
     "directory": "beszel-server-stats",
-    "readme_hash": "b2c7226dd354fa2b8b28086905b554f4f3015122",
+    "readme_hash": "58a05909a705b91cb71c387a5c8313134ed52b8e",
     "time_added": "2025-10-02T20:57:52.804627383Z",
-    "time_updated": "2025-11-29T19:04:49.314743585Z"
+    "time_updated": "2026-08-29T13:17:19.871415911Z"
   },
   {
     "title": "Calibre-Web Stats",
@@ -153,6 +153,15 @@
     "time_updated": "2025-11-04T21:32:36.750473688Z"
   },
   {
+    "title": "Crypto Fear \u0026 Greed Index",
+    "description": "Displays the current Crypto Fear \u0026 Greed Index with a color-coded gradient bar, sentiment label and trend arrow.",
+    "author": "yroulin",
+    "directory": "fear-and-greed-index",
+    "readme_hash": "d2ca043fca5f6c58ec3a127682e4aa7bff46a2bd",
+    "time_added": "2026-08-29T14:21:46.906436196Z",
+    "time_updated": "2026-08-29T14:21:46.906436316Z"
+  },
+  {
     "title": "Cryptopanic News",
     "description": "A real-time cryptocurrency news widget that displays filtered news from CryptoPanic.com with configurable filters for news type, regions, and currencies.",
     "author": "herculosh",
@@ -169,6 +178,24 @@
     "readme_hash": "be97a506577556088e620c7f2c86981bda9072b8",
     "time_added": "2025-05-02T12:28:49.3537Z",
     "time_updated": "2025-09-25T04:55:13.926307988Z"
+  },
+  {
+    "title": "DHL Tracking",
+    "description": "A Glance widget for displaying the tracking status of DHL parcels.",
+    "author": "cpt-metal",
+    "directory": "dhl-tracking",
+    "readme_hash": "3d67bedec8037f2d145a7fb7c1030e1a8f251645",
+    "time_added": "2026-08-31T18:53:24.362051821Z",
+    "time_updated": "2026-08-31T18:53:24.362052012Z"
+  },
+  {
+    "title": "Discopanel",
+    "description": "A widget to view all of your minecraft servers from Discopanel",
+    "author": "PapaZ810",
+    "directory": "discopanel",
+    "readme_hash": "9745f83e68dc606f58a2065b714f068fe01ec08b",
+    "time_added": "2026-08-29T15:10:05.476461467Z",
+    "time_updated": "2026-08-29T15:10:05.476461567Z"
   },
   {
     "title": "Docker Swarm",
@@ -238,9 +265,9 @@
     "description": "show different stats from the current Formula 1 season from [F1 API](https://f1api.dev)",
     "author": "abaza738",
     "directory": "formula1-widgets",
-    "readme_hash": "24b0e6fc1a405b23d7fd541682a60678794cb78b",
+    "readme_hash": "2f21f7a782dc198b9f682683431d4612ce230d6a",
     "time_added": "2025-04-02T03:34:04.3331Z",
-    "time_updated": "2025-09-25T04:55:13.926493114Z"
+    "time_updated": "2026-08-29T13:20:06.824255152Z"
   },
   {
     "title": "Frigate stats",
@@ -297,6 +324,15 @@
     "time_updated": "2025-09-25T04:55:13.926610903Z"
   },
   {
+    "title": "GitHub Status",
+    "description": "Display the current operational status of GitHub services",
+    "author": "m1xzg",
+    "directory": "github-status",
+    "readme_hash": "ea9b25a92d537def8546eba6933ad733bc238365",
+    "time_added": "2026-08-29T13:20:06.824745308Z",
+    "time_updated": "2026-08-29T13:20:06.824745428Z"
+  },
+  {
     "title": "GitHub personal repositories",
     "description": "show your own personal respositories on GitHub",
     "author": "menitz",
@@ -306,13 +342,22 @@
     "time_updated": "2025-09-25T04:55:13.926643635Z"
   },
   {
+    "title": "Glances Server stats",
+    "description": "show the Glances statistics",
+    "author": "andersonviudes",
+    "directory": "glances-stats",
+    "readme_hash": "afbc42042f05a615c114cbc3b45e78903114cf30",
+    "time_added": "2026-08-29T13:29:41.948653326Z",
+    "time_updated": "2026-08-29T13:29:41.948653446Z"
+  },
+  {
     "title": "Gluetun VPN status",
     "description": "show the public IP, country and city of you [Gluetun VPN client](https://github.com/qdm12/gluetun)",
     "author": "Hyptu",
     "directory": "gluetun-vpn-status",
-    "readme_hash": "7f332470d1c815659fcbc23da81f82a1306c7277",
+    "readme_hash": "e67221b271e3fff2756312b8341242148b4361fa",
     "time_added": "2025-04-25T22:19:12.0907Z",
-    "time_updated": "2025-09-25T04:55:13.926679161Z"
+    "time_updated": "2026-08-29T13:18:45.307719912Z"
   },
   {
     "title": "Google Calendar List",
@@ -549,6 +594,15 @@
     "time_updated": "2025-09-25T04:55:13.927411479Z"
   },
   {
+    "title": "MyanimeList Profile",
+    "description": "Show your profile",
+    "author": "WaYy",
+    "directory": "myanimelist-profile",
+    "readme_hash": "dd0d788405daa31f27d89ec973c46ebe4d9d22a5",
+    "time_added": "2026-08-29T13:21:43.580221957Z",
+    "time_updated": "2026-08-29T13:21:43.580222042Z"
+  },
+  {
     "title": "MyanimeList Widgets",
     "description": "Show seasonal anime (more Widgets coming soon)",
     "author": "Zephyr73",
@@ -610,6 +664,15 @@
     "readme_hash": "792a4dabb0e25bdc8fb49ff0398e41cb446eb821",
     "time_added": "2025-04-23T11:45:55.5506Z",
     "time_updated": "2025-09-25T04:55:13.927530622Z"
+  },
+  {
+    "title": "Nebula Latest Videos",
+    "description": "A widget that displays the latest videos from selected [Nebula](https://nebula.tv/) channels.",
+    "author": "darius-it",
+    "directory": "nebula-videos",
+    "readme_hash": "4ccfd182891edd9359a3d5af45dac82c2b0b2491",
+    "time_added": "2026-08-29T13:44:45.143429571Z",
+    "time_updated": "2026-08-29T13:44:45.143429702Z"
   },
   {
     "title": "NetAlertX Device Status",
@@ -990,6 +1053,15 @@
     "time_updated": "2025-09-25T04:55:13.928925499Z"
   },
   {
+    "title": "Todoist Tasks",
+    "description": "Display and complete today's tasks from Todoist with priority levels and project names",
+    "author": "xd1i0",
+    "directory": "todoist-tasks",
+    "readme_hash": "6e48399eb965dda18b270d84924fa9cecd93f131",
+    "time_added": "2026-08-29T13:10:31.269907773Z",
+    "time_updated": "2026-08-29T13:10:31.269907893Z"
+  },
+  {
     "title": "Trakt",
     "description": "shows your last-watched movies \u0026 TV shows on Trakt",
     "author": "RxBrad",
@@ -1044,6 +1116,15 @@
     "time_updated": "2025-12-05T12:33:47.836005151Z"
   },
   {
+    "title": "UK Bin Collection Data",
+    "description": "UK Bin Collection Widget to show upcoming bin collections - Credit to Robert Bradley for the original project",
+    "author": "kl421",
+    "directory": "UKBinCollection",
+    "readme_hash": "992591583df4a7e8323d1dd4f8f389b7dc00b786",
+    "time_added": "2026-08-29T15:21:08.838717826Z",
+    "time_updated": "2026-08-29T15:21:08.838717936Z"
+  },
+  {
     "title": "Unifi",
     "description": "Unifi controller information",
     "author": "prozn",
@@ -1096,6 +1177,15 @@
     "readme_hash": "fa6e3c1ccf9996f288ff6b8546871fde95dc367e",
     "time_added": "2025-03-25T21:55:57.7136Z",
     "time_updated": "2025-09-25T04:55:13.929331928Z"
+  },
+  {
+    "title": "Wikipedia On This Day",
+    "description": "Show notable events, births, and deaths from Wikipedia that happened on today's date in history.",
+    "author": "mike-rambil",
+    "directory": "wikipedia-on-this-day",
+    "readme_hash": "bcb9414d2ed92dd5ae3ca76e27b3e6da1b55a2da",
+    "time_added": "2026-08-29T15:18:21.6979138Z",
+    "time_updated": "2026-08-29T15:18:21.69791388Z"
   },
   {
     "title": "YouTube Embedded Player",
