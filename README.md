@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Termix](widgets/termix/README.md) - show hosts and recent activity from your Termix instance (by @giannf)
+* [Cloud & SaaS Status](widgets/outagedeck-service-status/README.md) - show provider and service status from OutageDeck's keyless public API (by @koko3tallah)
 * [sparkDash DGX cluster](widgets/sparkdash-dgx-cluster/README.md) - live DGX Spark (GB10) monitoring — GPU temp/usage, VRAM, LLM tok/s, KV-cache and uptime for the head node and a worker, from a sparkDash instance (by @linxichen)
 * [TrueNAS Metrics](widgets/truenas-metrics/README.md) - system load average, live uptime, active TrueNAS alerts counter, CPU model (by @kirolos-esmat)
 * [Tailscale Device Status](widgets/tailscale-device-status/README.md) - live IP address, relative last seen timestamp, and key expiry for a specific Tailscale device (by @kirolos-esmat)
-* [Sonarr Stats](widgets/sonarr-stats/README.md) - total series library count, missing episodes, and active download queue (by @kirolos-esmat)
-* [Radarr Stats](widgets/radarr-stats/README.md) - total movie library count, missing movies, and active download queue (by @kirolos-esmat)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -39,6 +39,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Calibre-Web Stats](widgets/calibre-web-stats/README.md) - display a summary of books from your Calibre-Web server (by @rvelasq)
 * [Cats As A Service Photos](widgets/cats-as-a-service-photos/README.md) - show a grid of cat photos from the Cat as a Service [API](https://cataas.com/) (by @gugugiyu)
 * [Chess.com Daily Puzzle](widgets/chess-puzzle/README.md) - display daily chess puzzle from chess.com (by @panonim)
+* [Cloud & SaaS Status](widgets/outagedeck-service-status/README.md) - show provider and service status from OutageDeck's keyless public API (by @koko3tallah)
 * [Cloudflare Tunnel Status](widgets/cloudflare-tunnel-status/README.md) - cloudflare connector tunnel live health status and origin IP (by @kirolos-esmat)
 * [Cloudflare Tunnels](widgets/cloudflared-tunnels/README.md) - external and Local Cloudflare Tunnels links (by @drshajul)
 * [Crafty Minecraft Server Stats](widgets/crafty-controller-minecraft-server/README.md) - show the status of Minecraft server managed by Crafty Controller (by @MartyX98)
@@ -72,8 +73,8 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Immich Styled Stats](widgets/immich-styled/README.md) - immich styled statistics taken straight out of the app. Beautiful, simple and useful (by @panonim)
 * [Immich stats](widgets/immich-stats/README.md) - show the number of photos, videos and usage of your Immich server (by @svilenmarkov)
 * [Jellyfin Latest/Next Up](widgets/jellyfin-latest/README.md) - display the newest additions to a Jellyfin library, and next up to watch for a given user (by @Nedra1998)
-* [Jellyfin Stats](widgets/jellyfin-stats/README.md) - live active playback streams (dynamic highlight), total movies & series count (by @kirolos-esmat)
 * [Jellyfin Stats](widgets/jellyfin-emby-stats/README.md) - show the number of movies, shows, episodes and songs in your Jellyfin or Emby server (by @lfvelosoh)
+* [Jellyfin Stats](widgets/jellyfin-stats/README.md) - live active playback streams (dynamic highlight), total movies & series count (by @kirolos-esmat)
 * [Karakeep Dashboard](widgets/karakeep-dashboard/README.md) - the widget returns statistics on the number of bookmarks and the number of tags and the most recently added bookmarks (by @razdnut)
 * [Kavita Latest](widgets/kavita-latest/README.md) - show recently updated series and in progress series from your Kavita server (by @Nedra1998)
 * [Komga Recently Added Series](widgets/komga-latest/README.md) - displays recently added comic/manga series to a defined Komga library (by @VictorMitr)
@@ -147,6 +148,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Tailscale devices](widgets/tailscale-devices/README.md) - show all devices inside a Tailscale tailnet along with their connection status, owner, update availability and IP (by @not-first)
 * [Tautulli Stats](widgets/tautulli-stats/README.md) - show various home stats from Tautulli such as recently watched, top movies/shows, etc (by @SkyAllinott)
 * [Technitium DNS Stats](widgets/technitium-dns-stats/README.md) - show stats from Technitium DNS Server (by @eribbey)
+* [Termix](widgets/termix/README.md) - show hosts and recent activity from your Termix instance (by @giannf)
 * [Time Bar](widgets/time-bar/README.md) - show percentage of day/month/year elapsed (by @anant-j)
 * [Todoist Tasks](widgets/todoist-tasks/README.md) - display and complete today's tasks from Todoist with priority levels and project names (by @xd1i0)
 * [Trakt](widgets/trakt/README.md) - shows your last-watched movies & TV shows on Trakt (by @RxBrad)
