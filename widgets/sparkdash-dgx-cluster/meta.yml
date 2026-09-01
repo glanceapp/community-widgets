@@ -1,0 +1,3 @@
+title: sparkDash DGX cluster
+description: Live DGX Spark (GB10) monitoring — GPU temp/usage, VRAM, LLM tok/s, KV-cache and uptime for the head node and a worker, from a sparkDash instance.
+author: linxichen
