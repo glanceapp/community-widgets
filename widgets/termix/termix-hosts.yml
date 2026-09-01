@@ -1,0 +1,56 @@
+# Termix Host Status Widget for Glance
+# https://github.com/Termix-SSH/Termix
+#
+# Shows all Termix hosts sorted alphabetically with live online/offline indicators.
+# Online hosts display real-time CPU and memory usage; offline hosts show their IP.
+#
+# Required environment variables (set in your docker-compose or shell):
+#   TERMIX_URL       – base URL of your Termix instance (e.g. http://192.168.1.100:8080)
+#   TERMIX_API_KEY   – API key created in Termix (Admin → Settings → API Keys), starts with tmx_
+#
+# NOTE: Status indicators require an active Termix user session in a browser
+#       (the server keeps host-status data in memory only while a session is open).
+#       When no session is active, all dots show as grey (unknown). Host names and IPs
+#       are always displayed regardless of session state.
+
+- type: custom-api
+  title: Termix Hosts
+  title-url: ${TERMIX_URL}
+  cache: 2m
+  url: ${TERMIX_URL}/host/db/host
+  headers:
+    Authorization: Bearer ${TERMIX_API_KEY}
+  # allow-insecure: true  # uncomment if using a self-signed TLS certificate
+  subrequests:
+    status:
+      url: ${TERMIX_URL}/status
+      headers:
+        Authorization: Bearer ${TERMIX_API_KEY}
+      # allow-insecure: true
+  template: |
+    {{ $status := .Subrequest "status" }}
+    {{ $hosts := .JSON.Array "" }}
+    {{ $nUp := 0 }}
+    {{ range $hosts }}{{ $id := printf "%d" (.Int "id") }}{{ $s := $status.JSON.String (concat $id ".status") }}{{ if or (eq $s "online") (eq $s "reachable") }}{{ $nUp = add $nUp 1 }}{{ end }}{{ end }}
+    <p class="margin-bottom-10">
+      <span class="color-positive">{{ $nUp }}</span><span class="color-subdue"> / {{ len $hosts }} online</span>
+    </p>
+    <ul class="list collapsible-container" data-collapse-after="8">
+    {{ range sortByString "name" "asc" $hosts }}
+    {{ $id := printf "%d" (.Int "id") }}
+    {{ $s := $status.JSON.String (concat $id ".status") }}
+    <li class="flex items-center gap-10">
+      {{ if eq $s "online" }}
+      <span title="Online"    style="color:var(--color-positive)">●</span>
+      {{ else if eq $s "reachable" }}
+      <span title="Reachable" style="color:#f5a623">●</span>
+      {{ else if eq $s "offline" }}
+      <span title="Offline"   style="color:var(--color-negative)">●</span>
+      {{ else }}
+      <span title="No data"   style="color:var(--color-subdue)">●</span>
+      {{ end }}
+      <span class="color-highlight grow min-width-0 truncate">{{ or (.String "name") (.String "ip") }}</span>
+      <span class="color-subdue shrink-0">{{ .String "ip" }}</span>
+    </li>
+    {{ end }}
+    </ul>
