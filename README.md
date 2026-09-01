@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [sparkDash DGX cluster](widgets/sparkdash-dgx-cluster/README.md) - live DGX Spark (GB10) monitoring — GPU temp/usage, VRAM, LLM tok/s, KV-cache and uptime for the head node and a worker, from a sparkDash instance (by @linxichen)
 * [TrueNAS Metrics](widgets/truenas-metrics/README.md) - system load average, live uptime, active TrueNAS alerts counter, CPU model (by @kirolos-esmat)
 * [Tailscale Device Status](widgets/tailscale-device-status/README.md) - live IP address, relative last seen timestamp, and key expiry for a specific Tailscale device (by @kirolos-esmat)
 * [Sonarr Stats](widgets/sonarr-stats/README.md) - total series library count, missing episodes, and active download queue (by @kirolos-esmat)
 * [Radarr Stats](widgets/radarr-stats/README.md) - total movie library count, missing movies, and active download queue (by @kirolos-esmat)
-* [Plex Stats](widgets/plex-stats/README.md) - native Plex API sessions, active streams list, and library counts (by @kirolos-esmat)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -72,8 +72,8 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Immich Styled Stats](widgets/immich-styled/README.md) - immich styled statistics taken straight out of the app. Beautiful, simple and useful (by @panonim)
 * [Immich stats](widgets/immich-stats/README.md) - show the number of photos, videos and usage of your Immich server (by @svilenmarkov)
 * [Jellyfin Latest/Next Up](widgets/jellyfin-latest/README.md) - display the newest additions to a Jellyfin library, and next up to watch for a given user (by @Nedra1998)
-* [Jellyfin Stats](widgets/jellyfin-emby-stats/README.md) - show the number of movies, shows, episodes and songs in your Jellyfin or Emby server (by @lfvelosoh)
 * [Jellyfin Stats](widgets/jellyfin-stats/README.md) - live active playback streams (dynamic highlight), total movies & series count (by @kirolos-esmat)
+* [Jellyfin Stats](widgets/jellyfin-emby-stats/README.md) - show the number of movies, shows, episodes and songs in your Jellyfin or Emby server (by @lfvelosoh)
 * [Karakeep Dashboard](widgets/karakeep-dashboard/README.md) - the widget returns statistics on the number of bookmarks and the number of tags and the most recently added bookmarks (by @razdnut)
 * [Kavita Latest](widgets/kavita-latest/README.md) - show recently updated series and in progress series from your Kavita server (by @Nedra1998)
 * [Komga Recently Added Series](widgets/komga-latest/README.md) - displays recently added comic/manga series to a defined Komga library (by @VictorMitr)
@@ -166,6 +166,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Wikipedia On This Day](widgets/wikipedia-on-this-day/README.md) - show notable events, births, and deaths from Wikipedia that happened on today's date in history (by @mike-rambil)
 * [YouTube Embedded Player](widgets/youtube-embedded-player/README.md) - a grid-card layout of YouTube List with Embed player pulled from either RSS-Bridge or FreshRSS (by @ralphocdol)
 * [qBittorrent Stats](widgets/qbittorrent-stats/README.md) - show qBittorrent downloads (by @danzkigg)
+* [sparkDash DGX cluster](widgets/sparkdash-dgx-cluster/README.md) - live DGX Spark (GB10) monitoring — GPU temp/usage, VRAM, LLM tok/s, KV-cache and uptime for the head node and a worker, from a sparkDash instance (by @linxichen)
 * [ufc-fight-tracker](widgets/ufc-fight-tracker/README.md) - shows a preview of upcoming events in the UFC using the ESPN API (by @xZinio)
 * [xkcd Widget](widgets/xkcd-widget/README.md) - a custom simple widget that displays current xkcd comic (by @AllanAAbraham)
 
