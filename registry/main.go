@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"path"
 	"slices"
 	"strings"
 	"text/template"
@@ -189,7 +190,10 @@ func loadMetaFileForWidget(widgetDir string) {
 		log.Fatalf("Widget %s is missing description in meta.yml", widgetDir)
 	}
 
-	readmeHash := computeFileHash(widgetPath(widgetDir, "README.md"))
+	readmePath := widgetPath(widgetDir, "README.md")
+	ensureReadmeExists(readmePath)
+
+	readmeHash := computeFileHash(readmePath)
 
 	w, ok := registeredWidgets[widgetDir]
 	if !ok {
@@ -236,6 +240,32 @@ func loadMetaFileForWidget(widgetDir string) {
 	}
 
 	registeredWidgets[widgetDir].Preview = preview
+}
+
+func ensureReadmeExists(readmePath string) {
+	if _, err := os.Stat(readmePath); err == nil {
+		return
+	}
+
+	dir := path.Dir(readmePath)
+	files, err := os.ReadDir(dir)
+	if err != nil {
+		log.Fatalf("Failed to read widget directory %s: %v", dir, err)
+	}
+
+	for _, file := range files {
+		if file.IsDir() || !strings.HasSuffix(strings.ToLower(file.Name()), ".md") {
+			continue
+		}
+
+		oldPath := path.Join(dir, file.Name())
+		if err := os.Rename(oldPath, readmePath); err != nil {
+			log.Fatalf("Failed to rename %s to README.md in %s: %v", file.Name(), dir, err)
+		}
+		return
+	}
+
+	log.Fatalf("No markdown files in %s", dir)
 }
 
 func widgetPath(widgetDir, file string) string {
