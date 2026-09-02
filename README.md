@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Calvin and Hobbes daily strip](widgets/calvin-and-hobbes/README.md) - a Glance widget for displaying the daily Calvin and Hobbes strip (by @cpt-metal)
 * [WikiWidgets](widgets/wikipedia/README.md) - a collection of widgets for Wikipedia's featured feeds (by @thatgirlginger)
 * [Termix](widgets/termix/README.md) - show hosts and recent activity from your Termix instance (by @giannf)
 * [Cloud & SaaS Status](widgets/outagedeck-service-status/README.md) - show provider and service status from OutageDeck's keyless public API (by @koko3tallah)
 * [sparkDash DGX cluster](widgets/sparkdash-dgx-cluster/README.md) - live DGX Spark (GB10) monitoring — GPU temp/usage, VRAM, LLM tok/s, KV-cache and uptime for the head node and a worker, from a sparkDash instance (by @linxichen)
-* [TrueNAS Metrics](widgets/truenas-metrics/README.md) - system load average, live uptime, active TrueNAS alerts counter, CPU model (by @kirolos-esmat)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -37,6 +37,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Beszel Metrics](widgets/beszel-metrics/README.md) - simple widget to show system metrics from Beszel (by @panonim)
 * [Beszel Server Stats](widgets/beszel-server-stats/README.md) - server Stats widget matching the builtin widget but using data from Beszel (by @Nedra1998)
 * [Calibre-Web Stats](widgets/calibre-web-stats/README.md) - display a summary of books from your Calibre-Web server (by @rvelasq)
+* [Calvin and Hobbes daily strip](widgets/calvin-and-hobbes/README.md) - a Glance widget for displaying the daily Calvin and Hobbes strip (by @cpt-metal)
 * [Cats As A Service Photos](widgets/cats-as-a-service-photos/README.md) - show a grid of cat photos from the Cat as a Service [API](https://cataas.com/) (by @gugugiyu)
 * [Chess.com Daily Puzzle](widgets/chess-puzzle/README.md) - display daily chess puzzle from chess.com (by @panonim)
 * [Cloud & SaaS Status](widgets/outagedeck-service-status/README.md) - show provider and service status from OutageDeck's keyless public API (by @koko3tallah)
@@ -73,8 +74,8 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Immich Styled Stats](widgets/immich-styled/README.md) - immich styled statistics taken straight out of the app. Beautiful, simple and useful (by @panonim)
 * [Immich stats](widgets/immich-stats/README.md) - show the number of photos, videos and usage of your Immich server (by @svilenmarkov)
 * [Jellyfin Latest/Next Up](widgets/jellyfin-latest/README.md) - display the newest additions to a Jellyfin library, and next up to watch for a given user (by @Nedra1998)
-* [Jellyfin Stats](widgets/jellyfin-stats/README.md) - live active playback streams (dynamic highlight), total movies & series count (by @kirolos-esmat)
 * [Jellyfin Stats](widgets/jellyfin-emby-stats/README.md) - show the number of movies, shows, episodes and songs in your Jellyfin or Emby server (by @lfvelosoh)
+* [Jellyfin Stats](widgets/jellyfin-stats/README.md) - live active playback streams (dynamic highlight), total movies & series count (by @kirolos-esmat)
 * [Karakeep Dashboard](widgets/karakeep-dashboard/README.md) - the widget returns statistics on the number of bookmarks and the number of tags and the most recently added bookmarks (by @razdnut)
 * [Kavita Latest](widgets/kavita-latest/README.md) - show recently updated series and in progress series from your Kavita server (by @Nedra1998)
 * [Komga Recently Added Series](widgets/komga-latest/README.md) - displays recently added comic/manga series to a defined Komga library (by @VictorMitr)
