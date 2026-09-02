@@ -234,14 +234,14 @@
     <p align="center"><a href="widgets/jellyfin-latest/README.md"><img src="widgets/jellyfin-latest/preview.png"></a></p>
 </td>
     <td valign="top">
-    <p align="center"><a href="widgets/jellyfin-emby-stats/README.md">Jellyfin Stats</a><br>by <a href="https://github.com/lfvelosoh">@lfvelosoh</a><p>
-    <p align="center"><a href="widgets/jellyfin-emby-stats/README.md"><img src="widgets/jellyfin-emby-stats/preview.png"></a></p>
+    <p align="center"><a href="widgets/jellyfin-stats/README.md">Jellyfin Stats</a><br>by <a href="https://github.com/kirolos-esmat">@kirolos-esmat</a><p>
+    <p align="center"><a href="widgets/jellyfin-stats/README.md"><img src="widgets/jellyfin-stats/preview.png"></a></p>
 </td>
   </tr>
   <tr>
     <td valign="top">
-    <p align="center"><a href="widgets/jellyfin-stats/README.md">Jellyfin Stats</a><br>by <a href="https://github.com/kirolos-esmat">@kirolos-esmat</a><p>
-    <p align="center"><a href="widgets/jellyfin-stats/README.md"><img src="widgets/jellyfin-stats/preview.png"></a></p>
+    <p align="center"><a href="widgets/jellyfin-emby-stats/README.md">Jellyfin Stats</a><br>by <a href="https://github.com/lfvelosoh">@lfvelosoh</a><p>
+    <p align="center"><a href="widgets/jellyfin-emby-stats/README.md"><img src="widgets/jellyfin-emby-stats/preview.png"></a></p>
 </td>
     <td valign="top">
     <p align="center"><a href="widgets/karakeep-dashboard/README.md">Karakeep Dashboard</a><br>by <a href="https://github.com/razdnut">@razdnut</a><p>
@@ -640,11 +640,15 @@
     <p align="center"><a href="widgets/unifi/README.md"><img src="widgets/unifi/details-preview.png"></a></p>
 </td>
     <td valign="top">
-    <p align="center"><a href="widgets/uptime-kuma/README.md">Uptime Kuma</a><br>by <a href="https://github.com/not-first">@not-first</a><p>
-    <p align="center"><a href="widgets/uptime-kuma/README.md"><img src="widgets/uptime-kuma/preview.png"></a></p>
+    <p align="center"><a href="widgets/unraid-widget/README.md">Unraid Widget</a><br>by <a href="https://github.com/eddydmate">@eddydmate</a><p>
+    <p align="center"><a href="widgets/unraid-widget/README.md"><img src="widgets/unraid-widget/preview.png"></a></p>
 </td>
   </tr>
   <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/uptime-kuma/README.md">Uptime Kuma</a><br>by <a href="https://github.com/not-first">@not-first</a><p>
+    <p align="center"><a href="widgets/uptime-kuma/README.md"><img src="widgets/uptime-kuma/preview.png"></a></p>
+</td>
     <td valign="top">
     <p align="center"><a href="widgets/vikunja-taskboard/README.md">Vikunja Taskboard</a><br>by <a href="https://github.com/gugugiyu">@gugugiyu</a><p>
     <p align="center"><a href="widgets/vikunja-taskboard/README.md"><img src="widgets/vikunja-taskboard/preview.png"></a></p>
@@ -653,12 +657,12 @@
     <p align="center"><a href="widgets/wg-easy-clients/README.md">WG-Easy Enabled Clients</a><br>by <a href="https://github.com/lmriccardo">@lmriccardo</a><p>
     <p align="center"><a href="widgets/wg-easy-clients/README.md"><img src="widgets/wg-easy-clients/preview.png"></a></p>
 </td>
+  </tr>
+  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/weather-seven-day/README.md">Weather Seven Day</a><br>by <a href="https://github.com/brandonsie">@brandonsie</a><p>
     <p align="center"><a href="widgets/weather-seven-day/README.md"><img src="widgets/weather-seven-day/preview.png"></a></p>
 </td>
-  </tr>
-  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/wud-monitor/README.md">What's Up Docker Monitor</a><br>by <a href="https://github.com/panonim">@panonim</a><p>
     <p align="center"><a href="widgets/wud-monitor/README.md"><img src="widgets/wud-monitor/wud-main/wud_main_preview.png"></a></p>
@@ -667,12 +671,12 @@
     <p align="center"><a href="widgets/wikipedia/README.md">WikiWidgets</a><br>by <a href="https://github.com/thatgirlginger">@thatgirlginger</a><p>
     <p align="center"><a href="widgets/wikipedia/README.md"><img src="widgets/wikipedia/didyouknow_preview.png"></a></p>
 </td>
+  </tr>
+  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/wikipedia-on-this-day/README.md">Wikipedia On This Day</a><br>by <a href="https://github.com/mike-rambil">@mike-rambil</a><p>
     <p align="center"><a href="widgets/wikipedia-on-this-day/README.md"><img src="widgets/wikipedia-on-this-day/preview.png"></a></p>
 </td>
-  </tr>
-  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/youtube-embedded-player/README.md">YouTube Embedded Player</a><br>by <a href="https://github.com/ralphocdol">@ralphocdol</a><p>
     <p align="center"><a href="widgets/youtube-embedded-player/README.md"><img src="widgets/youtube-embedded-player/preview.png"></a></p>
@@ -681,12 +685,12 @@
     <p align="center"><a href="widgets/qbittorrent-stats/README.md">qBittorrent Stats</a><br>by <a href="https://github.com/danzkigg">@danzkigg</a><p>
     <p align="center"><a href="widgets/qbittorrent-stats/README.md"><img src="widgets/qbittorrent-stats/preview1.png"></a></p>
 </td>
+  </tr>
+  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/sparkdash-dgx-cluster/README.md">sparkDash DGX cluster</a><br>by <a href="https://github.com/linxichen">@linxichen</a><p>
     <p align="center"><a href="widgets/sparkdash-dgx-cluster/README.md"><img src="widgets/sparkdash-dgx-cluster/preview.png"></a></p>
 </td>
-  </tr>
-  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/ufc-fight-tracker/README.md">ufc-fight-tracker</a><br>by <a href="https://github.com/xZinio">@xZinio</a><p>
     <p align="center"><a href="widgets/ufc-fight-tracker/README.md"><img src="widgets/ufc-fight-tracker/preview.png"></a></p>
@@ -695,6 +699,5 @@
     <p align="center"><a href="widgets/xkcd-widget/README.md">xkcd Widget</a><br>by <a href="https://github.com/AllanAAbraham">@AllanAAbraham</a><p>
     <p align="center"><a href="widgets/xkcd-widget/README.md"><img src="widgets/xkcd-widget/preview.png"></a></p>
 </td>
-    <td valign="top"></td>
   </tr>
 </table>

@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Unraid Widget](widgets/unraid-widget/README.md) - a simple and responsive custom-api widget for monitoring key Unraid information such as the array status, disk status and share capacitities (by @eddydmate)
 * [Calvin and Hobbes daily strip](widgets/calvin-and-hobbes/README.md) - a Glance widget for displaying the daily Calvin and Hobbes strip (by @cpt-metal)
 * [WikiWidgets](widgets/wikipedia/README.md) - a collection of widgets for Wikipedia's featured feeds (by @thatgirlginger)
 * [Termix](widgets/termix/README.md) - show hosts and recent activity from your Termix instance (by @giannf)
 * [Cloud & SaaS Status](widgets/outagedeck-service-status/README.md) - show provider and service status from OutageDeck's keyless public API (by @koko3tallah)
-* [sparkDash DGX cluster](widgets/sparkdash-dgx-cluster/README.md) - live DGX Spark (GB10) monitoring — GPU temp/usage, VRAM, LLM tok/s, KV-cache and uptime for the head node and a worker, from a sparkDash instance (by @linxichen)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -74,8 +74,8 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Immich Styled Stats](widgets/immich-styled/README.md) - immich styled statistics taken straight out of the app. Beautiful, simple and useful (by @panonim)
 * [Immich stats](widgets/immich-stats/README.md) - show the number of photos, videos and usage of your Immich server (by @svilenmarkov)
 * [Jellyfin Latest/Next Up](widgets/jellyfin-latest/README.md) - display the newest additions to a Jellyfin library, and next up to watch for a given user (by @Nedra1998)
-* [Jellyfin Stats](widgets/jellyfin-emby-stats/README.md) - show the number of movies, shows, episodes and songs in your Jellyfin or Emby server (by @lfvelosoh)
 * [Jellyfin Stats](widgets/jellyfin-stats/README.md) - live active playback streams (dynamic highlight), total movies & series count (by @kirolos-esmat)
+* [Jellyfin Stats](widgets/jellyfin-emby-stats/README.md) - show the number of movies, shows, episodes and songs in your Jellyfin or Emby server (by @lfvelosoh)
 * [Karakeep Dashboard](widgets/karakeep-dashboard/README.md) - the widget returns statistics on the number of bookmarks and the number of tags and the most recently added bookmarks (by @razdnut)
 * [Kavita Latest](widgets/kavita-latest/README.md) - show recently updated series and in progress series from your Kavita server (by @Nedra1998)
 * [Komga Recently Added Series](widgets/komga-latest/README.md) - displays recently added comic/manga series to a defined Komga library (by @VictorMitr)
@@ -161,6 +161,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Tsumego Daily](widgets/tsumego-daily/README.md) - shows daily Go Problems (Tsumego) from goproblems.com (by @ccarpo)
 * [UK Bin Collection Data](widgets/UKBinCollection/README.md) - uK Bin Collection Widget to show upcoming bin collections - Credit to Robert Bradley for the original project (by @kl421)
 * [Unifi](widgets/unifi/README.md) - unifi controller information (by @prozn)
+* [Unraid Widget](widgets/unraid-widget/README.md) - a simple and responsive custom-api widget for monitoring key Unraid information such as the array status, disk status and share capacitities (by @eddydmate)
 * [Uptime Kuma](widgets/uptime-kuma/README.md) - show the status of Uptime Kuma monitors from a status page (by @not-first)
 * [Vikunja Taskboard](widgets/vikunja-taskboard/README.md) - real time taskboard using the Vikunja API (by @gugugiyu)
 * [WG-Easy Enabled Clients](widgets/wg-easy-clients/README.md) - shows enabled and disabled clients from WG-Easy Web Interface (by @lmriccardo)
