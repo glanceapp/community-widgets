@@ -190,6 +190,8 @@ func loadMetaFileForWidget(widgetDir string) {
 		log.Fatalf("Widget %s is missing description in meta.yml", widgetDir)
 	}
 
+	ensureFilesHaveLowercaseExtensions(widgetDir)
+
 	readmePath := widgetPath(widgetDir, "README.md")
 	ensureReadmeExists(readmePath)
 
@@ -242,6 +244,33 @@ func loadMetaFileForWidget(widgetDir string) {
 	registeredWidgets[widgetDir].Preview = preview
 }
 
+func ensureFilesHaveLowercaseExtensions(widgetDir string) {
+	dir := widgetPath(widgetDir, "")
+	files, err := os.ReadDir(dir)
+	if err != nil {
+		log.Fatalf("Failed to read widget directory %s: %v", dir, err)
+	}
+
+	for _, file := range files {
+		if file.IsDir() {
+			continue
+		}
+
+		name := file.Name()
+		ext := path.Ext(name)
+		lowerExt := strings.ToLower(ext)
+		if ext == lowerExt {
+			continue
+		}
+
+		oldPath := path.Join(dir, name)
+		newPath := path.Join(dir, strings.TrimSuffix(name, ext)+lowerExt)
+		if err := os.Rename(oldPath, newPath); err != nil {
+			log.Fatalf("Failed to rename %s to %s in %s: %v", oldPath, newPath, dir, err)
+		}
+	}
+}
+
 func ensureReadmeExists(readmePath string) {
 	if _, err := os.Stat(readmePath); err == nil {
 		return
@@ -254,7 +283,7 @@ func ensureReadmeExists(readmePath string) {
 	}
 
 	for _, file := range files {
-		if file.IsDir() || !strings.HasSuffix(strings.ToLower(file.Name()), ".md") {
+		if file.IsDir() {
 			continue
 		}
 
