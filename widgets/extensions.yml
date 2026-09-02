@@ -48,6 +48,11 @@
   description: Show Transmission downloads
   author: Xtrems876
 
+- title: caltask
+  url: https://github.com/benginN/caltask
+  description: Self-hosted calendar + tasks designed to embed in Glance as a fully interactive iframe widget (switch views, drag events, tick off tasks without leaving the dashboard).
+  author: benginN
+  
 - title: Lichess Daily Puzzle
   url: https://github.com/brtmax/lichess-glance
   description: Daily Lichess Puzzle
