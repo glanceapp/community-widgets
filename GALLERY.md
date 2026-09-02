@@ -230,12 +230,12 @@
     <p align="center"><a href="widgets/jellyfin-latest/README.md"><img src="widgets/jellyfin-latest/preview.png"></a></p>
 </td>
     <td valign="top">
-    <p align="center"><a href="widgets/jellyfin-emby-stats/README.md">Jellyfin Stats</a><br>by <a href="https://github.com/lfvelosoh">@lfvelosoh</a><p>
-    <p align="center"><a href="widgets/jellyfin-emby-stats/README.md"><img src="widgets/jellyfin-emby-stats/preview.png"></a></p>
-</td>
-    <td valign="top">
     <p align="center"><a href="widgets/jellyfin-stats/README.md">Jellyfin Stats</a><br>by <a href="https://github.com/kirolos-esmat">@kirolos-esmat</a><p>
     <p align="center"><a href="widgets/jellyfin-stats/README.md"><img src="widgets/jellyfin-stats/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/jellyfin-emby-stats/README.md">Jellyfin Stats</a><br>by <a href="https://github.com/lfvelosoh">@lfvelosoh</a><p>
+    <p align="center"><a href="widgets/jellyfin-emby-stats/README.md"><img src="widgets/jellyfin-emby-stats/preview.png"></a></p>
 </td>
   </tr>
   <tr>
@@ -660,6 +660,10 @@
   </tr>
   <tr>
     <td valign="top">
+    <p align="center"><a href="widgets/wikipedia/README.md">WikiWidgets</a><br>by <a href="https://github.com/thatgirlginger">@thatgirlginger</a><p>
+    <p align="center"><a href="widgets/wikipedia/README.md"><img src="widgets/wikipedia/didyouknow_preview.png"></a></p>
+</td>
+    <td valign="top">
     <p align="center"><a href="widgets/wikipedia-on-this-day/README.md">Wikipedia On This Day</a><br>by <a href="https://github.com/mike-rambil">@mike-rambil</a><p>
     <p align="center"><a href="widgets/wikipedia-on-this-day/README.md"><img src="widgets/wikipedia-on-this-day/preview.png"></a></p>
 </td>
@@ -667,12 +671,12 @@
     <p align="center"><a href="widgets/youtube-embedded-player/README.md">YouTube Embedded Player</a><br>by <a href="https://github.com/ralphocdol">@ralphocdol</a><p>
     <p align="center"><a href="widgets/youtube-embedded-player/README.md"><img src="widgets/youtube-embedded-player/preview.png"></a></p>
 </td>
+  </tr>
+  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/qbittorrent-stats/README.md">qBittorrent Stats</a><br>by <a href="https://github.com/danzkigg">@danzkigg</a><p>
     <p align="center"><a href="widgets/qbittorrent-stats/README.md"><img src="widgets/qbittorrent-stats/preview1.png"></a></p>
 </td>
-  </tr>
-  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/sparkdash-dgx-cluster/README.md">sparkDash DGX cluster</a><br>by <a href="https://github.com/linxichen">@linxichen</a><p>
     <p align="center"><a href="widgets/sparkdash-dgx-cluster/README.md"><img src="widgets/sparkdash-dgx-cluster/preview.png"></a></p>
@@ -681,9 +685,13 @@
     <p align="center"><a href="widgets/ufc-fight-tracker/README.md">ufc-fight-tracker</a><br>by <a href="https://github.com/xZinio">@xZinio</a><p>
     <p align="center"><a href="widgets/ufc-fight-tracker/README.md"><img src="widgets/ufc-fight-tracker/preview.png"></a></p>
 </td>
+  </tr>
+  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/xkcd-widget/README.md">xkcd Widget</a><br>by <a href="https://github.com/AllanAAbraham">@AllanAAbraham</a><p>
     <p align="center"><a href="widgets/xkcd-widget/README.md"><img src="widgets/xkcd-widget/preview.png"></a></p>
 </td>
+    <td valign="top"></td>
+    <td valign="top"></td>
   </tr>
 </table>
