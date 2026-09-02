@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Cineplex Movies](widgets/cineplex-movies/README.md) - show what movies are currently available in Cineplex cinemas (by @giahuy2201)
 * [Unraid Widget](widgets/unraid-widget/README.md) - a simple and responsive custom-api widget for monitoring key Unraid information such as the array status, disk status and share capacitities (by @eddydmate)
 * [Calvin and Hobbes daily strip](widgets/calvin-and-hobbes/README.md) - a Glance widget for displaying the daily Calvin and Hobbes strip (by @cpt-metal)
 * [WikiWidgets](widgets/wikipedia/README.md) - a collection of widgets for Wikipedia's featured feeds (by @thatgirlginger)
 * [Termix](widgets/termix/README.md) - show hosts and recent activity from your Termix instance (by @giannf)
-* [Cloud & SaaS Status](widgets/outagedeck-service-status/README.md) - show provider and service status from OutageDeck's keyless public API (by @koko3tallah)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -40,6 +40,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Calvin and Hobbes daily strip](widgets/calvin-and-hobbes/README.md) - a Glance widget for displaying the daily Calvin and Hobbes strip (by @cpt-metal)
 * [Cats As A Service Photos](widgets/cats-as-a-service-photos/README.md) - show a grid of cat photos from the Cat as a Service [API](https://cataas.com/) (by @gugugiyu)
 * [Chess.com Daily Puzzle](widgets/chess-puzzle/README.md) - display daily chess puzzle from chess.com (by @panonim)
+* [Cineplex Movies](widgets/cineplex-movies/README.md) - show what movies are currently available in Cineplex cinemas (by @giahuy2201)
 * [Cloud & SaaS Status](widgets/outagedeck-service-status/README.md) - show provider and service status from OutageDeck's keyless public API (by @koko3tallah)
 * [Cloudflare Tunnel Status](widgets/cloudflare-tunnel-status/README.md) - cloudflare connector tunnel live health status and origin IP (by @kirolos-esmat)
 * [Cloudflare Tunnels](widgets/cloudflared-tunnels/README.md) - external and Local Cloudflare Tunnels links (by @drshajul)

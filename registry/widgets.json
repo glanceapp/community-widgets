@@ -144,6 +144,15 @@
     "time_updated": "2025-09-25T04:55:13.925995484Z"
   },
   {
+    "title": "Cineplex Movies",
+    "description": "show what movies are currently available in Cineplex cinemas",
+    "author": "giahuy2201",
+    "directory": "cineplex-movies",
+    "readme_hash": "c5390e24b1af4a807f2bb6033d9f1466705aecca",
+    "time_added": "2026-09-02T12:26:47.495747963Z",
+    "time_updated": "2026-09-02T12:26:47.495748083Z"
+  },
+  {
     "title": "Cloud \u0026 SaaS Status",
     "description": "show provider and service status from OutageDeck's keyless public API",
     "author": "koko3tallah",
