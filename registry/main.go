@@ -283,7 +283,7 @@ func ensureReadmeExists(readmePath string) {
 	}
 
 	for _, file := range files {
-		if file.IsDir() {
+		if file.IsDir() || !strings.HasSuffix(strings.ToLower(file.Name()), ".md") {
 			continue
 		}
 
