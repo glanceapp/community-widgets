@@ -66,7 +66,7 @@
                 Your VPN is not connected!
                 <span class="color-negative">●</span> 
               </div>
-            </dv>
+            </div>
           </div>
         </div>
       {{ else }}

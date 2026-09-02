@@ -62,12 +62,26 @@
     <p align="center"><a href="widgets/calibre-web-stats/README.md"><img src="widgets/calibre-web-stats/preview.png"></a></p>
 </td>
     <td valign="top">
+    <p align="center"><a href="widgets/calvin-and-hobbes/README.md">Calvin and Hobbes daily strip</a><br>by <a href="https://github.com/cpt-metal">@cpt-metal</a><p>
+    <p align="center"><a href="widgets/calvin-and-hobbes/README.md"><img src="widgets/calvin-and-hobbes/preview.png"></a></p>
+</td>
+    <td valign="top">
     <p align="center"><a href="widgets/cats-as-a-service-photos/README.md">Cats As A Service Photos</a><br>by <a href="https://github.com/gugugiyu">@gugugiyu</a><p>
     <p align="center"><a href="widgets/cats-as-a-service-photos/README.md"><img src="widgets/cats-as-a-service-photos/preview.png"></a></p>
 </td>
+  </tr>
+  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/chess-puzzle/README.md">Chess.com Daily Puzzle</a><br>by <a href="https://github.com/panonim">@panonim</a><p>
     <p align="center"><a href="widgets/chess-puzzle/README.md"><img src="widgets/chess-puzzle/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/outagedeck-service-status/README.md">Cloud & SaaS Status</a><br>by <a href="https://github.com/koko3tallah">@koko3tallah</a><p>
+    <p align="center"><a href="widgets/outagedeck-service-status/README.md"><img src="widgets/outagedeck-service-status/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/cloudflare-tunnel-status/README.md">Cloudflare Tunnel Status</a><br>by <a href="https://github.com/kirolos-esmat">@kirolos-esmat</a><p>
+    <p align="center"><a href="widgets/cloudflare-tunnel-status/README.md"><img src="widgets/cloudflare-tunnel-status/preview.png"></a></p>
 </td>
   </tr>
   <tr>
@@ -80,14 +94,28 @@
     <p align="center"><a href="widgets/crafty-controller-minecraft-server/README.md"><img src="widgets/crafty-controller-minecraft-server/Preview_offline.png"></a></p>
 </td>
     <td valign="top">
-    <p align="center"><a href="widgets/cryptopanic-news/README.md">Cryptopanic News</a><br>by <a href="https://github.com/herculosh">@herculosh</a><p>
-    <p align="center"><a href="widgets/cryptopanic-news/README.md"><img src="widgets/cryptopanic-news/preview.png"></a></p>
+    <p align="center"><a href="widgets/fear-and-greed-index/README.md">Crypto Fear & Greed Index</a><br>by <a href="https://github.com/yroulin">@yroulin</a><p>
+    <p align="center"><a href="widgets/fear-and-greed-index/README.md"><img src="widgets/fear-and-greed-index/preview.png"></a></p>
 </td>
   </tr>
   <tr>
     <td valign="top">
+    <p align="center"><a href="widgets/cryptopanic-news/README.md">Cryptopanic News</a><br>by <a href="https://github.com/herculosh">@herculosh</a><p>
+    <p align="center"><a href="widgets/cryptopanic-news/README.md"><img src="widgets/cryptopanic-news/preview.png"></a></p>
+</td>
+    <td valign="top">
     <p align="center"><a href="widgets/cup-updates/README.md">Cup Updates</a><br>by <a href="https://github.com/panonim">@panonim</a><p>
     <p align="center"><a href="widgets/cup-updates/README.md"><img src="widgets/cup-updates/preview.jpeg"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/dhl-tracking/README.md">DHL Tracking</a><br>by <a href="https://github.com/cpt-metal">@cpt-metal</a><p>
+    <p align="center"><a href="widgets/dhl-tracking/README.md"><img src="widgets/dhl-tracking/preview.png"></a></p>
+</td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/discopanel/README.md">Discopanel</a><br>by <a href="https://github.com/PapaZ810">@PapaZ810</a><p>
+    <p align="center"><a href="widgets/discopanel/README.md"><img src="widgets/discopanel/preview.png"></a></p>
 </td>
     <td valign="top">
     <p align="center"><a href="widgets/docker-swarm/README.md">Docker Swarm</a><br>by <a href="https://github.com/tonineri">@tonineri</a><p>
@@ -156,9 +184,19 @@
   </tr>
   <tr>
     <td valign="top">
+    <p align="center"><a href="widgets/github-status/README.md">GitHub Status</a><br>by <a href="https://github.com/m1xzg">@m1xzg</a><p>
+    <p align="center"><a href="widgets/github-status/README.md"><img src="widgets/github-status/advanced-status.png"></a></p>
+</td>
+    <td valign="top">
     <p align="center"><a href="widgets/github-personal-repos/README.md">GitHub personal repositories</a><br>by <a href="https://github.com/menitz">@menitz</a><p>
     <p align="center"><a href="widgets/github-personal-repos/README.md"><img src="widgets/github-personal-repos/preview.png"></a></p>
 </td>
+    <td valign="top">
+    <p align="center"><a href="widgets/glances-stats/README.md">Glances Server stats</a><br>by <a href="https://github.com/andersonviudes">@andersonviudes</a><p>
+    <p align="center"><a href="widgets/glances-stats/README.md"><img src="widgets/glances-stats/preview.png"></a></p>
+</td>
+  </tr>
+  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/gluetun-vpn-status/README.md">Gluetun VPN status</a><br>by <a href="https://github.com/Hyptu">@Hyptu</a><p>
     <p align="center"><a href="widgets/gluetun-vpn-status/README.md"><img src="widgets/gluetun-vpn-status/preview.png"></a></p>
@@ -167,12 +205,12 @@
     <p align="center"><a href="widgets/google-calendar-list/README.md">Google Calendar List</a><br>by <a href="https://github.com/anant-j">@anant-j</a><p>
     <p align="center"><a href="widgets/google-calendar-list/README.md"><img src="widgets/google-calendar-list/preview.png"></a></p>
 </td>
-  </tr>
-  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/grafana/README.md">Grafana</a><br>by <a href="https://github.com/koalalorenzo">@koalalorenzo</a><p>
     <p align="center"><a href="widgets/grafana/README.md"><img src="widgets/grafana/preview.webp"></a></p>
 </td>
+  </tr>
+  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/hardcover-currently-reading/README.md">Hardcover Currently Reading</a><br>by <a href="https://github.com/Akasiek">@Akasiek</a><p>
     <p align="center"><a href="widgets/hardcover-currently-reading/README.md"><img src="widgets/hardcover-currently-reading/preview.png"></a></p>
@@ -181,12 +219,12 @@
     <p align="center"><a href="widgets/homeassistant-sensor-stats/README.md">Home Assistant Sensor Stats</a><br>by <a href="https://github.com/AWildLeon">@AWildLeon</a><p>
     <p align="center"><a href="widgets/homeassistant-sensor-stats/README.md"><img src="widgets/homeassistant-sensor-stats/preview.png"></a></p>
 </td>
-  </tr>
-  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/immich-styled/README.md">Immich Styled Stats</a><br>by <a href="https://github.com/panonim">@panonim</a><p>
     <p align="center"><a href="widgets/immich-styled/README.md"><img src="widgets/immich-styled/preview.png"></a></p>
 </td>
+  </tr>
+  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/immich-stats/README.md">Immich stats</a><br>by <a href="https://github.com/svilenmarkov">@svilenmarkov</a><p>
     <p align="center"><a href="widgets/immich-stats/README.md"><img src="widgets/immich-stats/preview.png"></a></p>
@@ -194,6 +232,10 @@
     <td valign="top">
     <p align="center"><a href="widgets/jellyfin-latest/README.md">Jellyfin Latest/Next Up</a><br>by <a href="https://github.com/Nedra1998">@Nedra1998</a><p>
     <p align="center"><a href="widgets/jellyfin-latest/README.md"><img src="widgets/jellyfin-latest/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/jellyfin-stats/README.md">Jellyfin Stats</a><br>by <a href="https://github.com/kirolos-esmat">@kirolos-esmat</a><p>
+    <p align="center"><a href="widgets/jellyfin-stats/README.md"><img src="widgets/jellyfin-stats/preview.png"></a></p>
 </td>
   </tr>
   <tr>
@@ -286,15 +328,19 @@
     <p align="center"><a href="widgets/mullvad-vpn-status/README.md"><img src="widgets/mullvad-vpn-status/preview.png"></a></p>
 </td>
     <td valign="top">
+    <p align="center"><a href="widgets/myanimelist-profile/README.md">MyanimeList Profile</a><br>by <a href="https://github.com/WaYy">@WaYy</a><p>
+    <p align="center"><a href="widgets/myanimelist-profile/README.md"><img src="widgets/myanimelist-profile/preview.png"></a></p>
+</td>
+    <td valign="top">
     <p align="center"><a href="widgets/myanimelist-widgets/README.md">MyanimeList Widgets</a><br>by <a href="https://github.com/Zephyr73">@Zephyr73</a><p>
     <p align="center"><a href="widgets/myanimelist-widgets/README.md"><img src="widgets/myanimelist-widgets/preview-carousel.png"></a></p>
 </td>
+  </tr>
+  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/nba-scores-tracker/README.md">NBA Scores Tracker</a><br>by <a href="https://github.com/ShmoobiJones">@ShmoobiJones</a><p>
     <p align="center"><a href="widgets/nba-scores-tracker/README.md"><img src="widgets/nba-scores-tracker/preview.png"></a></p>
 </td>
-  </tr>
-  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/ncaa-cfb-scoreboard/README.md">NCAA CFB Scoreboard</a><br>by <a href="https://github.com/maxo99">@maxo99</a><p>
     <p align="center"><a href="widgets/ncaa-cfb-scoreboard/README.md"><img src="widgets/ncaa-cfb-scoreboard/preview.png"></a></p>
@@ -303,12 +349,12 @@
     <p align="center"><a href="widgets/nfl-scoreboard/README.md">NFL Scoreboard</a><br>by <a href="https://github.com/maxo99">@maxo99</a><p>
     <p align="center"><a href="widgets/nfl-scoreboard/README.md"><img src="widgets/nfl-scoreboard/preview.png"></a></p>
 </td>
+  </tr>
+  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/nhl-scores/README.md">NHL Scores</a><br>by <a href="https://github.com/jo-nike">@jo-nike</a><p>
     <p align="center"><a href="widgets/nhl-scores/README.md"><img src="widgets/nhl-scores/preview.png"></a></p>
 </td>
-  </tr>
-  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/nzbget-status/README.md">NZBGet Status</a><br>by <a href="https://github.com/0ui">@0ui</a><p>
     <p align="center"><a href="widgets/nzbget-status/README.md"><img src="widgets/nzbget-status/preview.png"></a></p>
@@ -317,9 +363,19 @@
     <p align="center"><a href="widgets/nearby-aircraft/README.md">Nearby Aircraft</a><br>by <a href="https://github.com/cristiandiiorio">@cristiandiiorio</a><p>
     <p align="center"><a href="widgets/nearby-aircraft/README.md"><img src="widgets/nearby-aircraft/preview.png"></a></p>
 </td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/nebula-videos/README.md">Nebula Latest Videos</a><br>by <a href="https://github.com/darius-it">@darius-it</a><p>
+    <p align="center"><a href="widgets/nebula-videos/README.md"><img src="widgets/nebula-videos/preview.png"></a></p>
+</td>
     <td valign="top">
     <p align="center"><a href="widgets/netalertx/README.md">NetAlertX Device Status</a><br>by <a href="https://github.com/razdnut">@razdnut</a><p>
     <p align="center"><a href="widgets/netalertx/README.md"><img src="widgets/netalertx/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/netbird-peers-count/README.md">Netbird Peers Count</a><br>by <a href="https://github.com/kirolos-esmat">@kirolos-esmat</a><p>
+    <p align="center"><a href="widgets/netbird-peers-count/README.md"><img src="widgets/netbird-peers-count/preview.png"></a></p>
 </td>
   </tr>
   <tr>
@@ -374,11 +430,15 @@
     <p align="center"><a href="widgets/peanut-ups-status/README.md"><img src="widgets/peanut-ups-status/preview.png"></a></p>
 </td>
     <td valign="top">
-    <p align="center"><a href="widgets/portainer-dashboard/README.md">Portainer Dashboard</a><br>by <a href="https://github.com/RealTong">@RealTong</a><p>
-    <p align="center"><a href="widgets/portainer-dashboard/README.md"><img src="widgets/portainer-dashboard/screenshot.png"></a></p>
+    <p align="center"><a href="widgets/plex-stats/README.md">Plex Stats</a><br>by <a href="https://github.com/kirolos-esmat">@kirolos-esmat</a><p>
+    <p align="center"><a href="widgets/plex-stats/README.md"><img src="widgets/plex-stats/preview.png"></a></p>
 </td>
   </tr>
   <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/portainer-dashboard/README.md">Portainer Dashboard</a><br>by <a href="https://github.com/RealTong">@RealTong</a><p>
+    <p align="center"><a href="widgets/portainer-dashboard/README.md"><img src="widgets/portainer-dashboard/screenshot.png"></a></p>
+</td>
     <td valign="top">
     <p align="center"><a href="widgets/prowlarr-indexers/README.md">Prowlarr Indexers</a><br>by <a href="https://github.com/mattiasghodsian">@mattiasghodsian</a><p>
     <p align="center"><a href="widgets/prowlarr-indexers/README.md"><img src="widgets/prowlarr-indexers/preview.png"></a></p>
@@ -387,12 +447,12 @@
     <p align="center"><a href="widgets/proxmox-backup-server-stats/README.md">Proxmox Backup Server Stats</a><br>by <a href="https://github.com/danielweeber">@danielweeber</a><p>
     <p align="center"><a href="widgets/proxmox-backup-server-stats/README.md"><img src="widgets/proxmox-backup-server-stats/preview.png"></a></p>
 </td>
+  </tr>
+  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/proxmox-ve-nodes/README.md">Proxmox VE Nodes</a><br>by <a href="https://github.com/ralphocdol">@ralphocdol</a><p>
     <p align="center"><a href="widgets/proxmox-ve-nodes/README.md"><img src="widgets/proxmox-ve-nodes/preview.png"></a></p>
 </td>
-  </tr>
-  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/proxmox-ve-stats/README.md">Proxmox VE Stats</a><br>by <a href="https://github.com/ralphocdol">@ralphocdol</a><p>
     <p align="center"><a href="widgets/proxmox-ve-stats/README.md"><img src="widgets/proxmox-ve-stats/preview.png"></a></p>
@@ -401,16 +461,22 @@
     <p align="center"><a href="widgets/proxmox-detailed-resources/README.md">Proxmox VE Table Stats</a><br>by <a href="https://github.com/lfvelosoh">@lfvelosoh</a><p>
     <p align="center"><a href="widgets/proxmox-detailed-resources/README.md"><img src="widgets/proxmox-detailed-resources/preview.png"></a></p>
 </td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/radarr-stats/README.md">Radarr Stats</a><br>by <a href="https://github.com/kirolos-esmat">@kirolos-esmat</a><p>
+    <p align="center"><a href="widgets/radarr-stats/README.md"><img src="widgets/radarr-stats/preview.png"></a></p>
+</td>
     <td valign="top">
     <p align="center"><a href="widgets/raindrop-latest-links/README.md">Raindrop Bookmarks</a><br>by <a href="https://github.com/herculosh">@herculosh</a><p>
     <p align="center"><a href="widgets/raindrop-latest-links/README.md"><img src="widgets/raindrop-latest-links/preview.png"></a></p>
 </td>
-  </tr>
-  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/random-bible-verse/README.md">Random Bible Verse</a><br>by <a href="https://github.com/pypp">@pypp</a><p>
     <p align="center"><a href="widgets/random-bible-verse/README.md"><img src="widgets/random-bible-verse/preview.png"></a></p>
 </td>
+  </tr>
+  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/random-fact/README.md">Random fact</a><br>by <a href="https://github.com/svilenmarkov">@svilenmarkov</a><p>
     <p align="center"><a href="widgets/random-fact/README.md"><img src="widgets/random-fact/preview.png"></a></p>
@@ -419,12 +485,12 @@
     <p align="center"><a href="widgets/retroachievement-of-the-week/README.md">RetroAchievement</a><br>by <a href="https://github.com/milktoastrat">@milktoastrat</a><p>
     <p align="center"><a href="widgets/retroachievement-of-the-week/README.md"><img src="widgets/retroachievement-of-the-week/retroachievement-of-the-week-example.png"></a></p>
 </td>
-  </tr>
-  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/romm-stats/README.md">RomM Stats</a><br>by <a href="https://github.com/milktoastrat">@milktoastrat</a><p>
     <p align="center"><a href="widgets/romm-stats/README.md"><img src="widgets/romm-stats/romm-stats-example.png"></a></p>
 </td>
+  </tr>
+  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/sabnzbd-stats/README.md">SABnzbd Status</a><br>by <a href="https://github.com/Neo11Neo">@Neo11Neo</a><p>
     <p align="center"><a href="widgets/sabnzbd-stats/README.md"><img src="widgets/sabnzbd-stats/preview.png"></a></p>
@@ -433,15 +499,19 @@
     <p align="center"><a href="widgets/scrutiny/README.md">Scrutiny</a><br>by <a href="https://github.com/SkyAllinott">@SkyAllinott</a><p>
     <p align="center"><a href="widgets/scrutiny/README.md"><img src="widgets/scrutiny/drive_health.png"></a></p>
 </td>
-  </tr>
-  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/should-i-deploy-today/README.md">Should I Deploy Today</a><br>by <a href="https://github.com/hohaithuy">@hohaithuy</a><p>
     <p align="center"><a href="widgets/should-i-deploy-today/README.md"><img src="widgets/should-i-deploy-today/preview.png"></a></p>
 </td>
+  </tr>
+  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/slack-status/README.md">Slack Status</a><br>by <a href="https://github.com/cartwatson">@cartwatson</a><p>
     <p align="center"><a href="widgets/slack-status/README.md"><img src="widgets/slack-status/slack-clear.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/sonarr-stats/README.md">Sonarr Stats</a><br>by <a href="https://github.com/kirolos-esmat">@kirolos-esmat</a><p>
+    <p align="center"><a href="widgets/sonarr-stats/README.md"><img src="widgets/sonarr-stats/preview.png"></a></p>
 </td>
     <td valign="top">
     <p align="center"><a href="widgets/speedtest-tracker/README.md">Speedtest Tracker</a><br>by <a href="https://github.com/not-first">@not-first</a><p>
@@ -496,22 +566,36 @@
     <p align="center"><a href="widgets/synology-disk-station/README.md"><img src="widgets/synology-disk-station/preview.png"></a></p>
 </td>
     <td valign="top">
+    <p align="center"><a href="widgets/tailscale-device-status/README.md">Tailscale Device Status</a><br>by <a href="https://github.com/kirolos-esmat">@kirolos-esmat</a><p>
+    <p align="center"><a href="widgets/tailscale-device-status/README.md"><img src="widgets/tailscale-device-status/preview.png"></a></p>
+</td>
+    <td valign="top">
     <p align="center"><a href="widgets/tailscale-devices/README.md">Tailscale devices</a><br>by <a href="https://github.com/not-first">@not-first</a><p>
     <p align="center"><a href="widgets/tailscale-devices/README.md"><img src="widgets/tailscale-devices/preview.png"></a></p>
 </td>
+  </tr>
+  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/tautulli-stats/README.md">Tautulli Stats</a><br>by <a href="https://github.com/SkyAllinott">@SkyAllinott</a><p>
     <p align="center"><a href="widgets/tautulli-stats/README.md"><img src="widgets/tautulli-stats/now_playing.png"></a></p>
 </td>
-  </tr>
-  <tr>
     <td valign="top">
     <p align="center"><a href="widgets/technitium-dns-stats/README.md">Technitium DNS Stats</a><br>by <a href="https://github.com/eribbey">@eribbey</a><p>
     <p align="center"><a href="widgets/technitium-dns-stats/README.md"><img src="widgets/technitium-dns-stats/preview.png"></a></p>
 </td>
     <td valign="top">
+    <p align="center"><a href="widgets/termix/README.md">Termix</a><br>by <a href="https://github.com/giannf">@giannf</a><p>
+    <p align="center"><a href="widgets/termix/README.md"><img src="widgets/termix/preview.png"></a></p>
+</td>
+  </tr>
+  <tr>
+    <td valign="top">
     <p align="center"><a href="widgets/time-bar/README.md">Time Bar</a><br>by <a href="https://github.com/anant-j">@anant-j</a><p>
     <p align="center"><a href="widgets/time-bar/README.md"><img src="widgets/time-bar/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/todoist-tasks/README.md">Todoist Tasks</a><br>by <a href="https://github.com/xd1i0">@xd1i0</a><p>
+    <p align="center"><a href="widgets/todoist-tasks/README.md"><img src="widgets/todoist-tasks/preview.png"></a></p>
 </td>
     <td valign="top">
     <p align="center"><a href="widgets/trakt/README.md">Trakt</a><br>by <a href="https://github.com/RxBrad">@RxBrad</a><p>
@@ -534,6 +618,10 @@
   </tr>
   <tr>
     <td valign="top">
+    <p align="center"><a href="widgets/truenas-metrics/README.md">TrueNAS Metrics</a><br>by <a href="https://github.com/kirolos-esmat">@kirolos-esmat</a><p>
+    <p align="center"><a href="widgets/truenas-metrics/README.md"><img src="widgets/truenas-metrics/preview.png"></a></p>
+</td>
+    <td valign="top">
     <p align="center"><a href="widgets/truenas-scale-pools/README.md">TrueNAS Scale Pools</a><br>by <a href="https://github.com/drakkein">@drakkein</a><p>
     <p align="center"><a href="widgets/truenas-scale-pools/README.md"><img src="widgets/truenas-scale-pools/preview.png"></a></p>
 </td>
@@ -541,9 +629,19 @@
     <p align="center"><a href="widgets/tsumego-daily/README.md">Tsumego Daily</a><br>by <a href="https://github.com/ccarpo">@ccarpo</a><p>
     <p align="center"><a href="widgets/tsumego-daily/README.md"><img src="widgets/tsumego-daily/preview.png"></a></p>
 </td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/UKBinCollection/README.md">UK Bin Collection Data</a><br>by <a href="https://github.com/kl421">@kl421</a><p>
+    <p align="center"><a href="widgets/UKBinCollection/README.md"><img src="widgets/UKBinCollection/preview.png"></a></p>
+</td>
     <td valign="top">
     <p align="center"><a href="widgets/unifi/README.md">Unifi</a><br>by <a href="https://github.com/prozn">@prozn</a><p>
     <p align="center"><a href="widgets/unifi/README.md"><img src="widgets/unifi/details-preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/unraid-widget/README.md">Unraid Widget</a><br>by <a href="https://github.com/eddydmate">@eddydmate</a><p>
+    <p align="center"><a href="widgets/unraid-widget/README.md"><img src="widgets/unraid-widget/preview.png"></a></p>
 </td>
   </tr>
   <tr>
@@ -570,14 +668,28 @@
     <p align="center"><a href="widgets/wud-monitor/README.md"><img src="widgets/wud-monitor/wud-main/wud_main_preview.png"></a></p>
 </td>
     <td valign="top">
-    <p align="center"><a href="widgets/youtube-embedded-player/README.md">YouTube Embedded Player</a><br>by <a href="https://github.com/ralphocdol">@ralphocdol</a><p>
-    <p align="center"><a href="widgets/youtube-embedded-player/README.md"><img src="widgets/youtube-embedded-player/preview.png"></a></p>
+    <p align="center"><a href="widgets/wikipedia/README.md">WikiWidgets</a><br>by <a href="https://github.com/thatgirlginger">@thatgirlginger</a><p>
+    <p align="center"><a href="widgets/wikipedia/README.md"><img src="widgets/wikipedia/didyouknow_preview.png"></a></p>
 </td>
   </tr>
   <tr>
     <td valign="top">
+    <p align="center"><a href="widgets/wikipedia-on-this-day/README.md">Wikipedia On This Day</a><br>by <a href="https://github.com/mike-rambil">@mike-rambil</a><p>
+    <p align="center"><a href="widgets/wikipedia-on-this-day/README.md"><img src="widgets/wikipedia-on-this-day/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/youtube-embedded-player/README.md">YouTube Embedded Player</a><br>by <a href="https://github.com/ralphocdol">@ralphocdol</a><p>
+    <p align="center"><a href="widgets/youtube-embedded-player/README.md"><img src="widgets/youtube-embedded-player/preview.png"></a></p>
+</td>
+    <td valign="top">
     <p align="center"><a href="widgets/qbittorrent-stats/README.md">qBittorrent Stats</a><br>by <a href="https://github.com/danzkigg">@danzkigg</a><p>
     <p align="center"><a href="widgets/qbittorrent-stats/README.md"><img src="widgets/qbittorrent-stats/preview1.png"></a></p>
+</td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <p align="center"><a href="widgets/sparkdash-dgx-cluster/README.md">sparkDash DGX cluster</a><br>by <a href="https://github.com/linxichen">@linxichen</a><p>
+    <p align="center"><a href="widgets/sparkdash-dgx-cluster/README.md"><img src="widgets/sparkdash-dgx-cluster/preview.png"></a></p>
 </td>
     <td valign="top">
     <p align="center"><a href="widgets/ufc-fight-tracker/README.md">ufc-fight-tracker</a><br>by <a href="https://github.com/xZinio">@xZinio</a><p>
