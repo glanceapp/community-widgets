@@ -1278,6 +1278,15 @@
     "time_updated": "2025-11-18T04:03:16.893923289Z"
   },
   {
+    "title": "Wanikani Reviews",
+    "description": "Small widget that shows your Wanikani reviews.",
+    "author": "Ornifex",
+    "directory": "wanikani-reviews",
+    "readme_hash": "416941a863521362a72b56ef44c3597e0af1313c",
+    "time_added": "2026-09-02T12:48:19.303649015Z",
+    "time_updated": "2026-09-02T12:48:19.303649165Z"
+  },
+  {
     "title": "Weather Seven Day",
     "description": "Shows daily weather conditions and high and low temperature from Open-Meteo for a specified location.",
     "author": "brandonsie",

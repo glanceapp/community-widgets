@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Wanikani Reviews](widgets/wanikani-reviews/README.md) - small widget that shows your Wanikani reviews (by @Ornifex)
 * [Cineplex Movies](widgets/cineplex-movies/README.md) - show what movies are currently available in Cineplex cinemas (by @giahuy2201)
 * [Unraid Widget](widgets/unraid-widget/README.md) - a simple and responsive custom-api widget for monitoring key Unraid information such as the array status, disk status and share capacitities (by @eddydmate)
 * [Calvin and Hobbes daily strip](widgets/calvin-and-hobbes/README.md) - a Glance widget for displaying the daily Calvin and Hobbes strip (by @cpt-metal)
 * [WikiWidgets](widgets/wikipedia/README.md) - a collection of widgets for Wikipedia's featured feeds (by @thatgirlginger)
-* [Termix](widgets/termix/README.md) - show hosts and recent activity from your Termix instance (by @giannf)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -166,6 +166,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Uptime Kuma](widgets/uptime-kuma/README.md) - show the status of Uptime Kuma monitors from a status page (by @not-first)
 * [Vikunja Taskboard](widgets/vikunja-taskboard/README.md) - real time taskboard using the Vikunja API (by @gugugiyu)
 * [WG-Easy Enabled Clients](widgets/wg-easy-clients/README.md) - shows enabled and disabled clients from WG-Easy Web Interface (by @lmriccardo)
+* [Wanikani Reviews](widgets/wanikani-reviews/README.md) - small widget that shows your Wanikani reviews (by @Ornifex)
 * [Weather Seven Day](widgets/weather-seven-day/README.md) - shows daily weather conditions and high and low temperature from Open-Meteo for a specified location (by @brandonsie)
 * [What's Up Docker Monitor](widgets/wud-monitor/README.md) - a customizable widget for displaying the wud data about containers (by @panonim)
 * [WikiWidgets](widgets/wikipedia/README.md) - a collection of widgets for Wikipedia's featured feeds (by @thatgirlginger)
