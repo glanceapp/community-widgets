@@ -460,21 +460,21 @@
   },
   {
     "title": "Jellyfin Stats",
-    "description": "show the number of movies, shows, episodes and songs in your Jellyfin or Emby server",
-    "author": "lfvelosoh",
-    "directory": "jellyfin-emby-stats",
-    "readme_hash": "2335546183f1e0c15adb544a0ea87ce219032a94",
-    "time_added": "2025-06-12T15:48:37.4897Z",
-    "time_updated": "2025-09-25T04:55:13.926861351Z"
-  },
-  {
-    "title": "Jellyfin Stats",
     "description": "Live active playback streams (dynamic highlight), total movies \u0026 series count",
     "author": "kirolos-esmat",
     "directory": "jellyfin-stats",
     "readme_hash": "99c7033f3c5499c285e80cda4c8c65cff5dae4a4",
     "time_added": "2026-08-31T20:57:33.727912826Z",
     "time_updated": "2026-08-31T20:57:33.727912896Z"
+  },
+  {
+    "title": "Jellyfin Stats",
+    "description": "show the number of movies, shows, episodes and songs in your Jellyfin or Emby server",
+    "author": "lfvelosoh",
+    "directory": "jellyfin-emby-stats",
+    "readme_hash": "2335546183f1e0c15adb544a0ea87ce219032a94",
+    "time_added": "2025-06-12T15:48:37.4897Z",
+    "time_updated": "2025-09-25T04:55:13.926861351Z"
   },
   {
     "title": "Karakeep Dashboard",

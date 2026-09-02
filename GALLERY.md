@@ -240,12 +240,12 @@
   </tr>
   <tr>
     <td valign="top">
-    <p align="center"><a href="widgets/jellyfin-emby-stats/README.md">Jellyfin Stats</a><br>by <a href="https://github.com/lfvelosoh">@lfvelosoh</a><p>
-    <p align="center"><a href="widgets/jellyfin-emby-stats/README.md"><img src="widgets/jellyfin-emby-stats/preview.png"></a></p>
-</td>
-    <td valign="top">
     <p align="center"><a href="widgets/jellyfin-stats/README.md">Jellyfin Stats</a><br>by <a href="https://github.com/kirolos-esmat">@kirolos-esmat</a><p>
     <p align="center"><a href="widgets/jellyfin-stats/README.md"><img src="widgets/jellyfin-stats/preview.png"></a></p>
+</td>
+    <td valign="top">
+    <p align="center"><a href="widgets/jellyfin-emby-stats/README.md">Jellyfin Stats</a><br>by <a href="https://github.com/lfvelosoh">@lfvelosoh</a><p>
+    <p align="center"><a href="widgets/jellyfin-emby-stats/README.md"><img src="widgets/jellyfin-emby-stats/preview.png"></a></p>
 </td>
     <td valign="top">
     <p align="center"><a href="widgets/karakeep-dashboard/README.md">Karakeep Dashboard</a><br>by <a href="https://github.com/razdnut">@razdnut</a><p>
