@@ -1,10 +1,12 @@
 ## Preview
 ![image](preview.png)
 
-This widget uses the Trakt & TMDB APIs. No paid subscriptions are required.
+This widget uses the Trakt & TMDB APIs. ~~No paid subscriptions are required.~~ `NOTE! As of August 2026, Trakt requires users to have a VIP subscription in order to gain access to API app keys.`
 
 > [!NOTE]
 >
+> As of August 2026, Trakt requires users to have a VIP subscription in order to gain access to API app keys.
+> 
 > This widget uses synchronous API calls introduced in `Glance v0.8.0`.
 > Ensure you update to at least this version.
 >
@@ -24,6 +26,15 @@ These entries can be configured near the beginning of the `template` section of 
 | showEpisodeNumber | Visibility for S##E## description on TV Shows | true | boolean |
 | showMovieYear | Show year next to movie title | false | boolean |
 | showTVYear | Show starting year next to TV Show title | false | boolean |
+| showEpisodeArt | Set to `true` to show individual episode art for TV, `false` for main show art | false | boolean |
+| useTraktLinks | Set to `true` to link to Trakt, `false` to link to TMDB | true | boolean |
+
+## Changelog
+- v1.1 - July 27, 2026
+  - Fixed Movies not displaying in widget after Trakt changed their API in mid-2026 (deleted `type: shows,movies` under `Parameters`).
+  - Added `showEpisodeArt` and `useTraktLinks` settings.
+- v1.0 - May 23, 2025
+  - Initial release
 
 ## Widget YAML
 ```
@@ -32,7 +43,6 @@ These entries can be configured near the beginning of the `template` section of 
   cache: 30m
   url: https://api.trakt.tv/users/${TRAKT_USERNAME}/history
   parameters:
-    type: shows,movies
     limit: 10
     sort: watched_at,desc
   headers:
@@ -42,75 +52,118 @@ These entries can be configured near the beginning of the `template` section of 
     Accept: application/json
   template: |
     {{/* USER VARIABLES BEGIN */}}
-    {{/* Number of items to show before SHOW MORE appears */}}
-    {{ $collapseAfter := 3 }}
+      {{/* Number of items to show before SHOW MORE appears */}}
+      {{ $collapseAfter := 3 }}
 
-    {{/* Set to false to hide S#E# episode numbers on TV Shows */}}
-    {{ $showEpisodeNumber := true }}
+      {{/* Set to false to hide S#E# episode numbers on TV Shows */}}
+      {{ $showEpisodeNumber := true }}
 
-    {{/* Set to true to show year on Movies */}}
-    {{ $showMovieYear := false }}
+      {{/* Set to true to show year on Movies */}}
+      {{ $showMovieYear := false }}
 
-    {{/* Set to true to show year on TV Shows */}}
-    {{ $showTVYear := false }}
+      {{/* Set to true to show year on TV Shows */}}
+      {{ $showTVYear := false }}
+
+      {{/* Set to true to show individual episode art for TV, false for main show art */}}
+      {{ $showEpisodeArt := false }}
+
+      {{/* Set to true to link to Trakt, false to link to TMDB */}}
+      {{ $useTraktLinks := true }}
     {{/* USER VARIABLES END */}}
 
     <ul class="list list-gap-10 collapsible-container" data-collapse-after="{{ $collapseAfter }}">
     {{ range .JSON.Array "" }}
-      {{ $tmdbID := "" }}
-      {{ $tmdbData := "" }}
-      {{ $mediaType := .String "type" }}
       {{ $tmdbPageUrl := "" }}
+      {{ $traktPageUrl := "" }}
+      {{ $finalUrl := "" }}
       {{ $imageUrlBase := "https://image.tmdb.org/t/p/w185" }}
       {{ $posterPath := "" }}
       {{ $posterUrl := "" }}
+
+      {{ $mediaType := .String "type" }}
+
       {{ if eq $mediaType "episode" }}
-        {{ $tmdbID = .String "show.ids.tmdb" }}
-        {{
-          $tmdbData = newRequest (concat "https://api.themoviedb.org/3/tv/" $tmdbID "?api_key=" "${TMDB_API_KEY}")
-          | withHeader "Accept" "application/json"
-          | getResponse
-        }}
-        {{ $tmdbPageUrl = concat "https://www.themoviedb.org/tv/" $tmdbID }}
+        {{ $showTmdbID := .String "show.ids.tmdb" }}
+        {{ $seasonNumber := .String "episode.season" }}
+        {{ $episodeNumber := .String "episode.number" }}
+        {{ $showTraktSlug := .String "show.ids.slug" }}
+
+        {{/* Fetch show data for poster if $showEpisodeArt is false */}}
+        {{ if not $showEpisodeArt }}
+          {{
+            $tmdbShowData := newRequest (concat "https://api.themoviedb.org/3/tv/" $showTmdbID "?api_key=" "${TMDB_API_KEY}")
+            | withHeader "Accept" "application/json"
+            | getResponse
+          }}
+          {{ if $tmdbShowData }}
+            {{ $posterPath = $tmdbShowData.JSON.String "poster_path" }}
+          {{ end }}
+        {{ else }}
+          {{/* Fetch episode data for poster */}}
+          {{
+            $tmdbEpisodeData := newRequest (concat "https://api.themoviedb.org/3/tv/" $showTmdbID "/season/" $seasonNumber "/episode/" $episodeNumber "?api_key=" "${TMDB_API_KEY}")
+            | withHeader "Accept" "application/json"
+            | getResponse
+          }}
+          {{ if $tmdbEpisodeData }}
+            {{ $posterPath = $tmdbEpisodeData.JSON.String "still_path" }}
+          {{ end }}
+        {{ end }}
+
+        {{ $tmdbPageUrl = printf "https://www.themoviedb.org/tv/%s/season/%s/episode/%s" $showTmdbID $seasonNumber $episodeNumber }}
+        {{ $traktPageUrl = printf "https://trakt.tv/shows/%s/seasons/%s/episodes/%s" $showTraktSlug $seasonNumber $episodeNumber }}
+
       {{ else }}
-        {{ $tmdbID = .String "movie.ids.tmdb" }}
+        {{/* Existing logic for movies */}}
+        {{ $tmdbID := .String "movie.ids.tmdb" }}
+        {{ $traktSlug := .String "movie.ids.slug" }}
         {{
-          $tmdbData = newRequest (concat "https://api.themoviedb.org/3/movie/" $tmdbID "?api_key=" "${TMDB_API_KEY}")
+          $tmdbMovieData := newRequest (concat "https://api.themoviedb.org/3/movie/" $tmdbID "?api_key=" "${TMDB_API_KEY}")
           | withHeader "Accept" "application/json"
           | getResponse
         }}
         {{ $tmdbPageUrl = concat "https://www.themoviedb.org/movie/" $tmdbID }}
-      {{ end }}
-      {{ if $tmdbData }}
-        {{ $posterPath = $tmdbData.JSON.String "poster_path" }}
-        {{ if $posterPath }}
-          {{ $posterUrl = concat $imageUrlBase $posterPath }}
+        {{ $traktPageUrl = concat "https://trakt.tv/movies/" $traktSlug }}
+
+        {{ if $tmdbMovieData }}
+          {{ $posterPath = $tmdbMovieData.JSON.String "poster_path" }}
         {{ end }}
       {{ end }}
 
+      {{/* Set the final URL based on the user variable */}}
+      {{ if $useTraktLinks }}
+        {{ $finalUrl = $traktPageUrl }}
+      {{ else }}
+        {{ $finalUrl = $tmdbPageUrl }}
+      {{ end }}
+
+      {{ if $posterPath }}
+        {{ $posterUrl = concat $imageUrlBase $posterPath }}
+      {{ end }}
+
       <li class="flex items-center gap-10">
-        <a href={{ $tmdbPageUrl }} target="_blank">
-          <img src='{{ $posterUrl }}' alt="" style="border-radius: 5px; min-width: 5rem; max-width: 5rem;" class="card">
+        <a href={{ $finalUrl }} target="_blank">
+        <img src='{{ $posterUrl }}' alt="" style="border-radius: 5px; min-width: 5rem; max-width: 5rem;" class="card">
         </a>
         <div class="flex-1">
-          <a href={{ $tmdbPageUrl }} target="_blank">
-            <p class="color-positive size-h5">{{ .String "show.title" }}{{ .String "movie.title" }}
-            {{ if eq (.String "type") "movie" }}
-              {{ if $showMovieYear }}
-                ({{ .String "movie.year" }})
-              {{ end }}
-            {{ else }}
-              {{ if $showTVYear }}
-                ({{ .String "show.year" }})
-              {{ end }}
+          <a href={{ $finalUrl }} target="_blank">
+          <p class="color-positive size-h5">{{ .String "show.title" }}{{ .String "movie.title" }}
+          {{ if eq (.String "type") "movie" }}
+            {{ if $showMovieYear }}
+              ({{ .String "movie.year" }})
             {{ end }}
-            </p>
+          {{ else }}
+            {{ if $showTVYear }}
+              ({{ .String "show.year" }})
+            {{ end }}
+          {{ end }}
+          </p>
           </a>
-          <a href={{ $tmdbPageUrl }} target="_blank">
+          <a href={{ $finalUrl }} target="_blank">
             {{ if eq (.String "type") "episode" }}
             <p class="size-h5">
             {{ if $showEpisodeNumber }}
-              (S{{ .String "episode.season" }}E{{ .String "episode.number" }}) 
+            (S{{ .String "episode.season" }}E{{ .String "episode.number" }}) 
             {{ end }}
             {{ .String "episode.title" }}
             </p>
