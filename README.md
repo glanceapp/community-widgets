@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Eventim](widgets/eventim/README.md) - a Glance widget for displaying upcoming events on the European ticket seller's site, Eventim (by @cpt-metal)
 * [Gotify Notifications](widgets/gotify-notifications/README.md) - show recent notifications from your Gotify server (by @Owen-3456)
 * [Wanikani Reviews](widgets/wanikani-reviews/README.md) - small widget that shows your Wanikani reviews (by @Ornifex)
 * [Cineplex Movies](widgets/cineplex-movies/README.md) - show what movies are currently available in Cineplex cinemas (by @giahuy2201)
 * [Unraid Widget](widgets/unraid-widget/README.md) - a simple and responsive custom-api widget for monitoring key Unraid information such as the array status, disk status and share capacitities (by @eddydmate)
-* [Calvin and Hobbes daily strip](widgets/calvin-and-hobbes/README.md) - a Glance widget for displaying the daily Calvin and Hobbes strip (by @cpt-metal)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -54,6 +54,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Duolingo Stats](widgets/duolingo-stats/README.md) - show your Duolingo stats in glance (by @RealTong)
 * [ESPN Live Football Scores Widget](widgets/football-livescore/README.md) - a custom widget that displays live, upcoming, and finished football (soccer) scores using the **ESPN Scoreboard API** (by @Beyeshooter)
 * [Epic Games Free Games](widgets/epic-free-widget/README.md) - display currently free games from the Epic Games Store with promotional images and availability periods (by @marocainperdu)
+* [Eventim](widgets/eventim/README.md) - a Glance widget for displaying upcoming events on the European ticket seller's site, Eventim (by @cpt-metal)
 * [Football Fixtures](widgets/football-fixtures/README.md) - show the last match and the next match of your favourite football team using football-data api (by @cristiandiiorio)
 * [Football League Table](widgets/football-league-table/README.md) - shows the current standings of the selected league using football-data api (by @nicl-dev)
 * [Forgejo repos](widgets/forgejo-repos/README.md) - show data about latest repos from forgejo instance (by @dodecube)
@@ -76,8 +77,8 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Immich Styled Stats](widgets/immich-styled/README.md) - immich styled statistics taken straight out of the app. Beautiful, simple and useful (by @panonim)
 * [Immich stats](widgets/immich-stats/README.md) - show the number of photos, videos and usage of your Immich server (by @svilenmarkov)
 * [Jellyfin Latest/Next Up](widgets/jellyfin-latest/README.md) - display the newest additions to a Jellyfin library, and next up to watch for a given user (by @Nedra1998)
-* [Jellyfin Stats](widgets/jellyfin-stats/README.md) - live active playback streams (dynamic highlight), total movies & series count (by @kirolos-esmat)
 * [Jellyfin Stats](widgets/jellyfin-emby-stats/README.md) - show the number of movies, shows, episodes and songs in your Jellyfin or Emby server (by @lfvelosoh)
+* [Jellyfin Stats](widgets/jellyfin-stats/README.md) - live active playback streams (dynamic highlight), total movies & series count (by @kirolos-esmat)
 * [Karakeep Dashboard](widgets/karakeep-dashboard/README.md) - the widget returns statistics on the number of bookmarks and the number of tags and the most recently added bookmarks (by @razdnut)
 * [Kavita Latest](widgets/kavita-latest/README.md) - show recently updated series and in progress series from your Kavita server (by @Nedra1998)
 * [Komga Recently Added Series](widgets/komga-latest/README.md) - displays recently added comic/manga series to a defined Komga library (by @VictorMitr)
