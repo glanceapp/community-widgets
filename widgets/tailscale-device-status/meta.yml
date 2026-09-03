@@ -1,0 +1,3 @@
+title: Tailscale Device Status
+description: Live IP address, relative last seen timestamp, and key expiry for a specific Tailscale device
+author: kirolos-esmat

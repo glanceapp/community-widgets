@@ -103,9 +103,9 @@
     "description": "Server Stats widget matching the builtin widget but using data from Beszel.",
     "author": "Nedra1998",
     "directory": "beszel-server-stats",
-    "readme_hash": "b2c7226dd354fa2b8b28086905b554f4f3015122",
+    "readme_hash": "58a05909a705b91cb71c387a5c8313134ed52b8e",
     "time_added": "2025-10-02T20:57:52.804627383Z",
-    "time_updated": "2025-11-29T19:04:49.314743585Z"
+    "time_updated": "2026-08-29T13:17:19.871415911Z"
   },
   {
     "title": "Calibre-Web Stats",
@@ -115,6 +115,15 @@
     "readme_hash": "8b504458b820c2dcea195dacff9b7cc727d19615",
     "time_added": "2025-06-11T16:58:30.9963Z",
     "time_updated": "2025-09-25T04:55:13.925920453Z"
+  },
+  {
+    "title": "Calvin and Hobbes daily strip",
+    "description": "A Glance widget for displaying the daily Calvin and Hobbes strip.",
+    "author": "cpt-metal",
+    "directory": "calvin-and-hobbes",
+    "readme_hash": "354dc96c39f1cd6282820353032812807e5cb1c4",
+    "time_added": "2026-09-02T10:44:22.667676687Z",
+    "time_updated": "2026-09-02T10:44:22.667676787Z"
   },
   {
     "title": "Cats As A Service Photos",
@@ -135,6 +144,33 @@
     "time_updated": "2025-09-25T04:55:13.925995484Z"
   },
   {
+    "title": "Cineplex Movies",
+    "description": "show what movies are currently available in Cineplex cinemas",
+    "author": "giahuy2201",
+    "directory": "cineplex-movies",
+    "readme_hash": "c5390e24b1af4a807f2bb6033d9f1466705aecca",
+    "time_added": "2026-09-02T12:26:47.495747963Z",
+    "time_updated": "2026-09-02T12:26:47.495748083Z"
+  },
+  {
+    "title": "Cloud \u0026 SaaS Status",
+    "description": "show provider and service status from OutageDeck's keyless public API",
+    "author": "koko3tallah",
+    "directory": "outagedeck-service-status",
+    "readme_hash": "ffe0de2ca4c58de1d772f9e6384ee27077b95221",
+    "time_added": "2026-09-01T10:39:29.505427962Z",
+    "time_updated": "2026-09-01T10:39:29.505428078Z"
+  },
+  {
+    "title": "Cloudflare Tunnel Status",
+    "description": "Cloudflare connector tunnel live health status and origin IP",
+    "author": "kirolos-esmat",
+    "directory": "cloudflare-tunnel-status",
+    "readme_hash": "bfdc1b21f53a2816109e2812c8ac7cc96ef8e973",
+    "time_added": "2026-08-31T20:57:33.725978905Z",
+    "time_updated": "2026-08-31T20:57:33.725979116Z"
+  },
+  {
     "title": "Cloudflare Tunnels",
     "description": "External and Local Cloudflare Tunnels links",
     "author": "drshajul",
@@ -153,6 +189,15 @@
     "time_updated": "2025-11-04T21:32:36.750473688Z"
   },
   {
+    "title": "Crypto Fear \u0026 Greed Index",
+    "description": "Displays the current Crypto Fear \u0026 Greed Index with a color-coded gradient bar, sentiment label and trend arrow.",
+    "author": "yroulin",
+    "directory": "fear-and-greed-index",
+    "readme_hash": "d2ca043fca5f6c58ec3a127682e4aa7bff46a2bd",
+    "time_added": "2026-08-29T14:21:46.906436196Z",
+    "time_updated": "2026-08-29T14:21:46.906436316Z"
+  },
+  {
     "title": "Cryptopanic News",
     "description": "A real-time cryptocurrency news widget that displays filtered news from CryptoPanic.com with configurable filters for news type, regions, and currencies.",
     "author": "herculosh",
@@ -169,6 +214,24 @@
     "readme_hash": "be97a506577556088e620c7f2c86981bda9072b8",
     "time_added": "2025-05-02T12:28:49.3537Z",
     "time_updated": "2025-09-25T04:55:13.926307988Z"
+  },
+  {
+    "title": "DHL Tracking",
+    "description": "A Glance widget for displaying the tracking status of DHL parcels.",
+    "author": "cpt-metal",
+    "directory": "dhl-tracking",
+    "readme_hash": "3d67bedec8037f2d145a7fb7c1030e1a8f251645",
+    "time_added": "2026-08-31T18:53:24.362051821Z",
+    "time_updated": "2026-08-31T18:53:24.362052012Z"
+  },
+  {
+    "title": "Discopanel",
+    "description": "A widget to view all of your minecraft servers from Discopanel",
+    "author": "PapaZ810",
+    "directory": "discopanel",
+    "readme_hash": "9745f83e68dc606f58a2065b714f068fe01ec08b",
+    "time_added": "2026-08-29T15:10:05.476461467Z",
+    "time_updated": "2026-08-29T15:10:05.476461567Z"
   },
   {
     "title": "Docker Swarm",
@@ -238,9 +301,9 @@
     "description": "show different stats from the current Formula 1 season from [F1 API](https://f1api.dev)",
     "author": "abaza738",
     "directory": "formula1-widgets",
-    "readme_hash": "24b0e6fc1a405b23d7fd541682a60678794cb78b",
+    "readme_hash": "2f21f7a782dc198b9f682683431d4612ce230d6a",
     "time_added": "2025-04-02T03:34:04.3331Z",
-    "time_updated": "2025-09-25T04:55:13.926493114Z"
+    "time_updated": "2026-08-29T13:20:06.824255152Z"
   },
   {
     "title": "Frigate stats",
@@ -297,6 +360,15 @@
     "time_updated": "2025-09-25T04:55:13.926610903Z"
   },
   {
+    "title": "GitHub Status",
+    "description": "Display the current operational status of GitHub services",
+    "author": "m1xzg",
+    "directory": "github-status",
+    "readme_hash": "ea9b25a92d537def8546eba6933ad733bc238365",
+    "time_added": "2026-08-29T13:20:06.824745308Z",
+    "time_updated": "2026-08-29T13:20:06.824745428Z"
+  },
+  {
     "title": "GitHub personal repositories",
     "description": "show your own personal respositories on GitHub",
     "author": "menitz",
@@ -306,13 +378,22 @@
     "time_updated": "2025-09-25T04:55:13.926643635Z"
   },
   {
+    "title": "Glances Server stats",
+    "description": "show the Glances statistics",
+    "author": "andersonviudes",
+    "directory": "glances-stats",
+    "readme_hash": "afbc42042f05a615c114cbc3b45e78903114cf30",
+    "time_added": "2026-08-29T13:29:41.948653326Z",
+    "time_updated": "2026-08-29T13:29:41.948653446Z"
+  },
+  {
     "title": "Gluetun VPN status",
     "description": "show the public IP, country and city of you [Gluetun VPN client](https://github.com/qdm12/gluetun)",
     "author": "Hyptu",
     "directory": "gluetun-vpn-status",
-    "readme_hash": "7f332470d1c815659fcbc23da81f82a1306c7277",
+    "readme_hash": "e67221b271e3fff2756312b8341242148b4361fa",
     "time_added": "2025-04-25T22:19:12.0907Z",
-    "time_updated": "2025-09-25T04:55:13.926679161Z"
+    "time_updated": "2026-08-29T13:18:45.307719912Z"
   },
   {
     "title": "Google Calendar List",
@@ -376,6 +457,15 @@
     "readme_hash": "846e70af3921beeac8d42d5fffa96ce8feace364",
     "time_added": "2025-07-25T12:19:30.0506Z",
     "time_updated": "2025-09-25T04:55:13.926918618Z"
+  },
+  {
+    "title": "Jellyfin Stats",
+    "description": "Live active playback streams (dynamic highlight), total movies \u0026 series count",
+    "author": "kirolos-esmat",
+    "directory": "jellyfin-stats",
+    "readme_hash": "99c7033f3c5499c285e80cda4c8c65cff5dae4a4",
+    "time_added": "2026-08-31T20:57:33.727912826Z",
+    "time_updated": "2026-08-31T20:57:33.727912896Z"
   },
   {
     "title": "Jellyfin Stats",
@@ -549,6 +639,15 @@
     "time_updated": "2025-09-25T04:55:13.927411479Z"
   },
   {
+    "title": "MyanimeList Profile",
+    "description": "Show your profile",
+    "author": "WaYy",
+    "directory": "myanimelist-profile",
+    "readme_hash": "dd0d788405daa31f27d89ec973c46ebe4d9d22a5",
+    "time_added": "2026-08-29T13:21:43.580221957Z",
+    "time_updated": "2026-08-29T13:21:43.580222042Z"
+  },
+  {
     "title": "MyanimeList Widgets",
     "description": "Show seasonal anime (more Widgets coming soon)",
     "author": "Zephyr73",
@@ -612,6 +711,15 @@
     "time_updated": "2025-09-25T04:55:13.927530622Z"
   },
   {
+    "title": "Nebula Latest Videos",
+    "description": "A widget that displays the latest videos from selected [Nebula](https://nebula.tv/) channels.",
+    "author": "darius-it",
+    "directory": "nebula-videos",
+    "readme_hash": "4ccfd182891edd9359a3d5af45dac82c2b0b2491",
+    "time_added": "2026-08-29T13:44:45.143429571Z",
+    "time_updated": "2026-08-29T13:44:45.143429702Z"
+  },
+  {
     "title": "NetAlertX Device Status",
     "description": "display the status of connected devices monitored by NetAlertX",
     "author": "razdnut",
@@ -619,6 +727,15 @@
     "readme_hash": "f6e96bdcb26522aa1dd1d6335a50cb4db55a0875",
     "time_added": "2025-07-30T00:31:47.4611Z",
     "time_updated": "2025-09-25T04:55:13.927577369Z"
+  },
+  {
+    "title": "Netbird Peers Count",
+    "description": "Real-time total connected network peer count",
+    "author": "kirolos-esmat",
+    "directory": "netbird-peers-count",
+    "readme_hash": "337ebda3e465ce113f7e5a06cdd8931f9170e8d0",
+    "time_added": "2026-08-31T20:57:33.729342087Z",
+    "time_updated": "2026-08-31T20:57:33.729342158Z"
   },
   {
     "title": "Netbird devices",
@@ -720,6 +837,15 @@
     "time_updated": "2025-09-25T04:55:13.92792041Z"
   },
   {
+    "title": "Plex Stats",
+    "description": "Native Plex API sessions, active streams list, and library counts",
+    "author": "kirolos-esmat",
+    "directory": "plex-stats",
+    "readme_hash": "1c47df6593ee8e0f8206b95582b6a621b0d7d2fd",
+    "time_added": "2026-08-31T20:57:33.729971642Z",
+    "time_updated": "2026-08-31T20:57:33.729971712Z"
+  },
+  {
     "title": "Portainer Dashboard",
     "description": "show docker containers from portainer.",
     "author": "RealTong",
@@ -772,6 +898,15 @@
     "readme_hash": "3dbaf7fb752968cb6dafaa6759dd3b7b2eb2030e",
     "time_added": "2025-06-13T12:41:45.1472Z",
     "time_updated": "2025-11-01T20:20:59.907944977Z"
+  },
+  {
+    "title": "Radarr Stats",
+    "description": "Total movie library count, missing movies, and active download queue",
+    "author": "kirolos-esmat",
+    "directory": "radarr-stats",
+    "readme_hash": "907d3a3970e9bd6c38dfd87e85ba3ec676c70ee1",
+    "time_added": "2026-08-31T20:57:33.730433057Z",
+    "time_updated": "2026-08-31T20:57:33.730433137Z"
   },
   {
     "title": "Raindrop Bookmarks",
@@ -853,6 +988,15 @@
     "readme_hash": "6c8a4726a0dca1375e4b3ebde33da6159f0afae6",
     "time_added": "2025-06-03T09:59:51.337Z",
     "time_updated": "2025-09-25T04:55:13.928443879Z"
+  },
+  {
+    "title": "Sonarr Stats",
+    "description": "Total series library count, missing episodes, and active download queue",
+    "author": "kirolos-esmat",
+    "directory": "sonarr-stats",
+    "readme_hash": "6a77ea8ff3edcdb2c38bd65b81beca2744b7783d",
+    "time_added": "2026-08-31T20:57:33.731009553Z",
+    "time_updated": "2026-08-31T20:57:33.731009613Z"
   },
   {
     "title": "Speedtest Tracker",
@@ -954,6 +1098,15 @@
     "time_updated": "2025-10-03T08:12:31.464315427Z"
   },
   {
+    "title": "Tailscale Device Status",
+    "description": "Live IP address, relative last seen timestamp, and key expiry for a specific Tailscale device",
+    "author": "kirolos-esmat",
+    "directory": "tailscale-device-status",
+    "readme_hash": "7c20ebe1f82974931141dd930270ece2eb007bac",
+    "time_added": "2026-08-31T20:57:33.731578497Z",
+    "time_updated": "2026-08-31T20:57:33.731578567Z"
+  },
+  {
     "title": "Tailscale devices",
     "description": "show all devices inside a Tailscale tailnet along with their connection status, owner, update availability and IP",
     "author": "not-first",
@@ -981,6 +1134,15 @@
     "time_updated": "2025-09-25T04:55:13.928888239Z"
   },
   {
+    "title": "Termix",
+    "description": "show hosts and recent activity from your Termix instance",
+    "author": "giannf",
+    "directory": "termix",
+    "readme_hash": "b5dba98d98c656c049d0c70368a04cb61c683ee8",
+    "time_added": "2026-09-01T10:39:29.50701122Z",
+    "time_updated": "2026-09-01T10:39:29.507011487Z"
+  },
+  {
     "title": "Time Bar",
     "description": "show percentage of day/month/year elapsed",
     "author": "anant-j",
@@ -988,6 +1150,15 @@
     "readme_hash": "f16beb4b4e89e6b5cecc7b65699692529271e553",
     "time_added": "2025-05-06T23:18:40.7457Z",
     "time_updated": "2025-09-25T04:55:13.928925499Z"
+  },
+  {
+    "title": "Todoist Tasks",
+    "description": "Display and complete today's tasks from Todoist with priority levels and project names",
+    "author": "xd1i0",
+    "directory": "todoist-tasks",
+    "readme_hash": "6e48399eb965dda18b270d84924fa9cecd93f131",
+    "time_added": "2026-08-29T13:10:31.269907773Z",
+    "time_updated": "2026-08-29T13:10:31.269907893Z"
   },
   {
     "title": "Trakt",
@@ -1026,6 +1197,15 @@
     "time_updated": "2025-09-25T04:55:13.929069027Z"
   },
   {
+    "title": "TrueNAS Metrics",
+    "description": "System load average, live uptime, active TrueNAS alerts counter, CPU model",
+    "author": "kirolos-esmat",
+    "directory": "truenas-metrics",
+    "readme_hash": "9e683100a437e814f217110716f4e03f7b525fa1",
+    "time_added": "2026-08-31T20:57:33.732097557Z",
+    "time_updated": "2026-08-31T20:57:33.732097618Z"
+  },
+  {
     "title": "TrueNAS Scale Pools",
     "description": "shows datasets with usage and health status",
     "author": "drakkein",
@@ -1044,6 +1224,15 @@
     "time_updated": "2025-12-05T12:33:47.836005151Z"
   },
   {
+    "title": "UK Bin Collection Data",
+    "description": "UK Bin Collection Widget to show upcoming bin collections - Credit to Robert Bradley for the original project",
+    "author": "kl421",
+    "directory": "UKBinCollection",
+    "readme_hash": "992591583df4a7e8323d1dd4f8f389b7dc00b786",
+    "time_added": "2026-08-29T15:21:08.838717826Z",
+    "time_updated": "2026-08-29T15:21:08.838717936Z"
+  },
+  {
     "title": "Unifi",
     "description": "Unifi controller information",
     "author": "prozn",
@@ -1051,6 +1240,15 @@
     "readme_hash": "fdd5f5bbda761daa02261e2fcfe7ec3fa78b59c6",
     "time_added": "2025-09-22T07:57:23.1297Z",
     "time_updated": "2025-09-25T04:55:13.929151831Z"
+  },
+  {
+    "title": "Unraid Widget",
+    "description": "A simple and responsive custom-api widget for monitoring key Unraid information such as the array status, disk status and share capacitities.",
+    "author": "eddydmate",
+    "directory": "unraid-widget",
+    "readme_hash": "bfb08ecbf33884e6c0f02d05af5105843c45c4e9",
+    "time_added": "2026-09-02T10:50:41.437053339Z",
+    "time_updated": "2026-09-02T10:50:41.437053517Z"
   },
   {
     "title": "Uptime Kuma",
@@ -1080,6 +1278,15 @@
     "time_updated": "2025-11-18T04:03:16.893923289Z"
   },
   {
+    "title": "Wanikani Reviews",
+    "description": "Small widget that shows your Wanikani reviews.",
+    "author": "Ornifex",
+    "directory": "wanikani-reviews",
+    "readme_hash": "416941a863521362a72b56ef44c3597e0af1313c",
+    "time_added": "2026-09-02T12:48:19.303649015Z",
+    "time_updated": "2026-09-02T12:48:19.303649165Z"
+  },
+  {
     "title": "Weather Seven Day",
     "description": "Shows daily weather conditions and high and low temperature from Open-Meteo for a specified location.",
     "author": "brandonsie",
@@ -1098,6 +1305,24 @@
     "time_updated": "2025-09-25T04:55:13.929331928Z"
   },
   {
+    "title": "WikiWidgets",
+    "description": "A collection of widgets for Wikipedia's featured feeds",
+    "author": "thatgirlginger",
+    "directory": "wikipedia",
+    "readme_hash": "02f1a4db5a379a1f3221edfd15476f73f0a2fb05",
+    "time_added": "2026-09-02T10:38:40.006190359Z",
+    "time_updated": "2026-09-02T10:38:40.006190522Z"
+  },
+  {
+    "title": "Wikipedia On This Day",
+    "description": "Show notable events, births, and deaths from Wikipedia that happened on today's date in history.",
+    "author": "mike-rambil",
+    "directory": "wikipedia-on-this-day",
+    "readme_hash": "bcb9414d2ed92dd5ae3ca76e27b3e6da1b55a2da",
+    "time_added": "2026-08-29T15:18:21.6979138Z",
+    "time_updated": "2026-08-29T15:18:21.69791388Z"
+  },
+  {
     "title": "YouTube Embedded Player",
     "description": "A grid-card layout of YouTube List with Embed player pulled from either RSS-Bridge or FreshRSS",
     "author": "ralphocdol",
@@ -1114,6 +1339,15 @@
     "readme_hash": "4357fc874d2c974a8b5252608d300fc666515bb0",
     "time_added": "2025-08-19T20:06:23.4484Z",
     "time_updated": "2025-09-25T04:55:13.928119062Z"
+  },
+  {
+    "title": "sparkDash DGX cluster",
+    "description": "Live DGX Spark (GB10) monitoring — GPU temp/usage, VRAM, LLM tok/s, KV-cache and uptime for the head node and a worker, from a sparkDash instance.",
+    "author": "linxichen",
+    "directory": "sparkdash-dgx-cluster",
+    "readme_hash": "069d35f9d1c33747abb58408150eff59e525811e",
+    "time_added": "2026-09-01T10:33:50.137636817Z",
+    "time_updated": "2026-09-01T10:33:50.137636947Z"
   },
   {
     "title": "ufc-fight-tracker",

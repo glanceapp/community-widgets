@@ -24,12 +24,12 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v7
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Set up Go
-      uses: actions/setup-go@v5
+      uses: actions/setup-go@v7
       with:
         go-version: '1.24'
         cache-dependency-path: registry/go.sum
@@ -43,7 +43,7 @@ jobs:
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "GitHub Action"
-        git add README.md GALLERY.md registry/widgets.json
+        git add README.md GALLERY.md registry/widgets.json widgets/
         if git diff --staged --quiet; then
           echo "No changes to commit"
         else

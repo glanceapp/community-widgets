@@ -52,3 +52,23 @@
   url: https://github.com/craigchandler/glance-bom-weather
   description: Australian Bureau of Meteorology observations and forecasts for Glance.
   author: Craig Chandler
+  
+- title: caltask
+  url: https://github.com/benginN/caltask
+  description: Self-hosted calendar + tasks designed to embed in Glance as a fully interactive iframe widget (switch views, drag events, tick off tasks without leaving the dashboard).
+  author: benginN
+  
+- title: Lichess Daily Puzzle
+  url: https://github.com/brtmax/lichess-glance
+  description: Daily Lichess Puzzle
+  author: brtmax
+  
+- title: glance-bilibili
+  url: https://github.com/Cynosure159/glance-bilibili
+  description: Display Bilibili videos like Videos widget.
+  author: Cynosure159
+  
+- title: VMware ESXi Stats
+  url: https://github.com/lumitesi/glance-esxi-stats
+  description: Display server, VM, and datastore statistics for VMware ESXi.
+  author: lumitesi
