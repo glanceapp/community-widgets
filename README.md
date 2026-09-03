@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Thorough Raindrop Bookmarks](widgets/raindrop-bookmarks/README.md) - display your Raindrop.io bookmarks with hierarchical collections, cover images, tags, and dates (by @wen-hsiu-hsu)
 * [Sunrise & Sunset](widgets/sunrise-sunset/README.md) - sunrise time, daylight duration, and sunset time for a configured location, using Open-Meteo (by @mgpeter)
 * [Live Tennis Matches](widgets/live-tennis-matches/README.md) - shows live ATP/WTA tennis matches with serving indicator, set/game/point scores and tiebreak status using the Live Tennis API (by @bensynapse)
 * [Glance widget](widgets/glance-widgets/README.md) - displays data from the glances server (by @yanoky1)
 * [Eventim](widgets/eventim/README.md) - a Glance widget for displaying upcoming events on the European ticket seller's site, Eventim (by @cpt-metal)
-* [Gotify Notifications](widgets/gotify-notifications/README.md) - show recent notifications from your Gotify server (by @Owen-3456)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -78,8 +78,8 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Immich Styled Stats](widgets/immich-styled/README.md) - immich styled statistics taken straight out of the app. Beautiful, simple and useful (by @panonim)
 * [Immich stats](widgets/immich-stats/README.md) - show the number of photos, videos and usage of your Immich server (by @svilenmarkov)
 * [Jellyfin Latest/Next Up](widgets/jellyfin-latest/README.md) - display the newest additions to a Jellyfin library, and next up to watch for a given user (by @Nedra1998)
-* [Jellyfin Stats](widgets/jellyfin-emby-stats/README.md) - show the number of movies, shows, episodes and songs in your Jellyfin or Emby server (by @lfvelosoh)
 * [Jellyfin Stats](widgets/jellyfin-stats/README.md) - live active playback streams (dynamic highlight), total movies & series count (by @kirolos-esmat)
+* [Jellyfin Stats](widgets/jellyfin-emby-stats/README.md) - show the number of movies, shows, episodes and songs in your Jellyfin or Emby server (by @lfvelosoh)
 * [Karakeep Dashboard](widgets/karakeep-dashboard/README.md) - the widget returns statistics on the number of bookmarks and the number of tags and the most recently added bookmarks (by @razdnut)
 * [Kavita Latest](widgets/kavita-latest/README.md) - show recently updated series and in progress series from your Kavita server (by @Nedra1998)
 * [Komga Recently Added Series](widgets/komga-latest/README.md) - displays recently added comic/manga series to a defined Komga library (by @VictorMitr)
@@ -156,6 +156,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Tautulli Stats](widgets/tautulli-stats/README.md) - show various home stats from Tautulli such as recently watched, top movies/shows, etc (by @SkyAllinott)
 * [Technitium DNS Stats](widgets/technitium-dns-stats/README.md) - show stats from Technitium DNS Server (by @eribbey)
 * [Termix](widgets/termix/README.md) - show hosts and recent activity from your Termix instance (by @giannf)
+* [Thorough Raindrop Bookmarks](widgets/raindrop-bookmarks/README.md) - display your Raindrop.io bookmarks with hierarchical collections, cover images, tags, and dates (by @wen-hsiu-hsu)
 * [Time Bar](widgets/time-bar/README.md) - show percentage of day/month/year elapsed (by @anant-j)
 * [Todoist Tasks](widgets/todoist-tasks/README.md) - display and complete today's tasks from Todoist with priority levels and project names (by @xd1i0)
 * [Trakt](widgets/trakt/README.md) - shows your last-watched movies & TV shows on Trakt (by @RxBrad)
