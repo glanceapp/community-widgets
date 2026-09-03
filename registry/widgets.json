@@ -487,21 +487,21 @@
   },
   {
     "title": "Jellyfin Stats",
-    "description": "Live active playback streams (dynamic highlight), total movies \u0026 series count",
-    "author": "kirolos-esmat",
-    "directory": "jellyfin-stats",
-    "readme_hash": "99c7033f3c5499c285e80cda4c8c65cff5dae4a4",
-    "time_added": "2026-08-31T20:57:33.727912826Z",
-    "time_updated": "2026-08-31T20:57:33.727912896Z"
-  },
-  {
-    "title": "Jellyfin Stats",
     "description": "show the number of movies, shows, episodes and songs in your Jellyfin or Emby server",
     "author": "lfvelosoh",
     "directory": "jellyfin-emby-stats",
     "readme_hash": "2335546183f1e0c15adb544a0ea87ce219032a94",
     "time_added": "2025-06-12T15:48:37.4897Z",
     "time_updated": "2025-09-25T04:55:13.926861351Z"
+  },
+  {
+    "title": "Jellyfin Stats",
+    "description": "Live active playback streams (dynamic highlight), total movies \u0026 series count",
+    "author": "kirolos-esmat",
+    "directory": "jellyfin-stats",
+    "readme_hash": "99c7033f3c5499c285e80cda4c8c65cff5dae4a4",
+    "time_added": "2026-08-31T20:57:33.727912826Z",
+    "time_updated": "2026-08-31T20:57:33.727912896Z"
   },
   {
     "title": "Karakeep Dashboard",
@@ -1114,6 +1114,15 @@
     "readme_hash": "1b8919fc4ed71895828ec78b5a13edc63cc010ad",
     "time_added": "2025-03-10T00:19:08.4331Z",
     "time_updated": "2025-09-25T04:55:13.928672416Z"
+  },
+  {
+    "title": "Sunrise \u0026 Sunset",
+    "description": "Sunrise time, daylight duration, and sunset time for a configured location, using Open-Meteo.",
+    "author": "mgpeter",
+    "directory": "sunrise-sunset",
+    "readme_hash": "5db336e90d92b5c9047b323f5356d55c599428c1",
+    "time_added": "2026-09-03T14:57:26.018333686Z",
+    "time_updated": "2026-09-03T14:57:26.0183338Z"
   },
   {
     "title": "Syncthing",

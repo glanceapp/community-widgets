@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Sunrise & Sunset](widgets/sunrise-sunset/README.md) - sunrise time, daylight duration, and sunset time for a configured location, using Open-Meteo (by @mgpeter)
 * [Live Tennis Matches](widgets/live-tennis-matches/README.md) - shows live ATP/WTA tennis matches with serving indicator, set/game/point scores and tiebreak status using the Live Tennis API (by @bensynapse)
 * [Glance widget](widgets/glance-widgets/README.md) - displays data from the glances server (by @yanoky1)
 * [Eventim](widgets/eventim/README.md) - a Glance widget for displaying upcoming events on the European ticket seller's site, Eventim (by @cpt-metal)
 * [Gotify Notifications](widgets/gotify-notifications/README.md) - show recent notifications from your Gotify server (by @Owen-3456)
-* [Wanikani Reviews](widgets/wanikani-reviews/README.md) - small widget that shows your Wanikani reviews (by @Ornifex)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -78,8 +78,8 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Immich Styled Stats](widgets/immich-styled/README.md) - immich styled statistics taken straight out of the app. Beautiful, simple and useful (by @panonim)
 * [Immich stats](widgets/immich-stats/README.md) - show the number of photos, videos and usage of your Immich server (by @svilenmarkov)
 * [Jellyfin Latest/Next Up](widgets/jellyfin-latest/README.md) - display the newest additions to a Jellyfin library, and next up to watch for a given user (by @Nedra1998)
-* [Jellyfin Stats](widgets/jellyfin-stats/README.md) - live active playback streams (dynamic highlight), total movies & series count (by @kirolos-esmat)
 * [Jellyfin Stats](widgets/jellyfin-emby-stats/README.md) - show the number of movies, shows, episodes and songs in your Jellyfin or Emby server (by @lfvelosoh)
+* [Jellyfin Stats](widgets/jellyfin-stats/README.md) - live active playback streams (dynamic highlight), total movies & series count (by @kirolos-esmat)
 * [Karakeep Dashboard](widgets/karakeep-dashboard/README.md) - the widget returns statistics on the number of bookmarks and the number of tags and the most recently added bookmarks (by @razdnut)
 * [Kavita Latest](widgets/kavita-latest/README.md) - show recently updated series and in progress series from your Kavita server (by @Nedra1998)
 * [Komga Recently Added Series](widgets/komga-latest/README.md) - displays recently added comic/manga series to a defined Komga library (by @VictorMitr)
@@ -148,6 +148,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Steam User](widgets/steam-user/README.md) - show information about a Steam user (by @lunnosmp4)
 * [Steam User List](widgets/steam-user-list/README.md) - display some information about steam users/friends (by @maplefluff)
 * [Steam specials](widgets/steam-specials/README.md) - show a list of discounted games on Steam (by @svilenmarkov)
+* [Sunrise & Sunset](widgets/sunrise-sunset/README.md) - sunrise time, daylight duration, and sunset time for a configured location, using Open-Meteo (by @mgpeter)
 * [Syncthing](widgets/syncthing/README.md) - show Syncthing folder status (by @JohnCannon97)
 * [Synology Disk Station](widgets/synology-disk-station/README.md) - displays RAM and CPU usage and used storage of your Synology NAS (by @Chachigo)
 * [Tailscale Device Status](widgets/tailscale-device-status/README.md) - live IP address, relative last seen timestamp, and key expiry for a specific Tailscale device (by @kirolos-esmat)
