@@ -225,6 +225,15 @@
     "time_updated": "2026-08-31T18:53:24.362052012Z"
   },
   {
+    "title": "Dawarich Stats",
+    "description": "Shows lifetime Dawarich stats including distance traveled, cities visited, and countries visited.",
+    "author": "taskfork",
+    "directory": "dawarich-stats",
+    "readme_hash": "1ebaa2f6d81cf62c6325f7cb7cc51acc02e1663a",
+    "time_added": "2026-09-03T15:19:34.472114625Z",
+    "time_updated": "2026-09-03T15:19:34.472114745Z"
+  },
+  {
     "title": "Discopanel",
     "description": "A widget to view all of your minecraft servers from Discopanel",
     "author": "PapaZ810",
