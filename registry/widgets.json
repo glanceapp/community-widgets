@@ -405,6 +405,15 @@
     "time_updated": "2025-09-25T04:55:13.926714858Z"
   },
   {
+    "title": "Gotify Notifications",
+    "description": "show recent notifications from your Gotify server",
+    "author": "Owen-3456",
+    "directory": "gotify-notifications",
+    "readme_hash": "183d3cd25dbfad377d6a81a24fb3e9dfe133e4ef",
+    "time_added": "2026-09-03T14:55:17.956559206Z",
+    "time_updated": "2026-09-03T14:55:17.956559357Z"
+  },
+  {
     "title": "Grafana",
     "description": "Useful information and metrics from a Grafana data source (like prometheus, mimir, loki)",
     "author": "koalalorenzo",

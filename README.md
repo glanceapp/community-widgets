@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Gotify Notifications](widgets/gotify-notifications/README.md) - show recent notifications from your Gotify server (by @Owen-3456)
 * [Wanikani Reviews](widgets/wanikani-reviews/README.md) - small widget that shows your Wanikani reviews (by @Ornifex)
 * [Cineplex Movies](widgets/cineplex-movies/README.md) - show what movies are currently available in Cineplex cinemas (by @giahuy2201)
 * [Unraid Widget](widgets/unraid-widget/README.md) - a simple and responsive custom-api widget for monitoring key Unraid information such as the array status, disk status and share capacitities (by @eddydmate)
 * [Calvin and Hobbes daily strip](widgets/calvin-and-hobbes/README.md) - a Glance widget for displaying the daily Calvin and Hobbes strip (by @cpt-metal)
-* [WikiWidgets](widgets/wikipedia/README.md) - a collection of widgets for Wikipedia's featured feeds (by @thatgirlginger)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -69,6 +69,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Glances Server stats](widgets/glances-stats/README.md) - show the Glances statistics (by @andersonviudes)
 * [Gluetun VPN status](widgets/gluetun-vpn-status/README.md) - show the public IP, country and city of you [Gluetun VPN client](https://github.com/qdm12/gluetun) (by @Hyptu)
 * [Google Calendar List](widgets/google-calendar-list/README.md) - list Google Calendar upcoming events (by @anant-j)
+* [Gotify Notifications](widgets/gotify-notifications/README.md) - show recent notifications from your Gotify server (by @Owen-3456)
 * [Grafana](widgets/grafana/README.md) - useful information and metrics from a Grafana data source (like prometheus, mimir, loki) (by @koalalorenzo)
 * [Hardcover Currently Reading](widgets/hardcover-currently-reading/README.md) - show the currently reading book from [Hardcover](https://hardcover.app/) (by @Akasiek)
 * [Home Assistant Sensor Stats](widgets/homeassistant-sensor-stats/README.md) - display's configured Sensors values from Home Assistant (by @AWildLeon)
