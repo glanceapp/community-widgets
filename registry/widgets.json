@@ -990,6 +990,15 @@
     "time_updated": "2025-09-25T04:55:13.928192028Z"
   },
   {
+    "title": "Random Pokémon",
+    "description": "A random pokémon and stats from [PokeAPI](https://pokeapi.co/)",
+    "author": "Shmoopi",
+    "directory": "random-pokemon",
+    "readme_hash": "a1f523338901ca3186477a14617515b03a90b847",
+    "time_added": "2026-09-03T16:34:46.270743627Z",
+    "time_updated": "2026-09-03T16:34:46.270743737Z"
+  },
+  {
     "title": "Random fact",
     "description": "show a random fact",
     "author": "svilenmarkov",

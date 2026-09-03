@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Random Pokémon](widgets/random-pokemon/README.md) - a random pokémon and stats from [PokeAPI](https://pokeapi.co/) (by @Shmoopi)
 * [Countdown](widgets/countdown/README.md) - shows a countdown of the dates you give it in your env file (by @jennywand)
 * [Dawarich Stats](widgets/dawarich-stats/README.md) - shows lifetime Dawarich stats including distance traveled, cities visited, and countries visited (by @taskfork)
 * [Jellyfin Now Playing](widgets/jellyfin-now-playing/README.md) - displays songs currently playing on a jellyfin server, with multiple user and device streams (by @fayezh26)
 * [Thorough Raindrop Bookmarks](widgets/raindrop-bookmarks/README.md) - display your Raindrop.io bookmarks with hierarchical collections, cover images, tags, and dates (by @wen-hsiu-hsu)
-* [Sunrise & Sunset](widgets/sunrise-sunset/README.md) - sunrise time, daylight duration, and sunset time for a configured location, using Open-Meteo (by @mgpeter)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -134,6 +134,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Radarr Stats](widgets/radarr-stats/README.md) - total movie library count, missing movies, and active download queue (by @kirolos-esmat)
 * [Raindrop Bookmarks](widgets/raindrop-latest-links/README.md) - show your latest bookmarks from Raindrop.io (by @herculosh)
 * [Random Bible Verse](widgets/random-bible-verse/README.md) - show a random bible verse (by @pypp)
+* [Random Pokémon](widgets/random-pokemon/README.md) - a random pokémon and stats from [PokeAPI](https://pokeapi.co/) (by @Shmoopi)
 * [Random fact](widgets/random-fact/README.md) - show a random fact (by @svilenmarkov)
 * [RetroAchievement](widgets/retroachievement-of-the-week/README.md) - displays the current RetroAchievements.org Achievement of the week (by @milktoastrat)
 * [RomM Stats](widgets/romm-stats/README.md) - show the stats of your [RomM](https://github.com/rommapp/romm) instance (by @milktoastrat)
