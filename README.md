@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Countdown](widgets/countdown/README.md) - shows a countdown of the dates you give it in your env file (by @jennywand)
 * [Dawarich Stats](widgets/dawarich-stats/README.md) - shows lifetime Dawarich stats including distance traveled, cities visited, and countries visited (by @taskfork)
 * [Jellyfin Now Playing](widgets/jellyfin-now-playing/README.md) - displays songs currently playing on a jellyfin server, with multiple user and device streams (by @fayezh26)
 * [Thorough Raindrop Bookmarks](widgets/raindrop-bookmarks/README.md) - display your Raindrop.io bookmarks with hierarchical collections, cover images, tags, and dates (by @wen-hsiu-hsu)
 * [Sunrise & Sunset](widgets/sunrise-sunset/README.md) - sunrise time, daylight duration, and sunset time for a configured location, using Open-Meteo (by @mgpeter)
-* [Live Tennis Matches](widgets/live-tennis-matches/README.md) - shows live ATP/WTA tennis matches with serving indicator, set/game/point scores and tiebreak status using the Live Tennis API (by @bensynapse)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -44,6 +44,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Cloud & SaaS Status](widgets/outagedeck-service-status/README.md) - show provider and service status from OutageDeck's keyless public API (by @koko3tallah)
 * [Cloudflare Tunnel Status](widgets/cloudflare-tunnel-status/README.md) - cloudflare connector tunnel live health status and origin IP (by @kirolos-esmat)
 * [Cloudflare Tunnels](widgets/cloudflared-tunnels/README.md) - external and Local Cloudflare Tunnels links (by @drshajul)
+* [Countdown](widgets/countdown/README.md) - shows a countdown of the dates you give it in your env file (by @jennywand)
 * [Crafty Minecraft Server Stats](widgets/crafty-controller-minecraft-server/README.md) - show the status of Minecraft server managed by Crafty Controller (by @MartyX98)
 * [Crypto Fear & Greed Index](widgets/fear-and-greed-index/README.md) - displays the current Crypto Fear & Greed Index with a color-coded gradient bar, sentiment label and trend arrow (by @yroulin)
 * [Cryptopanic News](widgets/cryptopanic-news/README.md) - a real-time cryptocurrency news widget that displays filtered news from CryptoPanic.com with configurable filters for news type, regions, and currencies (by @herculosh)

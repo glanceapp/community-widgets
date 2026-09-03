@@ -180,6 +180,15 @@
     "time_updated": "2025-09-25T04:55:13.926028265Z"
   },
   {
+    "title": "Countdown",
+    "description": "shows a countdown of the dates you give it in your env file.",
+    "author": "jennywand",
+    "directory": "countdown",
+    "readme_hash": "2ca0d09284ef97c6d0f98ed9dad55b39832d93d8",
+    "time_added": "2026-09-03T16:11:45.57697734Z",
+    "time_updated": "2026-09-03T16:11:45.57697746Z"
+  },
+  {
     "title": "Crafty Minecraft Server Stats",
     "description": "show the status of Minecraft server managed by Crafty Controller",
     "author": "MartyX98",
