@@ -387,6 +387,15 @@
     "time_updated": "2025-09-25T04:55:13.926643635Z"
   },
   {
+    "title": "Glance widget",
+    "description": "Displays data from the glances server",
+    "author": "yanoky1",
+    "directory": "glance-widgets",
+    "readme_hash": "7f8e36d750dc84b34940cdf3da8abdeedd8bdd42",
+    "time_added": "2026-09-03T14:57:00.009969122Z",
+    "time_updated": "2026-09-03T14:57:00.009969242Z"
+  },
+  {
     "title": "Glances Server stats",
     "description": "show the Glances statistics",
     "author": "andersonviudes",
@@ -478,21 +487,21 @@
   },
   {
     "title": "Jellyfin Stats",
-    "description": "show the number of movies, shows, episodes and songs in your Jellyfin or Emby server",
-    "author": "lfvelosoh",
-    "directory": "jellyfin-emby-stats",
-    "readme_hash": "2335546183f1e0c15adb544a0ea87ce219032a94",
-    "time_added": "2025-06-12T15:48:37.4897Z",
-    "time_updated": "2025-09-25T04:55:13.926861351Z"
-  },
-  {
-    "title": "Jellyfin Stats",
     "description": "Live active playback streams (dynamic highlight), total movies \u0026 series count",
     "author": "kirolos-esmat",
     "directory": "jellyfin-stats",
     "readme_hash": "99c7033f3c5499c285e80cda4c8c65cff5dae4a4",
     "time_added": "2026-08-31T20:57:33.727912826Z",
     "time_updated": "2026-08-31T20:57:33.727912896Z"
+  },
+  {
+    "title": "Jellyfin Stats",
+    "description": "show the number of movies, shows, episodes and songs in your Jellyfin or Emby server",
+    "author": "lfvelosoh",
+    "directory": "jellyfin-emby-stats",
+    "readme_hash": "2335546183f1e0c15adb544a0ea87ce219032a94",
+    "time_added": "2025-06-12T15:48:37.4897Z",
+    "time_updated": "2025-09-25T04:55:13.926861351Z"
   },
   {
     "title": "Karakeep Dashboard",
@@ -583,6 +592,15 @@
     "readme_hash": "ea10218cac1a274da15b5246e9559e3e634ddfaa",
     "time_added": "2025-11-02T18:09:22.423244558Z",
     "time_updated": "2025-12-05T12:49:36.851359732Z"
+  },
+  {
+    "title": "Live Tennis Matches",
+    "description": "Shows live ATP/WTA tennis matches with serving indicator, set/game/point scores and tiebreak status using the Live Tennis API.",
+    "author": "bensynapse",
+    "directory": "live-tennis-matches",
+    "readme_hash": "7c9e36df459b070a88b626f3392ce10f0443de1a",
+    "time_added": "2026-09-03T14:57:00.011360958Z",
+    "time_updated": "2026-09-03T14:57:00.011361058Z"
   },
   {
     "title": "London Tube Status",
