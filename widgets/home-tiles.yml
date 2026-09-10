@@ -1,0 +1,59 @@
+- type: custom-api
+  title: Home Portal Tiles
+  cache: 1h
+  url: http://localhost:8080/assets/home-tiles.json
+  template: |
+    <style>
+      .grid-home-portal-tiles {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1rem;
+      }
+      .section-title-home-portal-tiles {
+        border-bottom: 1px solid var(--color-text-subdue);
+        padding-bottom: 0.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+      }
+      .section-title-home-portal-tiles:first-child { margin-top: 0; }
+      .card-home-portal-tiles {
+        background-color: color-mix(in srgb, var(--color-text-base) 6%, transparent);
+        border: 1px solid color-mix(in srgb, var(--color-text-base) 12%, transparent);
+        padding: 1.25rem;
+        border-radius: 12px;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+      }
+      .card-home-portal-tiles:hover {
+        transform: translateY(-3px);
+        border-color: var(--color-primary);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+      }
+      .card-home-portal-tiles img {
+        width: 28px;
+        height: 28px;
+        margin-bottom: 0.6rem;
+      }
+      .card-home-portal-tiles h3 { margin: 0 0 0.2rem 0; }
+    </style>
+
+    {{ if eq .Response.StatusCode 200 }}
+      {{ range .JSON.Array "sections" }}
+        <div class="section-title-home-portal-tiles size-h5 uppercase color-subdue">{{ .String "title" }}</div>
+        <div class="grid-home-portal-tiles">
+          {{ range .Array "tiles" }}
+            <a href="{{ .String "url" }}" class="card-home-portal-tiles" target="_blank" rel="noreferrer">
+              <img src="{{ .String "icon" }}" alt="">
+              <h3 class="color-highlight">{{ .String "title" }}</h3>
+              <p class="color-subdue size-h5">{{ .String "subtitle" }}</p>
+            </a>
+          {{ end }}
+        </div>
+      {{ end }}
+    {{ else }}
+      <p>Failed to load tiles: {{ .Response.Status }}</p>
+    {{ end }}
