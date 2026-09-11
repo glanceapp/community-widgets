@@ -1,0 +1,23 @@
+{
+  "sections": [
+    {
+      "title": "Administrative Tools",
+      "tiles": [
+        { "title": "Proxmox", "subtitle": "Hypervisor", "url": "https://proxmox.yoursite.com/", "icon": "https://unpkg.com/lucide-static@latest/icons/server.svg" },
+        { "title": "PiHole", "subtitle": "Ad Blocking and DNS", "url": "https://pihole.yoursite.com/", "icon": "https://unpkg.com/lucide-static@latest/icons/shield-check.svg" },
+        { "title": "Unifi Router", "subtitle": "Networking", "url": "https://unifi.ui.com", "icon": "https://unpkg.com/lucide-static@latest/icons/share-2.svg" },
+        { "title": "NAS", "subtitle": "Network Storage", "url": "https://truenas.yoursite.com/", "icon": "https://unpkg.com/lucide-static@latest/icons/hard-drive.svg" },
+        { "title": "Tailscale", "subtitle": "VPN Routing", "url": "https://login.tailscale.com/", "icon": "https://unpkg.com/lucide-static@latest/icons/share-2.svg" },
+        { "title": "Porkbun", "subtitle": "Domain Management", "url": "https://porkbun.com/account/", "icon": "https://unpkg.com/lucide-static@latest/icons/piggy-bank.svg" },
+        { "title": "Caddy", "subtitle": "Reverse Proxy Management", "url": "https://caddy.yoursite.com/", "icon": "https://unpkg.com/lucide-static@latest/icons/ethernet-port.svg" }
+      ]
+    },
+    {
+      "title": "Media",
+      "tiles": [
+        { "title": "Navidrome", "subtitle": "Music Streaming", "url": "https://music.yoursite.com/", "icon": "https://unpkg.com/lucide-static@latest/icons/music.svg" },
+        { "title": "Soulseek", "subtitle": "Search for Music", "url": "https://soulseek.yoursite.com/", "icon": "https://unpkg.com/lucide-static@latest/icons/search-code.svg" }
+      ]
+    }
+  ]
+}
