@@ -1260,6 +1260,15 @@
     "time_updated": "2025-09-25T04:55:13.928959983Z"
   },
   {
+    "title": "Transitland",
+    "description": "Live transit departures at any stop, powered by the Transitland v2 REST API.",
+    "author": "wist9063",
+    "directory": "transitland",
+    "readme_hash": "df0daed522efda32658269222f347f278a4cf35d",
+    "time_added": "2026-09-11T14:35:59.351095256Z",
+    "time_updated": "2026-09-11T14:35:59.351095336Z"
+  },
+  {
     "title": "Trending Bluesky News",
     "description": "shows a list of trending news links from the [Trending News 2.0 Feed](https://bsky.app/profile/did:plc:kkf4naxqmweop7dv4l2iqqf5/feed/news-2-0) on Bluesky",
     "author": "tomcasavant",

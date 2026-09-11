@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Transitland](widgets/transitland/README.md) - live transit departures at any stop, powered by the Transitland v2 REST API (by @wist9063)
 * [Random Pokémon](widgets/random-pokemon/README.md) - a random pokémon and stats from [PokeAPI](https://pokeapi.co/) (by @Shmoopi)
 * [Countdown](widgets/countdown/README.md) - shows a countdown of the dates you give it in your env file (by @jennywand)
 * [Dawarich Stats](widgets/dawarich-stats/README.md) - shows lifetime Dawarich stats including distance traveled, cities visited, and countries visited (by @taskfork)
 * [Jellyfin Now Playing](widgets/jellyfin-now-playing/README.md) - displays songs currently playing on a jellyfin server, with multiple user and device streams (by @fayezh26)
-* [Thorough Raindrop Bookmarks](widgets/raindrop-bookmarks/README.md) - display your Raindrop.io bookmarks with hierarchical collections, cover images, tags, and dates (by @wen-hsiu-hsu)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -164,6 +164,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Time Bar](widgets/time-bar/README.md) - show percentage of day/month/year elapsed (by @anant-j)
 * [Todoist Tasks](widgets/todoist-tasks/README.md) - display and complete today's tasks from Todoist with priority levels and project names (by @xd1i0)
 * [Trakt](widgets/trakt/README.md) - shows your last-watched movies & TV shows on Trakt (by @RxBrad)
+* [Transitland](widgets/transitland/README.md) - live transit departures at any stop, powered by the Transitland v2 REST API (by @wist9063)
 * [Trending Bluesky News](widgets/trending-bluesky-news/README.md) - shows a list of trending news links from the [Trending News 2.0 Feed](https://bsky.app/profile/did:plc:kkf4naxqmweop7dv4l2iqqf5/feed/news-2-0) on Bluesky (by @tomcasavant)
 * [Trending GitHub Repositories](widgets/trending-github-repositories/README.md) - daily trending GitHub repositories (by @jelkuweiss)
 * [Trending Mastodon Links](widgets/trending-mastodon-links/README.md) - shows a list of trending links from a provided Mastodon instance (by @tomcasavant)
