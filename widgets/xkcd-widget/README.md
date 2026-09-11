@@ -9,6 +9,6 @@ Simple custom-api widget to display current xkcd comic
   url: https://xkcd.com/info.0.json
   template: | 
     <body> {{ .JSON.String "title" }}</body>
-    <img src="{{ .JSON.String "img" }}"></img>
+    <img src="{{ .JSON.String "img" }}" title="{{ .JSON.String "alt" }}"></img>
 ```
 <img src="preview.png">
