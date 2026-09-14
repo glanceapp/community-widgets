@@ -26,6 +26,7 @@
                 {{ $lastHomeScore := "?" }}
                 {{ $lastAwayScore := "?" }}
                 {{ $lastDate := "N/A" }}
+                {{ $lastMatchday := "?" }}
 
                 {{ range $matches }}
                   {{ $matchData := .Value }} {{/* Get underlying map/object */}}
@@ -62,12 +63,17 @@
 
                     {{ $dateVal := index $matchData "utcDate" }}
                     {{ if $dateVal }}{{ $lastDate = $dateVal | printf "%s" }}{{ else }}{{ $lastDate = "N/A" }}{{ end }}
+
+                    {{ $matchDayVal := index $matchData "matchday" }}
+                    {{ if $matchDayVal }}{{ $lastMatchday = $matchDayVal | printf "%.0f" }}{{ else }}{{ $lastMatchday = "?" }}{{ end }}
                   {{ end }}
                 {{ end }}
 
                 {{/* --- Display Last Match --- */}}
                 {{ if $lastFound }}
                   <div class="color-primary" style="font-size: 1.1em;">
+                    {{ if eq $lastHomeTeam "FC Internazionale" }}{{ $lastHomeTeam = "Inter FC" }}{{ end }}
+                    {{ if eq $lastAwayTeam "FC Internazionale" }}{{ $lastHomeTeam = "Inter FC" }}{{ end }}
                     {{ $lastHomeTeam }} {{ $lastHomeScore }} - {{ $lastAwayScore }} {{ $lastAwayTeam }}
                   </div>
                   {{ $dateStr := $lastDate }}
@@ -78,14 +84,24 @@
                     {{ $hour := slice $dateStr 11 13 }}
                     {{ $minute := slice $dateStr 14 16 }}
                     {{ $timedhour := slice $dateStr 11 13 }}
+
                     {{/*Adjust the time to the one that reflects yours timezone. Delete/Add if you need*/}}
-                    {{ if eq $hour "11" }}{{ $timedhour = "12" }}{{ end }} {{/* Eg. a match in my timezone start at 12. But in UTC time is 11. Ik is very rudimental but I can't find other solution */}}
+                    {{/* Eg. a match in my timezone start at 12. But in UTC time is 11. Ik is very rudimental but i can't find other solution */}}
+                    {{/* Offset for legal (DST) hours*/}}
+                    {{ if eq $hour "11" }}{{ $timedhour = "12" }}{{ end }}
                     {{ if eq $hour "14" }}{{ $timedhour = "15" }}{{ end }}
                     {{ if eq $hour "17" }}{{ $timedhour = "18" }}{{ end }}
                     {{ if eq $hour "19" }}{{ $timedhour = "20" }}{{ end }}
                     {{ if eq $hour "20" }}{{ $timedhour = "21" }}{{ end }}
+                    {{/* Offset for solar (Standard Time) hours*/}}
+                    {{ if eq $hour "10" }}{{ $timedhour = "12" }}{{ end }}
+                    {{ if eq $hour "13" }}{{ $timedhour = "15" }}{{ end }}
+                    {{ if eq $hour "16" }}{{ $timedhour = "18" }}{{ end }}
+                    {{ if eq $hour "18" }}{{ $timedhour = "20" }}{{ end }}
+                    {{ if eq $hour "19" }}{{ $timedhour = "21" }}{{ end }}
+
                     <div style="font-size: 13px;">
-                      {{ $day }}-{{ $month }}-{{ $year }} {{ $timedhour }}:{{ $minute }}
+                     Round {{ $lastMatchday }} - {{ $day }}-{{ $month }}-{{ $year }} {{ $timedhour }}:{{ $minute }}
                     </div>
                   {{ else if $dateStr }}
                     {{/* Fallback if date string is not in expected format */}}
@@ -145,8 +161,8 @@
                 {{/* --- Display Live Match --- */}}
                 {{ if $liveFound }}
                   <div class="color-primary" style="font-size: 1.1em;">
-                    {{ if eq $liveHomeTeam "FC Internazionale Milano" }}{{ $liveHomeTeam = "Inter FC" }}{{ end }}
-                    {{ if eq $liveAwayTeam "FC Internazionale Milano" }}{{ $liveHomeTeam = "Inter FC" }}{{ end }}
+                    {{ if eq $liveHomeTeam "FC Internazionale" }}{{ $liveHomeTeam = "Inter FC" }}{{ end }}
+                    {{ if eq $liveAwayTeam "FC Internazionale" }}{{ $liveHomeTeam = "Inter FC" }}{{ end }}
                     {{ $liveHomeTeam }} {{ $liveHomeScore }} - {{ $liveAwayScore }} {{ $liveAwayTeam }}
                   </div>
                   {{ $dateStr := $liveDate }}
@@ -157,12 +173,22 @@
                     {{ $hour := slice $dateStr 11 13 }}
                     {{ $minute := slice $dateStr 14 16 }}
                     {{ $timedhour := slice $dateStr 11 13 }}
+                    
                     {{/*Adjust the time to the one that reflects yours timezone. Delete/Add if you need*/}}
-                    {{ if eq $hour "11" }}{{ $timedhour = "12" }}{{ end }} {{/* Eg. a match in my timezone start at 12. But in UTC time is 11. Ik is very rudimental but i can't find other solution */}}
+                    {{/* Eg. a match in my timezone start at 12. But in UTC time is 11. Ik is very rudimental but i can't find other solution */}}
+                    {{/* Offset for legal (DST) hours*/}}
+                    {{ if eq $hour "11" }}{{ $timedhour = "12" }}{{ end }}
                     {{ if eq $hour "14" }}{{ $timedhour = "15" }}{{ end }}
                     {{ if eq $hour "17" }}{{ $timedhour = "18" }}{{ end }}
                     {{ if eq $hour "19" }}{{ $timedhour = "20" }}{{ end }}
                     {{ if eq $hour "20" }}{{ $timedhour = "21" }}{{ end }}
+                    {{/* Offset for solar (Standard Time) hours*/}}
+                    {{ if eq $hour "10" }}{{ $timedhour = "12" }}{{ end }}
+                    {{ if eq $hour "13" }}{{ $timedhour = "15" }}{{ end }}
+                    {{ if eq $hour "16" }}{{ $timedhour = "18" }}{{ end }}
+                    {{ if eq $hour "18" }}{{ $timedhour = "20" }}{{ end }}
+                    {{ if eq $hour "19" }}{{ $timedhour = "21" }}{{ end }}
+
                     <div style="font-size: 13px;">
                       <p class="color-highlight">
                         <span>Live, started</span>
@@ -189,6 +215,7 @@
                 {{ $nextFound := false }}
                 {{ $nextHomeTeam := "N/A" }}
                 {{ $nextAwayTeam := "N/A" }}
+                {{ $nextMatchday := "?" }}
                 {{ $nextDate := "N/A" }}
                 {{ range $matches }}
                   {{ $matchData := .Value }}
@@ -205,6 +232,9 @@
                         {{ if $awayTeamObj }}{{ $nextAwayTeam = index $awayTeamObj "name" | printf "%s" }}{{ else }}{{ $nextAwayTeam = "N/A" }}{{ end }}
                         {{ $dateVal := index $matchData "utcDate" }}
                         {{ if $dateVal }}{{ $nextDate = $dateVal | printf "%s" }}{{ else }}{{ $nextDate = "N/A" }}{{ end }}
+
+                        {{ $matchDayVal := index $matchData "matchday" }}
+                        {{ if $matchDayVal }}{{ $nextMatchday = $matchDayVal | printf "%.0f" }}{{ else }}{{ $nextMatchday = "?" }}{{ end }}
                       {{ end }}
                     {{ end }}
                   {{ end }}
@@ -225,14 +255,24 @@
                     {{ $hour := slice $dateStr 11 13 }}
                     {{ $minute := slice $dateStr 14 16 }}
                     {{ $timedhour := slice $dateStr 11 13 }}
+
                     {{/*Adjust the time to the one that reflects yours timezone. Delete/Add if you need*/}}
-                    {{ if eq $hour "11" }}{{ $timedhour = "12" }}{{ end }} {{/* Eg. a match in my timezone start at 12. But in UTC time is 11. Ik is very rudimental but i can't find other solution */}}
+                    {{/* Eg. a match in my timezone start at 12. But in UTC time is 11. Ik is very rudimental but i can't find other solution */}}
+                    {{/* Offset for legal (DST) hours*/}}
+                    {{ if eq $hour "11" }}{{ $timedhour = "12" }}{{ end }}
                     {{ if eq $hour "14" }}{{ $timedhour = "15" }}{{ end }}
                     {{ if eq $hour "17" }}{{ $timedhour = "18" }}{{ end }}
                     {{ if eq $hour "19" }}{{ $timedhour = "20" }}{{ end }}
                     {{ if eq $hour "20" }}{{ $timedhour = "21" }}{{ end }}
+                    {{/* Offset for solar (Standard Time) hours*/}}
+                    {{ if eq $hour "10" }}{{ $timedhour = "12" }}{{ end }}
+                    {{ if eq $hour "13" }}{{ $timedhour = "15" }}{{ end }}
+                    {{ if eq $hour "16" }}{{ $timedhour = "18" }}{{ end }}
+                    {{ if eq $hour "18" }}{{ $timedhour = "20" }}{{ end }}
+                    {{ if eq $hour "19" }}{{ $timedhour = "21" }}{{ end }}
+
                     <div style="font-size: 13px;">
-                      {{ $day }}-{{ $month }}-{{ $year }} {{ $timedhour }}:{{ $minute }}
+                      Round {{ $nextMatchday }} - {{ $day }}-{{ $month }}-{{ $year }} {{ $timedhour }}:{{ $minute }}
                       <p class="color-primary">
                         <span>Live</span>
                         {{ $datetime := $dateStr}}
@@ -251,7 +291,7 @@
                   <div class="color-subdue" style="font-size: 1.1em;">No upcoming matches found</div>
                 {{ end }}
               </div>
-            </div>    
+            </div>
 ```
 
 ## Environment variables
@@ -261,4 +301,4 @@
 
 ## Remarks
 
-To have matches with your local time, you need to change this parameters `{{ if eq $hour "20" }}{{ $timedhour = "21" }}{{ end }}`. Where `$hour` is the UTC time and `$timedhour` is the hour reflecting your timezone. You need to apply to LAST, LIVE and NEXT match (I can't find other solution)
+To have matches with your local time, you need to change this parameters `{{ if eq $hour "20" }}{{ $timedhour = "21" }}{{ end }}`. Where `$hour` is the UTC time and `$timedhour` is the hour reflecting your timezone. You need to apply to LAST, LIVE and NEXT match (I can't find other solution, right now in the code is showing Europe/Rome timezone)
