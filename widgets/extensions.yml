@@ -72,3 +72,8 @@
   url: https://github.com/lumitesi/glance-esxi-stats
   description: Display server, VM, and datastore statistics for VMware ESXi.
   author: lumitesi
+
+- title: paddock-api
+  url: https://github.com/drumandbytes/paddock-api
+  description: Self-hosted F1 API purpose-built for a dashboard widget - the same look as formula1-widgets-by-abaza738, but with its own backend instead of a generic consumer API. Timestamps are converted to your own timezone server-side, data is cached per-session instead of on a fixed TTL, and track maps come from a static circuit-geometry dataset instead of live telemetry, so a brand-new venue still gets a map before its first session has run.
+  author: drumandbytes
