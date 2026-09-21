@@ -75,5 +75,5 @@
 
 - title: paddock-api
   url: https://github.com/drumandbytes/paddock-api
-  description: Self-hosted F1 API purpose-built for a dashboard widget - the same look as formula1-widgets-by-abaza738, but with its own backend instead of a generic consumer API. Timestamps are converted to your own timezone server-side, data is cached per-session instead of on a fixed TTL, and track maps come from a static circuit-geometry dataset instead of live telemetry, so a brand-new venue still gets a map before its first session has run.
+  description: Self-hosted F1 API for a dashboard widget, refactored from SkyAllinott/glance-F1. Track maps come from a maintained static circuit-geometry dataset instead of deriving them from a prior year's car telemetry, which breaks for a venue's debut weekend, and it adds a full last-race classification and a per-session tyre-usage endpoint the original doesn't have.
   author: drumandbytes
