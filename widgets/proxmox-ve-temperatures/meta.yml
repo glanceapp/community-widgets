@@ -1,0 +1,3 @@
+title: Proxmox VE Metrics & Temperatures
+description: node CPU/RAM, CPU/GPU/NVMe temperatures, storage and cluster nodes from pve-metrics-exporter
+author: JustMaris
