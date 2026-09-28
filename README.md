@@ -17,7 +17,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
-* [Random MTG Card](widgets/random-mtg-card-louishamelers/README.md) - show a random Magic: The Gathering card from Scryfall with configurable filters and pricing (by @louishamelers)
+* [Random MTG Card](widgets/random-mtg-card/README.md) - show a random Magic: The Gathering card from Scryfall with configurable filters and pricing (by @louishamelers)
 * [Transitland](widgets/transitland/README.md) - live transit departures at any stop, powered by the Transitland v2 REST API (by @wist9063)
 * [Random Pokémon](widgets/random-pokemon/README.md) - a random pokémon and stats from [PokeAPI](https://pokeapi.co/) (by @Shmoopi)
 * [Countdown](widgets/countdown/README.md) - shows a countdown of the dates you give it in your env file (by @jennywand)
@@ -81,8 +81,8 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Immich stats](widgets/immich-stats/README.md) - show the number of photos, videos and usage of your Immich server (by @svilenmarkov)
 * [Jellyfin Latest/Next Up](widgets/jellyfin-latest/README.md) - display the newest additions to a Jellyfin library, and next up to watch for a given user (by @Nedra1998)
 * [Jellyfin Now Playing](widgets/jellyfin-now-playing/README.md) - displays songs currently playing on a jellyfin server, with multiple user and device streams (by @fayezh26)
-* [Jellyfin Stats](widgets/jellyfin-emby-stats/README.md) - show the number of movies, shows, episodes and songs in your Jellyfin or Emby server (by @lfvelosoh)
 * [Jellyfin Stats](widgets/jellyfin-stats/README.md) - live active playback streams (dynamic highlight), total movies & series count (by @kirolos-esmat)
+* [Jellyfin Stats](widgets/jellyfin-emby-stats/README.md) - show the number of movies, shows, episodes and songs in your Jellyfin or Emby server (by @lfvelosoh)
 * [Karakeep Dashboard](widgets/karakeep-dashboard/README.md) - the widget returns statistics on the number of bookmarks and the number of tags and the most recently added bookmarks (by @razdnut)
 * [Kavita Latest](widgets/kavita-latest/README.md) - show recently updated series and in progress series from your Kavita server (by @Nedra1998)
 * [Komga Recently Added Series](widgets/komga-latest/README.md) - displays recently added comic/manga series to a defined Komga library (by @VictorMitr)
@@ -134,7 +134,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Radarr Stats](widgets/radarr-stats/README.md) - total movie library count, missing movies, and active download queue (by @kirolos-esmat)
 * [Raindrop Bookmarks](widgets/raindrop-latest-links/README.md) - show your latest bookmarks from Raindrop.io (by @herculosh)
 * [Random Bible Verse](widgets/random-bible-verse/README.md) - show a random bible verse (by @pypp)
-* [Random MTG Card](widgets/random-mtg-card-louishamelers/README.md) - show a random Magic: The Gathering card from Scryfall with configurable filters and pricing (by @louishamelers)
+* [Random MTG Card](widgets/random-mtg-card/README.md) - show a random Magic: The Gathering card from Scryfall with configurable filters and pricing (by @louishamelers)
 * [Random Pokémon](widgets/random-pokemon/README.md) - a random pokémon and stats from [PokeAPI](https://pokeapi.co/) (by @Shmoopi)
 * [Random fact](widgets/random-fact/README.md) - show a random fact (by @svilenmarkov)
 * [RetroAchievement](widgets/retroachievement-of-the-week/README.md) - displays the current RetroAchievements.org Achievement of the week (by @milktoastrat)
