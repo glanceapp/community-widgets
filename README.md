@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Random MTG Card](widgets/random-mtg-card-louishamelers/README.md) - show a random Magic: The Gathering card from Scryfall with configurable filters and pricing (by @louishamelers)
 * [Transitland](widgets/transitland/README.md) - live transit departures at any stop, powered by the Transitland v2 REST API (by @wist9063)
 * [Random Pokémon](widgets/random-pokemon/README.md) - a random pokémon and stats from [PokeAPI](https://pokeapi.co/) (by @Shmoopi)
 * [Countdown](widgets/countdown/README.md) - shows a countdown of the dates you give it in your env file (by @jennywand)
 * [Dawarich Stats](widgets/dawarich-stats/README.md) - shows lifetime Dawarich stats including distance traveled, cities visited, and countries visited (by @taskfork)
-* [Jellyfin Now Playing](widgets/jellyfin-now-playing/README.md) - displays songs currently playing on a jellyfin server, with multiple user and device streams (by @fayezh26)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -134,6 +134,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Radarr Stats](widgets/radarr-stats/README.md) - total movie library count, missing movies, and active download queue (by @kirolos-esmat)
 * [Raindrop Bookmarks](widgets/raindrop-latest-links/README.md) - show your latest bookmarks from Raindrop.io (by @herculosh)
 * [Random Bible Verse](widgets/random-bible-verse/README.md) - show a random bible verse (by @pypp)
+* [Random MTG Card](widgets/random-mtg-card-louishamelers/README.md) - show a random Magic: The Gathering card from Scryfall with configurable filters and pricing (by @louishamelers)
 * [Random Pokémon](widgets/random-pokemon/README.md) - a random pokémon and stats from [PokeAPI](https://pokeapi.co/) (by @Shmoopi)
 * [Random fact](widgets/random-fact/README.md) - show a random fact (by @svilenmarkov)
 * [RetroAchievement](widgets/retroachievement-of-the-week/README.md) - displays the current RetroAchievements.org Achievement of the week (by @milktoastrat)

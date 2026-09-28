@@ -990,6 +990,15 @@
     "time_updated": "2025-09-25T04:55:13.928192028Z"
   },
   {
+    "title": "Random MTG Card",
+    "description": "show a random Magic: The Gathering card from Scryfall with configurable filters and pricing",
+    "author": "louishamelers",
+    "directory": "random-mtg-card-louishamelers",
+    "readme_hash": "3aa16821178285f07d31f9f9ce5a18224e524b96",
+    "time_added": "2026-09-28T10:01:41.571468Z",
+    "time_updated": "2026-09-28T10:06:50.827145Z"
+  },
+  {
     "title": "Random Pokémon",
     "description": "A random pokémon and stats from [PokeAPI](https://pokeapi.co/)",
     "author": "Shmoopi",
