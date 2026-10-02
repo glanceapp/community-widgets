@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title>Glance Community Widgets</title>
+  <meta name="description" content="Browse custom-api and extension widgets made by the Glance community.">
+  <link rel="icon" href="../assets/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/marked/18.0.14/lib/marked.umd.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.4.16/purify.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="./">
+        <img src="../assets/logo.png" alt="" width="36" height="36">
+        <span>Community Widgets</span>
+      </a>
+      <nav class="header-links">
+        <a href="https://github.com/glanceapp/community-widgets/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">Submit a widget</a>
+        <a href="https://github.com/glanceapp/community-widgets" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h1>Widgets for <a href="https://github.com/glanceapp/glance" target="_blank" rel="noopener">Glance</a>, made by the community</h1>
+      <p>Find a widget, copy its YAML into your <code>glance.yml</code>, set the variables it needs.</p>
+    </section>
+
+    <section class="controls" aria-label="Filters">
+      <div class="controls-row">
+        <input id="search" class="search" type="search" placeholder="Search widgets, services, authors…  ( / )" autocomplete="off" aria-label="Search widgets">
+        <select id="sort" aria-label="Sort by">
+          <option value="title">A–Z</option>
+          <option value="added">Newest</option>
+          <option value="updated">Recently updated</option>
+        </select>
+      </div>
+      <div class="controls-row">
+        <div id="types" class="segmented" role="group" aria-label="Widget type"></div>
+        <label class="checkbox"><input id="no-key" type="checkbox"> No API key or token</label>
+      </div>
+      <div id="categories" class="chips" role="group" aria-label="Category"></div>
+    </section>
+
+    <p id="count" class="count" aria-live="polite"></p>
+    <div id="grid" class="grid"></div>
+    <div id="empty" class="empty" hidden>
+      <p>No widgets match these filters.</p>
+      <button id="reset" type="button">Clear filters</button>
+    </div>
+  </main>
+
+  <footer class="container footer">
+    Widgets are maintained by their authors, not by the maintainers of Glance.
+    Extension widgets are not actively monitored, use them at your own risk.
+  </footer>
+
+  <dialog id="detail" class="detail" aria-labelledby="detail-title">
+    <header class="detail-header">
+      <div>
+        <h2 id="detail-title"></h2>
+        <p id="detail-meta" class="detail-meta"></p>
+      </div>
+      <button id="detail-close" class="detail-close" type="button" aria-label="Close">✕</button>
+    </header>
+    <div id="detail-setup" class="detail-setup"></div>
+    <article id="detail-body" class="readme"></article>
+  </dialog>
+</body>
+</html>

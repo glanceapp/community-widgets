@@ -1,0 +1,2482 @@
+[
+  {
+    "type": "custom-api",
+    "title": "AFL Widgets",
+    "description": "Statistics about the current Australian Football League (AFL) season using the Squiggle API.",
+    "author": "0099FF",
+    "category": "Sports",
+    "directory": "afl-widgets",
+    "preview": "fixture.png",
+    "time_added": "2025-06-01T22:57:06.8652Z",
+    "time_updated": "2025-09-25T04:55:13.925520155Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Air Quality",
+    "description": "Displays information about air quality using data from the World Air Quality Index (WAQI) API.",
+    "author": "painfultruths",
+    "category": "Weather \u0026 Local",
+    "directory": "air-quality",
+    "preview": "preview.png",
+    "env_vars": [
+      "YOUR_TOKEN",
+      "LAT",
+      "LON"
+    ],
+    "needs_key": true,
+    "time_added": "2025-06-15T18:14:24.144Z",
+    "time_updated": "2025-09-25T04:55:13.925560491Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Algal Bloom Update",
+    "description": "Displays the South Australian beach conditions based on api from Beachsafe",
+    "author": "stonkage",
+    "category": "Weather \u0026 Local",
+    "directory": "algal-bloom-update",
+    "preview": "preview.png",
+    "time_added": "2025-12-05T12:48:59.960599067Z",
+    "time_updated": "2025-12-05T12:48:59.960599167Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Animals Display",
+    "description": "Display random images of animals such as cats or dogs.",
+    "author": "panonim",
+    "category": "Fun \u0026 Daily",
+    "directory": "animals-display",
+    "preview": "preview.png",
+    "time_added": "2025-04-02T20:05:39.1672Z",
+    "time_updated": "2025-09-25T04:55:13.925595837Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Arr Releases",
+    "description": "Show upcoming, recently downloaded, or missing items from Sonarr, Radarr, or Lidarr",
+    "author": "erkston",
+    "category": "Media \u0026 Downloads",
+    "directory": "arr-releases",
+    "preview": "lidarrupcoming.png",
+    "env_vars": [
+      "RADARR_URL",
+      "RADARR_API_URL",
+      "RADARR_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2025-05-18T17:42:55.8334Z",
+    "time_updated": "2025-10-17T15:22:33.566996216Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Astronomy Picture of the Day",
+    "description": "Shows Astronomy Picture of the Day from NASA.",
+    "author": "Saisamarth21",
+    "category": "Fun \u0026 Daily",
+    "directory": "astronomy-picture-of-the-day",
+    "preview": "preview1.png",
+    "env_vars": [
+      "NASA_API_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2025-06-17T20:00:40.7159Z",
+    "time_updated": "2025-09-25T04:55:13.925691776Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "AudioBookshelf Personalized Shelfs",
+    "description": "Shows the personalized shelfs from the Audiobookshelf dashboard",
+    "author": "Nedra1998",
+    "category": "Media \u0026 Downloads",
+    "directory": "audiobookshelf-personalized",
+    "preview": "audiobook-continue-listening.png",
+    "env_vars": [
+      "YOUR_API_KEY",
+      "AUDIOBOOKSHELF_URL",
+      "AUDIOBOOKSHELF_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2025-09-25T03:33:36.4551Z",
+    "time_updated": "2025-09-25T04:55:13.925797173Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Audiobookshelf stats",
+    "description": "Show the number of books and podcasts in your Audiobookshelf server, along with their total duration.",
+    "author": "ferdyverse",
+    "category": "Media \u0026 Downloads",
+    "directory": "audiobookshelf",
+    "preview": "preview.png",
+    "env_vars": [
+      "AUDIOBOOKSHELF_URL",
+      "AUDIOBOOKSHELF_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2025-05-29T21:06:19.841Z",
+    "time_updated": "2025-09-25T04:55:13.92575285Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "AzireVPN Connection Status",
+    "description": "Display you'r connection status to AzireVPN.",
+    "author": "mattiasghodsian",
+    "category": "Network \u0026 VPN",
+    "directory": "azirevpn-connection-status",
+    "preview": "preview.png",
+    "env_vars": [
+      "AZIREVPN_HIDE_IP"
+    ],
+    "time_added": "2025-09-14T12:07:13.9464Z",
+    "time_updated": "2025-09-25T04:55:13.925834623Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Backrest Job Status",
+    "description": "Show status of Backrest jobs including of the  Date, Snapshot ID, Size processed, Status, Error details (via tooltip)",
+    "author": "stonkage",
+    "category": "Monitoring \u0026 Servers",
+    "directory": "backrest-job-status",
+    "preview": "error_tooltip.png",
+    "env_vars": [
+      "BACKREST_URL",
+      "BACKREST_PLAN_LOCAL"
+    ],
+    "time_added": "2025-10-04T14:46:17.188404904Z",
+    "time_updated": "2025-10-04T14:46:17.188405034Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Beszel Metrics",
+    "description": "Simple widget to show system metrics from Beszel.",
+    "author": "panonim",
+    "category": "Monitoring \u0026 Servers",
+    "directory": "beszel-metrics",
+    "preview": "preview_1.png",
+    "env_vars": [
+      "BESZEL_URL",
+      "BESZEL_TOKEN"
+    ],
+    "needs_key": true,
+    "time_added": "2025-07-10T21:23:17.661Z",
+    "time_updated": "2025-09-25T04:55:13.925888103Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Beszel Server Stats",
+    "description": "Server Stats widget matching the builtin widget but using data from Beszel.",
+    "author": "Nedra1998",
+    "category": "Monitoring \u0026 Servers",
+    "directory": "beszel-server-stats",
+    "preview": "preview.png",
+    "env_vars": [
+      "YOUR_API_KEY",
+      "BESZEL_URL",
+      "BESZEL_TOKEN",
+      "BESZEL_EMAIL",
+      "BESZEL_PASSWORD"
+    ],
+    "needs_key": true,
+    "time_added": "2025-10-02T20:57:52.804627383Z",
+    "time_updated": "2026-08-29T13:17:19.871415911Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Calibre-Web Stats",
+    "description": "Display a summary of books from your Calibre-Web server.",
+    "author": "rvelasq",
+    "category": "Media \u0026 Downloads",
+    "directory": "calibre-web-stats",
+    "preview": "preview.png",
+    "env_vars": [
+      "CALIBREWEB_URL",
+      "CALIBREWEB_CREDS_B64"
+    ],
+    "time_added": "2025-06-11T16:58:30.9963Z",
+    "time_updated": "2025-09-25T04:55:13.925920453Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Calvin and Hobbes daily strip",
+    "description": "A Glance widget for displaying the daily Calvin and Hobbes strip.",
+    "author": "cpt-metal",
+    "category": "Fun \u0026 Daily",
+    "directory": "calvin-and-hobbes",
+    "preview": "preview.png",
+    "time_added": "2026-09-02T10:44:22.667676687Z",
+    "time_updated": "2026-09-02T10:44:22.667676787Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Cats As A Service Photos",
+    "description": "show a grid of cat photos from the Cat as a Service API",
+    "author": "gugugiyu",
+    "category": "Fun \u0026 Daily",
+    "directory": "cats-as-a-service-photos",
+    "preview": "preview.png",
+    "env_vars": [
+      "NUMBER_OF_CATS",
+      "CAT_TAGS"
+    ],
+    "time_added": "2025-03-10T21:34:15.3683Z",
+    "time_updated": "2025-09-25T04:55:13.925953766Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Chess.com Daily Puzzle",
+    "description": "Display daily chess puzzle from chess.com",
+    "author": "panonim",
+    "category": "Gaming",
+    "directory": "chess-puzzle",
+    "preview": "preview.png",
+    "time_added": "2025-06-03T20:26:54.1452Z",
+    "time_updated": "2025-09-25T04:55:13.925995484Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Cineplex Movies",
+    "description": "show what movies are currently available in Cineplex cinemas",
+    "author": "giahuy2201",
+    "category": "Media \u0026 Downloads",
+    "directory": "cineplex-movies",
+    "preview": "filter-japanese.png",
+    "time_added": "2026-09-02T12:26:47.495747963Z",
+    "time_updated": "2026-09-02T12:26:47.495748083Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Cloud \u0026 SaaS Status",
+    "description": "show provider and service status from OutageDeck's keyless public API",
+    "author": "koko3tallah",
+    "category": "Monitoring \u0026 Servers",
+    "directory": "outagedeck-service-status",
+    "preview": "preview.png",
+    "time_added": "2026-09-01T10:39:29.505427962Z",
+    "time_updated": "2026-09-01T10:39:29.505428078Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Cloudflare Tunnel Status",
+    "description": "Cloudflare connector tunnel live health status and origin IP",
+    "author": "kirolos-esmat",
+    "category": "Network \u0026 VPN",
+    "directory": "cloudflare-tunnel-status",
+    "preview": "preview.png",
+    "env_vars": [
+      "CF_ACCOUNT_ID",
+      "CF_TUNNEL_ID",
+      "CF_API_TOKEN"
+    ],
+    "needs_key": true,
+    "time_added": "2026-08-31T20:57:33.725978905Z",
+    "time_updated": "2026-08-31T20:57:33.725979116Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Cloudflare Tunnels",
+    "description": "External and Local Cloudflare Tunnels links",
+    "author": "drshajul",
+    "category": "Network \u0026 VPN",
+    "directory": "cloudflared-tunnels",
+    "preview": "preview.png",
+    "env_vars": [
+      "CLOUDFLARE_ACCOUNT_ID",
+      "CLOUDFLARE_TUNNEL_ID",
+      "CLOUDFLARE_API_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2025-06-20T11:51:39.5685Z",
+    "time_updated": "2025-09-25T04:55:13.926028265Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Countdown",
+    "description": "shows a countdown of the dates you give it in your env file.",
+    "author": "jennywand",
+    "category": "Productivity \u0026 Home",
+    "directory": "countdown",
+    "preview": "preview.png",
+    "time_added": "2026-09-03T16:11:45.57697734Z",
+    "time_updated": "2026-09-03T16:11:45.57697746Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Crafty Minecraft Server Stats",
+    "description": "show the status of Minecraft server managed by Crafty Controller",
+    "author": "MartyX98",
+    "category": "Gaming",
+    "directory": "crafty-controller-minecraft-server",
+    "preview": "Preview_offline.png",
+    "env_vars": [
+      "CRAFTY_URL",
+      "CRAFTY_API_TOKEN",
+      "CRAFTY_SERVER_ID"
+    ],
+    "needs_key": true,
+    "time_added": "2025-08-16T18:10:24.2213Z",
+    "time_updated": "2025-11-04T21:32:36.750473688Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Crypto Fear \u0026 Greed Index",
+    "description": "Displays the current Crypto Fear \u0026 Greed Index with a color-coded gradient bar, sentiment label and trend arrow.",
+    "author": "yroulin",
+    "category": "Finance",
+    "directory": "fear-and-greed-index",
+    "preview": "preview.png",
+    "time_added": "2026-08-29T14:21:46.906436196Z",
+    "time_updated": "2026-08-29T14:21:46.906436316Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Cryptopanic News",
+    "description": "A real-time cryptocurrency news widget that displays filtered news from CryptoPanic.com with configurable filters for news type, regions, and currencies.",
+    "author": "herculosh",
+    "category": "Finance",
+    "directory": "cryptopanic-news",
+    "preview": "preview.png",
+    "env_vars": [
+      "CRYPTOPANIC_TOKEN"
+    ],
+    "needs_key": true,
+    "time_added": "2025-04-15T10:30:37.9338Z",
+    "time_updated": "2025-09-25T04:55:13.926100259Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Cup Updates",
+    "description": "Displays information about containers needing an update from Cup.",
+    "author": "panonim",
+    "category": "Monitoring \u0026 Servers",
+    "directory": "cup-updates",
+    "preview": "preview.jpeg",
+    "env_vars": [
+      "CUP_URL"
+    ],
+    "time_added": "2025-05-02T12:28:49.3537Z",
+    "time_updated": "2025-09-25T04:55:13.926307988Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "DHL Tracking",
+    "description": "A Glance widget for displaying the tracking status of DHL parcels.",
+    "author": "cpt-metal",
+    "category": "Weather \u0026 Local",
+    "directory": "dhl-tracking",
+    "preview": "preview.png",
+    "env_vars": [
+      "DHL_API_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2026-08-31T18:53:24.362051821Z",
+    "time_updated": "2026-08-31T18:53:24.362052012Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Dawarich Stats",
+    "description": "Shows lifetime Dawarich stats including distance traveled, cities visited, and countries visited.",
+    "author": "taskfork",
+    "category": "Productivity \u0026 Home",
+    "directory": "dawarich-stats",
+    "preview": "preview.png",
+    "env_vars": [
+      "DAWARICH_URL",
+      "DAWARICH_API_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2026-09-03T15:19:34.472114625Z",
+    "time_updated": "2026-09-03T15:19:34.472114745Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Discopanel",
+    "description": "A widget to view all of your minecraft servers from Discopanel",
+    "author": "PapaZ810",
+    "category": "Gaming",
+    "directory": "discopanel",
+    "preview": "preview.png",
+    "env_vars": [
+      "DISCOPANEL_HOST",
+      "DISCOPANEL_TOKEN"
+    ],
+    "needs_key": true,
+    "time_added": "2026-08-29T15:10:05.476461467Z",
+    "time_updated": "2026-08-29T15:10:05.476461567Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Docker Swarm",
+    "description": "A widget to monitor Docker Swarm services and nodes based on the built-in docker-containers widget.",
+    "author": "tonineri",
+    "category": "Monitoring \u0026 Servers",
+    "directory": "docker-swarm",
+    "preview": "screenshot.png",
+    "time_added": "2025-11-02T18:02:34.89233233Z",
+    "time_updated": "2025-11-02T18:02:34.89233242Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Duolingo Stats",
+    "description": "Show your Duolingo stats in glance.",
+    "author": "RealTong",
+    "category": "Productivity \u0026 Home",
+    "directory": "duolingo-stats",
+    "preview": "screenshot.png",
+    "env_vars": [
+      "DUO_USER_ID",
+      "DUO_JWT_TOKEN"
+    ],
+    "needs_key": true,
+    "time_added": "2025-11-18T04:02:36.948642562Z",
+    "time_updated": "2025-11-18T04:02:36.948642662Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "ESPN Live Football Scores Widget",
+    "description": "A custom widget that displays live, upcoming, and finished football (soccer) scores using the ESPN Scoreboard API.",
+    "author": "Beyeshooter",
+    "category": "Sports",
+    "directory": "football-livescore",
+    "preview": "preview.png",
+    "time_added": "2025-12-05T12:33:13.818404418Z",
+    "time_updated": "2025-12-05T12:33:13.818404518Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Epic Games Free Games",
+    "description": "Display currently free games from the Epic Games Store with promotional images and availability periods.",
+    "author": "marocainperdu",
+    "category": "Gaming",
+    "directory": "epic-free-widget",
+    "preview": "preview.png",
+    "time_added": "2025-07-18T16:28:32.0259Z",
+    "time_updated": "2025-09-25T04:55:13.926374361Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Eventim",
+    "description": "A Glance widget for displaying upcoming events on the European ticket seller's site, Eventim.",
+    "author": "cpt-metal",
+    "category": "Media \u0026 Downloads",
+    "directory": "eventim",
+    "preview": "preview.png",
+    "time_added": "2026-09-03T14:55:35.294902656Z",
+    "time_updated": "2026-09-03T14:55:35.294902746Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Football Fixtures",
+    "description": "show the last match and the next match of your favourite football team using football-data api",
+    "author": "cristiandiiorio",
+    "category": "Sports",
+    "directory": "football-fixtures",
+    "preview": "preview.png",
+    "time_added": "2025-04-26T11:55:16.706Z",
+    "time_updated": "2025-12-05T12:24:39.637706671Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Football League Table",
+    "description": "Shows the current standings of the selected league using football-data api",
+    "author": "nicl-dev",
+    "category": "Sports",
+    "directory": "football-league-table",
+    "preview": "preview.png",
+    "env_vars": [
+      "COMPETITION_ID",
+      "FOOTBALL_DATA_TOKEN",
+      "TEAM_ID"
+    ],
+    "needs_key": true,
+    "time_added": "2025-11-18T03:57:58.747648105Z",
+    "time_updated": "2025-11-18T03:57:58.747648215Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Forgejo repos",
+    "description": "show data about latest repos from forgejo instance.",
+    "author": "dodecube",
+    "category": "Developer",
+    "directory": "forgejo-repos",
+    "preview": "preview.png",
+    "env_vars": [
+      "FORGEJO_URL",
+      "FORGEJO_TOKEN"
+    ],
+    "needs_key": true,
+    "time_added": "2025-07-07T01:00:43.7978Z",
+    "time_updated": "2025-09-25T04:55:13.926452157Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Formula 1 Widgets",
+    "description": "show different stats from the current Formula 1 season from F1 API",
+    "author": "abaza738",
+    "category": "Sports",
+    "directory": "formula1-widgets",
+    "preview": "preview1.png",
+    "time_added": "2025-04-02T03:34:04.3331Z",
+    "time_updated": "2026-08-29T13:20:06.824255152Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Frigate stats",
+    "description": "show alerts and detections from the last 24 hours from your Frigate service Frigate",
+    "author": "Pimer0",
+    "category": "Monitoring \u0026 Servers",
+    "directory": "frigate-stats",
+    "preview": "preview.png",
+    "env_vars": [
+      "FRIGATE_TOKEN",
+      "FRIGATE_URL"
+    ],
+    "needs_key": true,
+    "time_added": "2025-04-20T22:17:23.1547Z",
+    "time_updated": "2025-09-25T04:55:13.926538939Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Gatus",
+    "description": "show uptime statistics and monitoring data from your Gatus instance",
+    "author": "Jack-Overflow",
+    "category": "Monitoring \u0026 Servers",
+    "directory": "gatus",
+    "preview": "preview.png",
+    "env_vars": [
+      "GATUS_URL"
+    ],
+    "time_added": "2025-09-26T15:42:31.816784093Z",
+    "time_updated": "2025-10-04T14:42:18.150976169Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Gatus Monitor",
+    "description": "Site monitor widget using Gatus for backend data",
+    "author": "Nedra1998",
+    "category": "Monitoring \u0026 Servers",
+    "directory": "gatus-monitor",
+    "preview": "preview.png",
+    "env_vars": [
+      "GATUS_URL"
+    ],
+    "time_added": "2025-10-04T14:46:17.189185051Z",
+    "time_updated": "2025-10-04T14:46:17.189185161Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Ghostfolio stats",
+    "description": "show the status of your investments with today's results, YTD and totals",
+    "author": "ziritione85",
+    "category": "Finance",
+    "directory": "ghostfolio-stats",
+    "preview": "preview.png",
+    "env_vars": [
+      "GHOSTFOLIO_URL",
+      "GHOSTFOLIO_PUBLIC_URL"
+    ],
+    "time_added": "2025-03-26T23:49:56.0347Z",
+    "time_updated": "2025-09-25T04:55:13.926573624Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "GitHub Actions Status",
+    "description": "Displays the status of GitHub Actions workflows for a repository",
+    "author": "unickq",
+    "category": "Developer",
+    "directory": "github-actions-status",
+    "preview": "preview.png",
+    "env_vars": [
+      "GITHUB_TOKEN"
+    ],
+    "needs_key": true,
+    "time_added": "2026-02-25T19:05:45.045910562Z",
+    "time_updated": "2026-02-25T19:05:45.045910692Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "GitHub Notifications",
+    "description": "show your notifications on GitHub",
+    "author": "luboszima",
+    "category": "Developer",
+    "directory": "github-notifications",
+    "preview": "preview.png",
+    "env_vars": [
+      "GITHUB_TOKEN"
+    ],
+    "needs_key": true,
+    "time_added": "2025-07-14T14:14:40.7113Z",
+    "time_updated": "2025-09-25T04:55:13.926610903Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "GitHub Status",
+    "description": "Display the current operational status of GitHub services",
+    "author": "m1xzg",
+    "category": "Developer",
+    "directory": "github-status",
+    "preview": "advanced-status.png",
+    "time_added": "2026-08-29T13:20:06.824745308Z",
+    "time_updated": "2026-08-29T13:20:06.824745428Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "GitHub personal repositories",
+    "description": "show your own personal respositories on GitHub",
+    "author": "menitz",
+    "category": "Developer",
+    "directory": "github-personal-repos",
+    "preview": "preview.png",
+    "time_added": "2025-06-08T16:52:02.4001Z",
+    "time_updated": "2025-09-25T04:55:13.926643635Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Glance widget",
+    "description": "Displays data from the glances server",
+    "author": "yanoky1",
+    "category": "Monitoring \u0026 Servers",
+    "directory": "glance-widgets",
+    "preview": "glances-widgets.png",
+    "env_vars": [
+      "GLANCES_URL"
+    ],
+    "time_added": "2026-09-03T14:57:00.009969122Z",
+    "time_updated": "2026-09-03T14:57:00.009969242Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Glances Server stats",
+    "description": "show the Glances statistics",
+    "author": "andersonviudes",
+    "category": "Monitoring \u0026 Servers",
+    "directory": "glances-stats",
+    "preview": "preview.png",
+    "env_vars": [
+      "GLANCES_URL"
+    ],
+    "time_added": "2026-08-29T13:29:41.948653326Z",
+    "time_updated": "2026-08-29T13:29:41.948653446Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Gluetun VPN status",
+    "description": "show the public IP, country and city of you Gluetun VPN client",
+    "author": "Hyptu",
+    "category": "Network \u0026 VPN",
+    "directory": "gluetun-vpn-status",
+    "preview": "preview.png",
+    "env_vars": [
+      "GLUETUN_URL",
+      "GLUETUN_API_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2025-04-25T22:19:12.0907Z",
+    "time_updated": "2026-08-29T13:18:45.307719912Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Google Calendar List",
+    "description": "List Google Calendar upcoming events",
+    "author": "anant-j",
+    "category": "Productivity \u0026 Home",
+    "directory": "google-calendar-list",
+    "preview": "preview.png",
+    "env_vars": [
+      "GOOGLE_CLIENT_ID",
+      "GOOGLE_CLIENT_SECRET",
+      "GOOGLE_REFRESH_TOKEN"
+    ],
+    "needs_key": true,
+    "time_added": "2025-05-14T20:04:46.7681Z",
+    "time_updated": "2025-09-25T04:55:13.926714858Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Gotify Notifications",
+    "description": "show recent notifications from your Gotify server",
+    "author": "Owen-3456",
+    "category": "Productivity \u0026 Home",
+    "directory": "gotify-notifications",
+    "preview": "preview.png",
+    "env_vars": [
+      "SERVER_ADDRESS",
+      "GOTIFY_CLIENT_TOKEN"
+    ],
+    "needs_key": true,
+    "time_added": "2026-09-03T14:55:17.956559206Z",
+    "time_updated": "2026-09-03T14:55:17.956559357Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Grafana",
+    "description": "Useful information and metrics from a Grafana data source (like prometheus, mimir, loki)",
+    "author": "koalalorenzo",
+    "category": "Monitoring \u0026 Servers",
+    "directory": "grafana",
+    "preview": "preview.webp",
+    "env_vars": [
+      "GRAFANA_TOKEN",
+      "GRAFANA_URL"
+    ],
+    "needs_key": true,
+    "time_added": "2025-10-20T17:05:55.578826114Z",
+    "time_updated": "2025-10-20T17:05:55.578826244Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Hardcover Currently Reading",
+    "description": "show the currently reading book from Hardcover",
+    "author": "Akasiek",
+    "category": "Media \u0026 Downloads",
+    "directory": "hardcover-currently-reading",
+    "preview": "preview.png",
+    "env_vars": [
+      "HARDCOVER_API_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2025-04-11T23:06:47.4312Z",
+    "time_updated": "2025-09-25T04:55:13.926747479Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Home Assistant Sensor Stats",
+    "description": "Display's configured Sensors values from Home Assistant",
+    "author": "AWildLeon",
+    "category": "Productivity \u0026 Home",
+    "directory": "homeassistant-sensor-stats",
+    "preview": "preview.png",
+    "env_vars": [
+      "HASS_URL",
+      "HASS_API_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2025-05-08T17:50:40.1551Z",
+    "time_updated": "2025-09-25T04:55:13.926791401Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Immich Styled Stats",
+    "description": "Immich styled statistics taken straight out of the app. Beautiful, simple and useful.",
+    "author": "panonim",
+    "category": "Media \u0026 Downloads",
+    "directory": "immich-styled",
+    "preview": "preview.png",
+    "env_vars": [
+      "IMMICH_URL",
+      "IMMICH_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2026-02-25T19:22:48.402344139Z",
+    "time_updated": "2026-02-25T19:22:48.402344259Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Immich stats",
+    "description": "show the number of photos, videos and usage of your Immich server",
+    "author": "svilenmarkov",
+    "category": "Media \u0026 Downloads",
+    "directory": "immich-stats",
+    "preview": "preview.png",
+    "env_vars": [
+      "IMMICH_URL",
+      "IMMICH_API_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2025-03-10T00:19:08.8095Z",
+    "time_updated": "2025-12-05T12:44:15.122496391Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Jellyfin Latest/Next Up",
+    "description": "Display the newest additions to a Jellyfin library, and next up to watch for a given user",
+    "author": "Nedra1998",
+    "category": "Media \u0026 Downloads",
+    "directory": "jellyfin-latest",
+    "preview": "preview.png",
+    "env_vars": [
+      "YOUR_API_KEY",
+      "JELLYFIN_URL",
+      "JELLYFIN_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2025-07-25T12:19:30.0506Z",
+    "time_updated": "2025-09-25T04:55:13.926918618Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Jellyfin Now Playing",
+    "description": "Displays songs currently playing on a jellyfin server, with multiple user and device streams.",
+    "author": "fayezh26",
+    "category": "Media \u0026 Downloads",
+    "directory": "jellyfin-now-playing",
+    "preview": "preview.png",
+    "env_vars": [
+      "JELLYFIN_URL",
+      "API_TOKEN"
+    ],
+    "needs_key": true,
+    "time_added": "2026-09-03T15:16:10.828649841Z",
+    "time_updated": "2026-09-03T15:16:10.828649952Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Jellyfin Stats",
+    "description": "Live active playback streams (dynamic highlight), total movies \u0026 series count",
+    "author": "kirolos-esmat",
+    "category": "Media \u0026 Downloads",
+    "directory": "jellyfin-stats",
+    "preview": "preview.png",
+    "env_vars": [
+      "JELLYFIN_URL",
+      "JELLYFIN_API_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2026-08-31T20:57:33.727912826Z",
+    "time_updated": "2026-08-31T20:57:33.727912896Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Jellyfin Stats",
+    "description": "show the number of movies, shows, episodes and songs in your Jellyfin or Emby server",
+    "author": "lfvelosoh",
+    "category": "Media \u0026 Downloads",
+    "directory": "jellyfin-emby-stats",
+    "preview": "preview.png",
+    "env_vars": [
+      "JELLYFIN_URL",
+      "JELLYFIN_API_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2025-06-12T15:48:37.4897Z",
+    "time_updated": "2025-09-25T04:55:13.926861351Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Karakeep Dashboard",
+    "description": "The widget returns statistics on the number of bookmarks and the number of tags and the most recently added bookmarks.",
+    "author": "razdnut",
+    "category": "Productivity \u0026 Home",
+    "directory": "karakeep-dashboard",
+    "preview": "preview.png",
+    "env_vars": [
+      "KARAKEEP_API_KEY",
+      "KARAKEEP_URL"
+    ],
+    "needs_key": true,
+    "time_added": "2025-07-14T20:25:00.5458Z",
+    "time_updated": "2025-09-25T04:55:13.926954105Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Kavita Latest",
+    "description": "Show recently updated series and in progress series from your Kavita server.",
+    "author": "Nedra1998",
+    "category": "Media \u0026 Downloads",
+    "directory": "kavita-latest",
+    "preview": "on-deck-preview.png",
+    "env_vars": [
+      "YOUR_API_KEY",
+      "KAVITA_URL",
+      "KAVITA_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2025-09-25T03:31:45.1833Z",
+    "time_updated": "2025-09-25T04:55:13.926995713Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Komga Recently Added Series",
+    "description": "displays recently added comic/manga series to a defined Komga library",
+    "author": "VictorMitr",
+    "category": "Media \u0026 Downloads",
+    "directory": "komga-latest",
+    "preview": "preview.png",
+    "env_vars": [
+      "KOMGA_URL",
+      "LIBRARY_ID",
+      "KOMGA_API_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2025-11-02T18:08:42.452042133Z",
+    "time_updated": "2025-12-05T12:59:46.062350028Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Komodo Container Manager Monitor",
+    "description": "At-a-glance view of stacks and servers managed by Komodo",
+    "author": "stunt-and-gimmicks-alex",
+    "category": "Monitoring \u0026 Servers",
+    "directory": "komodo-container-manager-stunt-and-gimmicks-alex",
+    "preview": "preview.png",
+    "env_vars": [
+      "KOMODO_URL",
+      "KOMODO_API_KEY",
+      "KOMODO_API_SECRET"
+    ],
+    "needs_key": true,
+    "time_added": "2025-10-04T14:34:10.698531949Z",
+    "time_updated": "2025-10-04T14:34:10.698532079Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Last.FM Recent Tracks",
+    "description": "show recent tracks scrobbled by a Last.FM user",
+    "author": "Akasiek",
+    "category": "Media \u0026 Downloads",
+    "directory": "lastfm-recent-tracks",
+    "preview": "preview.png",
+    "env_vars": [
+      "LASTFM_USERNAME",
+      "LASTFM_API_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2025-04-11T18:22:37.6248Z",
+    "time_updated": "2025-09-25T04:55:13.927027822Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Latest Community Widgets",
+    "description": "show a list of the most recently added community widgets",
+    "author": "svilenmarkov",
+    "category": "Developer",
+    "directory": "latest-community-widgets",
+    "preview": "preview.png",
+    "time_added": "2025-09-25T05:06:25.238363736Z",
+    "time_updated": "2025-09-25T05:06:25.238363866Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "LeetCode Daily Question",
+    "description": "show today leetcode questions with hashtag and difficult",
+    "author": "hohaithuy",
+    "category": "Developer",
+    "directory": "leetcode-daily-question",
+    "preview": "preview.png",
+    "time_added": "2025-04-26T21:11:19.3256Z",
+    "time_updated": "2025-09-25T04:55:13.927062177Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Lemmy",
+    "description": "Displays the latest posts from any Lemmy community inside Glance.  It uses the public Lemmy API to fetch posts from a given community and shows the post title, score, comment count, and time since publication",
+    "author": "stonkage",
+    "category": "News \u0026 Social",
+    "directory": "lemmy",
+    "preview": "preview.png",
+    "env_vars": [
+      "LEMMY_COMMUNITY",
+      "LEMMY_POST_TYPE",
+      "LEMMY_POST_SORT",
+      "LEMMY_POST_LIMIT"
+    ],
+    "time_added": "2025-10-20T17:04:50.057283702Z",
+    "time_updated": "2025-10-20T17:04:50.057283833Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Linkwarden Latest Bookmarks",
+    "description": "show the latest bookmarks from your Linkwarden instance",
+    "author": "josevictorferreira",
+    "category": "Productivity \u0026 Home",
+    "directory": "linkwarden-latest-bookmarks",
+    "preview": "preview.png",
+    "time_added": "2025-09-13T13:26:08.5846Z",
+    "time_updated": "2025-09-25T04:55:13.927094678Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "ListenBrainz Listen",
+    "description": "show the latest listen for a ListenBrainz user",
+    "author": "zliebersbach",
+    "category": "Media \u0026 Downloads",
+    "directory": "listenbrainz-latest",
+    "preview": "preview.png",
+    "env_vars": [
+      "LISTENBRAINZ_USER"
+    ],
+    "time_added": "2025-11-02T18:09:22.423244558Z",
+    "time_updated": "2025-12-05T12:49:36.851359732Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Live Tennis Matches",
+    "description": "Shows live ATP/WTA tennis matches with serving indicator, set/game/point scores and tiebreak status using the Live Tennis API.",
+    "author": "bensynapse",
+    "category": "Sports",
+    "directory": "live-tennis-matches",
+    "preview": "preview.png",
+    "env_vars": [
+      "LIVETENNIS_API_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2026-09-03T14:57:00.011360958Z",
+    "time_updated": "2026-09-03T14:57:00.011361058Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "London Tube Status",
+    "description": "show live service status of London tube, overground and Elizabeth lines via the TfL API",
+    "author": "tomdaly",
+    "category": "Weather \u0026 Local",
+    "directory": "london-tube-status",
+    "preview": "preview-dark.png",
+    "time_added": "2025-09-19T21:36:35.5516Z",
+    "time_updated": "2025-09-25T04:55:13.927128521Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "MLB Scores",
+    "description": "Lists all MLB scores daily, with baserunner info and inning scores.",
+    "author": "ShmoobiJones",
+    "category": "Sports",
+    "directory": "mlb-scores-tracker",
+    "preview": "preview.png",
+    "time_added": "2025-05-12T19:44:14.8033Z",
+    "time_updated": "2025-10-13T23:38:06.284535452Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Mealie Today's Meal",
+    "description": "show today's meal based off the meal planner from Mealie",
+    "author": "wtoa",
+    "category": "Productivity \u0026 Home",
+    "directory": "mealie-todays-meal",
+    "preview": "preview.png",
+    "env_vars": [
+      "MEALIE_URL",
+      "MEALIE_API_TOKEN"
+    ],
+    "needs_key": true,
+    "time_added": "2025-03-27T19:07:53.2963Z",
+    "time_updated": "2025-09-25T04:55:13.927161022Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Media Server History",
+    "description": "collection of widgets to show what had been played on your Media Server like Plex/Jellyfin",
+    "author": "titembaataar",
+    "category": "Media \u0026 Downloads",
+    "directory": "media-server-history",
+    "preview": "preview.png",
+    "env_vars": [
+      "YOUR_API_KEY",
+      "PLEX_URL",
+      "PLEX_TOKEN"
+    ],
+    "needs_key": true,
+    "time_added": "2025-04-12T02:20:49.4475Z",
+    "time_updated": "2025-09-25T04:55:13.927214041Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Media Server Playing",
+    "description": "collection of widgets to show what's being played on your Media Server like Plex/Jellyfin",
+    "author": "titembaataar",
+    "category": "Media \u0026 Downloads",
+    "directory": "media-server-playing",
+    "preview": "preview.png",
+    "env_vars": [
+      "YOUR_API_KEY",
+      "PLEX_URL",
+      "PLEX_TOKEN"
+    ],
+    "needs_key": true,
+    "time_added": "2025-04-12T02:20:05.1668Z",
+    "time_updated": "2025-09-25T04:55:13.927276106Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "MediaTracker Upcoming Media",
+    "description": "displays upcoming TV shows, movies or video games monitored by MediaTracker",
+    "author": "VictorMitr",
+    "category": "Media \u0026 Downloads",
+    "directory": "mediatracker-upcoming-tv-shows",
+    "preview": "preview_movies.png",
+    "env_vars": [
+      "MEDIATRACKER_URL",
+      "MEDIATRACKER_API_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2025-12-05T12:59:46.062993668Z",
+    "time_updated": "2025-12-05T12:59:46.062993778Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Minecraft server",
+    "description": "show the online status, icon, version and player count of a Minecraft server",
+    "author": "not-first",
+    "category": "Gaming",
+    "directory": "minecraft-server",
+    "preview": "preview.png",
+    "env_vars": [
+      "MC_SERVER_URL"
+    ],
+    "time_added": "2025-03-22T11:49:20.1508Z",
+    "time_updated": "2025-12-05T12:42:34.63815625Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Mullvad VPN status",
+    "description": "show VPN connection status, IP, and location",
+    "author": "DelMonteAJ",
+    "category": "Network \u0026 VPN",
+    "directory": "mullvad-vpn-status",
+    "preview": "preview.png",
+    "time_added": "2025-04-06T17:37:46.3602Z",
+    "time_updated": "2025-09-25T04:55:13.927411479Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "MyanimeList Profile",
+    "description": "Show your profile",
+    "author": "WaYy",
+    "category": "Media \u0026 Downloads",
+    "directory": "myanimelist-profile",
+    "preview": "preview.png",
+    "env_vars": [
+      "MAL_USER"
+    ],
+    "time_added": "2026-08-29T13:21:43.580221957Z",
+    "time_updated": "2026-08-29T13:21:43.580222042Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "MyanimeList Widgets",
+    "description": "Show seasonal anime (more Widgets coming soon)",
+    "author": "Zephyr73",
+    "category": "Media \u0026 Downloads",
+    "directory": "myanimelist-widgets",
+    "preview": "preview-carousel.png",
+    "time_added": "2025-12-05T12:57:34.011268649Z",
+    "time_updated": "2025-12-05T12:57:34.011268759Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "NBA Scores Tracker",
+    "description": "show the schedule and scores for NBA games today",
+    "author": "ShmoobiJones",
+    "category": "Sports",
+    "directory": "nba-scores-tracker",
+    "preview": "preview.png",
+    "time_added": "2025-05-09T01:18:50.7946Z",
+    "time_updated": "2025-10-13T23:30:32.881212301Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "NCAA CFB Scoreboard",
+    "description": "display live NCAA CFB scoreboard data from ESPN API",
+    "author": "maxo99",
+    "category": "Sports",
+    "directory": "ncaa-cfb-scoreboard",
+    "preview": "preview.png",
+    "time_added": "2025-09-20T13:43:57.498Z",
+    "time_updated": "2025-09-25T04:55:13.927490758Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "NFL Scoreboard",
+    "description": "display live NFL scoreboard data from ESPN API",
+    "author": "maxo99",
+    "category": "Sports",
+    "directory": "nfl-scoreboard",
+    "preview": "preview.png",
+    "time_added": "2025-09-19T20:18:30.7184Z",
+    "time_updated": "2025-09-25T04:55:13.927728832Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "NHL Scores",
+    "description": "show the schedule, scores, situation for NHL games today",
+    "author": "jo-nike",
+    "category": "Sports",
+    "directory": "nhl-scores",
+    "preview": "preview.png",
+    "time_added": "2025-04-10T13:32:01.6176Z",
+    "time_updated": "2025-09-25T04:55:13.927767014Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "NZBGet Status",
+    "description": "show NZBGet downloads",
+    "author": "0ui",
+    "category": "Media \u0026 Downloads",
+    "directory": "nzbget-status",
+    "preview": "preview.png",
+    "env_vars": [
+      "NZBGET_BASE_URL"
+    ],
+    "time_added": "2025-07-26T16:40:50.2877Z",
+    "time_updated": "2025-09-25T04:55:13.92780765Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Nearby Aircraft",
+    "description": "show nearby aircraft passing over your position using OpenSky network",
+    "author": "cristiandiiorio",
+    "category": "Weather \u0026 Local",
+    "directory": "nearby-aircraft",
+    "preview": "preview.png",
+    "env_vars": [
+      "MY_LAT_MIN",
+      "MY_LON_MIN",
+      "MY_LAT_MAX",
+      "MY_LON_MAX"
+    ],
+    "time_added": "2025-04-23T11:45:55.5506Z",
+    "time_updated": "2025-09-25T04:55:13.927530622Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Nebula Latest Videos",
+    "description": "A widget that displays the latest videos from selected Nebula channels.",
+    "author": "darius-it",
+    "category": "Media \u0026 Downloads",
+    "directory": "nebula-videos",
+    "preview": "preview.png",
+    "time_added": "2026-08-29T13:44:45.143429571Z",
+    "time_updated": "2026-08-29T13:44:45.143429702Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "NetAlertX Device Status",
+    "description": "display the status of connected devices monitored by NetAlertX",
+    "author": "razdnut",
+    "category": "Network \u0026 VPN",
+    "directory": "netalertx",
+    "preview": "preview.png",
+    "env_vars": [
+      "NETALERTX_URL",
+      "NETALERTX_API_TOKEN"
+    ],
+    "needs_key": true,
+    "time_added": "2025-07-30T00:31:47.4611Z",
+    "time_updated": "2025-09-25T04:55:13.927577369Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Netbird Peers Count",
+    "description": "Real-time total connected network peer count",
+    "author": "kirolos-esmat",
+    "category": "Network \u0026 VPN",
+    "directory": "netbird-peers-count",
+    "preview": "preview.png",
+    "env_vars": [
+      "NETBIRD_API_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2026-08-31T20:57:33.729342087Z",
+    "time_updated": "2026-08-31T20:57:33.729342158Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Netbird devices",
+    "description": "show all devices inside to a Netbird network along with their connection status, update availability and IP",
+    "author": "menitz",
+    "category": "Network \u0026 VPN",
+    "directory": "netbird-devices",
+    "preview": "preview.png",
+    "env_vars": [
+      "NETBIRD_API_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2025-03-15T14:38:23.0877Z",
+    "time_updated": "2025-09-25T04:55:13.927614859Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "NextDNS Stats",
+    "description": "show the basics stats of your nextdns stats. Total queries, total blocked and percentage.",
+    "author": "ziritione85",
+    "category": "Network \u0026 VPN",
+    "directory": "nextdns-stats",
+    "preview": "preview.png",
+    "env_vars": [
+      "NEXTDNS_PROFILE_ID",
+      "NEXTDNS_API_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2025-03-30T17:00:51.4728Z",
+    "time_updated": "2025-09-25T04:55:13.927683077Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Nextcloud Deck",
+    "description": "show deck board from Nextcloud",
+    "author": "drakkein",
+    "category": "Productivity \u0026 Home",
+    "directory": "nextcloud-deck",
+    "preview": "preview.png",
+    "env_vars": [
+      "NEXTCLOUD_HOST",
+      "NEXTCLOUD_AUTH"
+    ],
+    "needs_key": true,
+    "time_added": "2025-07-29T19:50:14.765Z",
+    "time_updated": "2025-09-25T04:55:13.92764731Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Nginx Proxy Manager",
+    "description": "Shows a summary of Nginx Proxy Configration and host links",
+    "author": "saif191020",
+    "category": "Network \u0026 VPN",
+    "directory": "nginx-proxy-manager",
+    "preview": "preview.png",
+    "env_vars": [
+      "NGINX_PROXY_URL",
+      "NGINX_EMAIL_ID",
+      "NGINX_PASSWORD"
+    ],
+    "needs_key": true,
+    "time_added": "2025-10-26T14:32:21.693745723Z",
+    "time_updated": "2025-10-26T14:32:21.693745816Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Overseerr Requests Stats",
+    "description": "Shows the requests count grouped by media types and status",
+    "author": "GiamBoscaro",
+    "category": "Media \u0026 Downloads",
+    "directory": "overseerr-requests-stats",
+    "preview": "preview.png",
+    "env_vars": [
+      "OVERSEERR_API_URL",
+      "OVERSEERR_API_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2025-12-05T12:33:13.82060035Z",
+    "time_updated": "2025-12-05T12:33:13.82060045Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Overseerr Trending/Discovery",
+    "description": "Shows trending media along with Overseerr recommendations for movies/tv",
+    "author": "flamechair",
+    "category": "Media \u0026 Downloads",
+    "directory": "overseerr-trending-discovery",
+    "preview": "preview.png",
+    "env_vars": [
+      "OVERSEERR_URL",
+      "OVERSEERR_API_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2025-06-04T02:40:43.805Z",
+    "time_updated": "2025-09-25T04:55:13.927841814Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Overseerr Users Requests",
+    "description": "Shows the list of users and their number of request made in Overseerr",
+    "author": "GiamBoscaro",
+    "category": "Media \u0026 Downloads",
+    "directory": "overseerr-users-requests",
+    "preview": "preview.png",
+    "env_vars": [
+      "OVERSEERR_API_URL",
+      "OVERSEERR_API_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2026-02-25T19:04:13.345204276Z",
+    "time_updated": "2026-02-25T19:04:13.345204396Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "PagerDuty Incidents",
+    "description": "Shows the latest incidents from PagerDuty",
+    "author": "koalalorenzo",
+    "category": "Monitoring \u0026 Servers",
+    "directory": "pagerduty-incidents",
+    "preview": "preview.webp",
+    "env_vars": [
+      "PAGERDUTY_TOKEN"
+    ],
+    "needs_key": true,
+    "time_added": "2025-10-16T15:27:55.739801576Z",
+    "time_updated": "2025-10-16T15:27:55.739801706Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Paperless NGX Stats",
+    "description": "show stats from your Paperless NGX",
+    "author": "ralphocdol",
+    "category": "Productivity \u0026 Home",
+    "directory": "paperlessngx-stats",
+    "preview": "preview.png",
+    "env_vars": [
+      "PAPERLESS_URL",
+      "PAPERLESS_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2025-05-12T20:09:37.5752Z",
+    "time_updated": "2025-09-25T04:55:13.927884413Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Papra Stats",
+    "description": "Shows stats from your Papra application.",
+    "author": "Saisamarth21",
+    "category": "Productivity \u0026 Home",
+    "directory": "papra-stats",
+    "preview": "preview.png",
+    "env_vars": [
+      "PAPRA_URL",
+      "ORGANISATION_ID",
+      "API_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2025-10-30T06:40:44.872560575Z",
+    "time_updated": "2025-10-30T06:40:44.872560705Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "PeaNut UPS Stats",
+    "description": "Returns statistics from PeaNut to Monitor UPS",
+    "author": "razdnut",
+    "category": "Monitoring \u0026 Servers",
+    "directory": "peanut-ups-status",
+    "preview": "preview.png",
+    "env_vars": [
+      "PEANUT_URL",
+      "PEANUT_DEVICE",
+      "PEANUT_AUTH"
+    ],
+    "needs_key": true,
+    "time_added": "2025-07-18T19:01:29.2261Z",
+    "time_updated": "2025-09-25T04:55:13.92792041Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Plex Stats",
+    "description": "Native Plex API sessions, active streams list, and library counts",
+    "author": "kirolos-esmat",
+    "category": "Media \u0026 Downloads",
+    "directory": "plex-stats",
+    "preview": "preview.png",
+    "env_vars": [
+      "PLEX_URL",
+      "PLEX_TOKEN"
+    ],
+    "needs_key": true,
+    "time_added": "2026-08-31T20:57:33.729971642Z",
+    "time_updated": "2026-08-31T20:57:33.729971712Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Portainer Dashboard",
+    "description": "show docker containers from portainer.",
+    "author": "RealTong",
+    "category": "Monitoring \u0026 Servers",
+    "directory": "portainer-dashboard",
+    "preview": "screenshot.png",
+    "env_vars": [
+      "PORTAINER_URL",
+      "PORTAINER_ENDPOINT_ID",
+      "PORTAINER_API_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2025-12-05T12:36:52.867581625Z",
+    "time_updated": "2025-12-05T12:36:52.867581742Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Prowlarr Indexers",
+    "description": "show list of indexers from prowlarr.",
+    "author": "mattiasghodsian",
+    "category": "Media \u0026 Downloads",
+    "directory": "prowlarr-indexers",
+    "preview": "preview.png",
+    "env_vars": [
+      "PROWLARR_URL",
+      "PROWLARR_API_URL",
+      "PROWLARR_KEY",
+      "PROWLARR_COLLAPSE_AFTER"
+    ],
+    "needs_key": true,
+    "time_added": "2025-08-01T16:14:37.4533Z",
+    "time_updated": "2025-09-25T04:55:13.927965615Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Proxmox Backup Server Stats",
+    "description": "Shows Ressources, Datastore Usage and Last 3 Backup Jobs per VM",
+    "author": "danielweeber",
+    "category": "Monitoring \u0026 Servers",
+    "directory": "proxmox-backup-server-stats",
+    "preview": "preview.png",
+    "env_vars": [
+      "PBS_HOST",
+      "PBS_TOKEN",
+      "PROXMOXVE_URL",
+      "PROXMOXVE_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2025-10-26T14:30:10.086423476Z",
+    "time_updated": "2025-10-26T14:30:10.086423606Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Proxmox VE Nodes",
+    "description": "show the Node's CPU, RAM and Disk usage of your Proxmox Virtual Environment servers",
+    "author": "ralphocdol",
+    "category": "Monitoring \u0026 Servers",
+    "directory": "proxmox-ve-nodes",
+    "preview": "preview.png",
+    "env_vars": [
+      "PROXMOXVE_URL",
+      "PROXMOXVE_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2025-05-24T15:31:20.3868Z",
+    "time_updated": "2025-09-25T04:55:13.928042939Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Proxmox VE Stats",
+    "description": "show the number of nodes, LXCs, VMs and Storage of your Proxmox Virtual Environment server",
+    "author": "ralphocdol",
+    "category": "Monitoring \u0026 Servers",
+    "directory": "proxmox-ve-stats",
+    "preview": "preview.png",
+    "env_vars": [
+      "PROXMOXVE_URL",
+      "PROXMOXVE_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2025-03-20T12:53:00.7866Z",
+    "time_updated": "2025-09-25T04:55:13.928077755Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Proxmox VE Table Stats",
+    "description": "show a table with CPU, RAM and Disk usage of your Proxmox VE server",
+    "author": "lfvelosoh",
+    "category": "Monitoring \u0026 Servers",
+    "directory": "proxmox-detailed-resources",
+    "preview": "preview.png",
+    "env_vars": [
+      "PROXMOX_URL",
+      "PROXMOX_TOKEN"
+    ],
+    "needs_key": true,
+    "time_added": "2025-06-13T12:41:45.1472Z",
+    "time_updated": "2025-11-01T20:20:59.907944977Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Radarr Stats",
+    "description": "Total movie library count, missing movies, and active download queue",
+    "author": "kirolos-esmat",
+    "category": "Media \u0026 Downloads",
+    "directory": "radarr-stats",
+    "preview": "preview.png",
+    "env_vars": [
+      "RADARR_URL",
+      "RADARR_API_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2026-08-31T20:57:33.730433057Z",
+    "time_updated": "2026-08-31T20:57:33.730433137Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Raindrop Bookmarks",
+    "description": "Show your latest bookmarks from Raindrop.io",
+    "author": "herculosh",
+    "category": "Productivity \u0026 Home",
+    "directory": "raindrop-latest-links",
+    "preview": "preview.png",
+    "env_vars": [
+      "RAINDROP_TOKEN"
+    ],
+    "needs_key": true,
+    "time_added": "2025-04-15T18:01:30.1284Z",
+    "time_updated": "2025-09-25T04:55:13.928161832Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Random Bible Verse",
+    "description": "show a random bible verse",
+    "author": "pypp",
+    "category": "Fun \u0026 Daily",
+    "directory": "random-bible-verse",
+    "preview": "preview.png",
+    "time_added": "2025-03-28T10:56:28.06Z",
+    "time_updated": "2025-09-25T04:55:13.928192028Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Random Pokémon",
+    "description": "A random pokémon and stats from PokeAPI",
+    "author": "Shmoopi",
+    "category": "Gaming",
+    "directory": "random-pokemon",
+    "preview": "preview.png",
+    "time_added": "2026-09-03T16:34:46.270743627Z",
+    "time_updated": "2026-09-03T16:34:46.270743737Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Random fact",
+    "description": "show a random fact",
+    "author": "svilenmarkov",
+    "category": "Fun \u0026 Daily",
+    "directory": "random-fact",
+    "preview": "preview.png",
+    "time_added": "2025-03-10T00:19:08.7652Z",
+    "time_updated": "2025-09-25T04:55:13.928221313Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "RetroAchievement",
+    "description": "displays the current RetroAchievements.org Achievement of the week",
+    "author": "milktoastrat",
+    "category": "Gaming",
+    "directory": "retroachievement-of-the-week",
+    "preview": "retroachievement-of-the-week-example.png",
+    "env_vars": [
+      "RA_API"
+    ],
+    "time_added": "2025-07-07T21:33:09.4015Z",
+    "time_updated": "2025-09-25T04:55:13.928254014Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "RomM Stats",
+    "description": "show the stats of your RomM instance",
+    "author": "milktoastrat",
+    "category": "Gaming",
+    "directory": "romm-stats",
+    "preview": "romm-stats-example.png",
+    "env_vars": [
+      "ROMM_URL"
+    ],
+    "time_added": "2025-07-07T01:14:59.0413Z",
+    "time_updated": "2025-09-25T04:55:13.928291454Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "SABnzbd Status",
+    "description": "show SABnzbd status",
+    "author": "Neo11Neo",
+    "category": "Media \u0026 Downloads",
+    "directory": "sabnzbd-stats",
+    "preview": "preview.png",
+    "env_vars": [
+      "SABNZBD_URL",
+      "SABNZBD_API_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2025-03-27T11:09:13.1585Z",
+    "time_updated": "2025-10-16T15:00:48.419767477Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Scrutiny",
+    "description": "Display drive S.M.A.R.T attributes from Scrutiny",
+    "author": "SkyAllinott",
+    "category": "Monitoring \u0026 Servers",
+    "directory": "scrutiny",
+    "preview": "drive_health.png",
+    "env_vars": [
+      "SCRUTINY_URL"
+    ],
+    "time_added": "2025-08-12T20:18:28.8143Z",
+    "time_updated": "2025-09-25T04:55:13.928378887Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Should I Deploy Today",
+    "description": "remind to deploy today",
+    "author": "hohaithuy",
+    "category": "Developer",
+    "directory": "should-i-deploy-today",
+    "preview": "preview.png",
+    "time_added": "2025-06-20T15:42:34.5179Z",
+    "time_updated": "2025-09-25T04:55:13.928411398Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Slack Status",
+    "description": "show slack status from api",
+    "author": "cartwatson",
+    "category": "Monitoring \u0026 Servers",
+    "directory": "slack-status",
+    "preview": "slack-clear.png",
+    "time_added": "2025-06-03T09:59:51.337Z",
+    "time_updated": "2025-09-25T04:55:13.928443879Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Sonarr Stats",
+    "description": "Total series library count, missing episodes, and active download queue",
+    "author": "kirolos-esmat",
+    "category": "Media \u0026 Downloads",
+    "directory": "sonarr-stats",
+    "preview": "preview.png",
+    "env_vars": [
+      "SONARR_URL",
+      "SONARR_API_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2026-08-31T20:57:33.731009553Z",
+    "time_updated": "2026-08-31T20:57:33.731009613Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Speedtest Tracker",
+    "description": "show the latest internet speed information from Speedtest Tracker",
+    "author": "not-first",
+    "category": "Network \u0026 VPN",
+    "directory": "speedtest-tracker",
+    "preview": "preview.png",
+    "env_vars": [
+      "SPEEDTEST_URL",
+      "SPEEDTEST_TRACKER_API_TOKEN"
+    ],
+    "needs_key": true,
+    "time_added": "2025-03-21T08:54:30.1428Z",
+    "time_updated": "2026-02-25T19:26:02.10175844Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Spotify Now Playing",
+    "description": "show the currently playing Spotify song",
+    "author": "needsadjustment",
+    "category": "Media \u0026 Downloads",
+    "directory": "spotify-now-playing",
+    "preview": "preview.png",
+    "env_vars": [
+      "NOW_PLAYING"
+    ],
+    "time_added": "2025-03-19T11:58:20.6003Z",
+    "time_updated": "2025-09-25T04:55:13.928515162Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Spotify Player",
+    "description": "Show currently playing Spotify song along with the queue and ability to play/pause.",
+    "author": "anant-j",
+    "category": "Media \u0026 Downloads",
+    "directory": "spotify-player",
+    "preview": "preview.png",
+    "env_vars": [
+      "SPOTIFY_BTOA",
+      "SPOTIFY_REFRESH"
+    ],
+    "time_added": "2025-03-19T11:58:20.7105Z",
+    "time_updated": "2025-09-25T04:55:13.928574984Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "St. Louis Fed US Mortgage Rates",
+    "description": "Show mortgage rates from the St. Louis Federal Reserve's FRED API",
+    "author": "ehaughee",
+    "category": "Finance",
+    "directory": "st-louis-fed-us-mortgage-rates",
+    "preview": "preview.png",
+    "env_vars": [
+      "FRED_API_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2025-03-27T17:57:16.3852Z",
+    "time_updated": "2025-09-25T04:55:13.928608547Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Steam Recently Played Games",
+    "description": "show a list of recently played games by a Steam user",
+    "author": "lunnosmp4",
+    "category": "Gaming",
+    "directory": "steam-recently-played-games",
+    "preview": "preview.png",
+    "env_vars": [
+      "STEAM_API_KEY",
+      "STEAM_USER"
+    ],
+    "needs_key": true,
+    "time_added": "2025-03-22T15:44:26.0934Z",
+    "time_updated": "2025-09-25T04:55:13.928640967Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Steam Top Sellers",
+    "description": "Show steam global top seller",
+    "author": "GuiguiBlitz",
+    "category": "Gaming",
+    "directory": "steam-top-sellers",
+    "preview": "preview.png",
+    "time_added": "2025-11-02T18:10:09.604703492Z",
+    "time_updated": "2025-11-02T18:11:15.98707669Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Steam User",
+    "description": "show information about a Steam user",
+    "author": "lunnosmp4",
+    "category": "Gaming",
+    "directory": "steam-user",
+    "preview": "preview.png",
+    "env_vars": [
+      "STEAM_API_KEY",
+      "STEAM_USER"
+    ],
+    "needs_key": true,
+    "time_added": "2025-03-18T23:12:39.266Z",
+    "time_updated": "2025-09-25T04:55:13.928703814Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Steam User List",
+    "description": "Display some information about steam users/friends",
+    "author": "maplefluff",
+    "category": "Gaming",
+    "directory": "steam-user-list",
+    "preview": "image.png",
+    "env_vars": [
+      "STEAM_API_KEY",
+      "USER_ID1",
+      "USER_ID2",
+      "USER_ID3"
+    ],
+    "needs_key": true,
+    "time_added": "2025-12-05T12:33:13.821811151Z",
+    "time_updated": "2025-12-05T12:33:13.821811241Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Steam specials",
+    "description": "show a list of discounted games on Steam",
+    "author": "svilenmarkov",
+    "category": "Gaming",
+    "directory": "steam-specials",
+    "preview": "preview.png",
+    "time_added": "2025-03-10T00:19:08.4331Z",
+    "time_updated": "2025-09-25T04:55:13.928672416Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Sunrise \u0026 Sunset",
+    "description": "Sunrise time, daylight duration, and sunset time for a configured location, using Open-Meteo.",
+    "author": "mgpeter",
+    "category": "Weather \u0026 Local",
+    "directory": "sunrise-sunset",
+    "preview": "preview-sunrise-sunset.png",
+    "env_vars": [
+      "WEATHER_LOCATION"
+    ],
+    "time_added": "2026-09-03T14:57:26.018333686Z",
+    "time_updated": "2026-09-03T14:57:26.0183338Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Syncthing",
+    "description": "Show Syncthing folder status",
+    "author": "JohnCannon97",
+    "category": "Monitoring \u0026 Servers",
+    "directory": "syncthing",
+    "preview": "preview.png",
+    "env_vars": [
+      "SYNCTHING_API_KEY",
+      "SYNCTHING_URL"
+    ],
+    "needs_key": true,
+    "time_added": "2025-05-22T10:02:20.1198Z",
+    "time_updated": "2025-09-25T04:55:13.928736776Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Synology Disk Station",
+    "description": "Displays RAM and CPU usage and used storage of your Synology NAS",
+    "author": "Chachigo",
+    "category": "Monitoring \u0026 Servers",
+    "directory": "synology-disk-station",
+    "preview": "preview.png",
+    "time_added": "2025-10-03T08:12:31.464315317Z",
+    "time_updated": "2025-10-03T08:12:31.464315427Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Tailscale Device Status",
+    "description": "Live IP address, relative last seen timestamp, and key expiry for a specific Tailscale device",
+    "author": "kirolos-esmat",
+    "category": "Network \u0026 VPN",
+    "directory": "tailscale-device-status",
+    "preview": "preview.png",
+    "env_vars": [
+      "TAILSCALE_TAILNET",
+      "TAILSCALE_API_KEY",
+      "TAILSCALE_DEVICE_IP"
+    ],
+    "needs_key": true,
+    "time_added": "2026-08-31T20:57:33.731578497Z",
+    "time_updated": "2026-08-31T20:57:33.731578567Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Tailscale devices",
+    "description": "show all devices inside a Tailscale tailnet along with their connection status, owner, update availability and IP",
+    "author": "not-first",
+    "category": "Network \u0026 VPN",
+    "directory": "tailscale-devices",
+    "preview": "preview.png",
+    "env_vars": [
+      "TAILSCALE_API_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2025-03-15T14:38:23.8165Z",
+    "time_updated": "2025-12-05T12:42:55.259179823Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Tautulli Stats",
+    "description": "Show various home stats from Tautulli such as recently watched, top movies/shows, etc.",
+    "author": "SkyAllinott",
+    "category": "Media \u0026 Downloads",
+    "directory": "tautulli-stats",
+    "preview": "now_playing.png",
+    "env_vars": [
+      "TAUTULLI_IP",
+      "TAUTULLI_PORT",
+      "TAUTULLI_API_KEY",
+      "SERVER_ID"
+    ],
+    "needs_key": true,
+    "time_added": "2025-08-06T21:15:27.7395Z",
+    "time_updated": "2025-09-25T04:55:13.92885143Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Technitium DNS Stats",
+    "description": "show stats from Technitium DNS Server",
+    "author": "eribbey",
+    "category": "Network \u0026 VPN",
+    "directory": "technitium-dns-stats",
+    "preview": "preview.png",
+    "env_vars": [
+      "TECHNITIUM_IP_PORT",
+      "TECHNITIUM_TOKEN",
+      "TECHNITIUM_STATS_TIMEFRAME"
+    ],
+    "needs_key": true,
+    "time_added": "2025-03-27T01:33:16.0986Z",
+    "time_updated": "2025-09-25T04:55:13.928888239Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Termix",
+    "description": "show hosts and recent activity from your Termix instance",
+    "author": "giannf",
+    "category": "Monitoring \u0026 Servers",
+    "directory": "termix",
+    "preview": "preview.png",
+    "time_added": "2026-09-01T10:39:29.50701122Z",
+    "time_updated": "2026-09-01T10:39:29.507011487Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Thorough Raindrop Bookmarks",
+    "description": "Display your Raindrop.io bookmarks with hierarchical collections, cover images, tags, and dates.",
+    "author": "wen-hsiu-hsu",
+    "category": "Productivity \u0026 Home",
+    "directory": "raindrop-bookmarks",
+    "preview": "preview.png",
+    "env_vars": [
+      "RAINDROP_TOKEN"
+    ],
+    "needs_key": true,
+    "time_added": "2026-09-03T14:58:53.240915047Z",
+    "time_updated": "2026-09-03T14:58:53.240915168Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Time Bar",
+    "description": "show percentage of day/month/year elapsed",
+    "author": "anant-j",
+    "category": "Productivity \u0026 Home",
+    "directory": "time-bar",
+    "preview": "preview.png",
+    "time_added": "2025-05-06T23:18:40.7457Z",
+    "time_updated": "2025-09-25T04:55:13.928925499Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Todoist Tasks",
+    "description": "Display and complete today's tasks from Todoist with priority levels and project names",
+    "author": "xd1i0",
+    "category": "Productivity \u0026 Home",
+    "directory": "todoist-tasks",
+    "preview": "preview.png",
+    "env_vars": [
+      "TODOIST_API_TOKEN"
+    ],
+    "needs_key": true,
+    "time_added": "2026-08-29T13:10:31.269907773Z",
+    "time_updated": "2026-08-29T13:10:31.269907893Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Trakt",
+    "description": "shows your last-watched movies \u0026 TV shows on Trakt",
+    "author": "RxBrad",
+    "category": "Media \u0026 Downloads",
+    "directory": "trakt",
+    "preview": "preview.png",
+    "env_vars": [
+      "TRAKT_USERNAME",
+      "TRAKT_API_KEY",
+      "TMDB_API_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2025-05-23T09:39:47.45Z",
+    "time_updated": "2025-09-25T04:55:13.928959983Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Transitland",
+    "description": "Live transit departures at any stop, powered by the Transitland v2 REST API.",
+    "author": "wist9063",
+    "category": "Weather \u0026 Local",
+    "directory": "transitland",
+    "preview": "preview.png",
+    "env_vars": [
+      "TRANSITLAND_STOP_KEY",
+      "TRANSITLAND_API_KEY",
+      "TRANSITLAND_ROUTE_ONESTOP_ID"
+    ],
+    "needs_key": true,
+    "time_added": "2026-09-11T14:35:59.351095256Z",
+    "time_updated": "2026-09-11T14:35:59.351095336Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Trending Bluesky News",
+    "description": "shows a list of trending news links from the Trending News 2.0 Feed on Bluesky",
+    "author": "tomcasavant",
+    "category": "News \u0026 Social",
+    "directory": "trending-bluesky-news",
+    "preview": "preview.png",
+    "time_added": "2025-03-18T16:30:16.135Z",
+    "time_updated": "2025-09-25T04:55:13.928994297Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Trending GitHub Repositories",
+    "description": "Daily trending GitHub repositories.",
+    "author": "jelkuweiss",
+    "category": "Developer",
+    "directory": "trending-github-repositories",
+    "preview": "preview.png",
+    "env_vars": [
+      "PERIOD",
+      "LANGUAGE"
+    ],
+    "time_added": "2025-07-22T13:46:25.0467Z",
+    "time_updated": "2025-09-25T04:55:13.92903333Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Trending Mastodon Links",
+    "description": "shows a list of trending links from a provided Mastodon instance",
+    "author": "tomcasavant",
+    "category": "News \u0026 Social",
+    "directory": "trending-mastodon-links",
+    "preview": "preview.png",
+    "env_vars": [
+      "MASTODON_URL"
+    ],
+    "time_added": "2025-03-18T16:15:35.7271Z",
+    "time_updated": "2025-09-25T04:55:13.929069027Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "TrueNAS Metrics",
+    "description": "System load average, live uptime, active TrueNAS alerts counter, CPU model",
+    "author": "kirolos-esmat",
+    "category": "Monitoring \u0026 Servers",
+    "directory": "truenas-metrics",
+    "preview": "preview.png",
+    "env_vars": [
+      "TRUENAS_URL",
+      "TRUENAS_API_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2026-08-31T20:57:33.732097557Z",
+    "time_updated": "2026-08-31T20:57:33.732097618Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "TrueNAS Scale Pools",
+    "description": "shows datasets with usage and health status",
+    "author": "drakkein",
+    "category": "Monitoring \u0026 Servers",
+    "directory": "truenas-scale-pools",
+    "preview": "preview.png",
+    "env_vars": [
+      "TRUENAS_HOST",
+      "TRUENAS_API_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2025-07-29T18:01:08.3546Z",
+    "time_updated": "2025-09-25T04:55:13.929100526Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Tsumego Daily",
+    "description": "Shows daily Go Problems (Tsumego) from goproblems.com",
+    "author": "ccarpo",
+    "category": "Gaming",
+    "directory": "tsumego-daily",
+    "preview": "preview.png",
+    "time_added": "2025-12-05T12:33:47.836005011Z",
+    "time_updated": "2025-12-05T12:33:47.836005151Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "UK Bin Collection Data",
+    "description": "UK Bin Collection Widget to show upcoming bin collections - Credit to Robert Bradley for the original project",
+    "author": "kl421",
+    "category": "Weather \u0026 Local",
+    "directory": "UKBinCollection",
+    "preview": "preview.png",
+    "env_vars": [
+      "UK_BIN_COLLECTION_URL"
+    ],
+    "time_added": "2026-08-29T15:21:08.838717826Z",
+    "time_updated": "2026-08-29T15:21:08.838717936Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Unifi",
+    "description": "Unifi controller information",
+    "author": "prozn",
+    "category": "Network \u0026 VPN",
+    "directory": "unifi",
+    "preview": "details-preview.png",
+    "env_vars": [
+      "UNIFI_CONSOLE_IP",
+      "UNIFI_API_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2025-09-22T07:57:23.1297Z",
+    "time_updated": "2025-09-25T04:55:13.929151831Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Unraid Widget",
+    "description": "A simple and responsive custom-api widget for monitoring key Unraid information such as the array status, disk status and share capacitities.",
+    "author": "eddydmate",
+    "category": "Monitoring \u0026 Servers",
+    "directory": "unraid-widget",
+    "preview": "preview.png",
+    "env_vars": [
+      "UNRAID_API_URL",
+      "UNRAID_API_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2026-09-02T10:50:41.437053339Z",
+    "time_updated": "2026-09-02T10:50:41.437053517Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Uptime Kuma",
+    "description": "show the status of Uptime Kuma monitors from a status page",
+    "author": "not-first",
+    "category": "Monitoring \u0026 Servers",
+    "directory": "uptime-kuma",
+    "preview": "preview.png",
+    "env_vars": [
+      "UPTIME_KUMA_URL",
+      "UPTIME_KUMA_STATUS_SLUG"
+    ],
+    "time_added": "2025-03-28T21:05:37.6918Z",
+    "time_updated": "2025-12-05T12:42:34.640695673Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Vikunja Taskboard",
+    "description": "Real time taskboard using the Vikunja API",
+    "author": "gugugiyu",
+    "category": "Productivity \u0026 Home",
+    "directory": "vikunja-taskboard",
+    "preview": "preview.png",
+    "env_vars": [
+      "VIKUNJA_HOST",
+      "VIKUNJA_PORT",
+      "NUMBER_OF_TASKS",
+      "VIKUNJA_GLANCE_API_TOKEN",
+      "VIKUNJA_FILTER_DESCRIPTION"
+    ],
+    "needs_key": true,
+    "time_added": "2025-03-27T12:41:13.3742Z",
+    "time_updated": "2025-09-25T04:55:13.92922609Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "WG-Easy Enabled Clients",
+    "description": "Shows enabled and disabled clients from WG-Easy Web Interface",
+    "author": "lmriccardo",
+    "category": "Network \u0026 VPN",
+    "directory": "wg-easy-clients",
+    "preview": "preview.png",
+    "env_vars": [
+      "WG_EASY_URL",
+      "WG_EASY_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2025-11-18T04:03:16.893923179Z",
+    "time_updated": "2025-11-18T04:03:16.893923289Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Wanikani Reviews",
+    "description": "Small widget that shows your Wanikani reviews.",
+    "author": "Ornifex",
+    "category": "Productivity \u0026 Home",
+    "directory": "wanikani-reviews",
+    "preview": "forecast.png",
+    "env_vars": [
+      "WANIKANI_API_KEY"
+    ],
+    "needs_key": true,
+    "time_added": "2026-09-02T12:48:19.303649015Z",
+    "time_updated": "2026-09-02T12:48:19.303649165Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Weather Seven Day",
+    "description": "Shows daily weather conditions and high and low temperature from Open-Meteo for a specified location.",
+    "author": "brandonsie",
+    "category": "Weather \u0026 Local",
+    "directory": "weather-seven-day",
+    "preview": "preview.png",
+    "env_vars": [
+      "WEATHER_LOCATION"
+    ],
+    "time_added": "2025-09-09T14:04:40.0338Z",
+    "time_updated": "2025-09-25T04:55:13.929282386Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "What's Up Docker Monitor",
+    "description": "A customizable widget for displaying the wud data about containers.",
+    "author": "panonim",
+    "category": "Monitoring \u0026 Servers",
+    "directory": "wud-monitor",
+    "preview": "wud-main/wud_main_preview.png",
+    "time_added": "2025-03-25T21:55:57.7136Z",
+    "time_updated": "2025-09-25T04:55:13.929331928Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "WikiWidgets",
+    "description": "A collection of widgets for Wikipedia's featured feeds",
+    "author": "thatgirlginger",
+    "category": "News \u0026 Social",
+    "directory": "wikipedia",
+    "preview": "didyouknow_preview.png",
+    "env_vars": [
+      "LANAGUAGE",
+      "USERAGENT",
+      "LANGUAGE"
+    ],
+    "time_added": "2026-09-02T10:38:40.006190359Z",
+    "time_updated": "2026-09-02T10:38:40.006190522Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "Wikipedia On This Day",
+    "description": "Show notable events, births, and deaths from Wikipedia that happened on today's date in history.",
+    "author": "mike-rambil",
+    "category": "News \u0026 Social",
+    "directory": "wikipedia-on-this-day",
+    "preview": "preview.png",
+    "time_added": "2026-08-29T15:18:21.6979138Z",
+    "time_updated": "2026-08-29T15:18:21.69791388Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "YouTube Embedded Player",
+    "description": "A grid-card layout of YouTube List with Embed player pulled from either RSS-Bridge or FreshRSS",
+    "author": "ralphocdol",
+    "category": "Media \u0026 Downloads",
+    "directory": "youtube-embedded-player",
+    "preview": "preview.png",
+    "env_vars": [
+      "RSS_BRIDGE",
+      "FRESHRSS_URL"
+    ],
+    "time_added": "2025-03-30T19:37:59.416Z",
+    "time_updated": "2025-09-25T04:55:13.929385688Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "qBittorrent Stats",
+    "description": "show qBittorrent downloads",
+    "author": "danzkigg",
+    "category": "Media \u0026 Downloads",
+    "directory": "qbittorrent-stats",
+    "preview": "preview1.png",
+    "env_vars": [
+      "QBITTORRENT_URL",
+      "QBITTORRENT_IP"
+    ],
+    "time_added": "2025-08-19T20:06:23.4484Z",
+    "time_updated": "2025-09-25T04:55:13.928119062Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "sparkDash DGX cluster",
+    "description": "Live DGX Spark (GB10) monitoring — GPU temp/usage, VRAM, LLM tok/s, KV-cache and uptime for the head node and a worker, from a sparkDash instance.",
+    "author": "linxichen",
+    "category": "Monitoring \u0026 Servers",
+    "directory": "sparkdash-dgx-cluster",
+    "preview": "preview.png",
+    "env_vars": [
+      "SPARKDASH_HEAD_URL",
+      "SPARKDASH_NODE2_URL",
+      "SPARKDASH_DASHBOARD_URL"
+    ],
+    "time_added": "2026-09-01T10:33:50.137636817Z",
+    "time_updated": "2026-09-01T10:33:50.137636947Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "ufc-fight-tracker",
+    "description": "Shows a preview of upcoming events in the UFC using the ESPN API.",
+    "author": "xZinio",
+    "category": "Sports",
+    "directory": "ufc-fight-tracker",
+    "preview": "preview.png",
+    "time_added": "2026-02-25T18:53:50.624465852Z",
+    "time_updated": "2026-02-25T18:53:50.624465982Z"
+  },
+  {
+    "type": "custom-api",
+    "title": "xkcd Widget",
+    "description": "A custom simple widget that displays current xkcd comic",
+    "author": "AllanAAbraham",
+    "category": "Fun \u0026 Daily",
+    "directory": "xkcd-widget",
+    "preview": "preview.png",
+    "time_added": "2025-12-05T12:27:28.678735802Z",
+    "time_updated": "2025-12-05T12:27:28.678735932Z"
+  },
+  {
+    "type": "extension",
+    "title": "GitHub Graph",
+    "description": "Show your GitHub contribution graph.",
+    "author": "haondt",
+    "category": "Developer",
+    "url": "https://github.com/haondt/glance-github-graph"
+  },
+  {
+    "type": "extension",
+    "title": "Glance F1",
+    "description": "Adds user customization to widget by @abaza738 like local timezones, a track map, and more.",
+    "author": "SkyAllinott",
+    "category": "Sports",
+    "url": "https://github.com/SkyAllinott/glance-F1"
+  },
+  {
+    "type": "extension",
+    "title": "Glance League of Comicbook Geeks",
+    "description": "Add widgets for League of Comicbook Geeks, such as User Pull lists, Weekly Picks, and new releases.",
+    "author": "DroidPort",
+    "category": "Media \u0026 Downloads",
+    "url": "https://github.com/DroidPort/glance-league-of-comic-geeks"
+  },
+  {
+    "type": "extension",
+    "title": "Glance Transmission",
+    "description": "Show Transmission downloads",
+    "author": "Xtrems876",
+    "category": "Media \u0026 Downloads",
+    "url": "https://github.com/Xtrems876/glance-transmission"
+  },
+  {
+    "type": "extension",
+    "title": "Kubernetes nodes and apps",
+    "description": "List Kubernetes nodes and applications. Also including helm charts.",
+    "author": "lukasdietrich",
+    "category": "Monitoring \u0026 Servers",
+    "url": "https://github.com/lukasdietrich/glance-k8s"
+  },
+  {
+    "type": "extension",
+    "title": "Lichess Daily Puzzle",
+    "description": "Daily Lichess Puzzle",
+    "author": "brtmax",
+    "category": "Gaming",
+    "url": "https://github.com/brtmax/lichess-glance"
+  },
+  {
+    "type": "extension",
+    "title": "Navidrome (Subsonic) Server Stats",
+    "description": "Display statistics from your Navidrome (or Subsonic) instance and interact with them.",
+    "author": "SomeCodecat",
+    "category": "Monitoring \u0026 Servers",
+    "url": "https://github.com/SomeCodecat/subsonic-proxy"
+  },
+  {
+    "type": "extension",
+    "title": "Restic snapshot",
+    "description": "Show the most recent snapshot(s) and storage stats of a Restic repository.",
+    "author": "not-first",
+    "category": "Monitoring \u0026 Servers",
+    "url": "https://github.com/not-first/restic-glance-extension"
+  },
+  {
+    "type": "extension",
+    "title": "Swedish Hockey API",
+    "description": "Shows results and next games from Swedish HockeyAllsvenskan",
+    "author": "gshimself",
+    "category": "Sports",
+    "url": "https://github.com/GSHimself/hockey-api"
+  },
+  {
+    "type": "extension",
+    "title": "VMware ESXi Stats",
+    "description": "Display server, VM, and datastore statistics for VMware ESXi.",
+    "author": "lumitesi",
+    "category": "Monitoring \u0026 Servers",
+    "url": "https://github.com/lumitesi/glance-esxi-stats"
+  },
+  {
+    "type": "extension",
+    "title": "caltask",
+    "description": "Self-hosted calendar + tasks designed to embed in Glance as a fully interactive iframe widget (switch views, drag events, tick off tasks without leaving the dashboard).",
+    "author": "benginN",
+    "category": "Productivity \u0026 Home",
+    "url": "https://github.com/benginN/caltask"
+  },
+  {
+    "type": "extension",
+    "title": "glance-bilibili",
+    "description": "Display Bilibili videos like Videos widget.",
+    "author": "Cynosure159",
+    "category": "Media \u0026 Downloads",
+    "url": "https://github.com/Cynosure159/glance-bilibili"
+  },
+  {
+    "type": "extension",
+    "title": "iCal (ICS) Calendar List",
+    "description": "List a ICS File's upcoming events (Like Google Calendar List).",
+    "author": "AWildLeon",
+    "category": "Productivity \u0026 Home",
+    "url": "https://github.com/AWildLeon/Glance-iCal-Events"
+  },
+  {
+    "type": "extension",
+    "title": "linktiles",
+    "description": "Display your linkding bookmarks in a configurable mosaic.",
+    "author": "haondt",
+    "category": "Productivity \u0026 Home",
+    "url": "https://github.com/haondt/linktiles/"
+  },
+  {
+    "type": "extension",
+    "title": "qBittorrent Statistic",
+    "description": "Display file statistics as they are being downloaded.",
+    "author": "panonim",
+    "category": "Media \u0026 Downloads",
+    "url": "https://github.com/Panonim/qbwrapper"
+  }
+]

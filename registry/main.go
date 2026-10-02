@@ -141,6 +141,9 @@ func main() {
 	if err != nil {
 		log.Fatalf("Failed to write GALLERY.md: %v", err)
 	}
+
+	// Generate site/data.json
+	generateSiteData(sortedByTitle, extensions)
 }
 
 func loadRegisteredWidgets() {
