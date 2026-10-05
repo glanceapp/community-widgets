@@ -648,6 +648,15 @@
     "time_updated": "2025-10-13T23:38:06.284535452Z"
   },
   {
+    "title": "Macro Release Calendar",
+    "description": "Upcoming US economic data releases with the latest inflation, policy rate and unemployment figures",
+    "author": "fxmacrodata",
+    "directory": "macro-release-calendar",
+    "readme_hash": "6a7fd418e53a17a7d92e2eec4dbdf614a7062d8e",
+    "time_added": "2026-10-05T04:59:39.073456521Z",
+    "time_updated": "2026-10-05T04:59:39.073456671Z"
+  },
+  {
     "title": "Mealie Today's Meal",
     "description": "show today's meal based off the meal planner from [Mealie](https://mealie.io/)",
     "author": "wtoa",
