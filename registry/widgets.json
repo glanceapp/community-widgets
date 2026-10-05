@@ -1053,6 +1053,15 @@
     "time_updated": "2025-09-25T04:55:13.928378887Z"
   },
   {
+    "title": "Seerr Requests",
+    "description": "Pending Seerr, Overseerr or Jellyseerr requests with poster, requester and age, with optional Approve and Decline buttons through Home Assistant",
+    "author": "vednolacni",
+    "directory": "seerr-requests",
+    "readme_hash": "f66074f45c668f2426667b923d14ee230489cf20",
+    "time_added": "2026-10-05T06:46:02.564446496Z",
+    "time_updated": "2026-10-05T06:46:02.564446586Z"
+  },
+  {
     "title": "Should I Deploy Today",
     "description": "remind to deploy today",
     "author": "hohaithuy",

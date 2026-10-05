@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Seerr Requests](widgets/seerr-requests/README.md) - pending Seerr, Overseerr or Jellyseerr requests with poster, requester and age, with optional Approve and Decline buttons through Home Assistant (by @vednolacni)
 * [Macro Release Calendar](widgets/macro-release-calendar/README.md) - upcoming US economic data releases with the latest inflation, policy rate and unemployment figures (by @fxmacrodata)
 * [Transitland](widgets/transitland/README.md) - live transit departures at any stop, powered by the Transitland v2 REST API (by @wist9063)
 * [Random Pokémon](widgets/random-pokemon/README.md) - a random pokémon and stats from [PokeAPI](https://pokeapi.co/) (by @Shmoopi)
 * [Countdown](widgets/countdown/README.md) - shows a countdown of the dates you give it in your env file (by @jennywand)
-* [Dawarich Stats](widgets/dawarich-stats/README.md) - shows lifetime Dawarich stats including distance traveled, cities visited, and countries visited (by @taskfork)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -141,6 +141,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [RomM Stats](widgets/romm-stats/README.md) - show the stats of your [RomM](https://github.com/rommapp/romm) instance (by @milktoastrat)
 * [SABnzbd Status](widgets/sabnzbd-stats/README.md) - show SABnzbd status (by @Neo11Neo)
 * [Scrutiny](widgets/scrutiny/README.md) - display drive S.M.A.R.T attributes from Scrutiny (by @SkyAllinott)
+* [Seerr Requests](widgets/seerr-requests/README.md) - pending Seerr, Overseerr or Jellyseerr requests with poster, requester and age, with optional Approve and Decline buttons through Home Assistant (by @vednolacni)
 * [Should I Deploy Today](widgets/should-i-deploy-today/README.md) - remind to deploy today (by @hohaithuy)
 * [Slack Status](widgets/slack-status/README.md) - show slack status from api (by @cartwatson)
 * [Sonarr Stats](widgets/sonarr-stats/README.md) - total series library count, missing episodes, and active download queue (by @kirolos-esmat)
