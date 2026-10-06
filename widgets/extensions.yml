@@ -53,6 +53,11 @@
   description: Show Transmission downloads
   author: Xtrems876
 
+- title: BOM Weather
+  url: https://github.com/craigchandler/glance-bom-weather
+  description: Australian Bureau of Meteorology observations and forecasts for Glance.
+  author: Craig Chandler
+  
 - title: caltask
   url: https://github.com/benginN/caltask
   description: Self-hosted calendar + tasks designed to embed in Glance as a fully interactive iframe widget (switch views, drag events, tick off tasks without leaving the dashboard).
