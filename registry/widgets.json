@@ -49,9 +49,9 @@
     "description": "Shows Astronomy Picture of the Day from NASA.",
     "author": "Saisamarth21",
     "directory": "astronomy-picture-of-the-day",
-    "readme_hash": "5294b074322babad721d308f5a579cf60c1431c2",
+    "readme_hash": "323099ef246a8e55d0e6be88b91fdff8aed88ae8",
     "time_added": "2025-06-17T20:00:40.7159Z",
-    "time_updated": "2025-09-25T04:55:13.925691776Z"
+    "time_updated": "2026-10-05T05:23:15.962536316Z"
   },
   {
     "title": "AudioBookshelf Personalized Shelfs",
@@ -648,6 +648,15 @@
     "time_updated": "2025-10-13T23:38:06.284535452Z"
   },
   {
+    "title": "Macro Release Calendar",
+    "description": "Upcoming US economic data releases with the latest inflation, policy rate and unemployment figures",
+    "author": "fxmacrodata",
+    "directory": "macro-release-calendar",
+    "readme_hash": "6a7fd418e53a17a7d92e2eec4dbdf614a7062d8e",
+    "time_added": "2026-10-05T04:59:39.073456521Z",
+    "time_updated": "2026-10-05T04:59:39.073456671Z"
+  },
+  {
     "title": "Mealie Today's Meal",
     "description": "show today's meal based off the meal planner from [Mealie](https://mealie.io/)",
     "author": "wtoa",
@@ -990,15 +999,6 @@
     "time_updated": "2025-09-25T04:55:13.928192028Z"
   },
   {
-    "title": "Random MTG Card",
-    "description": "show a random Magic: The Gathering card from Scryfall with configurable filters and pricing",
-    "author": "louishamelers",
-    "directory": "random-mtg-card",
-    "readme_hash": "3aa16821178285f07d31f9f9ce5a18224e524b96",
-    "time_added": "2026-09-28T10:21:29.989762Z",
-    "time_updated": "2026-09-28T10:21:29.989762Z"
-  },
-  {
     "title": "Random Pokémon",
     "description": "A random pokémon and stats from [PokeAPI](https://pokeapi.co/)",
     "author": "Shmoopi",
@@ -1051,6 +1051,15 @@
     "readme_hash": "f6ec8f06c726fba630eb2932a06eac991d20bdfe",
     "time_added": "2025-08-12T20:18:28.8143Z",
     "time_updated": "2025-09-25T04:55:13.928378887Z"
+  },
+  {
+    "title": "Seerr Requests",
+    "description": "Pending Seerr, Overseerr or Jellyseerr requests with poster, requester and age, with optional Approve and Decline buttons through Home Assistant",
+    "author": "vednolacni",
+    "directory": "seerr-requests",
+    "readme_hash": "f66074f45c668f2426667b923d14ee230489cf20",
+    "time_added": "2026-10-05T06:46:02.564446496Z",
+    "time_updated": "2026-10-05T06:46:02.564446586Z"
   },
   {
     "title": "Should I Deploy Today",

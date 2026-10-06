@@ -1,16 +1,8 @@
 # Astronomy Picture of the Day from NASA
 
-A Glance **custom‑api** widget that pulls NASA’s daily APOD image. Just supply your API key and choose one of three layouts— `image only`, `image + title`, or `image + title + explanation` and you’re set!
+A Glance **custom‑api** widget that pulls NASA’s daily APOD image. Just choose one of three layouts— `image only`, `image + title`, or `image + title + explanation` and you’re set!
 
 ## Configuration
-
-Generate a free API key by signing up at [api.nasa.gov](https://api.nasa.gov/) Just provide your `first name`, `last name`, and `email` and you’ll receive your key via email instantly.
-
-Then replace `${NASA_API_KEY}` with your generated API key.
-
-```
-url: https://api.nasa.gov/planetary/apod?api_key=${NASA_API_KEY}
-```
 
 Cache is set to `cache: 1d` — daily cache, since APOD updates once every 24 hours.
 
@@ -30,15 +22,15 @@ Below are three ready‑to‑paste code. Copy the code according to style you wa
 - type: custom-api
   title: Astronomy Picture of the Day
   cache: 1d
-  url: https://api.nasa.gov/planetary/apod?api_key=${NASA_API_KEY}
+  url: https://science.nasa.gov/wp-json/wp/v2/apod-basic?per_page=1
   headers:
     Accept: application/json
   template: |
-    {{- if eq (.JSON.String "media_type") "image" -}}
+    {{- if eq (.JSON.String "0.media_type") "image" -}}
       <div style="display:flex; justify-content:center; align-items:center; width:100%; height:100%;">
         <img
-          src="{{ .JSON.String "url" }}"
-          alt="{{ .JSON.String "title" }}"
+          src="{{ .JSON.String "0.hdurl" }}"
+          alt="{{ .JSON.String "0.title" }}"
           style="max-width:100%; height:auto; display:block; border-radius:4px;"
         />
       </div>
@@ -59,25 +51,25 @@ Below are three ready‑to‑paste code. Copy the code according to style you wa
 - type: custom-api
   title: Astronomy Picture of the Day
   cache: 1d
-  url: https://api.nasa.gov/planetary/apod?api_key=${NASA_API_KEY}
+  url: https://science.nasa.gov/wp-json/wp/v2/apod-basic?per_page=1
   headers:
     Accept: application/json
   template: |
-    {{- if eq (.JSON.String "media_type") "image" -}}
+    {{- if eq (.JSON.String "0.media_type") "image" -}}
       <div style="display:flex; flex-direction:column; justify-content:center; align-items:center; width:100%; height:100%;">
         <p class="color-primary" style="margin-bottom:8px; font-weight:bold; text-align:center;">
           <a
-            href="https://apod.nasa.gov/apod/astropix.html"
+            href="{{ .JSON.String "0.permalink" }}"
             target="_blank"
             rel="noopener noreferrer"
             style="color: inherit; text-decoration: none;"
           >
-            {{ .JSON.String "title" }}
+            {{ .JSON.String "0.title" }}
           </a>
         </p>
         <img
-          src="{{ .JSON.String "url" }}"
-          alt="{{ .JSON.String "title" }}"
+          src="{{ .JSON.String "0.hdurl" }}"
+          alt="{{ .JSON.String "0.title" }}"
           style="max-width:100%; height:auto; display:block; border-radius:4px;"
         />
       </div>
@@ -98,28 +90,28 @@ Below are three ready‑to‑paste code. Copy the code according to style you wa
 - type: custom-api
   title: Astronomy Picture of the Day
   cache: 1d
-  url: https://api.nasa.gov/planetary/apod?api_key=${NASA_API_KEY}
+  url: https://science.nasa.gov/wp-json/wp/v2/apod-basic?per_page=1
   headers:
     Accept: application/json
   template: |
-    {{- if eq (.JSON.String "media_type") "image" -}}
+    {{- if eq (.JSON.String "0.media_type") "image" -}}
       <div style="display:flex; flex-direction:column; align-items:center; width:100%; padding:8px; box-sizing:border-box;">
         <!-- Clickable title -->
         <p class="color-primary" style="margin:0 0 8px; text-align:center;">
           <a 
-            href="https://apod.nasa.gov/apod/astropix.html" 
+            href="{{ .JSON.String "0.permalink" }}" 
             target="_blank" 
             rel="noopener noreferrer"
             style="color: inherit; text-decoration: none;"
           >
-            {{ .JSON.String "title" }}
+            {{ .JSON.String "0.title" }}
           </a>
         </p>
 
         <!-- Image -->
         <img
-          src="{{ .JSON.String "url" }}"
-          alt="{{ .JSON.String "title" }}"
+          src="{{ .JSON.String "0.hdurl" }}"
+          alt="{{ .JSON.String "0.title" }}"
           style="max-width:100%; height:auto; display:block; border-radius:4px;"
         />
 
