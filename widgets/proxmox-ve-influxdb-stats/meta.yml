@@ -1,0 +1,3 @@
+title: Proxmox VE InfluxDB Stats
+description: Hostname, uptime, CPU, RAM, disk and guest counts per Proxmox VE node, pulled from InfluxDB instead of the Proxmox API
+author: ddrimus
