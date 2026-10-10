@@ -9,19 +9,19 @@
   title: Seasonal Anime
   frameless: true
   cache: 1d
-  url: https://api.jikan.moe/v4/seasons/now
+  url: https://jikan.lucashdo.com/v1/seasons/now
   template: |
     {{ $arr := .JSON.Array "data" }}
     <div style="overflow-x: auto; padding: 8px 0;">
       <div class="cards-horizontal carousel-items-container" style="display: flex; gap: 16px; padding: 0 8px;">
         {{ range $i, $el := $arr }}
           {{ if lt $i 15 }}
-            {{ $image := $el.String "images.jpg.image_url" }}
+            {{ $image := $el.String "imageUrl" }}
             {{ $score := $el.Float "score" }}
             {{ $type := $el.String "type" }}
             {{ $episodes := $el.Int "episodes" }}
             
-            <a href="{{ $el.String "url" }}" target="_blank" 
+            <a href="https://myanimelist.net/anime/{{ $el.Int "malId" }}" target="_blank"
               class="card widget-content-frame" 
               style="flex: 0 0 auto; width: 150px; min-height: 260px; display: flex; flex-direction: column; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.1); background: var(--card-bg); text-decoration: none;">
               
@@ -68,7 +68,7 @@
 - type: custom-api
   title: Seasonal Anime
   cache: 1d
-  url: https://api.jikan.moe/v4/seasons/now
+  url: https://jikan.lucashdo.com/v1/seasons/now
   options:
     max_items: 8
     collapse_after: 5
@@ -81,12 +81,12 @@
     <ul class="list list-gap-10 collapsible-container" data-collapse-after="{{ $collapseAfter }}" style="list-style: none; padding: 0; margin: 0;">
       {{ range $i, $el := $arr }}
         {{ if lt $i $maxItems }}
-          {{ $image := $el.String "images.jpg.image_url" }}
+          {{ $image := $el.String "imageUrl" }}
           {{ $type := $el.String "type" }}
           {{ $episodes := $el.Int "episodes" }}
           {{ $score := $el.Float "score" }}
           
-          <a href="{{ $el.String "url" }}" target="_blank" style="text-decoration: none;">
+          <a href="https://myanimelist.net/anime/{{ $el.Int "malId" }}" target="_blank" style="text-decoration: none;">
             <li style="padding: 10px 0; border-bottom: 1px solid var(--border-color);">
               <div style="display: flex; gap: 12px; align-items: flex-start;">
                 
