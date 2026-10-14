@@ -11,6 +11,15 @@
   cache: 10m
   template: |
     {{ $enableOnlineIndicator := false }}
+    
+    {{/* Dynamically count connected devices to set the "Show more" threshold */}}
+    {{ $connectedStr := "" }}
+    {{ range .JSON.Array "" }}
+      {{ if .Bool "connected" }}
+        {{ $connectedStr = print $connectedStr "." }}
+      {{ end }}
+    {{ end }}
+    {{ $connectedCount := len $connectedStr }}
 
     <style>
       .device-info-container {
@@ -74,45 +83,74 @@
       }
     </style>
 
-    <ul class="list list-gap-10 collapsible-container" data-collapse-after="4">
+    <!-- Use the dynamic count for the collapsible container -->
+    <ul class="list list-gap-10 collapsible-container" data-collapse-after="{{ if eq $connectedCount 0 }}1{{ else }}{{ $connectedCount }}{{ end }}">
+      
+      <!-- 1. Loop for CONNECTED devices -->
       {{ range .JSON.Array "" }}
-      <li>
-        <div class="flex items-center gap-10">
-          <div class="device-name-container grow">
-            <span class="size-h4 block text-truncate color-primary">
-              {{ .String "hostname" }}
-            </span>
-            <div class="indicators-container">
-              {{ if .Bool "connected" }}
+        {{ if .Bool "connected" }}
+        <li>
+          <div class="flex items-center gap-10">
+            <div class="device-name-container grow">
+              <span class="size-h4 block text-truncate color-primary">
+                {{ .String "hostname" }}
+              </span>
+              <div class="indicators-container">
                 {{ if $enableOnlineIndicator }}
-                <span class="online-indicator" data-popover-type="text" data-popover-text="Online"></span>
+                  <span class="online-indicator" data-popover-type="text" data-popover-text="Online"></span>
                 {{ end }}
-              {{ else }}
-                {{ $lastSeen := .String "last_seen" | parseTime "rfc3339" }}
-                <span class="offline-indicator" data-popover-type="text" data-popover-text="Offline - Last seen {{ $lastSeen.Format "Jan 2 3:04pm" }}"></span>
-              {{ end }}
+              </div>
             </div>
           </div>
-        </div>
-        <div class="device-info-container">
-          <ul class="list-horizontal-text device-info">
-            <li>{{ .String "os" }}</li>
-            <li>{{ .String "city_name" }}, {{ .String "country_code"}}</li>
-          </ul>
-          <div class="device-ip">
-            {{ .String "ip" }}
-            {{ .String "dns_label"}}
+          <div class="device-info-container">
+            <ul class="list-horizontal-text device-info">
+              <li>{{ .String "os" }}</li>
+              <li>{{ .String "city_name" }}, {{ .String "country_code"}}</li>
+            </ul>
+            <div class="device-ip">
+              {{ .String "ip" }}
+              {{ .String "dns_label"}}
+            </div>
           </div>
-        </div>
-      </li>
+        </li>
+        {{ end }}
       {{ end }}
+
+      <!-- 2. Loop for DISCONNECTED devices -->
+      {{ range .JSON.Array "" }}
+        {{ if not (.Bool "connected") }}
+        <li>
+          <div class="flex items-center gap-10">
+            <div class="device-name-container grow">
+              <span class="size-h4 block text-truncate color-primary">
+                {{ .String "hostname" }}
+              </span>
+              <div class="indicators-container">
+                {{ $lastSeen := .String "last_seen" | parseTime "rfc3339" }}
+                <span class="offline-indicator" data-popover-type="text" data-popover-text="Offline - Last seen {{ $lastSeen.Format "Jan 2 3:04pm" }}"></span>
+              </div>
+            </div>
+          </div>
+          <div class="device-info-container">
+            <ul class="list-horizontal-text device-info">
+              <li>{{ .String "os" }}</li>
+              <li>{{ .String "city_name" }}, {{ .String "country_code"}}</li>
+            </ul>
+            <div class="device-ip">
+              {{ .String "ip" }}
+              {{ .String "dns_label"}}
+            </div>
+          </div>
+        </li>
+        {{ end }}
+      {{ end }}
+
     </ul>
 ```
 
 ## Environment variables
 
 - `NETBIRD_API_KEY`: Your Netbird API key, you can create one in the [NetBird dashboard](https://app.netbird.io/users) under User settings.
-- `TZ`: For correct times, the widget uses the container's timezone. If not already supplied, you can use this variable to provide your timezone.
 
 ## Disclaimer
 
