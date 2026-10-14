@@ -52,7 +52,15 @@ For feature requests or issues, contact @SleebySky on the project's Discord serv
       {{- $model := $device.String "model_name" }}
       {{- $wwn := $device.String "wwn" }}
       {{- $days := printf "%.0f" (div (.Get "smart.power_on_hours").Num 24) }}
-      {{- $capacity_print := printf "%.0f" (div (.Get "device.capacity").Num 1000000000000) }}
+      {{- $bytes := (.Get "device.capacity").Num }}
+      {{- $capacity_print := "" }}
+      {{- $bytes := (.Get "device.capacity").Num }}
+      {{- $capacity_print := "" }}
+      {{- if ge $bytes 1000000000000.0 }}
+        {{- $capacity_print = printf "%.0fTB" (div $bytes 1000000000000.0) }}
+      {{- else }}
+        {{- $capacity_print = printf "%.0fGB" (div $bytes 1000000000.0) }}
+      {{- end }}
       {{- $status := (.Get "device.device_status").Num }}
       {{- $tempHistory := .Array "temp_history" }}
       {{- $latestTemp := index (.Array "temp_history") (sub (len (.Array "temp_history")) 1) }}
@@ -61,7 +69,7 @@ For feature requests or issues, contact @SleebySky on the project's Discord serv
         <a href="http://${SCRUTINY_URL}/web/device/{{ $wwn }}" target="_blank">
           <div>
             <strong class="color-highlight" style="text-transform: uppercase; font-size: 1.5rem;">
-              /DEV/{{ $deviceName }} · {{ $capacity_print }}TB · {{ $latestTempValue }}°C
+              /DEV/{{ $deviceName }} · {{ $capacity_print }} · {{ $latestTempValue }}°C
             </strong><br>
             <p class="color-highlight" style="margin: 0;">{{ $model }}</p>
             <div class="color-primary" style="font-size: 1.2rem;">Powered on for {{ $days }} days</div>
