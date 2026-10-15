@@ -17,14 +17,15 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [AdGuard Home](widgets/adguard-home/README.md) - show total DNS queries, blocked ratio, and average processing time from an AdGuard Home instance (by @tnusch)
 * [Dockhand](widgets/dockhand/README.md) - show running/stopped container counts, image, volume, network and stack totals from a Dockhand-managed Docker environment (by @tnusch)
 * [Seerr Requests](widgets/seerr-requests/README.md) - pending Seerr, Overseerr or Jellyseerr requests with poster, requester and age, with optional Approve and Decline buttons through Home Assistant (by @vednolacni)
 * [Macro Release Calendar](widgets/macro-release-calendar/README.md) - upcoming US economic data releases with the latest inflation, policy rate and unemployment figures (by @fxmacrodata)
 * [Transitland](widgets/transitland/README.md) - live transit departures at any stop, powered by the Transitland v2 REST API (by @wist9063)
-* [Random Pokémon](widgets/random-pokemon/README.md) - a random pokémon and stats from [PokeAPI](https://pokeapi.co/) (by @Shmoopi)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
+* [AdGuard Home](widgets/adguard-home/README.md) - show total DNS queries, blocked ratio, and average processing time from an AdGuard Home instance (by @tnusch)
 * [Air Quality](widgets/air-quality/README.md) - displays information about air quality using data from the World Air Quality Index (WAQI) API (by @painfultruths)
 * [Algal Bloom Update](widgets/algal-bloom-update/README.md) - displays the South Australian beach conditions based on api from Beachsafe (by @stonkage)
 * [Animals Display](widgets/animals-display/README.md) - display random images of animals such as cats or dogs (by @panonim)

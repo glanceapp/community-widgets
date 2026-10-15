@@ -9,6 +9,15 @@
     "time_updated": "2025-09-25T04:55:13.925520155Z"
   },
   {
+    "title": "AdGuard Home",
+    "description": "show total DNS queries, blocked ratio, and average processing time from an AdGuard Home instance",
+    "author": "tnusch",
+    "directory": "adguard-home",
+    "readme_hash": "8ceef8dbf2b1c36f26085b66df7833ca051956b5",
+    "time_added": "2026-10-15T08:50:09.798051876Z",
+    "time_updated": "2026-10-15T08:50:09.798051976Z"
+  },
+  {
     "title": "Air Quality",
     "description": "Displays information about air quality using data from the World Air Quality Index (WAQI) API.",
     "author": "painfultruths",
