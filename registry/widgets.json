@@ -261,6 +261,15 @@
     "time_updated": "2025-11-02T18:02:34.89233242Z"
   },
   {
+    "title": "Dockhand",
+    "description": "show running/stopped container counts, image, volume, network and stack totals from a Dockhand-managed Docker environment",
+    "author": "tnusch",
+    "directory": "dockhand",
+    "readme_hash": "e9bf88e0ea3748b9d8e9199be30478ca7c73ffea",
+    "time_added": "2026-10-15T07:54:35.528550093Z",
+    "time_updated": "2026-10-15T07:54:35.528550183Z"
+  },
+  {
     "title": "Duolingo Stats",
     "description": "Show your Duolingo stats in glance.",
     "author": "RealTong",

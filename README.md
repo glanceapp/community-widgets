@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Dockhand](widgets/dockhand/README.md) - show running/stopped container counts, image, volume, network and stack totals from a Dockhand-managed Docker environment (by @tnusch)
 * [Seerr Requests](widgets/seerr-requests/README.md) - pending Seerr, Overseerr or Jellyseerr requests with poster, requester and age, with optional Approve and Decline buttons through Home Assistant (by @vednolacni)
 * [Macro Release Calendar](widgets/macro-release-calendar/README.md) - upcoming US economic data releases with the latest inflation, policy rate and unemployment figures (by @fxmacrodata)
 * [Transitland](widgets/transitland/README.md) - live transit departures at any stop, powered by the Transitland v2 REST API (by @wist9063)
 * [Random Pokémon](widgets/random-pokemon/README.md) - a random pokémon and stats from [PokeAPI](https://pokeapi.co/) (by @Shmoopi)
-* [Countdown](widgets/countdown/README.md) - shows a countdown of the dates you give it in your env file (by @jennywand)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -53,6 +53,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Dawarich Stats](widgets/dawarich-stats/README.md) - shows lifetime Dawarich stats including distance traveled, cities visited, and countries visited (by @taskfork)
 * [Discopanel](widgets/discopanel/README.md) - a widget to view all of your minecraft servers from Discopanel (by @PapaZ810)
 * [Docker Swarm](widgets/docker-swarm/README.md) - a widget to monitor Docker Swarm services and nodes based on the built-in docker-containers widget (by @tonineri)
+* [Dockhand](widgets/dockhand/README.md) - show running/stopped container counts, image, volume, network and stack totals from a Dockhand-managed Docker environment (by @tnusch)
 * [Duolingo Stats](widgets/duolingo-stats/README.md) - show your Duolingo stats in glance (by @RealTong)
 * [ESPN Live Football Scores Widget](widgets/football-livescore/README.md) - a custom widget that displays live, upcoming, and finished football (soccer) scores using the **ESPN Scoreboard API** (by @Beyeshooter)
 * [Epic Games Free Games](widgets/epic-free-widget/README.md) - display currently free games from the Epic Games Store with promotional images and availability periods (by @marocainperdu)
