@@ -70,7 +70,7 @@ The displayed bookmark name.
 
 #### `links[].url`
 
-The destination URL. The entire item is clickable.
+The destination URL. The entire item is clickable. Custom URL schemes are supported.
 
 #### `links[].icon`
 
@@ -155,6 +155,18 @@ An explicit `false` also overrides a global `hide-arrow: true`.
 Use *Bigger Bookmarks* as a lightweight start page for self-hosted services. Each entry can include an icon, title, description, and link. Unlike a monitoring widget, it does not poll the linked services or require API credentials merely to display them.
 
 This is useful when you want a single place to access your applications without background monitoring.
+
+### Steam launcher
+
+Use a `steam://` URL to open an installed game through Steam:
+
+```yaml
+- title: Steam Game
+  url: steam://rungameid/3557620
+  icon: si:steam
+```
+
+The browser and operating system must have Steam registered to handle the `steam:` scheme. Only configure custom-scheme URLs you trust.
 
 ### Favicon with a failure indicator
 
@@ -279,7 +291,7 @@ The configuration below defines the template with the YAML anchor `&bigger-bookm
       <li class="item-bigger-bookmarks">
         <a
           class="link-bigger-bookmarks flex items-center gap-15"
-          href="{{ index $link "url" }}"
+          href="{{ index $link "url" | safeURL }}"
           {{ if $target }}target="{{ $target }}"{{ end }}
           rel="noopener noreferrer"
           title="{{ index $link "title" }}"
