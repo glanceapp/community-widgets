@@ -101,7 +101,7 @@ Copy this YAML into your Glance configuration, or download [widget.yml](widget.y
 | `collapse-after` | `5` | Tasks visible before expanding the list |
 | `show-notes` | `false` | Show task notes as escaped plain text |
 
-Use separate widget instances, optionally inside a Glance group, to display several task lists. Change `title` to distinguish them. Retrieve list IDs through [`tasklists.list`](https://developers.google.com/workspace/tasks/reference/rest/v1/tasklists/list) using an authorized access token; use the returned `id`, not the list's title.
+Use separate widget instances, optionally inside a Glance group, to display several task lists. Change `title` to distinguish them. A complete [Group example](group-example.yml) reuses the template and credential options through YAML anchors; only each tab title and `list-id` need changing. Set `GOOGLE_TASKS_WORK_LIST_ID` to your second list ID, or replace that placeholder directly. Add more merge entries for additional lists. List names and IDs are configured when you create the Group; new Google lists are not automatically added as tabs. Retrieve list IDs through [`tasklists.list`](https://developers.google.com/workspace/tasks/reference/rest/v1/tasklists/list) using an authorized access token; use the returned `id`, not the list's title.
 
 ## Google setup
 
