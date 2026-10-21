@@ -1,17 +1,15 @@
 # Termix Host Status Widget for Glance
 # https://github.com/Termix-SSH/Termix
 #
-# Shows all Termix hosts sorted alphabetically with live online/offline indicators.
-# Online hosts display real-time CPU and memory usage; offline hosts show their IP.
+# Shows all Termix hosts sorted alphabetically with an online/offline indicator.
 #
 # Required environment variables (set in your docker-compose or shell):
-#   TERMIX_URL       – base URL of your Termix instance (e.g. http://192.168.1.100:8080)
-#   TERMIX_API_KEY   – API key created in Termix (Admin → Settings → API Keys), starts with tmx_
+#   TERMIX_URL      – base URL of your Termix instance (e.g. http://192.168.1.2:8080)
+#   TERMIX_API_KEY  – API key created in Termix (Admin → Settings → API Keys), starts with tmx_
 #
-# NOTE: Status indicators require an active Termix user session in a browser
-#       (the server keeps host-status data in memory only while a session is open).
-#       When no session is active, all dots show as grey (unknown). Host names and IPs
-#       are always displayed regardless of session state.
+# Host list:   GET /host/db/host
+# Host status: GET /plugin-api/host-status/
+#   (Termix starts the status checks on the first call, so no open browser session is needed.)
 
 - type: custom-api
   title: Termix Hosts
@@ -23,13 +21,14 @@
   # allow-insecure: true  # uncomment if using a self-signed TLS certificate
   subrequests:
     status:
-      url: ${TERMIX_URL}/status
+      url: ${TERMIX_URL}/plugin-api/host-status/
       headers:
         Authorization: Bearer ${TERMIX_API_KEY}
       # allow-insecure: true
   template: |
     {{ $status := .Subrequest "status" }}
     {{ $hosts := .JSON.Array "" }}
+    {{/* Count online hosts for the summary line */}}
     {{ $nUp := 0 }}
     {{ range $hosts }}{{ $id := printf "%d" (.Int "id") }}{{ $s := $status.JSON.String (concat $id ".status") }}{{ if or (eq $s "online") (eq $s "reachable") }}{{ $nUp = add $nUp 1 }}{{ end }}{{ end }}
     <p class="margin-bottom-10">
@@ -37,6 +36,7 @@
     </p>
     <ul class="list collapsible-container" data-collapse-after="8">
     {{ range sortByString "name" "asc" $hosts }}
+    {{/* The status response is a map of host id -> {status, lastChecked} */}}
     {{ $id := printf "%d" (.Int "id") }}
     {{ $s := $status.JSON.String (concat $id ".status") }}
     <li class="flex items-center gap-10">
