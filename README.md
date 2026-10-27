@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Earnings Calendar](widgets/earnings-calendar/README.md) - upcoming earnings dates and EPS estimates for a stock watchlist and for large cap stocks (by @wamuir)
 * [AdGuard Home](widgets/adguard-home/README.md) - show total DNS queries, blocked ratio, and average processing time from an AdGuard Home instance (by @tnusch)
 * [Dockhand](widgets/dockhand/README.md) - show running/stopped container counts, image, volume, network and stack totals from a Dockhand-managed Docker environment (by @tnusch)
 * [Seerr Requests](widgets/seerr-requests/README.md) - pending Seerr, Overseerr or Jellyseerr requests with poster, requester and age, with optional Approve and Decline buttons through Home Assistant (by @vednolacni)
 * [Macro Release Calendar](widgets/macro-release-calendar/README.md) - upcoming US economic data releases with the latest inflation, policy rate and unemployment figures (by @fxmacrodata)
-* [Transitland](widgets/transitland/README.md) - live transit departures at any stop, powered by the Transitland v2 REST API (by @wist9063)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -57,6 +57,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Dockhand](widgets/dockhand/README.md) - show running/stopped container counts, image, volume, network and stack totals from a Dockhand-managed Docker environment (by @tnusch)
 * [Duolingo Stats](widgets/duolingo-stats/README.md) - show your Duolingo stats in glance (by @RealTong)
 * [ESPN Live Football Scores Widget](widgets/football-livescore/README.md) - a custom widget that displays live, upcoming, and finished football (soccer) scores using the **ESPN Scoreboard API** (by @Beyeshooter)
+* [Earnings Calendar](widgets/earnings-calendar/README.md) - upcoming earnings dates and EPS estimates for a stock watchlist and for large cap stocks (by @wamuir)
 * [Epic Games Free Games](widgets/epic-free-widget/README.md) - display currently free games from the Epic Games Store with promotional images and availability periods (by @marocainperdu)
 * [Eventim](widgets/eventim/README.md) - a Glance widget for displaying upcoming events on the European ticket seller's site, Eventim (by @cpt-metal)
 * [Football Fixtures](widgets/football-fixtures/README.md) - show the last match and the next match of your favourite football team using football-data api (by @cristiandiiorio)

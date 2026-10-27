@@ -297,6 +297,15 @@
     "time_updated": "2025-12-05T12:33:13.818404518Z"
   },
   {
+    "title": "Earnings Calendar",
+    "description": "Upcoming earnings dates and EPS estimates for a stock watchlist and for large cap stocks",
+    "author": "wamuir",
+    "directory": "earnings-calendar",
+    "readme_hash": "bba7e4e36feb7360d1c532008c28307271e21a6a",
+    "time_added": "2026-10-27T21:39:26.884761641Z",
+    "time_updated": "2026-10-27T21:39:26.884761731Z"
+  },
+  {
     "title": "Epic Games Free Games",
     "description": "Display currently free games from the Epic Games Store with promotional images and availability periods.",
     "author": "marocainperdu",
