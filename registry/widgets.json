@@ -324,6 +324,15 @@
     "time_updated": "2026-09-03T14:55:35.294902746Z"
   },
   {
+    "title": "FPL Team Rank",
+    "description": "Shows Fantasy Premier League team rank, current gameweek points, total points, and rank delta",
+    "author": "jlioanag",
+    "directory": "fpl-team-rank",
+    "readme_hash": "0088251670e70a0d7620ab4d1b18471ced42086d",
+    "time_added": "2026-10-27T21:42:18.102609095Z",
+    "time_updated": "2026-10-27T21:42:18.102609226Z"
+  },
+  {
     "title": "Football Fixtures",
     "description": "show the last match and the next match of your favourite football team using football-data api",
     "author": "cristiandiiorio",
