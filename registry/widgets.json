@@ -378,6 +378,15 @@
     "time_updated": "2026-08-29T13:20:06.824255152Z"
   },
   {
+    "title": "FreshRSS Unread",
+    "description": "show the unread count and the latest unread articles from FreshRSS",
+    "author": "Hellraiser28",
+    "directory": "freshrss-unread",
+    "readme_hash": "7d37c9dea93e013c0b690ef127a9e56b005f5da2",
+    "time_added": "2026-10-27T21:45:00.851822596Z",
+    "time_updated": "2026-10-27T21:45:00.851822726Z"
+  },
+  {
     "title": "Frigate stats",
     "description": "show alerts and detections from the last 24 hours from your Frigate service [Frigate](https://frigate.video/)",
     "author": "Pimer0",
@@ -559,21 +568,21 @@
   },
   {
     "title": "Jellyfin Stats",
-    "description": "Live active playback streams (dynamic highlight), total movies \u0026 series count",
-    "author": "kirolos-esmat",
-    "directory": "jellyfin-stats",
-    "readme_hash": "99c7033f3c5499c285e80cda4c8c65cff5dae4a4",
-    "time_added": "2026-08-31T20:57:33.727912826Z",
-    "time_updated": "2026-08-31T20:57:33.727912896Z"
-  },
-  {
-    "title": "Jellyfin Stats",
     "description": "show the number of movies, shows, episodes and songs in your Jellyfin or Emby server",
     "author": "lfvelosoh",
     "directory": "jellyfin-emby-stats",
     "readme_hash": "2335546183f1e0c15adb544a0ea87ce219032a94",
     "time_added": "2025-06-12T15:48:37.4897Z",
     "time_updated": "2025-09-25T04:55:13.926861351Z"
+  },
+  {
+    "title": "Jellyfin Stats",
+    "description": "Live active playback streams (dynamic highlight), total movies \u0026 series count",
+    "author": "kirolos-esmat",
+    "directory": "jellyfin-stats",
+    "readme_hash": "99c7033f3c5499c285e80cda4c8c65cff5dae4a4",
+    "time_added": "2026-08-31T20:57:33.727912826Z",
+    "time_updated": "2026-08-31T20:57:33.727912896Z"
   },
   {
     "title": "Karakeep Dashboard",
@@ -736,6 +745,15 @@
     "readme_hash": "3a02de13f15790582eb2bdab45c35a4d42adce64",
     "time_added": "2025-12-05T12:59:46.062993668Z",
     "time_updated": "2025-12-05T12:59:46.062993778Z"
+  },
+  {
+    "title": "Memos Latest",
+    "description": "show the latest memos from Memos, with pinned memos marked",
+    "author": "Hellraiser28",
+    "directory": "memos-latest",
+    "readme_hash": "a178eeb089ae0101590ba6475038bbdb79f1a66e",
+    "time_added": "2026-10-27T21:45:00.854443546Z",
+    "time_updated": "2026-10-27T21:45:00.854443656Z"
   },
   {
     "title": "Minecraft server",
