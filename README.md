@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Crypto wallet balance (SoChain)](widgets/crypto-wallet-balance-sochain/README.md) - balances and last activity of your Bitcoin, Litecoin, Dogecoin and Zcash addresses (by @doersf)
 * [FPL Team Rank](widgets/fpl-team-rank/README.md) - shows Fantasy Premier League team rank, current gameweek points, total points, and rank delta (by @jlioanag)
 * [Earnings Calendar](widgets/earnings-calendar/README.md) - upcoming earnings dates and EPS estimates for a stock watchlist and for large cap stocks (by @wamuir)
 * [AdGuard Home](widgets/adguard-home/README.md) - show total DNS queries, blocked ratio, and average processing time from an AdGuard Home instance (by @tnusch)
 * [Dockhand](widgets/dockhand/README.md) - show running/stopped container counts, image, volume, network and stack totals from a Dockhand-managed Docker environment (by @tnusch)
-* [Seerr Requests](widgets/seerr-requests/README.md) - pending Seerr, Overseerr or Jellyseerr requests with poster, requester and age, with optional Approve and Decline buttons through Home Assistant (by @vednolacni)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -48,6 +48,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Countdown](widgets/countdown/README.md) - shows a countdown of the dates you give it in your env file (by @jennywand)
 * [Crafty Minecraft Server Stats](widgets/crafty-controller-minecraft-server/README.md) - show the status of Minecraft server managed by Crafty Controller (by @MartyX98)
 * [Crypto Fear & Greed Index](widgets/fear-and-greed-index/README.md) - displays the current Crypto Fear & Greed Index with a color-coded gradient bar, sentiment label and trend arrow (by @yroulin)
+* [Crypto wallet balance (SoChain)](widgets/crypto-wallet-balance-sochain/README.md) - balances and last activity of your Bitcoin, Litecoin, Dogecoin and Zcash addresses (by @doersf)
 * [Cryptopanic News](widgets/cryptopanic-news/README.md) - a real-time cryptocurrency news widget that displays filtered news from CryptoPanic.com with configurable filters for news type, regions, and currencies (by @herculosh)
 * [Cup Updates](widgets/cup-updates/README.md) - displays information about containers needing an update from Cup (by @panonim)
 * [DHL Tracking](widgets/dhl-tracking/README.md) - a Glance widget for displaying the tracking status of DHL parcels (by @cpt-metal)

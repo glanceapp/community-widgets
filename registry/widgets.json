@@ -216,6 +216,15 @@
     "time_updated": "2026-08-29T14:21:46.906436316Z"
   },
   {
+    "title": "Crypto wallet balance (SoChain)",
+    "description": "Balances and last activity of your Bitcoin, Litecoin, Dogecoin and Zcash addresses",
+    "author": "doersf",
+    "directory": "crypto-wallet-balance-sochain",
+    "readme_hash": "fef19e0f200dc60792f747f07b335ba2c20bd177",
+    "time_added": "2026-10-27T21:43:59.367780318Z",
+    "time_updated": "2026-10-27T21:43:59.367780398Z"
+  },
+  {
     "title": "Cryptopanic News",
     "description": "A real-time cryptocurrency news widget that displays filtered news from CryptoPanic.com with configurable filters for news type, regions, and currencies.",
     "author": "herculosh",
