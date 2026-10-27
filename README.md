@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [SolidPing](widgets/solidping/README.md) - show the status and response time of your SolidPing checks (by @fclairamb)
 * [Google Tasks](widgets/google-tasks/README.md) - read-only Google Tasks with due dates, subtasks and optional notes, using OAuth refresh credentials (by @chius-me)
 * [Bigger Bookmarks](widgets/bigger-bookmarks/README.md) - a Monitor-style bookmark launcher with optional icons, descriptions, and link arrows, without health checking or service monitoring (by @undecV)
 * [Thingport](widgets/thingport/README.md) - library stats, model of the day, recent and popular models, top authors and an activity heatmap from your Thingport 3D model library (by @TautvydasDerzinskas)
 * [Memos Latest](widgets/memos-latest/README.md) - show the latest memos from Memos, with pinned memos marked (by @Hellraiser28)
-* [FreshRSS Unread](widgets/freshrss-unread/README.md) - show the unread count and the latest unread articles from FreshRSS (by @Hellraiser28)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -89,8 +89,8 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Immich stats](widgets/immich-stats/README.md) - show the number of photos, videos and usage of your Immich server (by @svilenmarkov)
 * [Jellyfin Latest/Next Up](widgets/jellyfin-latest/README.md) - display the newest additions to a Jellyfin library, and next up to watch for a given user (by @Nedra1998)
 * [Jellyfin Now Playing](widgets/jellyfin-now-playing/README.md) - displays songs currently playing on a jellyfin server, with multiple user and device streams (by @fayezh26)
-* [Jellyfin Stats](widgets/jellyfin-stats/README.md) - live active playback streams (dynamic highlight), total movies & series count (by @kirolos-esmat)
 * [Jellyfin Stats](widgets/jellyfin-emby-stats/README.md) - show the number of movies, shows, episodes and songs in your Jellyfin or Emby server (by @lfvelosoh)
+* [Jellyfin Stats](widgets/jellyfin-stats/README.md) - live active playback streams (dynamic highlight), total movies & series count (by @kirolos-esmat)
 * [Karakeep Dashboard](widgets/karakeep-dashboard/README.md) - the widget returns statistics on the number of bookmarks and the number of tags and the most recently added bookmarks (by @razdnut)
 * [Kavita Latest](widgets/kavita-latest/README.md) - show recently updated series and in progress series from your Kavita server (by @Nedra1998)
 * [Komga Recently Added Series](widgets/komga-latest/README.md) - displays recently added comic/manga series to a defined Komga library (by @VictorMitr)
@@ -153,6 +153,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Seerr Requests](widgets/seerr-requests/README.md) - pending Seerr, Overseerr or Jellyseerr requests with poster, requester and age, with optional Approve and Decline buttons through Home Assistant (by @vednolacni)
 * [Should I Deploy Today](widgets/should-i-deploy-today/README.md) - remind to deploy today (by @hohaithuy)
 * [Slack Status](widgets/slack-status/README.md) - show slack status from api (by @cartwatson)
+* [SolidPing](widgets/solidping/README.md) - show the status and response time of your SolidPing checks (by @fclairamb)
 * [Sonarr Stats](widgets/sonarr-stats/README.md) - total series library count, missing episodes, and active download queue (by @kirolos-esmat)
 * [Speedtest Tracker](widgets/speedtest-tracker/README.md) - show the latest internet speed information from Speedtest Tracker (by @not-first)
 * [Spotify Now Playing](widgets/spotify-now-playing/README.md) - show the currently playing Spotify song (by @needsadjustment)
