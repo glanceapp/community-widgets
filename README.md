@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Thingport](widgets/thingport/README.md) - library stats, model of the day, recent and popular models, top authors and an activity heatmap from your Thingport 3D model library (by @TautvydasDerzinskas)
 * [Memos Latest](widgets/memos-latest/README.md) - show the latest memos from Memos, with pinned memos marked (by @Hellraiser28)
 * [FreshRSS Unread](widgets/freshrss-unread/README.md) - show the unread count and the latest unread articles from FreshRSS (by @Hellraiser28)
 * [Crypto wallet balance (SoChain)](widgets/crypto-wallet-balance-sochain/README.md) - balances and last activity of your Bitcoin, Litecoin, Dogecoin and Zcash addresses (by @doersf)
 * [FPL Team Rank](widgets/fpl-team-rank/README.md) - shows Fantasy Premier League team rank, current gameweek points, total points, and rank delta (by @jlioanag)
-* [Earnings Calendar](widgets/earnings-calendar/README.md) - upcoming earnings dates and EPS estimates for a stock watchlist and for large cap stocks (by @wamuir)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -87,8 +87,8 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Immich stats](widgets/immich-stats/README.md) - show the number of photos, videos and usage of your Immich server (by @svilenmarkov)
 * [Jellyfin Latest/Next Up](widgets/jellyfin-latest/README.md) - display the newest additions to a Jellyfin library, and next up to watch for a given user (by @Nedra1998)
 * [Jellyfin Now Playing](widgets/jellyfin-now-playing/README.md) - displays songs currently playing on a jellyfin server, with multiple user and device streams (by @fayezh26)
-* [Jellyfin Stats](widgets/jellyfin-emby-stats/README.md) - show the number of movies, shows, episodes and songs in your Jellyfin or Emby server (by @lfvelosoh)
 * [Jellyfin Stats](widgets/jellyfin-stats/README.md) - live active playback streams (dynamic highlight), total movies & series count (by @kirolos-esmat)
+* [Jellyfin Stats](widgets/jellyfin-emby-stats/README.md) - show the number of movies, shows, episodes and songs in your Jellyfin or Emby server (by @lfvelosoh)
 * [Karakeep Dashboard](widgets/karakeep-dashboard/README.md) - the widget returns statistics on the number of bookmarks and the number of tags and the most recently added bookmarks (by @razdnut)
 * [Kavita Latest](widgets/kavita-latest/README.md) - show recently updated series and in progress series from your Kavita server (by @Nedra1998)
 * [Komga Recently Added Series](widgets/komga-latest/README.md) - displays recently added comic/manga series to a defined Komga library (by @VictorMitr)
@@ -169,6 +169,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Tautulli Stats](widgets/tautulli-stats/README.md) - show various home stats from Tautulli such as recently watched, top movies/shows, etc (by @SkyAllinott)
 * [Technitium DNS Stats](widgets/technitium-dns-stats/README.md) - show stats from Technitium DNS Server (by @eribbey)
 * [Termix](widgets/termix/README.md) - show hosts and recent activity from your Termix instance (by @giannf)
+* [Thingport](widgets/thingport/README.md) - library stats, model of the day, recent and popular models, top authors and an activity heatmap from your Thingport 3D model library (by @TautvydasDerzinskas)
 * [Thorough Raindrop Bookmarks](widgets/raindrop-bookmarks/README.md) - display your Raindrop.io bookmarks with hierarchical collections, cover images, tags, and dates (by @wen-hsiu-hsu)
 * [Time Bar](widgets/time-bar/README.md) - show percentage of day/month/year elapsed (by @anant-j)
 * [Todoist Tasks](widgets/todoist-tasks/README.md) - display and complete today's tasks from Todoist with priority levels and project names (by @xd1i0)
