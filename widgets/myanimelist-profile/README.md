@@ -2,7 +2,10 @@
 
 A widget to display your MyAnimeList statistics.
 
-<img src=preview.png width="300">
+<div style="display: flex;">
+  <img src=preview.png width="300">
+  <img src=preview_theme.png width="300">
+</div>
 
 ### Widget yaml
 
