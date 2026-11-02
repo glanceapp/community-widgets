@@ -1,0 +1,79 @@
+- type: custom-api
+  title: Tasks
+  title-url: https://tasks.google.com/
+  cache: 15m
+  options:
+    client-id: "${GOOGLE_CLIENT_ID}"
+    client-secret: "${GOOGLE_CLIENT_SECRET}"
+    refresh-token: "${GOOGLE_REFRESH_TOKEN}"
+    list-id: "@default"
+    collapse-after: 5
+    show-notes: false
+  template: |
+    {{ $clientID := .Options.StringOr "client-id" "" | trimSpace }}
+    {{ $clientSecret := .Options.StringOr "client-secret" "" | trimSpace }}
+    {{ $refreshToken := .Options.StringOr "refresh-token" "" | trimSpace }}
+    {{ if or (eq $clientID "") (eq $clientSecret "") (eq $refreshToken "") }}
+      <p class="color-subdue">Authorization needed.</p>
+    {{ else }}
+      {{ $body := printf "client_id=%s&client_secret=%s&refresh_token=%s&grant_type=refresh_token" (urlquery $clientID) (urlquery $clientSecret) (urlquery $refreshToken) }}
+      {{ $token := newRequest "https://oauth2.googleapis.com/token"
+        | withHeader "Content-Type" "application/x-www-form-urlencoded"
+        | withStringBody $body
+        | getResponse }}
+      {{ if ne $token.Response.StatusCode 200 }}
+        <p class="color-negative">Authorization failed. Reconnect Google.</p>
+      {{ else }}
+        {{ $listID := .Options.StringOr "list-id" "@default" | trimSpace }}
+        {{ if eq $listID "" }}{{ $listID = "@default" }}{{ end }}
+        {{ $tasks := newRequest (concat "https://tasks.googleapis.com/tasks/v1/lists/" (urlquery $listID) "/tasks")
+          | withParameter "showCompleted" "false"
+          | withParameter "showDeleted" "false"
+          | withParameter "showHidden" "false"
+          | withParameter "showAssigned" "true"
+          | withParameter "maxResults" "100"
+          | withHeader "Authorization" (print "Bearer " ($token.JSON.String "access_token"))
+          | getResponse }}
+        {{ if ne $tasks.Response.StatusCode 200 }}
+          <p class="color-negative">Unavailable (HTTP {{ $tasks.Response.StatusCode }})</p>
+        {{ else }}
+          {{ $today := now.Local | formatTime "2006-01-02" }}
+          {{ $showNotes := .Options.BoolOr "show-notes" false }}
+          {{ $collapseAfter := .Options.IntOr "collapse-after" 5 }}
+          {{ if lt $collapseAfter 1 }}{{ $collapseAfter = 5 }}{{ end }}
+          {{ $count := 0 }}
+          <ul class="list list-gap-14 collapsible-container" data-collapse-after="{{ $collapseAfter }}">
+            {{ range $tasks.JSON.Array "items" }}
+              {{ if and (ne (.String "status") "completed") (not (.Bool "deleted")) (not (.Bool "hidden")) }}
+                {{ $count = add $count 1 }}
+                {{ $title := .String "title" }}
+                {{ if eq $title "" }}{{ $title = "Untitled" }}{{ end }}
+                {{ $link := .String "webViewLink" }}
+                {{ if eq $link "" }}{{ $link = "https://tasks.google.com/" }}{{ end }}
+                <li class="flex items-start gap-10" {{ if ne (.String "parent") "" }}style="margin-left: 1.8rem;"{{ end }}>
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 3px;"><circle cx="8" cy="8" r="5.5" stroke="currentColor" stroke-width="1.5"/></svg>
+                  <div class="grow min-width-0">
+                    <a class="color-primary" href="{{ $link }}" target="_blank" rel="noopener noreferrer" style="overflow-wrap: anywhere;">{{ $title }}</a>
+                    {{ $due := .String "due" }}
+                    {{ if ne $due "" }}
+                      {{ $date := $due | parseTime "rfc3339" }}
+                      {{ $day := $date | formatTime "2006-01-02" }}
+                      <div class="size-h6 {{ if lt $day $today }}color-negative{{ else if eq $day $today }}color-primary{{ else }}color-subdue{{ end }}">
+                        {{ if lt $day $today }}Overdue · {{ $date | formatTime "Jan 02" }}{{ else if eq $day $today }}Today{{ else }}{{ $date | formatTime "Jan 02" }}{{ end }}
+                      </div>
+                    {{ end }}
+                    {{ if and $showNotes (ne (.String "notes") "") }}
+                      <p class="size-h6 color-subdue" style="white-space: pre-wrap; overflow-wrap: anywhere;">{{ .String "notes" }}</p>
+                    {{ end }}
+                  </div>
+                </li>
+              {{ end }}
+            {{ end }}
+          </ul>
+          {{ if eq $count 0 }}<p class="color-subdue">No tasks.</p>{{ end }}
+          {{ if ne ($tasks.JSON.String "nextPageToken") "" }}
+            <p class="size-h6 color-subdue margin-top-10">Showing the first 100 tasks. <a class="color-primary" href="https://tasks.google.com/" target="_blank" rel="noopener noreferrer">Open Tasks →</a></p>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}

@@ -117,6 +117,15 @@
     "time_updated": "2026-08-29T13:17:19.871415911Z"
   },
   {
+    "title": "Bigger Bookmarks",
+    "description": "A Monitor-style bookmark launcher with optional icons, descriptions, and link arrows, without health checking or service monitoring.",
+    "author": "undecV",
+    "directory": "bigger-bookmarks",
+    "readme_hash": "7eab4a88e74cbbbd8b66a0a257020ba24bb5bed4",
+    "time_added": "2026-10-27T21:47:41.922643143Z",
+    "time_updated": "2026-10-27T21:47:41.922643273Z"
+  },
+  {
     "title": "Calibre-Web Stats",
     "description": "Display a summary of books from your Calibre-Web server.",
     "author": "rvelasq",
@@ -216,6 +225,15 @@
     "time_updated": "2026-08-29T14:21:46.906436316Z"
   },
   {
+    "title": "Crypto wallet balance (SoChain)",
+    "description": "Balances and last activity of your Bitcoin, Litecoin, Dogecoin and Zcash addresses",
+    "author": "doersf",
+    "directory": "crypto-wallet-balance-sochain",
+    "readme_hash": "fef19e0f200dc60792f747f07b335ba2c20bd177",
+    "time_added": "2026-10-27T21:43:59.367780318Z",
+    "time_updated": "2026-10-27T21:43:59.367780398Z"
+  },
+  {
     "title": "Cryptopanic News",
     "description": "A real-time cryptocurrency news widget that displays filtered news from CryptoPanic.com with configurable filters for news type, regions, and currencies.",
     "author": "herculosh",
@@ -297,6 +315,15 @@
     "time_updated": "2025-12-05T12:33:13.818404518Z"
   },
   {
+    "title": "Earnings Calendar",
+    "description": "Upcoming earnings dates and EPS estimates for a stock watchlist and for large cap stocks",
+    "author": "wamuir",
+    "directory": "earnings-calendar",
+    "readme_hash": "bba7e4e36feb7360d1c532008c28307271e21a6a",
+    "time_added": "2026-10-27T21:39:26.884761641Z",
+    "time_updated": "2026-10-27T21:39:26.884761731Z"
+  },
+  {
     "title": "Epic Games Free Games",
     "description": "Display currently free games from the Epic Games Store with promotional images and availability periods.",
     "author": "marocainperdu",
@@ -313,6 +340,15 @@
     "readme_hash": "0d36a9787f96be70a9553f56fad6d3e210c88cee",
     "time_added": "2026-09-03T14:55:35.294902656Z",
     "time_updated": "2026-09-03T14:55:35.294902746Z"
+  },
+  {
+    "title": "FPL Team Rank",
+    "description": "Shows Fantasy Premier League team rank, current gameweek points, total points, and rank delta",
+    "author": "jlioanag",
+    "directory": "fpl-team-rank",
+    "readme_hash": "0088251670e70a0d7620ab4d1b18471ced42086d",
+    "time_added": "2026-10-27T21:42:18.102609095Z",
+    "time_updated": "2026-10-27T21:42:18.102609226Z"
   },
   {
     "title": "Football Fixtures",
@@ -349,6 +385,15 @@
     "readme_hash": "2f21f7a782dc198b9f682683431d4612ce230d6a",
     "time_added": "2025-04-02T03:34:04.3331Z",
     "time_updated": "2026-08-29T13:20:06.824255152Z"
+  },
+  {
+    "title": "FreshRSS Unread",
+    "description": "show the unread count and the latest unread articles from FreshRSS",
+    "author": "Hellraiser28",
+    "directory": "freshrss-unread",
+    "readme_hash": "7d37c9dea93e013c0b690ef127a9e56b005f5da2",
+    "time_added": "2026-10-27T21:45:00.851822596Z",
+    "time_updated": "2026-10-27T21:45:00.851822726Z"
   },
   {
     "title": "Frigate stats",
@@ -459,6 +504,15 @@
     "time_updated": "2025-09-25T04:55:13.926714858Z"
   },
   {
+    "title": "Google Tasks",
+    "description": "Read-only Google Tasks with due dates, subtasks and optional notes, using OAuth refresh credentials.",
+    "author": "chius-me",
+    "directory": "google-tasks",
+    "readme_hash": "470bfa072cff39900b86ec985b17e9faa7a67510",
+    "time_added": "2026-10-27T21:48:42.56161539Z",
+    "time_updated": "2026-10-27T21:48:42.56161551Z"
+  },
+  {
     "title": "Gotify Notifications",
     "description": "show recent notifications from your Gotify server",
     "author": "Owen-3456",
@@ -532,21 +586,21 @@
   },
   {
     "title": "Jellyfin Stats",
-    "description": "Live active playback streams (dynamic highlight), total movies \u0026 series count",
-    "author": "kirolos-esmat",
-    "directory": "jellyfin-stats",
-    "readme_hash": "99c7033f3c5499c285e80cda4c8c65cff5dae4a4",
-    "time_added": "2026-08-31T20:57:33.727912826Z",
-    "time_updated": "2026-08-31T20:57:33.727912896Z"
-  },
-  {
-    "title": "Jellyfin Stats",
     "description": "show the number of movies, shows, episodes and songs in your Jellyfin or Emby server",
     "author": "lfvelosoh",
     "directory": "jellyfin-emby-stats",
     "readme_hash": "2335546183f1e0c15adb544a0ea87ce219032a94",
     "time_added": "2025-06-12T15:48:37.4897Z",
     "time_updated": "2025-09-25T04:55:13.926861351Z"
+  },
+  {
+    "title": "Jellyfin Stats",
+    "description": "Live active playback streams (dynamic highlight), total movies \u0026 series count",
+    "author": "kirolos-esmat",
+    "directory": "jellyfin-stats",
+    "readme_hash": "99c7033f3c5499c285e80cda4c8c65cff5dae4a4",
+    "time_added": "2026-08-31T20:57:33.727912826Z",
+    "time_updated": "2026-08-31T20:57:33.727912896Z"
   },
   {
     "title": "Karakeep Dashboard",
@@ -709,6 +763,15 @@
     "readme_hash": "3a02de13f15790582eb2bdab45c35a4d42adce64",
     "time_added": "2025-12-05T12:59:46.062993668Z",
     "time_updated": "2025-12-05T12:59:46.062993778Z"
+  },
+  {
+    "title": "Memos Latest",
+    "description": "show the latest memos from Memos, with pinned memos marked",
+    "author": "Hellraiser28",
+    "directory": "memos-latest",
+    "readme_hash": "a178eeb089ae0101590ba6475038bbdb79f1a66e",
+    "time_added": "2026-10-27T21:45:00.854443546Z",
+    "time_updated": "2026-10-27T21:45:00.854443656Z"
   },
   {
     "title": "Minecraft server",
@@ -1098,6 +1161,15 @@
     "time_updated": "2025-09-25T04:55:13.928443879Z"
   },
   {
+    "title": "SolidPing",
+    "description": "show the status and response time of your SolidPing checks",
+    "author": "fclairamb",
+    "directory": "solidping",
+    "readme_hash": "be97c09796b384b824dedb0f041631d90155e282",
+    "time_added": "2026-10-27T23:12:50.819781765Z",
+    "time_updated": "2026-10-27T23:12:50.819781865Z"
+  },
+  {
     "title": "Sonarr Stats",
     "description": "Total series library count, missing episodes, and active download queue",
     "author": "kirolos-esmat",
@@ -1258,6 +1330,15 @@
     "readme_hash": "b5dba98d98c656c049d0c70368a04cb61c683ee8",
     "time_added": "2026-09-01T10:39:29.50701122Z",
     "time_updated": "2026-09-01T10:39:29.507011487Z"
+  },
+  {
+    "title": "Thingport",
+    "description": "Library stats, model of the day, recent and popular models, top authors and an activity heatmap from your Thingport 3D model library",
+    "author": "TautvydasDerzinskas",
+    "directory": "thingport",
+    "readme_hash": "fccb08e17d14ddef526619cbf909440cdec080db",
+    "time_added": "2026-10-27T21:46:59.103611566Z",
+    "time_updated": "2026-10-27T21:46:59.103611667Z"
   },
   {
     "title": "Thorough Raindrop Bookmarks",
