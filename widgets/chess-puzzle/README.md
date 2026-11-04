@@ -8,6 +8,10 @@ Simple widget for displaying daily puzzle from chess.com website.
           title: Daily Chess Puzzle
           cache: 6h
           url: https://api.chess.com/pub/puzzle
+          headers:
+            {
+              "User-Agent": "${UserAgent}"
+            }
           template: |
             <div style="text-align: center;">
               <h3 style="font-size: 1.5rem; margin: 0 0 8px 0;">
