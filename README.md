@@ -113,6 +113,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Media Server Playing](widgets/media-server-playing/README.md) - collection of widgets to show what's being played on your Media Server like Plex/Jellyfin (by @titembaataar)
 * [MediaTracker Upcoming Media](widgets/mediatracker-upcoming-tv-shows/README.md) - displays upcoming TV shows, movies or video games monitored by MediaTracker (by @VictorMitr)
 * [Memos Latest](widgets/memos-latest/README.md) - show the latest memos from Memos, with pinned memos marked (by @Hellraiser28)
+* [MikrotTik](widgets/mikrotik/README.md) - display information about your MikroTik device, such as resources, WAN traffic, temperature, uptime, among other things (by @henriquesebastiao)
 * [Minecraft server](widgets/minecraft-server/README.md) - show the online status, icon, version and player count of a Minecraft server (by @not-first)
 * [Mullvad VPN status](widgets/mullvad-vpn-status/README.md) - show VPN connection status, IP, and location (by @DelMonteAJ)
 * [MyanimeList Profile](widgets/myanimelist-profile/README.md) - show your profile (by @WaYy)
