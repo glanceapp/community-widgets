@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Filtered GitHub Repos](widgets/filtered-github-repos/README.md) - rising GitHub repositories filtered by language, topic, age and stars, using the GitHub search API (by @darkbringer1)
 * [Formula 1 Weekend Map](widgets/formula1-weekend-map/README.md) - next Grand Prix with the circuit outline and every session in your local time, plus drivers' and constructors' standings and the last race, using the Jolpica F1 API (by @darkbringer1)
 * [SolidPing](widgets/solidping/README.md) - show the status and response time of your SolidPing checks (by @fclairamb)
 * [Google Tasks](widgets/google-tasks/README.md) - read-only Google Tasks with due dates, subtasks and optional notes, using OAuth refresh credentials (by @chius-me)
 * [Bigger Bookmarks](widgets/bigger-bookmarks/README.md) - a Monitor-style bookmark launcher with optional icons, descriptions, and link arrows, without health checking or service monitoring (by @undecV)
-* [Thingport](widgets/thingport/README.md) - library stats, model of the day, recent and popular models, top authors and an activity heatmap from your Thingport 3D model library (by @TautvydasDerzinskas)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -63,6 +63,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Epic Games Free Games](widgets/epic-free-widget/README.md) - display currently free games from the Epic Games Store with promotional images and availability periods (by @marocainperdu)
 * [Eventim](widgets/eventim/README.md) - a Glance widget for displaying upcoming events on the European ticket seller's site, Eventim (by @cpt-metal)
 * [FPL Team Rank](widgets/fpl-team-rank/README.md) - shows Fantasy Premier League team rank, current gameweek points, total points, and rank delta (by @jlioanag)
+* [Filtered GitHub Repos](widgets/filtered-github-repos/README.md) - rising GitHub repositories filtered by language, topic, age and stars, using the GitHub search API (by @darkbringer1)
 * [Football Fixtures](widgets/football-fixtures/README.md) - show the last match and the next match of your favourite football team using football-data api (by @cristiandiiorio)
 * [Football League Table](widgets/football-league-table/README.md) - shows the current standings of the selected league using football-data api (by @nicl-dev)
 * [Forgejo repos](widgets/forgejo-repos/README.md) - show data about latest repos from forgejo instance (by @dodecube)

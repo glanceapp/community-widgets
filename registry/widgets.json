@@ -351,6 +351,15 @@
     "time_updated": "2026-10-27T21:42:18.102609226Z"
   },
   {
+    "title": "Filtered GitHub Repos",
+    "description": "Rising GitHub repositories filtered by language, topic, age and stars, using the GitHub search API",
+    "author": "darkbringer1",
+    "directory": "filtered-github-repos",
+    "readme_hash": "1301bd90b57bf63c51f1ad102559edb7d7180599",
+    "time_added": "2026-11-05T20:29:46.897386922Z",
+    "time_updated": "2026-11-05T20:29:46.897387012Z"
+  },
+  {
     "title": "Football Fixtures",
     "description": "show the last match and the next match of your favourite football team using football-data api",
     "author": "cristiandiiorio",
