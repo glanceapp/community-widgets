@@ -211,6 +211,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 > [!WARNING]
 >
 > Extension widgets are not actively monitored by the maintainers of Glance, use them at your own risk.
+* [Berlin U-Bahn and S-Bahn](https://github.com/darkbringer1/glance-berlin-transit) - departure status and disruption notices for Berlin U-Bahn and S-Bahn lines from the public BVG API, with English, German and Turkish labels (by @darkbringer1)
 * [GitHub Graph](https://github.com/haondt/glance-github-graph) - show your GitHub contribution graph (by @haondt)
 * [Glance F1](https://github.com/SkyAllinott/glance-F1) - adds user customization to widget by @abaza738 like local timezones, a track map, and more (by @SkyAllinott)
 * [Glance League of Comicbook Geeks](https://github.com/DroidPort/glance-league-of-comic-geeks) - add widgets for League of Comicbook Geeks, such as User Pull lists, Weekly Picks, and new releases (by @DroidPort)
