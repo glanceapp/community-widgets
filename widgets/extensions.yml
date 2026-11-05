@@ -72,3 +72,8 @@
   url: https://github.com/lumitesi/glance-esxi-stats
   description: Display server, VM, and datastore statistics for VMware ESXi.
   author: lumitesi
+
+- title: Berlin U-Bahn and S-Bahn
+  url: https://github.com/darkbringer1/glance-berlin-transit
+  description: Departure status and disruption notices for Berlin U-Bahn and S-Bahn lines from the public BVG API, with English, German and Turkish labels.
+  author: darkbringer1
