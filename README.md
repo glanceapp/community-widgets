@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [MikroTik](widgets/mikrotik/README.md) - display information about your MikroTik device, such as resources, WAN traffic, temperature, uptime, among other things (by @henriquesebastiao)
 * [Football Team Fixtures](widgets/football-team-fixtures/README.md) - next matches and recent results with crests for any club or national team, using ESPN's public site API (by @darkbringer1)
 * [Filtered GitHub Repos](widgets/filtered-github-repos/README.md) - rising GitHub repositories filtered by language, topic, age and stars, using the GitHub search API (by @darkbringer1)
 * [Formula 1 Weekend Map](widgets/formula1-weekend-map/README.md) - next Grand Prix with the circuit outline and every session in your local time, plus drivers' and constructors' standings and the last race, using the Jolpica F1 API (by @darkbringer1)
 * [SolidPing](widgets/solidping/README.md) - show the status and response time of your SolidPing checks (by @fclairamb)
-* [Google Tasks](widgets/google-tasks/README.md) - read-only Google Tasks with due dates, subtasks and optional notes, using OAuth refresh credentials (by @chius-me)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -92,8 +92,8 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Immich stats](widgets/immich-stats/README.md) - show the number of photos, videos and usage of your Immich server (by @svilenmarkov)
 * [Jellyfin Latest/Next Up](widgets/jellyfin-latest/README.md) - display the newest additions to a Jellyfin library, and next up to watch for a given user (by @Nedra1998)
 * [Jellyfin Now Playing](widgets/jellyfin-now-playing/README.md) - displays songs currently playing on a jellyfin server, with multiple user and device streams (by @fayezh26)
-* [Jellyfin Stats](widgets/jellyfin-emby-stats/README.md) - show the number of movies, shows, episodes and songs in your Jellyfin or Emby server (by @lfvelosoh)
 * [Jellyfin Stats](widgets/jellyfin-stats/README.md) - live active playback streams (dynamic highlight), total movies & series count (by @kirolos-esmat)
+* [Jellyfin Stats](widgets/jellyfin-emby-stats/README.md) - show the number of movies, shows, episodes and songs in your Jellyfin or Emby server (by @lfvelosoh)
 * [Karakeep Dashboard](widgets/karakeep-dashboard/README.md) - the widget returns statistics on the number of bookmarks and the number of tags and the most recently added bookmarks (by @razdnut)
 * [Kavita Latest](widgets/kavita-latest/README.md) - show recently updated series and in progress series from your Kavita server (by @Nedra1998)
 * [Komga Recently Added Series](widgets/komga-latest/README.md) - displays recently added comic/manga series to a defined Komga library (by @VictorMitr)
@@ -113,7 +113,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Media Server Playing](widgets/media-server-playing/README.md) - collection of widgets to show what's being played on your Media Server like Plex/Jellyfin (by @titembaataar)
 * [MediaTracker Upcoming Media](widgets/mediatracker-upcoming-tv-shows/README.md) - displays upcoming TV shows, movies or video games monitored by MediaTracker (by @VictorMitr)
 * [Memos Latest](widgets/memos-latest/README.md) - show the latest memos from Memos, with pinned memos marked (by @Hellraiser28)
-* [MikrotTik](widgets/mikrotik/README.md) - display information about your MikroTik device, such as resources, WAN traffic, temperature, uptime, among other things (by @henriquesebastiao)
+* [MikroTik](widgets/mikrotik/README.md) - display information about your MikroTik device, such as resources, WAN traffic, temperature, uptime, among other things (by @henriquesebastiao)
 * [Minecraft server](widgets/minecraft-server/README.md) - show the online status, icon, version and player count of a Minecraft server (by @not-first)
 * [Mullvad VPN status](widgets/mullvad-vpn-status/README.md) - show VPN connection status, IP, and location (by @DelMonteAJ)
 * [MyanimeList Profile](widgets/myanimelist-profile/README.md) - show your profile (by @WaYy)
