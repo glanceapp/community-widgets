@@ -17,11 +17,11 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 ## Custom API Widgets
 
 ### Newly added
+* [Football Team Fixtures](widgets/football-team-fixtures/README.md) - next matches and recent results with crests for any club or national team, using ESPN's public site API (by @darkbringer1)
 * [Filtered GitHub Repos](widgets/filtered-github-repos/README.md) - rising GitHub repositories filtered by language, topic, age and stars, using the GitHub search API (by @darkbringer1)
 * [Formula 1 Weekend Map](widgets/formula1-weekend-map/README.md) - next Grand Prix with the circuit outline and every session in your local time, plus drivers' and constructors' standings and the last race, using the Jolpica F1 API (by @darkbringer1)
 * [SolidPing](widgets/solidping/README.md) - show the status and response time of your SolidPing checks (by @fclairamb)
 * [Google Tasks](widgets/google-tasks/README.md) - read-only Google Tasks with due dates, subtasks and optional notes, using OAuth refresh credentials (by @chius-me)
-* [Bigger Bookmarks](widgets/bigger-bookmarks/README.md) - a Monitor-style bookmark launcher with optional icons, descriptions, and link arrows, without health checking or service monitoring (by @undecV)
 
 ### All
 * [AFL Widgets](widgets/afl-widgets/README.md) - statistics about the current Australian Football League (AFL) season using the [Squiggle](https://api.squiggle.com.au) API (by @0099FF)
@@ -66,6 +66,7 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Filtered GitHub Repos](widgets/filtered-github-repos/README.md) - rising GitHub repositories filtered by language, topic, age and stars, using the GitHub search API (by @darkbringer1)
 * [Football Fixtures](widgets/football-fixtures/README.md) - show the last match and the next match of your favourite football team using football-data api (by @cristiandiiorio)
 * [Football League Table](widgets/football-league-table/README.md) - shows the current standings of the selected league using football-data api (by @nicl-dev)
+* [Football Team Fixtures](widgets/football-team-fixtures/README.md) - next matches and recent results with crests for any club or national team, using ESPN's public site API (by @darkbringer1)
 * [Forgejo repos](widgets/forgejo-repos/README.md) - show data about latest repos from forgejo instance (by @dodecube)
 * [Formula 1 Weekend Map](widgets/formula1-weekend-map/README.md) - next Grand Prix with the circuit outline and every session in your local time, plus drivers' and constructors' standings and the last race, using the Jolpica F1 API (by @darkbringer1)
 * [Formula 1 Widgets](widgets/formula1-widgets/README.md) - show different stats from the current Formula 1 season from [F1 API](https://f1api.dev) (by @abaza738)
@@ -91,8 +92,8 @@ A collection of custom widgets for <a href="https://github.com/glanceapp/glance"
 * [Immich stats](widgets/immich-stats/README.md) - show the number of photos, videos and usage of your Immich server (by @svilenmarkov)
 * [Jellyfin Latest/Next Up](widgets/jellyfin-latest/README.md) - display the newest additions to a Jellyfin library, and next up to watch for a given user (by @Nedra1998)
 * [Jellyfin Now Playing](widgets/jellyfin-now-playing/README.md) - displays songs currently playing on a jellyfin server, with multiple user and device streams (by @fayezh26)
-* [Jellyfin Stats](widgets/jellyfin-stats/README.md) - live active playback streams (dynamic highlight), total movies & series count (by @kirolos-esmat)
 * [Jellyfin Stats](widgets/jellyfin-emby-stats/README.md) - show the number of movies, shows, episodes and songs in your Jellyfin or Emby server (by @lfvelosoh)
+* [Jellyfin Stats](widgets/jellyfin-stats/README.md) - live active playback streams (dynamic highlight), total movies & series count (by @kirolos-esmat)
 * [Karakeep Dashboard](widgets/karakeep-dashboard/README.md) - the widget returns statistics on the number of bookmarks and the number of tags and the most recently added bookmarks (by @razdnut)
 * [Kavita Latest](widgets/kavita-latest/README.md) - show recently updated series and in progress series from your Kavita server (by @Nedra1998)
 * [Komga Recently Added Series](widgets/komga-latest/README.md) - displays recently added comic/manga series to a defined Komga library (by @VictorMitr)
