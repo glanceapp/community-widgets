@@ -1,68 +1,44 @@
 - type: custom-api
   title: MAL Profile
-  title-url: https://myanimelist.net/profile/${MAL_USER}
-  url: https://api.jikan.moe/v4/users/${MAL_USER}/full
-  cache: 15m
+  url: https://jikan.lucashdo.com/v1/users/${MAL_USER}/full
+  cache: 1d
   template: |
     {{ if not (.JSON.Exists "data") }}
     <p class="color-negative">Error reading response</p>
     {{ else }}
 
-    <div class="flex items-center gap-12" style="margin-bottom: 1rem;">
-      <a class="size-title-dynamic color-highlight text-truncate block grow" href="https://myanimelist.net/profile/{{ .JSON.String "data.username" }}" target="_blank" rel="noreferrer">
-        {{ .JSON.String "data.username" }}
-      </a>
-      <div>
-        <img src="{{ .JSON.String "data.images.jpg.image_url" }}" alt="Avatar" style="width: 32px; height: 32px; border-radius: 50%;" />
+    {{ $data := "data" }}
+    {{ $profile := printf "%s.profile" $data }}
+    {{ $anime := printf "%s.statistics.anime" $data }}
+    {{ $manga := printf "%s.statistics.manga" $data }}
+
+
+    <a class="block margin-bottom-10" href="{{ .JSON.String (printf "%s.profileUrl" $profile) }}" target="_blank" rel="noreferrer">
+      <div class="flex items-center gap-12">
+        <span class="text-truncate grow size-title-dynamic color-highlight" style="font-weight: 900;">{{ .JSON.String (printf "%s.canonicalUsername" $profile) }}</span>
+        <img src="{{ .JSON.String (printf "%s.avatarUrl" $profile) }}" alt="Avatar" style="width: 32px; height: 32px; border-radius: 50%;" />
       </div>
-    </div>
+    </a>
 
     <ul class="dynamic-columns list-gap-8">
-      <div class="flex items-center gap-12">
-        <div class="color-highlight block grow">Anime Days</div>
-        <div>{{ .JSON.Float "data.statistics.anime.days_watched" }}</div>
-      </div>
-      <div class="flex items-center gap-12">
-        <div class="color-highlight block grow">Anime Score</div>
-        <div>{{ .JSON.Float "data.statistics.anime.mean_score" }}/10</div>
-      </div>
-      <div class="flex items-center gap-12">
-        <div class="color-highlight block grow">Episodes</div>
-        <div>{{ .JSON.Int "data.statistics.anime.episodes_watched" }}</div>
-      </div>
-      <div class="flex items-center gap-12">
-        <div class="color-highlight block grow">Completed</div>
-        <div>{{ .JSON.Int "data.statistics.anime.completed" }}</div>
-      </div>
-      <div class="flex items-center gap-12">
-        <div class="color-highlight block grow">Manga Days</div>
-        <div>{{ .JSON.Float "data.statistics.manga.days_read" }}</div>
-      </div>
-      <div class="flex items-center gap-12">
-        <div class="color-highlight block grow">Manga Score</div>
-        <div>{{ .JSON.Float "data.statistics.manga.mean_score" }}/10</div>
-      </div>
-      <div class="flex items-center gap-12">
-        <div class="color-highlight block grow">Chapters</div>
-        <div>{{ .JSON.Int "data.statistics.manga.chapters_read" }}</div>
-      </div>
-      <div class="flex items-center gap-12">
-        <div class="color-highlight block grow">Completed</div>
-        <div>{{ .JSON.Int "data.statistics.manga.completed" }}</div>
-      </div>
+      <div class="flex items-center gap-12"><div class="grow">Anime Days</div><div>{{ .JSON.Float (printf "%s.daysWatched" $anime) }}</div></div>
+      <div class="flex items-center gap-12"><div class="grow">Anime Score</div><div>{{ .JSON.Float (printf "%s.meanScore" $anime) }}/10</div></div>
+      <div class="flex items-center gap-12"><div class="grow">Episodes</div><div>{{ .JSON.Int (printf "%s.episodesWatched" $anime) }}</div></div>
+      <div class="flex items-center gap-12"><div class="grow">Completed</div><div>{{ .JSON.Int (printf "%s.completed" $anime) }}</div></div>
 
-      {{ if .JSON.Exists "data.statistics.anime.watching" }}
-      <div class="flex items-center gap-12">
-        <div class="color-highlight block grow">Currently Watching</div>
-        <div>{{ .JSON.Int "data.statistics.anime.watching" }}</div>
-      </div>
+      <div class="flex items-center gap-12"><div class="grow">Manga Days</div><div>{{ .JSON.Float (printf "%s.daysRead" $manga) }}</div></div>
+      <div class="flex items-center gap-12"><div class="grow">Manga Score</div><div>{{ .JSON.Float (printf "%s.meanScore" $manga) }}/10</div></div>
+      <div class="flex items-center gap-12"><div class="grow">Chapters</div><div>{{ .JSON.Int (printf "%s.chaptersRead" $manga) }}</div></div>
+      <div class="flex items-center gap-12"><div class="grow">Completed</div><div>{{ .JSON.Int (printf "%s.completed" $manga) }}</div></div>
+
+      {{ $watching := printf "%s.watching" $anime }}
+      {{ if .JSON.Exists $watching }}
+      <div class="flex items-center gap-12"><div class="grow">Currently Watching</div><div>{{ .JSON.Int $watching }}</div></div>
       {{ end }}
-      {{ if .JSON.Exists "data.statistics.manga.reading" }}
-      <div class="flex items-center gap-12">
-        <div class="color-highlight block grow">Currently Reading</div>
-        <div>{{ .JSON.Int "data.statistics.manga.reading" }}</div>
-      </div>
+
+      {{ $reading := printf "%s.reading" $manga }}
+      {{ if .JSON.Exists $reading }}
+      <div class="flex items-center gap-12"><div class="grow">Currently Reading</div><div>{{ .JSON.Int $reading }}</div></div>
       {{ end }}
     </ul>
-
     {{ end }}
