@@ -51,6 +51,7 @@ For feature requests or issues, contact @SleebySky on the project's Discord serv
       {{- $deviceName := $device.String "device_name" }} 
       {{- $model := $device.String "model_name" }}
       {{- $wwn := $device.String "wwn" }}
+      {{- $scrutiny_uuid := $device.String "scrutiny_uuid" }}
       {{- $days := printf "%.0f" (div (.Get "smart.power_on_hours").Num 24) }}
       {{- $capacity_print := printf "%.0f" (div (.Get "device.capacity").Num 1000000000000) }}
       {{- $status := (.Get "device.device_status").Num }}
@@ -58,7 +59,7 @@ For feature requests or issues, contact @SleebySky on the project's Discord serv
       {{- $latestTemp := index (.Array "temp_history") (sub (len (.Array "temp_history")) 1) }}
       {{- $latestTempValue := $latestTemp.Int "temp" }}
       <div style="margin-top: 1rem; display: flex; justify-content: space-between; align-items: center;">
-        <a href="http://${SCRUTINY_URL}/web/device/{{ $wwn }}" target="_blank">
+        <a href="http://${SCRUTINY_URL}/web/device/{{ $scrutiny_uuid }}" target="_blank">
           <div>
             <strong class="color-highlight" style="text-transform: uppercase; font-size: 1.5rem;">
               /DEV/{{ $deviceName }} · {{ $capacity_print }}TB · {{ $latestTempValue }}°C
