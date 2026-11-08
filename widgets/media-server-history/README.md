@@ -218,7 +218,7 @@ e.g., for only Shows and Movies in Jellyfin, use `"Episode,Movie"`.
     {{ else if or (eq $mediaServer "jellyfin") (eq $mediaServer "emby") }}
       {{ $usersRequestURL = concat $baseURL "/Users" }}
       {{ $usersCall = newRequest $usersRequestURL
-        | withParameter "api_key" $apiKey
+        | withHeader "Authorization" (concat "MediaBrowser Token=\"" $apiKey "\"")
         | withHeader "Accept" "application/json"
         | getResponse }}
 
@@ -235,7 +235,7 @@ e.g., for only Shows and Movies in Jellyfin, use `"Episode,Movie"`.
 
       {{ $historyRequestURL = concat $baseURL "/Users/" $userID "/Items" }}
       {{ $historyCall = newRequest $historyRequestURL
-        | withParameter "api_key" $apiKey
+        | withHeader "Authorization" (concat "MediaBrowser Token=\"" $apiKey "\"")
         | withParameter "Limit" $historyLength
         | withParameter "IncludeItemTypes" $mediaTypes
         | withParameter "Recursive" "true"

@@ -180,7 +180,7 @@ options:
     {{ else if or (eq $mediaServer "jellyfin") (eq $mediaServer "emby") }}
       {{ $sessionsRequestURL = concat $baseURL "/Sessions" }}
       {{ $sessionsCall = newRequest $sessionsRequestURL
-        | withParameter "api_key" $apiKey
+        | withHeader "Authorization" (concat "MediaBrowser Token=\"" $apiKey "\"")
         | withParameter "activeWithinSeconds" "30"
         | withHeader "Accept" "application/json"
         | getResponse }}
