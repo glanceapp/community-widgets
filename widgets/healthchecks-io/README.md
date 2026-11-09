@@ -2,11 +2,11 @@
 
 A Glance widget for displaying the status of checks at healthchecks.io
 
-### Preview
+## Preview
 
 ![Healthchecks.io widget preview](./healthchecks-widget-preview.png)
 
-### Code
+## Code
 
 ``` yml
 - type: custom-api
@@ -60,3 +60,6 @@ A Glance widget for displaying the status of checks at healthchecks.io
     {{ end }}
 ```
             
+## Environment variables
+
+- `HEALTHCHECKS_API_KEY` - Your healthchecks.io API key
