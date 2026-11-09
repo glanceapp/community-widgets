@@ -22,8 +22,9 @@
       
     {{- else -}}
 
-      {{- $requestUrl := printf "%s/emby/Items/Counts?api_key=%s" $url $key -}}
-      {{- $jellyfinData := newRequest $requestUrl | getResponse -}}
+      {{- $requestUrl := printf "%s/Items/Counts" $url -}}
+      {{- $authHeader := printf "MediaBrowser Token=\"%s\"" $key -}}
+      {{- $jellyfinData := newRequest $requestUrl | withHeader "Authorization" $authHeader | getResponse -}}
 
       {{- if eq $jellyfinData.Response.StatusCode 200 -}}
         <div class="flex flex-column gap-5">
