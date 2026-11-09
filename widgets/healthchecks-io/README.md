@@ -2,6 +2,10 @@
 
 A Glance widget for displaying the status of checks at healthchecks.io
 
+### Preview
+
+![Healthchecks.io widget preview](./healthchecks-widget-preview.png)
+
 ### Code
 
 ``` yml
