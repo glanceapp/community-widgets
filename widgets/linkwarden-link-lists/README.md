@@ -1,6 +1,8 @@
 # Linkwarden bookmark lists
 Display all kinds of lists from a Linkwarden instance by useing Linkwarden's [Advanced Search](https://docs.linkwarden.app/usage/advanced-search) options.
 
+![widget preview](linkwarden-glance-preview.png)
+
 ## Environment Variables
 The followinfg environment variables are required in your `.env` file:
 
