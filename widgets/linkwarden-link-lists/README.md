@@ -1,10 +1,10 @@
 # Linkwarden bookmark lists
-Display all kinds of lists from a Linkwarden instance by useing Linkwarden's [Advanced Search](https://docs.linkwarden.app/usage/advanced-search) options.
+Display all kinds of lists from a Linkwarden instance by using Linkwarden's [Advanced Search](https://docs.linkwarden.app/usage/advanced-search) options.
 
 ![widget preview](linkwarden-glance-preview.png)
 
 ## Environment Variables
-The followinfg environment variables are required in your `.env` file:
+The following environment variables are required in your `.env` file:
 
 | Variable | Description | Example |
 |-----------|--------------|----------|
@@ -24,9 +24,24 @@ Choose the content of your list by replacing `<SEARCH QUERY>` in the widget conf
 
 Keep the single quotes around the search string in the YAML.
 
+### Sorting
+Set the `sort` parameter to one of the following values:
+
+| Value | Order |
+|-------|-------|
+| `0` | Date, newest first (default) |
+| `1` | Date, oldest first |
+| `2` | Name, A–Z |
+| `3` | Name, Z–A |
+| `4` | Description, A–Z |
+| `5` | Description, Z–A |
+---
+
 ### Configure how bookmarks are displayed
 
-You can also choose whether to display tags, collection name, bookmark description, and icons by changing any of the relevant `options` to true/false in the widget YAML
+You can also choose whether to display tags, collection name, bookmark description, and icons by setting any of the relevant `options` to true or false in the widget YAML
+
+---
 
 ## Widget
 ```yaml
@@ -39,6 +54,7 @@ You can also choose whether to display tags, collection name, bookmark descripti
           url: ${LINKWARDEN_HOST}/api/v1/search
           parameters:
             searchQueryString: '<SEARCH QUERY>'
+            sort: 0
           options:
             show_tags: true
             show_collection: true
@@ -106,6 +122,3 @@ You can also choose whether to display tags, collection name, bookmark descripti
                 {{ end }}
             </ul>
 ```
----
-
-
