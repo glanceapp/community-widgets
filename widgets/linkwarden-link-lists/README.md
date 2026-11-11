@@ -60,12 +60,16 @@ You can also choose whether to display tags, collection name, bookmark descripti
             show_collection: true
             show_description: true
             show_icons: true
+            max_items: 0
+            collapse_after: 5
             debug: false
           template: |
             {{ $show_tags := .Options.show_tags }}
             {{ $show_collection := .Options.show_collection }}
             {{ $show_description := .Options.show_description }}
             {{ $show_icons := .Options.show_icons }}
+            {{ $max_items := .Options.IntOr "max_items" 0 }}
+            {{ $collapse_after := .Options.IntOr "collapse_after" 5 }}
             {{ $debug := .Options.debug }}
             {{ if $debug }}
                 <details>
@@ -77,8 +81,9 @@ You can also choose whether to display tags, collection name, bookmark descripti
                     </pre>
                 </details>
             {{ end }}
-            <ul class="list list-gap-10 collapsible-container" data-collapse-after="5">
-                {{ range .JSON.Array "data.links" }}
+            <ul class="list list-gap-10 collapsible-container" data-collapse-after="{{ $collapse_after }}">
+                {{ range $i, $link := .JSON.Array "data.links" }}
+                {{ if or (eq $max_items 0) (lt $i $max_items) }}
                     <li>
                     {{ $title := .String "name" }}
                     {{ if gt (len $title) 50 }}
@@ -119,6 +124,7 @@ You can also choose whether to display tags, collection name, bookmark descripti
                     </ul>
                     {{ end }}
                     </li>
+                {{ end }}
                 {{ end }}
             </ul>
 ```
