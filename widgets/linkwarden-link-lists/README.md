@@ -10,18 +10,17 @@ The followinfg environment variables are required in your `.env` file:
 | `LINKWARDEN_API_KEY` | Linkwarden Access Key generated in your Linkwarden Settings UI.|  |
 ---
 
-## Requesting the right data
-Choose the content of your list by replacing `<SEARCH QUERY>` in the widget config with a search string. You can refer to the [Linkwarden docs](https://docs.linkwarden.app/usage/advanced-search)  for a list of advanced search parameters. Make sure to url encode the query. Some examples are provided below:
+## Configuring your search query
+Choose the content of your list by replacing `<SEARCH QUERY>` in the widget config with a search string. Write it exactly as you would in the Linkwarden search box; Glance URL-encodes it for you. See the [Linkwarden docs](https://docs.linkwarden.app/usage/advanced-search) for the full list of advanced search parameters. Some examples:
 
-| Description | Search string | URL encoded |
-|-----------|--------------|----------|
-| A list of your pinned bookmarks | `pinned:true` | `pinned%3Atrue` |
-| A list of all bookmarks with specific tag | `tag:my-tag` |  `tag%3Amy-tag` |
-| A list of all bookmarks in a collection | `collection:my-collection` | `collection%3Amy-collection` |
-| All 3 previous options combined|   `tag:my-tag collection:my-collection pinned:true`| `tag%3Amy-tag%20collection%3Amy-collection%20pinned%3Atrue` |
----
+| Description | Search string |
+|-------------|---------------|
+| Your pinned bookmarks | `pinned:true` |
+| All bookmarks with a specific tag | `tag:my-tag` |
+| All bookmarks in a collection | `collection:my-collection` |
+| All three combined | `tag:my-tag collection:my-collection pinned:true` |
 
-** *tip: configure your search using the search box in your linkwarden UI and copy the search string from your browser URL bar (copy everything after th ?q= section)*
+Keep the single quotes around the search string in the YAML.
 
 ### Configure how bookmarks are displayed
 
@@ -35,7 +34,9 @@ You can also choose whether to display tags, collection name, bookmark descripti
             Authorization: Bearer ${LINKWARDEN_API_KEY}
           method: GET
           title: Bookmarks
-          url: ${LINKWARDEN_HOST}/api/v1/search?searchQueryString=<SEARCH QUERY>
+          url: ${LINKWARDEN_HOST}/api/v1/search
+          parameters:
+            searchQueryString: '<SEARCH QUERY>'
           options:
             show_tags: true
             show_collection: true
