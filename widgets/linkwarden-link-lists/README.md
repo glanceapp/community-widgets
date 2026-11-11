@@ -21,6 +21,7 @@ Choose the content of your list by replacing `<SEARCH QUERY>` in the widget conf
 | All bookmarks with a specific tag | `tag:my-tag` |
 | All bookmarks in a collection | `collection:my-collection` |
 | All three combined | `tag:my-tag collection:my-collection pinned:true` |
+| Latest bookmarks | *provide an empty search string and set the sort option to 0* |
 
 Keep the single quotes around the search string in the YAML.
 
