@@ -26,11 +26,16 @@
       {{- if $raw -}}
         {{- $used := findSubmatch "^[^,]+,([0-9]+)" $raw -}}
         {{- $total := findSubmatch "^([0-9]+)" $raw -}}
-        {{- $free := findSubmatch "^[^,]+,[^,]+,([0-9]+)" $raw -}}
         {{- $pct := findSubmatch "^[0-9.]+" (findSubmatch "^[^,]+,[^,]+,[^,]+,([^,]+)" $raw) -}}
-        <div class="flex justify-between size-h6 margin-top-10"><span>{{ $label }}</span><span>{{ template "rnSize" $used }} / {{ template "rnSize" $total }} · {{ template "rnSize" $free }} free</span></div>
-        <div style="height: 5px; margin-top: 8px; border-radius: 5px; background: var(--color-separator);">
-          <div style="height: 100%; width: {{ $pct }}%; max-width: 100%; border-radius: 5px; background: var(--color-primary);"></div>
+        <div class="margin-top-15">
+          <div class="flex justify-between gap-10">
+            <span>{{ $label }}</span>
+            <span class="color-highlight" style="white-space: nowrap;">{{ $pct }}%</span>
+          </div>
+          <div style="height: 6px; margin-top: 7px; border-radius: 99px; background: rgba(128, 128, 128, 0.18); overflow: hidden;">
+            <div style="height: 100%; width: {{ $pct }}%; max-width: 100%; border-radius: inherit; background: var(--color-primary);"></div>
+          </div>
+          <div class="size-h6 color-subdue margin-top-5">{{ template "rnSize" $used }} / {{ template "rnSize" $total }}</div>
         </div>
       {{- end -}}
     {{ end }}
@@ -60,7 +65,7 @@
         {{ $ip := $res.JSON.String "ipaddress" }}
         {{ $ips := $res.JSON.String "ipaddr" }}
         <div class="flex justify-between gap-10">
-          <a class="color-highlight" style="overflow-wrap: anywhere;" href="https://ctrl.racknerd.com/">{{ $res.JSON.String "hostname" }}</a>
+          <a class="color-highlight text-truncate" href="https://ctrl.racknerd.com/">{{ $res.JSON.String "hostname" }}</a>
           {{ if eq $status "online" }}
             <span class="color-positive" style="white-space: nowrap;">online</span>
           {{ else if or (eq $status "offline") (eq $status "disabled") }}
@@ -70,13 +75,10 @@
           {{ end }}
         </div>
         {{ if or $ip ($res.JSON.String "os") }}
-          <div class="size-h6 color-subdue margin-top-5">{{ $ip }}{{ if and $ip ($res.JSON.String "os") }} · {{ end }}{{ $res.JSON.String "os" }}</div>
-        {{ end }}
-        {{ if $res.JSON.String "template" }}
-          <div class="size-h6 color-subdue">{{ $res.JSON.String "template" }}</div>
+          <div class="size-h6 color-subdue margin-top-5" title="{{ $res.JSON.String "template" }}">{{ $ip }}{{ if and $ip ($res.JSON.String "os") }} · {{ end }}{{ $res.JSON.String "os" }}</div>
         {{ end }}
         {{ if and $ips (ne $ips $ip) }}
-          <div class="size-h6 color-subdue">Other IPs {{ $ips }}</div>
+          <div class="size-h6 color-subdue">{{ $ips }}</div>
         {{ end }}
         {{ template "rnUsage" (printf "Bandwidth:%s" ($res.JSON.String "bw")) }}
         {{ template "rnUsage" (printf "Disk:%s" ($res.JSON.String "hdd")) }}

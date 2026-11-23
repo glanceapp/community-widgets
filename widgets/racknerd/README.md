@@ -2,7 +2,7 @@
 
 ![RackNerd VPS status with sample usage](preview.png)
 
-Show one RackNerd VPS: hostname, power state, addresses, operating system, template, and bandwidth, disk, and memory usage. Glance calls the per-server client API directly. The preview uses a fictional server.
+Show one RackNerd VPS: hostname, power state, addresses, operating system, and bandwidth, disk, and memory usage. Glance calls the per-server client API directly. The preview uses a fictional server.
 
 The widget requests `info` only. It does not boot, reboot, or shut down the VPS.
 
@@ -20,7 +20,7 @@ For another VPS, add a second copy of the widget and point it at a different pai
 
 ## What the numbers cover
 
-One request asks for status, addresses, bandwidth, disk, and memory. Bandwidth, disk, and memory arrive as byte counters. The text shows those counters in decimal units (powers of 1,000), with one decimal place. The bar uses the percent returned by the API. A rejected key is shown as “API authentication failed.” The same key can also power the VPS on or off from the RackNerd panel; this widget never sends those actions.
+One request asks for status, addresses, bandwidth, disk, and memory. Each meter puts the API percent beside the label, draws a full-width bar, and shows used / total underneath. Those byte counters use decimal units (powers of 1,000), with one decimal place. The image template name stays on the address line as a tooltip. A rejected key is shown as “API authentication failed.” The same key can also power the VPS on or off from the RackNerd panel; this widget never sends those actions.
 
 The card caches results for five minutes.
 
@@ -57,11 +57,16 @@ Tested with Glance v0.8.8. Copy the YAML below or download [widget.yml](widget.y
       {{- if $raw -}}
         {{- $used := findSubmatch "^[^,]+,([0-9]+)" $raw -}}
         {{- $total := findSubmatch "^([0-9]+)" $raw -}}
-        {{- $free := findSubmatch "^[^,]+,[^,]+,([0-9]+)" $raw -}}
         {{- $pct := findSubmatch "^[0-9.]+" (findSubmatch "^[^,]+,[^,]+,[^,]+,([^,]+)" $raw) -}}
-        <div class="flex justify-between size-h6 margin-top-10"><span>{{ $label }}</span><span>{{ template "rnSize" $used }} / {{ template "rnSize" $total }} · {{ template "rnSize" $free }} free</span></div>
-        <div style="height: 5px; margin-top: 8px; border-radius: 5px; background: var(--color-separator);">
-          <div style="height: 100%; width: {{ $pct }}%; max-width: 100%; border-radius: 5px; background: var(--color-primary);"></div>
+        <div class="margin-top-15">
+          <div class="flex justify-between gap-10">
+            <span>{{ $label }}</span>
+            <span class="color-highlight" style="white-space: nowrap;">{{ $pct }}%</span>
+          </div>
+          <div style="height: 6px; margin-top: 7px; border-radius: 99px; background: rgba(128, 128, 128, 0.18); overflow: hidden;">
+            <div style="height: 100%; width: {{ $pct }}%; max-width: 100%; border-radius: inherit; background: var(--color-primary);"></div>
+          </div>
+          <div class="size-h6 color-subdue margin-top-5">{{ template "rnSize" $used }} / {{ template "rnSize" $total }}</div>
         </div>
       {{- end -}}
     {{ end }}
@@ -91,7 +96,7 @@ Tested with Glance v0.8.8. Copy the YAML below or download [widget.yml](widget.y
         {{ $ip := $res.JSON.String "ipaddress" }}
         {{ $ips := $res.JSON.String "ipaddr" }}
         <div class="flex justify-between gap-10">
-          <a class="color-highlight" style="overflow-wrap: anywhere;" href="https://ctrl.racknerd.com/">{{ $res.JSON.String "hostname" }}</a>
+          <a class="color-highlight text-truncate" href="https://ctrl.racknerd.com/">{{ $res.JSON.String "hostname" }}</a>
           {{ if eq $status "online" }}
             <span class="color-positive" style="white-space: nowrap;">online</span>
           {{ else if or (eq $status "offline") (eq $status "disabled") }}
@@ -101,13 +106,10 @@ Tested with Glance v0.8.8. Copy the YAML below or download [widget.yml](widget.y
           {{ end }}
         </div>
         {{ if or $ip ($res.JSON.String "os") }}
-          <div class="size-h6 color-subdue margin-top-5">{{ $ip }}{{ if and $ip ($res.JSON.String "os") }} · {{ end }}{{ $res.JSON.String "os" }}</div>
-        {{ end }}
-        {{ if $res.JSON.String "template" }}
-          <div class="size-h6 color-subdue">{{ $res.JSON.String "template" }}</div>
+          <div class="size-h6 color-subdue margin-top-5" title="{{ $res.JSON.String "template" }}">{{ $ip }}{{ if and $ip ($res.JSON.String "os") }} · {{ end }}{{ $res.JSON.String "os" }}</div>
         {{ end }}
         {{ if and $ips (ne $ips $ip) }}
-          <div class="size-h6 color-subdue">Other IPs {{ $ips }}</div>
+          <div class="size-h6 color-subdue">{{ $ips }}</div>
         {{ end }}
         {{ template "rnUsage" (printf "Bandwidth:%s" ($res.JSON.String "bw")) }}
         {{ template "rnUsage" (printf "Disk:%s" ($res.JSON.String "hdd")) }}
