@@ -16,17 +16,17 @@ The widget requests `info` only. It does not boot, reboot, or shut down the VPS.
    | `RACKNERD_API_KEY` | API key for this VPS |
    | `RACKNERD_API_HASH` | API hash for this VPS |
 
-For another VPS, add a second copy of the widget and point it at a different pair of variables.
+For another VPS, add a second copy of the widget and point it at a different pair of variables. You can also override `panel-url` or `endpoint` in `options` if your VPS uses a different SolusVM panel host.
 
 ## What the numbers cover
 
-One request asks for status, addresses, bandwidth, disk, and memory. Each meter puts the API percent beside the label, draws a full-width bar, and shows used / total underneath. Those byte counters use decimal units (powers of 1,000), with one decimal place. The image template name stays on the address line as a tooltip. A rejected key is shown as “API authentication failed.” The same key can also power the VPS on or off from the RackNerd panel; this widget never sends those actions.
+One request asks for status, addresses, bandwidth, disk, and memory. Each meter puts the API percent beside the label, draws a full-width bar (highlighting at `>= 80%`), and shows used / total underneath. Meters with missing or zero capacity are skipped automatically. Those byte counters use decimal units (powers of 1,000), with one decimal place. The image template name stays on the address line as a tooltip. A rejected key is shown as “API authentication failed.” The same key can also power the VPS on or off from the RackNerd panel; this widget never sends those actions.
 
 The card caches results for five minutes.
 
 ## Glance configuration
 
-Tested with Glance v0.8.8. Copy the YAML below or download [widget.yml](widget.yml) and include it in the page’s widgets list.
+Tested with Glance v0.8.8. Copy the YAML below and include it in the page’s widgets list.
 
 ```yaml
 - type: custom-api
@@ -36,6 +36,8 @@ Tested with Glance v0.8.8. Copy the YAML below or download [widget.yml](widget.y
   options:
     api-key: "${RACKNERD_API_KEY}"
     api-hash: "${RACKNERD_API_HASH}"
+    # panel-url: https://ctrl.racknerd.com/
+    # endpoint: https://ctrl.racknerd.com/api/client/command.php
   template: |
     {{ define "rnSize" }}
       {{- $n := . -}}
@@ -57,35 +59,42 @@ Tested with Glance v0.8.8. Copy the YAML below or download [widget.yml](widget.y
       {{- if $raw -}}
         {{- $used := findSubmatch "^[^,]+,([0-9]+)" $raw -}}
         {{- $total := findSubmatch "^([0-9]+)" $raw -}}
-        {{- $pct := findSubmatch "^[0-9.]+" (findSubmatch "^[^,]+,[^,]+,[^,]+,([^,]+)" $raw) -}}
-        <div class="margin-top-15">
-          <div class="flex justify-between gap-10">
-            <span>{{ $label }}</span>
-            <span class="color-highlight" style="white-space: nowrap;">{{ $pct }}%</span>
+        {{- $pct := findSubmatch "^[^,]+,[^,]+,[^,]+,([0-9.]+)" $raw -}}
+        {{- if and (ne $total "") (ne $total "0") (ne $pct "") -}}
+          {{- $high := findMatch "^(8[0-9]|9[0-9]|[1-9][0-9]{2,})(\\.|$)" $pct -}}
+          <div class="margin-top-15">
+            <div class="flex justify-between gap-10">
+              <span>{{ $label }}</span>
+              <span class="{{ if $high }}color-negative{{ else }}color-highlight{{ end }}" style="white-space: nowrap;">{{ $pct }}%</span>
+            </div>
+            <div style="height: 6px; margin-top: 7px; border-radius: 99px; background: var(--color-separator); overflow: hidden;">
+              <div style="height: 100%; width: {{ $pct }}%; max-width: 100%; border-radius: inherit; background: {{ if $high }}var(--color-negative){{ else }}var(--color-primary){{ end }};"></div>
+            </div>
+            <div class="size-h6 color-subdue margin-top-5">{{ template "rnSize" $used }} / {{ template "rnSize" $total }}</div>
           </div>
-          <div style="height: 6px; margin-top: 7px; border-radius: 99px; background: rgba(128, 128, 128, 0.18); overflow: hidden;">
-            <div style="height: 100%; width: {{ $pct }}%; max-width: 100%; border-radius: inherit; background: var(--color-primary);"></div>
-          </div>
-          <div class="size-h6 color-subdue margin-top-5">{{ template "rnSize" $used }} / {{ template "rnSize" $total }}</div>
-        </div>
+        {{- end -}}
       {{- end -}}
     {{ end }}
     {{ if or (eq (.Options.StringOr "api-key" "") "") (eq (.Options.StringOr "api-hash" "") "") }}
       <p class="color-subdue">Add the RackNerd API key and hash to show this VPS.</p>
     {{ else }}
+      {{ $panelUrl := .Options.StringOr "panel-url" "https://ctrl.racknerd.com/" }}
+      {{ $endpoint := .Options.StringOr "endpoint" "https://ctrl.racknerd.com/api/client/command.php" }}
       {{ $body := printf "key=%s&hash=%s&action=info&rdtype=json&status=1&ipaddr=1&bw=1&hdd=1&mem=1"
            (urlquery (.Options.StringOr "api-key" "")) (urlquery (.Options.StringOr "api-hash" "")) }}
-      {{ $res := newRequest "https://ctrl.racknerd.com/api/client/command.php"
+      {{ $res := newRequest $endpoint
            | withHeader "Content-Type" "application/x-www-form-urlencoded"
            | withHeader "Accept" "application/json"
            | withHeader "User-Agent" "glance-community-racknerd/1.0"
            | withStringBody $body
            | getResponse }}
-      {{ if ne $res.Response.StatusCode 200 }}
+      {{ if eq $res.Response.StatusCode 0 }}
+        <p class="color-subdue">RackNerd temporarily unavailable.</p>
+      {{ else if ne $res.Response.StatusCode 200 }}
         <p class="color-negative">RackNerd returned HTTP {{ $res.Response.StatusCode }}.</p>
       {{ else if eq ($res.JSON.String "status") "error" }}
         <p class="color-negative">
-          {{- if or (findSubmatch "(?i)invalid key" ($res.JSON.String "statusmsg")) (findSubmatch "(?i)invalid hash" ($res.JSON.String "statusmsg")) -}}
+          {{- if findMatch "(?i)invalid (key|hash)" ($res.JSON.String "statusmsg") -}}
             API authentication failed.
           {{- else -}}
             {{ $res.JSON.String "statusmsg" }}
@@ -96,7 +105,7 @@ Tested with Glance v0.8.8. Copy the YAML below or download [widget.yml](widget.y
         {{ $ip := $res.JSON.String "ipaddress" }}
         {{ $ips := $res.JSON.String "ipaddr" }}
         <div class="flex justify-between gap-10">
-          <a class="color-highlight text-truncate" href="https://ctrl.racknerd.com/">{{ $res.JSON.String "hostname" }}</a>
+          <a class="color-highlight text-truncate" href="{{ $panelUrl }}" target="_blank" rel="noopener noreferrer">{{ $res.JSON.String "hostname" }}</a>
           {{ if eq $status "online" }}
             <span class="color-positive" style="white-space: nowrap;">online</span>
           {{ else if or (eq $status "offline") (eq $status "disabled") }}
