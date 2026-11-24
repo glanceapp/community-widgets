@@ -32,13 +32,13 @@ Show each project's cost, applied credits, net charges and last export time for 
 
 ## What the numbers cover
 
-The query uses the current UTC month and the export's [invoice.month and credits fields](https://cloud.google.com/billing/docs/how-to/export-data-bigquery-tables/standard-usage). Net charges are cost plus signed credits. Rows without a project appear under **Account charges**. Export times are per project and currency. Exports can arrive late and amounts can change before the invoice is final.
+The query uses the current US Pacific (`America/Los_Angeles`) invoice month and the export's [invoice.month and credits fields](https://cloud.google.com/billing/docs/how-to/export-data-bigquery-tables/standard-usage). Net charges are cost plus signed credits. Rows without a project appear under **Account charges**. Export times are per project and currency. Exports can arrive late and amounts can change before the invoice is final.
 
-One widget reads one export table. For separate billing accounts, add another copy with its own table and settings. The widget displays up to 20 project/currency rows, ordered by currency and then net cost. It caches results for six hours and caps each query at 1 GiB of bytes billed. BigQuery can scan older partitions when filtering by invoice month. If your table exceeds the cap, review BigQuery's scan estimate before adjusting `maximumBytesBilled` in the widget.
+One widget reads one export table. For separate billing accounts, add another copy with its own table and settings. The widget displays up to 20 project/currency rows, ordered by currency and then net cost. It caches results for six hours and caps each query at 1 GiB of bytes billed. The `_PARTITIONDATE` filter with a 3-day buffer prunes older partitions while still capturing late month-boundary rows.
 
 ## Glance configuration
 
-Tested with Glance v0.8.8. Copy the YAML below or download [widget.yml](widget.yml) and include it in the page’s widgets list.
+Tested with Glance v0.8.8. Copy the YAML below and include it in the page’s widgets list.
 
 ```yaml
 - type: custom-api
@@ -59,12 +59,13 @@ Tested with Glance v0.8.8. Copy the YAML below or download [widget.yml](widget.y
         FORMAT('%.2f', SUM(credit)) AS credits,
         FORMAT('%.2f', SUM(gross + credit)) AS net,
         FORMAT_TIMESTAMP('%F %R UTC', MAX(export_time)) AS updated,
-        FORMAT_DATE('%B %Y', CURRENT_DATE('UTC')) AS invoice_month
+        FORMAT_DATE('%B %Y', CURRENT_DATE('America/Los_Angeles')) AS invoice_month
       FROM (
         SELECT project, currency, export_time, CAST(cost AS NUMERIC) AS gross,
           IFNULL((SELECT SUM(CAST(c.amount AS NUMERIC)) FROM UNNEST(credits) AS c), 0) AS credit
         FROM `${GCP_BILLING_EXPORT_TABLE}`
-        WHERE invoice.month = FORMAT_DATE('%Y%m', CURRENT_DATE('UTC'))
+        WHERE _PARTITIONDATE >= DATE_SUB(DATE_TRUNC(CURRENT_DATE('America/Los_Angeles'), MONTH), INTERVAL 3 DAY)
+          AND invoice.month = FORMAT_DATE('%Y%m', CURRENT_DATE('America/Los_Angeles'))
       )
       GROUP BY project_id, currency
       ORDER BY currency, SUM(gross + credit) DESC, project_id
@@ -77,21 +78,26 @@ Tested with Glance v0.8.8. Copy the YAML below or download [widget.yml](widget.y
          (urlquery (.Options.StringOr "refresh-token" "")) }}
       {{ $auth := newRequest "https://oauth2.googleapis.com/token"
          | withHeader "Content-Type" "application/x-www-form-urlencoded" | withStringBody $form | getResponse }}
-      {{ if or (ne $auth.Response.StatusCode 200) (eq ($auth.JSON.String "access_token") "") }}
+      {{ if eq $auth.Response.StatusCode 0 }}
+        <p class="color-subdue">Google OAuth temporarily unavailable.</p>
+      {{ else if or (ne $auth.Response.StatusCode 200) (eq ($auth.JSON.String "access_token") "") }}
         <p class="color-negative">Google authorization failed. Check the billing credentials.</p>
       {{ else }}
         {{ $base := printf "https://bigquery.googleapis.com/bigquery/v2/projects/%s/queries" (urlquery (.Options.StringOr "job-project" "")) }}
         {{ $location := .Options.StringOr "location" "US" }}
         {{ $bearer := print "Bearer " ($auth.JSON.String "access_token") }}
-        {{ $body := printf `{"query":%q,"location":%q,"useLegacySql":false,"timeoutMs":3000,"maximumBytesBilled":"1073741824","maxResults":20}` (.Options.StringOr "query" "") $location }}
+        {{ $body := printf `{"query":%q,"location":%q,"useLegacySql":false,"timeoutMs":15000,"maximumBytesBilled":"1073741824","maxResults":20}` (.Options.StringOr "query" "") $location }}
         {{ $res := newRequest $base | withHeader "Authorization" $bearer | withHeader "Content-Type" "application/json" | withStringBody $body | getResponse }}
         {{ if and (eq $res.Response.StatusCode 200) (not ($res.JSON.Bool "jobComplete")) (ne ($res.JSON.String "jobReference.jobId") "") }}
           {{ $res = newRequest (printf "%s/%s" $base (urlquery ($res.JSON.String "jobReference.jobId")))
              | withHeader "Authorization" $bearer | withParameter "location" $location
-             | withParameter "timeoutMs" "3000" | withParameter "maxResults" "20" | getResponse }}
+             | withParameter "timeoutMs" "15000" | withParameter "maxResults" "20" | getResponse }}
         {{ end }}
-        {{ if ne $res.Response.StatusCode 200 }}
-          <p class="color-negative">BigQuery error {{ $res.Response.StatusCode }} · {{ $res.JSON.String "error.errors.0.reason" }}</p>
+        {{ if eq $res.Response.StatusCode 0 }}
+          <p class="color-subdue">BigQuery temporarily unavailable.</p>
+        {{ else if ne $res.Response.StatusCode 200 }}
+          {{ $reason := $res.JSON.String "error.errors.0.reason" }}
+          <p class="color-negative">BigQuery error {{ $res.Response.StatusCode }}{{ if ne $reason "" }} · {{ $reason }}{{ end }}</p>
         {{ else if not ($res.JSON.Bool "jobComplete") }}
           <p class="color-subdue">Query still running. Check BigQuery job history.</p>
         {{ else if eq ($res.JSON.Int "totalRows") 0 }}
